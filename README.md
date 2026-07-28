@@ -56,9 +56,11 @@ npm install
 npm run web:dev
 ```
 
-Vite proxies `/api` to the Go service on port 8080. The initial UI contains a
-location-curation workspace with a draggable point editor, GeoJSON
-polygon/multipolygon preview, required change reason, and revision history.
+Vite proxies `/api` to the Go service on port 8080. The default workspace is an
+interactive manuscript atlas with a time range, evidence-source, parent/child,
+Hibur, review-state, and undated filters. Selecting a mapped place opens its
+manuscript/Hibur/date/evidence drill-down. A second workspace contains the
+audited location editor.
 
 ## LLM-assisted curation drafts
 
@@ -122,6 +124,11 @@ GOCACHE=/private/tmp/midrash-atlas-go-cache \
   --skip-human-reviewed
 ```
 
+Long-running Go commands emit timestamped progress to stdout. Gazetteer and
+curation runs report every place, cache/skip state, result status, and duration.
+The NLI Python retriever reports batch and relationship progress to stderr so
+JSON written to stdout remains valid.
+
 Static resources are under `/api/v1/`. A policy-derived temporal view is:
 
 ```text
@@ -132,6 +139,20 @@ Static resources are under `/api/v1/`. A policy-derived temporal view is:
 
 The stored record keeps `1460` plus `approximate: true`; only this view expands
 it to `1450–1470`. This makes the policy changeable without rewriting data.
+
+The joined atlas endpoint is:
+
+```text
+/api/v1/atlas-view
+  ?geo-source=nli_751_writing_place
+  &start-year=1200
+  &end-year=1600
+  &include-undated=false
+```
+
+It groups matching assertions by place so polygons are transferred once, while
+retaining nested manuscript, Hibur, temporal, raw-evidence, and origin details
+for drill-down.
 
 ## Documentation
 

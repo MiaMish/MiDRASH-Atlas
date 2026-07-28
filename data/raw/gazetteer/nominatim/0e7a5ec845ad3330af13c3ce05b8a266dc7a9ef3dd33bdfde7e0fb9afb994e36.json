@@ -1,0 +1,287 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Al-Tawilah (Yemen)",
+    "retrieved_at": "2026-07-28T13:04:56.976949Z",
+    "cache_key": "0e7a5ec845ad3330af13c3ce05b8a266dc7a9ef3dd33bdfde7e0fb9afb994e36",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Al-Tawilah (Yemen)"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 43867120,
+          "osm_type": "node",
+          "osm_id": 1219227071,
+          "place_rank": 20,
+          "category": "place",
+          "type": "hamlet",
+          "importance": 0.1333733340962844,
+          "addresstype": "hamlet",
+          "name": "Al Lakamah",
+          "display_name": "Al Lakamah, At Tawilah, At Tawilah District, Al Mahwit Governorate, Yemen",
+          "address": {
+            "hamlet": "Al Lakamah",
+            "town": "At Tawilah",
+            "district": "At Tawilah District",
+            "state": "Al Mahwit Governorate",
+            "ISO3166-2-lvl4": "YE-MW",
+            "country": "Yemen",
+            "country_code": "ye"
+          },
+          "namedetails": {
+            "name": "اللكمة",
+            "name:ar": "اللكمة",
+            "name:de": "Al Lakamah",
+            "name:en": "Al Lakamah",
+            "name:fr": "Al Lakamah",
+            "int_name": "Al Lakamah"
+          }
+        },
+        "bbox": [
+          43.7269890,
+          15.4536060,
+          43.7669890,
+          15.4936060
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            43.746989,
+            15.473606
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 43594439,
+          "osm_type": "node",
+          "osm_id": 7294969592,
+          "place_rank": 20,
+          "category": "place",
+          "type": "hamlet",
+          "importance": 0.13337083466849772,
+          "addresstype": "hamlet",
+          "name": "Bayt al Ujayli",
+          "display_name": "Bayt al Ujayli, Sanif `Amir, Zabid District, Al Hudaydah Governorate, Yemen",
+          "address": {
+            "hamlet": "Bayt al Ujayli",
+            "village": "Sanif `Amir",
+            "district": "Zabid District",
+            "state": "Al Hudaydah Governorate",
+            "ISO3166-2-lvl4": "YE-HU",
+            "country": "Yemen",
+            "country_code": "ye"
+          },
+          "namedetails": {
+            "name": "بيت الأجيلي",
+            "name:ar": "بيت الأجيلي",
+            "name:en": "Bayt al Ujayli",
+            "int_name": "Bayt al Ujaylī"
+          }
+        },
+        "bbox": [
+          43.4310440,
+          14.2608560,
+          43.4710440,
+          14.3008560
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            43.451044,
+            14.280856
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 43594111,
+          "osm_type": "node",
+          "osm_id": 7294970301,
+          "place_rank": 20,
+          "category": "place",
+          "type": "hamlet",
+          "importance": 0.13337083466849772,
+          "addresstype": "hamlet",
+          "name": "Dayf al `Ajami",
+          "display_name": "Dayf al `Ajami, Al Ibrayah, Zabid District, Al Hudaydah Governorate, Yemen",
+          "address": {
+            "hamlet": "Dayf al `Ajami",
+            "village": "Al Ibrayah",
+            "district": "Zabid District",
+            "state": "Al Hudaydah Governorate",
+            "ISO3166-2-lvl4": "YE-HU",
+            "country": "Yemen",
+            "country_code": "ye"
+          },
+          "namedetails": {
+            "name": "ضيف العجمي",
+            "name:ar": "ضيف العجمي",
+            "name:en": "Dayf al `Ajami",
+            "alt_name": "Sanif al `Ajami; Şanīf al ‘Ajami",
+            "int_name": "Ḑayf al ‘Ajamī"
+          }
+        },
+        "bbox": [
+          43.4550990,
+          14.2708860,
+          43.4950990,
+          14.3108860
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            43.475099,
+            14.290886
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 43470832,
+          "osm_type": "node",
+          "osm_id": 6936595158,
+          "place_rank": 25,
+          "category": "place",
+          "type": "locality",
+          "importance": 0.06670666742961776,
+          "addresstype": "locality",
+          "name": "`Ozlat Al Gharbi",
+          "display_name": "`Ozlat Al Gharbi, At Tawilah, At Tawilah District, Al Mahwit Governorate, Yemen",
+          "address": {
+            "locality": "`Ozlat Al Gharbi",
+            "town": "At Tawilah",
+            "district": "At Tawilah District",
+            "state": "Al Mahwit Governorate",
+            "ISO3166-2-lvl4": "YE-MW",
+            "country": "Yemen",
+            "country_code": "ye"
+          },
+          "namedetails": {
+            "name": "عزلة الغربي",
+            "name:ar": "عزلة الغربي",
+            "name:en": "`Ozlat Al Gharbi",
+            "int_name": "Al Gharbī"
+          }
+        },
+        "bbox": [
+          43.7175500,
+          15.5070370,
+          43.7375500,
+          15.5270370
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            43.72755,
+            15.517037
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 43602465,
+          "osm_type": "way",
+          "osm_id": 27046102,
+          "place_rank": 26,
+          "category": "highway",
+          "type": "primary",
+          "importance": 0.05337333409628439,
+          "addresstype": "road",
+          "name": "Sana'a - Al Mahwit Road",
+          "display_name": "Sana'a - Al Mahwit Road, Rawud, At Tawilah, At Tawilah District, Al Mahwit Governorate, Yemen",
+          "address": {
+            "road": "Sana'a - Al Mahwit Road",
+            "hamlet": "Rawud",
+            "town": "At Tawilah",
+            "district": "At Tawilah District",
+            "state": "Al Mahwit Governorate",
+            "ISO3166-2-lvl4": "YE-MW",
+            "country": "Yemen",
+            "country_code": "ye"
+          },
+          "namedetails": {
+            "ref": "801",
+            "name": "طريق صنعاء المحويت",
+            "name:ar": "طريق صنعاء المحويت",
+            "name:en": "Sana'a - Al Mahwit Road"
+          }
+        },
+        "bbox": [
+          43.5527873,
+          15.4344805,
+          43.9135637,
+          15.4976497
+        ],
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              43.9135637,
+              15.4799378
+            ],
+            [
+              43.8956891,
+              15.462651
+            ],
+            [
+              43.8085587,
+              15.4481538
+            ],
+            [
+              43.7454987,
+              15.4975677
+            ],
+            [
+              43.7325797,
+              15.47667
+            ],
+            [
+              43.6924486,
+              15.4704629
+            ],
+            [
+              43.6750532,
+              15.4344855
+            ],
+            [
+              43.6077051,
+              15.4617355
+            ],
+            [
+              43.5885579,
+              15.4863246
+            ],
+            [
+              43.5574431,
+              15.4875312
+            ],
+            [
+              43.5527873,
+              15.4684544
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

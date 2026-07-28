@@ -1,0 +1,85 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Griesheim (Hesse, Germany)",
+    "retrieved_at": "2026-07-28T13:05:46.155725Z",
+    "cache_key": "ce5a8fb87638d6a47e9f2c37d65bf35798e883155e985104d910e7e88212f989",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Griesheim (Hesse, Germany)"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 138449831,
+          "osm_type": "way",
+          "osm_id": 620369476,
+          "place_rank": 24,
+          "category": "landuse",
+          "type": "industrial",
+          "importance": 0.08007941481651024,
+          "addresstype": "industrial",
+          "name": "Equinix Germany GmbH",
+          "display_name": "Equinix Germany GmbH, 110, Griesheim, West, Frankfurt, Hesse, 65933, Germany",
+          "address": {
+            "industrial": "Equinix Germany GmbH",
+            "house_number": "110",
+            "suburb": "Griesheim",
+            "city_district": "West",
+            "city": "Frankfurt",
+            "state": "Hesse",
+            "ISO3166-2-lvl4": "DE-HE",
+            "postcode": "65933",
+            "country": "Germany",
+            "country_code": "de"
+          },
+          "namedetails": {
+            "name": "Equinix Germany GmbH"
+          }
+        },
+        "bbox": [
+          8.5849346,
+          50.0965111,
+          8.5889381,
+          50.0987953
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                8.5883464,
+                50.0987653
+              ],
+              [
+                8.5849881,
+                50.0976712
+              ],
+              [
+                8.5889381,
+                50.0965314
+              ],
+              [
+                8.5883464,
+                50.0987653
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

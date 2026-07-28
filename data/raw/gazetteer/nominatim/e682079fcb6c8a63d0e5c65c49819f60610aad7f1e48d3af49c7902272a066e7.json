@@ -1,0 +1,585 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Rennes (France)",
+    "retrieved_at": "2026-07-28T13:06:44.755321Z",
+    "cache_key": "e682079fcb6c8a63d0e5c65c49819f60610aad7f1e48d3af49c7902272a066e7",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Rennes (France)"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 281242044,
+          "osm_type": "relation",
+          "osm_id": 54517,
+          "place_rank": 16,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.6771085401488153,
+          "addresstype": "city",
+          "name": "Rennes",
+          "display_name": "Rennes, Ille-et-Vilaine, Brittany, Metropolitan France, France",
+          "address": {
+            "city": "Rennes",
+            "municipality": "Rennes",
+            "county": "Ille-et-Vilaine",
+            "ISO3166-2-lvl6": "FR-35",
+            "state": "Brittany",
+            "ISO3166-2-lvl4": "FR-BRE",
+            "region": "Metropolitan France",
+            "country": "France",
+            "country_code": "fr"
+          },
+          "namedetails": {
+            "name": "Rennes",
+            "name:ar": "رين",
+            "name:az": "Ren",
+            "name:be": "Рэн",
+            "name:bg": "Рен",
+            "name:br": "Roazhon",
+            "name:cy": "Roazhon",
+            "name:el": "Ρεν",
+            "name:en": "Rennes",
+            "name:eo": "Renno",
+            "name:fa": "رن",
+            "name:fr": "Rennes",
+            "name:he": "רן",
+            "name:hu": "Rennes",
+            "name:hy": "Ռեն",
+            "name:ja": "レンヌ",
+            "name:ka": "რენი",
+            "name:ko": "렌",
+            "name:la": "Condate",
+            "name:lt": "Renas",
+            "name:lv": "Renna",
+            "name:mr": "ऱ्हेन",
+            "name:oc": "Rennes",
+            "name:ru": "Ренн",
+            "name:sr": "Рен",
+            "name:ta": "ரேன்",
+            "name:th": "แรน",
+            "name:ug": "Rénn Shehiri",
+            "name:uk": "Ренн",
+            "name:ur": "رین",
+            "name:zh": "雷恩",
+            "name:frp": "Rènes",
+            "name:mzn": "رن",
+            "name:pnb": "رینے",
+            "name:fr-gallo": "Renn",
+            "name:an": "Roazhon",
+            "name:bn": "রেন",
+            "name:ce": "ГӀенн",
+            "name:cv": "Ренн",
+            "name:ga": "Roazhon",
+            "name:gd": "Roazhon",
+            "name:gv": "Roazhon",
+            "name:hi": "रेन्नेस",
+            "name:kk": "Ренн",
+            "name:kn": "ರಾಂ",
+            "name:kw": "Roazhon",
+            "name:mk": "Рен",
+            "name:os": "Ренн",
+            "name:ro": "Rennes",
+            "name:ts": "Wren",
+            "name:tt": "Ренн",
+            "_place_name:ug": "Rénn",
+            "name:be-tarask": "Рэн",
+            "old_name:it": "Renna"
+          }
+        },
+        "bbox": [
+          -1.7525876,
+          48.0769155,
+          -1.6244045,
+          48.1549705
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -1.7525876,
+                48.0876457
+              ],
+              [
+                -1.6944521,
+                48.0973202
+              ],
+              [
+                -1.7039999,
+                48.081734
+              ],
+              [
+                -1.635284,
+                48.0840886
+              ],
+              [
+                -1.6247249,
+                48.1549705
+              ],
+              [
+                -1.6921794,
+                48.1327137
+              ],
+              [
+                -1.725121,
+                48.1441078
+              ],
+              [
+                -1.7398913,
+                48.131316
+              ],
+              [
+                -1.728343,
+                48.1109938
+              ],
+              [
+                -1.7525876,
+                48.0876457
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 284173020,
+          "osm_type": "relation",
+          "osm_id": 1655027,
+          "place_rank": 14,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.5258731745594467,
+          "addresstype": "municipality",
+          "name": "Rennes",
+          "display_name": "Rennes, Ille-et-Vilaine, Brittany, Metropolitan France, France",
+          "address": {
+            "municipality": "Rennes",
+            "county": "Ille-et-Vilaine",
+            "ISO3166-2-lvl6": "FR-35",
+            "state": "Brittany",
+            "ISO3166-2-lvl4": "FR-BRE",
+            "region": "Metropolitan France",
+            "country": "France",
+            "country_code": "fr"
+          },
+          "namedetails": {
+            "name": "Rennes",
+            "name:ar": "رين",
+            "name:az": "Ren",
+            "name:be": "Рэн",
+            "name:bg": "Рен",
+            "name:br": "Roazhon",
+            "name:cy": "Roazhon",
+            "name:el": "Ρεν",
+            "name:en": "Rennes",
+            "name:eo": "Renno",
+            "name:fa": "رن",
+            "name:fr": "Rennes",
+            "name:he": "רן",
+            "name:hu": "Rennes",
+            "name:hy": "Ռեն",
+            "name:ja": "レンヌ",
+            "name:ka": "რენი",
+            "name:ko": "렌",
+            "name:la": "Condate",
+            "name:lt": "Renas",
+            "name:lv": "Renna",
+            "name:mr": "ऱ्हेन",
+            "name:oc": "Rennes",
+            "name:ru": "Ренн",
+            "name:sr": "Рен",
+            "name:ta": "ரேன்",
+            "name:th": "แรน",
+            "name:ug": "Rénn Shehiri",
+            "name:uk": "Ренн",
+            "name:ur": "رین",
+            "name:zh": "雷恩",
+            "name:frp": "Rènes",
+            "name:mzn": "رن",
+            "name:pnb": "رینے",
+            "name:fr-gallo": "Renn",
+            "name:be-tarask": "Рэн"
+          }
+        },
+        "bbox": [
+          -2.2889840,
+          47.9340931,
+          -1.2839440,
+          48.3796360
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -2.288984,
+                48.0008081
+              ],
+              [
+                -2.1439232,
+                47.9839547
+              ],
+              [
+                -2.1102331,
+                47.9528294
+              ],
+              [
+                -2.0731987,
+                47.9442887
+              ],
+              [
+                -1.9635953,
+                47.9733975
+              ],
+              [
+                -1.9738051,
+                48.0134865
+              ],
+              [
+                -1.8453943,
+                48.0163681
+              ],
+              [
+                -1.8169004,
+                48.0473201
+              ],
+              [
+                -1.7764126,
+                48.031405
+              ],
+              [
+                -1.7847711,
+                48.003713
+              ],
+              [
+                -1.7517841,
+                47.9962856
+              ],
+              [
+                -1.7498284,
+                47.949429
+              ],
+              [
+                -1.7184866,
+                47.9342882
+              ],
+              [
+                -1.6728261,
+                47.935652
+              ],
+              [
+                -1.6663181,
+                47.9727227
+              ],
+              [
+                -1.6416739,
+                47.9515513
+              ],
+              [
+                -1.6200137,
+                47.9756699
+              ],
+              [
+                -1.602714,
+                47.9713543
+              ],
+              [
+                -1.6058454,
+                47.9548887
+              ],
+              [
+                -1.5659124,
+                47.9581509
+              ],
+              [
+                -1.5219977,
+                47.9951948
+              ],
+              [
+                -1.5286255,
+                48.022937
+              ],
+              [
+                -1.4855987,
+                48.0335179
+              ],
+              [
+                -1.4668699,
+                47.9868593
+              ],
+              [
+                -1.4393536,
+                47.9731084
+              ],
+              [
+                -1.4026773,
+                47.9803389
+              ],
+              [
+                -1.3775548,
+                48.0055708
+              ],
+              [
+                -1.3970751,
+                48.0234307
+              ],
+              [
+                -1.3361129,
+                48.0308226
+              ],
+              [
+                -1.4092281,
+                48.0561603
+              ],
+              [
+                -1.4099615,
+                48.0350165
+              ],
+              [
+                -1.4406389,
+                48.0378479
+              ],
+              [
+                -1.4237774,
+                48.0538988
+              ],
+              [
+                -1.454238,
+                48.0771919
+              ],
+              [
+                -1.4549113,
+                48.0952318
+              ],
+              [
+                -1.4337842,
+                48.0945055
+              ],
+              [
+                -1.4400724,
+                48.1382732
+              ],
+              [
+                -1.4050463,
+                48.1561027
+              ],
+              [
+                -1.3850009,
+                48.1475908
+              ],
+              [
+                -1.3524482,
+                48.1709935
+              ],
+              [
+                -1.3580441,
+                48.1942093
+              ],
+              [
+                -1.3428275,
+                48.2081769
+              ],
+              [
+                -1.283944,
+                48.2305765
+              ],
+              [
+                -1.3044948,
+                48.2293051
+              ],
+              [
+                -1.332636,
+                48.2552575
+              ],
+              [
+                -1.4033557,
+                48.2621581
+              ],
+              [
+                -1.3897767,
+                48.3037352
+              ],
+              [
+                -1.4787697,
+                48.3227592
+              ],
+              [
+                -1.461332,
+                48.3466198
+              ],
+              [
+                -1.5044591,
+                48.3630917
+              ],
+              [
+                -1.5031174,
+                48.3737583
+              ],
+              [
+                -1.5064414,
+                48.379636
+              ],
+              [
+                -1.5458369,
+                48.3503033
+              ],
+              [
+                -1.6562202,
+                48.3496768
+              ],
+              [
+                -1.6776616,
+                48.3175368
+              ],
+              [
+                -1.7413412,
+                48.322298
+              ],
+              [
+                -1.7686045,
+                48.2780624
+              ],
+              [
+                -1.807546,
+                48.296658
+              ],
+              [
+                -1.9001696,
+                48.2671323
+              ],
+              [
+                -1.9148625,
+                48.2847256
+              ],
+              [
+                -1.904875,
+                48.2984344
+              ],
+              [
+                -1.9234852,
+                48.3060859
+              ],
+              [
+                -1.9556499,
+                48.289906
+              ],
+              [
+                -1.9942949,
+                48.2987484
+              ],
+              [
+                -2.0141662,
+                48.2796725
+              ],
+              [
+                -2.0532267,
+                48.2982698
+              ],
+              [
+                -2.0800021,
+                48.2932665
+              ],
+              [
+                -2.0806073,
+                48.2769904
+              ],
+              [
+                -2.1141884,
+                48.271464
+              ],
+              [
+                -2.0959016,
+                48.2663378
+              ],
+              [
+                -2.1065089,
+                48.2518027
+              ],
+              [
+                -2.1532678,
+                48.2619312
+              ],
+              [
+                -2.1870316,
+                48.2475718
+              ],
+              [
+                -2.1839583,
+                48.2103583
+              ],
+              [
+                -2.2277181,
+                48.2111152
+              ],
+              [
+                -2.223205,
+                48.1729223
+              ],
+              [
+                -2.2490402,
+                48.1564713
+              ],
+              [
+                -2.2359613,
+                48.1445787
+              ],
+              [
+                -2.2832233,
+                48.1453321
+              ],
+              [
+                -2.2871822,
+                48.1330336
+              ],
+              [
+                -2.2534016,
+                48.1064328
+              ],
+              [
+                -2.256056,
+                48.0630806
+              ],
+              [
+                -2.2194541,
+                48.0809135
+              ],
+              [
+                -2.1683955,
+                48.0763397
+              ],
+              [
+                -2.1886178,
+                48.0525956
+              ],
+              [
+                -2.2614202,
+                48.0415174
+              ],
+              [
+                -2.288984,
+                48.0008081
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

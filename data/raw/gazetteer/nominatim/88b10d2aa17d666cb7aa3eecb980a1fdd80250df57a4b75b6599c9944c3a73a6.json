@@ -1,0 +1,95 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Castelló d'Empúries (Spain)",
+    "retrieved_at": "2026-07-28T13:05:25.349416Z",
+    "cache_key": "88b10d2aa17d666cb7aa3eecb980a1fdd80250df57a4b75b6599c9944c3a73a6",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Castelló d'Empúries (Spain)"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 84895712,
+          "osm_type": "relation",
+          "osm_id": 347511,
+          "place_rank": 16,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.526277110314517,
+          "addresstype": "municipality",
+          "name": "Castelló d'Empúries",
+          "display_name": "Castelló d'Empúries, Upper Empordà, Girona, Catalonia, 17486, Spain",
+          "address": {
+            "municipality": "Castelló d'Empúries",
+            "county": "Upper Empordà",
+            "province": "Girona",
+            "ISO3166-2-lvl6": "ES-GI",
+            "state": "Catalonia",
+            "ISO3166-2-lvl4": "ES-CT",
+            "postcode": "17486",
+            "country": "Spain",
+            "country_code": "es"
+          },
+          "namedetails": {
+            "name": "Castelló d'Empúries",
+            "name:ca": "Castelló d'Empúries",
+            "old_name:es": "Castellón de Ampurias",
+            "name:es": "Castelló d'Empúries"
+          }
+        },
+        "bbox": [
+          3.0493111,
+          42.2038710,
+          3.1504787,
+          42.2885519
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                3.0493111,
+                42.2608568
+              ],
+              [
+                3.0668634,
+                42.2119211
+              ],
+              [
+                3.1091692,
+                42.2038973
+              ],
+              [
+                3.1504787,
+                42.2582165
+              ],
+              [
+                3.1050236,
+                42.2885519
+              ],
+              [
+                3.0493111,
+                42.2608568
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

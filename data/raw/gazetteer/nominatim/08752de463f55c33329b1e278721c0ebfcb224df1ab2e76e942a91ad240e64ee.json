@@ -1,0 +1,238 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Baza (Spain)",
+    "retrieved_at": "2026-07-28T13:05:07.269052Z",
+    "cache_key": "08752de463f55c33329b1e278721c0ebfcb224df1ab2e76e942a91ad240e64ee",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Baza (Spain)"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 295519040,
+          "osm_type": "relation",
+          "osm_id": 342621,
+          "place_rank": 16,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.5500458279012252,
+          "addresstype": "city",
+          "name": "Baza",
+          "display_name": "Baza, Comarca de Baza, Granada, Andalusia, 18800, Spain",
+          "address": {
+            "city": "Baza",
+            "county": "Comarca de Baza",
+            "province": "Granada",
+            "ISO3166-2-lvl6": "ES-GR",
+            "state": "Andalusia",
+            "ISO3166-2-lvl4": "ES-AN",
+            "postcode": "18800",
+            "country": "Spain",
+            "country_code": "es"
+          },
+          "namedetails": {
+            "name": "Baza",
+            "name:ar": "باثا"
+          }
+        },
+        "bbox": [
+          -2.9405638,
+          37.2115312,
+          -2.5851762,
+          37.6445680
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -2.9405638,
+                37.4389257
+              ],
+              [
+                -2.9166326,
+                37.3992327
+              ],
+              [
+                -2.8915295,
+                37.3903605
+              ],
+              [
+                -2.898858,
+                37.3679227
+              ],
+              [
+                -2.8361992,
+                37.3635522
+              ],
+              [
+                -2.8320947,
+                37.325616
+              ],
+              [
+                -2.8619161,
+                37.3132156
+              ],
+              [
+                -2.8524436,
+                37.2923277
+              ],
+              [
+                -2.7790038,
+                37.2626557
+              ],
+              [
+                -2.7590314,
+                37.2267283
+              ],
+              [
+                -2.7330233,
+                37.2373212
+              ],
+              [
+                -2.6601153,
+                37.2119941
+              ],
+              [
+                -2.6656506,
+                37.2853295
+              ],
+              [
+                -2.6517048,
+                37.3296827
+              ],
+              [
+                -2.7495856,
+                37.3387828
+              ],
+              [
+                -2.7671297,
+                37.4511845
+              ],
+              [
+                -2.6961197,
+                37.4947384
+              ],
+              [
+                -2.5851762,
+                37.4704152
+              ],
+              [
+                -2.5951082,
+                37.501258
+              ],
+              [
+                -2.6503601,
+                37.5189659
+              ],
+              [
+                -2.6558523,
+                37.5599572
+              ],
+              [
+                -2.7119637,
+                37.563614
+              ],
+              [
+                -2.7537254,
+                37.5971485
+              ],
+              [
+                -2.7973695,
+                37.6022796
+              ],
+              [
+                -2.7838007,
+                37.6168298
+              ],
+              [
+                -2.8299449,
+                37.644568
+              ],
+              [
+                -2.795303,
+                37.5834111
+              ],
+              [
+                -2.8008477,
+                37.5260502
+              ],
+              [
+                -2.922522,
+                37.4496955
+              ],
+              [
+                -2.9386226,
+                37.4787569
+              ],
+              [
+                -2.9405638,
+                37.4389257
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 295590547,
+          "osm_type": "node",
+          "osm_id": 1470838084,
+          "place_rank": 18,
+          "category": "place",
+          "type": "town",
+          "importance": 0.5500458279012252,
+          "addresstype": "town",
+          "name": "Baza",
+          "display_name": "Baza, Comarca de Baza, Granada, Andalusia, 18800, Spain",
+          "address": {
+            "town": "Baza",
+            "city": "Baza",
+            "county": "Comarca de Baza",
+            "province": "Granada",
+            "ISO3166-2-lvl6": "ES-GR",
+            "state": "Andalusia",
+            "ISO3166-2-lvl4": "ES-AN",
+            "postcode": "18800",
+            "country": "Spain",
+            "country_code": "es"
+          },
+          "namedetails": {
+            "name": "Baza",
+            "name:ar": "باثا",
+            "name:es": "Baza"
+          }
+        },
+        "bbox": [
+          -2.8109805,
+          37.4488637,
+          -2.7309805,
+          37.5288637
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -2.7709805,
+            37.4888637
+          ]
+        }
+      }
+    ]
+  }
+}

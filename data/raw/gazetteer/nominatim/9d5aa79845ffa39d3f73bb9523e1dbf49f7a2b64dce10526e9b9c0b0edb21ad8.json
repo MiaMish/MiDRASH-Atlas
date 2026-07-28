@@ -1,0 +1,116 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Leiden, Netherlands",
+    "retrieved_at": "2026-07-28T13:06:04.466579Z",
+    "cache_key": "9d5aa79845ffa39d3f73bb9523e1dbf49f7a2b64dce10526e9b9c0b0edb21ad8",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Leiden, Netherlands"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 158224021,
+          "osm_type": "relation",
+          "osm_id": 295092,
+          "place_rank": 16,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.67163235913662,
+          "addresstype": "city",
+          "name": "Leiden",
+          "display_name": "Leiden, South Holland, Netherlands",
+          "address": {
+            "city": "Leiden",
+            "state": "South Holland",
+            "ISO3166-2-lvl4": "NL-ZH",
+            "country": "Netherlands",
+            "country_code": "nl"
+          },
+          "namedetails": {
+            "name": "Leiden",
+            "name:es": "Leiden",
+            "name:fr": "Leyde",
+            "name:fy": "Leien",
+            "name:it": "Leida",
+            "name:la": "Lugdunum Batavorum",
+            "name:lt": "Leidenas",
+            "name:lv": "Leidene",
+            "name:nl": "Leiden",
+            "name:pl": "Lejda",
+            "name:pt": "Leida",
+            "alt_name:la": "Lugduni Batavorum",
+            "name:ar": "ليدن",
+            "name:ja": "ライデン",
+            "name:mk": "Лајден",
+            "name:ml": "ലെയ്ഡൻ",
+            "name:ru": "Лейден",
+            "name:sr": "Лајден",
+            "name:uk": "Лейден",
+            "name:zh": "莱顿",
+            "name:zh-Hant": "萊頓"
+          }
+        },
+        "bbox": [
+          4.4388652,
+          52.1189516,
+          4.5240721,
+          52.1846262
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                4.4388652,
+                52.1532645
+              ],
+              [
+                4.4446782,
+                52.1406199
+              ],
+              [
+                4.4654056,
+                52.1494429
+              ],
+              [
+                4.4729755,
+                52.1189516
+              ],
+              [
+                4.5240721,
+                52.1474052
+              ],
+              [
+                4.5183538,
+                52.1824918
+              ],
+              [
+                4.5038811,
+                52.1846058
+              ],
+              [
+                4.4388652,
+                52.1532645
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

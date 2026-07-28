@@ -1,0 +1,124 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Tivoli (Italy)",
+    "retrieved_at": "2026-07-28T13:07:09.409691Z",
+    "cache_key": "26a8e99c94db697788f61fb9257ac8a05005c0364a992feabf457195603fc03f",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Tivoli (Italy)"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 80788144,
+          "osm_type": "relation",
+          "osm_id": 41662,
+          "place_rank": 16,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.6048838700052027,
+          "addresstype": "town",
+          "name": "Tivoli",
+          "display_name": "Tivoli, Roma Capitale, Lazio, Italy",
+          "address": {
+            "town": "Tivoli",
+            "county": "Roma Capitale",
+            "ISO3166-2-lvl6": "IT-RM",
+            "state": "Lazio",
+            "ISO3166-2-lvl4": "IT-62",
+            "country": "Italy",
+            "country_code": "it"
+          },
+          "namedetails": {
+            "name": "Tivoli",
+            "name:ru": "Тиволи",
+            "name:uk": "Тіволі"
+          }
+        },
+        "bbox": [
+          12.6899187,
+          41.9164454,
+          12.8477635,
+          42.0064328
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                12.6899187,
+                41.9358609
+              ],
+              [
+                12.8150475,
+                41.916637
+              ],
+              [
+                12.8469142,
+                41.9434734
+              ],
+              [
+                12.8235796,
+                41.9570168
+              ],
+              [
+                12.8460592,
+                41.9855552
+              ],
+              [
+                12.8252012,
+                42.0060842
+              ],
+              [
+                12.8015713,
+                42.0046709
+              ],
+              [
+                12.8032869,
+                41.9902196
+              ],
+              [
+                12.7563905,
+                42.0022212
+              ],
+              [
+                12.7792213,
+                41.9797685
+              ],
+              [
+                12.7632755,
+                41.9559487
+              ],
+              [
+                12.7282362,
+                41.9522174
+              ],
+              [
+                12.7152782,
+                41.9721641
+              ],
+              [
+                12.6899187,
+                41.9358609
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

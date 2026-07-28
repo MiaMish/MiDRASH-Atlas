@@ -9,6 +9,7 @@ import (
 	"net/http"
 	"os"
 	"strings"
+	"time"
 
 	"midrash-atlas/apps/api/internal/curation"
 	"midrash-atlas/apps/api/internal/curationpilot"
@@ -21,6 +22,8 @@ import (
 )
 
 func main() {
+	log.SetOutput(os.Stdout)
+	log.SetFlags(log.Ldate | log.Ltime | log.Lmicroseconds)
 	if len(os.Args) < 2 {
 		usage()
 	}
@@ -78,6 +81,21 @@ func curationPilot(args []string) {
 			log.Fatal(err)
 		}
 	}
+	cfg.OnProgress = func(progress curationpilot.Progress) {
+		prefix := fmt.Sprintf("[%d/%d] curation %q", progress.Index, progress.Total, progress.PlaceLabel)
+		switch progress.Phase {
+		case "started":
+			log.Printf("%s started provider=%s model=%s", prefix, cfg.Provider, cfg.Model)
+		case "completed":
+			log.Printf("%s completed status=%s duration=%s", prefix, progress.Status, progress.Duration.Round(time.Millisecond))
+		case "skipped":
+			log.Printf("%s skipped reason=%s", prefix, progress.Status)
+		case "failed":
+			log.Printf("%s failed duration=%s error=%v", prefix, progress.Duration.Round(time.Millisecond), progress.Err)
+		}
+	}
+	log.Printf("starting curation run provider=%s model=%s only_ai_not_checked=%t skip_human_reviewed=%t",
+		cfg.Provider, cfg.Model, cfg.OnlyAINotChecked, cfg.SkipHumanReviewed)
 	llmClient := llm.NewClient(llm.Config{
 		OpenAIAPIKey:  os.Getenv("OPENAI_API_KEY"),
 		OllamaBaseURL: os.Getenv("OLLAMA_BASE_URL"),
@@ -121,6 +139,19 @@ func gazetteerPilot(args []string) {
 	if err != nil {
 		log.Fatal(err)
 	}
+	cfg.OnProgress = func(progress gazetteerpilot.Progress) {
+		prefix := fmt.Sprintf("[%d/%d] gazetteer %q", progress.Index, progress.Total, progress.PlaceLabel)
+		switch progress.Phase {
+		case "started":
+			log.Printf("%s started query=%q", prefix, progress.Query)
+		case "completed":
+			log.Printf("%s completed candidates=%d cache=%t duration=%s",
+				prefix, progress.CandidateCount, progress.FromCache, progress.Duration.Round(time.Millisecond))
+		case "failed":
+			log.Printf("%s failed duration=%s error=%v", prefix, progress.Duration.Round(time.Millisecond), progress.Err)
+		}
+	}
+	log.Printf("starting gazetteer acquisition all_places=%t output=%s", cfg.AllPlaces, cfg.OutputPath)
 	output, err := gazetteerpilot.Run(context.Background(), client, cfg)
 	if err != nil {
 		log.Fatal(err)
@@ -138,10 +169,12 @@ func export(args []string) {
 	fs.StringVar(&cfg.PlaceGeometries, "place-geometries", "configs/atlas/place_geometries.json", "curated contextual geometry variants")
 	fs.StringVar(&cfg.OutputDir, "output", "data/generated/atlas", "output directory")
 	_ = fs.Parse(args)
+	startedAt := time.Now()
+	log.Printf("starting atlas export input=%s output=%s", cfg.InputJSON, cfg.OutputDir)
 	if err := atlas.Export(cfg); err != nil {
 		log.Fatal(err)
 	}
-	fmt.Printf("Atlas export written to %s\n", cfg.OutputDir)
+	log.Printf("atlas export completed output=%s duration=%s", cfg.OutputDir, time.Since(startedAt).Round(time.Millisecond))
 }
 
 func serve(args []string) {

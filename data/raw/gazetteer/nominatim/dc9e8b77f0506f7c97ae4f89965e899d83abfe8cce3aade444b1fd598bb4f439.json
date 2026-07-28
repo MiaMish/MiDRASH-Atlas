@@ -1,0 +1,397 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Dreux (France)",
+    "retrieved_at": "2026-07-28T13:05:31.189742Z",
+    "cache_key": "dc9e8b77f0506f7c97ae4f89965e899d83abfe8cce3aade444b1fd598bb4f439",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Dreux (France)"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 95945507,
+          "osm_type": "relation",
+          "osm_id": 70807,
+          "place_rank": 16,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.5913256994694797,
+          "addresstype": "town",
+          "name": "Dreux",
+          "display_name": "Dreux, Eure-et-Loir, Centre-Val de Loire, Metropolitan France, 28100, France",
+          "address": {
+            "town": "Dreux",
+            "municipality": "Dreux",
+            "county": "Eure-et-Loir",
+            "ISO3166-2-lvl6": "FR-28",
+            "state": "Centre-Val de Loire",
+            "ISO3166-2-lvl4": "FR-CVL",
+            "region": "Metropolitan France",
+            "postcode": "28100",
+            "country": "France",
+            "country_code": "fr"
+          },
+          "namedetails": {
+            "name": "Dreux",
+            "name:am": "ድርው",
+            "name:fr": "Dreux",
+            "name:ja": "ドルー",
+            "name:la": "Drocae",
+            "name:lt": "Drė",
+            "name:ru": "Дрё",
+            "name:sr": "Дре",
+            "name:uk": "Дре",
+            "name:zh": "德勒",
+            "old_name:la": "Durocassium",
+            "name:ko": "드뢰",
+            "old_name:it": "Droge;Droco;Durocassio"
+          }
+        },
+        "bbox": [
+          1.3094944,
+          48.7170196,
+          1.4062220,
+          48.7794296
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                1.3094944,
+                48.7545596
+              ],
+              [
+                1.3771837,
+                48.7170196
+              ],
+              [
+                1.406222,
+                48.7537821
+              ],
+              [
+                1.3542126,
+                48.7794296
+              ],
+              [
+                1.3094944,
+                48.7545596
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 95975195,
+          "osm_type": "relation",
+          "osm_id": 2201280,
+          "place_rank": 14,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.5191410767014262,
+          "addresstype": "municipality",
+          "name": "Dreux",
+          "display_name": "Dreux, Eure-et-Loir, Centre-Val de Loire, Metropolitan France, France",
+          "address": {
+            "municipality": "Dreux",
+            "county": "Eure-et-Loir",
+            "ISO3166-2-lvl6": "FR-28",
+            "state": "Centre-Val de Loire",
+            "ISO3166-2-lvl4": "FR-CVL",
+            "region": "Metropolitan France",
+            "country": "France",
+            "country_code": "fr"
+          },
+          "namedetails": {
+            "name": "Dreux",
+            "name:am": "ድርው",
+            "name:el": "Ντρέ",
+            "name:fr": "Dreux",
+            "name:ja": "ドルー",
+            "name:la": "Drocae",
+            "name:lt": "Drė",
+            "name:ru": "Дрё",
+            "name:sr": "Дре",
+            "name:uk": "Дре",
+            "name:zh": "德勒",
+            "old_name:la": "Durocassium"
+          }
+        },
+        "bbox": [
+          0.8094456,
+          48.5016515,
+          1.6511872,
+          48.9410263
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.8094456,
+                48.6632268
+              ],
+              [
+                0.8313451,
+                48.6336028
+              ],
+              [
+                0.8192176,
+                48.6096382
+              ],
+              [
+                0.8469006,
+                48.6096638
+              ],
+              [
+                0.8498478,
+                48.5840879
+              ],
+              [
+                0.868722,
+                48.5728714
+              ],
+              [
+                0.9443585,
+                48.5492214
+              ],
+              [
+                0.9643969,
+                48.5559517
+              ],
+              [
+                1.0255415,
+                48.5165185
+              ],
+              [
+                1.0653837,
+                48.5237523
+              ],
+              [
+                1.165718,
+                48.5022762
+              ],
+              [
+                1.1981869,
+                48.5026575
+              ],
+              [
+                1.2097227,
+                48.5206944
+              ],
+              [
+                1.2915556,
+                48.515873
+              ],
+              [
+                1.32802,
+                48.5461765
+              ],
+              [
+                1.354776,
+                48.5450256
+              ],
+              [
+                1.3518081,
+                48.5557503
+              ],
+              [
+                1.3796568,
+                48.5487071
+              ],
+              [
+                1.3622027,
+                48.5658563
+              ],
+              [
+                1.3795933,
+                48.5779839
+              ],
+              [
+                1.4541541,
+                48.5603071
+              ],
+              [
+                1.4933837,
+                48.5804056
+              ],
+              [
+                1.5275961,
+                48.5766131
+              ],
+              [
+                1.5409783,
+                48.6070801
+              ],
+              [
+                1.5875052,
+                48.6018466
+              ],
+              [
+                1.5970275,
+                48.6335369
+              ],
+              [
+                1.6255153,
+                48.622463
+              ],
+              [
+                1.6511872,
+                48.6382053
+              ],
+              [
+                1.6026689,
+                48.6632221
+              ],
+              [
+                1.6117833,
+                48.6893526
+              ],
+              [
+                1.576503,
+                48.7025916
+              ],
+              [
+                1.6266357,
+                48.7480626
+              ],
+              [
+                1.5819175,
+                48.7618027
+              ],
+              [
+                1.5770877,
+                48.8050484
+              ],
+              [
+                1.5912424,
+                48.8147955
+              ],
+              [
+                1.5788595,
+                48.8296685
+              ],
+              [
+                1.5982716,
+                48.8388292
+              ],
+              [
+                1.577508,
+                48.8445966
+              ],
+              [
+                1.5837853,
+                48.860693
+              ],
+              [
+                1.5455432,
+                48.8701481
+              ],
+              [
+                1.5634771,
+                48.8904843
+              ],
+              [
+                1.5013958,
+                48.9410263
+              ],
+              [
+                1.4478038,
+                48.924421
+              ],
+              [
+                1.4717041,
+                48.8972578
+              ],
+              [
+                1.4609215,
+                48.8727051
+              ],
+              [
+                1.3609795,
+                48.8335133
+              ],
+              [
+                1.37474,
+                48.7812702
+              ],
+              [
+                1.329742,
+                48.7610084
+              ],
+              [
+                1.2604144,
+                48.7577471
+              ],
+              [
+                1.2430637,
+                48.7697139
+              ],
+              [
+                1.2230677,
+                48.7579312
+              ],
+              [
+                1.1214058,
+                48.7892255
+              ],
+              [
+                1.1279018,
+                48.7655134
+              ],
+              [
+                1.1139042,
+                48.7460826
+              ],
+              [
+                1.0640528,
+                48.7594728
+              ],
+              [
+                1.0341024,
+                48.7286999
+              ],
+              [
+                0.9780689,
+                48.7309442
+              ],
+              [
+                0.921262,
+                48.7091621
+              ],
+              [
+                0.8902629,
+                48.7204263
+              ],
+              [
+                0.86403,
+                48.6878033
+              ],
+              [
+                0.8094456,
+                48.6632268
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

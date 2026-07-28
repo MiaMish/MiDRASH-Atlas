@@ -1,0 +1,122 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Chania (Greece)",
+    "retrieved_at": "2026-07-28T13:05:26.820606Z",
+    "cache_key": "468f25ecb24ae7fcfc8dffa31595f4db463a60bcd774ab9afa0c3170f3b72c33",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Chania (Greece)"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 54991665,
+          "osm_type": "node",
+          "osm_id": 31376615,
+          "place_rank": 16,
+          "category": "place",
+          "type": "city",
+          "importance": 0.573921585504976,
+          "addresstype": "city",
+          "name": "Chania",
+          "display_name": "Chania, Municipality of Chania, Chania Regional Unit, Region of Crete, 731 36, Greece",
+          "address": {
+            "city": "Chania",
+            "municipality": "Municipality of Chania",
+            "county": "Chania Regional Unit",
+            "state": "Region of Crete",
+            "ISO3166-2-lvl5": "GR-M",
+            "postcode": "731 36",
+            "country": "Greece",
+            "country_code": "gr"
+          },
+          "namedetails": {
+            "name": "Χανιά",
+            "name:an": "Janiá",
+            "name:ar": "خانية",
+            "name:be": "Ханья",
+            "name:bg": "Ханя",
+            "name:ca": "Khanià",
+            "name:cs": "Chania",
+            "name:da": "Chania",
+            "name:de": "Chania",
+            "name:el": "Χανιά",
+            "name:en": "Chania",
+            "name:eo": "Ĥanio",
+            "name:es": "La Canea",
+            "name:et": "Chaniá",
+            "name:eu": "Kanea",
+            "name:fa": "خانیا",
+            "name:fi": "Hania",
+            "name:fr": "La Canée",
+            "name:he": "חאניה",
+            "name:hr": "Hania",
+            "name:hu": "Haniá",
+            "name:hy": "Խանիա",
+            "name:id": "Khania",
+            "name:io": "Hania",
+            "name:it": "Chania",
+            "name:ja": "ハニア",
+            "name:ka": "ხანია",
+            "name:ko": "하니아",
+            "name:la": "Cydonia",
+            "name:li": "Chania",
+            "name:lt": "Chanija",
+            "name:lv": "Hanija",
+            "name:mk": "Хања",
+            "name:ml": "ഖാനിയ",
+            "name:nb": "Khaniá",
+            "name:nl": "Chania",
+            "name:nn": "Khaniá",
+            "name:oc": "Canèa",
+            "name:pl": "Chania",
+            "name:pt": "Chania",
+            "name:ro": "Chania",
+            "name:ru": "Ханья",
+            "name:sk": "Chania",
+            "name:sl": "Hanija",
+            "name:sq": "Hania",
+            "name:sr": "Ханија",
+            "name:sv": "Chania",
+            "name:th": "คาเนีย",
+            "name:tr": "Hanya",
+            "name:uk": "Ханья",
+            "name:ur": "خانیا",
+            "name:vi": "Chania",
+            "name:zh": "干尼亞",
+            "int_name": "Chania",
+            "alt_name:ar": "خانيا",
+            "alt_name:fi": "Chaniá"
+          }
+        },
+        "bbox": [
+          23.8591544,
+          35.3520831,
+          24.1791544,
+          35.6720831
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            24.0191544,
+            35.5120831
+          ]
+        }
+      }
+    ]
+  }
+}

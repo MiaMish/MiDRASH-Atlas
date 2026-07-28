@@ -1,0 +1,390 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Philadelphia, PA, USA",
+    "retrieved_at": "2026-07-28T13:06:38.52763Z",
+    "cache_key": "efb89c50f5fe6ced1486c2f79646f93b6b1e3cf9135ca894343f9a6286bb50f5",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Philadelphia, PA, USA"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 358036432,
+          "osm_type": "relation",
+          "osm_id": 188022,
+          "place_rank": 16,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.7720581621573966,
+          "addresstype": "city",
+          "name": "Philadelphia",
+          "display_name": "Philadelphia, Philadelphia County, Pennsylvania, United States",
+          "address": {
+            "city": "Philadelphia",
+            "county": "Philadelphia County",
+            "state": "Pennsylvania",
+            "ISO3166-2-lvl4": "US-PA",
+            "country": "United States",
+            "country_code": "us"
+          },
+          "namedetails": {
+            "name": "Philadelphia",
+            "name:ar": "فيلادلفيا",
+            "name:be": "Філадэльфія",
+            "name:ca": "Filadèlfia",
+            "name:cs": "Filadelfie",
+            "name:de": "Philadelphia",
+            "name:el": "Φιλαδέλφεια",
+            "name:en": "Philadelphia",
+            "name:es": "Filadelfia",
+            "name:fa": "فیلادلفیا",
+            "name:fr": "Philadelphie",
+            "name:he": "פילדלפיה",
+            "name:hi": "फ़िलडेल्फ़िया",
+            "name:it": "Filadelfia",
+            "name:ja": "フィラデルフィア",
+            "name:kn": "ಫಿಲಡೆಲ್ಫಿಯ",
+            "name:ko": "필라델피아",
+            "name:lv": "Filadelfija",
+            "name:oc": "Filadèlfia",
+            "name:pa": "ਫ਼ਿਲਾਡੈਲਫ਼ੀਆ",
+            "name:pl": "Filadelfia",
+            "name:pt": "Filadélfia",
+            "name:ru": "Филадельфия",
+            "name:sr": "Филаделфија",
+            "name:ta": "பிலடெல்பியா",
+            "name:te": "ఫిలడెల్ఫియా",
+            "name:tr": "Filadelfiya",
+            "name:uk": "Філадельфія",
+            "name:ur": "فلاڈیلفیا",
+            "name:zh": "费城;費城",
+            "loc_name": "Philly",
+            "name:azb": "فیلادلفیا",
+            "name:cay": "Tganadaęˀgó:wah",
+            "name:chr": "ᏘᎵᏕᏫᏏ",
+            "name:grc": "Φιλαδέλφεια",
+            "name:moh": "Tsi kanataien’kó:wa",
+            "name:ono": "Tganadayęʔgóꞏnah",
+            "name:zh-Hans": "费城",
+            "name:zh-Hant": "費城",
+            "name:am": "ፊላዴልፊያ",
+            "name:ay": "Philadelphia",
+            "name:az": "Filadelfiya",
+            "name:ba": "Филадельфия",
+            "name:bg": "Филаделфия",
+            "name:bm": "Philadelphie",
+            "name:bn": "ফিলাডেলফিয়া",
+            "name:ce": "Филадельфи",
+            "name:co": "Filadelfia",
+            "name:cv": "Филадельфи",
+            "name:eo": "Filadelfio",
+            "name:eu": "Filadelfia",
+            "name:ga": "Filideilfia",
+            "name:gd": "Philadelphia",
+            "name:gl": "Filadelfia",
+            "name:gn": "Filadelfia",
+            "name:gu": "ફિલાડેલ્ફિયા",
+            "name:hr": "Philadelphia",
+            "name:ht": "Philadelphia",
+            "name:hu": "Philadelphia",
+            "name:hy": "Ֆիլադելֆիա",
+            "name:id": "Philadelphia",
+            "name:ka": "ფილადელფია",
+            "name:kk": "Филадельфия",
+            "name:km": "ភីឡាដេលផ្យា",
+            "name:ks": "فِلاڈیٚلفِیا",
+            "name:ku": "Fîladelfiya",
+            "name:li": "Philadelphia",
+            "name:lt": "Filadelfija",
+            "name:mi": "Whiratarawhia",
+            "name:mk": "Филаделфија",
+            "name:ml": "ഫിലഡെൽഫിയ",
+            "name:mn": "Филадельфи",
+            "name:mr": "फिलाडेल्फिया",
+            "name:my": "ဖီလာဒဲလ်ဖီးယားမြို့",
+            "name:ne": "फिलाडेल्फिया",
+            "name:nl": "Philadelphia",
+            "name:nv": "Beeʼeldíílsání",
+            "name:os": "Филадельфи",
+            "name:ps": "پيلادېلپيا",
+            "name:qu": "Philadelphia",
+            "name:sc": "Filadelfia",
+            "name:sd": "فلاڊيلفيا",
+            "name:sl": "Philadelphia",
+            "name:sq": "Filadelfia",
+            "name:tg": "Филаделфия",
+            "name:th": "ฟิลาเดลเฟีย",
+            "name:tt": "Филадельфия",
+            "name:ug": "Filadélfiye",
+            "name:uz": "Filadelfiya",
+            "name:vi": "Philadelphia",
+            "name:yi": "פילאדעלפיע",
+            "name:ckb": "فیلادێلفیا",
+            "name:wal": "Filaadelfiya"
+          }
+        },
+        "bbox": [
+          -75.2802660,
+          39.8670050,
+          -74.9558314,
+          40.1379593
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -75.280266,
+                39.974964
+              ],
+              [
+                -75.247778,
+                39.963876
+              ],
+              [
+                -75.2348301,
+                39.9373145
+              ],
+              [
+                -75.262528,
+                39.876561
+              ],
+              [
+                -75.2114167,
+                39.867005
+              ],
+              [
+                -75.1431616,
+                39.8848859
+              ],
+              [
+                -75.1283739,
+                39.9096944
+              ],
+              [
+                -75.1325748,
+                39.9567246
+              ],
+              [
+                -75.071264,
+                39.980493
+              ],
+              [
+                -74.9743916,
+                40.0498029
+              ],
+              [
+                -74.9851775,
+                40.0571902
+              ],
+              [
+                -74.9581526,
+                40.0843517
+              ],
+              [
+                -74.963791,
+                40.1176369
+              ],
+              [
+                -75.015094,
+                40.1379593
+              ],
+              [
+                -75.1089339,
+                40.0457168
+              ],
+              [
+                -75.176473,
+                40.0846702
+              ],
+              [
+                -75.1884892,
+                40.0727695
+              ],
+              [
+                -75.2236046,
+                40.0929106
+              ],
+              [
+                -75.2644328,
+                40.0540944
+              ],
+              [
+                -75.2057752,
+                40.0116551
+              ],
+              [
+                -75.280266,
+                39.974964
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 358221636,
+          "osm_type": "relation",
+          "osm_id": 417845,
+          "place_rank": 12,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.5710434524956354,
+          "addresstype": "county",
+          "name": "Philadelphia County",
+          "display_name": "Philadelphia County, Pennsylvania, United States",
+          "address": {
+            "county": "Philadelphia County",
+            "state": "Pennsylvania",
+            "ISO3166-2-lvl4": "US-PA",
+            "country": "United States",
+            "country_code": "us"
+          },
+          "namedetails": {
+            "name": "Philadelphia County",
+            "name:ar": "مقاطعة فيلادلفيا",
+            "name:br": "Kontelezh Philadelphia",
+            "name:en": "Philadelphia County",
+            "name:es": "Condado de Filadelfia",
+            "name:fr": "Comté de Philadelphie",
+            "name:sr": "Округ Филаделфија",
+            "name:ur": "فلاڈیلفیا کاؤنٹی",
+            "loc_name": "Philly County",
+            "_place_name": "Philadelphia",
+            "_place_name:ar": "فيلادلفيا",
+            "name:be": "Філадэльфія",
+            "name:de": "Philadelphia",
+            "name:el": "Φιλαδέλφεια",
+            "_place_name:en": "Philadelphia",
+            "_place_name:es": "Filadelfia",
+            "name:fa": "فیلادلفیا",
+            "_place_name:fr": "Philadelphie",
+            "name:kn": "ಫಿಲಡೆಲ್ಫಿಯ",
+            "name:pa": "ਫ਼ਿਲਾਡੈਲਫ਼ੀਆ",
+            "name:ru": "Филадельфия",
+            "_place_name:sr": "Филаделфија",
+            "name:ta": "பிலடெல்பியா",
+            "name:te": "ఫిలడెల్ఫియా",
+            "name:uk": "Філадельфія",
+            "_place_name:ur": "فلاڈیلفیا",
+            "name:azb": "فیلادلفیا",
+            "name:grc": "Φιλαδέλφεια"
+          }
+        },
+        "bbox": [
+          -75.2802660,
+          39.8670050,
+          -74.9558314,
+          40.1379593
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -75.280266,
+                39.974964
+              ],
+              [
+                -75.247778,
+                39.963876
+              ],
+              [
+                -75.2348301,
+                39.9373145
+              ],
+              [
+                -75.262528,
+                39.876561
+              ],
+              [
+                -75.2114167,
+                39.867005
+              ],
+              [
+                -75.1431616,
+                39.8848859
+              ],
+              [
+                -75.1283739,
+                39.9096944
+              ],
+              [
+                -75.1325748,
+                39.9567246
+              ],
+              [
+                -75.071264,
+                39.980493
+              ],
+              [
+                -74.9743916,
+                40.0498029
+              ],
+              [
+                -74.9851775,
+                40.0571902
+              ],
+              [
+                -74.9581526,
+                40.0843517
+              ],
+              [
+                -74.963791,
+                40.1176369
+              ],
+              [
+                -75.015094,
+                40.1379593
+              ],
+              [
+                -75.1089339,
+                40.0457168
+              ],
+              [
+                -75.176473,
+                40.0846702
+              ],
+              [
+                -75.1884892,
+                40.0727695
+              ],
+              [
+                -75.2236046,
+                40.0929106
+              ],
+              [
+                -75.2644328,
+                40.0540944
+              ],
+              [
+                -75.2057752,
+                40.0116551
+              ],
+              [
+                -75.280266,
+                39.974964
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

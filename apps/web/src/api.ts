@@ -140,3 +140,154 @@ export async function saveGeometryRevision(
   if (!response.ok) throw new Error(await response.text());
   return response.json() as Promise<GeometryRevision>;
 }
+
+export type TemporalValue = {
+  kind: string;
+  year?: number;
+  start_year?: number;
+  end_year?: number;
+  century?: number;
+  start_century?: number;
+  end_century?: number;
+  part?: string;
+  approximate: boolean;
+  uncertain: boolean;
+};
+
+export type AtlasTemporalAssertion = {
+  id: string;
+  source_type_id: string;
+  value: TemporalValue;
+  confidence: string;
+  evidence: {
+    raw: string;
+    catalog: string;
+    extraction: string;
+    review_status: string;
+  };
+  effective_interval?: { start_year: number; end_year: number };
+};
+
+export type AtlasRecord = {
+  id: string;
+  physical_id: string;
+  kind: string;
+  parent_ids?: string[];
+  titles: string[];
+  languages?: string[];
+  script_styles?: string[];
+  shelfmarks?: Array<{
+    repository?: string;
+    locality?: string;
+    country?: string;
+    shelfmark?: string;
+  }>;
+  digitized: boolean;
+  public_record_url?: string;
+  resolver_url?: string;
+};
+
+export type AtlasEvent = {
+  assertion: {
+    id: string;
+    source_type_id: string;
+    scope: {
+      target_record_id: string;
+      source_record_id: string;
+      physical_id: string;
+      origin: string;
+    };
+    place_id: string;
+    place_raw: string;
+    role?: string;
+    confidence: string;
+    evidence: {
+      raw: string;
+      marc_tag?: string;
+      marc_subfield?: string;
+      marc_role?: string;
+      catalog: string;
+      extraction: string;
+      review_status: string;
+    };
+  };
+  record: AtlasRecord;
+  hiburim: Array<{ id: string; label: string; english?: string }>;
+  temporal_assertions: AtlasTemporalAssertion[];
+};
+
+export type AtlasFeature = {
+  type: "Feature";
+  id: string;
+  geometry: GeoJSONGeometry;
+  properties: {
+    place_id: string;
+    place_label: string;
+    coordinate_status: LocationOverview["coordinate_status"];
+    reviewed_by_human: boolean;
+    changed_by_human: boolean;
+    spatial_precision?: string;
+    geometry_source?: string;
+    ai_status: LocationOverview["ai_status"];
+    assertion_count: number;
+    record_count: number;
+    events: AtlasEvent[];
+  };
+};
+
+export type AtlasView = {
+  schema_version: string;
+  time_bounds: { min_year: number; max_year: number };
+  applied_filters: AtlasFilters;
+  summary: {
+    matched_assertions: number;
+    mapped_assertions: number;
+    unmapped_assertions: number;
+    mapped_places: number;
+    matched_records: number;
+  };
+  facets: {
+    geo_sources: Array<{
+      id: string;
+      label: string;
+      short_description: string;
+      default_enabled: boolean;
+      count: number;
+    }>;
+    origins: Array<{ id: string; label: string; count: number }>;
+    location_statuses: Array<{ id: string; label: string; count: number }>;
+    hiburim: Array<{ id: string; label: string; english?: string; count: number }>;
+  };
+  features: AtlasFeature[];
+};
+
+export type AtlasFilters = {
+  start_year?: number;
+  end_year?: number;
+  circa_years: number;
+  include_undated: boolean;
+  geo_source_ids: string[];
+  origins: string[];
+  hibur_ids: string[];
+  location_statuses: string[];
+};
+
+export async function fetchAtlasView(
+  filters: AtlasFilters,
+  signal?: AbortSignal,
+): Promise<AtlasView> {
+  const query = new URLSearchParams();
+  if (filters.start_year !== undefined) query.set("start-year", String(filters.start_year));
+  if (filters.end_year !== undefined) query.set("end-year", String(filters.end_year));
+  query.set("circa-years", String(filters.circa_years));
+  query.set("include-undated", String(filters.include_undated));
+  if (filters.geo_source_ids.length) query.set("geo-source", filters.geo_source_ids.join(","));
+  if (filters.origins.length) query.set("origin", filters.origins.join(","));
+  if (filters.hibur_ids.length) query.set("hibur-id", filters.hibur_ids.join(","));
+  if (filters.location_statuses.length) {
+    query.set("location-status", filters.location_statuses.join(","));
+  }
+  const response = await fetch(`/api/v1/atlas-view?${query.toString()}`, { signal });
+  if (!response.ok) throw new Error(await response.text());
+  return response.json() as Promise<AtlasView>;
+}

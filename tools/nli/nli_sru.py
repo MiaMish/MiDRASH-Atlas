@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import datetime
 import hashlib
 import json
 import sys
@@ -24,6 +25,13 @@ SRU_BASE_URL = "https://nli.alma.exlibrisgroup.com/view/sru/972NNL_INST"
 MARC_NS = "http://www.loc.gov/MARC21/slim"
 SRU_NS = "http://www.loc.gov/zing/srw/"
 DEFAULT_CSV_COLUMN = "מספר מערכת"
+
+
+def progress(message: str) -> None:
+    timestamp = datetime.datetime.now(datetime.timezone.utc).isoformat(
+        timespec="seconds"
+    )
+    print(f"{timestamp} {message}", file=sys.stderr, flush=True)
 
 
 @dataclass(frozen=True)
@@ -465,12 +473,22 @@ def main() -> int:
 
     normalized: dict[str, dict[str, object]] = {}
     errors: list[dict[str, str]] = []
+    progress(
+        f"starting NLI retrieval requested={len(identifiers)} "
+        f"related={args.related} batch_size={args.batch_size}"
+    )
 
     def add_record_batch(mms_ids: list[str]) -> None:
         pending = [mms_id for mms_id in mms_ids if mms_id not in normalized]
         if not pending:
             return
-        for batch in chunks(pending, args.batch_size):
+        batches = list(chunks(pending, args.batch_size))
+        for index, batch in enumerate(batches, start=1):
+            started_at = time.monotonic()
+            progress(
+                f"record batch {index}/{len(batches)} started "
+                f"ids={len(batch)} first={batch[0]}"
+            )
             try:
                 records = fetch_records(batch, args.cache_dir, timeout=args.timeout)
                 found = {record.mms_id for record in records}
@@ -478,9 +496,18 @@ def main() -> int:
                     normalized[record.mms_id] = normalize_record(record)
                 for missing in (mms_id for mms_id in batch if mms_id not in found):
                     errors.append({"mms_id": missing, "error": "record not found"})
+                progress(
+                    f"record batch {index}/{len(batches)} completed "
+                    f"found={len(records)} missing={len(batch) - len(found)} "
+                    f"duration={time.monotonic() - started_at:.1f}s"
+                )
                 if args.delay:
                     time.sleep(args.delay)
             except Exception as exc:
+                progress(
+                    f"record batch {index}/{len(batches)} failed "
+                    f"duration={time.monotonic() - started_at:.1f}s error={exc}"
+                )
                 for mms_id in batch:
                     errors.append({"mms_id": mms_id, "error": str(exc)})
 
@@ -511,15 +538,30 @@ def main() -> int:
             for mms_id, record in normalized.items()
             if record["record_kind"] == "manuscript"
         ]
-        for mms_id in parent_ids_to_scan:
+        for index, mms_id in enumerate(parent_ids_to_scan, start=1):
+            started_at = time.monotonic()
+            progress(
+                f"child lookup {index}/{len(parent_ids_to_scan)} started "
+                f"parent={mms_id}"
+            )
             try:
-                for child in fetch_children(
+                children = fetch_children(
                     mms_id, args.cache_dir, timeout=args.timeout
-                ):
+                )
+                for child in children:
                     normalized.setdefault(child.mms_id, normalize_record(child))
+                progress(
+                    f"child lookup {index}/{len(parent_ids_to_scan)} completed "
+                    f"children={len(children)} "
+                    f"duration={time.monotonic() - started_at:.1f}s"
+                )
                 if args.delay:
                     time.sleep(args.delay)
             except Exception as exc:
+                progress(
+                    f"child lookup {index}/{len(parent_ids_to_scan)} failed "
+                    f"duration={time.monotonic() - started_at:.1f}s error={exc}"
+                )
                 errors.append(
                     {"mms_id": mms_id, "error": f"child lookup failed: {exc}"}
                 )
@@ -548,6 +590,10 @@ def main() -> int:
         args.output.write_text(text + "\n", encoding="utf-8")
     else:
         print(text)
+    progress(
+        f"NLI retrieval completed records={len(ordered_records)} "
+        f"errors={len(errors)} output={args.output or 'stdout'}"
+    )
     return 0 if not errors else 1
 
 

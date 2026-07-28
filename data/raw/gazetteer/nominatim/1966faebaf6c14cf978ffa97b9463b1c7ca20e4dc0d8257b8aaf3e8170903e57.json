@@ -1,0 +1,213 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Ostra (Marche, Italy)",
+    "retrieved_at": "2026-07-28T13:06:25.547249Z",
+    "cache_key": "1966faebaf6c14cf978ffa97b9463b1c7ca20e4dc0d8257b8aaf3e8170903e57",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Ostra (Marche, Italy)"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 79741354,
+          "osm_type": "relation",
+          "osm_id": 42517,
+          "place_rank": 16,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.48292732055544385,
+          "addresstype": "city",
+          "name": "Ostra",
+          "display_name": "Ostra, Ancona, Marche, Italy",
+          "address": {
+            "city": "Ostra",
+            "county": "Ancona",
+            "ISO3166-2-lvl6": "IT-AN",
+            "state": "Marche",
+            "ISO3166-2-lvl4": "IT-57",
+            "country": "Italy",
+            "country_code": "it"
+          },
+          "namedetails": {
+            "name": "Ostra"
+          }
+        },
+        "bbox": [
+          13.0830435,
+          43.5542912,
+          13.1965015,
+          43.6534921
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                13.0830435,
+                43.5814467
+              ],
+              [
+                13.1173217,
+                43.5542912
+              ],
+              [
+                13.1248025,
+                43.5892586
+              ],
+              [
+                13.1729614,
+                43.5932719
+              ],
+              [
+                13.1965015,
+                43.6406134
+              ],
+              [
+                13.151145,
+                43.6303155
+              ],
+              [
+                13.1483392,
+                43.6513807
+              ],
+              [
+                13.1042939,
+                43.6450868
+              ],
+              [
+                13.0954937,
+                43.6268975
+              ],
+              [
+                13.1197839,
+                43.605177
+              ],
+              [
+                13.0830435,
+                43.5814467
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 80054875,
+          "osm_type": "node",
+          "osm_id": 70979045,
+          "place_rank": 19,
+          "category": "place",
+          "type": "village",
+          "importance": 0.1467217936980239,
+          "addresstype": "village",
+          "name": "Ostra",
+          "display_name": "Ostra, Ancona, Marche, 60010, Italy",
+          "address": {
+            "village": "Ostra",
+            "city": "Ostra",
+            "county": "Ancona",
+            "ISO3166-2-lvl6": "IT-AN",
+            "state": "Marche",
+            "ISO3166-2-lvl4": "IT-57",
+            "postcode": "60010",
+            "country": "Italy",
+            "country_code": "it"
+          },
+          "namedetails": {
+            "name": "Ostra"
+          }
+        },
+        "bbox": [
+          13.1380611,
+          43.5925270,
+          13.1780611,
+          43.6325270
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            13.1580611,
+            43.612527
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 80209147,
+          "osm_type": "relation",
+          "osm_id": 42513,
+          "place_rank": 16,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.48562377870766443,
+          "addresstype": "city",
+          "name": "Ostra Vetere",
+          "display_name": "Ostra Vetere, Ancona, Marche, 60010, Italy",
+          "address": {
+            "city": "Ostra Vetere",
+            "county": "Ancona",
+            "ISO3166-2-lvl6": "IT-AN",
+            "state": "Marche",
+            "ISO3166-2-lvl4": "IT-57",
+            "postcode": "60010",
+            "country": "Italy",
+            "country_code": "it"
+          },
+          "namedetails": {
+            "name": "Ostra Vetere"
+          }
+        },
+        "bbox": [
+          13.0204069,
+          43.5749698,
+          13.1197839,
+          43.6301644
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                13.0204069,
+                43.5992949
+              ],
+              [
+                13.0765993,
+                43.5749698
+              ],
+              [
+                13.1197839,
+                43.605177
+              ],
+              [
+                13.0679844,
+                43.6301366
+              ],
+              [
+                13.0204069,
+                43.5992949
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,448 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Geneva, Switzerland",
+    "retrieved_at": "2026-07-28T13:05:44.404955Z",
+    "cache_key": "33e00d76623b7e34ebe86dcc9754d2402c4d60c7b06cbaad4b9658f3b5f57ce0",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Geneva, Switzerland"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 91719312,
+          "osm_type": "relation",
+          "osm_id": 1685488,
+          "place_rank": 16,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.7523100793715075,
+          "addresstype": "city",
+          "name": "Geneva",
+          "display_name": "Geneva, Switzerland",
+          "address": {
+            "city": "Geneva",
+            "state": "Geneva",
+            "ISO3166-2-lvl4": "CH-GE",
+            "country": "Switzerland",
+            "country_code": "ch"
+          },
+          "namedetails": {
+            "name": "Genève",
+            "name:ar": "جنيف",
+            "name:br": "Geneva",
+            "name:ca": "Ginebra",
+            "name:de": "Genf",
+            "name:el": "Γενεύη",
+            "name:en": "Geneva",
+            "name:es": "Ginebra",
+            "name:fa": "ژنو",
+            "name:fr": "Genève",
+            "name:gl": "Xenebra",
+            "name:hu": "Genf",
+            "name:it": "Ginevra",
+            "name:pt": "Genebra",
+            "name:sd": "جنيوا",
+            "name:sk": "Ženeva",
+            "name:sl": "Ženeva",
+            "name:ur": "جنیوا",
+            "alt_name": "Ville de Genève",
+            "name:azb": "ژنو",
+            "name:fur": "Gjinevre",
+            "name:pnb": "جنیوا",
+            "name:prefix": "Ville de",
+            "name:kk-Arab": "جەنەۆا",
+            "official_name": "Genève",
+            "name:af": "Genève",
+            "name:am": "ዠኔቭ",
+            "name:an": "Chinebra",
+            "name:av": "Женева",
+            "name:az": "Cenevrə",
+            "name:ba": "Женева",
+            "name:be": "Жэнева",
+            "name:bg": "Женева",
+            "name:bh": "जेनेवा",
+            "name:bn": "জেনেভা",
+            "name:bo": "རི་ནོས་ཝ",
+            "name:bs": "Ženeva",
+            "name:ce": "Женева",
+            "name:co": "Ginevra",
+            "name:cs": "Ženeva",
+            "name:cv": "Женева",
+            "name:cy": "Genefa",
+            "name:da": "Geneve",
+            "name:eo": "Ĝenevo",
+            "name:et": "Genf",
+            "name:eu": "Geneva",
+            "name:fi": "Geneve",
+            "name:fj": "Jeneva",
+            "name:fy": "Genève",
+            "name:ga": "An Ghinéiv",
+            "name:gd": "Sineubha",
+            "name:gn": "Ginebra",
+            "name:ha": "Geneva",
+            "name:he": "ז'נבה",
+            "name:hi": "जिनेवा",
+            "name:hr": "Ženeva",
+            "name:hy": "Ժնև",
+            "name:ia": "Geneva",
+            "name:id": "Jenewa",
+            "name:ie": "Geneva",
+            "name:io": "Genève",
+            "name:is": "Genf",
+            "name:ja": "ジュネーヴ",
+            "name:jv": "Jenéwa",
+            "name:ka": "ჟენევა",
+            "name:ki": "Geneva",
+            "name:kk": "Женева",
+            "name:kn": "ಜೆನೇವ",
+            "name:ko": "제네바",
+            "name:ku": "Cenevre",
+            "name:kv": "Женева",
+            "name:ky": "Женева",
+            "name:la": "Genava",
+            "name:lb": "Genf",
+            "name:li": "Genf",
+            "name:ln": "Shnɛ́f",
+            "name:lt": "Ženeva",
+            "name:lv": "Ženēva",
+            "name:mg": "Geneva",
+            "name:mk": "Женева",
+            "name:ml": "ജനീവ",
+            "name:mn": "Женев",
+            "name:mr": "जिनिव्हा",
+            "name:ms": "Geneva",
+            "name:mt": "Ġinevra",
+            "name:my": "ဂျနီဗာမြို့",
+            "name:ne": "जेनेभा",
+            "name:nl": "Genève",
+            "name:oc": "Genèva",
+            "name:os": "Женевæ",
+            "name:pa": "ਜਨੇਵਾ",
+            "name:pl": "Genewa",
+            "name:ps": "ژینو",
+            "name:rm": "Genevra",
+            "name:ro": "Geneva",
+            "name:ru": "Женева",
+            "name:sa": "जिनीवा",
+            "name:sc": "Ginevra",
+            "name:so": "Jineefa",
+            "name:sq": "Gjeneva",
+            "name:sr": "Женева",
+            "name:sw": "Geneva",
+            "name:ta": "ஜெனீவா",
+            "name:te": "జెనీవా నగరం",
+            "name:tg": "Женева",
+            "name:th": "เจนีวา",
+            "name:tl": "Geneva",
+            "name:tr": "Cenevre",
+            "name:tt": "Женева",
+            "name:ug": "Jenwe",
+            "name:uk": "Женева",
+            "name:uz": "Jeneva",
+            "name:vi": "Genève",
+            "name:wa": "Djineve",
+            "name:xh": "EGeneva",
+            "name:yi": "גענף",
+            "name:yo": "Geneva",
+            "name:zh": "日內瓦",
+            "int_name": "Geneva",
+            "name:als": "Genf",
+            "name:gsw": "Genf",
+            "alt_name:ku": "Jenev",
+            "old_name:vi": "Nhật Nội Ngỏa",
+            "name:zh-Hans": "日内瓦",
+            "name:zh-Hant": "日內瓦",
+            "name:zh-Latn-pinyin": "Rìnèiwǎ"
+          }
+        },
+        "bbox": [
+          6.1102411,
+          46.1777742,
+          6.1758527,
+          46.2318850
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                6.1102411,
+                46.2055665
+              ],
+              [
+                6.1567223,
+                46.1777907
+              ],
+              [
+                6.1758296,
+                46.2013307
+              ],
+              [
+                6.1667079,
+                46.2244654
+              ],
+              [
+                6.1330815,
+                46.231885
+              ],
+              [
+                6.1102411,
+                46.2055665
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 91447955,
+          "osm_type": "relation",
+          "osm_id": 1702419,
+          "place_rank": 8,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.6016729386959933,
+          "addresstype": "state",
+          "name": "Geneva",
+          "display_name": "Geneva, Switzerland",
+          "address": {
+            "state": "Geneva",
+            "ISO3166-2-lvl4": "CH-GE",
+            "country": "Switzerland",
+            "country_code": "ch"
+          },
+          "namedetails": {
+            "ref": "GE",
+            "name": "Genève",
+            "name:an": "Chinebra",
+            "name:ar": "جنيف",
+            "name:az": "Cenevrə",
+            "name:be": "Жэнева",
+            "name:bg": "Женева",
+            "name:bo": "རི་ནོས་ཝ",
+            "name:br": "Geneva",
+            "name:bs": "Ženeva",
+            "name:ca": "Cantó de Ginebra",
+            "name:cs": "Ženeva",
+            "name:cy": "Genefa",
+            "name:da": "Geneve",
+            "name:de": "Genf",
+            "name:el": "Γενεύη",
+            "name:en": "Geneva",
+            "name:eo": "Ĝenevo",
+            "name:es": "Ginebra",
+            "name:et": "Genf",
+            "name:eu": "Geneva",
+            "name:fa": "ژنو",
+            "name:fi": "Geneve",
+            "name:fr": "Genève",
+            "name:gl": "Xenebra",
+            "name:he": "ז'נבה",
+            "name:hu": "Genf",
+            "name:id": "Jenewa",
+            "name:it": "Ginevra",
+            "name:ja": "ジュネーヴ州",
+            "name:ko": "제네바",
+            "name:ku": "Cenevre",
+            "name:la": "Genava",
+            "name:lv": "Ženēva",
+            "name:nl": "Genève",
+            "name:pl": "Genewa",
+            "name:pt": "Genebra",
+            "name:rm": "Genevra",
+            "name:ro": "Geneva",
+            "name:ru": "Женева",
+            "name:sd": "جنيوا",
+            "name:sk": "Ženeva",
+            "name:sl": "Ženeva",
+            "name:sr": "Женева",
+            "name:th": "เจนีวา",
+            "name:tr": "Cenevre",
+            "name:uk": "Женева",
+            "name:ur": "جنیوا",
+            "name:vi": "Giơ-ne-vơ",
+            "name:zh": "日內瓦",
+            "alt_name": "Canton de Genève",
+            "name:azb": "ژنو",
+            "name:fur": "Gjinevre",
+            "name:pnb": "جنیوا",
+            "ISO3166-2": "CH-GE",
+            "alt_name:br": "Republik ha kanton Geneva",
+            "alt_name:de": "Kanton Genf",
+            "alt_name:en": "Canton of Geneva",
+            "alt_name:la": "Pagus Genavae;Geneva",
+            "name:prefix": "République et canton de",
+            "old_name:vi": "Nhật Nội Ngỏa",
+            "name:kk-Arab": "جەنەۆا",
+            "official_name": "République et canton de Genève",
+            "name:prefix:de": "Kanton",
+            "name:prefix:fr": "République et canton de",
+            "official_name:fr": "République et canton de Genève",
+            "_place_alt_name:br": "Kanton Geneva",
+            "name:zh-Latn-pinyin": "Rìnèiwǎ",
+            "official_name:br": "Republik ha kanton Geneva"
+          }
+        },
+        "bbox": [
+          5.9559020,
+          46.1285503,
+          6.3102823,
+          46.3645785
+        ],
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  5.955902,
+                  46.1323555
+                ],
+                [
+                  5.9941117,
+                  46.1445684
+                ],
+                [
+                  6.0353938,
+                  46.1343331
+                ],
+                [
+                  6.0522631,
+                  46.1513428
+                ],
+                [
+                  6.1364595,
+                  46.1415966
+                ],
+                [
+                  6.2219381,
+                  46.2006663
+                ],
+                [
+                  6.2946798,
+                  46.2251538
+                ],
+                [
+                  6.3097551,
+                  46.2562254
+                ],
+                [
+                  6.2601586,
+                  46.2516773
+                ],
+                [
+                  6.23759,
+                  46.2775515
+                ],
+                [
+                  6.2530017,
+                  46.2905031
+                ],
+                [
+                  6.2447006,
+                  46.3040408
+                ],
+                [
+                  6.219551,
+                  46.3118841
+                ],
+                [
+                  6.1987427,
+                  46.284429
+                ],
+                [
+                  6.1243391,
+                  46.3172784
+                ],
+                [
+                  6.1023518,
+                  46.2849427
+                ],
+                [
+                  6.124467,
+                  46.2512548
+                ],
+                [
+                  5.9746754,
+                  46.2150265
+                ],
+                [
+                  5.9637276,
+                  46.1970065
+                ],
+                [
+                  5.9949051,
+                  46.181807
+                ],
+                [
+                  5.955902,
+                  46.1323555
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  6.1755639,
+                  46.3513262
+                ],
+                [
+                  6.1713033,
+                  46.3405657
+                ],
+                [
+                  6.1844279,
+                  46.3458457
+                ],
+                [
+                  6.1755639,
+                  46.3513262
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  6.1710991,
+                  46.3584009
+                ],
+                [
+                  6.2323218,
+                  46.3304351
+                ],
+                [
+                  6.2414321,
+                  46.3436679
+                ],
+                [
+                  6.1802483,
+                  46.3645785
+                ],
+                [
+                  6.1710991,
+                  46.3584009
+                ]
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

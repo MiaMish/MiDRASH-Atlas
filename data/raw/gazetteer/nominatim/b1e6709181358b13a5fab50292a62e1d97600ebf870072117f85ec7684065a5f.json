@@ -1,0 +1,390 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Krakow, Poland",
+    "retrieved_at": "2026-07-28T13:06:01.830914Z",
+    "cache_key": "b1e6709181358b13a5fab50292a62e1d97600ebf870072117f85ec7684065a5f",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Krakow, Poland"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 179637987,
+          "osm_type": "relation",
+          "osm_id": 449696,
+          "place_rank": 12,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.7536613387908178,
+          "addresstype": "city",
+          "name": "Krakow",
+          "display_name": "Krakow, Lesser Poland Voivodeship, Poland",
+          "address": {
+            "city": "Krakow",
+            "state": "Lesser Poland Voivodeship",
+            "ISO3166-2-lvl4": "PL-12",
+            "country": "Poland",
+            "country_code": "pl"
+          },
+          "namedetails": {
+            "name": "Kraków",
+            "name:ar": "كراكوف",
+            "name:be": "Кракаў",
+            "name:br": "Krakovia",
+            "name:cs": "Krakov",
+            "name:de": "Krakau",
+            "name:el": "Κρακοβία",
+            "name:en": "Krakow",
+            "name:eo": "Krakovo",
+            "name:es": "Cracovia",
+            "name:fr": "Cracovie",
+            "name:hu": "Krakkó",
+            "name:it": "Cracovia",
+            "name:la": "Cracovia",
+            "name:lt": "Krokuva",
+            "name:lv": "Krakova",
+            "name:mk": "Краков",
+            "name:nl": "Krakau",
+            "name:pl": "Kraków",
+            "name:pt": "Cracóvia",
+            "name:ro": "Cracovia",
+            "name:ru": "Краков",
+            "name:sk": "Krakov",
+            "name:uk": "Краків",
+            "name:zh": "克拉科夫",
+            "name:szl": "Krakōw",
+            "alt_name:en": "Cracow",
+            "name:prefix": "miasto na prawach powiatu",
+            "name:ca": "Cracòvia",
+            "name:eu": "Krakovia",
+            "name:fa": "کراکوف",
+            "name:fi": "Krakova",
+            "name:hr": "Krakov",
+            "name:is": "Kraká",
+            "name:ja": "クラクフ",
+            "name:kn": "ಕ್ರಾಕೌವ್",
+            "name:ko": "크라쿠프",
+            "name:ml": "ക്രാക്കോവ്",
+            "name:mt": "Krakovja",
+            "name:sl": "Krakov",
+            "name:sr": "Краков",
+            "name:ast": "Cracovia",
+            "name:zh-Hans": "克拉科夫",
+            "name:zh-Hant": "克拉科夫",
+            "official_name": "Stołeczne Królewskie Miasto Kraków",
+            "official_name:en": "Royal Capital City of Krakow",
+            "official_name:pl": "Stołeczne Królewskie Miasto Kraków"
+          }
+        },
+        "bbox": [
+          19.7922355,
+          49.9676668,
+          20.2173455,
+          50.1261338
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                19.7922355,
+                50.011797
+              ],
+              [
+                19.796474,
+                49.9945366
+              ],
+              [
+                19.8490132,
+                49.9948749
+              ],
+              [
+                19.8706692,
+                49.9717436
+              ],
+              [
+                20.0080967,
+                49.9750424
+              ],
+              [
+                20.0186719,
+                49.9863158
+              ],
+              [
+                20.0041448,
+                50.0011869
+              ],
+              [
+                20.0656667,
+                50.0077867
+              ],
+              [
+                20.0879882,
+                50.044891
+              ],
+              [
+                20.2091755,
+                50.0447922
+              ],
+              [
+                20.2173455,
+                50.053434
+              ],
+              [
+                20.1849291,
+                50.0860661
+              ],
+              [
+                20.2090788,
+                50.1155647
+              ],
+              [
+                20.1590596,
+                50.1216058
+              ],
+              [
+                20.1379383,
+                50.1065685
+              ],
+              [
+                20.0962474,
+                50.1193493
+              ],
+              [
+                20.0242413,
+                50.1039435
+              ],
+              [
+                19.9413115,
+                50.1190376
+              ],
+              [
+                19.91889,
+                50.1001854
+              ],
+              [
+                19.8925084,
+                50.1260797
+              ],
+              [
+                19.8615817,
+                50.0926584
+              ],
+              [
+                19.8082856,
+                50.0783909
+              ],
+              [
+                19.8045257,
+                50.0621045
+              ],
+              [
+                19.8219393,
+                50.0582158
+              ],
+              [
+                19.8106401,
+                50.0406543
+              ],
+              [
+                19.8291006,
+                50.0258168
+              ],
+              [
+                19.7922355,
+                50.011797
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 183733259,
+          "osm_type": "relation",
+          "osm_id": 2768922,
+          "place_rank": 16,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.7536613387908178,
+          "addresstype": "administrative",
+          "name": "Krakow",
+          "display_name": "Krakow, Lesser Poland Voivodeship, Poland",
+          "address": {
+            "administrative": "Krakow",
+            "state": "Lesser Poland Voivodeship",
+            "ISO3166-2-lvl4": "PL-12",
+            "country": "Poland",
+            "country_code": "pl"
+          },
+          "namedetails": {
+            "name": "Kraków",
+            "name:ar": "كراكوف",
+            "name:be": "Кракаў",
+            "name:br": "Krakovia",
+            "name:de": "Krakau",
+            "name:el": "Κρακοβία",
+            "name:en": "Krakow",
+            "name:eo": "Krakovo",
+            "name:es": "Cracovia",
+            "name:fr": "Cracovie",
+            "name:hu": "Krakkó",
+            "name:it": "Cracovia",
+            "name:ko": "크라쿠프",
+            "name:la": "Cracovia",
+            "name:lv": "Krakova",
+            "name:mk": "Краков",
+            "name:nl": "Krakau",
+            "name:pl": "Kraków",
+            "name:pt": "Cracóvia",
+            "name:ro": "Cracovia",
+            "name:ru": "Краков",
+            "name:sk": "Krakov",
+            "name:uk": "Краків",
+            "name:zh": "克拉科夫",
+            "name:szl": "Krakůw",
+            "alt_name:en": "Cracow",
+            "name:prefix": "miasto"
+          }
+        },
+        "bbox": [
+          19.7922355,
+          49.9676668,
+          20.2173455,
+          50.1261338
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                19.7922355,
+                50.011797
+              ],
+              [
+                19.796474,
+                49.9945366
+              ],
+              [
+                19.8490132,
+                49.9948749
+              ],
+              [
+                19.8706692,
+                49.9717436
+              ],
+              [
+                20.0080967,
+                49.9750424
+              ],
+              [
+                20.0186719,
+                49.9863158
+              ],
+              [
+                20.0041448,
+                50.0011869
+              ],
+              [
+                20.0656667,
+                50.0077867
+              ],
+              [
+                20.0879882,
+                50.044891
+              ],
+              [
+                20.2091755,
+                50.0447922
+              ],
+              [
+                20.2173455,
+                50.053434
+              ],
+              [
+                20.1849291,
+                50.0860661
+              ],
+              [
+                20.2090788,
+                50.1155647
+              ],
+              [
+                20.1590596,
+                50.1216058
+              ],
+              [
+                20.1379383,
+                50.1065685
+              ],
+              [
+                20.0962474,
+                50.1193493
+              ],
+              [
+                20.0242413,
+                50.1039435
+              ],
+              [
+                19.9413115,
+                50.1190376
+              ],
+              [
+                19.91889,
+                50.1001854
+              ],
+              [
+                19.8925084,
+                50.1260797
+              ],
+              [
+                19.8615817,
+                50.0926584
+              ],
+              [
+                19.8082856,
+                50.0783909
+              ],
+              [
+                19.8045257,
+                50.0621045
+              ],
+              [
+                19.8219393,
+                50.0582158
+              ],
+              [
+                19.8106401,
+                50.0406543
+              ],
+              [
+                19.8291006,
+                50.0258168
+              ],
+              [
+                19.7922355,
+                50.011797
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

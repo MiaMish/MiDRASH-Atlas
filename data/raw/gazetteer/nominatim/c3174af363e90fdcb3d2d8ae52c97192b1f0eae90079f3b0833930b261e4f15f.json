@@ -1,0 +1,186 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Feodosii︠a︡ (Ukraine)",
+    "retrieved_at": "2026-07-28T13:05:36.191597Z",
+    "cache_key": "c3174af363e90fdcb3d2d8ae52c97192b1f0eae90079f3b0833930b261e4f15f",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Feodosii︠a︡ (Ukraine)"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 191631434,
+          "osm_type": "way",
+          "osm_id": 28854106,
+          "place_rank": 26,
+          "category": "highway",
+          "type": "residential",
+          "importance": 0.05340134203097578,
+          "addresstype": "road",
+          "name": "Feodosiia Makarevskoho Lane",
+          "display_name": "Feodosiia Makarevskoho Lane, Sobornyi district, Dnipro, Dnipro Urban Hromada, Dnipro Raion, Dnipropetrovsk Oblast, 49000, Ukraine",
+          "address": {
+            "road": "Feodosiia Makarevskoho Lane",
+            "borough": "Sobornyi district",
+            "city": "Dnipro",
+            "municipality": "Dnipro Urban Hromada",
+            "district": "Dnipro Raion",
+            "state": "Dnipropetrovsk Oblast",
+            "ISO3166-2-lvl4": "UA-12",
+            "postcode": "49000",
+            "country": "Ukraine",
+            "country_code": "ua"
+          },
+          "namedetails": {
+            "name": "провулок Феодосія Макаревського",
+            "name:en": "Feodosiia Makarevskoho Lane",
+            "name:uk": "провулок Феодосія Макаревського",
+            "old_name": "Радянський провулок",
+            "old_name:en": "Radianskyi Lane",
+            "old_name:uk": "Радянський провулок"
+          }
+        },
+        "bbox": [
+          35.0728232,
+          48.4543355,
+          35.0730953,
+          48.4578033
+        ],
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              35.0728232,
+              48.4578033
+            ],
+            [
+              35.0730953,
+              48.4543355
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 191631681,
+          "osm_type": "way",
+          "osm_id": 1198456329,
+          "place_rank": 26,
+          "category": "highway",
+          "type": "tertiary",
+          "importance": 0.05340134203097578,
+          "addresstype": "road",
+          "name": "Feodosiia Makarevskoho Lane",
+          "display_name": "Feodosiia Makarevskoho Lane, Sobornyi district, Dnipro, Dnipro Urban Hromada, Dnipro Raion, Dnipropetrovsk Oblast, 49000, Ukraine",
+          "address": {
+            "road": "Feodosiia Makarevskoho Lane",
+            "borough": "Sobornyi district",
+            "city": "Dnipro",
+            "municipality": "Dnipro Urban Hromada",
+            "district": "Dnipro Raion",
+            "state": "Dnipropetrovsk Oblast",
+            "ISO3166-2-lvl4": "UA-12",
+            "postcode": "49000",
+            "country": "Ukraine",
+            "country_code": "ua"
+          },
+          "namedetails": {
+            "name": "провулок Феодосія Макаревського",
+            "name:en": "Feodosiia Makarevskoho Lane",
+            "name:ru": "Феодосия Макаревского переулок",
+            "name:uk": "провулок Феодосія Макаревського",
+            "old_name": "Радянський провулок",
+            "old_name:en": "Radianskyi Lane",
+            "old_name:uk": "Радянський провулок"
+          }
+        },
+        "bbox": [
+          35.0727754,
+          48.4578033,
+          35.0728232,
+          48.4580232
+        ],
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              35.0727754,
+              48.4580232
+            ],
+            [
+              35.0728232,
+              48.4578033
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 191775666,
+          "osm_type": "way",
+          "osm_id": 163562790,
+          "place_rank": 26,
+          "category": "highway",
+          "type": "residential",
+          "importance": 0.05339015869382769,
+          "addresstype": "road",
+          "name": "Antoniia I Feodosiia Street",
+          "display_name": "Antoniia I Feodosiia Street, Vasylkiv, Vasylkiv Urban Hromada, Obukhiv Raion, Kyiv Oblast, 08601, Ukraine",
+          "address": {
+            "road": "Antoniia I Feodosiia Street",
+            "town": "Vasylkiv",
+            "municipality": "Vasylkiv Urban Hromada",
+            "district": "Obukhiv Raion",
+            "state": "Kyiv Oblast",
+            "ISO3166-2-lvl4": "UA-32",
+            "postcode": "08601",
+            "country": "Ukraine",
+            "country_code": "ua"
+          },
+          "namedetails": {
+            "name": "вулиця Антонія і Феодосія",
+            "name:en": "Antoniia I Feodosiia Street",
+            "name:ru": "улица Антония и Феодосия",
+            "name:uk": "вулиця Антонія і Феодосія"
+          }
+        },
+        "bbox": [
+          30.3148240,
+          50.1802288,
+          30.3208200,
+          50.1842793
+        ],
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              30.314824,
+              50.1802288
+            ],
+            [
+              30.32082,
+              50.1842793
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

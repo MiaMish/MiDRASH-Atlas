@@ -1,0 +1,115 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "קארה (תימן)",
+    "retrieved_at": "2026-07-28T13:07:33.316839Z",
+    "cache_key": "6be5a6e5e0ef405ba703fffb0556d1f98da04104826f75f05ee5d35d87bc890b",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "קארה (תימן)"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 43874988,
+          "osm_type": "node",
+          "osm_id": 1227048648,
+          "place_rank": 18,
+          "category": "natural",
+          "type": "peak",
+          "importance": 0.16007036469062333,
+          "addresstype": "peak",
+          "name": "Jabal Qurah",
+          "display_name": "Jabal Qurah, Bayt Mahfad, Bani Mattar District, Sana'a Governorate, Yemen",
+          "address": {
+            "peak": "Jabal Qurah",
+            "village": "Bayt Mahfad",
+            "district": "Bani Mattar District",
+            "state": "Sana'a Governorate",
+            "ISO3166-2-lvl4": "YE-SN",
+            "country": "Yemen",
+            "country_code": "ye"
+          },
+          "namedetails": {
+            "name": "جبل قرح",
+            "name:ar": "جبل قرح",
+            "name:de": "Jabal Qurah",
+            "name:en": "Jabal Qurah",
+            "name:fr": "Jabal Qurah",
+            "int_name": "Jabal Quraḩ"
+          }
+        },
+        "bbox": [
+          44.1580470,
+          15.2521940,
+          44.1581470,
+          15.2522940
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            44.158097,
+            15.252244
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 43891428,
+          "osm_type": "node",
+          "osm_id": 1227075416,
+          "place_rank": 18,
+          "category": "natural",
+          "type": "peak",
+          "importance": 0.1600375013351644,
+          "addresstype": "peak",
+          "name": "Jabal Qurah",
+          "display_name": "Jabal Qurah, Al Haymah al Kharijiyah District, Sana'a Governorate, Yemen",
+          "address": {
+            "peak": "Jabal Qurah",
+            "district": "Al Haymah al Kharijiyah District",
+            "state": "Sana'a Governorate",
+            "ISO3166-2-lvl4": "YE-SN",
+            "country": "Yemen",
+            "country_code": "ye"
+          },
+          "namedetails": {
+            "name": "جبل قرح",
+            "name:ar": "جبل قرح",
+            "name:de": "Jabal Qurah",
+            "name:en": "Jabal Qurah",
+            "name:fr": "Jabal Qurah",
+            "int_name": "Jabal Quraḩ"
+          }
+        },
+        "bbox": [
+          43.9010660,
+          15.0092460,
+          43.9011660,
+          15.0093460
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            43.901116,
+            15.009296
+          ]
+        }
+      }
+    ]
+  }
+}

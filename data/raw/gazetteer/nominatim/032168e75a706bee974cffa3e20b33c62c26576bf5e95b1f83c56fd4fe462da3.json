@@ -1,0 +1,312 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Kalisz (Poland)",
+    "retrieved_at": "2026-07-28T13:06:00.288766Z",
+    "cache_key": "032168e75a706bee974cffa3e20b33c62c26576bf5e95b1f83c56fd4fe462da3",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Kalisz (Poland)"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 182165668,
+          "osm_type": "relation",
+          "osm_id": 2989155,
+          "place_rank": 14,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.6049922716735399,
+          "addresstype": "administrative",
+          "name": "Kalisz",
+          "display_name": "Kalisz, Greater Poland Voivodeship, 62-800, Poland",
+          "address": {
+            "administrative": "Kalisz",
+            "city": "Kalisz",
+            "state": "Greater Poland Voivodeship",
+            "ISO3166-2-lvl4": "PL-30",
+            "postcode": "62-800",
+            "country": "Poland",
+            "country_code": "pl"
+          },
+          "namedetails": {
+            "name": "Kalisz",
+            "name:cs": "Kališ",
+            "name:de": "Kalisch",
+            "name:lt": "Kališas",
+            "name:pl": "Kalisz",
+            "name:prefix": "gmina miejska"
+          }
+        },
+        "bbox": [
+          17.9950353,
+          51.7007782,
+          18.1570811,
+          51.7938544
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                17.9950353,
+                51.7410729
+              ],
+              [
+                18.018021,
+                51.7330722
+              ],
+              [
+                17.9978871,
+                51.7175917
+              ],
+              [
+                18.0717622,
+                51.7007782
+              ],
+              [
+                18.1189883,
+                51.7091938
+              ],
+              [
+                18.1570811,
+                51.7487265
+              ],
+              [
+                18.0959279,
+                51.7938544
+              ],
+              [
+                18.0420414,
+                51.7793441
+              ],
+              [
+                17.9950353,
+                51.7410729
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 182376409,
+          "osm_type": "relation",
+          "osm_id": 2106876,
+          "place_rank": 12,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.6049922716735399,
+          "addresstype": "city",
+          "name": "Kalisz",
+          "display_name": "Kalisz, Greater Poland Voivodeship, 62-800, Poland",
+          "address": {
+            "city": "Kalisz",
+            "state": "Greater Poland Voivodeship",
+            "ISO3166-2-lvl4": "PL-30",
+            "postcode": "62-800",
+            "country": "Poland",
+            "country_code": "pl"
+          },
+          "namedetails": {
+            "name": "Kalisz",
+            "name:be": "Каліш",
+            "name:de": "Kalisch",
+            "name:ja": "カリシュ",
+            "name:lt": "Kališas",
+            "name:pl": "Kalisz",
+            "name:ru": "Калиш",
+            "name:uk": "Каліш",
+            "name:prefix": "miasto na prawach powiatu",
+            "name:ar": "كاليش",
+            "name:cs": "Kališ",
+            "name:el": "Κάλις",
+            "name:en": "Kalisz",
+            "name:fa": "کالیش",
+            "name:he": "קאַליש",
+            "name:hr": "Kalisz",
+            "name:la": "Calisia",
+            "name:lv": "Kališa",
+            "name:mk": "Калиш",
+            "name:ml": "കാലിഷ്",
+            "_place_name:ru": "Калишь",
+            "name:sk": "Kalisz",
+            "name:sr": "Калиш",
+            "name:yi": "קאליש"
+          }
+        },
+        "bbox": [
+          17.9950353,
+          51.7007782,
+          18.1570811,
+          51.7938544
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                17.9950353,
+                51.7410729
+              ],
+              [
+                18.018021,
+                51.7330722
+              ],
+              [
+                17.9978871,
+                51.7175917
+              ],
+              [
+                18.0717622,
+                51.7007782
+              ],
+              [
+                18.1189883,
+                51.7091938
+              ],
+              [
+                18.1570811,
+                51.7487265
+              ],
+              [
+                18.0959279,
+                51.7938544
+              ],
+              [
+                18.0420414,
+                51.7793441
+              ],
+              [
+                17.9950353,
+                51.7410729
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 175308368,
+          "osm_type": "node",
+          "osm_id": 31531981,
+          "place_rank": 19,
+          "category": "place",
+          "type": "village",
+          "importance": 0.33557113795112237,
+          "addresstype": "village",
+          "name": "Kalisz",
+          "display_name": "Kalisz, gmina Dziemiany, Kościerzyna County, Pomeranian Voivodeship, 83-425, Poland",
+          "address": {
+            "village": "Kalisz",
+            "municipality": "gmina Dziemiany",
+            "county": "Kościerzyna County",
+            "state": "Pomeranian Voivodeship",
+            "ISO3166-2-lvl4": "PL-22",
+            "postcode": "83-425",
+            "country": "Poland",
+            "country_code": "pl"
+          },
+          "namedetails": {
+            "name": "Kalisz"
+          }
+        },
+        "bbox": [
+          17.7780869,
+          54.0240829,
+          17.8180869,
+          54.0640829
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            17.7980869,
+            54.0440829
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 178102936,
+          "osm_type": "relation",
+          "osm_id": 15910788,
+          "place_rank": 16,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.31074813956852465,
+          "addresstype": "village",
+          "name": "Kalisz",
+          "display_name": "Kalisz, gmina Regimin, Ciechanów County, Masovian Voivodeship, Poland",
+          "address": {
+            "village": "Kalisz",
+            "municipality": "gmina Regimin",
+            "county": "Ciechanów County",
+            "state": "Masovian Voivodeship",
+            "ISO3166-2-lvl4": "PL-14",
+            "country": "Poland",
+            "country_code": "pl"
+          },
+          "namedetails": {
+            "name": "Kalisz",
+            "name:pl": "Kalisz",
+            "_place_name:pl": "Kalisz"
+          }
+        },
+        "bbox": [
+          20.6138633,
+          52.9292474,
+          20.6570363,
+          52.9555359
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                20.6138633,
+                52.9389455
+              ],
+              [
+                20.6326079,
+                52.9293093
+              ],
+              [
+                20.6570363,
+                52.9446191
+              ],
+              [
+                20.6313904,
+                52.9424893
+              ],
+              [
+                20.6270332,
+                52.9555359
+              ],
+              [
+                20.6138633,
+                52.9389455
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

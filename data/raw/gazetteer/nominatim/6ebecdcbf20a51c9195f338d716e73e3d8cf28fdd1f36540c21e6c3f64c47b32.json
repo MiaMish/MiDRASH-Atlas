@@ -1,0 +1,126 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Camerino (Italy)",
+    "retrieved_at": "2026-07-28T13:05:22.48145Z",
+    "cache_key": "6ebecdcbf20a51c9195f338d716e73e3d8cf28fdd1f36540c21e6c3f64c47b32",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Camerino (Italy)"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 79684816,
+          "osm_type": "relation",
+          "osm_id": 42321,
+          "place_rank": 16,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.5430834316040244,
+          "addresstype": "town",
+          "name": "Camerino",
+          "display_name": "Camerino, Macerata, Marche, 62032, Italy",
+          "address": {
+            "town": "Camerino",
+            "county": "Macerata",
+            "ISO3166-2-lvl6": "IT-MC",
+            "state": "Marche",
+            "ISO3166-2-lvl4": "IT-57",
+            "postcode": "62032",
+            "country": "Italy",
+            "country_code": "it"
+          },
+          "namedetails": {
+            "name": "Camerino",
+            "name:it": "Camerino",
+            "name:zh-Hans": "卡梅里诺",
+            "name:zh-Hant": "卡梅里諾"
+          }
+        },
+        "bbox": [
+          12.9801112,
+          43.0762421,
+          13.1679922,
+          43.1967403
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                12.9801112,
+                43.1186133
+              ],
+              [
+                12.990713,
+                43.0959736
+              ],
+              [
+                13.018863,
+                43.0906336
+              ],
+              [
+                13.0433526,
+                43.1082534
+              ],
+              [
+                13.0630171,
+                43.0782048
+              ],
+              [
+                13.0956912,
+                43.0797796
+              ],
+              [
+                13.1663511,
+                43.1114773
+              ],
+              [
+                13.1550278,
+                43.1368693
+              ],
+              [
+                13.1679922,
+                43.1610388
+              ],
+              [
+                13.0486754,
+                43.1962974
+              ],
+              [
+                13.0335593,
+                43.1645576
+              ],
+              [
+                12.991939,
+                43.1719304
+              ],
+              [
+                12.9955858,
+                43.1278238
+              ],
+              [
+                12.9801112,
+                43.1186133
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

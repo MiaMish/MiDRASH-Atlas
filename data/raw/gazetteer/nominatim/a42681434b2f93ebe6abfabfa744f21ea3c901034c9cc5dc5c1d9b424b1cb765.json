@@ -1,0 +1,174 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Brescello (Italy)",
+    "retrieved_at": "2026-07-28T13:05:11.283964Z",
+    "cache_key": "a42681434b2f93ebe6abfabfa744f21ea3c901034c9cc5dc5c1d9b424b1cb765",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Brescello (Italy)"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 77045314,
+          "osm_type": "relation",
+          "osm_id": 43694,
+          "place_rank": 16,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.5090141464103063,
+          "addresstype": "village",
+          "name": "Brescello",
+          "display_name": "Brescello, Bassa Reggiana, Reggio nell'Emilia, Emilia-Romagna, 42041, Italy",
+          "address": {
+            "village": "Brescello",
+            "municipality": "Bassa Reggiana",
+            "county": "Reggio nell'Emilia",
+            "ISO3166-2-lvl6": "IT-RE",
+            "state": "Emilia-Romagna",
+            "ISO3166-2-lvl4": "IT-45",
+            "postcode": "42041",
+            "country": "Italy",
+            "country_code": "it"
+          },
+          "namedetails": {
+            "name": "Brescello",
+            "name:it": "Brescello",
+            "name:egl": "Bärsèl",
+            "old_name:la": "Brixellum"
+          }
+        },
+        "bbox": [
+          10.4536726,
+          44.8324161,
+          10.5322435,
+          44.9204776
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                10.4536726,
+                44.8478164
+              ],
+              [
+                10.4711835,
+                44.8326703
+              ],
+              [
+                10.4954983,
+                44.880102
+              ],
+              [
+                10.5322435,
+                44.8819582
+              ],
+              [
+                10.5278426,
+                44.9135793
+              ],
+              [
+                10.5085422,
+                44.9204776
+              ],
+              [
+                10.4643541,
+                44.8983648
+              ],
+              [
+                10.4734205,
+                44.8762435
+              ],
+              [
+                10.4536726,
+                44.8478164
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 76849816,
+          "osm_type": "relation",
+          "osm_id": 9277437,
+          "place_rank": 20,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.13339088654917217,
+          "addresstype": "suburb",
+          "name": "Brescello",
+          "display_name": "Brescello, Bassa Reggiana, Reggio nell'Emilia, Emilia-Romagna, 42041, Italy",
+          "address": {
+            "suburb": "Brescello",
+            "village": "Brescello",
+            "municipality": "Bassa Reggiana",
+            "county": "Reggio nell'Emilia",
+            "ISO3166-2-lvl6": "IT-RE",
+            "state": "Emilia-Romagna",
+            "ISO3166-2-lvl4": "IT-45",
+            "postcode": "42041",
+            "country": "Italy",
+            "country_code": "it"
+          },
+          "namedetails": {
+            "name": "Brescello"
+          }
+        },
+        "bbox": [
+          10.4617108,
+          44.8800636,
+          10.5322435,
+          44.9204776
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                10.4617108,
+                44.8909976
+              ],
+              [
+                10.4954983,
+                44.880102
+              ],
+              [
+                10.5322435,
+                44.8819582
+              ],
+              [
+                10.5280445,
+                44.9132697
+              ],
+              [
+                10.5085422,
+                44.9204776
+              ],
+              [
+                10.4617108,
+                44.8909976
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

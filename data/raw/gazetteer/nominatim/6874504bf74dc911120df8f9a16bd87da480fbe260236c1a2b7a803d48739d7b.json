@@ -1,0 +1,121 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Bristol (England)",
+    "retrieved_at": "2026-07-28T13:05:14.130541Z",
+    "cache_key": "6874504bf74dc911120df8f9a16bd87da480fbe260236c1a2b7a803d48739d7b",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Bristol (England)"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 282591725,
+          "osm_type": "node",
+          "osm_id": 959199214,
+          "place_rank": 16,
+          "category": "place",
+          "type": "city",
+          "importance": 0.7042167330140456,
+          "addresstype": "city",
+          "name": "Bristol",
+          "display_name": "Bristol, England, BS1 4UB, United Kingdom",
+          "address": {
+            "city": "Bristol",
+            "state": "England",
+            "ISO3166-2-lvl4": "GB-ENG",
+            "postcode": "BS1 4UB",
+            "country": "United Kingdom",
+            "country_code": "gb"
+          },
+          "namedetails": {
+            "name": "Bristol",
+            "name:am": "ብርስተል",
+            "name:an": "Bristón",
+            "name:ar": "برستل",
+            "name:be": "Брысталь",
+            "name:bg": "Бристъл",
+            "name:bh": "ब्रिस्टल",
+            "name:bn": "ব্রিস্টল",
+            "name:br": "Bryste",
+            "name:cv": "Бристоль",
+            "name:cy": "Bryste",
+            "name:el": "Μπρίστολ",
+            "name:en": "Bristol",
+            "name:eo": "Bristolo",
+            "name:fa": "بریستول",
+            "name:fr": "Bristol",
+            "name:fy": "Bristol",
+            "name:ga": "Briostó",
+            "name:he": "בריסטול",
+            "name:hi": "ब्रिस्टल",
+            "name:hu": "Bristol",
+            "name:hy": "Բրիստոլ",
+            "name:ja": "ブリストル",
+            "name:ka": "ბრისტოლი",
+            "name:kk": "Бристоль",
+            "name:kn": "ಬ್ರಿಸ್ಟಲ್",
+            "name:ko": "브리스틀",
+            "name:ks": "برسٹل",
+            "name:la": "Bristolium",
+            "name:lb": "Bristol",
+            "name:lt": "Bristolis",
+            "name:lv": "Bristole",
+            "name:mk": "Бристол",
+            "name:ml": "ബ്രിസ്റ്റൾ",
+            "name:mn": "Бристоль",
+            "name:mr": "ब्रिस्टल",
+            "name:nl": "Bristol",
+            "name:oc": "Bristòl",
+            "name:os": "Бристоль",
+            "name:pa": "ਬਰਿਸਟਲ",
+            "name:ro": "Bristol",
+            "name:ru": "Бристоль",
+            "name:sk": "Bristol",
+            "name:sr": "Бристол",
+            "name:ta": "பிரிஸ்டல்",
+            "name:th": "บริสตอล",
+            "name:tt": "Бристол",
+            "name:uk": "Бристоль",
+            "name:ur": "برسٹل",
+            "name:yi": "בריסטאל",
+            "name:zh": "布里斯托尔",
+            "loc_name": "Brizzle",
+            "name:azb": "بریستول",
+            "name:mzn": "بریستول",
+            "name:pnb": "برسٹل",
+            "name:az-Arab": "بریستول",
+            "name:be-tarask": "Брыстал"
+          }
+        },
+        "bbox": [
+          -2.7572985,
+          51.2938022,
+          -2.4372985,
+          51.6138022
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -2.5972985,
+            51.4538022
+          ]
+        }
+      }
+    ]
+  }
+}

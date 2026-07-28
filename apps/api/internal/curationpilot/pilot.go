@@ -26,6 +26,18 @@ type Config struct {
 	SkipPlaceIDs      []string
 	SkipHumanReviewed bool
 	OnlyAINotChecked  bool
+	OnProgress        func(Progress)
+}
+
+type Progress struct {
+	Index      int
+	Total      int
+	PlaceID    string
+	PlaceLabel string
+	Phase      string
+	Status     string
+	Duration   time.Duration
+	Err        error
 }
 
 type Output struct {
@@ -107,16 +119,29 @@ func Run(ctx context.Context, generator Generator, cfg Config) (Output, error) {
 	}
 	targetCount := 0
 	for _, place := range input.Places {
+		if len(selected) == 0 || selected[place.PlaceID] {
+			targetCount++
+		}
+	}
+	currentIndex := 0
+	for _, place := range input.Places {
 		if len(selected) > 0 && !selected[place.PlaceID] {
 			continue
 		}
-		targetCount++
+		currentIndex++
+		progress := Progress{
+			Index: currentIndex, Total: targetCount,
+			PlaceID: place.PlaceID, PlaceLabel: place.PlaceLabel,
+		}
 		if skipped[place.PlaceID] {
 			output.Runs[runIndex].Skipped = append(output.Runs[runIndex].Skipped, SkippedPlace{
 				PlaceID: place.PlaceID, PlaceLabel: place.PlaceLabel,
 				Code:   "skipped_human_reviewed",
 				Reason: "current modern_place geometry is reviewed by a human",
 			})
+			progress.Phase = "skipped"
+			progress.Status = "human_reviewed"
+			reportProgress(cfg.OnProgress, progress)
 			continue
 		}
 		if cfg.OnlyAINotChecked && alreadyChecked[place.PlaceID] {
@@ -125,8 +150,14 @@ func Run(ctx context.Context, generator Generator, cfg Config) (Output, error) {
 				Code:   "skipped_ai_already_checked",
 				Reason: "a current AI draft already exists",
 			})
+			progress.Phase = "skipped"
+			progress.Status = "ai_already_checked"
+			reportProgress(cfg.OnProgress, progress)
 			continue
 		}
+		progress.Phase = "started"
+		reportProgress(cfg.OnProgress, progress)
+		startedAt := time.Now()
 		request := place.CurationRequest
 		request.Provider = cfg.Provider
 		request.Model = cfg.Model
@@ -139,9 +170,16 @@ func Run(ctx context.Context, generator Generator, cfg Config) (Output, error) {
 		result, err := generator.Generate(ctx, request)
 		if err != nil {
 			item.Error = err.Error()
+			progress.Phase = "failed"
+			progress.Status = "technical_failure"
+			progress.Err = err
 		} else {
 			item.Result = &result
+			progress.Phase = "completed"
+			progress.Status = result.Draft.Status
 		}
+		progress.Duration = time.Since(startedAt)
+		reportProgress(cfg.OnProgress, progress)
 		output.Drafts = upsertDraft(output.Drafts, item)
 		output.Runs[runIndex].Results = append(output.Runs[runIndex].Results, item)
 		output.GeneratedAt = time.Now().UTC()
@@ -159,6 +197,12 @@ func Run(ctx context.Context, generator Generator, cfg Config) (Output, error) {
 		return Output{}, err
 	}
 	return output, nil
+}
+
+func reportProgress(callback func(Progress), progress Progress) {
+	if callback != nil {
+		callback(progress)
+	}
 }
 
 func loadOrInitializeOutput(cfg Config) (Output, error) {

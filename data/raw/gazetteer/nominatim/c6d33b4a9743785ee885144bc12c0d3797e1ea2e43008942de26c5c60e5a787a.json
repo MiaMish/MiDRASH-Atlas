@@ -1,0 +1,338 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Fès (Morocco)",
+    "retrieved_at": "2026-07-28T13:05:37.54551Z",
+    "cache_key": "c6d33b4a9743785ee885144bc12c0d3797e1ea2e43008942de26c5c60e5a787a",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Fès (Morocco)"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 295673641,
+          "osm_type": "relation",
+          "osm_id": 2799557,
+          "place_rank": 16,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.6192751946064377,
+          "addresstype": "city",
+          "name": "Fez",
+          "display_name": "Fez, Pachalik du Fes باشوية فاس, Fez Prefecture, Fez-Meknes, Morocco",
+          "address": {
+            "city": "Fez",
+            "county": "Pachalik du Fes باشوية فاس",
+            "state_district": "Fez Prefecture",
+            "ISO3166-2-lvl5": "MA-FES",
+            "state": "Fez-Meknes",
+            "ISO3166-2-lvl4": "MA-03",
+            "country": "Morocco",
+            "country_code": "ma"
+          },
+          "namedetails": {
+            "name": "Fès ⴼⴰⵙ فاس",
+            "name:ar": "فاس",
+            "name:cs": "Fes",
+            "name:de": "Fès",
+            "name:el": "Φεζ",
+            "name:en": "Fez",
+            "name:eo": "Fez",
+            "name:es": "Fez",
+            "name:fa": "فاس",
+            "name:fr": "Fès",
+            "name:gl": "Fez",
+            "name:hu": "Fez",
+            "name:id": "Fez",
+            "name:io": "Fez",
+            "name:is": "Fez",
+            "name:ks": "فاس",
+            "name:li": "Fez",
+            "name:nl": "Fez",
+            "name:nn": "Fez",
+            "name:no": "Fez",
+            "name:pl": "Fez",
+            "name:pt": "Fez",
+            "name:ru": "Фес",
+            "name:sk": "Fez",
+            "name:ur": "فاس",
+            "name:ary": "فاس",
+            "name:arz": "فاس",
+            "name:azb": "فاس",
+            "name:ber": "ⴼⴰⵙ",
+            "name:nah": "Fez",
+            "name:ota": "فاس",
+            "name:pnb": "فاس",
+            "name:szl": "Fez",
+            "name:war": "Fez",
+            "name:zgh": "ⴼⴰⵙ",
+            "name:az-Arab": "فاس",
+            "name:kk-Arab": "فەس",
+            "name:pa-Arab": "فاس",
+            "name:kab-Arab": "فاس",
+            "official_name": "Commune de Fès ⵜⵎⴷⵉⵏⵜ ⵏ ⴼⴰⵙ جماعة فاس",
+            "name:af": "Fes",
+            "name:az": "Fəs",
+            "name:ba": "Фәс",
+            "name:be": "Фес",
+            "name:bg": "Фес",
+            "name:bn": "ফেজ",
+            "name:br": "Fes",
+            "name:bs": "Fes",
+            "name:ca": "Fes",
+            "name:ce": "Фес",
+            "name:cv": "Фес",
+            "name:cy": "Fès",
+            "name:da": "Fez",
+            "name:et": "Fès",
+            "name:eu": "Fez",
+            "name:fi": "Fès",
+            "name:gn": "Fes",
+            "name:ha": "Fas",
+            "name:he": "פאס",
+            "name:hi": "फेज़",
+            "name:hr": "Fes",
+            "name:it": "Fes",
+            "name:ja": "フェズ",
+            "name:ka": "ფესი",
+            "name:kk": "Фес",
+            "name:ko": "페스",
+            "name:ku": "Fes",
+            "name:ky": "Фес",
+            "name:la": "Fezza",
+            "name:lt": "Fesas",
+            "name:lv": "Fēsa",
+            "name:mk": "Фес",
+            "name:ml": "ഫാസ്",
+            "name:ms": "Fes",
+            "name:mt": "Fes",
+            "name:nb": "Fez",
+            "name:ne": "फेस",
+            "name:oc": "Fès",
+            "name:os": "Фес",
+            "name:pa": "ਫ਼ਾਸ",
+            "name:ro": "Fes",
+            "name:sl": "Fes",
+            "name:sn": "Fes",
+            "name:sr": "Фес",
+            "name:sv": "Fès",
+            "name:sw": "Fes",
+            "name:th": "แฟ็ส",
+            "name:tr": "Fes",
+            "name:tw": "Fes",
+            "name:uk": "Фес",
+            "name:uz": "Fos",
+            "name:vi": "Fes",
+            "name:yi": "פעס",
+            "name:zh": "非斯",
+            "name:kab": "Fas",
+            "official_name:ar": "جماعة فاس",
+            "official_name:fr": "Commune de Fès",
+            "official_name:zgh": "ⵜⵎⴷⵉⵏⵜ ⵏ ⴼⴰⵙ"
+          }
+        },
+        "bbox": [
+          -5.0781791,
+          33.9764285,
+          -4.9377101,
+          34.0755055
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -5.0781791,
+                34.0188682
+              ],
+              [
+                -5.0523799,
+                33.9764285
+              ],
+              [
+                -4.9647476,
+                33.9912325
+              ],
+              [
+                -4.9431612,
+                34.0061757
+              ],
+              [
+                -4.9716548,
+                34.0362177
+              ],
+              [
+                -4.9410219,
+                34.0440555
+              ],
+              [
+                -4.9380535,
+                34.0729603
+              ],
+              [
+                -5.0364583,
+                34.068019
+              ],
+              [
+                -5.0781791,
+                34.0188682
+              ]
+            ],
+            [
+              [
+                -5.0045461,
+                34.0582668
+              ],
+              [
+                -4.9878686,
+                34.0604123
+              ],
+              [
+                -4.9839394,
+                34.0564375
+              ],
+              [
+                -4.9940726,
+                34.0480201
+              ],
+              [
+                -5.0045461,
+                34.0582668
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 295558083,
+          "osm_type": "relation",
+          "osm_id": 6053085,
+          "place_rank": 16,
+          "category": "place",
+          "type": "city",
+          "importance": 0.18673282749675743,
+          "addresstype": "city",
+          "name": "Fez",
+          "display_name": "Fez, Pachalik du Fes باشوية فاس, Fez Prefecture, Fez-Meknes, Morocco",
+          "address": {
+            "city": "Fez",
+            "county": "Pachalik du Fes باشوية فاس",
+            "state_district": "Fez Prefecture",
+            "ISO3166-2-lvl5": "MA-FES",
+            "state": "Fez-Meknes",
+            "ISO3166-2-lvl4": "MA-03",
+            "country": "Morocco",
+            "country_code": "ma"
+          },
+          "namedetails": {
+            "name": "Fès ⴼⴰⵙ فاس",
+            "name:ar": "فاس",
+            "name:cs": "Fes",
+            "name:de": "Fès",
+            "name:en": "Fez",
+            "name:eo": "Feso",
+            "name:es": "Fez",
+            "name:fr": "Fès",
+            "name:he": "פאס",
+            "name:hi": "फेज़",
+            "name:it": "Fes",
+            "name:ru": "Фес",
+            "name:sk": "Fez",
+            "name:uk": "Фес",
+            "alt_name": "Fes",
+            "name:ber": "ⴼⴰⵙ",
+            "name:kab": "Fas",
+            "alt_name:cs": "Fes"
+          }
+        },
+        "bbox": [
+          -5.0781791,
+          33.9764285,
+          -4.9377101,
+          34.0755055
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -5.0781791,
+                34.0188682
+              ],
+              [
+                -5.0523799,
+                33.9764285
+              ],
+              [
+                -4.9647476,
+                33.9912325
+              ],
+              [
+                -4.9431612,
+                34.0061757
+              ],
+              [
+                -4.9716548,
+                34.0362177
+              ],
+              [
+                -4.9410219,
+                34.0440555
+              ],
+              [
+                -4.9380535,
+                34.0729603
+              ],
+              [
+                -5.0364583,
+                34.068019
+              ],
+              [
+                -5.0781791,
+                34.0188682
+              ]
+            ],
+            [
+              [
+                -5.0045461,
+                34.0582668
+              ],
+              [
+                -4.9878686,
+                34.0604123
+              ],
+              [
+                -4.9839394,
+                34.0564375
+              ],
+              [
+                -4.9940726,
+                34.0480201
+              ],
+              [
+                -5.0045461,
+                34.0582668
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

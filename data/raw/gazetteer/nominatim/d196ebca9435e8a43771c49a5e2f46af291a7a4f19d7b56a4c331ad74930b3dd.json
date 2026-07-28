@@ -1,0 +1,371 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Sefrou (Morocco)",
+    "retrieved_at": "2026-07-28T13:06:58.083936Z",
+    "cache_key": "d196ebca9435e8a43771c49a5e2f46af291a7a4f19d7b56a4c331ad74930b3dd",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Sefrou (Morocco)"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 298503011,
+          "osm_type": "relation",
+          "osm_id": 2808834,
+          "place_rank": 16,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.444539593585261,
+          "addresstype": "town",
+          "name": "Sefrou",
+          "display_name": "Sefrou, Pachalik de Sefrou باشوية صفرو, Sefrou Province, Fez-Meknes, Morocco",
+          "address": {
+            "town": "Sefrou",
+            "county": "Pachalik de Sefrou باشوية صفرو",
+            "state_district": "Sefrou Province",
+            "ISO3166-2-lvl5": "MA-SEF",
+            "state": "Fez-Meknes",
+            "ISO3166-2-lvl4": "MA-03",
+            "country": "Morocco",
+            "country_code": "ma"
+          },
+          "namedetails": {
+            "name": "Sefrou ⵚⴼⵕⵓ صفرو",
+            "name:ar": "صفرو",
+            "name:en": "Sefrou",
+            "name:es": "Sefrú",
+            "name:fr": "Sefrou",
+            "name:ru": "Сефру",
+            "name:ber": "ⵚⴼⵕⵓ",
+            "name:kab": "Sefru",
+            "name:zgh": "ⵚⴼⵕⵓ"
+          }
+        },
+        "bbox": [
+          -4.8508843,
+          33.8094984,
+          -4.8056193,
+          33.8444005
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -4.8505088,
+                33.843652
+              ],
+              [
+                -4.836733,
+                33.8094984
+              ],
+              [
+                -4.8056193,
+                33.8209082
+              ],
+              [
+                -4.8181077,
+                33.8442936
+              ],
+              [
+                -4.8505088,
+                33.843652
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 297336113,
+          "osm_type": "relation",
+          "osm_id": 2535034,
+          "place_rank": 10,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.46952456206459037,
+          "addresstype": "state_district",
+          "name": "Sefrou Province",
+          "display_name": "Sefrou Province, Fez-Meknes, Morocco",
+          "address": {
+            "state_district": "Sefrou Province",
+            "ISO3166-2-lvl5": "MA-SEF",
+            "state": "Fez-Meknes",
+            "ISO3166-2-lvl4": "MA-03",
+            "country": "Morocco",
+            "country_code": "ma"
+          },
+          "namedetails": {
+            "name": "Province de Sefrou إقليم صفرو",
+            "name:ar": "إقليم صفرو",
+            "name:en": "Sefrou Province",
+            "name:es": "Sefrú",
+            "name:fr": "Province de Sefrou",
+            "ISO3166-2": "MA-SEF"
+          }
+        },
+        "bbox": [
+          -5.1601146,
+          33.5127737,
+          -4.0345102,
+          34.0829166
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -5.1601146,
+                33.7581853
+              ],
+              [
+                -5.1482485,
+                33.7183114
+              ],
+              [
+                -5.11042,
+                33.70946
+              ],
+              [
+                -5.0470851,
+                33.658511
+              ],
+              [
+                -4.9699917,
+                33.6551736
+              ],
+              [
+                -4.9097171,
+                33.6101125
+              ],
+              [
+                -4.8601973,
+                33.5127737
+              ],
+              [
+                -4.77849,
+                33.52876
+              ],
+              [
+                -4.7527069,
+                33.5537815
+              ],
+              [
+                -4.7025,
+                33.54678
+              ],
+              [
+                -4.6770943,
+                33.625509
+              ],
+              [
+                -4.6386679,
+                33.597174
+              ],
+              [
+                -4.6115454,
+                33.6001409
+              ],
+              [
+                -4.563727,
+                33.6440568
+              ],
+              [
+                -4.5385038,
+                33.6473749
+              ],
+              [
+                -4.515606,
+                33.6423348
+              ],
+              [
+                -4.5252618,
+                33.6037248
+              ],
+              [
+                -4.4870457,
+                33.5577391
+              ],
+              [
+                -4.4193896,
+                33.5296752
+              ],
+              [
+                -4.3765257,
+                33.5442821
+              ],
+              [
+                -4.3013364,
+                33.5216941
+              ],
+              [
+                -4.2837985,
+                33.5313456
+              ],
+              [
+                -4.2775442,
+                33.5699088
+              ],
+              [
+                -4.2877854,
+                33.6311393
+              ],
+              [
+                -4.2323645,
+                33.6083105
+              ],
+              [
+                -4.0345102,
+                33.6824493
+              ],
+              [
+                -4.1207384,
+                33.6879894
+              ],
+              [
+                -4.1521009,
+                33.7274205
+              ],
+              [
+                -4.1929151,
+                33.835417
+              ],
+              [
+                -4.2189632,
+                33.8557774
+              ],
+              [
+                -4.1764748,
+                33.9128996
+              ],
+              [
+                -4.2520525,
+                33.9053817
+              ],
+              [
+                -4.3168546,
+                33.8644325
+              ],
+              [
+                -4.3630656,
+                33.8909346
+              ],
+              [
+                -4.4116801,
+                33.8860184
+              ],
+              [
+                -4.4447412,
+                33.9085381
+              ],
+              [
+                -4.4789104,
+                33.8935742
+              ],
+              [
+                -4.5830745,
+                33.9462763
+              ],
+              [
+                -4.5566702,
+                33.9901009
+              ],
+              [
+                -4.5607156,
+                34.0410679
+              ],
+              [
+                -4.664133,
+                34.0430593
+              ],
+              [
+                -4.7557705,
+                34.0829166
+              ],
+              [
+                -4.8153606,
+                34.0281581
+              ],
+              [
+                -4.7902193,
+                33.9931627
+              ],
+              [
+                -4.8198238,
+                33.9534354
+              ],
+              [
+                -4.9065965,
+                33.9295814
+              ],
+              [
+                -4.9265092,
+                33.9099592
+              ],
+              [
+                -4.9299425,
+                33.8731242
+              ],
+              [
+                -4.9517005,
+                33.8632181
+              ],
+              [
+                -4.9473661,
+                33.8460756
+              ],
+              [
+                -4.9643176,
+                33.847929
+              ],
+              [
+                -4.9559492,
+                33.9022301
+              ],
+              [
+                -5.1312455,
+                33.9229082
+              ],
+              [
+                -5.1350573,
+                33.8848644
+              ],
+              [
+                -5.0923427,
+                33.8778096
+              ],
+              [
+                -5.0897807,
+                33.8340275
+              ],
+              [
+                -5.0598949,
+                33.8232863
+              ],
+              [
+                -5.1601146,
+                33.7581853
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

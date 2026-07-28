@@ -1,0 +1,408 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Prague (Czech Republic)",
+    "retrieved_at": "2026-07-28T13:06:39.840519Z",
+    "cache_key": "9ce9a236d7fa2940c8adfcc26f2b20ca9a90101d74f35c0ccececeb586a15c32",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Prague (Czech Republic)"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 132566940,
+          "osm_type": "relation",
+          "osm_id": 435514,
+          "place_rank": 7,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.8087110358566758,
+          "addresstype": "city",
+          "name": "Prague",
+          "display_name": "Prague, Czechia",
+          "address": {
+            "city": "Prague",
+            "ISO3166-2-lvl4": "CZ-10",
+            "country": "Czechia",
+            "country_code": "cz"
+          },
+          "namedetails": {
+            "ref": "PR",
+            "name": "Praha",
+            "name:af": "Praag",
+            "name:ak": "Prague",
+            "name:am": "ፕራግ",
+            "name:an": "Praga",
+            "name:ar": "براغ",
+            "name:as": "প্ৰাগ",
+            "name:av": "Прага",
+            "name:az": "Praqa",
+            "name:ba": "Прага",
+            "name:be": "Прага",
+            "name:bg": "Прага",
+            "name:bi": "Prague",
+            "name:bn": "প্রাগ",
+            "name:bo": "པུ་ལ་ཁེ།",
+            "name:br": "Praha",
+            "name:bs": "Prag",
+            "name:ca": "Praga",
+            "name:ce": "Прага",
+            "name:ch": "Praga",
+            "name:co": "Praga",
+            "name:cs": "Praha",
+            "name:cu": "Прага",
+            "name:cv": "Прага",
+            "name:cy": "Prag",
+            "name:da": "Prag",
+            "name:de": "Prag",
+            "name:ee": "Prague",
+            "name:el": "Πράγα",
+            "name:en": "Prague",
+            "name:eo": "Prago",
+            "name:es": "Praga",
+            "name:et": "Praha",
+            "name:eu": "Praga",
+            "name:fa": "پراگ",
+            "name:ff": "Prague",
+            "name:fi": "Praha",
+            "name:fo": "Prag",
+            "name:fr": "Prague",
+            "name:fy": "Praach",
+            "name:ga": "Prág",
+            "name:gd": "Pràg",
+            "name:gl": "Praga",
+            "name:gn": "Praga",
+            "name:gv": "Praag",
+            "name:ha": "Prag",
+            "name:he": "פראג",
+            "name:hi": "प्राग",
+            "name:hr": "Prag",
+            "name:ht": "Prag",
+            "name:hu": "Prága",
+            "name:hy": "Պրահա",
+            "name:ia": "Praga",
+            "name:id": "Praha",
+            "name:ie": "Praha",
+            "name:io": "Praha",
+            "name:is": "Prag",
+            "name:it": "Praga",
+            "name:ja": "プラハ",
+            "name:jv": "Praha",
+            "name:ka": "პრაღა",
+            "name:kg": "Prague",
+            "name:kk": "Прага",
+            "name:kl": "Praha",
+            "name:km": "ទីក្រុងប្រាក",
+            "name:kn": "ಪ್ರಾಗ",
+            "name:ko": "프라하",
+            "name:ku": "Prag",
+            "name:kv": "Прага",
+            "name:kw": "Praha",
+            "name:ky": "Прага",
+            "name:la": "Praga",
+            "name:lb": "Prag",
+            "name:li": "Praag",
+            "name:ln": "Prag",
+            "name:lo": "ປຣາກ",
+            "name:lt": "Praha",
+            "name:lv": "Prāga",
+            "name:mg": "Prague",
+            "name:mi": "Prague",
+            "name:mk": "Прага",
+            "name:ml": "പ്രാഗ്",
+            "name:mn": "Прага",
+            "name:mr": "प्राग",
+            "name:ms": "Praha",
+            "name:mt": "Praga",
+            "name:my": "ပရက်ဂ်မြို့",
+            "name:na": "Praha",
+            "name:ne": "प्राग",
+            "name:nl": "Praag",
+            "name:nn": "Praha",
+            "name:no": "Praha",
+            "name:nv": "Tóʼnaa Habitiin",
+            "name:oc": "Praga",
+            "name:os": "Прагæ",
+            "name:pa": "ਪਰਾਗ",
+            "name:pl": "Praga",
+            "name:ps": "پراګ",
+            "name:pt": "Praga",
+            "name:qu": "Praha",
+            "name:rm": "Prag",
+            "name:ro": "Praga",
+            "name:ru": "Прага",
+            "name:sc": "Praga",
+            "name:sd": "پراگ",
+            "name:se": "Praha",
+            "name:sh": "Prag",
+            "name:sk": "Praha",
+            "name:sl": "Praga",
+            "name:sn": "Prague",
+            "name:sq": "Praga",
+            "name:sr": "Праг",
+            "name:sv": "Prag",
+            "name:sw": "Praha",
+            "name:ta": "பிராகா",
+            "name:te": "ప్రాగ్",
+            "name:tg": "Прага",
+            "name:th": "ปราก",
+            "name:tl": "Praga",
+            "name:tr": "Prag",
+            "name:tt": "Праһа",
+            "name:ug": "پراگا",
+            "name:uk": "Прага",
+            "name:ur": "پراگ",
+            "name:uz": "Praga",
+            "name:vi": "Praha",
+            "name:wo": "Prag",
+            "name:yi": "פראג",
+            "name:yo": "Prague",
+            "name:zh": "布拉格",
+            "name:zu": "IPraha",
+            "name:arc": "ܦܪܐܓ",
+            "name:arz": "براج",
+            "name:ast": "Praga",
+            "name:ckb": "پراگ",
+            "name:csb": "Praga",
+            "name:dsb": "Praha",
+            "name:ext": "Praga",
+            "name:fur": "Praghe",
+            "name:gag": "Praga",
+            "name:hif": "Prague",
+            "name:hsb": "Praha",
+            "name:jbo": "pragas",
+            "name:kab": "Prag",
+            "name:krc": "Прага",
+            "name:lad": "Praga",
+            "name:lij": "Praga",
+            "name:lmo": "Praga",
+            "name:mdf": "Прага",
+            "name:mhr": "Прага",
+            "name:mzn": "پراگ",
+            "name:nah": "Praha",
+            "name:nan": "Praha",
+            "name:nap": "Praga",
+            "name:nds": "Prag",
+            "name:nov": "Praha",
+            "name:nrm": "Prague",
+            "name:pam": "Prague",
+            "name:pcd": "Prague",
+            "name:pms": "Praga",
+            "name:pnb": "پراگ",
+            "name:rmy": "Praga",
+            "name:sah": "Прага",
+            "name:sco": "Prague",
+            "name:stq": "Praag",
+            "name:szl": "Praga",
+            "name:tzl": "Praha",
+            "name:udm": "Прага",
+            "name:vec": "Praga",
+            "name:vro": "Praha",
+            "name:war": "Praga",
+            "name:yue": "布拉格",
+            "ISO3166-2": "CZ-10",
+            "name:nds-nl": "Praag",
+            "name:prefix": "hlavní město",
+            "name:bat-smg": "Praha",
+            "name:roa-rup": "Praga",
+            "name:sr-Latn": "Prag",
+            "name:roa-tara": "Praghe",
+            "official_name": "Hlavní město Praha",
+            "name:ki": "Prague",
+            "name:be-tarask": "Прага",
+            "name:wal": "Piraage",
+            "official_name:cs": "Hlavní město Praha",
+            "official_name:da": "Hovedstad Prag",
+            "official_name:de": "Prag Hauptstadt",
+            "official_name:en": "City of Prague",
+            "official_name:eo": "Prago",
+            "official_name:es": "Praga",
+            "official_name:fa": "پراگ",
+            "official_name:fr": "Prague",
+            "official_name:fy": "Praach",
+            "official_name:hr": "Glavni grad Prag",
+            "official_name:ko": "프라하",
+            "official_name:nl": "Praag",
+            "official_name:pl": "Miasto stołeczne Praga",
+            "official_name:ru": "Прага",
+            "official_name:sk": "Hlavné mesto Praha",
+            "official_name:tr": "Prag",
+            "official_name:ur": "پراگ",
+            "official_name:fur": "Praghe",
+            "official_name:jbo": "pragas",
+            "official_name:szl": "Praga",
+            "official_name:tzl": "Praha",
+            "official_name:prefix": "hlavní město"
+          }
+        },
+        "bbox": [
+          14.2244355,
+          49.9419006,
+          14.7067867,
+          50.1774302
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                14.2244355,
+                50.1029963
+              ],
+              [
+                14.2893735,
+                50.0771366
+              ],
+              [
+                14.2480852,
+                50.0583091
+              ],
+              [
+                14.3158709,
+                50.0235953
+              ],
+              [
+                14.2948377,
+                50.0022104
+              ],
+              [
+                14.3427555,
+                49.9906307
+              ],
+              [
+                14.3268149,
+                49.9718587
+              ],
+              [
+                14.344916,
+                49.9676279
+              ],
+              [
+                14.3254392,
+                49.9572087
+              ],
+              [
+                14.395562,
+                49.9419006
+              ],
+              [
+                14.4006472,
+                49.9706693
+              ],
+              [
+                14.4622402,
+                49.9707711
+              ],
+              [
+                14.5274725,
+                50.0108381
+              ],
+              [
+                14.582393,
+                50.0163634
+              ],
+              [
+                14.6401518,
+                49.9944411
+              ],
+              [
+                14.669537,
+                50.0188407
+              ],
+              [
+                14.6401916,
+                50.0568947
+              ],
+              [
+                14.6999919,
+                50.0721289
+              ],
+              [
+                14.7067867,
+                50.0870194
+              ],
+              [
+                14.6574355,
+                50.1065009
+              ],
+              [
+                14.6591154,
+                50.1226041
+              ],
+              [
+                14.6005164,
+                50.129523
+              ],
+              [
+                14.5877286,
+                50.1452435
+              ],
+              [
+                14.5990028,
+                50.1541328
+              ],
+              [
+                14.5632297,
+                50.1501702
+              ],
+              [
+                14.5505391,
+                50.1661221
+              ],
+              [
+                14.5342355,
+                50.1615652
+              ],
+              [
+                14.5324832,
+                50.1771831
+              ],
+              [
+                14.5268552,
+                50.1774302
+              ],
+              [
+                14.3949016,
+                50.141429
+              ],
+              [
+                14.3657037,
+                50.1480324
+              ],
+              [
+                14.3607835,
+                50.1160189
+              ],
+              [
+                14.3206068,
+                50.1152415
+              ],
+              [
+                14.3024335,
+                50.1300768
+              ],
+              [
+                14.2244355,
+                50.1029963
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

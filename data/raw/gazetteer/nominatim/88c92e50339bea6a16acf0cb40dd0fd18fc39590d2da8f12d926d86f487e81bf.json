@@ -1,0 +1,531 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Cairo (Egypt)",
+    "retrieved_at": "2026-07-28T13:05:19.297585Z",
+    "cache_key": "88c92e50339bea6a16acf0cb40dd0fd18fc39590d2da8f12d926d86f487e81bf",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Cairo (Egypt)"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 50800018,
+          "osm_type": "relation",
+          "osm_id": 5466227,
+          "place_rank": 15,
+          "category": "place",
+          "type": "city",
+          "importance": 0.7515178427815343,
+          "addresstype": "city",
+          "name": "Cairo",
+          "display_name": "Cairo, Egypt",
+          "address": {
+            "city": "Cairo",
+            "state": "Cairo",
+            "ISO3166-2-lvl4": "EG-C",
+            "country": "Egypt",
+            "country_code": "eg"
+          },
+          "namedetails": {
+            "name": "القاهرة",
+            "name:af": "Kaïro",
+            "name:ak": "Cairo",
+            "name:am": "ካይሮ",
+            "name:an": "O Caire",
+            "name:ar": "القاهرة",
+            "name:az": "Qahirə",
+            "name:ba": "Ҡәһир",
+            "name:be": "Каір",
+            "name:bg": "Кайро",
+            "name:bn": "কায়রো",
+            "name:bo": "ཁ་ཡི་རོ",
+            "name:br": "Kaero",
+            "name:bs": "Kairo",
+            "name:ca": "el Caire",
+            "name:cs": "Káhira",
+            "name:cv": "Каир",
+            "name:cy": "Cairo",
+            "name:da": "Kairo",
+            "name:de": "Kairo",
+            "name:el": "Κάιρο",
+            "name:en": "Cairo",
+            "name:eo": "Kairo",
+            "name:es": "El Cairo",
+            "name:et": "Kairo",
+            "name:fa": "قاهره",
+            "name:fi": "Kairo",
+            "name:fo": "Keiro",
+            "name:fr": "Le Caire",
+            "name:gd": "Cairo",
+            "name:gl": "O Cairo - القاهرة",
+            "name:gv": "Cairo",
+            "name:he": "קהיר",
+            "name:hi": "काहिरा",
+            "name:hr": "Kairo",
+            "name:ht": "Li Kè",
+            "name:hu": "Kairó",
+            "name:hy": "Կահիրե",
+            "name:ia": "Cairo",
+            "name:ie": "Cairo",
+            "name:io": "Kairo",
+            "name:is": "Kaíró",
+            "name:it": "Il Cairo",
+            "name:ja": "カイロ",
+            "name:ka": "კაირო",
+            "name:kk": "Әл-Қаһира",
+            "name:kl": "Cairo",
+            "name:kn": "ಕೈರೋ",
+            "name:ko": "카이로",
+            "name:ku": "Qahîre",
+            "name:kv": "Каир",
+            "name:kw": "Cairo",
+            "name:ky": "Каир",
+            "name:la": "Cairus",
+            "name:lt": "Kairas",
+            "name:lv": "Kaira",
+            "name:mi": "Kairo",
+            "name:mk": "Каиро",
+            "name:ml": "കെയ്റോ",
+            "name:mn": "Каир",
+            "name:mr": "कैरो",
+            "name:ms": "Kaherah",
+            "name:my": "ကိုင်ရိုမြို့",
+            "name:nl": "Caïro",
+            "name:oc": "Lo Caire",
+            "name:os": "Каир",
+            "name:pl": "Kair",
+            "name:ps": "قاهره",
+            "name:pt": "Cairo",
+            "name:qu": "Qahira",
+            "name:rm": "Cairo",
+            "name:ro": "Cairo",
+            "name:ru": "Каир",
+            "name:sc": "Cairo",
+            "name:se": "Cairo",
+            "name:sk": "Káhira",
+            "name:so": "Qaahiro",
+            "name:sq": "Kajro",
+            "name:sr": "Каиро",
+            "name:sv": "Kairo",
+            "name:ta": "கெய்ரோ",
+            "name:te": "కైరో",
+            "name:tg": "Қоҳира",
+            "name:th": "ไคโร",
+            "name:tk": "Kair",
+            "name:tl": "Cairo",
+            "name:tr": "Kahire",
+            "name:tt": "Каһирә",
+            "name:ug": "كايرو",
+            "name:uk": "Каїр",
+            "name:ur": "قاہرہ",
+            "name:uz": "Qohira",
+            "name:vi": "Cairo",
+            "name:vo": "Kahirä",
+            "name:wa": "El Caire",
+            "name:wo": "Xayra",
+            "name:yi": "קיירא",
+            "name:yo": "Káírò",
+            "name:zh": "开罗",
+            "int_name": "Cairo",
+            "name:ace": "Al-Qahirah",
+            "name:arz": "القاهره",
+            "name:bcl": "Cairo",
+            "name:ceb": "Cairo",
+            "name:ckb": "قاھیرە",
+            "name:cop": "ⲕⲁϣⲣⲱⲙⲓ",
+            "name:crh": "Qaire",
+            "name:diq": "Qahire",
+            "name:ext": "El Cairu",
+            "name:frp": "Lo Cayiro",
+            "name:hif": "Cairo",
+            "name:ilo": "Cairo",
+            "name:lbe": "Кьагьира",
+            "name:lez": "Каир",
+            "name:lij": "O Cairo",
+            "name:lmo": "El Cairo",
+            "name:mdf": "Каир",
+            "name:mhr": "Каир",
+            "name:mrj": "Каир",
+            "name:mwl": "Cairo",
+            "name:mzn": "قاهره",
+            "name:nah": "El Cairo",
+            "name:nan": "Cairo",
+            "name:nap": "Il cairo",
+            "name:new": "कायरो",
+            "name:pms": "Ël Càiro",
+            "name:pnb": "قاہرہ",
+            "name:pnt": "Κάιρον",
+            "name:rue": "Кагіра",
+            "name:sah": "Каир",
+            "name:scn": "Cairu",
+            "name:sco": "Cairo",
+            "name:szl": "Kajir",
+            "name:udm": "Каир",
+            "name:vec": "El Cairo",
+            "name:vls": "Caïro",
+            "name:war": "Cairo",
+            "name:wuu": "开罗",
+            "name:yue": "開羅",
+            "alt_name:vi": "Cai-rô",
+            "old_name:vi": "Kê Thành",
+            "name:bat-smg": "Kairs",
+            "name:roa-rup": "Cairo",
+            "name:zh-Hans": "开罗",
+            "name:zh-Hant": "開羅",
+            "name:roa-tara": "'U Cairo",
+            "name:as": "কাইৰো",
+            "name:av": "Къагьира",
+            "name:bh": "काहिरा",
+            "name:ce": "КъахӀира",
+            "name:co": "U Cairu",
+            "name:eu": "Kairo",
+            "name:fy": "Kairo",
+            "name:ga": "Caireo",
+            "name:gn": "Káiro",
+            "name:gu": "કૈરો",
+            "name:ha": "Kairo",
+            "name:id": "Kairo",
+            "name:jv": "Kairo",
+            "name:ki": "Cairo",
+            "name:ks": "قاہرہ",
+            "name:lb": "Kairo",
+            "name:li": "Caïro",
+            "name:ln": "Kairo",
+            "name:lo": "ໄຄໂຣ",
+            "name:mg": "Kahira",
+            "name:mt": "Kajr",
+            "name:na": "Cairo",
+            "name:nb": "Kairo",
+            "name:ne": "कायरो",
+            "name:nn": "Kairo",
+            "name:no": "Kairo",
+            "name:nv": "Yadaazʼáhíłání",
+            "name:ny": "Cairo",
+            "name:pa": "ਕਾਹਿਰਾ",
+            "name:sd": "قاهره",
+            "name:sh": "Kairo",
+            "name:si": "කයිරෝ",
+            "name:sl": "Kairo",
+            "name:sn": "Cairo",
+            "name:ss": "Cairo",
+            "name:su": "Kairo",
+            "name:sw": "Kairo",
+            "name:tw": "Kairo",
+            "name:zu": "Cairo",
+            "name:ady": "Каир",
+            "name:ast": "El Cairu",
+            "name:avk": "Alkaira",
+            "name:awa": "काइरो",
+            "name:chr": "ᎧᏯᎶ",
+            "name:chy": "Cairo",
+            "name:csb": "Kairo",
+            "name:dsb": "Kairo",
+            "name:frr": "Kairo",
+            "name:fur": "El Cairo",
+            "name:hak": "Cairo",
+            "name:hsb": "Kairo",
+            "name:hyw": "Գահիրէ",
+            "name:inh": "Каир",
+            "name:kaa": "Al-Qahira",
+            "name:kab": "Taqahirt",
+            "name:lad": "El Kairo",
+            "name:lfn": "Qahira",
+            "name:mad": "Kairo",
+            "name:mai": "काइरो",
+            "name:min": "Kairo",
+            "name:myv": "Каир ош",
+            "name:nds": "Kairo",
+            "name:pap": "Kairo",
+            "name:smn": "Kairo",
+            "name:tpi": "Kairo",
+            "name:vep": "Kair",
+            "name:wal": "Kayro",
+            "name:xal": "Каир балһсн",
+            "name:xmf": "კაირო",
+            "name:zea": "Caïro",
+            "alt_name:ml": "അൽ-ഖാഹിറ",
+            "name:simple": "Cairo"
+          }
+        },
+        "bbox": [
+          31.2200331,
+          29.7483062,
+          31.9090054,
+          30.3209168
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                31.2200331,
+                30.0184965
+              ],
+              [
+                31.2351018,
+                29.9649268
+              ],
+              [
+                31.2710595,
+                29.9421801
+              ],
+              [
+                31.282947,
+                29.9126303
+              ],
+              [
+                31.2958431,
+                29.8008049
+              ],
+              [
+                31.2867206,
+                29.7659509
+              ],
+              [
+                31.4642646,
+                29.7533367
+              ],
+              [
+                31.7317891,
+                29.769292
+              ],
+              [
+                31.9062825,
+                29.7483062
+              ],
+              [
+                31.9090054,
+                29.9915076
+              ],
+              [
+                31.8713494,
+                30.2295534
+              ],
+              [
+                31.8367932,
+                30.3209168
+              ],
+              [
+                31.5924734,
+                30.1721293
+              ],
+              [
+                31.3937649,
+                30.1553431
+              ],
+              [
+                31.3075229,
+                30.1311783
+              ],
+              [
+                31.2311698,
+                30.093036
+              ],
+              [
+                31.2200331,
+                30.0184965
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 50793150,
+          "osm_type": "relation",
+          "osm_id": 4103336,
+          "place_rank": 8,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.5379874375887006,
+          "addresstype": "state",
+          "name": "Cairo",
+          "display_name": "Cairo, Egypt",
+          "address": {
+            "state": "Cairo",
+            "ISO3166-2-lvl4": "EG-C",
+            "country": "Egypt",
+            "country_code": "eg"
+          },
+          "namedetails": {
+            "name": "القاهرة",
+            "name:ar": "القاهرة",
+            "name:az": "Qahirə",
+            "name:be": "Каір",
+            "name:bg": "Кайро",
+            "name:br": "Kaero",
+            "name:bs": "Kairo",
+            "name:ca": "Governació del Caire",
+            "name:cs": "Káhira",
+            "name:da": "Al Qahirah",
+            "name:de": "Kairo",
+            "name:el": "Κυβερνείο Καΐρου",
+            "name:en": "Cairo",
+            "name:eo": "Provinco Kairo",
+            "name:es": "El Cairo",
+            "name:fa": "استان قاهره",
+            "name:fi": "Kairon kuvernementti",
+            "name:fr": "Caire",
+            "name:he": "קהיר",
+            "name:hi": "क़ाहिरा मुहाफ़ज़ाह",
+            "name:hr": "Kairo",
+            "name:hu": "Kairó",
+            "name:hy": "Կահիրե",
+            "name:id": "Kegubernuran Al Qahirah",
+            "name:it": "Governatorato del Cairo",
+            "name:ja": "カイロ県",
+            "name:ka": "კაიროს მუჰაფაზა",
+            "name:ko": "카이로주",
+            "name:la": "Cairus",
+            "name:lt": "Kairo",
+            "name:lv": "Kairas muhāfaza",
+            "name:nl": "Caïro",
+            "name:nn": "Kairo",
+            "name:no": "Kairo",
+            "name:pl": "Kair",
+            "name:pt": "Cairo",
+            "name:ro": "Guvernoratul Cairo",
+            "name:ru": "Каир",
+            "name:sh": "Kairo",
+            "name:sk": "Káhira",
+            "name:sl": "Kairo",
+            "name:sr": "Каиро",
+            "name:sv": "Kairo",
+            "name:sw": "Mkoa wa Kairo",
+            "name:tg": "Вилояти Қоҳира",
+            "name:tr": "Kahire",
+            "name:uk": "Мухафаза Каїр",
+            "name:ur": "قاہرہ",
+            "name:vi": "Cairo",
+            "name:yi": "קיירא",
+            "name:zh": "开罗",
+            "name:zu": "Cairo Governorate",
+            "name:arz": "محافظة القاهره",
+            "name:azb": "قاهره اوستانی",
+            "name:ceb": "Muḩāfaz̧at al Qāhirah",
+            "name:crh": "Qaire",
+            "name:nan": "Cairo Séng",
+            "name:pnb": "صوبہ قاہرہ",
+            "name:sco": "Cairo",
+            "name:vec": "Goernorà de El Cairo",
+            "name:war": "Cairo",
+            "name:wuu": "开罗省",
+            "ISO3166-2": "EG-C",
+            "alt_name:ar": "محافظة القاهرة",
+            "alt_name:de": "Gouvernement al-Qahira",
+            "alt_name:en": "Cairo Governorate",
+            "alt_name:es": "Gobernación de El Cairo",
+            "alt_name:fr": "Gouvernorat du Caire",
+            "alt_name:hr": "Guvernat Kairo",
+            "alt_name:lt": "Kairo muchafaza",
+            "alt_name:ru": "Каир (мухафаза)",
+            "alt_name:tr": "Kahire ili",
+            "alt_name:uk": "губернаторство Каїр",
+            "alt_name:ur": "محافظہ قاہرہ",
+            "alt_name:zh": "开罗省",
+            "name:zh-Hans": "开罗",
+            "name:zh-Hant": "開羅",
+            "name:be-tarask": "Каір"
+          }
+        },
+        "bbox": [
+          31.2145550,
+          29.7483062,
+          31.9090054,
+          30.3209168
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                31.214555,
+                30.0654553
+              ],
+              [
+                31.2345171,
+                29.9661259
+              ],
+              [
+                31.2710595,
+                29.9421801
+              ],
+              [
+                31.282947,
+                29.9126303
+              ],
+              [
+                31.2958431,
+                29.8008049
+              ],
+              [
+                31.2867206,
+                29.7659509
+              ],
+              [
+                31.4642646,
+                29.7533367
+              ],
+              [
+                31.7317891,
+                29.769292
+              ],
+              [
+                31.9062825,
+                29.7483062
+              ],
+              [
+                31.9090054,
+                29.9915076
+              ],
+              [
+                31.8713494,
+                30.2295534
+              ],
+              [
+                31.8367932,
+                30.3209168
+              ],
+              [
+                31.5924734,
+                30.1721293
+              ],
+              [
+                31.3937649,
+                30.1553431
+              ],
+              [
+                31.3075229,
+                30.1311783
+              ],
+              [
+                31.2311698,
+                30.093036
+              ],
+              [
+                31.214555,
+                30.0654553
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

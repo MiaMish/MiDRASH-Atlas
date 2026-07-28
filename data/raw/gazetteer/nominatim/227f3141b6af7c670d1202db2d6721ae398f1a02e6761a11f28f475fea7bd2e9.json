@@ -1,0 +1,312 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Munich, Germany",
+    "retrieved_at": "2026-07-28T13:06:20.947769Z",
+    "cache_key": "227f3141b6af7c670d1202db2d6721ae398f1a02e6761a11f28f475fea7bd2e9",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Munich, Germany"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 127720233,
+          "osm_type": "relation",
+          "osm_id": 62428,
+          "place_rank": 12,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.8105981661589455,
+          "addresstype": "city",
+          "name": "Munich",
+          "display_name": "Munich, Bavaria, Germany",
+          "address": {
+            "city": "Munich",
+            "state": "Bavaria",
+            "ISO3166-2-lvl4": "DE-BY",
+            "country": "Germany",
+            "country_code": "de"
+          },
+          "namedetails": {
+            "name": "München",
+            "name:bg": "Мюнхен",
+            "name:bs": "Minhen",
+            "name:ca": "Múnic",
+            "name:cs": "Mnichov",
+            "name:de": "München",
+            "name:el": "Μόναχο",
+            "name:en": "Munich",
+            "name:eo": "Munkeno",
+            "name:es": "Múnich",
+            "name:fa": "مونیخ",
+            "name:fr": "Munich",
+            "name:fy": "München",
+            "name:it": "Monaco di Baviera",
+            "name:ko": "뮌헨",
+            "name:mk": "Минхен",
+            "name:nl": "München",
+            "name:ru": "Мюнхен",
+            "name:sk": "Mníchov",
+            "name:ta": "மியூனிக்",
+            "name:th": "มิวนิก",
+            "name:tr": "Münih",
+            "name:uk": "Мюнхен",
+            "name:ur": "میونخ",
+            "name:fur": "Munic",
+            "name:lld": "Minca",
+            "name:tok": "ma tomo Minsen",
+            "name:tzl": "Müntsch",
+            "alt_name:eo": "Munĥeno",
+            "alt_name:ky": "Мүнхен",
+            "name:prefix": "Landeshauptstadt",
+            "old_name:sl": "Monakovo",
+            "alt_name:tok": "ma tomo Minka",
+            "name:am": "ሙኒክ",
+            "name:an": "Múnich",
+            "name:ar": "ميونخ",
+            "name:az": "Münhen",
+            "name:ba": "Мюнхен",
+            "name:be": "Мюнхен",
+            "name:bn": "মিউনিখ",
+            "name:br": "München",
+            "name:ce": "Муьнхен",
+            "name:co": "Monacu di Baviera",
+            "name:cv": "Мюнхен",
+            "name:da": "München",
+            "name:eu": "Munich",
+            "name:fi": "München",
+            "name:fj": "Munich",
+            "name:gl": "Múnic",
+            "name:gn": "Múnichi",
+            "name:he": "מינכן",
+            "name:hi": "म्यूनिख",
+            "name:hr": "München",
+            "name:hu": "München",
+            "name:hy": "Մյունխեն",
+            "name:ja": "ミュンヘン",
+            "name:ka": "მიუნხენი",
+            "name:kg": "Munich",
+            "name:kk": "Мюнхен",
+            "name:kn": "ಮುನಿಕ್",
+            "name:ku": "Munîh",
+            "name:kw": "Munich",
+            "name:ky": "Мюнхен",
+            "name:la": "Monacum",
+            "name:lt": "Miunchenas",
+            "name:lv": "Minhene",
+            "name:ml": "മ്യൂണിക്ക്",
+            "name:mn": "Мюнхен",
+            "name:mr": "म्युन्शेन",
+            "name:ms": "Munich",
+            "name:mt": "Munich",
+            "name:my": "မြူးနစ်ခ်မြို့",
+            "name:ne": "म्युनिख",
+            "name:oc": "Munic",
+            "name:os": "Мюнхен",
+            "name:pa": "ਮਿਊਨਿਖ਼",
+            "name:pl": "Monachium",
+            "name:pt": "Munique",
+            "name:rm": "Minca",
+            "name:ro": "München",
+            "name:sc": "Mònacu de Baviera",
+            "name:sd": "ميونخ",
+            "name:sh": "München",
+            "name:sq": "Mynihu",
+            "name:sr": "Минхен",
+            "name:te": "మ్యూనిక్",
+            "name:tg": "Мюнхен",
+            "name:tk": "Mýunhen",
+            "name:tl": "Munich",
+            "name:tt": "Мүнхен",
+            "name:ug": "Myunxén",
+            "name:uz": "Munhen",
+            "name:vi": "München",
+            "name:yi": "מינכען",
+            "name:yo": "Munich",
+            "name:zh": "慕尼黑",
+            "int_name": "Munich",
+            "name:als": "Münche",
+            "name:bar": "Minga",
+            "name:dsb": "München",
+            "name:hsb": "Mnichow",
+            "name:wal": "Munike",
+            "alt_name:la": "Monachium;Monachum",
+            "old_name:hr": "Monakovo",
+            "name:sr-Latn": "Minhen",
+            "name:zh-Hant": "慕尼黑",
+            "name:be-tarask": "Мюнхэн"
+          }
+        },
+        "bbox": [
+          11.3607770,
+          48.0616244,
+          11.7229099,
+          48.2481162
+        ],
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  11.360777,
+                  48.1580704
+                ],
+                [
+                  11.389144,
+                  48.1479327
+                ],
+                [
+                  11.3944236,
+                  48.1255105
+                ],
+                [
+                  11.4636931,
+                  48.129926
+                ],
+                [
+                  11.4709217,
+                  48.0831868
+                ],
+                [
+                  11.503558,
+                  48.0692942
+                ],
+                [
+                  11.5087578,
+                  48.0616244
+                ],
+                [
+                  11.5869189,
+                  48.0938795
+                ],
+                [
+                  11.685651,
+                  48.0774915
+                ],
+                [
+                  11.6827716,
+                  48.0918035
+                ],
+                [
+                  11.7145946,
+                  48.1108471
+                ],
+                [
+                  11.6941881,
+                  48.1231033
+                ],
+                [
+                  11.7229099,
+                  48.137117
+                ],
+                [
+                  11.6781624,
+                  48.144285
+                ],
+                [
+                  11.6919782,
+                  48.1825288
+                ],
+                [
+                  11.627706,
+                  48.1773044
+                ],
+                [
+                  11.6504917,
+                  48.2133803
+                ],
+                [
+                  11.6389922,
+                  48.2259624
+                ],
+                [
+                  11.5874666,
+                  48.2134767
+                ],
+                [
+                  11.5823007,
+                  48.2285636
+                ],
+                [
+                  11.5011968,
+                  48.2481162
+                ],
+                [
+                  11.4910806,
+                  48.2230962
+                ],
+                [
+                  11.3908298,
+                  48.2004624
+                ],
+                [
+                  11.3932585,
+                  48.1844601
+                ],
+                [
+                  11.360777,
+                  48.1580704
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  11.490724,
+                  48.0742575
+                ],
+                [
+                  11.4903024,
+                  48.0737742
+                ],
+                [
+                  11.4909805,
+                  48.0741023
+                ],
+                [
+                  11.490724,
+                  48.0742575
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  11.5563954,
+                  48.0804318
+                ],
+                [
+                  11.5569527,
+                  48.0793801
+                ],
+                [
+                  11.5577562,
+                  48.0795803
+                ],
+                [
+                  11.5563954,
+                  48.0804318
+                ]
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

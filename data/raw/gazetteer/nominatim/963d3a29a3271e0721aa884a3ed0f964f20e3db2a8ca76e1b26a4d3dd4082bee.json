@@ -1,0 +1,179 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Vignola (Italy)",
+    "retrieved_at": "2026-07-28T13:07:22.004025Z",
+    "cache_key": "963d3a29a3271e0721aa884a3ed0f964f20e3db2a8ca76e1b26a4d3dd4082bee",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Vignola (Italy)"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 76686439,
+          "osm_type": "relation",
+          "osm_id": 43205,
+          "place_rank": 16,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.5145399245009,
+          "addresstype": "town",
+          "name": "Vignola",
+          "display_name": "Vignola, Unione di comuni Terre di Castelli, Modena, Emilia-Romagna, Italy",
+          "address": {
+            "town": "Vignola",
+            "district": "Unione di comuni Terre di Castelli",
+            "county": "Modena",
+            "ISO3166-2-lvl6": "IT-MO",
+            "state": "Emilia-Romagna",
+            "ISO3166-2-lvl4": "IT-45",
+            "country": "Italy",
+            "country_code": "it"
+          },
+          "namedetails": {
+            "name": "Vignola",
+            "name:uk": "Віньйола",
+            "name:egl": "Vgnóla"
+          }
+        },
+        "bbox": [
+          10.9506985,
+          44.4580475,
+          11.0396131,
+          44.5106932
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                10.9506985,
+                44.4779145
+              ],
+              [
+                10.9890741,
+                44.4580475
+              ],
+              [
+                11.0291951,
+                44.4799506
+              ],
+              [
+                11.0396131,
+                44.5053538
+              ],
+              [
+                10.9872219,
+                44.510492
+              ],
+              [
+                10.9506985,
+                44.4779145
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 77167801,
+          "osm_type": "node",
+          "osm_id": 3461533780,
+          "place_rank": 20,
+          "category": "place",
+          "type": "hamlet",
+          "importance": 0.39862612808608605,
+          "addresstype": "hamlet",
+          "name": "Vignola",
+          "display_name": "Vignola, Pontremoli, Massa-Carrara, Tuscany, 54027, Italy",
+          "address": {
+            "hamlet": "Vignola",
+            "town": "Pontremoli",
+            "province": "Massa-Carrara",
+            "ISO3166-2-lvl6": "IT-MS",
+            "state": "Tuscany",
+            "ISO3166-2-lvl4": "IT-52",
+            "postcode": "54027",
+            "country": "Italy",
+            "country_code": "it"
+          },
+          "namedetails": {
+            "name": "Vignola"
+          }
+        },
+        "bbox": [
+          9.8366452,
+          44.3683971,
+          9.8766452,
+          44.4083971
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            9.8566452,
+            44.3883971
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 74691259,
+          "osm_type": "node",
+          "osm_id": 64776551,
+          "place_rank": 19,
+          "category": "place",
+          "type": "village",
+          "importance": 0.14672754482337677,
+          "addresstype": "village",
+          "name": "Vignola",
+          "display_name": "Vignola, Vignola Falesina, Comunità Alta Valsugana e Bersntol, Provincia di Trento, Trentino – Alto Adige/Südtirol, 38057, Italy",
+          "address": {
+            "village": "Vignola",
+            "municipality": "Vignola Falesina",
+            "county": "Provincia di Trento",
+            "ISO3166-2-lvl6": "IT-TN",
+            "state": "Trentino – Alto Adige/Südtirol",
+            "ISO3166-2-lvl4": "IT-32",
+            "postcode": "38057",
+            "country": "Italy",
+            "country_code": "it"
+          },
+          "namedetails": {
+            "name": "Vignola",
+            "loc_name": "Vignola",
+            "old_name:de": "Walzburg"
+          }
+        },
+        "bbox": [
+          11.2576917,
+          46.0244545,
+          11.2976917,
+          46.0644545
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            11.2776917,
+            46.0444545
+          ]
+        }
+      }
+    ]
+  }
+}

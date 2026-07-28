@@ -1,0 +1,310 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Thessalonikē (Greece)",
+    "retrieved_at": "2026-07-28T13:07:08.155521Z",
+    "cache_key": "a40f6354541152424056fb2c944935870cef903eec426d892511f97589fb76b5",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Thessalonikē (Greece)"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 58744225,
+          "osm_type": "way",
+          "osm_id": 27651329,
+          "place_rank": 26,
+          "category": "highway",
+          "type": "motorway",
+          "importance": 0.37817846516583514,
+          "addresstype": "road",
+          "name": "Θεσσαλονίκη - Προμαχώνας",
+          "display_name": "Θεσσαλονίκη - Προμαχώνας, Sidirokastro, Sintiki Municipality, Serres Regional Unit, Central Macedonia, Macedonia and Thrace, 623 00, Greece",
+          "address": {
+            "road": "Θεσσαλονίκη - Προμαχώνας",
+            "town": "Sidirokastro",
+            "municipality": "Sintiki Municipality",
+            "county": "Serres Regional Unit",
+            "state": "Central Macedonia",
+            "ISO3166-2-lvl5": "GR-B",
+            "postcode": "623 00",
+            "country": "Greece",
+            "country_code": "gr"
+          },
+          "namedetails": {
+            "ref": "Α25",
+            "name": "Θεσσαλονίκη - Προμαχώνας",
+            "int_ref": "E 79",
+            "name:bg": "Солун - Бастион",
+            "name:ca": "Tessalònica - Promachonas",
+            "name:el": "Θεσσαλονίκη - Προμαχώνας",
+            "name:fr": "Thessalonique - Promachonas",
+            "name:mk": "Солун - Промахонас",
+            "int_name": "Thessaloniki - Promachonas",
+            "alt_name:ca": "Salònica - Promachonas"
+          }
+        },
+        "bbox": [
+          23.3771820,
+          41.2241358,
+          23.3803868,
+          41.2288504
+        ],
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              23.3803868,
+              41.2241358
+            ],
+            [
+              23.377182,
+              41.2288504
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 58635022,
+          "osm_type": "way",
+          "osm_id": 905623988,
+          "place_rank": 26,
+          "category": "highway",
+          "type": "motorway",
+          "importance": 0.37817846516583514,
+          "addresstype": "road",
+          "name": "Θεσσαλονίκη - Προμαχώνας",
+          "display_name": "Θεσσαλονίκη - Προμαχώνας, Δημοτική Κοινότητα Προμαχώνος, Δημοτική Ενότητα Προμαχώνος, Sintiki Municipality, Serres Regional Unit, Central Macedonia, Macedonia and Thrace, Greece",
+          "address": {
+            "road": "Θεσσαλονίκη - Προμαχώνας",
+            "city_district": "Δημοτική Κοινότητα Προμαχώνος",
+            "city": "Δημοτική Ενότητα Προμαχώνος",
+            "municipality": "Sintiki Municipality",
+            "county": "Serres Regional Unit",
+            "state": "Central Macedonia",
+            "ISO3166-2-lvl5": "GR-B",
+            "country": "Greece",
+            "country_code": "gr"
+          },
+          "namedetails": {
+            "ref": "Α25",
+            "name": "Θεσσαλονίκη - Προμαχώνας",
+            "int_ref": "E 79",
+            "name:bg": "Солун - Бастион",
+            "name:ca": "Tessalònica - Promachonas",
+            "name:el": "Θεσσαλονίκη - Προμαχώνας",
+            "name:fr": "Thessalonique - Promachonas",
+            "name:mk": "Солун - Промахонас",
+            "int_name": "Thessaloniki - Promachonas",
+            "alt_name:ca": "Salònica - Promachonas"
+          }
+        },
+        "bbox": [
+          23.3452825,
+          41.3353761,
+          23.3468581,
+          41.3373604
+        ],
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              23.3468581,
+              41.3373604
+            ],
+            [
+              23.3452825,
+              41.3353761
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 58709128,
+          "osm_type": "way",
+          "osm_id": 782272773,
+          "place_rank": 26,
+          "category": "highway",
+          "type": "motorway",
+          "importance": 0.37817846516583514,
+          "addresstype": "road",
+          "name": "Θεσσαλονίκη - Προμαχώνας",
+          "display_name": "Θεσσαλονίκη - Προμαχώνας, Municipality of Lagadas, Thessaloniki Regional Unit, Central Macedonia, Macedonia and Thrace, Greece",
+          "address": {
+            "road": "Θεσσαλονίκη - Προμαχώνας",
+            "municipality": "Municipality of Lagadas",
+            "county": "Thessaloniki Regional Unit",
+            "state": "Central Macedonia",
+            "ISO3166-2-lvl5": "GR-B",
+            "country": "Greece",
+            "country_code": "gr"
+          },
+          "namedetails": {
+            "ref": "Α25",
+            "name": "Θεσσαλονίκη - Προμαχώνας",
+            "int_ref": "E 79",
+            "name:bg": "Солун - Бастион",
+            "name:ca": "Tessalònica - Promachonas",
+            "name:el": "Θεσσαλονίκη - Προμαχώνας",
+            "name:fr": "Thessalonique - Promachonas",
+            "name:mk": "Солун - Промахонас",
+            "int_name": "Thessaloniki - Promachonas",
+            "alt_name:ca": "Salònica - Promachonas"
+          }
+        },
+        "bbox": [
+          23.0538211,
+          40.8611208,
+          23.0545816,
+          40.8632246
+        ],
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              23.0545816,
+              40.8632246
+            ],
+            [
+              23.0538211,
+              40.8611208
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 58684756,
+          "osm_type": "way",
+          "osm_id": 782509216,
+          "place_rank": 26,
+          "category": "highway",
+          "type": "motorway",
+          "importance": 0.37817846516583514,
+          "addresstype": "road",
+          "name": "Θεσσαλονίκη - Προμαχώνας",
+          "display_name": "Θεσσαλονίκη - Προμαχώνας, Στρυμωνικό, Strymoniko Municipal Unit, Irakleia Municipality, Serres Regional Unit, Central Macedonia, Macedonia and Thrace, 620 54, Greece",
+          "address": {
+            "road": "Θεσσαλονίκη - Προμαχώνας",
+            "village": "Στρυμωνικό",
+            "city": "Strymoniko Municipal Unit",
+            "municipality": "Irakleia Municipality",
+            "county": "Serres Regional Unit",
+            "state": "Central Macedonia",
+            "ISO3166-2-lvl5": "GR-B",
+            "postcode": "620 54",
+            "country": "Greece",
+            "country_code": "gr"
+          },
+          "namedetails": {
+            "ref": "Α25",
+            "name": "Θεσσαλονίκη - Προμαχώνας",
+            "int_ref": "E 79",
+            "name:bg": "Солун - Бастион",
+            "name:ca": "Tessalònica - Promachonas",
+            "name:el": "Θεσσαλονίκη - Προμαχώνας",
+            "name:fr": "Thessalonique - Promachonas",
+            "name:mk": "Солун - Промахонас",
+            "int_name": "Thessaloniki - Promachonas",
+            "alt_name:ca": "Salònica - Promachonas"
+          }
+        },
+        "bbox": [
+          23.3115610,
+          41.0485355,
+          23.3148344,
+          41.0487898
+        ],
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              23.3148344,
+              41.0487898
+            ],
+            [
+              23.311561,
+              41.0485355
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 58796159,
+          "osm_type": "way",
+          "osm_id": 492665759,
+          "place_rank": 26,
+          "category": "highway",
+          "type": "motorway",
+          "importance": 0.37817846516583514,
+          "addresstype": "road",
+          "name": "Θεσσαλονίκη - Προμαχώνας",
+          "display_name": "Θεσσαλονίκη - Προμαχώνας, Κάτω Χριστός, Serres Municipality, Serres Regional Unit, Central Macedonia, Macedonia and Thrace, 621 00, Greece",
+          "address": {
+            "road": "Θεσσαλονίκη - Προμαχώνας",
+            "village": "Κάτω Χριστός",
+            "municipality": "Serres Municipality",
+            "county": "Serres Regional Unit",
+            "state": "Central Macedonia",
+            "ISO3166-2-lvl5": "GR-B",
+            "postcode": "621 00",
+            "country": "Greece",
+            "country_code": "gr"
+          },
+          "namedetails": {
+            "ref": "Α25",
+            "name": "Θεσσαλονίκη - Προμαχώνας",
+            "int_ref": "E 79",
+            "name:bg": "Солун - Бастион",
+            "name:ca": "Tessalònica - Promachonas",
+            "name:el": "Θεσσαλονίκη - Προμαχώνας",
+            "name:fr": "Thessalonique - Promachonas",
+            "name:mk": "Солун - Промахонас",
+            "int_name": "Thessaloniki - Promachonas",
+            "alt_name:ca": "Salònica - Promachonas"
+          }
+        },
+        "bbox": [
+          23.4538019,
+          41.1043540,
+          23.4539328,
+          41.1048770
+        ],
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              23.4538019,
+              41.104877
+            ],
+            [
+              23.4539328,
+              41.104354
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

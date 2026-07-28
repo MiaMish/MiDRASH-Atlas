@@ -23,6 +23,20 @@ type Config struct {
 	OutputPath        string
 	CacheDir          string
 	AllPlaces         bool
+	OnProgress        func(Progress)
+}
+
+type Progress struct {
+	Index          int
+	Total          int
+	PlaceID        string
+	PlaceLabel     string
+	Query          string
+	Phase          string
+	FromCache      bool
+	CandidateCount int
+	Duration       time.Duration
+	Err            error
 }
 
 type pilotConfig struct {
@@ -130,15 +144,30 @@ func Run(ctx context.Context, client *gazetteer.Nominatim, cfg Config) (Output, 
 			ReviewPolicy: "Candidates are drafts; no geometry is accepted without human review.",
 		},
 	}
-	for _, selected := range pilot.Places {
+	for index, selected := range pilot.Places {
 		place, ok := placeByID[selected.PlaceID]
 		if !ok {
 			return Output{}, fmt.Errorf("pilot place %s is absent from places export", selected.PlaceID)
 		}
+		progress := Progress{
+			Index: index + 1, Total: len(pilot.Places), PlaceID: selected.PlaceID,
+			PlaceLabel: selected.PlaceLabel, Query: selected.Query, Phase: "started",
+		}
+		reportProgress(cfg.OnProgress, progress)
+		startedAt := time.Now()
 		result, err := client.Search(ctx, selected.Query)
 		if err != nil {
+			progress.Phase = "failed"
+			progress.Duration = time.Since(startedAt)
+			progress.Err = err
+			reportProgress(cfg.OnProgress, progress)
 			return Output{}, fmt.Errorf("search %s (%s): %w", selected.PlaceLabel, selected.Query, err)
 		}
+		progress.Phase = "completed"
+		progress.Duration = time.Since(startedAt)
+		progress.FromCache = result.FromCache
+		progress.CandidateCount = len(result.Candidates)
+		reportProgress(cfg.OnProgress, progress)
 		var candidates []curation.GazetteerCandidate
 		for _, candidate := range result.Candidates {
 			candidates = append(candidates, curation.GazetteerCandidate{
@@ -178,6 +207,12 @@ func Run(ctx context.Context, client *gazetteer.Nominatim, cfg Config) (Output, 
 		return Output{}, err
 	}
 	return output, nil
+}
+
+func reportProgress(callback func(Progress), progress Progress) {
+	if callback != nil {
+		callback(progress)
+	}
 }
 
 func readJSON(path string, out any) error {

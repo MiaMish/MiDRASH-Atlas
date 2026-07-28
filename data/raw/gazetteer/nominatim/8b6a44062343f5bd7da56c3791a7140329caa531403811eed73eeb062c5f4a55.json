@@ -1,0 +1,117 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Ramat Gan, Israel",
+    "retrieved_at": "2026-07-28T13:06:43.08135Z",
+    "cache_key": "8b6a44062343f5bd7da56c3791a7140329caa531403811eed73eeb062c5f4a55",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Ramat Gan, Israel"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 212791800,
+          "osm_type": "relation",
+          "osm_id": 1382493,
+          "place_rank": 16,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.6131469086937198,
+          "addresstype": "town",
+          "name": "Ramat Gan",
+          "display_name": "Ramat Gan, Tel Aviv Subdistrict, Tel-Aviv District, Israel",
+          "address": {
+            "town": "Ramat Gan",
+            "state_district": "Tel Aviv Subdistrict",
+            "state": "Tel-Aviv District",
+            "ISO3166-2-lvl4": "IL-TA",
+            "country": "Israel",
+            "country_code": "il"
+          },
+          "namedetails": {
+            "name": "רמת גן",
+            "name:en": "Ramat Gan",
+            "name:fr": "Ramat Gan",
+            "name:he": "רמת גן",
+            "name:ru": "Рамат-Ган",
+            "name:ar": "رمات غان",
+            "name:de": "Ramat Gan",
+            "name:es": "Ramat Gan",
+            "name:hi": "रमत गन",
+            "name:hr": "Ramat Gan",
+            "name:lt": "Ramat Ganas",
+            "name:ml": "റമത്ത് ഗാൻ",
+            "name:he1": "רָמַת גַּן"
+          }
+        },
+        "bbox": [
+          34.7991223,
+          32.0360930,
+          34.8545946,
+          32.1055761
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                34.7991223,
+                32.0843933
+              ],
+              [
+                34.8207366,
+                32.078961
+              ],
+              [
+                34.8132415,
+                32.0446939
+              ],
+              [
+                34.8458138,
+                32.036093
+              ],
+              [
+                34.8545946,
+                32.0506086
+              ],
+              [
+                34.8366304,
+                32.0610627
+              ],
+              [
+                34.8511968,
+                32.0732194
+              ],
+              [
+                34.8276715,
+                32.0754365
+              ],
+              [
+                34.8276484,
+                32.1055761
+              ],
+              [
+                34.7991223,
+                32.0843933
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

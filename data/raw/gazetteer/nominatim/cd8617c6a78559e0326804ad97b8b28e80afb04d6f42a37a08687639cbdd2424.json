@@ -1,0 +1,610 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Tlemcen (Algeria)",
+    "retrieved_at": "2026-07-28T13:07:10.868882Z",
+    "cache_key": "cd8617c6a78559e0326804ad97b8b28e80afb04d6f42a37a08687639cbdd2424",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Tlemcen (Algeria)"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 297831496,
+          "osm_type": "relation",
+          "osm_id": 4291172,
+          "place_rank": 16,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.575269446006989,
+          "addresstype": "city",
+          "name": "Tlemcen",
+          "display_name": "Tlemcen, Tlemcen District, Tlemcen, 13000, Algeria",
+          "address": {
+            "city": "Tlemcen",
+            "county": "Tlemcen District",
+            "state": "Tlemcen",
+            "ISO3166-2-lvl4": "DZ-13",
+            "postcode": "13000",
+            "country": "Algeria",
+            "country_code": "dz"
+          },
+          "namedetails": {
+            "ref": "1301",
+            "name": "Tlemcen",
+            "name:an": "Termicén",
+            "name:ar": "تلمسان",
+            "name:be": "Горад Тлемсен",
+            "name:ca": "Tilimsen",
+            "name:en": "Tlemcen",
+            "name:eo": "Tlemecen",
+            "name:es": "Tremecén",
+            "name:eu": "Tilimsen",
+            "name:fa": "تلمسان",
+            "name:fr": "Tlemcen",
+            "name:he": "תלמסאן",
+            "name:ja": "トレムセン",
+            "name:kk": "Тлемсен қаласы",
+            "name:ko": "틀렘센",
+            "name:lt": "Tlemsenas",
+            "name:mk": "Тлемсен",
+            "name:nl": "Tlemcen",
+            "name:pl": "Tilimsan",
+            "name:ru": "Тлемсен",
+            "name:sw": "Wilaya ya Tlemcen",
+            "name:th": "ตแลมแซน",
+            "name:tr": "Tilimsan",
+            "name:uk": "Тлемсен",
+            "name:ur": "تلمسان",
+            "name:zh": "特莱姆森",
+            "name:ber": "ⵜⴰⵍⴰ ⵉⵎⵙⴻⵏ",
+            "name:kab": "Tlemsan",
+            "_place_name": "تلمسان ⵜⵍⵎⵙⴰⵏ",
+            "name:el": "Τλέμσεν",
+            "name:it": "Tlemcen",
+            "_place_name:ber": "ⵜⵍⵎⵙⴰⵏ",
+            "alt_name:ber": "ⵜⴰⵍⴰ ⵉⵎⵙⴰⵏ"
+          }
+        },
+        "bbox": [
+          -1.3706815,
+          34.8575021,
+          -1.2594593,
+          34.9352287
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -1.3706815,
+                34.9098477
+              ],
+              [
+                -1.3322203,
+                34.8876715
+              ],
+              [
+                -1.3222745,
+                34.8575021
+              ],
+              [
+                -1.2646306,
+                34.8654776
+              ],
+              [
+                -1.2617221,
+                34.8960049
+              ],
+              [
+                -1.283685,
+                34.8936247
+              ],
+              [
+                -1.3307808,
+                34.9343255
+              ],
+              [
+                -1.3489453,
+                34.9352287
+              ],
+              [
+                -1.3706815,
+                34.9098477
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 420993557,
+          "osm_type": "relation",
+          "osm_id": 1280702,
+          "place_rank": 8,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.5243194547498101,
+          "addresstype": "state",
+          "name": "Tlemcen",
+          "display_name": "Tlemcen, Algeria",
+          "address": {
+            "state": "Tlemcen",
+            "ISO3166-2-lvl4": "DZ-13",
+            "country": "Algeria",
+            "country_code": "dz"
+          },
+          "namedetails": {
+            "ref": "13",
+            "name": "تلمسان ⵜⵍⵎⵙⴰⵏ",
+            "name:ar": "تلمسان",
+            "name:az": "Tlemsen vilayəti",
+            "name:be": "Тлемсен",
+            "name:bg": "Тлемсен",
+            "name:ca": "Província de Tlemcen",
+            "name:de": "Provinz Tilimsān",
+            "name:el": "Επαρχία Τλεμσέν",
+            "name:en": "Tlemcen",
+            "name:es": "Provincia de Tremecén",
+            "name:eu": "Tilimsengo probintzia",
+            "name:fa": "استان تلمسان",
+            "name:fr": "Tlemcen",
+            "name:gl": "Vilaia de Tlemcen",
+            "name:hi": "त्लेम्सेन प्रांत",
+            "name:hu": "Tilimszán tartomány",
+            "name:id": "Provinsi Tilimsan",
+            "name:it": "Provincia di Tlemcen",
+            "name:ja": "トレムセン県",
+            "name:ka": "ტლემსენის პროვინცია",
+            "name:ko": "틀렘센주",
+            "name:ks": "تلمسان",
+            "name:lt": "Tlemseno vilaja",
+            "name:ms": "Wilayah Tlemcen",
+            "name:nl": "Tlemcen",
+            "name:no": "Tlemcen",
+            "name:pl": "Prowincja Tilimsan",
+            "name:pt": "Tremecém",
+            "name:ro": "Provincia Tlemcen",
+            "name:ru": "Тлемсен",
+            "name:se": "Tlemcen eanangoddi",
+            "name:sh": "Tlemsen",
+            "name:sr": "Тлемсен",
+            "name:sv": "Tlemcen",
+            "name:sw": "Wilaya ya Tlemcen",
+            "name:tg": "Вилояти Тлемсон",
+            "name:tl": "Lalawigan ng Tlemcen",
+            "name:tr": "Tlemsan Vilayeti",
+            "name:uk": "Тлемсен",
+            "name:ur": "صوبہ تلمسان",
+            "name:vi": "Tlemcen",
+            "name:zh": "特莱姆森省",
+            "name:zu": "Tlemcen Province",
+            "name:azb": "تلمسان اوستانی",
+            "name:ber": "ⵜⵍⵎⵙⴰⵏ",
+            "name:ceb": "Wilaya de Tlemcen",
+            "name:kab": "Tawilayt n Tlemsan",
+            "name:lad": "Tlemsin",
+            "name:nan": "Tlemcen Séng",
+            "name:pnb": "صوبہ تلمسان",
+            "name:sco": "Tlemcen Province",
+            "name:war": "Tlemcen",
+            "name:wuu": "特莱姆森省",
+            "ISO3166-2": "DZ-13",
+            "alt_name:el": "Τλέμσεν",
+            "alt_name:fa": "تلمسان",
+            "alt_name:ur": "تلمسان",
+            "alt_name:azb": "تلمسان",
+            "alt_name:ber": "ⵜⴰⵍⴰ ⵉⵎⵙⴰⵏ",
+            "alt_name:kab": "Tlemsen",
+            "alt_name:pnb": "تلمسان",
+            "name:be-tarask": "Тлемсэн"
+          }
+        },
+        "bbox": [
+          -2.2185152,
+          34.0966739,
+          -0.7634540,
+          35.2380790
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -2.2185152,
+                35.0483831
+              ],
+              [
+                -2.0458712,
+                34.9268328
+              ],
+              [
+                -1.9733874,
+                34.9357792
+              ],
+              [
+                -1.972724,
+                34.8787907
+              ],
+              [
+                -1.8933617,
+                34.8416393
+              ],
+              [
+                -1.8887317,
+                34.8062193
+              ],
+              [
+                -1.7392661,
+                34.7436736
+              ],
+              [
+                -1.7712238,
+                34.7246084
+              ],
+              [
+                -1.7752214,
+                34.6989636
+              ],
+              [
+                -1.8538264,
+                34.6162286
+              ],
+              [
+                -1.8166629,
+                34.60442
+              ],
+              [
+                -1.7518527,
+                34.5175383
+              ],
+              [
+                -1.6877315,
+                34.4931273
+              ],
+              [
+                -1.7829697,
+                34.3916963
+              ],
+              [
+                -1.7053325,
+                34.30687
+              ],
+              [
+                -1.7089271,
+                34.2371346
+              ],
+              [
+                -1.6514166,
+                34.0966739
+              ],
+              [
+                -1.486185,
+                34.199877
+              ],
+              [
+                -1.310647,
+                34.215637
+              ],
+              [
+                -1.252273,
+                34.203835
+              ],
+              [
+                -1.216278,
+                34.223087
+              ],
+              [
+                -1.196402,
+                34.259756
+              ],
+              [
+                -1.127398,
+                34.277112
+              ],
+              [
+                -1.02612,
+                34.37921
+              ],
+              [
+                -0.946769,
+                34.414617
+              ],
+              [
+                -0.845015,
+                34.504167
+              ],
+              [
+                -0.862812,
+                34.534702
+              ],
+              [
+                -0.907963,
+                34.541637
+              ],
+              [
+                -0.833224,
+                34.579913
+              ],
+              [
+                -0.775383,
+                34.687964
+              ],
+              [
+                -0.786878,
+                34.714436
+              ],
+              [
+                -0.777303,
+                34.726181
+              ],
+              [
+                -0.763454,
+                34.713407
+              ],
+              [
+                -0.7773077,
+                34.7522499
+              ],
+              [
+                -0.888914,
+                34.739817
+              ],
+              [
+                -0.871646,
+                34.864316
+              ],
+              [
+                -0.885356,
+                34.87354
+              ],
+              [
+                -0.926893,
+                34.854001
+              ],
+              [
+                -0.890125,
+                34.89875
+              ],
+              [
+                -0.921501,
+                34.911693
+              ],
+              [
+                -0.946363,
+                34.89955
+              ],
+              [
+                -0.9447409,
+                34.938317
+              ],
+              [
+                -0.9721657,
+                34.9699095
+              ],
+              [
+                -0.93428,
+                35.000502
+              ],
+              [
+                -0.912221,
+                35.053841
+              ],
+              [
+                -1.005036,
+                35.093473
+              ],
+              [
+                -1.045244,
+                35.093832
+              ],
+              [
+                -1.048498,
+                35.12391
+              ],
+              [
+                -1.106754,
+                35.134395
+              ],
+              [
+                -1.129713,
+                35.157137
+              ],
+              [
+                -1.168234,
+                35.156225
+              ],
+              [
+                -1.217637,
+                35.190083
+              ],
+              [
+                -1.232942,
+                35.176964
+              ],
+              [
+                -1.251398,
+                35.206584
+              ],
+              [
+                -1.295476,
+                35.201483
+              ],
+              [
+                -1.302014,
+                35.187904
+              ],
+              [
+                -1.4226771,
+                35.2168802
+              ],
+              [
+                -1.4483,
+                35.168768
+              ],
+              [
+                -1.501083,
+                35.151519
+              ],
+              [
+                -1.556771,
+                35.177186
+              ],
+              [
+                -1.5484,
+                35.214428
+              ],
+              [
+                -1.5876237,
+                35.238079
+              ],
+              [
+                -1.6355306,
+                35.21158
+              ],
+              [
+                -1.6582314,
+                35.1761087
+              ],
+              [
+                -1.6995627,
+                35.1786566
+              ],
+              [
+                -1.7760602,
+                35.118573
+              ],
+              [
+                -1.8057534,
+                35.1332139
+              ],
+              [
+                -1.8859899,
+                35.090676
+              ],
+              [
+                -2.0073827,
+                35.070749
+              ],
+              [
+                -2.0857896,
+                35.073877
+              ],
+              [
+                -2.1544582,
+                35.103031
+              ],
+              [
+                -2.2117611,
+                35.0852573
+              ],
+              [
+                -2.2185152,
+                35.0483831
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 297821367,
+          "osm_type": "relation",
+          "osm_id": 6815252,
+          "place_rank": 12,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.3737616996631093,
+          "addresstype": "county",
+          "name": "Tlemcen District",
+          "display_name": "Tlemcen District, Tlemcen, 13000, Algeria",
+          "address": {
+            "county": "Tlemcen District",
+            "state": "Tlemcen",
+            "ISO3166-2-lvl4": "DZ-13",
+            "postcode": "13000",
+            "country": "Algeria",
+            "country_code": "dz"
+          },
+          "namedetails": {
+            "name": "دائرة تلمسان ⴰⴷⴷⴰⵢⵔⵜ ⵏ ⵜⵍⵉⵎⵙⴰⵏ",
+            "name:ar": "دائرة تلمسان",
+            "name:en": "Tlemcen District",
+            "name:fr": "Daïra Tlemcen",
+            "name:it": "Distretto di Tlemcen",
+            "name:pt": "Tlemcen (distrito)",
+            "name:ro": "Districtul Tlemcen",
+            "name:ber": "ⴰⴷⴷⴰⵢⵔⵜ ⵏ ⵜⵍⵉⵎⵙⴰⵏ",
+            "name:kab": "Tadayṛa n Tlemsan",
+            "alt_name:ber": "ⴰⴷⴷⴰⵢⵔⵜ ⵏ ⵜⴰⵍⴰ ⵉⵎⵙⴻⵏ"
+          }
+        },
+        "bbox": [
+          -1.3706815,
+          34.8575021,
+          -1.2594593,
+          34.9352287
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -1.3706815,
+                34.9098477
+              ],
+              [
+                -1.3322203,
+                34.8876715
+              ],
+              [
+                -1.3222745,
+                34.8575021
+              ],
+              [
+                -1.2646306,
+                34.8654776
+              ],
+              [
+                -1.2617221,
+                34.8960049
+              ],
+              [
+                -1.283685,
+                34.8936247
+              ],
+              [
+                -1.3307808,
+                34.9343255
+              ],
+              [
+                -1.3489453,
+                34.9352287
+              ],
+              [
+                -1.3706815,
+                34.9098477
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

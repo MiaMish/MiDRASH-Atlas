@@ -1,0 +1,473 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Treviso (Italy)",
+    "retrieved_at": "2026-07-28T13:07:13.699714Z",
+    "cache_key": "d7b257a3f3d381b0350a760ca32b2ab28ded9df4aee097e06eeb78ca3aecf385",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Treviso (Italy)"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 78332673,
+          "osm_type": "relation",
+          "osm_id": 45300,
+          "place_rank": 12,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.720376029120639,
+          "addresstype": "county",
+          "name": "Province of Treviso",
+          "display_name": "Province of Treviso, Veneto, Italy",
+          "address": {
+            "county": "Province of Treviso",
+            "ISO3166-2-lvl6": "IT-TV",
+            "state": "Veneto",
+            "ISO3166-2-lvl4": "IT-34",
+            "country": "Italy",
+            "country_code": "it"
+          },
+          "namedetails": {
+            "name": "Treviso",
+            "name:ca": "Província de Treviso",
+            "name:en": "Province of Treviso",
+            "name:it": "Treviso",
+            "name:ko": "트레비소",
+            "name:la": "Tarvisium",
+            "name:ru": "Тревизо",
+            "name:fur": "Trevîs",
+            "name:vec": "Trevixo",
+            "ISO3166-2": "IT-TV",
+            "short_name": "TV",
+            "official_name": "Provincia di Treviso"
+          }
+        },
+        "bbox": [
+          11.7430292,
+          45.5304763,
+          12.6853155,
+          46.0828957
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                11.7430292,
+                45.8540991
+              ],
+              [
+                11.7638774,
+                45.8015212
+              ],
+              [
+                11.8034723,
+                45.7999631
+              ],
+              [
+                11.8210449,
+                45.7828089
+              ],
+              [
+                11.8362709,
+                45.7487468
+              ],
+              [
+                11.81405,
+                45.7434662
+              ],
+              [
+                11.8160533,
+                45.6927003
+              ],
+              [
+                11.8808785,
+                45.6663243
+              ],
+              [
+                11.8982078,
+                45.613055
+              ],
+              [
+                11.8976808,
+                45.6275072
+              ],
+              [
+                11.9015326,
+                45.6283673
+              ],
+              [
+                11.9653973,
+                45.6081624
+              ],
+              [
+                12.0066407,
+                45.6214114
+              ],
+              [
+                12.0058172,
+                45.6433615
+              ],
+              [
+                12.0737858,
+                45.6415427
+              ],
+              [
+                12.0879098,
+                45.5993862
+              ],
+              [
+                12.1127255,
+                45.6142719
+              ],
+              [
+                12.1621538,
+                45.5743545
+              ],
+              [
+                12.1913346,
+                45.5839971
+              ],
+              [
+                12.2103267,
+                45.5713971
+              ],
+              [
+                12.2037084,
+                45.5424393
+              ],
+              [
+                12.2463692,
+                45.5304886
+              ],
+              [
+                12.2785694,
+                45.5352645
+              ],
+              [
+                12.2750942,
+                45.5627413
+              ],
+              [
+                12.2931502,
+                45.5766222
+              ],
+              [
+                12.3357258,
+                45.5615976
+              ],
+              [
+                12.3564762,
+                45.5907699
+              ],
+              [
+                12.4410526,
+                45.5594556
+              ],
+              [
+                12.4531881,
+                45.571772
+              ],
+              [
+                12.4246278,
+                45.6238151
+              ],
+              [
+                12.4386163,
+                45.6398233
+              ],
+              [
+                12.4856409,
+                45.6398845
+              ],
+              [
+                12.5058145,
+                45.6880326
+              ],
+              [
+                12.5380358,
+                45.6795914
+              ],
+              [
+                12.5759496,
+                45.6976173
+              ],
+              [
+                12.6025598,
+                45.67977
+              ],
+              [
+                12.6853155,
+                45.7129409
+              ],
+              [
+                12.6707753,
+                45.7172665
+              ],
+              [
+                12.6703046,
+                45.7457788
+              ],
+              [
+                12.6466804,
+                45.7477015
+              ],
+              [
+                12.6702491,
+                45.7715488
+              ],
+              [
+                12.6552555,
+                45.7786733
+              ],
+              [
+                12.6477658,
+                45.8196369
+              ],
+              [
+                12.6070828,
+                45.8386506
+              ],
+              [
+                12.5930094,
+                45.8151432
+              ],
+              [
+                12.5537338,
+                45.8295183
+              ],
+              [
+                12.5588734,
+                45.8470108
+              ],
+              [
+                12.5293721,
+                45.8638681
+              ],
+              [
+                12.5337498,
+                45.8851782
+              ],
+              [
+                12.5074245,
+                45.8980064
+              ],
+              [
+                12.5235967,
+                45.9033017
+              ],
+              [
+                12.5060155,
+                45.9223149
+              ],
+              [
+                12.4261372,
+                45.9470749
+              ],
+              [
+                12.4281687,
+                45.9955843
+              ],
+              [
+                12.399894,
+                46.0629091
+              ],
+              [
+                12.3292719,
+                46.0828957
+              ],
+              [
+                12.225251,
+                46.011932
+              ],
+              [
+                12.1102094,
+                46.0034575
+              ],
+              [
+                12.0602696,
+                45.960209
+              ],
+              [
+                12.0311733,
+                45.9737213
+              ],
+              [
+                11.9626026,
+                45.9547066
+              ],
+              [
+                11.9433,
+                45.8928419
+              ],
+              [
+                11.8691869,
+                45.8804429
+              ],
+              [
+                11.8251248,
+                45.9081126
+              ],
+              [
+                11.7992662,
+                45.8720807
+              ],
+              [
+                11.7430292,
+                45.8540991
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 82649706,
+          "osm_type": "relation",
+          "osm_id": 45511,
+          "place_rank": 16,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.6389542449297139,
+          "addresstype": "city",
+          "name": "Treviso",
+          "display_name": "Treviso, Province of Treviso, Veneto, 31100, Italy",
+          "address": {
+            "city": "Treviso",
+            "county": "Province of Treviso",
+            "ISO3166-2-lvl6": "IT-TV",
+            "state": "Veneto",
+            "ISO3166-2-lvl4": "IT-34",
+            "postcode": "31100",
+            "country": "Italy",
+            "country_code": "it"
+          },
+          "namedetails": {
+            "name": "Treviso",
+            "name:it": "Treviso",
+            "name:ar": "تريفيزو",
+            "name:az": "Trevizo",
+            "name:be": "Трэвіза",
+            "name:bg": "Тревизо",
+            "name:ca": "Treviso",
+            "name:ce": "Тревизо",
+            "name:el": "Τρεβίζο",
+            "name:en": "Treviso",
+            "name:eo": "Trevizo",
+            "name:fa": "ترویزو",
+            "name:fr": "Trévise",
+            "name:he": "טרוויזו",
+            "name:hy": "Տրևիզո",
+            "name:ja": "トレヴィーゾ",
+            "name:kk": "Тревизо",
+            "name:ko": "트레비소",
+            "name:la": "Tarvisium",
+            "name:lt": "Trevizas",
+            "name:lv": "Trevizo",
+            "name:mk": "Тревизо",
+            "name:ml": "ട്രെവീസോ",
+            "name:mr": "त्रेव्हिसो",
+            "name:nl": "Treviso",
+            "name:oc": "Trevís",
+            "name:os": "Тревизо",
+            "name:ru": "Тревизо",
+            "name:sa": "त्रेविजो",
+            "name:sc": "Trebisu",
+            "name:sl": "Treviž",
+            "name:sr": "Тревизо",
+            "name:th": "เตรวีโซ",
+            "name:tt": "Тревизо",
+            "name:uk": "Тревізо",
+            "name:ur": "ترویزو",
+            "name:vo": "Treviso",
+            "name:yi": "טראוויזיע",
+            "name:zh": "特雷維索",
+            "name:fur": "Trevîs",
+            "name:vec": "Trevixo"
+          }
+        },
+        "bbox": [
+          12.1696757,
+          45.6136502,
+          12.2882487,
+          45.7078497
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                12.1696757,
+                45.6305962
+              ],
+              [
+                12.1948769,
+                45.6140087
+              ],
+              [
+                12.19677,
+                45.630601
+              ],
+              [
+                12.2328786,
+                45.6319663
+              ],
+              [
+                12.2415285,
+                45.6460238
+              ],
+              [
+                12.2799422,
+                45.6386425
+              ],
+              [
+                12.2771155,
+                45.6950717
+              ],
+              [
+                12.2595122,
+                45.7034566
+              ],
+              [
+                12.2554313,
+                45.6861115
+              ],
+              [
+                12.229938,
+                45.7078497
+              ],
+              [
+                12.1888363,
+                45.6989905
+              ],
+              [
+                12.1925433,
+                45.6675377
+              ],
+              [
+                12.1696757,
+                45.6305962
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

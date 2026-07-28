@@ -1,0 +1,872 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Baghdad (Iraq)",
+    "retrieved_at": "2026-07-28T13:05:05.327757Z",
+    "cache_key": "7fe394565485f982accd700b5645d814ce6a02c4c676279dfc7722337a752752",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Baghdad (Iraq)"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 211111707,
+          "osm_type": "relation",
+          "osm_id": 5638803,
+          "place_rank": 10,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.7169347499655112,
+          "addresstype": "city",
+          "name": "Baghdad",
+          "display_name": "Baghdad, Green Zone Municipality, Zawra District, Baghdad Governorate, Iraq",
+          "address": {
+            "city": "Baghdad",
+            "municipality": "Green Zone Municipality",
+            "district": "Zawra District",
+            "state": "Baghdad Governorate",
+            "ISO3166-2-lvl4": "IQ-BG",
+            "country": "Iraq",
+            "country_code": "iq"
+          },
+          "namedetails": {
+            "name": "بغداد",
+            "name:af": "Bagdad",
+            "name:am": "ባግዳድ",
+            "name:an": "Bagdad",
+            "name:ar": "بغداد",
+            "name:as": "বাগদাদ",
+            "name:av": "Багъдад",
+            "name:az": "Bağdad",
+            "name:ba": "Бағдад",
+            "name:be": "Багдад",
+            "name:bg": "Багдад",
+            "name:bm": "Baghdad",
+            "name:bn": "বাগদাদ",
+            "name:bo": "པ་ག་ཏ",
+            "name:br": "Baghdad",
+            "name:bs": "Bagdad",
+            "name:ca": "Bagdad",
+            "name:ce": "БагӀдад",
+            "name:co": "Baghdad",
+            "name:cs": "Bagdád",
+            "name:cv": "Пахтат",
+            "name:cy": "Baghdad",
+            "name:da": "Bagdad",
+            "name:de": "Bagdad",
+            "name:dv": "ބަޣުދާދު",
+            "name:el": "Βαγδάτη",
+            "name:en": "Baghdad",
+            "name:eo": "Bagdado",
+            "name:es": "Bagdad",
+            "name:et": "Bagdad",
+            "name:eu": "Bagdad",
+            "name:fa": "بغداد",
+            "name:fi": "Bagdad",
+            "name:fo": "Bagdad",
+            "name:fr": "Bagdad",
+            "name:fy": "Bagdad",
+            "name:ga": "Bagdad",
+            "name:gd": "Baghdad",
+            "name:gl": "Bagdad",
+            "name:gn": "Bagdad",
+            "name:ha": "Bagdaza",
+            "name:he": "בגדד",
+            "name:hi": "बग़दाद",
+            "name:hr": "Bagdad",
+            "name:ht": "Bagdad",
+            "name:hu": "Bagdad",
+            "name:hy": "Բաղդադ",
+            "name:ia": "Bagdad",
+            "name:id": "Bagdad",
+            "name:ie": "Bagdad",
+            "name:io": "Bagdad",
+            "name:is": "Bagdad",
+            "name:it": "Bagdad",
+            "name:ja": "バグダード",
+            "name:jv": "Bagdad",
+            "name:ka": "ბაღდადი",
+            "name:ki": "Baghdad",
+            "name:kk": "Бағдат",
+            "name:kl": "Baghdad",
+            "name:kn": "ಬಾಗ್ದಾದ್",
+            "name:ko": "바그다드",
+            "name:ks": "بغداد",
+            "name:ku": "Bexda",
+            "name:kw": "Baldak",
+            "name:ky": "Багдад",
+            "name:la": "Bagdatum",
+            "name:lb": "Bagdad",
+            "name:li": "Bagdad",
+            "name:lt": "Bagdadas",
+            "name:lv": "Bagdāde",
+            "name:mg": "Bagdad",
+            "name:mi": "Baghdad",
+            "name:mk": "Багдад",
+            "name:ml": "ബാഗ്ദാദ്",
+            "name:mn": "Багдад",
+            "name:mr": "बगदाद",
+            "name:ms": "Baghdad",
+            "name:my": "ဘဂ္ဂဒက်မြို့",
+            "name:na": "Baghdad",
+            "name:ne": "बगदाद",
+            "name:nl": "Bagdad",
+            "name:nn": "Bagdad",
+            "name:no": "Bagdad",
+            "name:ny": "Baghdad",
+            "name:oc": "Bagdad",
+            "name:or": "ବାଗଦାଦ",
+            "name:os": "Багдад",
+            "name:pa": "ਬਗ਼ਦਾਦ",
+            "name:pl": "Bagdad",
+            "name:ps": "بغداد",
+            "name:pt": "Bagdade",
+            "name:qu": "Bagdad",
+            "name:ro": "Bagdad",
+            "name:ru": "Багдад",
+            "name:sc": "Bagdad",
+            "name:sd": "بغداد",
+            "name:sh": "Bagdad",
+            "name:si": "බැග්ඩෑඩ්",
+            "name:sk": "Bagdad",
+            "name:sl": "Bagdad",
+            "name:sn": "Baghdad",
+            "name:so": "Baqdaad",
+            "name:sq": "Bagdadi",
+            "name:sr": "Багдад",
+            "name:sv": "Bagdad",
+            "name:sw": "Baghdad",
+            "name:ta": "பக்தாத்",
+            "name:te": "బాగ్దాద్",
+            "name:tg": "Бағдод",
+            "name:th": "แบกแดด",
+            "name:tk": "Bagdat",
+            "name:tl": "Baghdad",
+            "name:tr": "Bağdat",
+            "name:tt": "Багдад",
+            "name:tw": "Baghdad",
+            "name:ug": "باغداد",
+            "name:uk": "Багдад",
+            "name:ur": "بغداد",
+            "name:uz": "Baghdad",
+            "name:vi": "Bagdad",
+            "name:vo": "Bagdad",
+            "name:wa": "Bagdet",
+            "name:wo": "Bagdad",
+            "name:yi": "באגדאד",
+            "name:yo": "Baghdad",
+            "name:zh": "巴格達",
+            "alt_name": "بغداد الرشيد",
+            "name:ace": "Baghdad",
+            "name:ady": "Багдад",
+            "name:als": "Bagdad",
+            "name:arc": "ܒܓܕܐܕ",
+            "name:ary": "بغداد",
+            "name:arz": "بغداد",
+            "name:ast": "Bagdag",
+            "name:azb": "بغداد",
+            "name:ban": "Baghdad",
+            "name:bcl": "Baghdad",
+            "name:bxr": "Багдад",
+            "name:cdo": "Baghdad",
+            "name:ceb": "Baghdad",
+            "name:ckb": "بەغدا",
+            "name:crh": "Bağdad",
+            "name:diq": "Beğdad",
+            "name:dty": "बगदाद",
+            "name:ext": "Bagdad",
+            "name:frp": "Bagdad",
+            "name:frr": "Bagdad",
+            "name:glk": "بغداد",
+            "name:hak": "Baghdad",
+            "name:hif": "Baghdad",
+            "name:hsb": "Bagdad",
+            "name:hyw": "Պաղտատ",
+            "name:ilo": "Baghdad",
+            "name:inh": "БагӀдад",
+            "name:jbo": "bagdad",
+            "name:kaa": "Bag'dad",
+            "name:kab": "Beɣdad",
+            "name:kbd": "Багдад",
+            "name:kbp": "Pagidaadɩ",
+            "name:lad": "Bagdad",
+            "name:lez": "Багъдад",
+            "name:lfn": "Baghdad",
+            "name:lij": "Baghdad",
+            "name:lmo": "Baghdad",
+            "name:lrc": "بٱغداد",
+            "name:mai": "बगदाद",
+            "name:mhr": "Багдад",
+            "name:min": "Bagdad",
+            "name:mwl": "Bagdade",
+            "name:myv": "Багдад ош",
+            "name:mzn": "بقداتی",
+            "name:nah": "Bagdād",
+            "name:nan": "Baghdad",
+            "name:nds": "Bagdad",
+            "name:new": "बग्दाद",
+            "name:olo": "Bagdad",
+            "name:pap": "Bagdad",
+            "name:pcd": "Bagdad",
+            "name:pih": "Baagdad",
+            "name:pms": "Baghdad",
+            "name:pnb": "بغداد",
+            "name:rue": "Баґдад",
+            "name:sah": "Багдад",
+            "name:sat": "ᱵᱟᱜᱽᱫᱟᱫᱽ",
+            "name:scn": "Baghdad",
+            "name:sco": "Baghdad",
+            "name:skr": "بغداد",
+            "name:smn": "Bagdad",
+            "name:stq": "Bagdad",
+            "name:szl": "Bagdad",
+            "name:tpi": "Bagdad",
+            "name:tzl": "Baghdad",
+            "name:udm": "Багдад",
+            "name:vec": "Bagdad",
+            "name:vep": "Bagdad",
+            "name:vro": "Bagdad",
+            "name:war": "Baghdad",
+            "name:wuu": "巴格达",
+            "name:xmf": "ბაღდადი",
+            "name:yue": "巴格達",
+            "name:zea": "Bagdad",
+            "alt_name:en": "Bagdad",
+            "alt_name:he": "בגדד",
+            "alt_name:vi": "Bát-đa",
+            "name:simple": "Baghdad",
+            "name:bat-smg": "Bagdads",
+            "name:zh-Hans": "巴格达",
+            "name:roa-tara": "Baghdad",
+            "_place_name:ml": "ബഗ്ദാദ്",
+            "name:nb": "Bagdad",
+            "name:nv": "Názlíní Hatsoh",
+            "_place_name:tt": "Бәгъдат",
+            "_place_name:zh": "巴格達/巴格达",
+            "name:be-tarask": "Багдад",
+            "name:ber": "ⴱⴻⵖⴷⴰⴷ",
+            "name:pt-BR": "Bagdá"
+          }
+        },
+        "bbox": [
+          44.1846152,
+          33.1797569,
+          44.5699963,
+          33.4868251
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                44.1846152,
+                33.2203846
+              ],
+              [
+                44.1999703,
+                33.2079174
+              ],
+              [
+                44.2409613,
+                33.2207475
+              ],
+              [
+                44.2409535,
+                33.1816592
+              ],
+              [
+                44.373944,
+                33.2035668
+              ],
+              [
+                44.4065598,
+                33.1797569
+              ],
+              [
+                44.4557312,
+                33.2129397
+              ],
+              [
+                44.4805337,
+                33.192686
+              ],
+              [
+                44.5277542,
+                33.2439414
+              ],
+              [
+                44.5178139,
+                33.2612755
+              ],
+              [
+                44.5406073,
+                33.2787811
+              ],
+              [
+                44.5334136,
+                33.3411411
+              ],
+              [
+                44.5589054,
+                33.3699703
+              ],
+              [
+                44.5662761,
+                33.4183142
+              ],
+              [
+                44.5476664,
+                33.4367536
+              ],
+              [
+                44.5157327,
+                33.427673
+              ],
+              [
+                44.4861139,
+                33.4417199
+              ],
+              [
+                44.4594286,
+                33.4205203
+              ],
+              [
+                44.4545288,
+                33.4483032
+              ],
+              [
+                44.380579,
+                33.4479916
+              ],
+              [
+                44.3816109,
+                33.4776478
+              ],
+              [
+                44.305053,
+                33.4868251
+              ],
+              [
+                44.2785315,
+                33.460965
+              ],
+              [
+                44.2540054,
+                33.4642588
+              ],
+              [
+                44.2628932,
+                33.450067
+              ],
+              [
+                44.2327666,
+                33.4236463
+              ],
+              [
+                44.2429864,
+                33.3670675
+              ],
+              [
+                44.2012348,
+                33.3658585
+              ],
+              [
+                44.206404,
+                33.3081526
+              ],
+              [
+                44.1879164,
+                33.2984985
+              ],
+              [
+                44.2239596,
+                33.2298351
+              ],
+              [
+                44.1846152,
+                33.2203846
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 210599321,
+          "osm_type": "relation",
+          "osm_id": 3242293,
+          "place_rank": 8,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.5013866238555544,
+          "addresstype": "state",
+          "name": "Baghdad Governorate",
+          "display_name": "Baghdad Governorate, Iraq",
+          "address": {
+            "state": "Baghdad Governorate",
+            "ISO3166-2-lvl4": "IQ-BG",
+            "country": "Iraq",
+            "country_code": "iq"
+          },
+          "namedetails": {
+            "name": "محافظة بغداد",
+            "name:ar": "محافظة بغداد",
+            "name:az": "Bağdad mühafəzəsi",
+            "name:bg": "Багдад (област)",
+            "name:bn": "বাগদাদ প্রদেশ",
+            "name:ca": "Governació de Bagdad",
+            "name:cs": "Guvernorát Bagdád",
+            "name:da": "Bagdad (provins)",
+            "name:de": "Gouvernement Bagdad",
+            "name:en": "Baghdad Governorate",
+            "name:eo": "Gubernio Bagdado",
+            "name:es": "Gobernación de Bagdad",
+            "name:et": "Bagdadi kubernerkond",
+            "name:eu": "Bagdadeko probintzia",
+            "name:fa": "استان بغداد",
+            "name:fi": "Bagdad (maakunta)",
+            "name:fr": "Bagdad",
+            "name:gl": "Provincia de Bagdad",
+            "name:he": "מחוז בגדאד",
+            "name:hi": "बग़दाद प्रान्त",
+            "name:hr": "Guvernat Bagdad",
+            "name:hu": "Bagdad kormányzóság",
+            "name:id": "Kegubernuran Bagdad",
+            "name:it": "Governatorato di Baghdad",
+            "name:ja": "バグダード県",
+            "name:ka": "ბაღდადის მუჰაფაზა",
+            "name:ko": "바그다드주",
+            "name:ku": "Parêzgeha Bexdayê",
+            "name:ms": "Pentadbiran Baghdad",
+            "name:nl": "Gouvernement Bagdad",
+            "name:nn": "Bagdad guvernement",
+            "name:no": "Bagdad guvernement",
+            "name:pa": "ਬਗ਼ਦਾਦ ਪ੍ਰਾਂਤ",
+            "name:pl": "Bagdad (muhafaza)",
+            "name:pt": "Bagdá (província)",
+            "name:ro": "Bagdad (provincie)",
+            "name:ru": "Багдад (мухафаза)",
+            "name:sk": "Guvernorát Bagdad",
+            "name:sl": "Guvernat Bagdad",
+            "name:sr": "Багдад",
+            "name:sv": "Bagdad (provins)",
+            "name:ta": "பாக்தாத் மாகாணம்",
+            "name:tg": "Вилояти Бағдод",
+            "name:tr": "Bağdat ili",
+            "name:uk": "Багдад (провінція)",
+            "name:ur": "محافظہ بغداد",
+            "name:zh": "巴格达省",
+            "name:arc": "ܗܘܦܪܟܝܐ ܒܓܕܐܕ",
+            "name:arz": "محافظه بغداد",
+            "name:azb": "بغداد اوستانی",
+            "name:ceb": "Muḩāfaz̧at Baghdād",
+            "name:ckb": "پارێزگای بەغدا",
+            "name:nan": "Baghdad Séng",
+            "name:sco": "Baghdad Province",
+            "name:war": "Baghdad (gobernador)",
+            "name:wuu": "巴格达省",
+            "name:yue": "巴格達省",
+            "ISO3166-2": "IQ-BG",
+            "short_name": "بَغْدَاد",
+            "_place_name": "بغداد",
+            "short_name:ar": "بَغْدَاد",
+            "short_name:en": "Baghdad",
+            "short_name:ku": "Bexda",
+            "_place_name:ar": "بغداد",
+            "_place_name:az": "Bağdad",
+            "name:be": "Багдад",
+            "_place_name:cs": "Bagdád",
+            "_place_name:de": "Bagdad",
+            "_place_name:en": "Baghdad",
+            "_place_name:eo": "Bagdado",
+            "_place_name:es": "Bagdad",
+            "_place_name:he": "בגדאד",
+            "_place_name:hr": "Bagdad",
+            "_place_name:hu": "Bagdad",
+            "_place_name:ja": "バグダード",
+            "_place_name:ko": "바그다드",
+            "_place_name:ku": "Bexda",
+            "_place_name:pl": "Bagdad",
+            "_place_name:ru": "Багдад",
+            "_place_name:sl": "Bagdad",
+            "_place_name:tr": "Bağdat",
+            "_place_name:uk": "Багдад",
+            "_place_name:zh": "巴格达",
+            "_place_name:arc": "ܒܓܕܐܕ",
+            "official_name": "محافظة بغداد",
+            "official_name:ar": "محافظة بغداد",
+            "official_name:en": "Baghdad Governorate"
+          }
+        },
+        "bbox": [
+          43.8446515,
+          32.8361781,
+          44.9691630,
+          33.7747513
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                43.8485798,
+                33.2561017
+              ],
+              [
+                43.8529449,
+                33.1902644
+              ],
+              [
+                43.870272,
+                33.178421
+              ],
+              [
+                43.9041071,
+                33.1882157
+              ],
+              [
+                43.8784873,
+                33.2019456
+              ],
+              [
+                43.8835328,
+                33.2147005
+              ],
+              [
+                43.9239325,
+                33.204883
+              ],
+              [
+                43.9456261,
+                33.1622478
+              ],
+              [
+                43.9698235,
+                33.149933
+              ],
+              [
+                43.9858112,
+                33.1673326
+              ],
+              [
+                44.0183232,
+                33.1634397
+              ],
+              [
+                44.0753838,
+                33.0916406
+              ],
+              [
+                44.1140008,
+                33.086228
+              ],
+              [
+                44.1412356,
+                33.0227942
+              ],
+              [
+                44.173462,
+                33.0235756
+              ],
+              [
+                44.1644306,
+                32.9952068
+              ],
+              [
+                44.2205778,
+                32.9567413
+              ],
+              [
+                44.28317,
+                32.9412882
+              ],
+              [
+                44.31634,
+                32.9492982
+              ],
+              [
+                44.341883,
+                32.9222742
+              ],
+              [
+                44.3755463,
+                32.9216897
+              ],
+              [
+                44.3844159,
+                32.8933718
+              ],
+              [
+                44.4585459,
+                32.8936937
+              ],
+              [
+                44.4650241,
+                32.8361781
+              ],
+              [
+                44.5845595,
+                32.8362942
+              ],
+              [
+                44.5844652,
+                32.934376
+              ],
+              [
+                44.5537702,
+                32.934511
+              ],
+              [
+                44.5342589,
+                33.0193898
+              ],
+              [
+                44.5570991,
+                33.0215451
+              ],
+              [
+                44.5592422,
+                32.993497
+              ],
+              [
+                44.5738762,
+                32.993766
+              ],
+              [
+                44.5942802,
+                33.070915
+              ],
+              [
+                44.6142672,
+                33.082377
+              ],
+              [
+                44.6302692,
+                33.030986
+              ],
+              [
+                44.6727422,
+                33.002262
+              ],
+              [
+                44.7343702,
+                33.030526
+              ],
+              [
+                44.7570342,
+                33.100043
+              ],
+              [
+                44.8325222,
+                33.130385
+              ],
+              [
+                44.8800532,
+                33.1295481
+              ],
+              [
+                44.884396,
+                33.180955
+              ],
+              [
+                44.912771,
+                33.221411
+              ],
+              [
+                44.969163,
+                33.425916
+              ],
+              [
+                44.5718122,
+                33.4332992
+              ],
+              [
+                44.5641665,
+                33.4229416
+              ],
+              [
+                44.582017,
+                33.4857607
+              ],
+              [
+                44.5376134,
+                33.4780027
+              ],
+              [
+                44.5300357,
+                33.4966432
+              ],
+              [
+                44.5085613,
+                33.4948776
+              ],
+              [
+                44.5125509,
+                33.4693827
+              ],
+              [
+                44.4594286,
+                33.4205203
+              ],
+              [
+                44.4545288,
+                33.4483032
+              ],
+              [
+                44.380579,
+                33.4479916
+              ],
+              [
+                44.3869019,
+                33.5192871
+              ],
+              [
+                44.4888916,
+                33.557312
+              ],
+              [
+                44.4832764,
+                33.5709229
+              ],
+              [
+                44.4171359,
+                33.5626856
+              ],
+              [
+                44.4174793,
+                33.5760683
+              ],
+              [
+                44.3850732,
+                33.5921009
+              ],
+              [
+                44.3865239,
+                33.6120447
+              ],
+              [
+                44.402737,
+                33.616059
+              ],
+              [
+                44.399644,
+                33.680574
+              ],
+              [
+                44.438251,
+                33.709647
+              ],
+              [
+                44.391316,
+                33.739315
+              ],
+              [
+                44.3738956,
+                33.7747513
+              ],
+              [
+                44.3022203,
+                33.7386103
+              ],
+              [
+                44.165507,
+                33.731279
+              ],
+              [
+                44.152658,
+                33.697296
+              ],
+              [
+                44.084844,
+                33.646591
+              ],
+              [
+                44.1391224,
+                33.5242522
+              ],
+              [
+                44.1545033,
+                33.5234587
+              ],
+              [
+                44.1588407,
+                33.4745414
+              ],
+              [
+                44.0841142,
+                33.4743817
+              ],
+              [
+                44.0640792,
+                33.4417563
+              ],
+              [
+                44.0965525,
+                33.401783
+              ],
+              [
+                44.0525909,
+                33.4248504
+              ],
+              [
+                44.0298285,
+                33.3930898
+              ],
+              [
+                43.9845482,
+                33.3707567
+              ],
+              [
+                43.9788894,
+                33.3434852
+              ],
+              [
+                43.869195,
+                33.3560293
+              ],
+              [
+                43.871714,
+                33.2780684
+              ],
+              [
+                43.9313507,
+                33.2639948
+              ],
+              [
+                43.9745567,
+                33.2318027
+              ],
+              [
+                43.9325047,
+                33.2334667
+              ],
+              [
+                43.8665534,
+                33.2666257
+              ],
+              [
+                43.8485798,
+                33.2561017
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

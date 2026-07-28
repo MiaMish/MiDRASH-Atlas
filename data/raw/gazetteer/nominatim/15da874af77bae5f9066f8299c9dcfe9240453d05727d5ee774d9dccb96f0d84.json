@@ -1,0 +1,119 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Yemen (Republic)",
+    "retrieved_at": "2026-07-28T13:07:27.756024Z",
+    "cache_key": "15da874af77bae5f9066f8299c9dcfe9240453d05727d5ee774d9dccb96f0d84",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Yemen (Republic)"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 43866842,
+          "osm_type": "node",
+          "osm_id": 261734250,
+          "place_rank": 30,
+          "category": "office",
+          "type": "diplomatic",
+          "importance": 7.036469062328554e-05,
+          "addresstype": "office",
+          "name": "Embassy of the Federal Republic of Germany",
+          "display_name": "Embassy of the Federal Republic of Germany, شارع السفارة الالمانية, Harat al Barakah, Sana'a, Sana'a City, As Sabain District, Amanat Al Asimah, Yemen",
+          "address": {
+            "office": "Embassy of the Federal Republic of Germany",
+            "road": "شارع السفارة الالمانية",
+            "suburb": "Harat al Barakah",
+            "city": "Sana'a",
+            "district": "As Sabain District",
+            "state": "Amanat Al Asimah",
+            "ISO3166-2-lvl4": "YE-SA",
+            "country": "Yemen",
+            "country_code": "ye"
+          },
+          "namedetails": {
+            "name": "سفارة جمهورية ألمانيا الاتحادية",
+            "name:ar": "سفارة جمهورية ألمانيا الاتحادية",
+            "name:de": "Botschaft der Bundesrepublik Deutschland",
+            "name:en": "Embassy of the Federal Republic of Germany",
+            "name:fr": "Ambassade d'Allemagne",
+            "alt_name": "السفارة الألمانية",
+            "alt_name:ar": "السفارة الألمانية",
+            "alt_name:de": "Deutsche Botschaft",
+            "alt_name:en": "German Embassy"
+          }
+        },
+        "bbox": [
+          44.1985282,
+          15.3086737,
+          44.1986282,
+          15.3087737
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            44.1985782,
+            15.3087237
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 44353489,
+          "osm_type": "node",
+          "osm_id": 4600998991,
+          "place_rank": 30,
+          "category": "office",
+          "type": "diplomatic",
+          "importance": 7.036469062328554e-05,
+          "addresstype": "office",
+          "name": "Honorary Consulate of the Czech Republic in Sana'a",
+          "display_name": "Honorary Consulate of the Czech Republic in Sana'a, round road, Al Qahtami, Al Wahdah District, Sana'a, Sana'a City, Amanat Al Asimah, Yemen",
+          "address": {
+            "office": "Honorary Consulate of the Czech Republic in Sana'a",
+            "road": "round road",
+            "suburb": "Al Qahtami",
+            "city": "Sana'a",
+            "state": "Amanat Al Asimah",
+            "ISO3166-2-lvl4": "YE-SA",
+            "country": "Yemen",
+            "country_code": "ye"
+          },
+          "namedetails": {
+            "name": "القنصلية الفخرية لجمهورية التشيك في صنعاء",
+            "name:ar": "القنصلية الفخرية لجمهورية التشيك في صنعاء",
+            "name:en": "Honorary Consulate of the Czech Republic in Sana'a"
+          }
+        },
+        "bbox": [
+          44.1959393,
+          15.3350158,
+          44.1960393,
+          15.3351158
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            44.1959893,
+            15.3350658
+          ]
+        }
+      }
+    ]
+  }
+}

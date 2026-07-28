@@ -1,0 +1,280 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Cambridge, England",
+    "retrieved_at": "2026-07-28T13:05:21.170109Z",
+    "cache_key": "1faa50e1bb2089dc00987655cc0684bdabc1a4409491a4ac0e94146e5f328fbb",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Cambridge, England"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 159779494,
+          "osm_type": "relation",
+          "osm_id": 295355,
+          "place_rank": 16,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.6990058432201166,
+          "addresstype": "city",
+          "name": "Cambridge",
+          "display_name": "Cambridge, Cambridgeshire, Cambridgeshire and Peterborough, England, United Kingdom",
+          "address": {
+            "city": "Cambridge",
+            "county": "Cambridgeshire",
+            "ISO3166-2-lvl6": "GB-CAM",
+            "state_district": "Cambridgeshire and Peterborough",
+            "state": "England",
+            "ISO3166-2-lvl4": "GB-ENG",
+            "country": "United Kingdom",
+            "country_code": "gb"
+          },
+          "namedetails": {
+            "name": "Cambridge",
+            "name:af": "Cambridge",
+            "name:am": "ኬምብሪጅ",
+            "name:an": "Cambridge",
+            "name:ar": "كامبريدج",
+            "name:az": "Kembric",
+            "name:be": "Кембрыдж",
+            "name:bg": "Кеймбридж",
+            "name:bn": "ক্যামব্রিজ",
+            "name:br": "Cambridge",
+            "name:bs": "Cambridge",
+            "name:ca": "Cambridge",
+            "name:ce": "Кембридж",
+            "name:cs": "Cambridge",
+            "name:cy": "Caergrawnt",
+            "name:da": "Cambridge",
+            "name:de": "Cambridge",
+            "name:el": "Κέιμπριτζ",
+            "name:en": "Cambridge",
+            "name:eo": "Kembriĝo",
+            "name:es": "Cambridge",
+            "name:et": "Cambridge",
+            "name:eu": "Cambridge",
+            "name:fa": "کمبریج",
+            "name:fi": "Cambridge",
+            "name:fo": "Cambridge",
+            "name:fr": "Cambridge",
+            "name:fy": "Cambridge",
+            "name:ga": "Cambridge",
+            "name:gd": "Cambridge",
+            "name:gl": "Cambridge",
+            "name:he": "קיימברידג'",
+            "name:hi": "कैम्ब्रिज",
+            "name:hr": "Cambridge",
+            "name:hu": "Cambridge",
+            "name:hy": "Քեմբրիջ",
+            "name:ia": "Cambridge",
+            "name:id": "Cambridge",
+            "name:ie": "Cambridge",
+            "name:io": "Cambridge",
+            "name:is": "Cambridge",
+            "name:it": "Cambridge",
+            "name:ja": "ケンブリッジ",
+            "name:ka": "კემბრიჯი",
+            "name:kn": "ಕೇಂಬ್ರಿಜ್",
+            "name:ko": "케임브리지",
+            "name:ku": "Cambridge",
+            "name:la": "Cantabrigia",
+            "name:lb": "Cambridge",
+            "name:lt": "Kembridžas",
+            "name:lv": "Kembridža",
+            "name:mk": "Кембриџ",
+            "name:ml": "കേംബ്രിഡ്ജ്",
+            "name:mr": "केंब्रिज",
+            "name:ms": "Cambridge",
+            "name:my": "ကိန်းဘရစ်ချ်မြို့",
+            "name:nl": "Cambridge",
+            "name:nn": "Cambridge",
+            "name:no": "Cambridge",
+            "name:oc": "Cambridge",
+            "name:os": "Кембридж",
+            "name:pa": "ਕੈਂਬਰਿਜ",
+            "name:pl": "Cambridge",
+            "name:pt": "Cambridge",
+            "name:qu": "Cambridge",
+            "name:ro": "Cambridge",
+            "name:ru": "Кембридж",
+            "name:sh": "Cambridge",
+            "name:si": "කේම්බ්‍රිජ්",
+            "name:sk": "Cambridge",
+            "name:sl": "Cambridge",
+            "name:sq": "Kembrixhi",
+            "name:sr": "Кембриџ",
+            "name:sv": "Cambridge",
+            "name:sw": "Cambridge",
+            "name:ta": "கேம்பிரிட்ச்",
+            "name:tg": "Кембриҷ",
+            "name:th": "เคมบริดจ์",
+            "name:tl": "Cambridge",
+            "name:tr": "Cambridge",
+            "name:tt": "Кембриҗ",
+            "name:ug": "Kambrij",
+            "name:uk": "Кембридж",
+            "name:ur": "کیمبرج",
+            "name:uz": "Cambridge",
+            "name:vi": "Cambridge",
+            "name:vo": "Cambridge",
+            "name:yi": "קעמברידזש",
+            "name:zh": "剑桥",
+            "name:als": "Cambridge",
+            "name:ang": "Grantanbrycg",
+            "name:arz": "كامبريدج",
+            "name:ast": "Cambridge",
+            "name:avk": "Cambridge",
+            "name:azb": "کمبریج",
+            "name:ceb": "Cambridge",
+            "name:ckb": "کامبریج",
+            "name:diq": "Cambridge",
+            "name:ext": "Cambridge",
+            "name:hak": "Cambridge",
+            "name:hyw": "Քեմպրիճ",
+            "name:lij": "Cambridge",
+            "name:lmo": "Cambridge",
+            "name:mni": "ꯀꯦꯝꯕ꯭ꯔꯤꯖ",
+            "name:mzn": "کمبریج",
+            "name:nan": "Cambridge",
+            "name:nrm": "Cantebruge",
+            "name:pms": "Cambridge",
+            "name:pnb": "کیمبرج",
+            "name:scn": "Cambridge",
+            "name:sco": "Cambrig",
+            "name:szl": "Cambridge",
+            "name:vep": "Kembridž",
+            "name:war": "Cambridge",
+            "name:wuu": "剑桥",
+            "name:yue": "劍橋",
+            "name:bat-smg": "Kėmbrėdžos",
+            "name:zh-Hans": "剑桥",
+            "name:zh-Hant": "劍橋",
+            "name:be-tarask": "Кембрыдж"
+          }
+        },
+        "bbox": [
+          0.0686389,
+          52.1579417,
+          0.1845520,
+          52.2372296
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0.0686389,
+                52.2161086
+              ],
+              [
+                0.1046861,
+                52.1906436
+              ],
+              [
+                0.1034296,
+                52.1579417
+              ],
+              [
+                0.1813003,
+                52.1694782
+              ],
+              [
+                0.1758437,
+                52.2172414
+              ],
+              [
+                0.1548512,
+                52.2264867
+              ],
+              [
+                0.1694473,
+                52.2352489
+              ],
+              [
+                0.0686389,
+                52.2161086
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 159417467,
+          "osm_type": "node",
+          "osm_id": 20971094,
+          "place_rank": 16,
+          "category": "place",
+          "type": "city",
+          "importance": 0.6990058432201166,
+          "addresstype": "city",
+          "name": "Cambridge",
+          "display_name": "Cambridge, Cambridgeshire, Cambridgeshire and Peterborough, England, CB2 3NR, United Kingdom",
+          "address": {
+            "city": "Cambridge",
+            "county": "Cambridgeshire",
+            "ISO3166-2-lvl6": "GB-CAM",
+            "state_district": "Cambridgeshire and Peterborough",
+            "state": "England",
+            "ISO3166-2-lvl4": "GB-ENG",
+            "postcode": "CB2 3NR",
+            "country": "United Kingdom",
+            "country_code": "gb"
+          },
+          "namedetails": {
+            "name": "Cambridge",
+            "name:ar": "كامبريدج",
+            "name:be": "Кембрыдж",
+            "name:bn": "কেমব্রিজ",
+            "name:cy": "Caergrawnt",
+            "name:en": "Cambridge",
+            "name:eo": "Kembriĝo",
+            "name:hu": "Cambridge",
+            "name:kn": "ಕೇಂಬ್ರಿಡ್ಜ್",
+            "name:ko": "케임브리지",
+            "name:lt": "Kembridžas",
+            "name:mk": "Кембриџ",
+            "name:ml": "കേംബ്രിജ്",
+            "name:ru": "Кембридж",
+            "name:sr": "Кембриџ",
+            "name:uk": "Кембридж",
+            "name:ur": "کیمبرج",
+            "name:zh": "剑桥",
+            "name:ckb": "کامبریج",
+            "name:zh-Hans": "剑桥",
+            "name:zh-Hant": "劍橋"
+          }
+        },
+        "bbox": [
+          -0.0413363,
+          52.0455314,
+          0.2786637,
+          52.3655314
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            0.1186637,
+            52.2055314
+          ]
+        }
+      }
+    ]
+  }
+}

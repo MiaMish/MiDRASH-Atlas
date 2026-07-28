@@ -1,0 +1,184 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Stuttgart, Germany",
+    "retrieved_at": "2026-07-28T13:07:03.869847Z",
+    "cache_key": "5acc2311a99b95144246cc967f5e6ece1c61ffc4a075c00be26f18af228415a2",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Stuttgart, Germany"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 122338170,
+          "osm_type": "relation",
+          "osm_id": 2793104,
+          "place_rank": 12,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.7482923125603024,
+          "addresstype": "city",
+          "name": "Stuttgart",
+          "display_name": "Stuttgart, Baden-Württemberg, Germany",
+          "address": {
+            "city": "Stuttgart",
+            "state": "Baden-Württemberg",
+            "ISO3166-2-lvl4": "DE-BW",
+            "country": "Germany",
+            "country_code": "de"
+          },
+          "namedetails": {
+            "name": "Stuttgart",
+            "name:ar": "شتوتغارت",
+            "name:cs": "Štíhrad",
+            "name:de": "Stuttgart",
+            "name:el": "Στουτγκάρδη",
+            "name:it": "Stoccarda",
+            "name:ko": "슈투트가르트",
+            "name:ru": "Штутгарт",
+            "name:th": "ชตุทการ์ท",
+            "name:uk": "Штутґарт",
+            "name:ur": "شٹٹ گارٹ",
+            "name:swg": "Schtugert",
+            "name:tok": "ma tomo Suka",
+            "alt_name:cs": "Štukart;Štokart",
+            "alt_name:ur": "شٹٹگارٹ;سٹٹگارٹ;سٹٹ گارٹ",
+            "name:prefix": "Landeshauptstadt",
+            "name:am": "ሽቱትጋርት",
+            "name:az": "Ştutqart",
+            "name:be": "Штутгарт",
+            "name:bg": "Щутгарт",
+            "name:bn": "স্টুটগার্ট",
+            "name:ce": "Штутгарт",
+            "name:co": "Stuccarda",
+            "name:cv": "Штутгарт",
+            "name:en": "Stuttgart",
+            "name:eo": "Ŝtutgarto",
+            "name:fa": "اشتوتگارت",
+            "name:fr": "Stuttgart",
+            "name:gu": "સ્ટુટગાર્ટ",
+            "name:he": "שטוטגרט",
+            "name:hi": "श्टुटगार्ट",
+            "name:hr": "Štutgart",
+            "name:hy": "Շտուտգարտ",
+            "name:ja": "シュトゥットガルト",
+            "name:ka": "შტუტგარტი",
+            "name:kk": "Штутгарт",
+            "name:kn": "ಶ್ಟುಚ್ಗಾರ್ಟ್",
+            "name:ky": "Штутгарт",
+            "name:la": "Stutgardia",
+            "name:lt": "Štutgartas",
+            "name:lv": "Štutgarte",
+            "name:mk": "Штутгарт",
+            "name:ml": "സ്റ്റുട്ട്ഗാർട്ട്",
+            "name:mn": "Штутгарт",
+            "name:mr": "श्टुटगार्ट",
+            "name:os": "Штутгарт",
+            "name:pa": "ਸ਼ਟੁੱਟਗਾਟ",
+            "name:pt": "Estugarda",
+            "name:ro": "Stuttgart",
+            "name:sd": "اسٽٽگارٽ",
+            "name:sq": "Shtutgarti",
+            "name:sr": "Штутгарт",
+            "name:ta": "இசுடுட்கார்ட்",
+            "name:tg": "Штуттгарт",
+            "_place_name:th": "ชตุทท์การ์ท",
+            "name:tt": "Штутгарт",
+            "name:ug": "Shtutgart",
+            "name:yi": "שטוטגארט",
+            "name:zh": "斯图加特",
+            "name:de:prefix": "Landeshauptstadt",
+            "name:gsw": "Stuegert",
+            "name:pfl": "Schduggad",
+            "_place_alt_name:ur": "شٹٹگارٹ",
+            "old_name:fr": "Stutgard",
+            "name:zh-Hant": "斯圖加特"
+          }
+        },
+        "bbox": [
+          9.0386007,
+          48.6920188,
+          9.3160228,
+          48.8663994
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                9.0386007,
+                48.741318
+              ],
+              [
+                9.1003348,
+                48.7116724
+              ],
+              [
+                9.2449713,
+                48.6945542
+              ],
+              [
+                9.2143324,
+                48.7313752
+              ],
+              [
+                9.3160228,
+                48.7782175
+              ],
+              [
+                9.2465901,
+                48.7950916
+              ],
+              [
+                9.2567539,
+                48.8120817
+              ],
+              [
+                9.2303795,
+                48.8638639
+              ],
+              [
+                9.1900022,
+                48.8476645
+              ],
+              [
+                9.1410059,
+                48.8619084
+              ],
+              [
+                9.1381626,
+                48.8280421
+              ],
+              [
+                9.0857264,
+                48.8309182
+              ],
+              [
+                9.0773896,
+                48.7560039
+              ],
+              [
+                9.0386007,
+                48.741318
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

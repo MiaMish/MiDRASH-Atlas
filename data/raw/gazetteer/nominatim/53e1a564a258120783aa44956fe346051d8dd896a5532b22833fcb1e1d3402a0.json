@@ -1,0 +1,1025 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Ṣanʻāʼ (Yemen)",
+    "retrieved_at": "2026-07-28T13:07:05.251507Z",
+    "cache_key": "53e1a564a258120783aa44956fe346051d8dd896a5532b22833fcb1e1d3402a0",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Ṣanʻāʼ (Yemen)"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 44041783,
+          "osm_type": "node",
+          "osm_id": 258013552,
+          "place_rank": 15,
+          "category": "place",
+          "type": "city",
+          "importance": 0.6498398268863423,
+          "addresstype": "city",
+          "name": "Sana'a",
+          "display_name": "Sana'a, At Tahrir District, Amanat Al Asimah, Yemen",
+          "address": {
+            "city": "Sana'a",
+            "district": "At Tahrir District",
+            "state": "Amanat Al Asimah",
+            "ISO3166-2-lvl4": "YE-SA",
+            "country": "Yemen",
+            "country_code": "ye"
+          },
+          "namedetails": {
+            "name": "صنعاء",
+            "name:af": "Sanaa",
+            "name:am": "ሳና",
+            "name:an": "Sana",
+            "name:ar": "صنعاء",
+            "name:az": "Səna",
+            "name:ba": "Сана",
+            "name:be": "Сана",
+            "name:bg": "Сана",
+            "name:bn": "সানা",
+            "name:bo": "ས་ནཱ།",
+            "name:br": "Sana'a",
+            "name:bs": "Sana'a",
+            "name:ca": "Sanà",
+            "name:ce": "Сана",
+            "name:cs": "San'á",
+            "name:cy": "Sana'a",
+            "name:da": "Sanaá",
+            "name:de": "Sanaa",
+            "name:el": "Σαναά",
+            "name:en": "Sana'a",
+            "name:eo": "Sanao",
+            "name:es": "Saná",
+            "name:et": "Sanaa",
+            "name:eu": "Sana",
+            "name:fa": "صنعا",
+            "name:fi": "Sanaa",
+            "name:fr": "Sanaa",
+            "name:fy": "Sana'a",
+            "name:ga": "San’a",
+            "name:gd": "Ṣan'ā'",
+            "name:gl": "Sana",
+            "name:ha": "Sanaa",
+            "name:he": "צנעא",
+            "name:hi": "साना",
+            "name:hr": "Sana",
+            "name:ht": "Sanaa",
+            "name:hu": "Szanaa",
+            "name:hy": "Սանաա",
+            "name:id": "Sana'a",
+            "name:ie": "Saná",
+            "name:io": "Sanaa",
+            "name:is": "Sana",
+            "name:it": "San’a",
+            "name:ja": "サヌア",
+            "name:ka": "სანა",
+            "name:ki": "Sana'a",
+            "name:kk": "Сана",
+            "name:kl": "Sana'a",
+            "name:kn": "ಸನಾ",
+            "name:ko": "사나",
+            "name:ks": "صنعاء",
+            "name:ku": "Sana",
+            "name:ky": "Сана",
+            "name:la": "Sana",
+            "name:lb": "Sana´a",
+            "name:lt": "Sana",
+            "name:lv": "Sana",
+            "name:mg": "Sana'a",
+            "name:mk": "Сана",
+            "name:ml": "സനാ",
+            "name:mn": "Санаа хот",
+            "name:mr": "साना",
+            "name:ms": "Sana'a",
+            "name:mt": "Sana'a",
+            "name:nb": "Sana",
+            "name:ne": "साना",
+            "name:nl": "Sanaa",
+            "name:nn": "San'a",
+            "name:no": "Sanaá",
+            "name:nv": "Bis Bee Kin Łání",
+            "name:oc": "Sanaa",
+            "name:os": "Санæ",
+            "name:pa": "ਸਨਾ",
+            "name:pl": "Sana",
+            "name:ps": "صنعا",
+            "name:pt": "Sana",
+            "name:qu": "Sana'a",
+            "name:ro": "Sana'a",
+            "name:ru": "Сана",
+            "name:sc": "Sana'a",
+            "name:sh": "Sana",
+            "name:sk": "Saná",
+            "name:sl": "Sana",
+            "name:sn": "Sana'a",
+            "name:so": "Sanca",
+            "name:sq": "Sana",
+            "name:sr": "Сана",
+            "name:sv": "Sana",
+            "name:sw": "Sana'a",
+            "name:ta": "சன்ஆ",
+            "name:tg": "Санъо",
+            "name:th": "ซานา",
+            "name:tl": "Sanaa",
+            "name:tr": "San'a",
+            "name:tt": "Сәнга",
+            "name:tw": "Sanaa",
+            "name:ug": "سەنئا",
+            "name:uk": "Сана",
+            "name:ur": "صنعاء",
+            "name:uz": "Sano",
+            "name:vi": "Sana’a",
+            "name:yi": "סאנא",
+            "name:yo": "Sana'a",
+            "name:zh": "萨那",
+            "alt_name": "San’ah;San'ah;Şan‘ā’",
+            "name:arz": "صنعا",
+            "name:azb": "صنعا",
+            "name:ckb": "سەنعا",
+            "name:hif": "Sana‘a",
+            "name:kab": "Ṣenɛa",
+            "name:lmo": "San'a",
+            "name:lrc": "سٱنعا",
+            "name:nan": "Sana'a",
+            "name:nov": "Sana",
+            "name:pms": "San'a",
+            "name:pnb": "صنعا",
+            "name:sco": "Sana'a",
+            "name:war": "Sana'a",
+            "name:simple": "Sana'a",
+            "name:zh-Hans": "萨那",
+            "name:zh-Hant": "薩那",
+            "name:be-tarask": "Сана"
+          }
+        },
+        "bbox": [
+          44.0458841,
+          15.1938569,
+          44.3658841,
+          15.5138569
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            44.2058841,
+            15.3538569
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 43959953,
+          "osm_type": "relation",
+          "osm_id": 8894341,
+          "place_rank": 8,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.6498398268863423,
+          "addresstype": "state",
+          "name": "Amanat Al Asimah",
+          "display_name": "Amanat Al Asimah, Yemen",
+          "address": {
+            "state": "Amanat Al Asimah",
+            "ISO3166-2-lvl4": "YE-SA",
+            "country": "Yemen",
+            "country_code": "ye"
+          },
+          "namedetails": {
+            "name": "أمانة العاصمة",
+            "name:af": "Sanaa",
+            "name:am": "ሳና",
+            "name:an": "Sana",
+            "name:ar": "أمانة العاصمة",
+            "name:az": "Sana",
+            "name:ba": "Сана",
+            "name:be": "Сана",
+            "name:bg": "Сана",
+            "name:bn": "সানা",
+            "name:bo": "ས་ནཱ།",
+            "name:br": "Sana'a",
+            "name:bs": "Sana'a",
+            "name:ca": "Sanà",
+            "name:ce": "Сана",
+            "name:cs": "San'á",
+            "name:cy": "Sana'a",
+            "name:da": "Sanaá",
+            "name:de": "Sanaa",
+            "name:el": "Σαναά",
+            "name:en": "Amanat Al Asimah",
+            "name:eo": "Sanao",
+            "name:es": "Saná",
+            "name:et": "Sanaa",
+            "name:eu": "Sana",
+            "name:fa": "صنعا",
+            "name:fi": "Sanaa",
+            "name:fr": "Amanat Al Asimah",
+            "name:fy": "Sana'a",
+            "name:ga": "San’a",
+            "name:gd": "Ṣan'ā'",
+            "name:gl": "Saná",
+            "name:he": "צנעא",
+            "name:hi": "साना",
+            "name:hr": "Sana (grad)",
+            "name:ht": "Sanaa",
+            "name:hu": "Szanaa",
+            "name:hy": "Սանաա",
+            "name:id": "Sana'a",
+            "name:ie": "Saná",
+            "name:io": "Sanaa",
+            "name:is": "Sana",
+            "name:it": "Sana'a",
+            "name:ja": "サナア",
+            "name:ka": "სანა",
+            "name:ki": "Sana'a",
+            "name:kk": "Сана (қала)",
+            "name:kn": "ಸನಾ",
+            "name:ko": "사나",
+            "name:ky": "Сана",
+            "name:la": "Ṣanʾāʿ",
+            "name:lb": "Sanaa",
+            "name:lt": "Sana",
+            "name:lv": "Sana",
+            "name:mg": "Sana'a",
+            "name:mk": "Сана",
+            "name:ml": "സന",
+            "name:mn": "Санаа",
+            "name:mr": "साना",
+            "name:ms": "Sana'a",
+            "name:ne": "साना",
+            "name:nl": "Sanaa",
+            "name:nn": "Sana",
+            "name:no": "Sana",
+            "name:oc": "Sanaa",
+            "name:os": "Санæ",
+            "name:pa": "ਸਨਾ",
+            "name:pl": "Sana",
+            "name:ps": "صنعا",
+            "name:pt": "Saná",
+            "name:qu": "Sana'a",
+            "name:ro": "Sana'a",
+            "name:ru": "Сана",
+            "name:sc": "Sana'a",
+            "name:sh": "Sana",
+            "name:sk": "Saná",
+            "name:sl": "Sana",
+            "name:sn": "Sana'a",
+            "name:so": "Sanca",
+            "name:sq": "Sana",
+            "name:sr": "Сана (град)",
+            "name:sv": "Sanaa",
+            "name:sw": "Sana'a",
+            "name:ta": "சனா",
+            "name:tg": "Санъо",
+            "name:th": "ซานา",
+            "name:tl": "Sanaa",
+            "name:tr": "San'a",
+            "name:tt": "Сәнга",
+            "name:uk": "Сана",
+            "name:ur": "صنعاء",
+            "name:uz": "Sano",
+            "name:vi": "Sana'a",
+            "name:yi": "סאנא",
+            "name:yo": "Sana'a",
+            "name:zh": "萨那",
+            "alt_name": "صنعاء",
+            "name:ace": "Shan'a'",
+            "name:ady": "Сана",
+            "name:arz": "صنعا",
+            "name:ast": "Sana'a",
+            "name:azb": "صنعا",
+            "name:ban": "Sanaa",
+            "name:bcl": "Sanaʽa",
+            "name:bxr": "Сана",
+            "name:cdo": "Sana'a",
+            "name:ceb": "Amanat Al Asimah",
+            "name:ckb": "سەنعا",
+            "name:diq": "Sana",
+            "name:hak": "Sana'a",
+            "name:hif": "Sana‘a",
+            "name:ilo": "Sanaa",
+            "name:kaa": "Sano",
+            "name:kab": "Ṣenɛa",
+            "name:lij": "Sanaa",
+            "name:lmo": "San'a",
+            "name:lzh": "薩那",
+            "name:mai": "साना",
+            "name:nah": "Sanah",
+            "name:nan": "Sana'a",
+            "name:pap": "San'a",
+            "name:pms": "San'a",
+            "name:pnb": "صنعا",
+            "name:scn": "Sanaa",
+            "name:sco": "Sana'a",
+            "name:szl": "Sana",
+            "name:udm": "Сана",
+            "name:vep": "Sanaa",
+            "name:war": "Sana'a",
+            "name:wuu": "萨那",
+            "name:xmf": "სანა",
+            "name:yue": "薩那",
+            "ISO3166-2": "YE-SA",
+            "alt_name:ar": "صنعاء",
+            "alt_name:en": "Sanaa",
+            "alt_name:fr": "Sanaa",
+            "_place_name:en": "Amanat al `Asimah",
+            "name:be-tarask": "Сана",
+            "int_name": "Amānat al ‘Āşimah"
+          }
+        },
+        "bbox": [
+          44.1206154,
+          15.2755329,
+          44.3996739,
+          15.6117074
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                44.1206154,
+                15.4593974
+              ],
+              [
+                44.1265179,
+                15.4351391
+              ],
+              [
+                44.1632795,
+                15.4358517
+              ],
+              [
+                44.1665625,
+                15.4023828
+              ],
+              [
+                44.1419163,
+                15.389608
+              ],
+              [
+                44.1504478,
+                15.352666
+              ],
+              [
+                44.1357708,
+                15.3518797
+              ],
+              [
+                44.1783321,
+                15.3247422
+              ],
+              [
+                44.1440534,
+                15.2990463
+              ],
+              [
+                44.2254263,
+                15.2755898
+              ],
+              [
+                44.2702996,
+                15.2830239
+              ],
+              [
+                44.2531872,
+                15.2993826
+              ],
+              [
+                44.2628001,
+                15.3305866
+              ],
+              [
+                44.2983549,
+                15.3502853
+              ],
+              [
+                44.295138,
+                15.3618504
+              ],
+              [
+                44.2399692,
+                15.3637359
+              ],
+              [
+                44.2585301,
+                15.4214347
+              ],
+              [
+                44.279754,
+                15.4203402
+              ],
+              [
+                44.2816508,
+                15.4466276
+              ],
+              [
+                44.2690426,
+                15.4473317
+              ],
+              [
+                44.2828701,
+                15.5130408
+              ],
+              [
+                44.3339063,
+                15.5203767
+              ],
+              [
+                44.3552483,
+                15.5570294
+              ],
+              [
+                44.3634609,
+                15.5348066
+              ],
+              [
+                44.3996554,
+                15.557869
+              ],
+              [
+                44.3508825,
+                15.5993991
+              ],
+              [
+                44.3060956,
+                15.6116671
+              ],
+              [
+                44.2625261,
+                15.5714412
+              ],
+              [
+                44.2108545,
+                15.5535225
+              ],
+              [
+                44.2022859,
+                15.500822
+              ],
+              [
+                44.1206154,
+                15.4593974
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 44547999,
+          "osm_type": "relation",
+          "osm_id": 383891,
+          "place_rank": 8,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.614604415544246,
+          "addresstype": "state",
+          "name": "Sana'a Governorate",
+          "display_name": "Sana'a Governorate, Yemen",
+          "address": {
+            "state": "Sana'a Governorate",
+            "ISO3166-2-lvl4": "YE-SN",
+            "country": "Yemen",
+            "country_code": "ye"
+          },
+          "namedetails": {
+            "name": "محافظة صنعاء",
+            "name:ar": "محافظة صنعاء",
+            "name:bg": "Сана (област)",
+            "name:cs": "provincie San'á",
+            "name:de": "Sanaa",
+            "name:en": "Sana'a Governorate",
+            "name:eo": "Provinco Sanao",
+            "name:es": "Gobernación de Saná",
+            "name:fa": "استان صنعا",
+            "name:fi": "Sanaa (maakunta)",
+            "name:fr": "Gouvernorat de Sanaa",
+            "name:he": "צנעא (מחוז)",
+            "name:hi": "सनआ प्रान्त",
+            "name:hr": "Sana (muhafaza)",
+            "name:hu": "Szanaa kormányzóság",
+            "name:id": "Kegubernuran Sana'a",
+            "name:it": "Governatorato di Sana'a",
+            "name:ja": "サナア県",
+            "name:ka": "სანის მუჰაფაზა",
+            "name:ko": "사나주",
+            "name:nl": "Sanaa (gouvernement)",
+            "name:nn": "Sana guvernement",
+            "name:no": "Sanaá (guvernement)",
+            "name:pl": "Sana (muhafaza)",
+            "name:pt": "Saná (província)",
+            "name:ro": "Guvernoratul Sana'a",
+            "name:ru": "Сана",
+            "name:sh": "Sana (muhafaza)",
+            "name:sk": "provincia Saná",
+            "name:sv": "Sana'a (guvernement)",
+            "name:sw": "Wilaya ya Sana'a",
+            "name:th": "เขตผู้ว่าการซานา",
+            "name:tr": "San'a (il)",
+            "name:uk": "Сана (мухафаза)",
+            "name:ur": "محافظہ صنعاء",
+            "name:zh": "薩那省",
+            "alt_name": "Muḩāfaz̧at Sanʿaʾ",
+            "name:azb": "صنعا اوستانی",
+            "name:ceb": "Sanaa (lalawigan)",
+            "name:ckb": "سەنعا",
+            "name:nan": "Sana'a Séng",
+            "name:sco": "Sana'a Govrenorate",
+            "name:wuu": "萨那省",
+            "ISO3166-2": "YE-SN",
+            "alt_name:ar": "صنعاء (محافظة)",
+            "alt_name:de": "Gouvernement Sanaa",
+            "alt_name:en": "Sanaa Governorate",
+            "alt_name:ru": "Сана (мухафаза)",
+            "_place_name:fr": "Sana'a",
+            "_place_name:hu": "Szanaa",
+            "name:ml": "സനാ",
+            "_place_alt_name": "Liwa of Sana'a;Liwa of Sana’a;صنعاء;Province of San‘a;Sanaa;Şan‘ā’;San`a';Province of San`a",
+            "_place_name:ckb": "پارێزگای سەنعا"
+          }
+        },
+        "bbox": [
+          43.5062113,
+          14.7472994,
+          45.1086524,
+          16.0454829
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                43.5062113,
+                15.0495179
+              ],
+              [
+                43.5309231,
+                15.0189164
+              ],
+              [
+                43.5727797,
+                15.0010351
+              ],
+              [
+                43.611567,
+                14.9903013
+              ],
+              [
+                43.6433747,
+                15.0092688
+              ],
+              [
+                43.6666744,
+                14.9694021
+              ],
+              [
+                43.6408484,
+                14.9418449
+              ],
+              [
+                43.676867,
+                14.8637883
+              ],
+              [
+                43.7547128,
+                14.8396666
+              ],
+              [
+                43.7791375,
+                14.8595127
+              ],
+              [
+                43.8684192,
+                14.8482052
+              ],
+              [
+                43.8988951,
+                14.8631036
+              ],
+              [
+                43.9153479,
+                14.902185
+              ],
+              [
+                43.9520182,
+                14.9125031
+              ],
+              [
+                44.0486393,
+                14.9988639
+              ],
+              [
+                44.1564095,
+                14.9977268
+              ],
+              [
+                44.1797809,
+                14.9691959
+              ],
+              [
+                44.2067663,
+                14.970124
+              ],
+              [
+                44.2260285,
+                14.9274335
+              ],
+              [
+                44.3505622,
+                14.9278209
+              ],
+              [
+                44.3545531,
+                14.9842549
+              ],
+              [
+                44.4384033,
+                14.9351166
+              ],
+              [
+                44.6323878,
+                15.0123722
+              ],
+              [
+                44.6808588,
+                15.0181088
+              ],
+              [
+                44.7022118,
+                15.009324
+              ],
+              [
+                44.7143275,
+                14.8623639
+              ],
+              [
+                44.7505852,
+                14.857614
+              ],
+              [
+                44.8365067,
+                14.7472994
+              ],
+              [
+                44.9079743,
+                14.7944783
+              ],
+              [
+                44.9101414,
+                14.8828344
+              ],
+              [
+                44.9509851,
+                14.9694799
+              ],
+              [
+                45.0800955,
+                15.1221393
+              ],
+              [
+                45.1086524,
+                15.2856576
+              ],
+              [
+                44.8061357,
+                15.4153647
+              ],
+              [
+                44.7907929,
+                15.3280939
+              ],
+              [
+                44.7099382,
+                15.3263525
+              ],
+              [
+                44.6910039,
+                15.3493563
+              ],
+              [
+                44.6885532,
+                15.4476093
+              ],
+              [
+                44.5933675,
+                15.4058701
+              ],
+              [
+                44.5310006,
+                15.4197023
+              ],
+              [
+                44.5206945,
+                15.4713143
+              ],
+              [
+                44.6277059,
+                15.4925008
+              ],
+              [
+                44.7708593,
+                15.564117
+              ],
+              [
+                44.798519,
+                15.5875486
+              ],
+              [
+                44.7944458,
+                15.618765
+              ],
+              [
+                44.7169026,
+                15.6605998
+              ],
+              [
+                44.6896191,
+                15.7176976
+              ],
+              [
+                44.6629792,
+                15.8764251
+              ],
+              [
+                44.6093734,
+                15.99473
+              ],
+              [
+                44.3494682,
+                16.0454829
+              ],
+              [
+                44.3258426,
+                16.0310953
+              ],
+              [
+                44.2584986,
+                16.0319976
+              ],
+              [
+                44.2209819,
+                15.9950448
+              ],
+              [
+                44.1572743,
+                15.9937915
+              ],
+              [
+                44.1658845,
+                15.9582822
+              ],
+              [
+                44.1490013,
+                15.8713489
+              ],
+              [
+                44.1823398,
+                15.8326095
+              ],
+              [
+                44.0980816,
+                15.7266811
+              ],
+              [
+                44.1075543,
+                15.6481367
+              ],
+              [
+                44.0839995,
+                15.6410595
+              ],
+              [
+                44.0456909,
+                15.5858298
+              ],
+              [
+                44.0000858,
+                15.5629995
+              ],
+              [
+                43.9617113,
+                15.561117
+              ],
+              [
+                43.9566074,
+                15.6062087
+              ],
+              [
+                43.9120239,
+                15.5773429
+              ],
+              [
+                43.9170285,
+                15.5518232
+              ],
+              [
+                43.9006785,
+                15.5342027
+              ],
+              [
+                43.9144073,
+                15.4984445
+              ],
+              [
+                43.8965818,
+                15.4659976
+              ],
+              [
+                43.9105408,
+                15.4274062
+              ],
+              [
+                43.8660475,
+                15.3810061
+              ],
+              [
+                43.8203627,
+                15.3703855
+              ],
+              [
+                43.7074066,
+                15.2846613
+              ],
+              [
+                43.6616826,
+                15.2803595
+              ],
+              [
+                43.6425567,
+                15.2699747
+              ],
+              [
+                43.6436884,
+                15.2522081
+              ],
+              [
+                43.5834053,
+                15.234189
+              ],
+              [
+                43.5446975,
+                15.2000826
+              ],
+              [
+                43.5431532,
+                15.1587376
+              ],
+              [
+                43.5712971,
+                15.1268162
+              ],
+              [
+                43.5062113,
+                15.0495179
+              ]
+            ],
+            [
+              [
+                44.1206154,
+                15.4593974
+              ],
+              [
+                44.2022859,
+                15.500822
+              ],
+              [
+                44.2108545,
+                15.5535225
+              ],
+              [
+                44.2625261,
+                15.5714412
+              ],
+              [
+                44.3060956,
+                15.6116671
+              ],
+              [
+                44.3508825,
+                15.5993991
+              ],
+              [
+                44.3996554,
+                15.557869
+              ],
+              [
+                44.3634609,
+                15.5348066
+              ],
+              [
+                44.3552483,
+                15.5570294
+              ],
+              [
+                44.3339063,
+                15.5203767
+              ],
+              [
+                44.2828701,
+                15.5130408
+              ],
+              [
+                44.2690426,
+                15.4473317
+              ],
+              [
+                44.2816508,
+                15.4466276
+              ],
+              [
+                44.279754,
+                15.4203402
+              ],
+              [
+                44.2585301,
+                15.4214347
+              ],
+              [
+                44.2399692,
+                15.3637359
+              ],
+              [
+                44.295138,
+                15.3618504
+              ],
+              [
+                44.2983549,
+                15.3502853
+              ],
+              [
+                44.2628001,
+                15.3305866
+              ],
+              [
+                44.2531872,
+                15.2993826
+              ],
+              [
+                44.2702996,
+                15.2830239
+              ],
+              [
+                44.2254263,
+                15.2755898
+              ],
+              [
+                44.1440534,
+                15.2990463
+              ],
+              [
+                44.1783321,
+                15.3247422
+              ],
+              [
+                44.1357708,
+                15.3518797
+              ],
+              [
+                44.1504478,
+                15.352666
+              ],
+              [
+                44.1419163,
+                15.389608
+              ],
+              [
+                44.1665625,
+                15.4023828
+              ],
+              [
+                44.1632795,
+                15.4358517
+              ],
+              [
+                44.1265179,
+                15.4351391
+              ],
+              [
+                44.1206154,
+                15.4593974
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

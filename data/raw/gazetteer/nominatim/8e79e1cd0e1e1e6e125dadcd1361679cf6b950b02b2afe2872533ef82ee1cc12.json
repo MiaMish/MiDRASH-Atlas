@@ -1,0 +1,230 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Oxford, England",
+    "retrieved_at": "2026-07-28T13:06:28.167345Z",
+    "cache_key": "8e79e1cd0e1e1e6e125dadcd1361679cf6b950b02b2afe2872533ef82ee1cc12",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Oxford, England"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 281374468,
+          "osm_type": "relation",
+          "osm_id": 394037,
+          "place_rank": 16,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.7168966844674067,
+          "addresstype": "city",
+          "name": "Oxford",
+          "display_name": "Oxford, Oxfordshire, England, United Kingdom",
+          "address": {
+            "city": "Oxford",
+            "county": "Oxfordshire",
+            "ISO3166-2-lvl6": "GB-OXF",
+            "state": "England",
+            "ISO3166-2-lvl4": "GB-ENG",
+            "country": "United Kingdom",
+            "country_code": "gb"
+          },
+          "namedetails": {
+            "name": "Oxford",
+            "name:br": "Redec'hen / Oxford",
+            "name:cy": "Rhydychen",
+            "name:en": "Oxford",
+            "name:is": "Öxnafurða",
+            "name:ur": "آکسفورڈ",
+            "name:zh": "牛津",
+            "alt_name:ur": "اوکسفرڈ",
+            "name:ab": "Оқсфорд",
+            "name:af": "Oxford",
+            "name:am": "ኦክስፎርድ",
+            "name:an": "Oxford",
+            "name:ar": "أكسفورد",
+            "name:az": "Oksford",
+            "name:be": "Оксфард",
+            "name:bg": "Оксфорд",
+            "name:bn": "অক্সফোর্ড",
+            "name:bs": "Oxford",
+            "name:ca": "Oxford",
+            "name:ce": "Оксфорд",
+            "name:cs": "Oxford",
+            "name:cv": "Оксфорд",
+            "name:da": "Oxford",
+            "name:de": "Oxford",
+            "name:el": "Οξφόρδη",
+            "_place_name:en": "Oxford",
+            "name:eo": "Oksfordo",
+            "name:es": "Oxford",
+            "name:et": "Oxford",
+            "name:eu": "Oxford",
+            "name:fa": "آکسفورد",
+            "name:fi": "Oxford",
+            "name:fj": "Oxford",
+            "name:fo": "Oxford",
+            "name:fr": "Oxford",
+            "name:fy": "Oxford",
+            "name:ga": "Ocsanphort",
+            "name:gl": "Oxford",
+            "name:gn": "Oxford",
+            "name:he": "אוקספורד",
+            "name:hi": "ऑक्सफ़ोर्ड",
+            "name:hr": "Oxford",
+            "name:hu": "Oxford",
+            "name:hy": "Օքսֆորդ",
+            "name:id": "Oxford",
+            "name:io": "Oxford",
+            "_place_name:is": "Oxford",
+            "name:it": "Oxford",
+            "name:ja": "オックスフォード",
+            "name:jv": "Oxford",
+            "name:ka": "ოქსფორდი",
+            "name:kk": "Оксфорд",
+            "name:kn": "ಆಕ್ಸ್‌ಫರ್ಡ್",
+            "name:ko": "옥스퍼드",
+            "name:ku": "Oxford",
+            "name:kw": "Rysoghen",
+            "name:ky": "Оксфорд",
+            "name:la": "Oxonia",
+            "name:lb": "Oxford",
+            "name:lt": "Oksfordas",
+            "name:lv": "Oksforda",
+            "name:mk": "Оксфорд",
+            "name:ml": "ഓക്സ്ഫർഡ്",
+            "name:mr": "ऑक्सफर्ड",
+            "name:ms": "Oxford",
+            "name:my": "အောက်စဖို့မြို့",
+            "name:nl": "Oxford",
+            "name:nn": "Oxford",
+            "name:no": "Oxford",
+            "name:oc": "Oxford",
+            "name:pa": "ਆਕਸਫ਼ੋਰਡ",
+            "name:pl": "Oksford",
+            "name:pt": "Oxford",
+            "name:qu": "Oxford",
+            "name:ro": "Oxford",
+            "name:ru": "Оксфорд",
+            "name:sc": "Oxford",
+            "name:sd": "آڪسفورڊ",
+            "name:se": "Oxford",
+            "name:sh": "Oxford",
+            "name:sk": "Oxford",
+            "name:sl": "Oxford",
+            "name:sq": "Oksford",
+            "name:sr": "Оксфорд",
+            "name:sv": "Oxford",
+            "name:sw": "Oxford",
+            "name:ta": "ஆக்சுபோர்டு",
+            "name:te": "ఆక్స్‌ఫర్డ్",
+            "name:tg": "Оксфорд",
+            "name:th": "ออกซฟอร์ด",
+            "name:tr": "Oxford",
+            "name:tt": "Оксфорд",
+            "name:tw": "Oxford",
+            "name:ug": "Oksford",
+            "name:uk": "Оксфорд",
+            "name:uz": "Oxford",
+            "name:vi": "Oxford",
+            "name:yi": "אקספארד",
+            "name:als": "Oxford",
+            "name:ang": "Oxnaford",
+            "name:arz": "اوكسفورد",
+            "name:ast": "Oxford",
+            "name:azb": "آکسفورد",
+            "name:ceb": "Oxford",
+            "name:ckb": "ئۆکسفۆرد",
+            "name:diq": "Oxford",
+            "name:ext": "Oxford",
+            "name:frr": "Oxford",
+            "name:kaa": "Oksford",
+            "name:mni": "ꯑꯣꯛꯁ꯭ꯐꯣꯔ꯭ꯗ",
+            "name:mzn": "آکسفورد",
+            "name:nah": "Oxford",
+            "name:nan": "Oxford",
+            "name:nds": "Oxford",
+            "name:pms": "Oxford",
+            "name:pnb": "آکسفورڈ",
+            "name:scn": "Oxford",
+            "name:sco": "Oxford",
+            "name:szl": "Oxford",
+            "name:vep": "Oksford",
+            "name:war": "Oxford",
+            "name:wuu": "牛津",
+            "name:yue": "牛津",
+            "name:bat-smg": "Oksfuords",
+            "name:be-tarask": "Оксфард"
+          }
+        },
+        "bbox": [
+          -1.3042472,
+          51.7109788,
+          -1.1758134,
+          51.7962658
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -1.3042472,
+                51.7753536
+              ],
+              [
+                -1.2888051,
+                51.7489925
+              ],
+              [
+                -1.222307,
+                51.7109788
+              ],
+              [
+                -1.1896056,
+                51.7145567
+              ],
+              [
+                -1.1758351,
+                51.7328402
+              ],
+              [
+                -1.1952665,
+                51.7451481
+              ],
+              [
+                -1.1802277,
+                51.7658599
+              ],
+              [
+                -1.2581126,
+                51.7935045
+              ],
+              [
+                -1.2836682,
+                51.7962658
+              ],
+              [
+                -1.3042472,
+                51.7753536
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

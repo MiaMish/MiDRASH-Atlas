@@ -1,0 +1,76 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Mestre (Italy)",
+    "retrieved_at": "2026-07-28T13:06:12.952132Z",
+    "cache_key": "1aef46178020f173dfde92f1a60a10eade4d23c48c7116e1d1bae5f6ea93154d",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Mestre (Italy)"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 78678219,
+          "osm_type": "node",
+          "osm_id": 29997772,
+          "place_rank": 18,
+          "category": "place",
+          "type": "town",
+          "importance": 0.5589767425356924,
+          "addresstype": "town",
+          "name": "Mestre",
+          "display_name": "Mestre, Venice, Venezia, Veneto, 30170, Italy",
+          "address": {
+            "town": "Mestre",
+            "city": "Venice",
+            "county": "Venezia",
+            "ISO3166-2-lvl6": "IT-VE",
+            "state": "Veneto",
+            "ISO3166-2-lvl4": "IT-34",
+            "postcode": "30170",
+            "country": "Italy",
+            "country_code": "it"
+          },
+          "namedetails": {
+            "name": "Mestre",
+            "name:el": "Μέστρε",
+            "name:en": "Mestre",
+            "name:ml": "മെസ്ട്രെ",
+            "name:ru": "Местре",
+            "name:uk": "Местре",
+            "name:zh": "梅斯特雷",
+            "name:zh-Hans": "梅斯特雷",
+            "name:zh-Hant": "梅斯特雷"
+          }
+        },
+        "bbox": [
+          12.2018053,
+          45.4543063,
+          12.2818053,
+          45.5343063
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            12.2418053,
+            45.4943063
+          ]
+        }
+      }
+    ]
+  }
+}

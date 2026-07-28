@@ -1,0 +1,468 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Hamburg, Germany",
+    "retrieved_at": "2026-07-28T13:05:47.957411Z",
+    "cache_key": "41f16b608bd449622900bc56beede7dc1a69bd7242a474227543458342cef12c",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Hamburg, Germany"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 142587717,
+          "osm_type": "relation",
+          "osm_id": 62782,
+          "place_rank": 8,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.7877290162608149,
+          "addresstype": "city",
+          "name": "Hamburg",
+          "display_name": "Hamburg, Germany",
+          "address": {
+            "city": "Hamburg",
+            "ISO3166-2-lvl4": "DE-HH",
+            "country": "Germany",
+            "country_code": "de"
+          },
+          "namedetails": {
+            "ref": "HH",
+            "name": "Hamburg",
+            "name:ar": "هامبورغ",
+            "name:da": "Hamborg",
+            "name:de": "Hamburg",
+            "name:el": "Αμβούργο",
+            "name:en": "Hamburg",
+            "name:eo": "Hamburgo",
+            "name:fa": "هامبورگ",
+            "name:fr": "Hambourg",
+            "name:ga": "Hamburg",
+            "name:gl": "Hamburgo",
+            "name:hu": "Hamburg",
+            "name:ja": "ハンブルク州",
+            "name:ko": "함부르크",
+            "name:lv": "Hamburga",
+            "name:pl": "Hamburg",
+            "name:pt": "Hamburgo",
+            "name:ro": "Hamburg",
+            "name:ru": "Гамбург",
+            "name:sk": "Hamburg",
+            "name:sr": "Хамбург",
+            "name:th": "ฮัมบวร์ค",
+            "name:uk": "Гамбурґ",
+            "name:ur": "ہم برک",
+            "name:zh": "汉堡",
+            "name:frr": "Hamborj",
+            "name:nds": "Hamborg",
+            "ISO3166-2": "DE-HH",
+            "short_name": "HH",
+            "name:prefix": "Freie und Hansestadt",
+            "name:zh-Hans": "汉堡",
+            "name:zh-Hant": "漢堡",
+            "official_name": "Freie und Hansestadt Hamburg",
+            "name:af": "Hamburg",
+            "name:am": "ሃምቡርግ",
+            "name:an": "Amburgo",
+            "name:az": "Hamburq",
+            "name:ba": "Гамбург",
+            "name:be": "Гамбург",
+            "name:bg": "Хамбург",
+            "name:bh": "हैम्बर्ग",
+            "name:bn": "হামবুর্গ",
+            "name:br": "Hamburg",
+            "name:bs": "Hamburg",
+            "name:ca": "Ciutat d'Hamburg",
+            "name:ce": "Гамбург",
+            "name:co": "Amburgu",
+            "name:cs": "Hamburk",
+            "name:cv": "Гамбург",
+            "name:cy": "Hamburg",
+            "name:es": "Hamburgo",
+            "name:et": "Hamburg",
+            "name:eu": "Hanburgo",
+            "name:fi": "Hampuri",
+            "name:fy": "Hamboarch",
+            "name:gd": "Hamburg",
+            "name:gn": "Hamburgo",
+            "name:he": "המבורג",
+            "name:hi": "हैम्बर्ग",
+            "name:hr": "Hamburg",
+            "name:hy": "Համբուրգ",
+            "name:id": "Hamburg",
+            "name:ie": "Hamburg",
+            "name:io": "Hamburg",
+            "name:is": "Hamborg",
+            "name:it": "Amburgo",
+            "_place_name:ja": "ハンブルク",
+            "name:jv": "Hamburg",
+            "name:ka": "ჰამბურგი",
+            "name:kk": "Гамбург",
+            "name:kn": "ಹಾಂಬುರ್ಕ",
+            "name:ku": "Hamburg",
+            "name:ky": "Гамбург",
+            "name:la": "Hamburgum",
+            "name:lb": "Hamburg",
+            "name:lt": "Hamburgas",
+            "name:mi": "Hamapaka",
+            "name:mk": "Хамбург",
+            "name:ml": "ഹാംബർഗ്",
+            "name:mn": "Хамбург",
+            "name:mr": "हांबुर्ग",
+            "name:mt": "Amburgu",
+            "name:my": "ဟမ်းဗတ်မြို့",
+            "name:ne": "हामबुर्ग",
+            "name:nl": "Hamburg",
+            "name:nn": "Hamburg",
+            "name:no": "Hamburg",
+            "name:oc": "Amborg",
+            "name:os": "Гамбург",
+            "name:pa": "ਹਾਮਬੁਰਕ",
+            "name:ps": "هامبورګ",
+            "name:qu": "Hamburg",
+            "name:rm": "Hamburg",
+            "name:sc": "Amburgu",
+            "name:sd": "ھئمبرگ(شھر)",
+            "name:se": "Hamborg",
+            "name:sl": "Hamburg",
+            "name:sq": "Hamburgu",
+            "name:sv": "Hamburg",
+            "name:sw": "Hamburg",
+            "name:ta": "ஆம்பர்கு",
+            "name:tg": "Ҳамбург",
+            "_place_name:th": "ฮัมบูร์ก",
+            "name:tl": "Hamburgo",
+            "name:tr": "Hamburg",
+            "name:tt": "Һамбург",
+            "name:tw": "Hambɔg",
+            "name:uz": "Gamburg",
+            "name:vi": "Hamburg",
+            "name:vo": "Hamburg",
+            "name:xh": "Hamburg",
+            "name:yi": "האמבורג",
+            "name:als": "Hamburg",
+            "name:arc": "ܗܐܡܒܘܪܓ",
+            "name:bar": "Hamburg",
+            "name:dsb": "Hamburg",
+            "name:fur": "Amburc",
+            "name:hsb": "Hamburg",
+            "name:ksh": "Hamborsch",
+            "name:lij": "Ambûrgo",
+            "name:nan": "Hamburg",
+            "name:pam": "Hamburg",
+            "name:scn": "Amburgu",
+            "name:sco": "Hamburgh",
+            "name:szl": "Hamburg",
+            "name:tok": "ma tomo Anpu",
+            "name:vec": "Anburgo",
+            "name:wal": "Hambburgge",
+            "name:yue": "漢堡",
+            "official_name:ar": "مدينة هامبورغ الحرة الهانزية",
+            "official_name:de": "Freie und Hansestadt Hamburg",
+            "official_name:el": "Ελεύθερη και Χανσεατική Πόλη του Αμβούργου",
+            "official_name:en": "Free and Hanseatic City of Hamburg",
+            "official_name:pt": "Cidade Livre e Hanseática de Hamburgo",
+            "name:short": "HH",
+            "official_name:nds": "Friee un Hansestadt Hamborg",
+            "name:nds-nl": "Hambörg"
+          }
+        },
+        "bbox": [
+          8.1044993,
+          53.3951118,
+          10.3252805,
+          54.0276500
+        ],
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  8.1044993,
+                  54.02505
+                ],
+                [
+                  8.429328,
+                  53.8932944
+                ],
+                [
+                  8.5338059,
+                  53.8852572
+                ],
+                [
+                  8.5760454,
+                  53.8450037
+                ],
+                [
+                  8.5456774,
+                  53.9300833
+                ],
+                [
+                  8.394369,
+                  54.02765
+                ],
+                [
+                  8.1044993,
+                  54.02505
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  9.7301155,
+                  53.557642
+                ],
+                [
+                  9.7743919,
+                  53.5543254
+                ],
+                [
+                  9.7655587,
+                  53.5410972
+                ],
+                [
+                  9.7812903,
+                  53.5186423
+                ],
+                [
+                  9.7635785,
+                  53.5082559
+                ],
+                [
+                  9.8027631,
+                  53.4938403
+                ],
+                [
+                  9.7998062,
+                  53.469426
+                ],
+                [
+                  9.8618312,
+                  53.4296174
+                ],
+                [
+                  9.898744,
+                  53.4579631
+                ],
+                [
+                  9.9171809,
+                  53.4465573
+                ],
+                [
+                  9.9109366,
+                  53.4140444
+                ],
+                [
+                  9.9438393,
+                  53.4294535
+                ],
+                [
+                  9.9833477,
+                  53.4146204
+                ],
+                [
+                  10.0292108,
+                  53.4352988
+                ],
+                [
+                  10.022244,
+                  53.4475535
+                ],
+                [
+                  10.0453939,
+                  53.4463998
+                ],
+                [
+                  10.0516158,
+                  53.4639106
+                ],
+                [
+                  10.1655462,
+                  53.399327
+                ],
+                [
+                  10.2335146,
+                  53.3952678
+                ],
+                [
+                  10.3252805,
+                  53.4498342
+                ],
+                [
+                  10.3007275,
+                  53.4427308
+                ],
+                [
+                  10.218276,
+                  53.4992345
+                ],
+                [
+                  10.2104116,
+                  53.5199281
+                ],
+                [
+                  10.1878449,
+                  53.5115062
+                ],
+                [
+                  10.1623971,
+                  53.5224558
+                ],
+                [
+                  10.168776,
+                  53.5373854
+                ],
+                [
+                  10.1518741,
+                  53.5354775
+                ],
+                [
+                  10.1524664,
+                  53.5779107
+                ],
+                [
+                  10.2012914,
+                  53.5839951
+                ],
+                [
+                  10.1888537,
+                  53.6130726
+                ],
+                [
+                  10.2219942,
+                  53.6336457
+                ],
+                [
+                  10.1896394,
+                  53.6383737
+                ],
+                [
+                  10.1958919,
+                  53.6547514
+                ],
+                [
+                  10.139962,
+                  53.6803593
+                ],
+                [
+                  10.1917444,
+                  53.7226967
+                ],
+                [
+                  10.16775,
+                  53.7393165
+                ],
+                [
+                  10.1211309,
+                  53.7131603
+                ],
+                [
+                  10.1157539,
+                  53.7160823
+                ],
+                [
+                  10.0819849,
+                  53.7204444
+                ],
+                [
+                  10.0603779,
+                  53.6883088
+                ],
+                [
+                  10.0692731,
+                  53.6795252
+                ],
+                [
+                  9.9996163,
+                  53.6815178
+                ],
+                [
+                  9.9858091,
+                  53.6482375
+                ],
+                [
+                  9.9068779,
+                  53.6524844
+                ],
+                [
+                  9.8891982,
+                  53.6228692
+                ],
+                [
+                  9.8248382,
+                  53.5842314
+                ],
+                [
+                  9.7705486,
+                  53.6160312
+                ],
+                [
+                  9.7712678,
+                  53.6314046
+                ],
+                [
+                  9.7301155,
+                  53.557642
+                ]
+              ],
+              [
+                [
+                  10.1161288,
+                  53.7138147
+                ],
+                [
+                  10.1169046,
+                  53.7141972
+                ],
+                [
+                  10.1169326,
+                  53.7138537
+                ],
+                [
+                  10.1161288,
+                  53.7138147
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  10.1698569,
+                  53.6691301
+                ],
+                [
+                  10.1689938,
+                  53.6682413
+                ],
+                [
+                  10.1703943,
+                  53.6687563
+                ],
+                [
+                  10.1698569,
+                  53.6691301
+                ]
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,667 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Zurich, Switzerland",
+    "retrieved_at": "2026-07-28T13:07:31.553468Z",
+    "cache_key": "69f4047922b4f45eed09101f85915e3dcbaedd0e7014f3153f08148f15d3c64b",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Zurich, Switzerland"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 71813662,
+          "osm_type": "relation",
+          "osm_id": 1682248,
+          "place_rank": 16,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.7469731774636671,
+          "addresstype": "city",
+          "name": "Zurich",
+          "display_name": "Zurich, District Zurich, Zurich, Switzerland",
+          "address": {
+            "city": "Zurich",
+            "county": "District Zurich",
+            "state": "Zurich",
+            "ISO3166-2-lvl4": "CH-ZH",
+            "country": "Switzerland",
+            "country_code": "ch"
+          },
+          "namedetails": {
+            "name": "Zürich",
+            "name:ca": "Zúric",
+            "name:de": "Zürich",
+            "name:en": "Zurich",
+            "name:es": "Zúrich",
+            "name:fr": "Zurich",
+            "name:it": "Zurigo",
+            "name:lt": "Ciūrichas",
+            "name:ru": "Цюрих",
+            "name:sq": "Cyrihu",
+            "name:zh": "蘇黎世",
+            "name:fur": "Zurich",
+            "name:zh-Hans": "苏黎世",
+            "name:zh-Hant": "蘇黎世",
+            "name:af": "Zürich",
+            "name:am": "ዙሪክ",
+            "name:an": "Zúrich",
+            "name:ar": "زيورخ",
+            "name:az": "Sürix",
+            "name:be": "Цюрых",
+            "name:bg": "Цюрих",
+            "name:bn": "জুরিখ",
+            "name:br": "Zürich",
+            "name:bs": "Zürich",
+            "name:ce": "Цуьрих",
+            "name:cs": "Curych",
+            "name:cv": "Цюрих",
+            "name:cy": "Zürich",
+            "name:da": "Zürich",
+            "name:el": "Ζυρίχη",
+            "name:eo": "Zuriko",
+            "name:et": "Zürich",
+            "name:eu": "Zürich",
+            "name:fa": "زوریخ",
+            "name:fi": "Zürich",
+            "name:fj": "Zuriki",
+            "name:fy": "Zürich",
+            "name:ga": "Zürich",
+            "name:gd": "Zürich",
+            "name:gl": "Zúric",
+            "name:he": "ציריך",
+            "name:hi": "ज़्यूरिख़",
+            "name:hr": "Zürich",
+            "name:ht": "Zirik",
+            "name:hu": "Zürich",
+            "name:hy": "Ցյուրիխ",
+            "name:ia": "Zurich",
+            "name:id": "Zürich",
+            "name:ie": "Zúrich",
+            "name:io": "Zürich",
+            "name:is": "Zürich",
+            "name:ja": "チューリッヒ",
+            "name:jv": "Zürich",
+            "name:ka": "ციურიხი",
+            "name:kk": "Цюрих",
+            "name:kn": "ಝ್ಯೂರಿಖ್",
+            "name:ko": "취리히",
+            "name:ku": "Zurîx",
+            "name:la": "Turicum",
+            "name:lb": "Zürech",
+            "name:li": "Zeurich",
+            "name:ln": "Tsúri",
+            "_place_name:lt": "Ciurichas",
+            "name:lv": "Cīrihe",
+            "name:mk": "Цирих",
+            "name:ml": "സൂറിച്ച്",
+            "name:mn": "Цюрих",
+            "name:mr": "झ्युरिक",
+            "name:ms": "Zürich",
+            "name:mt": "Zurich",
+            "name:my": "ဇူးရစ်ချ်မြို့",
+            "name:na": "Zürich",
+            "name:nl": "Zürich",
+            "name:nn": "Zürich",
+            "name:no": "Zürich",
+            "name:nv": "Beʼekʼid Hóneezíbąąh",
+            "name:oc": "Zuric",
+            "name:os": "Цюрих",
+            "name:pa": "ਜ਼ਿਊਰਿਖ",
+            "name:pl": "Zurych",
+            "name:ps": "څوریخ",
+            "name:pt": "Zurique",
+            "name:qu": "Zürich",
+            "name:rm": "Turitg",
+            "name:rn": "Zurich",
+            "name:ro": "Zürich",
+            "name:sd": "زيورخ",
+            "name:sh": "Zürich",
+            "name:sk": "Zürich",
+            "name:sl": "Zürich",
+            "name:sr": "Цирих",
+            "name:sv": "Zürich",
+            "name:sw": "Zürich",
+            "name:ta": "சூரிக்",
+            "name:tg": "Тсюрих",
+            "name:th": "ซูริก",
+            "name:tl": "Zürich",
+            "name:tr": "Zürih",
+            "name:tt": "Tsürix",
+            "name:ug": "سيۇرىخ",
+            "name:uk": "Цюрих",
+            "name:ur": "زیورخ",
+            "name:uz": "Syurix",
+            "name:vi": "Zürich",
+            "name:vo": "Zürich",
+            "name:wo": "Zurich",
+            "name:yi": "ציריך",
+            "name:yo": "Zürich",
+            "name:als": "Zürich",
+            "name:arc": "ܬܣܝܪܝܟ",
+            "name:arz": "زوريخ",
+            "name:bar": "Zirich",
+            "name:frp": "Tsurique",
+            "name:frr": "Zürich",
+            "name:gsw": "Züri",
+            "name:hsb": "Zürich",
+            "name:ilo": "Zürich",
+            "name:lmo": "Zürigh",
+            "name:nah": "Zurich",
+            "name:nan": "Zürich",
+            "name:nds": "Zürich",
+            "name:pdc": "Zurich",
+            "name:pfl": "Zirich",
+            "name:pms": "Zurigh",
+            "name:pnb": "زیورچ",
+            "name:scn": "Zurìcu",
+            "name:vec": "Zurigo",
+            "name:war": "Zürich",
+            "name:wuu": "苏黎世",
+            "name:yue": "蘇黎世",
+            "name:be-tarask": "Цюрых"
+          }
+        },
+        "bbox": [
+          8.4480061,
+          47.3202187,
+          8.6254413,
+          47.4346650
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                8.4480061,
+                47.3802489
+              ],
+              [
+                8.4977381,
+                47.3452057
+              ],
+              [
+                8.5031821,
+                47.3202187
+              ],
+              [
+                8.6254413,
+                47.3546647
+              ],
+              [
+                8.5831589,
+                47.3883067
+              ],
+              [
+                8.5972792,
+                47.4063087
+              ],
+              [
+                8.5431208,
+                47.4328828
+              ],
+              [
+                8.4857915,
+                47.4310272
+              ],
+              [
+                8.4691307,
+                47.4169272
+              ],
+              [
+                8.4730103,
+                47.395064
+              ],
+              [
+                8.4480061,
+                47.3802489
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 417395696,
+          "osm_type": "relation",
+          "osm_id": 1690227,
+          "place_rank": 8,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.6336714150666095,
+          "addresstype": "state",
+          "name": "Zurich",
+          "display_name": "Zurich, Switzerland",
+          "address": {
+            "state": "Zurich",
+            "ISO3166-2-lvl4": "CH-ZH",
+            "country": "Switzerland",
+            "country_code": "ch"
+          },
+          "namedetails": {
+            "ref": "ZH",
+            "name": "Zürich",
+            "name:af": "Zürich",
+            "name:am": "ዙሪክ",
+            "name:an": "Zúrich",
+            "name:ar": "زيورخ",
+            "name:az": "Sürix",
+            "name:be": "Цюрых",
+            "name:bg": "Цюрих",
+            "name:bn": "জুরিখ",
+            "name:br": "Zürich",
+            "name:bs": "Zürich",
+            "name:ca": "Zúric",
+            "name:cs": "Curych",
+            "name:cv": "Цюрих",
+            "name:cy": "Zürich",
+            "name:da": "Zürich",
+            "name:de": "Zürich",
+            "name:el": "Ζυρίχη",
+            "name:en": "Zurich",
+            "name:eo": "Zuriko",
+            "name:es": "Zúrich",
+            "name:et": "Zürich",
+            "name:eu": "Zürich",
+            "name:fa": "زوریخ",
+            "name:fi": "Zürich",
+            "name:fr": "Zurich",
+            "name:ga": "Zürich",
+            "name:gd": "Zürich",
+            "name:gl": "Zúric",
+            "name:he": "ציריך",
+            "name:hi": "ज़्यूरिख़",
+            "name:hr": "Zürich",
+            "name:hu": "Zürich",
+            "name:id": "Zürich",
+            "name:io": "Zürich",
+            "name:is": "Zürich",
+            "name:it": "Zurigo",
+            "name:ja": "チューリッヒ州",
+            "name:jv": "Zürich",
+            "name:ka": "ციურიხი",
+            "name:kn": "ಝ್ಯೂರಿಖ್",
+            "name:ko": "취리히",
+            "name:la": "Turicum",
+            "name:lb": "Zürech",
+            "name:lt": "Ciurichas",
+            "name:lv": "Cīrihe",
+            "name:mk": "Цирих",
+            "name:ml": "സൂറിച്ച്",
+            "name:mr": "झ्युरिक",
+            "name:ms": "Zürich",
+            "name:my": "ဇူးရစ်ချ်မြို့",
+            "name:na": "Zürich",
+            "name:nl": "Zürich",
+            "name:nn": "Zürich",
+            "name:no": "Zürich",
+            "name:oc": "Zuric",
+            "name:os": "Цюрих",
+            "name:pl": "Zurych",
+            "name:pt": "Zurique",
+            "name:qu": "Zürich",
+            "name:rm": "Turitg",
+            "name:ro": "Zürich",
+            "name:ru": "Цюрих",
+            "name:sh": "Zürich",
+            "name:sk": "Zürich",
+            "name:sl": "Zürich",
+            "name:sq": "Cyrihu",
+            "name:sr": "Цирих",
+            "name:sv": "Zürich",
+            "name:sw": "Zürich",
+            "name:ta": "சூரிக்",
+            "name:th": "ซูริก",
+            "name:tl": "Zürich",
+            "name:tr": "Zürih",
+            "name:ug": "سيۇرىخ",
+            "name:uk": "Цюрих",
+            "name:ur": "زیورخ",
+            "name:vi": "Zürich",
+            "name:vo": "Zürich",
+            "name:wo": "Zurich",
+            "name:yi": "ציריך",
+            "name:yo": "Zürich",
+            "name:zh": "蘇黎世州",
+            "alt_name": "Kanton Zürich;Grossregion Zürich",
+            "name:als": "Zürich",
+            "name:arc": "ܬܣܝܪܝܟ",
+            "name:arz": "زوريخ",
+            "name:bar": "Zirich",
+            "name:ckb": "زیورخ",
+            "name:frp": "Tsurique",
+            "name:frr": "Zürich",
+            "name:gsw": "Züri",
+            "name:hsb": "Zürich",
+            "name:ilo": "Zürich",
+            "name:lmo": "Zürigh",
+            "name:nah": "Zurich",
+            "name:nan": "Zürich",
+            "name:nds": "Zürich",
+            "name:pdc": "Zurich",
+            "name:pfl": "Zirich",
+            "name:pms": "Zurigh",
+            "name:pnb": "زیورچ",
+            "name:scn": "Zurìcu",
+            "name:vec": "Zurigo",
+            "name:war": "Zürich",
+            "name:wuu": "苏黎世",
+            "name:yue": "蘇黎世",
+            "ISO3166-2": "CH-ZH",
+            "alt_name:ca": "Cantó de Zuric",
+            "alt_name:de": "Kanton Zürich",
+            "alt_name:fr": "Canton de Zurich",
+            "alt_name:it": "Canton Zurigo",
+            "name:prefix": "Kanton",
+            "name:zh-Hans": "苏黎世州",
+            "name:zh-Hant": "蘇黎世州",
+            "_place_name:rm": "Turtig",
+            "name:be-tarask": "Цюрых"
+          }
+        },
+        "bbox": [
+          8.3576934,
+          47.1594376,
+          8.9849510,
+          47.6944697
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                8.3576934,
+                47.5025251
+              ],
+              [
+                8.3741993,
+                47.4804557
+              ],
+              [
+                8.3656863,
+                47.4662144
+              ],
+              [
+                8.386906,
+                47.4495986
+              ],
+              [
+                8.3750807,
+                47.4306656
+              ],
+              [
+                8.3922636,
+                47.4216867
+              ],
+              [
+                8.3627567,
+                47.4016122
+              ],
+              [
+                8.3965674,
+                47.3938629
+              ],
+              [
+                8.4132076,
+                47.3263974
+              ],
+              [
+                8.4551109,
+                47.3340833
+              ],
+              [
+                8.4291373,
+                47.3006768
+              ],
+              [
+                8.3886464,
+                47.2900271
+              ],
+              [
+                8.4216847,
+                47.2233208
+              ],
+              [
+                8.4732967,
+                47.2085254
+              ],
+              [
+                8.5826926,
+                47.2179184
+              ],
+              [
+                8.6129381,
+                47.2018634
+              ],
+              [
+                8.6242864,
+                47.1730314
+              ],
+              [
+                8.6749784,
+                47.1594451
+              ],
+              [
+                8.692195,
+                47.1634006
+              ],
+              [
+                8.6810636,
+                47.1840723
+              ],
+              [
+                8.7040423,
+                47.2023023
+              ],
+              [
+                8.8086085,
+                47.2200872
+              ],
+              [
+                8.8025138,
+                47.2466707
+              ],
+              [
+                8.9330965,
+                47.2588875
+              ],
+              [
+                8.9488186,
+                47.2809429
+              ],
+              [
+                8.9337129,
+                47.288308
+              ],
+              [
+                8.984951,
+                47.3193867
+              ],
+              [
+                8.943198,
+                47.3859629
+              ],
+              [
+                8.903465,
+                47.4020567
+              ],
+              [
+                8.9077545,
+                47.4313306
+              ],
+              [
+                8.9330979,
+                47.4342278
+              ],
+              [
+                8.9068257,
+                47.438788
+              ],
+              [
+                8.880982,
+                47.4747555
+              ],
+              [
+                8.8976935,
+                47.4851124
+              ],
+              [
+                8.8983322,
+                47.5241748
+              ],
+              [
+                8.8408106,
+                47.5326867
+              ],
+              [
+                8.827884,
+                47.5559835
+              ],
+              [
+                8.8509778,
+                47.5636075
+              ],
+              [
+                8.7482189,
+                47.5923105
+              ],
+              [
+                8.7393924,
+                47.6080421
+              ],
+              [
+                8.7481175,
+                47.6230444
+              ],
+              [
+                8.8028287,
+                47.6011388
+              ],
+              [
+                8.8277885,
+                47.6407847
+              ],
+              [
+                8.803965,
+                47.6651452
+              ],
+              [
+                8.7471948,
+                47.638647
+              ],
+              [
+                8.7087291,
+                47.6419035
+              ],
+              [
+                8.6846169,
+                47.6533954
+              ],
+              [
+                8.6694334,
+                47.6848501
+              ],
+              [
+                8.6251193,
+                47.6916696
+              ],
+              [
+                8.606142,
+                47.6691306
+              ],
+              [
+                8.6287064,
+                47.6490551
+              ],
+              [
+                8.5958843,
+                47.6430842
+              ],
+              [
+                8.6047654,
+                47.6128948
+              ],
+              [
+                8.5592394,
+                47.5532498
+              ],
+              [
+                8.5335635,
+                47.5821575
+              ],
+              [
+                8.5744025,
+                47.6122913
+              ],
+              [
+                8.5166824,
+                47.6341218
+              ],
+              [
+                8.5083464,
+                47.6175191
+              ],
+              [
+                8.456675,
+                47.6023273
+              ],
+              [
+                8.4668689,
+                47.5842478
+              ],
+              [
+                8.4947484,
+                47.5810328
+              ],
+              [
+                8.4187513,
+                47.5651623
+              ],
+              [
+                8.4174067,
+                47.5458857
+              ],
+              [
+                8.3576934,
+                47.5025251
+              ]
+            ],
+            [
+              [
+                8.4385215,
+                47.4076154
+              ],
+              [
+                8.4398452,
+                47.409019
+              ],
+              [
+                8.4403716,
+                47.4085235
+              ],
+              [
+                8.4385215,
+                47.4076154
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

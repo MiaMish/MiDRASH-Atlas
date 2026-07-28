@@ -1,0 +1,91 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Princeton, NJ, USA",
+    "retrieved_at": "2026-07-28T13:06:41.647389Z",
+    "cache_key": "c5d565ab1b6216aae8c5361ce1c00f4a88897c120257dbd48b3d9246c574ae6d",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Princeton, NJ, USA"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 358209252,
+          "osm_type": "relation",
+          "osm_id": 961744,
+          "place_rank": 16,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.6262101371837219,
+          "addresstype": "city",
+          "name": "Princeton",
+          "display_name": "Princeton, Mercer County, New Jersey, United States",
+          "address": {
+            "city": "Princeton",
+            "county": "Mercer County",
+            "state": "New Jersey",
+            "ISO3166-2-lvl4": "US-NJ",
+            "country": "United States",
+            "country_code": "us"
+          },
+          "namedetails": {
+            "name": "Princeton",
+            "name:en": "Princeton",
+            "_place_name:en": "Princeton"
+          }
+        },
+        "bbox": [
+          -74.7221219,
+          40.3048856,
+          -74.6175080,
+          40.3917207
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -74.7221219,
+                40.3750605
+              ],
+              [
+                -74.6845521,
+                40.3048856
+              ],
+              [
+                -74.630001,
+                40.343407
+              ],
+              [
+                -74.617508,
+                40.377596
+              ],
+              [
+                -74.6511347,
+                40.3917207
+              ],
+              [
+                -74.7221219,
+                40.3750605
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "San Lorenzo del Escorial, Spain",
+    "retrieved_at": "2026-07-28T13:06:53.460792Z",
+    "cache_key": "45c7211d67ce49dcbb1847c7aea303aa34abed44de7bc9f0eedc95215ea3e27c",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "San Lorenzo del Escorial, Spain"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 293300883,
+          "osm_type": "node",
+          "osm_id": 8266944838,
+          "place_rank": 30,
+          "category": "tourism",
+          "type": "artwork",
+          "importance": 5.992446784156584e-05,
+          "addresstype": "tourism",
+          "name": "San Lorenzo",
+          "display_name": "San Lorenzo, Lonja del Monasterio de San Lorenzo de El Escorial, San Lorenzo de El Escorial, Community of Madrid, 28200, Spain",
+          "address": {
+            "tourism": "San Lorenzo",
+            "road": "Lonja del Monasterio de San Lorenzo de El Escorial",
+            "town": "San Lorenzo de El Escorial",
+            "state": "Community of Madrid",
+            "ISO3166-2-lvl4": "ES-MD",
+            "postcode": "28200",
+            "country": "Spain",
+            "country_code": "es"
+          },
+          "namedetails": {
+            "name": "San Lorenzo"
+          }
+        },
+        "bbox": [
+          -4.1489585,
+          40.5891697,
+          -4.1488585,
+          40.5892697
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -4.1489085,
+            40.5892197
+          ]
+        }
+      }
+    ]
+  }
+}

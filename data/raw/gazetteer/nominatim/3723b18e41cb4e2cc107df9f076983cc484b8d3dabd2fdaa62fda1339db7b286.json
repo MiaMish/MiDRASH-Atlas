@@ -1,0 +1,325 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Trzcianka (Województwo Wielkopolskie, Poland)",
+    "retrieved_at": "2026-07-28T13:07:14.955817Z",
+    "cache_key": "3723b18e41cb4e2cc107df9f076983cc484b8d3dabd2fdaa62fda1339db7b286",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Trzcianka (Województwo Wielkopolskie, Poland)"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 177704735,
+          "osm_type": "way",
+          "osm_id": 1160126106,
+          "place_rank": 24,
+          "category": "landuse",
+          "type": "industrial",
+          "importance": 0.08005240024414433,
+          "addresstype": "industrial",
+          "name": "Hydro Extrusion Poland Sp. z o.o.",
+          "display_name": "Hydro Extrusion Poland Sp. z o.o., Trzcianka, gmina Trzcianka, Czarnków-Trzcianka County, Greater Poland Voivodeship, 64-980, Poland",
+          "address": {
+            "industrial": "Hydro Extrusion Poland Sp. z o.o.",
+            "town": "Trzcianka",
+            "municipality": "gmina Trzcianka",
+            "county": "Czarnków-Trzcianka County",
+            "state": "Greater Poland Voivodeship",
+            "ISO3166-2-lvl4": "PL-30",
+            "postcode": "64-980",
+            "country": "Poland",
+            "country_code": "pl"
+          },
+          "namedetails": {
+            "name": "Hydro Extrusion Poland Sp. z o.o."
+          }
+        },
+        "bbox": [
+          16.4675641,
+          53.0383138,
+          16.4782564,
+          53.0430964
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                16.4738767,
+                53.0429605
+              ],
+              [
+                16.472054,
+                53.0384246
+              ],
+              [
+                16.4782564,
+                53.0428833
+              ],
+              [
+                16.4738767,
+                53.0429605
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 174584214,
+          "osm_type": "way",
+          "osm_id": 1387497854,
+          "place_rank": 24,
+          "category": "landuse",
+          "type": "industrial",
+          "importance": 0.08005240024414433,
+          "addresstype": "industrial",
+          "name": "Nordpeis Poland",
+          "display_name": "Nordpeis Poland, 60, Trzcianka, gmina Trzcianka, Czarnków-Trzcianka County, Greater Poland Voivodeship, 64-980, Poland",
+          "address": {
+            "industrial": "Nordpeis Poland",
+            "house_number": "60",
+            "town": "Trzcianka",
+            "municipality": "gmina Trzcianka",
+            "county": "Czarnków-Trzcianka County",
+            "state": "Greater Poland Voivodeship",
+            "ISO3166-2-lvl4": "PL-30",
+            "postcode": "64-980",
+            "country": "Poland",
+            "country_code": "pl"
+          },
+          "namedetails": {
+            "name": "Nordpeis Poland"
+          }
+        },
+        "bbox": [
+          16.4369794,
+          53.0483502,
+          16.4394705,
+          53.0499168
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                16.4375601,
+                53.0499168
+              ],
+              [
+                16.4388653,
+                53.0483502
+              ],
+              [
+                16.4394705,
+                53.0489469
+              ],
+              [
+                16.4375601,
+                53.0499168
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 176368604,
+          "osm_type": "relation",
+          "osm_id": 14550265,
+          "place_rank": 24,
+          "category": "landuse",
+          "type": "industrial",
+          "importance": 0.08005035858701454,
+          "addresstype": "industrial",
+          "name": "Joskin Poland",
+          "display_name": "Joskin Poland, 62, Trzcianka, gmina Trzcianka, Czarnków-Trzcianka County, Greater Poland Voivodeship, 64-980, Poland",
+          "address": {
+            "industrial": "Joskin Poland",
+            "house_number": "62",
+            "town": "Trzcianka",
+            "municipality": "gmina Trzcianka",
+            "county": "Czarnków-Trzcianka County",
+            "state": "Greater Poland Voivodeship",
+            "ISO3166-2-lvl4": "PL-30",
+            "postcode": "64-980",
+            "country": "Poland",
+            "country_code": "pl"
+          },
+          "namedetails": {
+            "name": "Joskin Poland",
+            "name:pl": "Joskin Poland",
+            "official_name": "JOSKIN Sp. z o.o."
+          }
+        },
+        "bbox": [
+          16.4293525,
+          53.0484414,
+          16.4418948,
+          53.0528414
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                16.4330808,
+                53.0527878
+              ],
+              [
+                16.4368741,
+                53.0484414
+              ],
+              [
+                16.4418948,
+                53.0528414
+              ],
+              [
+                16.4330808,
+                53.0527878
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 176242633,
+          "osm_type": "way",
+          "osm_id": 534232841,
+          "place_rank": 30,
+          "category": "building",
+          "type": "industrial",
+          "importance": 5.2400244144304836e-05,
+          "addresstype": "building",
+          "name": "Joskin Poland",
+          "display_name": "Joskin Poland, 62, Gorzowska, Obotryckie, Trzcianka, gmina Trzcianka, Czarnków-Trzcianka County, Greater Poland Voivodeship, 64-980, Poland",
+          "address": {
+            "building": "Joskin Poland",
+            "house_number": "62",
+            "road": "Gorzowska",
+            "neighbourhood": "Obotryckie",
+            "town": "Trzcianka",
+            "municipality": "gmina Trzcianka",
+            "county": "Czarnków-Trzcianka County",
+            "state": "Greater Poland Voivodeship",
+            "ISO3166-2-lvl4": "PL-30",
+            "postcode": "64-980",
+            "country": "Poland",
+            "country_code": "pl"
+          },
+          "namedetails": {
+            "name": "Joskin Poland"
+          }
+        },
+        "bbox": [
+          16.4338914,
+          53.0493775,
+          16.4378449,
+          53.0522453
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                16.4350726,
+                53.0520809
+              ],
+              [
+                16.4358433,
+                53.0494779
+              ],
+              [
+                16.4378449,
+                53.050737
+              ],
+              [
+                16.4350726,
+                53.0520809
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 176143770,
+          "osm_type": "way",
+          "osm_id": 534232834,
+          "place_rank": 30,
+          "category": "building",
+          "type": "yes",
+          "importance": 5.2400244144304836e-05,
+          "addresstype": "building",
+          "name": "Cynkownia Joskin Poland",
+          "display_name": "Cynkownia Joskin Poland, Parkowa, Obotryckie, Trzcianka, gmina Trzcianka, Czarnków-Trzcianka County, Greater Poland Voivodeship, 64-980, Poland",
+          "address": {
+            "building": "Cynkownia Joskin Poland",
+            "road": "Parkowa",
+            "neighbourhood": "Obotryckie",
+            "town": "Trzcianka",
+            "municipality": "gmina Trzcianka",
+            "county": "Czarnków-Trzcianka County",
+            "state": "Greater Poland Voivodeship",
+            "ISO3166-2-lvl4": "PL-30",
+            "postcode": "64-980",
+            "country": "Poland",
+            "country_code": "pl"
+          },
+          "namedetails": {
+            "name": "Cynkownia Joskin Poland"
+          }
+        },
+        "bbox": [
+          16.4393803,
+          53.0519272,
+          16.4417483,
+          53.0527619
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                16.4416369,
+                53.0527619
+              ],
+              [
+                16.4403055,
+                53.0519272
+              ],
+              [
+                16.4417483,
+                53.0525352
+              ],
+              [
+                16.4416369,
+                53.0527619
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

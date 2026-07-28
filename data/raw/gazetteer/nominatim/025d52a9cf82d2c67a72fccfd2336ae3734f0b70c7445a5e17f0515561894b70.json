@@ -1,0 +1,945 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "St. Petersburg, Russia",
+    "retrieved_at": "2026-07-28T13:07:00.986649Z",
+    "cache_key": "025d52a9cf82d2c67a72fccfd2336ae3734f0b70c7445a5e17f0515561894b70",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "St. Petersburg, Russia"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 169631739,
+          "osm_type": "relation",
+          "osm_id": 337422,
+          "place_rank": 8,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.8089536713550287,
+          "addresstype": "state",
+          "name": "Saint Petersburg",
+          "display_name": "Saint Petersburg, Northwestern Federal District, Russia",
+          "address": {
+            "state": "Saint Petersburg",
+            "ISO3166-2-lvl4": "RU-SPE",
+            "region": "Northwestern Federal District",
+            "country": "Russia",
+            "country_code": "ru"
+          },
+          "namedetails": {
+            "ref": "RU-SPE",
+            "name": "Санкт-Петербург",
+            "int_ref": "RU-SPE",
+            "name:ab": "Санқт-Петербург",
+            "name:ar": "سانت بطرسبرغ",
+            "name:be": "Санкт-Пецярбург",
+            "name:bg": "Санкт Петербург",
+            "name:ca": "Sant Petersburg",
+            "name:cs": "Petrohrad",
+            "name:da": "Sankt Petersborg",
+            "name:de": "Sankt Petersburg",
+            "name:el": "Αγία Πετρούπολη",
+            "name:en": "Saint Petersburg",
+            "name:eo": "Sankt-Peterburgo",
+            "name:es": "San Petersburgo",
+            "name:et": "Peterburi",
+            "name:fi": "Pietari",
+            "name:fr": "Saint-Pétersbourg",
+            "name:fy": "Sint-Petersburch",
+            "name:gl": "San Petersburgo",
+            "name:hr": "Sankt Peterburg",
+            "name:hu": "Szentpétervár",
+            "name:it": "San Pietroburgo",
+            "name:ja": "サンクト ペテルブルク",
+            "name:ko": "상트페테르부르크",
+            "name:ku": "Sankt Petersburg",
+            "name:lb": "Sankt Péitersbuerg",
+            "name:lt": "Sankt Peterburgas",
+            "name:lv": "Sanktpēterburga",
+            "name:mk": "Санкт Петербург",
+            "name:nb": "Sankt Petersburg",
+            "name:nl": "Sint-Petersburg",
+            "name:os": "Бетъырбух",
+            "name:pl": "Sankt Petersburg",
+            "name:pt": "São Petersburgo",
+            "name:ro": "Sankt Petersburg",
+            "name:ru": "Санкт-Петербург",
+            "name:sk": "Petrohrad",
+            "name:sl": "Sankt Peterburg",
+            "name:sr": "Санкт Петербург",
+            "name:sv": "Sankt Petersburg",
+            "name:tk": "Sankt-Peterburg",
+            "name:uk": "Санкт-Петербурґ",
+            "name:vi": "Xanh Pê-téc-bua",
+            "name:zh": "圣彼得堡",
+            "int_name": "Sankt-Peterburg",
+            "name:ast": "San Petersburgu",
+            "name:tzl": "Sant Pairbuerg",
+            "ISO3166-2": "RU-SPE",
+            "_place_ref": "СПБ",
+            "alt_name:mk": "Петроград",
+            "alt_name:vi": "Sankt-Peterburg",
+            "old_name:ar": "لينينغراد;بيتروغراد",
+            "old_name:en": "Petrograd;Leningrad",
+            "old_name:eo": "Petrogrado;Leningrado",
+            "old_name:fr": "Pétrograd;Léningrad",
+            "old_name:hr": "Petrograd;Lenjingrad",
+            "old_name:ku": "Leningrad",
+            "old_name:mk": "Ленинград",
+            "old_name:os": "Петроград;Ленинград",
+            "old_name:vi": "Petrograd;Leningrad",
+            "name:zh-Hans": "圣彼得堡",
+            "name:zh-Hant": "聖彼得堡",
+            "name:be-tarask": "Санкт-Пецярбург",
+            "old_name:1914-08-31--1924-01-26": "Петроград",
+            "old_name:1924-01-26--1991-09-06": "Ленинград"
+          }
+        },
+        "bbox": [
+          29.4257576,
+          59.6337832,
+          30.7594934,
+          60.2448369
+        ],
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  29.4257576,
+                  60.1907379
+                ],
+                [
+                  29.4686534,
+                  60.1852423
+                ],
+                [
+                  29.4383398,
+                  60.1754529
+                ],
+                [
+                  29.4649727,
+                  60.1697115
+                ],
+                [
+                  29.541355,
+                  60.0424784
+                ],
+                [
+                  29.6562889,
+                  59.9166362
+                ],
+                [
+                  29.7220797,
+                  59.9015002
+                ],
+                [
+                  29.7164173,
+                  59.8741168
+                ],
+                [
+                  29.7998692,
+                  59.8586579
+                ],
+                [
+                  29.8374727,
+                  59.867827
+                ],
+                [
+                  29.8812123,
+                  59.8436161
+                ],
+                [
+                  29.8954743,
+                  59.8546608
+                ],
+                [
+                  29.9452073,
+                  59.8448012
+                ],
+                [
+                  29.944345,
+                  59.8288272
+                ],
+                [
+                  30.0442456,
+                  59.837299
+                ],
+                [
+                  30.0469663,
+                  59.8177356
+                ],
+                [
+                  30.1276856,
+                  59.8090654
+                ],
+                [
+                  30.0433427,
+                  59.7641834
+                ],
+                [
+                  30.0761388,
+                  59.7479223
+                ],
+                [
+                  30.0349646,
+                  59.7178541
+                ],
+                [
+                  30.131051,
+                  59.6936923
+                ],
+                [
+                  30.1047381,
+                  59.7292687
+                ],
+                [
+                  30.1166312,
+                  59.7621759
+                ],
+                [
+                  30.1527763,
+                  59.7717536
+                ],
+                [
+                  30.1593206,
+                  59.8011707
+                ],
+                [
+                  30.2839407,
+                  59.7878712
+                ],
+                [
+                  30.2585587,
+                  59.7626787
+                ],
+                [
+                  30.3007209,
+                  59.7473867
+                ],
+                [
+                  30.2182227,
+                  59.6730689
+                ],
+                [
+                  30.2495753,
+                  59.6710209
+                ],
+                [
+                  30.23863,
+                  59.6617833
+                ],
+                [
+                  30.2615423,
+                  59.6486562
+                ],
+                [
+                  30.242922,
+                  59.6386297
+                ],
+                [
+                  30.254172,
+                  59.6337832
+                ],
+                [
+                  30.3065058,
+                  59.6620957
+                ],
+                [
+                  30.3855329,
+                  59.6476039
+                ],
+                [
+                  30.4363874,
+                  59.6629782
+                ],
+                [
+                  30.481653,
+                  59.6377996
+                ],
+                [
+                  30.5055449,
+                  59.6461733
+                ],
+                [
+                  30.5020866,
+                  59.6687035
+                ],
+                [
+                  30.4770756,
+                  59.680742
+                ],
+                [
+                  30.5205408,
+                  59.6909442
+                ],
+                [
+                  30.5307795,
+                  59.7073363
+                ],
+                [
+                  30.5644206,
+                  59.7050203
+                ],
+                [
+                  30.5763451,
+                  59.7300056
+                ],
+                [
+                  30.6299784,
+                  59.7358107
+                ],
+                [
+                  30.6481705,
+                  59.7212729
+                ],
+                [
+                  30.6829839,
+                  59.7249176
+                ],
+                [
+                  30.7030548,
+                  59.7452845
+                ],
+                [
+                  30.7570118,
+                  59.7437508
+                ],
+                [
+                  30.7267163,
+                  59.7708526
+                ],
+                [
+                  30.735294,
+                  59.7793018
+                ],
+                [
+                  30.630154,
+                  59.7936846
+                ],
+                [
+                  30.5603591,
+                  59.8360776
+                ],
+                [
+                  30.4934929,
+                  59.847085
+                ],
+                [
+                  30.519999,
+                  59.8632286
+                ],
+                [
+                  30.4954193,
+                  59.891479
+                ],
+                [
+                  30.5131012,
+                  59.9705585
+                ],
+                [
+                  30.5660293,
+                  59.9709647
+                ],
+                [
+                  30.5281057,
+                  59.9820868
+                ],
+                [
+                  30.5346946,
+                  59.992592
+                ],
+                [
+                  30.5080914,
+                  59.9871314
+                ],
+                [
+                  30.4682312,
+                  60.033556
+                ],
+                [
+                  30.3881121,
+                  60.0570767
+                ],
+                [
+                  30.3632337,
+                  60.092016
+                ],
+                [
+                  30.2918368,
+                  60.093898
+                ],
+                [
+                  30.2592415,
+                  60.125653
+                ],
+                [
+                  30.2189562,
+                  60.1151327
+                ],
+                [
+                  30.1894306,
+                  60.118228
+                ],
+                [
+                  30.1759416,
+                  60.1361295
+                ],
+                [
+                  30.0180219,
+                  60.1442872
+                ],
+                [
+                  30.0073237,
+                  60.1649981
+                ],
+                [
+                  29.8491181,
+                  60.1972949
+                ],
+                [
+                  29.7580155,
+                  60.2427009
+                ],
+                [
+                  29.7097028,
+                  60.2397976
+                ],
+                [
+                  29.7199024,
+                  60.2259241
+                ],
+                [
+                  29.6952496,
+                  60.2347424
+                ],
+                [
+                  29.7065102,
+                  60.243936
+                ],
+                [
+                  29.6439646,
+                  60.2421923
+                ],
+                [
+                  29.5792714,
+                  60.219815
+                ],
+                [
+                  29.5212786,
+                  60.2334783
+                ],
+                [
+                  29.4257576,
+                  60.1907379
+                ]
+              ],
+              [
+                [
+                  30.1295059,
+                  59.7825016
+                ],
+                [
+                  30.1499325,
+                  59.8009257
+                ],
+                [
+                  30.1553865,
+                  59.7992478
+                ],
+                [
+                  30.1392953,
+                  59.7855661
+                ],
+                [
+                  30.1295059,
+                  59.7825016
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  30.065169,
+                  59.677984
+                ],
+                [
+                  30.073311,
+                  59.6673744
+                ],
+                [
+                  30.0839517,
+                  59.6802946
+                ],
+                [
+                  30.065169,
+                  59.677984
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 169752853,
+          "osm_type": "relation",
+          "osm_id": 421007,
+          "place_rank": 16,
+          "category": "place",
+          "type": "city",
+          "importance": 0.8089536713550287,
+          "addresstype": "city",
+          "name": "Saint Petersburg",
+          "display_name": "Saint Petersburg, Northwestern Federal District, Russia",
+          "address": {
+            "city": "Saint Petersburg",
+            "state": "Saint Petersburg",
+            "ISO3166-2-lvl4": "RU-SPE",
+            "region": "Northwestern Federal District",
+            "country": "Russia",
+            "country_code": "ru"
+          },
+          "namedetails": {
+            "name": "Санкт-Петербург",
+            "name:ab": "Санқт-Петербург",
+            "name:ar": "سانت بطرسبرغ",
+            "name:be": "Санкт-Пецярбург",
+            "name:ca": "Sant Petersburg",
+            "name:cs": "Petrohrad",
+            "name:cv": "Питӗр хули",
+            "name:da": "Sankt Petersborg",
+            "name:de": "Sankt Petersburg",
+            "name:en": "Saint Petersburg",
+            "name:eo": "Sankt-Peterburgo",
+            "name:es": "San Petersburgo",
+            "name:et": "Peterburi",
+            "name:fa": "سن پترزبورگ",
+            "name:fi": "Pietari",
+            "name:fr": "Saint-Pétersbourg",
+            "name:fy": "Sint-Petersburch",
+            "name:gl": "San Petersburgo",
+            "name:hi": "सेंट पीटर्सबर्ग",
+            "name:hr": "Sankt Peterburg",
+            "name:hu": "Szentpétervár",
+            "name:is": "Sankti Pétursborg",
+            "name:it": "San Pietroburgo",
+            "name:ja": "サンクト ペテルブルク",
+            "name:ku": "Sankt Petersburg",
+            "name:lb": "Sankt Péitersbuerg",
+            "name:lt": "Sankt Peterburgas",
+            "name:lv": "Sanktpēterburga",
+            "name:mk": "Санкт Петербург",
+            "name:mr": "सेंट पीटर्सबर्ग",
+            "name:nb": "Sankt Petersburg",
+            "name:nl": "Sint-Petersburg",
+            "name:os": "Бетъырбух",
+            "name:pl": "Petersburg",
+            "name:pt": "São Petersburgo",
+            "name:ru": "Санкт-Петербург",
+            "name:sk": "Petrohrad",
+            "name:sl": "Sankt Peterburg",
+            "name:sr": "Санкт Петербург",
+            "name:sv": "Sankt Petersburg",
+            "name:te": "సెయింట్ పీటర్స్‌బర్గ్",
+            "name:uk": "Санкт-Петербурґ",
+            "name:vi": "Xanh Pê-téc-bua",
+            "name:zh": "圣彼得堡",
+            "int_name": "Sankt-Peterburg",
+            "name:ast": "San Petersburgu",
+            "name:kab": "Saint-Petersburg",
+            "name:szl": "Pejtersburg",
+            "name:tzl": "Sant Pairbuerg",
+            "short_name": "СПб",
+            "alt_name:cv": "Питӗр",
+            "alt_name:mk": "Петроград",
+            "alt_name:pl": "Sankt Petersburg",
+            "alt_name:vi": "Sankt-Peterburg",
+            "old_name:ar": "لينينغراد;بيتروغراد",
+            "old_name:cs": "Leningrad",
+            "old_name:de": "Leningrad",
+            "old_name:eo": "Petrogrado;Leningrado",
+            "old_name:fr": "Pétrograd;Léningrad",
+            "old_name:hr": "Petrograd;Lenjingrad",
+            "old_name:ku": "Leningrad",
+            "old_name:mk": "Ленинград",
+            "old_name:os": "Петроград;Ленинград",
+            "old_name:sv": "Petrograd;Leningrad",
+            "old_name:vi": "Petrograd;Leningrad",
+            "name:zh-Hans": "圣彼得堡",
+            "name:zh-Hant": "聖彼得堡",
+            "name:af": "Sint Petersburg",
+            "name:am": "ሳንክት ፔቴርቡርግ",
+            "name:an": "Sant Petersburgo",
+            "name:as": "চেণ্ট পিটাৰছবাৰ্গ",
+            "name:av": "Петербур",
+            "name:ay": "Santu Pitirwurhu",
+            "name:az": "Sankt-Peterburq",
+            "name:bg": "Санкт Петербург",
+            "name:bh": "सेंट पीटर्सबर्ग",
+            "name:bi": "San-Peterburg",
+            "name:bm": "Saint Petersburg",
+            "name:bn": "সেন্ট পিটার্সবার্গ",
+            "name:bo": "སན་པི་ཏི་པོག",
+            "name:br": "Sant-Petersbourg",
+            "name:bs": "Sankt Peterburg",
+            "name:ce": "Петарбух",
+            "name:ch": "Saint Petersburg",
+            "name:co": "San Petruburgu",
+            "name:cu": "Санктъ Пєтєрбоургъ",
+            "name:cy": "St Petersburg",
+            "name:el": "Αγία Πετρούπολη",
+            "name:eu": "San Petersburgo",
+            "name:fj": "Yalododonu Petersburg",
+            "name:fo": "St. Pætursborg",
+            "name:ga": "Cathair Pheadair",
+            "name:gd": "Sankt Peterburg",
+            "name:gn": "San Petersburgo",
+            "name:gv": "Caayr Pheddyr",
+            "name:ha": "Saint-Petersburg",
+            "name:he": "סנקט פטרבורג",
+            "name:ht": "Sen Pitèboug",
+            "name:hy": "Սանկտ Պետերբուրգ",
+            "name:ia": "Sancte Petroburgo",
+            "name:id": "Sankt-Peterburg",
+            "name:ie": "Sant Petersburg",
+            "name:io": "Sankt-Peterburg",
+            "name:jv": "St. Petersburg",
+            "name:ka": "სანქტ-პეტერბურგი",
+            "name:kg": "Saint Petersburg",
+            "name:kn": "ಸಂಕ್ತ್ ಪೇಟೆರ್ಬುಗ್",
+            "name:ko": "상트페테르부르크",
+            "name:kv": "Петыркар",
+            "name:kw": "Sen Pederburg",
+            "name:la": "Petropolis",
+            "name:li": "Sint-Petersburg",
+            "name:lo": "ເຊນປີເຕີສເບີກ",
+            "name:mg": "Saint Petersburg",
+            "name:mi": "Pitāpaka",
+            "name:ml": "സെന്റ് പീറ്റേഴ്സ്ബർഗ്",
+            "name:ms": "Saint Petersburg",
+            "name:mt": "San Pietruburgu",
+            "name:my": "စိန့်ပီတာစဘတ်မြို့",
+            "name:ne": "सेन्ट पिटर्सवर्ग",
+            "name:nn": "St. Petersburg",
+            "name:ny": "Saint Petersburg",
+            "name:oc": "Sant Petersborg",
+            "name:pa": "ਸੇਂਟ ਪੀਟਰਸਬਰਗ",
+            "_place_name:pl": "Sankt Petersburg",
+            "name:ps": "سینټ پیټرزبورګ",
+            "name:qu": "Sankt Peterburg",
+            "name:rn": "Saint-Pétersbourg",
+            "name:ro": "Sankt Petersburg",
+            "name:sc": "San Pietroburgo",
+            "name:sd": "سينٽ پيٽرسبرگ",
+            "name:sg": "Saint Petersburg",
+            "name:so": "Saint Petersburg",
+            "name:sq": "Shën Petersburgu",
+            "name:sw": "Sankt Peterburg",
+            "name:ta": "சென் பீட்டர்சுபெர்கு",
+            "name:th": "เซนต์ปีเตอส์เบิร์ก",
+            "name:tk": "Sankt-Peterburg",
+            "name:tl": "San Petersburgo",
+            "name:tr": "Sankt-Peterburg",
+            "name:tw": "Saint Petersburg",
+            "name:ug": "Sankt-Pétérburg",
+            "name:ur": "سینٹ پیٹرز برگ",
+            "name:uz": "Sankt-Peterburg",
+            "name:vo": "Sankt-Peterburg",
+            "name:wa": "Sint Petersbork",
+            "name:wo": "Sankt-Peterburg",
+            "name:yi": "פעטערבורג",
+            "name:yo": "Saint Petersburg",
+            "name:be-tarask": "Санкт-Пецярбург",
+            "loc_name": "Питер",
+            "name:dsb": "Sankt Petersburg",
+            "name:hsb": "Pětrohród",
+            "name:wal": "Geeshsha Piterisbergge",
+            "_place_alt_name:cv": "Питӗрпур",
+            "old_name:ko": "페트로그라드;레닌그라드",
+            "name:ru:word_stress": "Са́нкт-Петербу́рг",
+            "old_name:1914-08-31--1924-01-26": "Петроград",
+            "old_name:1924-01-26--1991-09-06": "Ленинград",
+            "old_name:en:1914-08-31--1924-01-26": "Petrograd",
+            "old_name:en:1924-01-26--1991-09-06": "Leningrad",
+            "old_name:ca:1914-08-31--1924-01-26": "Petrograd",
+            "old_name:ca:1924-01-26--1991-09-06": "Leningrad",
+            "old_name:cs:1924-01-26--1991-09-06": "Leningrad"
+          }
+        },
+        "bbox": [
+          30.0433427,
+          59.7441481,
+          30.5671662,
+          60.0907368
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                30.0433427,
+                59.7641834
+              ],
+              [
+                30.0761388,
+                59.7479223
+              ],
+              [
+                30.1416855,
+                59.7611696
+              ],
+              [
+                30.1593206,
+                59.8011707
+              ],
+              [
+                30.2213258,
+                59.7970266
+              ],
+              [
+                30.2839407,
+                59.7878712
+              ],
+              [
+                30.2585587,
+                59.7626787
+              ],
+              [
+                30.3099979,
+                59.7441481
+              ],
+              [
+                30.3387805,
+                59.7699195
+              ],
+              [
+                30.3246588,
+                59.8037429
+              ],
+              [
+                30.3480794,
+                59.812887
+              ],
+              [
+                30.4751983,
+                59.8339888
+              ],
+              [
+                30.5115522,
+                59.8077721
+              ],
+              [
+                30.5202138,
+                59.8239303
+              ],
+              [
+                30.5484977,
+                59.8131286
+              ],
+              [
+                30.5671662,
+                59.8239246
+              ],
+              [
+                30.5614758,
+                59.8354498
+              ],
+              [
+                30.4924423,
+                59.8485459
+              ],
+              [
+                30.519999,
+                59.8632286
+              ],
+              [
+                30.4954193,
+                59.891479
+              ],
+              [
+                30.5131012,
+                59.9705585
+              ],
+              [
+                30.5660293,
+                59.9709647
+              ],
+              [
+                30.5281057,
+                59.9820868
+              ],
+              [
+                30.5346946,
+                59.992592
+              ],
+              [
+                30.5080914,
+                59.9871314
+              ],
+              [
+                30.4682312,
+                60.033556
+              ],
+              [
+                30.3881121,
+                60.0570767
+              ],
+              [
+                30.3669801,
+                60.0907368
+              ],
+              [
+                30.3410626,
+                60.0608208
+              ],
+              [
+                30.274327,
+                60.068717
+              ],
+              [
+                30.2227842,
+                60.0513212
+              ],
+              [
+                30.1933177,
+                60.0638996
+              ],
+              [
+                30.1340902,
+                60.0487356
+              ],
+              [
+                30.1461872,
+                60.0347154
+              ],
+              [
+                30.0791042,
+                60.0271736
+              ],
+              [
+                30.0796278,
+                60.0047616
+              ],
+              [
+                30.0639152,
+                59.9966873
+              ],
+              [
+                30.2232024,
+                59.9828203
+              ],
+              [
+                30.2105278,
+                59.9708727
+              ],
+              [
+                30.2360972,
+                59.9639745
+              ],
+              [
+                30.1907098,
+                59.9611541
+              ],
+              [
+                30.1904462,
+                59.9435507
+              ],
+              [
+                30.1778995,
+                59.9440329
+              ],
+              [
+                30.2607425,
+                59.9159161
+              ],
+              [
+                30.2137864,
+                59.9161137
+              ],
+              [
+                30.1933153,
+                59.8893191
+              ],
+              [
+                30.1689842,
+                59.8883124
+              ],
+              [
+                30.1615248,
+                59.8742404
+              ],
+              [
+                30.1756255,
+                59.8703529
+              ],
+              [
+                30.09852,
+                59.86353
+              ],
+              [
+                30.0915427,
+                59.8359282
+              ],
+              [
+                30.0697365,
+                59.8384233
+              ],
+              [
+                30.0752888,
+                59.8152343
+              ],
+              [
+                30.1276856,
+                59.8090654
+              ],
+              [
+                30.0433427,
+                59.7641834
+              ]
+            ],
+            [
+              [
+                30.1295059,
+                59.7825016
+              ],
+              [
+                30.1499325,
+                59.8009257
+              ],
+              [
+                30.1553865,
+                59.7992478
+              ],
+              [
+                30.1392953,
+                59.7855661
+              ],
+              [
+                30.1295059,
+                59.7825016
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

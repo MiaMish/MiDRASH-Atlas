@@ -1,0 +1,114 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Tanam (Yemen)",
+    "retrieved_at": "2026-07-28T13:07:06.622277Z",
+    "cache_key": "c3b202cb3ad09c7e245de940ba3164dfe8965bcb3cc30e9000946cbd812a558d",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Tanam (Yemen)"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 43915171,
+          "osm_type": "node",
+          "osm_id": 1226966202,
+          "place_rank": 20,
+          "category": "place",
+          "type": "hamlet",
+          "importance": 0.13337083466849772,
+          "addresstype": "hamlet",
+          "name": "Tan`im",
+          "display_name": "Tan`im, Harib Al Qaramish District, Marib Governorate, Yemen",
+          "address": {
+            "hamlet": "Tan`im",
+            "district": "Harib Al Qaramish District",
+            "state": "Marib Governorate",
+            "ISO3166-2-lvl4": "YE-MA",
+            "country": "Yemen",
+            "country_code": "ye"
+          },
+          "namedetails": {
+            "name": "تنعيم",
+            "name:ar": "تنعيم",
+            "name:de": "Tan`im",
+            "name:en": "Tan`im",
+            "name:fr": "Tan`im",
+            "alt_name": "Ten`im; Ten‘îm; Sahan; Tanam",
+            "int_name": "Tan‘īm"
+          }
+        },
+        "bbox": [
+          44.5800000,
+          15.3966670,
+          44.6200000,
+          15.4366670
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            44.6,
+            15.416667
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 43953780,
+          "osm_type": "node",
+          "osm_id": 6936497614,
+          "place_rank": 20,
+          "category": "place",
+          "type": "hamlet",
+          "importance": 0.1333733340962844,
+          "addresstype": "hamlet",
+          "name": "Dhi Tanam",
+          "display_name": "Dhi Tanam, Bani Ghalib, Mudhaykhirah District, Ibb Governorate, Yemen",
+          "address": {
+            "hamlet": "Dhi Tanam",
+            "village": "Bani Ghalib",
+            "district": "Mudhaykhirah District",
+            "state": "Ibb Governorate",
+            "ISO3166-2-lvl4": "YE-IB",
+            "country": "Yemen",
+            "country_code": "ye"
+          },
+          "namedetails": {
+            "name": "ذي تنام",
+            "name:ar": "ذي تنام",
+            "name:en": "Dhi Tanam",
+            "int_name": "Dhī Tanām"
+          }
+        },
+        "bbox": [
+          43.9509080,
+          13.7964630,
+          43.9909080,
+          13.8364630
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            43.970908,
+            13.816463
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -40,8 +40,8 @@ HTTP or UI contracts.
 
 `configs/atlas/place_geometries.json` is the version-controlled seed input for
 geometry variants; `data/generated/atlas/places.json` is generated output.
-Interactive changes are append-only revisions in the runtime store and are not
-written over generated source data.
+Interactive changes are append-only revisions in the shared SQLite store and
+are not written over generated source data.
 
 Gazetteer lookup sits on the ingestion/curation side of the boundary. Normal map
 rendering reads persisted geometry and does not call an external geocoder.
@@ -86,9 +86,10 @@ interface MapAdapter {
 The initial implementation can wrap Leaflet. Replacing it with MapLibre should
 not change filters, assertion selection, drill-down, or API contracts.
 
-The first React component is under
-`apps/web/src/features/locations/`. Leaflet-specific behavior is isolated in
-`GeometryMapEditor.tsx`.
+The React atlas is under `apps/web/src/features/atlas/`. Leaflet-specific atlas
+behavior is isolated in `AtlasMap.tsx`; filters and drill-down consume the
+backend contract rather than Leaflet objects. Location-editing map behavior
+remains isolated in `GeometryMapEditor.tsx`.
 
 ## Filters
 
@@ -118,3 +119,24 @@ not silently remove a record from the result total.
 
 Default counts group by `physical_id`. A visible toggle may count components or
 manifestations instead.
+
+## Joined atlas endpoint
+
+`GET /api/v1/atlas-view` joins:
+
+- geographic assertions and source descriptions;
+- effective temporal intervals produced by the runtime circa policy;
+- manuscript/component records and shelfmarks;
+- many-to-many Hibur links;
+- current reviewed, human-edited, or AI-draft modern geometry.
+
+The response groups events by place, avoiding repeated country or region
+polygons. Each feature retains nested event records for drill-down. Supported
+query parameters are `start-year`, `end-year`, `circa-years`,
+`include-undated`, `geo-source`, `origin`, `hibur-id`, and
+`location-status`. Comma-separated values implement multi-selection.
+
+The UI defaults to `nli_751_writing_place`. Current repositories and related
+places remain available but are not silently mixed into the historical default.
+Mapped and unmapped assertion counts are returned together so missing geometry
+is visible rather than dropped.

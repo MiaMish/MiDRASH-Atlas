@@ -1,0 +1,479 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Strasbourg, France",
+    "retrieved_at": "2026-07-28T13:07:02.521334Z",
+    "cache_key": "89e40449ecdce04510f04c5ccb56cca1aa3a2dc28f4055e1b4307138a8d9e7fe",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Strasbourg, France"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 120878363,
+          "osm_type": "relation",
+          "osm_id": 71033,
+          "place_rank": 16,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.7372988337549014,
+          "addresstype": "city",
+          "name": "Strasbourg",
+          "display_name": "Strasbourg, Bas-Rhin, European Collectivity of Alsace, Grand Est, Metropolitan France, France",
+          "address": {
+            "city": "Strasbourg",
+            "municipality": "Strasbourg",
+            "county": "Bas-Rhin",
+            "ISO3166-2-lvl6": "FR-67",
+            "state_district": "European Collectivity of Alsace",
+            "ISO3166-2-lvl5": "FR-6AE",
+            "state": "Grand Est",
+            "ISO3166-2-lvl4": "FR-GES",
+            "region": "Metropolitan France",
+            "country": "France",
+            "country_code": "fr"
+          },
+          "namedetails": {
+            "name": "Strasbourg",
+            "name:am": "ስትራዝቡርግ",
+            "name:ar": "ستراسبورغ",
+            "name:az": "Strasburq",
+            "name:be": "Страсбург",
+            "name:bg": "Страсбург",
+            "name:bo": "སི་ཐི་རཱ་སི་བུར།",
+            "name:br": "Strosburi",
+            "name:ca": "Estrasburg",
+            "name:co": "Strasburgu",
+            "name:cs": "Štrasburk",
+            "name:cv": "Страсбург",
+            "name:cy": "Strasbwrg",
+            "name:de": "Straßburg",
+            "name:el": "Στρασβούργο",
+            "name:eo": "Strasburgo",
+            "name:es": "Estrasburgo",
+            "name:eu": "Estrasburgo",
+            "name:fa": "استراسبورگ",
+            "name:fr": "Strasbourg",
+            "name:fy": "Straasburch",
+            "name:gl": "Estrasburgo",
+            "name:gu": "સ્ટ્રાસબોર્ગ",
+            "name:he": "שטרסבורג",
+            "name:hi": "स्ट्रासबर्ग",
+            "name:ht": "Estrasbou",
+            "name:hy": "Ստրասբուրգ",
+            "name:it": "Strasburgo",
+            "name:ja": "ストラスブール",
+            "name:ka": "სტრასბური",
+            "name:ko": "스트라스부르",
+            "name:ku": "Strasbûrg",
+            "name:la": "Argentoratum",
+            "name:lb": "Stroossbuerg",
+            "name:li": "Sjtraasburg",
+            "name:lt": "Strasbūras",
+            "name:lv": "Strasbūra",
+            "name:mk": "Стразбур",
+            "name:mr": "स्त्रासबुर्ग",
+            "name:mt": "Strażburgu",
+            "name:nl": "Straatsburg",
+            "name:oc": "Estrasborg",
+            "name:os": "Страсбург",
+            "name:pl": "Strasburg",
+            "name:pt": "Estrasburgo",
+            "name:ru": "Страсбург",
+            "name:sk": "Štrasburg",
+            "name:sr": "Стразбур",
+            "name:ta": "ஸ்திராஸ்பூர்க்",
+            "name:th": "สทราซบูร์",
+            "name:tr": "Strazburg",
+            "name:ug": "Strasburg",
+            "name:uk": "Страсбурґ",
+            "name:ur": "ستراسبورگ",
+            "name:uz": "Strasburg",
+            "name:yi": "שטראסבורג",
+            "name:zh": "斯特拉斯堡",
+            "name:ang": "Strǣtburg",
+            "name:bar": "Stråssburg",
+            "name:ckb": "ستراسبورگ",
+            "name:eml": "Straśbûrg",
+            "name:ext": "Estrasburgu",
+            "name:frp": "Strasbôrg",
+            "name:fur": "Strasburc",
+            "name:gsw": "Strossbüri",
+            "name:kab": "Strassburg",
+            "name:lad": "Strasburgo",
+            "name:mzn": "استراسبورگ",
+            "name:nap": "Strasburgo",
+            "name:nds": "Straßborg",
+            "name:pfl": "Stroosburi",
+            "name:pms": "Strasborgh",
+            "name:pnb": "شٹراسبرگ",
+            "name:scn": "Strasburgu",
+            "name:stq": "Straasbuurich",
+            "name:vec": "Strasburgo",
+            "name:vls": "Stroatsburg",
+            "name:yue": "斯特拉斯堡",
+            "name:af": "Straatsburg",
+            "name:an": "Estrasburgo",
+            "name:ba": "Страсбург",
+            "name:bn": "স্ত্রাসবুর",
+            "_place_name:br": "Strasbourg",
+            "name:ce": "Страсбург",
+            "name:hu": "Strasbourg",
+            "name:ia": "Strasburgo",
+            "name:is": "Strassborg",
+            "name:kk": "Страсбург",
+            "name:kn": "ಸ್ಟ್ರಾಸ್ಬುರ್ಗ್",
+            "name:ln": "Strasburg",
+            "name:ml": "സ്ട്രാസ്ബർഗ്",
+            "name:mn": "Страсбург",
+            "name:my": "စတရာ့စ်ဘူရ်",
+            "name:pa": "ਸਟਰਾਸਬਰਗ",
+            "name:ro": "Strasbourg",
+            "name:sc": "Strasburgu",
+            "name:sq": "Strasburg",
+            "name:tg": "Истросбург",
+            "name:tt": "Страсбург",
+            "_place_name:gsw": "Strossburi",
+            "name:zh-Hant": "史特拉斯堡"
+          }
+        },
+        "bbox": [
+          7.6881371,
+          48.4919357,
+          7.8360646,
+          48.6461896
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.6881371,
+                48.5994685
+              ],
+              [
+                7.6939394,
+                48.5603723
+              ],
+              [
+                7.7254708,
+                48.561712
+              ],
+              [
+                7.7581294,
+                48.5404298
+              ],
+              [
+                7.7668133,
+                48.5160923
+              ],
+              [
+                7.7501739,
+                48.4946761
+              ],
+              [
+                7.7706629,
+                48.4919357
+              ],
+              [
+                7.8047299,
+                48.5125879
+              ],
+              [
+                7.8006485,
+                48.5847657
+              ],
+              [
+                7.8360646,
+                48.6335044
+              ],
+              [
+                7.8075785,
+                48.6458
+              ],
+              [
+                7.7926887,
+                48.6405274
+              ],
+              [
+                7.8035642,
+                48.6271111
+              ],
+              [
+                7.7646575,
+                48.6027247
+              ],
+              [
+                7.6881371,
+                48.5994685
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 121043788,
+          "osm_type": "relation",
+          "osm_id": 4630050,
+          "place_rank": 14,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.5139797376673402,
+          "addresstype": "municipality",
+          "name": "Strasbourg",
+          "display_name": "Strasbourg, Bas-Rhin, European Collectivity of Alsace, Grand Est, Metropolitan France, France",
+          "address": {
+            "municipality": "Strasbourg",
+            "county": "Bas-Rhin",
+            "ISO3166-2-lvl6": "FR-67",
+            "state_district": "European Collectivity of Alsace",
+            "ISO3166-2-lvl5": "FR-6AE",
+            "state": "Grand Est",
+            "ISO3166-2-lvl4": "FR-GES",
+            "region": "Metropolitan France",
+            "country": "France",
+            "country_code": "fr"
+          },
+          "namedetails": {
+            "name": "Strasbourg",
+            "name:am": "ስትራዝቡርግ",
+            "name:ar": "ستراسبورغ",
+            "name:az": "Strasburq",
+            "name:be": "Страсбург",
+            "name:bg": "Страсбург",
+            "name:bo": "སི་ཐི་རཱ་སི་བུར།",
+            "name:br": "Strasbourg",
+            "name:ca": "Estrasburg",
+            "name:co": "Strasburgu",
+            "name:cs": "Štrasburk",
+            "name:cv": "Страсбург",
+            "name:cy": "Strasbwrg",
+            "name:de": "Straßburg",
+            "name:el": "Στρασβούργο",
+            "name:eo": "Strasburgo",
+            "name:es": "Estrasburgo",
+            "name:eu": "Estrasburgo",
+            "name:fa": "استراسبورگ",
+            "name:fr": "Strasbourg",
+            "name:fy": "Straasburch",
+            "name:gl": "Estrasburgo",
+            "name:gu": "સ્ટ્રાસબોર્ગ",
+            "name:he": "שטרסבורג",
+            "name:hi": "स्ट्रासबर्ग",
+            "name:ht": "Estrasbou",
+            "name:hy": "Ստրասբուրգ",
+            "name:it": "Strasburgo",
+            "name:ja": "ストラスブール",
+            "name:ka": "სტრასბური",
+            "name:kn": "ಸ್ಟ್ರಾಸ್ಬುರ್ಗ್",
+            "name:ko": "스트라스부르",
+            "name:ku": "Strasbûrg",
+            "name:la": "Argentoratum",
+            "name:lb": "Stroossbuerg",
+            "name:li": "Sjtraasburg",
+            "name:lt": "Strasbūras",
+            "name:lv": "Strasbūra",
+            "name:mk": "Стразбур",
+            "name:mr": "स्त्रासबुर्ग",
+            "name:mt": "Strażburgu",
+            "name:nl": "Straatsburg",
+            "name:oc": "Estrasborg",
+            "name:os": "Страсбург",
+            "name:pl": "Strasburg",
+            "name:pt": "Estrasburgo",
+            "name:ru": "Страсбург",
+            "name:sk": "Štrasburg",
+            "name:sr": "Стразбур",
+            "name:ta": "ஸ்திராஸ்பூர்க்",
+            "name:th": "สทราซบูร์",
+            "name:tr": "Strazburg",
+            "name:ug": "Strasburg",
+            "name:uk": "Страсбурґ",
+            "name:ur": "ستراسبورگ",
+            "name:uz": "Strasburg",
+            "name:yi": "שטראסבורג",
+            "name:zh": "斯特拉斯堡",
+            "name:ang": "Strǣtburg",
+            "name:bar": "Stråssburg",
+            "name:ckb": "ستراسبورگ",
+            "name:eml": "Straśbûrg",
+            "name:ext": "Estrasburgu",
+            "name:frp": "Strasbôrg",
+            "name:gsw": "Strossbüri",
+            "name:kab": "Strassburg",
+            "name:lad": "Strasburgo",
+            "name:mzn": "استراسبورگ",
+            "name:nap": "Strasburgo",
+            "name:nds": "Straßborg",
+            "name:pfl": "Stroosburi",
+            "name:pms": "Strasborgh",
+            "name:pnb": "شٹراسبرگ",
+            "name:scn": "Strasburgu",
+            "name:stq": "Straasbuurich",
+            "name:vec": "Strasburgo",
+            "name:vls": "Stroatsburg",
+            "name:yue": "斯特拉斯堡",
+            "reg_name": "Strossburi"
+          }
+        },
+        "bbox": [
+          7.5377795,
+          48.4339386,
+          7.8957138,
+          48.7022939
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.5377795,
+                48.595819
+              ],
+              [
+                7.590906,
+                48.5784696
+              ],
+              [
+                7.5700465,
+                48.5602679
+              ],
+              [
+                7.6060442,
+                48.5502076
+              ],
+              [
+                7.6135324,
+                48.5245697
+              ],
+              [
+                7.5863819,
+                48.5129493
+              ],
+              [
+                7.5916679,
+                48.4856628
+              ],
+              [
+                7.6477051,
+                48.4759476
+              ],
+              [
+                7.682625,
+                48.4880901
+              ],
+              [
+                7.6983419,
+                48.4822155
+              ],
+              [
+                7.6950447,
+                48.4509585
+              ],
+              [
+                7.7458978,
+                48.4480283
+              ],
+              [
+                7.7533201,
+                48.4339386
+              ],
+              [
+                7.7679863,
+                48.4892414
+              ],
+              [
+                7.8056264,
+                48.5149277
+              ],
+              [
+                7.8025705,
+                48.5894651
+              ],
+              [
+                7.8417394,
+                48.6435419
+              ],
+              [
+                7.8957138,
+                48.6668586
+              ],
+              [
+                7.8552209,
+                48.6658607
+              ],
+              [
+                7.8179896,
+                48.6876074
+              ],
+              [
+                7.7681954,
+                48.6664756
+              ],
+              [
+                7.7454878,
+                48.6729167
+              ],
+              [
+                7.7472274,
+                48.6865353
+              ],
+              [
+                7.7153216,
+                48.6861454
+              ],
+              [
+                7.7098816,
+                48.7022939
+              ],
+              [
+                7.6686165,
+                48.6877427
+              ],
+              [
+                7.688367,
+                48.6687096
+              ],
+              [
+                7.6686071,
+                48.653621
+              ],
+              [
+                7.701524,
+                48.6406846
+              ],
+              [
+                7.6889715,
+                48.6211993
+              ],
+              [
+                7.5989659,
+                48.5889055
+              ],
+              [
+                7.5377795,
+                48.595819
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

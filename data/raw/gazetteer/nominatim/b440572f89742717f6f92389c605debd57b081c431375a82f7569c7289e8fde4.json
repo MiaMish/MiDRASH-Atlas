@@ -1,0 +1,253 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Africa, North",
+    "retrieved_at": "2026-07-28T13:04:54.167466Z",
+    "cache_key": "b440572f89742717f6f92389c605debd57b081c431375a82f7569c7289e8fde4",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Africa, North"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 274935099,
+          "osm_type": "way",
+          "osm_id": 479147083,
+          "place_rank": 22,
+          "category": "natural",
+          "type": "wood",
+          "importance": 0.10670416800183105,
+          "addresstype": "wood",
+          "name": "Africa",
+          "display_name": "Africa, Hovingham, North Yorkshire, York and North Yorkshire, England, United Kingdom",
+          "address": {
+            "wood": "Africa",
+            "village": "Hovingham",
+            "county": "North Yorkshire",
+            "ISO3166-2-lvl6": "GB-NYK",
+            "state_district": "York and North Yorkshire",
+            "state": "England",
+            "ISO3166-2-lvl4": "GB-ENG",
+            "country": "United Kingdom",
+            "country_code": "gb"
+          },
+          "namedetails": {
+            "name": "Africa"
+          }
+        },
+        "bbox": [
+          -0.9918447,
+          54.1666100,
+          -0.9875276,
+          54.1706465
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -0.9914622,
+                54.1689671
+              ],
+              [
+                -0.9884481,
+                54.1670987
+              ],
+              [
+                -0.9875465,
+                54.1706465
+              ],
+              [
+                -0.9914622,
+                54.1689671
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 298579163,
+          "osm_type": "node",
+          "osm_id": 9959296216,
+          "place_rank": 30,
+          "category": "amenity",
+          "type": "bank",
+          "importance": 5.366216525516163e-05,
+          "addresstype": "amenity",
+          "name": "Bank of Africa",
+          "display_name": "Bank of Africa, Avenue de Mopti, Ouahigouya, Yatenga, North, Burkina Faso",
+          "address": {
+            "amenity": "Bank of Africa",
+            "road": "Avenue de Mopti",
+            "city": "Ouahigouya",
+            "province": "Yatenga",
+            "ISO3166-2-lvl5": "BF-YAT",
+            "region": "North",
+            "ISO3166-2-lvl4": "BF-10",
+            "country": "Burkina Faso",
+            "country_code": "bf"
+          },
+          "namedetails": {
+            "name": "Bank of Africa"
+          }
+        },
+        "bbox": [
+          -2.4209949,
+          13.5789415,
+          -2.4208949,
+          13.5790415
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -2.4209449,
+            13.5789915
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 299665938,
+          "osm_type": "node",
+          "osm_id": 9959876355,
+          "place_rank": 30,
+          "category": "amenity",
+          "type": "money_transfer",
+          "importance": 5.366216525516163e-05,
+          "addresstype": "amenity",
+          "name": "Moov Africa",
+          "display_name": "Moov Africa, Avenue de Mopti, Ouahigouya, Yatenga, North, Burkina Faso",
+          "address": {
+            "amenity": "Moov Africa",
+            "road": "Avenue de Mopti",
+            "city": "Ouahigouya",
+            "province": "Yatenga",
+            "ISO3166-2-lvl5": "BF-YAT",
+            "region": "North",
+            "ISO3166-2-lvl4": "BF-10",
+            "country": "Burkina Faso",
+            "country_code": "bf"
+          },
+          "namedetails": {
+            "name": "Moov Africa"
+          }
+        },
+        "bbox": [
+          -2.4174003,
+          13.5747283,
+          -2.4173003,
+          13.5748283
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -2.4173503,
+            13.5747783
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 298548585,
+          "osm_type": "node",
+          "osm_id": 9957512099,
+          "place_rank": 30,
+          "category": "shop",
+          "type": "mall",
+          "importance": 5.366216525516163e-05,
+          "addresstype": "shop",
+          "name": "Africa Freeshop",
+          "display_name": "Africa Freeshop, Avenue de Banfora, Koro, Zogoré, Yatenga, North, Burkina Faso",
+          "address": {
+            "shop": "Africa Freeshop",
+            "road": "Avenue de Banfora",
+            "village": "Koro",
+            "county": "Zogoré",
+            "province": "Yatenga",
+            "ISO3166-2-lvl5": "BF-YAT",
+            "region": "North",
+            "ISO3166-2-lvl4": "BF-10",
+            "country": "Burkina Faso",
+            "country_code": "bf"
+          },
+          "namedetails": {
+            "name": "Africa Freeshop"
+          }
+        },
+        "bbox": [
+          -2.4418096,
+          13.5476011,
+          -2.4417096,
+          13.5477011
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -2.4417596,
+            13.5476511
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 299560324,
+          "osm_type": "node",
+          "osm_id": 9959264306,
+          "place_rank": 30,
+          "category": "amenity",
+          "type": "money_transfer",
+          "importance": 5.366216525516163e-05,
+          "addresstype": "amenity",
+          "name": "Moov Africa",
+          "display_name": "Moov Africa, N 23, Ouahigouya, Yatenga, North, Burkina Faso",
+          "address": {
+            "amenity": "Moov Africa",
+            "road": "N 23",
+            "city": "Ouahigouya",
+            "province": "Yatenga",
+            "ISO3166-2-lvl5": "BF-YAT",
+            "region": "North",
+            "ISO3166-2-lvl4": "BF-10",
+            "country": "Burkina Faso",
+            "country_code": "bf"
+          },
+          "namedetails": {
+            "name": "Moov Africa"
+          }
+        },
+        "bbox": [
+          -2.4140486,
+          13.5789958,
+          -2.4139486,
+          13.5790958
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -2.4139986,
+            13.5790458
+          ]
+        }
+      }
+    ]
+  }
+}

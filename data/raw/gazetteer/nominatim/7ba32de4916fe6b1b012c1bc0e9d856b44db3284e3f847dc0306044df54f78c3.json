@@ -1,0 +1,340 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Perpignan (France)",
+    "retrieved_at": "2026-07-28T13:06:36.613339Z",
+    "cache_key": "7ba32de4916fe6b1b012c1bc0e9d856b44db3284e3f847dc0306044df54f78c3",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Perpignan (France)"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 84567483,
+          "osm_type": "relation",
+          "osm_id": 18000,
+          "place_rank": 16,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.6433159026050879,
+          "addresstype": "city",
+          "name": "Perpignan",
+          "display_name": "Perpignan, Pyrénées-Orientales, Occitania, Metropolitan France, France",
+          "address": {
+            "city": "Perpignan",
+            "municipality": "Perpignan",
+            "county": "Pyrénées-Orientales",
+            "ISO3166-2-lvl6": "FR-66",
+            "state": "Occitania",
+            "ISO3166-2-lvl4": "FR-OCC",
+            "region": "Metropolitan France",
+            "country": "France",
+            "country_code": "fr"
+          },
+          "namedetails": {
+            "name": "Perpignan",
+            "name:an": "Perpiñán",
+            "name:ar": "بيربينيا",
+            "name:be": "Перпіньян",
+            "name:bg": "Перпинян",
+            "name:br": "Perpinyà",
+            "name:ca": "Perpinyà",
+            "name:el": "Περπινιάν",
+            "name:eo": "Perpinjano",
+            "name:es": "Perpiñán",
+            "name:eu": "Perpinyà",
+            "name:fa": "پرپینیان",
+            "name:fr": "Perpignan",
+            "name:gl": "Perpiñán",
+            "name:he": "פרפיניאן",
+            "name:hi": "पेर्पिञां",
+            "name:ia": "Perpinia",
+            "name:it": "Perpignano",
+            "name:ja": "ペルピニャン",
+            "name:kk": "Перпиньян",
+            "name:ko": "페르피냥",
+            "name:la": "Perpinianum",
+            "name:lt": "Perpinjanas",
+            "name:lv": "Perpiņāna",
+            "name:oc": "Perpinhan",
+            "name:os": "Перпиньян",
+            "name:pt": "Perpinhã",
+            "name:ru": "Перпиньян",
+            "name:sr": "Перпињан",
+            "name:th": "แปร์ปีญ็อง",
+            "name:uk": "Перпіньян",
+            "name:ur": "پرپینیا",
+            "name:yi": "פערפיניאן",
+            "name:zh": "佩皮尼昂",
+            "name:ext": "Perpiñán",
+            "name:mzn": "پرپینان",
+            "name:pnb": "پرپگناں",
+            "name:wuu": "班合比让",
+            "name:yue": "佩皮尼昂",
+            "name:hy": "Պերպինյան",
+            "name:ka": "პერპიანიანი",
+            "name:tr": "Berbinya"
+          }
+        },
+        "bbox": [
+          2.8265889,
+          42.6492606,
+          2.9825668,
+          42.7488722
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                2.8265889,
+                42.6905596
+              ],
+              [
+                2.8633544,
+                42.6539281
+              ],
+              [
+                2.9063968,
+                42.6498983
+              ],
+              [
+                2.9298058,
+                42.6536955
+              ],
+              [
+                2.9186265,
+                42.6930852
+              ],
+              [
+                2.9758627,
+                42.6900397
+              ],
+              [
+                2.9825479,
+                42.7132849
+              ],
+              [
+                2.9495778,
+                42.7238307
+              ],
+              [
+                2.9281551,
+                42.71403
+              ],
+              [
+                2.9244471,
+                42.7305356
+              ],
+              [
+                2.8881258,
+                42.748772
+              ],
+              [
+                2.8526744,
+                42.7325601
+              ],
+              [
+                2.8728222,
+                42.6993857
+              ],
+              [
+                2.8265889,
+                42.6905596
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 84836205,
+          "osm_type": "relation",
+          "osm_id": 2766170,
+          "place_rank": 14,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.5081253723404346,
+          "addresstype": "municipality",
+          "name": "Perpignan",
+          "display_name": "Perpignan, Pyrénées-Orientales, Occitania, Metropolitan France, France",
+          "address": {
+            "municipality": "Perpignan",
+            "county": "Pyrénées-Orientales",
+            "ISO3166-2-lvl6": "FR-66",
+            "state": "Occitania",
+            "ISO3166-2-lvl4": "FR-OCC",
+            "region": "Metropolitan France",
+            "country": "France",
+            "country_code": "fr"
+          },
+          "namedetails": {
+            "name": "Perpignan",
+            "name:an": "Perpiñán",
+            "name:ar": "بيربينيا",
+            "name:be": "Перпіньян",
+            "name:bg": "Перпинян",
+            "name:br": "Perpinyà",
+            "name:ca": "Perpinyà",
+            "name:el": "Περπινιάν",
+            "name:eo": "Perpinjano",
+            "name:es": "Perpiñán",
+            "name:eu": "Perpinyà",
+            "name:fa": "پرپینیان",
+            "name:fr": "Perpignan",
+            "name:gl": "Perpiñán",
+            "name:he": "פרפיניאן",
+            "name:hi": "पेर्पिञां",
+            "name:ia": "Perpinia",
+            "name:it": "Perpignano",
+            "name:ja": "ペルピニャン",
+            "name:kk": "Перпиньян",
+            "name:ko": "페르피냥",
+            "name:la": "Perpinianum",
+            "name:lt": "Perpinjanas",
+            "name:lv": "Perpiņāna",
+            "name:oc": "Perpinhan",
+            "name:os": "Перпиньян",
+            "name:pt": "Perpinhã",
+            "name:ru": "Перпиньян",
+            "name:sr": "Перпињан",
+            "name:th": "แปร์ปีญ็อง",
+            "name:uk": "Перпіньян",
+            "name:ur": "پرپینیا",
+            "name:yi": "פערפיניאן",
+            "name:zh": "佩皮尼昂",
+            "name:ext": "Perpiñán",
+            "name:mzn": "پرپینان",
+            "name:pnb": "پرپگناں",
+            "name:wuu": "班合比让",
+            "name:yue": "佩皮尼昂"
+          }
+        },
+        "bbox": [
+          2.5854074,
+          42.6121086,
+          3.0435887,
+          42.9186456
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                2.5854074,
+                42.7470781
+              ],
+              [
+                2.6348125,
+                42.7250044
+              ],
+              [
+                2.6662228,
+                42.746757
+              ],
+              [
+                2.6707381,
+                42.7262572
+              ],
+              [
+                2.7004482,
+                42.7271452
+              ],
+              [
+                2.7114635,
+                42.6938598
+              ],
+              [
+                2.7296389,
+                42.6893751
+              ],
+              [
+                2.7277026,
+                42.65713
+              ],
+              [
+                2.7960675,
+                42.6612873
+              ],
+              [
+                2.7640831,
+                42.6121086
+              ],
+              [
+                2.890755,
+                42.6302684
+              ],
+              [
+                2.9283983,
+                42.6221849
+              ],
+              [
+                2.9301637,
+                42.6537622
+              ],
+              [
+                3.0315786,
+                42.6399606
+              ],
+              [
+                3.0435887,
+                42.8382293
+              ],
+              [
+                2.8480031,
+                42.9155828
+              ],
+              [
+                2.791806,
+                42.894594
+              ],
+              [
+                2.737319,
+                42.835552
+              ],
+              [
+                2.638486,
+                42.8344318
+              ],
+              [
+                2.6803805,
+                42.7881281
+              ],
+              [
+                2.6644737,
+                42.7831334
+              ],
+              [
+                2.6779817,
+                42.7737874
+              ],
+              [
+                2.6733623,
+                42.7551734
+              ],
+              [
+                2.5854074,
+                42.7470781
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,588 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Padua (Italy)",
+    "retrieved_at": "2026-07-28T13:06:30.087613Z",
+    "cache_key": "8c002dd3b0b2ff80c0ae30622b707060c0c954b2df1f4cad5bdd57f49488ac40",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Padua (Italy)"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 74865605,
+          "osm_type": "relation",
+          "osm_id": 44836,
+          "place_rank": 16,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.6976298509150107,
+          "addresstype": "city",
+          "name": "Padua",
+          "display_name": "Padua, Province of Padua, Veneto, 35121-35143, Italy",
+          "address": {
+            "city": "Padua",
+            "county": "Province of Padua",
+            "ISO3166-2-lvl6": "IT-PD",
+            "state": "Veneto",
+            "ISO3166-2-lvl4": "IT-34",
+            "postcode": "35121-35143",
+            "country": "Italy",
+            "country_code": "it"
+          },
+          "namedetails": {
+            "name": "Padova",
+            "name:ca": "Pàdua",
+            "name:cs": "Padova",
+            "name:de": "Padua",
+            "name:el": "Πάδοβα",
+            "name:en": "Padua",
+            "name:es": "Padua",
+            "name:fr": "Padoue",
+            "name:it": "Padova",
+            "name:la": "Patavis",
+            "name:nl": "Padua",
+            "name:pl": "Padwa",
+            "name:pt": "Pádua",
+            "name:sr": "Падова",
+            "name:fur": "Padue",
+            "name:vec": "Pàdova"
+          }
+        },
+        "bbox": [
+          11.8054118,
+          45.3395667,
+          11.9764350,
+          45.4573727
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                11.8054118,
+                45.3773117
+              ],
+              [
+                11.8369742,
+                45.3571854
+              ],
+              [
+                11.861137,
+                45.3838547
+              ],
+              [
+                11.8611476,
+                45.3632042
+              ],
+              [
+                11.9201571,
+                45.3395667
+              ],
+              [
+                11.8951732,
+                45.3685527
+              ],
+              [
+                11.9137511,
+                45.3657599
+              ],
+              [
+                11.9119287,
+                45.3832293
+              ],
+              [
+                11.9572705,
+                45.3700325
+              ],
+              [
+                11.976435,
+                45.4035722
+              ],
+              [
+                11.9324181,
+                45.4043371
+              ],
+              [
+                11.952866,
+                45.426451
+              ],
+              [
+                11.909602,
+                45.4475113
+              ],
+              [
+                11.832576,
+                45.4554142
+              ],
+              [
+                11.8054118,
+                45.3773117
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 74701500,
+          "osm_type": "node",
+          "osm_id": 406747508,
+          "place_rank": 16,
+          "category": "place",
+          "type": "city",
+          "importance": 0.6976298509150107,
+          "addresstype": "city",
+          "name": "Padua",
+          "display_name": "Padua, Province of Padua, Veneto, 35100, Italy",
+          "address": {
+            "city": "Padua",
+            "county": "Province of Padua",
+            "ISO3166-2-lvl6": "IT-PD",
+            "state": "Veneto",
+            "ISO3166-2-lvl4": "IT-34",
+            "postcode": "35100",
+            "country": "Italy",
+            "country_code": "it"
+          },
+          "namedetails": {
+            "name": "Padova",
+            "name:af": "Padua",
+            "name:an": "Padua",
+            "name:ar": "بادوفا",
+            "name:az": "Padua",
+            "name:be": "Падуя",
+            "name:bg": "Падуа",
+            "name:bn": "পাদোয়া",
+            "name:ca": "Pàdua",
+            "name:ce": "Падуя",
+            "name:cs": "Padova",
+            "name:cv": "Падуя",
+            "name:de": "Padua",
+            "name:el": "Πάδοβα",
+            "name:en": "Padua",
+            "name:eo": "Padovo",
+            "name:es": "Padua",
+            "name:eu": "Padua",
+            "name:fa": "پادووا",
+            "name:fi": "Padova",
+            "name:fr": "Padoue",
+            "name:fy": "Padûa",
+            "name:ga": "Padua",
+            "name:gl": "Padua",
+            "name:he": "פדובה",
+            "name:hy": "Պադովա",
+            "name:ia": "Padua",
+            "name:is": "Padúa",
+            "name:it": "Padova",
+            "name:ja": "パドヴァ",
+            "name:ka": "პადუა",
+            "name:kk": "Падуя",
+            "name:ko": "파도바",
+            "name:la": "Patavium",
+            "name:lt": "Paduja",
+            "name:lv": "Paduja",
+            "name:mg": "Padua",
+            "name:mk": "Падова",
+            "name:ml": "പാഡൊവ",
+            "name:mn": "Падуа",
+            "name:mr": "पादोव्हा",
+            "name:ms": "Padua",
+            "name:my": "ပါဒူအာ",
+            "name:nl": "Padua",
+            "name:oc": "Pàdoa",
+            "name:os": "Падуя",
+            "name:pl": "Padwa",
+            "name:pt": "Pádua",
+            "name:ru": "Падуя",
+            "name:sa": "पडुआ",
+            "name:sk": "Padova",
+            "name:sr": "Падова",
+            "name:sv": "Padua",
+            "name:th": "ปาโดวา",
+            "name:tl": "Padua",
+            "name:tt": "Падова",
+            "name:uk": "Падуя",
+            "name:ur": "پادووا",
+            "name:uz": "Paduya",
+            "name:xh": "Padua",
+            "name:zh": "帕多瓦",
+            "name:fur": "Padue",
+            "name:vec": "Pàdova",
+            "old_name:de": "Esten"
+          }
+        },
+        "bbox": [
+          11.7134455,
+          45.2477172,
+          12.0334455,
+          45.5677172
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            11.8734455,
+            45.4077172
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 74769373,
+          "osm_type": "relation",
+          "osm_id": 44217,
+          "place_rank": 12,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.719980951303887,
+          "addresstype": "county",
+          "name": "Province of Padua",
+          "display_name": "Province of Padua, Veneto, Italy",
+          "address": {
+            "county": "Province of Padua",
+            "ISO3166-2-lvl6": "IT-PD",
+            "state": "Veneto",
+            "ISO3166-2-lvl4": "IT-34",
+            "country": "Italy",
+            "country_code": "it"
+          },
+          "namedetails": {
+            "name": "Padova",
+            "name:ar": "بادوفا",
+            "name:ca": "Província de Pàdua",
+            "name:el": "Πάδοβα",
+            "name:en": "Province of Padua",
+            "name:fa": "پادووا",
+            "name:fr": "Province de Padoue",
+            "name:it": "Padova",
+            "name:ko": "파도바",
+            "name:pt": "Pádua",
+            "name:ru": "Падуя",
+            "name:ur": "پادووا",
+            "name:fur": "Padue",
+            "ISO3166-2": "IT-PD",
+            "short_name": "PD",
+            "official_name": "Provincia di Padova"
+          }
+        },
+        "bbox": [
+          11.3909429,
+          45.0955800,
+          12.2064075,
+          45.6872283
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                11.3909429,
+                45.2531045
+              ],
+              [
+                11.4042556,
+                45.2480718
+              ],
+              [
+                11.408183,
+                45.1756737
+              ],
+              [
+                11.4289274,
+                45.1499326
+              ],
+              [
+                11.4170109,
+                45.1290642
+              ],
+              [
+                11.4915365,
+                45.1034081
+              ],
+              [
+                11.5756053,
+                45.1245038
+              ],
+              [
+                11.7573169,
+                45.09558
+              ],
+              [
+                11.8833637,
+                45.1366779
+              ],
+              [
+                11.9687292,
+                45.133912
+              ],
+              [
+                11.9619782,
+                45.1493452
+              ],
+              [
+                11.9835038,
+                45.1556138
+              ],
+              [
+                11.9783273,
+                45.1872465
+              ],
+              [
+                12.1231938,
+                45.2102582
+              ],
+              [
+                12.151003,
+                45.1939191
+              ],
+              [
+                12.1841687,
+                45.1951765
+              ],
+              [
+                12.1533411,
+                45.2089809
+              ],
+              [
+                12.1538617,
+                45.2219317
+              ],
+              [
+                12.1934183,
+                45.2340036
+              ],
+              [
+                12.2064075,
+                45.2727165
+              ],
+              [
+                12.186619,
+                45.3021681
+              ],
+              [
+                12.1186659,
+                45.302893
+              ],
+              [
+                12.0874274,
+                45.3319037
+              ],
+              [
+                12.0345002,
+                45.3132805
+              ],
+              [
+                12.0123073,
+                45.3424181
+              ],
+              [
+                12.0315099,
+                45.3643593
+              ],
+              [
+                11.9751737,
+                45.3964835
+              ],
+              [
+                12.0028683,
+                45.4082591
+              ],
+              [
+                11.9967066,
+                45.4246914
+              ],
+              [
+                12.0193138,
+                45.4236208
+              ],
+              [
+                12.0270972,
+                45.4468408
+              ],
+              [
+                11.9764338,
+                45.4611589
+              ],
+              [
+                11.9975139,
+                45.5180479
+              ],
+              [
+                12.0079973,
+                45.5320042
+              ],
+              [
+                12.0261136,
+                45.5195617
+              ],
+              [
+                12.0359815,
+                45.5708488
+              ],
+              [
+                12.0922714,
+                45.5930256
+              ],
+              [
+                12.0737858,
+                45.6415427
+              ],
+              [
+                12.0058172,
+                45.6433615
+              ],
+              [
+                12.0066407,
+                45.6214114
+              ],
+              [
+                11.9653973,
+                45.6081624
+              ],
+              [
+                11.9015326,
+                45.6283673
+              ],
+              [
+                11.8982078,
+                45.613055
+              ],
+              [
+                11.8808785,
+                45.6663243
+              ],
+              [
+                11.821717,
+                45.6872283
+              ],
+              [
+                11.7067317,
+                45.6804606
+              ],
+              [
+                11.7107706,
+                45.6677614
+              ],
+              [
+                11.6831853,
+                45.6621389
+              ],
+              [
+                11.6801884,
+                45.6405632
+              ],
+              [
+                11.6468335,
+                45.6342978
+              ],
+              [
+                11.6425186,
+                45.5976359
+              ],
+              [
+                11.6746631,
+                45.591814
+              ],
+              [
+                11.6575857,
+                45.5385348
+              ],
+              [
+                11.6833114,
+                45.5523662
+              ],
+              [
+                11.7216701,
+                45.5438134
+              ],
+              [
+                11.7283267,
+                45.5610212
+              ],
+              [
+                11.7593918,
+                45.5193405
+              ],
+              [
+                11.7274742,
+                45.5206797
+              ],
+              [
+                11.7371298,
+                45.489736
+              ],
+              [
+                11.7503013,
+                45.4890017
+              ],
+              [
+                11.7377563,
+                45.4848181
+              ],
+              [
+                11.7458966,
+                45.4720968
+              ],
+              [
+                11.7045723,
+                45.4753972
+              ],
+              [
+                11.6968384,
+                45.4400513
+              ],
+              [
+                11.61574,
+                45.3875872
+              ],
+              [
+                11.6277564,
+                45.3563713
+              ],
+              [
+                11.6153278,
+                45.3173195
+              ],
+              [
+                11.5884226,
+                45.3131754
+              ],
+              [
+                11.5800237,
+                45.2882166
+              ],
+              [
+                11.6131228,
+                45.2553803
+              ],
+              [
+                11.4872331,
+                45.2661387
+              ],
+              [
+                11.3909429,
+                45.2531045
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

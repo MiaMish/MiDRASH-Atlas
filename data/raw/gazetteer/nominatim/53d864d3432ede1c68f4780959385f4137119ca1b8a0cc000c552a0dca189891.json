@@ -1,0 +1,216 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Safed (Israel)",
+    "retrieved_at": "2026-07-28T13:06:52.109733Z",
+    "cache_key": "53d864d3432ede1c68f4780959385f4137119ca1b8a0cc000c552a0dca189891",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Safed (Israel)"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 208734416,
+          "osm_type": "relation",
+          "osm_id": 1379335,
+          "place_rank": 16,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.599506075429059,
+          "addresstype": "town",
+          "name": "Safed",
+          "display_name": "Safed, Safed Subdistrict, North District, 1311502, Israel",
+          "address": {
+            "town": "Safed",
+            "state_district": "Safed Subdistrict",
+            "state": "North District",
+            "ISO3166-2-lvl4": "IL-Z",
+            "postcode": "1311502",
+            "country": "Israel",
+            "country_code": "il"
+          },
+          "namedetails": {
+            "name": "צפת",
+            "name:ar": "صفد",
+            "name:cs": "Safed",
+            "name:en": "Safed",
+            "name:fr": "Safed",
+            "name:he": "צפת",
+            "name:ru": "Цфат",
+            "name:ur": "صفد",
+            "alt_name:en": "Zefat;Tzfat;Tzefat;Zfat",
+            "name:az": "Safed",
+            "name:de": "Safed",
+            "name:el": "Σαφέντ",
+            "name:es": "Safed",
+            "name:et": "Tsfat",
+            "name:eu": "Safed",
+            "name:fa": "صفد",
+            "name:hi": "सफ़त",
+            "name:hr": "Safed",
+            "name:ml": "സഫദ്",
+            "name:pl": "Safed",
+            "name:sl": "Safed",
+            "name:tr": "Safed",
+            "name:uk": "Цфат",
+            "_place_alt_name:en": "Safad;Safed;Sfat;Tsefat;Tzfas"
+          }
+        },
+        "bbox": [
+          35.4553853,
+          32.9275195,
+          35.5379467,
+          32.9887915
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                35.4553853,
+                32.9795866
+              ],
+              [
+                35.4840384,
+                32.9550166
+              ],
+              [
+                35.4801088,
+                32.9314748
+              ],
+              [
+                35.5375563,
+                32.93311
+              ],
+              [
+                35.5183516,
+                32.988486
+              ],
+              [
+                35.475138,
+                32.9699522
+              ],
+              [
+                35.4553853,
+                32.9795866
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 210450749,
+          "osm_type": "relation",
+          "osm_id": 11127243,
+          "place_rank": 18,
+          "category": "place",
+          "type": "town",
+          "importance": 0.599506075429059,
+          "addresstype": "town",
+          "name": "Safed",
+          "display_name": "Safed, Safed Subdistrict, North District, 1311502, Israel",
+          "address": {
+            "town": "Safed",
+            "state_district": "Safed Subdistrict",
+            "state": "North District",
+            "ISO3166-2-lvl4": "IL-Z",
+            "postcode": "1311502",
+            "country": "Israel",
+            "country_code": "il"
+          },
+          "namedetails": {
+            "name": "צפת",
+            "name:ar": "صفد",
+            "name:cs": "Safed",
+            "name:en": "Safed",
+            "name:fr": "Safed",
+            "name:he": "צפת",
+            "name:ru": "Цфат",
+            "name:uk": "Цфат",
+            "name:ur": "صفد",
+            "alt_name:en": "Tzfat;Tzefat;Zefat;Zfat;Tsfat"
+          }
+        },
+        "bbox": [
+          35.4851094,
+          32.9453888,
+          35.5332828,
+          32.9877171
+        ],
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  35.4851094,
+                  32.9667709
+                ],
+                [
+                  35.4970614,
+                  32.9536885
+                ],
+                [
+                  35.5074896,
+                  32.9715298
+                ],
+                [
+                  35.5072343,
+                  32.9548604
+                ],
+                [
+                  35.518433,
+                  32.9621972
+                ],
+                [
+                  35.5097465,
+                  32.9877171
+                ],
+                [
+                  35.4851094,
+                  32.9667709
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  35.5315189,
+                  32.9551911
+                ],
+                [
+                  35.5255612,
+                  32.945912
+                ],
+                [
+                  35.5323798,
+                  32.9460799
+                ],
+                [
+                  35.5315189,
+                  32.9551911
+                ]
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

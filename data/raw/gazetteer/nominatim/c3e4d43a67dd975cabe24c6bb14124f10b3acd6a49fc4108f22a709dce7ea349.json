@@ -1,0 +1,274 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Aybak (Afghanistan)",
+    "retrieved_at": "2026-07-28T13:05:03.980162Z",
+    "cache_key": "c3e4d43a67dd975cabe24c6bb14124f10b3acd6a49fc4108f22a709dce7ea349",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Aybak (Afghanistan)"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 212998476,
+          "osm_type": "relation",
+          "osm_id": 6582962,
+          "place_rank": 10,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.4266520139267868,
+          "addresstype": "county",
+          "name": "Aybak District",
+          "display_name": "Aybak District, Samangan Province, Afghanistan",
+          "address": {
+            "county": "Aybak District",
+            "state": "Samangan Province",
+            "ISO3166-2-lvl4": "AF-SAM",
+            "country": "Afghanistan",
+            "country_code": "af"
+          },
+          "namedetails": {
+            "name": "ولسوالی آیبک",
+            "name:cs": "Ajbak",
+            "name:en": "Aybak District",
+            "name:fa": "ولسوالی آیبک",
+            "name:ps": "آيبک ولسوالۍ",
+            "name:uk": "Айбак",
+            "name:zh": "萨曼甘/薩曼甘",
+            "alt_name": "Aibak District",
+            "_place_name": "ايبک",
+            "name:zh-Hans": "萨曼甘",
+            "name:zh-Hant": "薩曼甘",
+            "_place_name:en": "Aybak",
+            "_place_name:ps": "ايبک",
+            "alt_name:en": "Aibak"
+          }
+        },
+        "bbox": [
+          67.6437354,
+          36.0136161,
+          68.3937522,
+          36.4139730
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                67.6437354,
+                36.0282157
+              ],
+              [
+                67.6759683,
+                36.0136161
+              ],
+              [
+                67.778549,
+                36.0160063
+              ],
+              [
+                67.8507355,
+                36.0627713
+              ],
+              [
+                67.8846477,
+                36.0674349
+              ],
+              [
+                67.902237,
+                36.0912036
+              ],
+              [
+                68.0008777,
+                36.1112137
+              ],
+              [
+                68.1525678,
+                36.1852978
+              ],
+              [
+                68.2095571,
+                36.1854114
+              ],
+              [
+                68.2498014,
+                36.1624664
+              ],
+              [
+                68.3119972,
+                36.2049433
+              ],
+              [
+                68.3924858,
+                36.2038079
+              ],
+              [
+                68.3816667,
+                36.2595523
+              ],
+              [
+                68.2537154,
+                36.413973
+              ],
+              [
+                68.1705395,
+                36.3877152
+              ],
+              [
+                68.150469,
+                36.3254219
+              ],
+              [
+                68.083705,
+                36.3368885
+              ],
+              [
+                68.0679356,
+                36.3248444
+              ],
+              [
+                68.0224706,
+                36.3411777
+              ],
+              [
+                67.7232317,
+                36.2939924
+              ],
+              [
+                67.6552715,
+                36.2315078
+              ],
+              [
+                67.6662833,
+                36.1336333
+              ],
+              [
+                67.6437354,
+                36.0282157
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 212655703,
+          "osm_type": "node",
+          "osm_id": 312781018,
+          "place_rank": 16,
+          "category": "place",
+          "type": "city",
+          "importance": 0.3583819294050449,
+          "addresstype": "city",
+          "name": "Samangan",
+          "display_name": "Samangan, Aybak District, Samangan Province, Afghanistan",
+          "address": {
+            "city": "Samangan",
+            "county": "Aybak District",
+            "state": "Samangan Province",
+            "ISO3166-2-lvl4": "AF-SAM",
+            "country": "Afghanistan",
+            "country_code": "af"
+          },
+          "namedetails": {
+            "name": "سمنگان",
+            "name:ar": "سمنكان",
+            "name:cs": "Samangán",
+            "name:de": "Samangan",
+            "name:el": "Σαμανγκάν",
+            "name:en": "Samangan",
+            "name:es": "Samangan",
+            "name:fa": "سمنگان",
+            "name:fr": "Aybak",
+            "name:hi": "समंगान",
+            "name:ja": "サマンガーン",
+            "name:ko": "사망간",
+            "name:ml": "സമംഗാൻ",
+            "name:ps": "سمنگان",
+            "name:ru": "Айбак",
+            "name:uk": "Айбак",
+            "name:zh": "萨曼甘",
+            "int_name": "Samangan",
+            "old_name": "Eukratidia, Aybak, Aibak",
+            "alt_name:cs": "Ajbak",
+            "alt_name:en": "Aybak;Aibak",
+            "alt_name:zh": "艾巴克",
+            "name:zh-Hans": "萨曼甘",
+            "name:zh-Hant": "薩曼甘"
+          }
+        },
+        "bbox": [
+          67.8615374,
+          36.1074938,
+          68.1815374,
+          36.4274938
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            68.0215374,
+            36.2674938
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 212653818,
+          "osm_type": "node",
+          "osm_id": 8226810303,
+          "place_rank": 16,
+          "category": "place",
+          "type": "city",
+          "importance": 0.18671166781109327,
+          "addresstype": "city",
+          "name": "Aybak",
+          "display_name": "Aybak, Aybak District, Samangan Province, Afghanistan",
+          "address": {
+            "city": "Aybak",
+            "county": "Aybak District",
+            "state": "Samangan Province",
+            "ISO3166-2-lvl4": "AF-SAM",
+            "country": "Afghanistan",
+            "country_code": "af"
+          },
+          "namedetails": {
+            "name": "ایبک",
+            "name:en": "Aybak",
+            "name:hi": "अयबक",
+            "name:ml": "ഐബക്ക്",
+            "name:ru": "Айбак"
+          }
+        },
+        "bbox": [
+          67.8618455,
+          36.1130673,
+          68.1818455,
+          36.4330673
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            68.0218455,
+            36.2730673
+          ]
+        }
+      }
+    ]
+  }
+}

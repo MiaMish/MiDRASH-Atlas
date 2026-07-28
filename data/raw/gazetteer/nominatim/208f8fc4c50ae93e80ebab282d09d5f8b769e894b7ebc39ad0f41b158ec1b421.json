@@ -1,0 +1,71 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Istanbul (Turkey)",
+    "retrieved_at": "2026-07-28T13:05:50.948751Z",
+    "cache_key": "208f8fc4c50ae93e80ebab282d09d5f8b769e894b7ebc39ad0f41b158ec1b421",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Istanbul (Turkey)"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 74802551,
+          "osm_type": "node",
+          "osm_id": 7208711102,
+          "place_rank": 30,
+          "category": "amenity",
+          "type": "restaurant",
+          "importance": 5.921339742117979e-05,
+          "addresstype": "amenity",
+          "name": "Istanbul Turkey",
+          "display_name": "Istanbul Turkey, 13, Corso della Liberazione, Regione Siberia, Arona, Novara, Piedmont, 28041, Italy",
+          "address": {
+            "amenity": "Istanbul Turkey",
+            "house_number": "13",
+            "road": "Corso della Liberazione",
+            "neighbourhood": "Regione Siberia",
+            "town": "Arona",
+            "county": "Novara",
+            "ISO3166-2-lvl6": "IT-NO",
+            "state": "Piedmont",
+            "ISO3166-2-lvl4": "IT-21",
+            "postcode": "28041",
+            "country": "Italy",
+            "country_code": "it"
+          },
+          "namedetails": {
+            "name": "Istanbul Turkey"
+          }
+        },
+        "bbox": [
+          8.5578447,
+          45.7580512,
+          8.5579447,
+          45.7581512
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            8.5578947,
+            45.7581012
+          ]
+        }
+      }
+    ]
+  }
+}

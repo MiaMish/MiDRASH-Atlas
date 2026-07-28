@@ -1,0 +1,366 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "New York, NY, USA",
+    "retrieved_at": "2026-07-28T13:06:22.395115Z",
+    "cache_key": "808af860c97bbd9ae3200377d27ebc9a521bab1dbb1ae79d7cca7013d00a5b62",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "New York, NY, USA"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 359971500,
+          "osm_type": "relation",
+          "osm_id": 175905,
+          "place_rank": 10,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.8817923363604117,
+          "addresstype": "city",
+          "name": "New York",
+          "display_name": "New York, United States",
+          "address": {
+            "city": "New York",
+            "state": "New York",
+            "ISO3166-2-lvl4": "US-NY",
+            "country": "United States",
+            "country_code": "us"
+          },
+          "namedetails": {
+            "name": "New York",
+            "name:ar": "نيويورك",
+            "name:az": "Nyu-York",
+            "name:be": "Нью-Ёрк",
+            "name:br": "New York",
+            "name:ca": "Nova York",
+            "name:cs": "New York",
+            "name:cy": "Efrog Newydd",
+            "name:de": "New York",
+            "name:el": "Νέα Υόρκη",
+            "name:en": "New York",
+            "name:eo": "Novjorko",
+            "name:es": "Nueva York",
+            "name:eu": "New York",
+            "name:fa": "نیویورک",
+            "name:fr": "New York",
+            "name:ga": "Nua-Eabhrac",
+            "name:gd": "Eabhraig Nuadh",
+            "name:gl": "Nova York",
+            "name:he": "ניו יורק",
+            "name:hi": "न्यूयॊर्क्",
+            "name:hr": "New York",
+            "name:is": "Nýja Jórvík",
+            "name:it": "New York",
+            "name:ja": "ニューヨーク",
+            "name:kn": "ನ್ಯೂಯೊರ್ಕ್",
+            "name:ko": "뉴욕",
+            "name:oc": "Nòva York",
+            "name:pl": "Nowy Jork",
+            "name:pt": "Nova Iorque",
+            "name:ru": "Нью-Йорк",
+            "name:sr": "Њујорк",
+            "name:te": "న్యూయొర్క్",
+            "name:uk": "Нью-Йорк",
+            "name:vi": "New York",
+            "name:zh": "纽约;紐約",
+            "alt_name": "New York City",
+            "name:cay": "Ganǫ́:nyǫˀ",
+            "name:cnr": "Njujorku",
+            "name:fur": "Gnove York",
+            "name:jbo": ".nu,IORK.",
+            "name:moh": "Ka’nón:no",
+            "name:pdc": "Nei Yarrick",
+            "short_name": "NYC",
+            "alt_name:br": "Evrog Nevez",
+            "alt_name:it": "Nuova York",
+            "alt_name:pt": "Cidade de Nova Iorque",
+            "alt_name:vi": "Thành phố New York;Thành phố Nữu Ước;Thành phố Nữu Ước;Niu Oóc;Thành phố Niu Oóc",
+            "alt_name:zh": "纽约市;紐約市",
+            "old_name:cs": "Nový York",
+            "old_name:hr": "Navijork",
+            "old_name:it": "Nuova York",
+            "alt_name:pdc": "Nei Yarrick Schtadt",
+            "name:zh-Hans": "纽约",
+            "name:zh-Hant": "紐約",
+            "official_name": "City of New York",
+            "name:am": "ኒው ዮርክ ከተማ",
+            "name:an": "Nueva York",
+            "name:as": "নিউয়ৰ্ক মহানগৰ",
+            "name:av": "Нью-Йорк",
+            "name:ba": "Нью-Йорк",
+            "name:bg": "Ню Йорк",
+            "name:bh": "न्यूयॉर्क सिटी",
+            "name:bi": "Niu York",
+            "name:bm": "New York",
+            "name:bn": "নিউ ইয়র্ক",
+            "name:bo": "ནེའུ་ཡོར་ཀ།",
+            "name:ce": "Нью-Йорк",
+            "name:ch": "New York",
+            "name:cu": "Новъ Иоркъ",
+            "name:cv": "Ҫӗнӗ Йорк",
+            "name:da": "New York",
+            "name:ee": "New York",
+            "name:ff": "𞤚𞤵𞤬𞤵𞤲𞤣𞤫 𞤐𞤭𞤴𞤮𞤪𞤳",
+            "name:fj": "Niu Yoka",
+            "name:fo": "New York",
+            "name:fy": "New York",
+            "name:gn": "Táva Nueva York",
+            "name:gu": "ન્યૂ યૉર્ક",
+            "name:gv": "Caayr York Noa",
+            "name:ha": "New York",
+            "name:ht": "Nouyòk",
+            "name:hy": "Նյու Յորք",
+            "name:ia": "New York",
+            "name:id": "New York",
+            "name:ig": "New York",
+            "name:ik": "Nutaaq Yuukam Iniqpaŋa",
+            "name:ka": "ნიუ-იორკი",
+            "name:ki": "New York",
+            "name:kk": "Нью-Йорк",
+            "name:km": "ទីក្រុងញូវយ៉ក",
+            "name:ks": "نیویارک شَہَر",
+            "name:ku": "New York",
+            "name:kv": "Нью-Йорк",
+            "name:kw": "Evrek Nowydh",
+            "name:ky": "Нью-Йорк",
+            "name:la": "Novum Eboracum",
+            "name:lb": "New York",
+            "name:li": "New York",
+            "name:lo": "ນະຄອນນິວຢອກ",
+            "name:lt": "Niujorkas",
+            "name:lv": "Ņujorka",
+            "name:mi": "Niu Iaka",
+            "name:mk": "Њујорк",
+            "name:ml": "ന്യൂയോർക്ക് നഗരം",
+            "name:mn": "Нью-Йорк хот",
+            "name:mr": "न्यू यॉर्क सिटी",
+            "name:ms": "New York",
+            "name:mt": "New York",
+            "name:my": "နယူးယောက်မြို့",
+            "name:ne": "न्युयोर्क सहर",
+            "name:nl": "New York",
+            "name:nn": "New York",
+            "name:no": "New York",
+            "name:nv": "Kin Yótʼááh Deezʼá",
+            "name:ny": "New York",
+            "name:os": "Нью-Йорк",
+            "name:pa": "ਨਿਊਯਾਰਕ",
+            "name:ps": "نیویورک",
+            "name:ro": "New York",
+            "name:sa": "न्‍यू यॉर्क्",
+            "name:sc": "Noa York",
+            "name:sd": "نيو يارڪ سٽي",
+            "name:si": "නිව්යෝර්ක් නගරය",
+            "name:sk": "New York",
+            "name:sm": "Niu Ioka",
+            "name:sq": "Nju Jork Siti",
+            "name:ss": "New York",
+            "name:st": "New York",
+            "name:su": "New York",
+            "name:sw": "New York",
+            "name:ta": "நியூயார்க்கு நகரம்",
+            "name:tg": "Ню-Йорк",
+            "name:th": "นครนิวยอร์ก",
+            "name:tk": "Nýu-Ýork",
+            "name:tl": "New York",
+            "name:to": "Niu ʻIoake",
+            "name:tr": "New York",
+            "name:tt": "Ниюрык",
+            "name:ug": "Nyu York",
+            "name:ur": "نیو یارک",
+            "name:uz": "Nyu-York",
+            "name:vo": "New York",
+            "name:wa": "Noû York",
+            "name:yi": "ניו יארק סיטי",
+            "name:za": "Niujyoz",
+            "name:zu": "New York",
+            "name:be-tarask": "Нью-Ёрк",
+            "loc_name": "Big Apple",
+            "name:arc": "ܢܝܘ ܝܘܪܩ",
+            "name:azb": "نیویورک",
+            "name:grc": "Νέον Ἐβόρακον",
+            "name:see": "Tganö:do’",
+            "name:syc": "ܢܝܘ ܝܘܪܩ",
+            "name:wal": "Niwu Yorkke",
+            "name:win": "Kšeexete",
+            "loc_name:es": "La Gran Manzana",
+            "loc_name:fr": "La Grosse Pomme",
+            "old_name:es": "Nueva Ámsterdam",
+            "old_name:fr": "La Nouvelle-Amsterdam",
+            "name:sr-Latn": "Njujork",
+            "old_name:1624-1664": "Nieuw-Amsterdam",
+            "old_name:1673-1674": "Nieuw-Oranje",
+            "old_name:en:1624-1664": "New Amsterdam",
+            "old_name:en:1673-1674": "New Orange"
+          }
+        },
+        "bbox": [
+          -74.2588430,
+          40.4765780,
+          -73.7002330,
+          40.9176300
+        ],
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -74.258843,
+                  40.498875
+                ],
+                [
+                  -74.225332,
+                  40.476578
+                ],
+                [
+                  -73.977874,
+                  40.519095
+                ],
+                [
+                  -73.90214,
+                  40.492121
+                ],
+                [
+                  -73.812558,
+                  40.529976
+                ],
+                [
+                  -73.757153,
+                  40.531218
+                ],
+                [
+                  -73.756531,
+                  40.58617
+                ],
+                [
+                  -73.738117,
+                  40.602627
+                ],
+                [
+                  -73.7670803,
+                  40.6240423
+                ],
+                [
+                  -73.724804,
+                  40.652333
+                ],
+                [
+                  -73.730287,
+                  40.722161
+                ],
+                [
+                  -73.700233,
+                  40.739303
+                ],
+                [
+                  -73.779665,
+                  40.812135
+                ],
+                [
+                  -73.748374,
+                  40.871825
+                ],
+                [
+                  -73.8243154,
+                  40.8891337
+                ],
+                [
+                  -73.851121,
+                  40.910113
+                ],
+                [
+                  -73.859262,
+                  40.900452
+                ],
+                [
+                  -73.918346,
+                  40.91763
+                ],
+                [
+                  -74.014028,
+                  40.757551
+                ],
+                [
+                  -74.055766,
+                  40.651475
+                ],
+                [
+                  -74.19143,
+                  40.642025
+                ],
+                [
+                  -74.214576,
+                  40.560533
+                ],
+                [
+                  -74.247485,
+                  40.549377
+                ],
+                [
+                  -74.258843,
+                  40.498875
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  -74.0438883,
+                  40.6901864
+                ],
+                [
+                  -74.0462749,
+                  40.6893396
+                ],
+                [
+                  -74.0436327,
+                  40.688777
+                ],
+                [
+                  -74.0438883,
+                  40.6901864
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  -74.0389358,
+                  40.6996549
+                ],
+                [
+                  -74.0399309,
+                  40.6985897
+                ],
+                [
+                  -74.0383723,
+                  40.6986686
+                ],
+                [
+                  -74.0389358,
+                  40.6996549
+                ]
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

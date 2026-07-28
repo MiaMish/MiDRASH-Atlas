@@ -1,0 +1,506 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Budapest, Hungary",
+    "retrieved_at": "2026-07-28T13:05:16.085186Z",
+    "cache_key": "91a93d2ea6e6dcf94e18d8db3515877ca0970bddf120bd468d6f1b475b566324",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Budapest, Hungary"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 66674733,
+          "osm_type": "relation",
+          "osm_id": 37244,
+          "place_rank": 12,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.8084731985555511,
+          "addresstype": "region",
+          "name": "Budapest",
+          "display_name": "Budapest, Central Hungary, Hungary",
+          "address": {
+            "region": "Budapest",
+            "ISO3166-2-lvl6": "HU-BU",
+            "country": "Hungary",
+            "country_code": "hu"
+          },
+          "namedetails": {
+            "name": "Budapest",
+            "name:ar": "بودابست",
+            "name:az": "Budapeşt",
+            "name:be": "Будапешт",
+            "name:de": "Budapest",
+            "name:el": "Βουδαπέστη",
+            "name:en": "Budapest",
+            "name:es": "Budapest",
+            "name:hr": "Budimpešta",
+            "name:hu": "Budapest",
+            "name:hy": "Բուդապեշտ",
+            "name:lt": "Budapeštas",
+            "name:nl": "Boedapest",
+            "name:pl": "Budapeszt",
+            "name:ro": "Budapesta",
+            "name:ru": "Будапешт",
+            "name:sk": "Budapešť",
+            "name:sr": "Будимпешта",
+            "name:uk": "Будапешт",
+            "name:ur": "بوداپست",
+            "name:azb": "بوداپست",
+            "name:grc": "Βουδαπέστη",
+            "name:hyw": "Պուտափեսթ",
+            "name:pnt": "Βουδαπέστη",
+            "ISO3166-2": "HU-BU",
+            "name:be-tarask": "Будапэшт"
+          }
+        },
+        "bbox": [
+          18.9251057,
+          47.3496899,
+          19.3349258,
+          47.6131468
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                18.9251057,
+                47.5441443
+              ],
+              [
+                18.9357518,
+                47.5433397
+              ],
+              [
+                18.9268967,
+                47.5222438
+              ],
+              [
+                18.9447868,
+                47.5175182
+              ],
+              [
+                18.9359282,
+                47.4915402
+              ],
+              [
+                18.9826683,
+                47.4607778
+              ],
+              [
+                18.9698967,
+                47.4510976
+              ],
+              [
+                18.9762365,
+                47.4300716
+              ],
+              [
+                18.9570475,
+                47.418595
+              ],
+              [
+                18.9623767,
+                47.3726234
+              ],
+              [
+                19.0836196,
+                47.4048964
+              ],
+              [
+                19.1404776,
+                47.3496899
+              ],
+              [
+                19.179723,
+                47.3610728
+              ],
+              [
+                19.2316902,
+                47.4241808
+              ],
+              [
+                19.2469876,
+                47.4192067
+              ],
+              [
+                19.3349258,
+                47.4632105
+              ],
+              [
+                19.3142178,
+                47.4930363
+              ],
+              [
+                19.3186944,
+                47.5154243
+              ],
+              [
+                19.2638164,
+                47.508291
+              ],
+              [
+                19.2448869,
+                47.5369178
+              ],
+              [
+                19.190302,
+                47.5389938
+              ],
+              [
+                19.1381081,
+                47.5998434
+              ],
+              [
+                19.0992826,
+                47.6131468
+              ],
+              [
+                19.0745731,
+                47.5891295
+              ],
+              [
+                19.0767223,
+                47.6068533
+              ],
+              [
+                19.0381747,
+                47.609626
+              ],
+              [
+                19.0252812,
+                47.6045889
+              ],
+              [
+                19.0344669,
+                47.5869376
+              ],
+              [
+                18.9425905,
+                47.578906
+              ],
+              [
+                18.9288432,
+                47.5724407
+              ],
+              [
+                18.9408244,
+                47.5507918
+              ],
+              [
+                18.9251057,
+                47.5441443
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 66581499,
+          "osm_type": "relation",
+          "osm_id": 1244004,
+          "place_rank": 16,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.8084731985555511,
+          "addresstype": "city",
+          "name": "Budapest",
+          "display_name": "Budapest, Central Hungary, Hungary",
+          "address": {
+            "city": "Budapest",
+            "ISO3166-2-lvl8": "HU-BU",
+            "region": "Budapest",
+            "ISO3166-2-lvl6": "HU-BU",
+            "country": "Hungary",
+            "country_code": "hu"
+          },
+          "namedetails": {
+            "name": "Budapest",
+            "name:ar": "بودابست",
+            "name:be": "Будапешт",
+            "name:de": "Budapest",
+            "name:el": "Βουδαπέστη",
+            "name:en": "Budapest",
+            "name:es": "Budapest",
+            "name:hu": "Budapest",
+            "name:hy": "Բուդապեշտ",
+            "name:kn": "ಬುಡಾಪೆಸ್ಟ್",
+            "name:ko": "부다페스트",
+            "name:lt": "Budapeštas",
+            "name:nl": "Boedapest",
+            "name:ro": "Budapesta",
+            "name:ru": "Будапешт",
+            "name:sr": "Будимпешта",
+            "name:uk": "Будапешт",
+            "name:ur": "بوداپست",
+            "name:azb": "بوداپست",
+            "name:grc": "Βουδαπέστη",
+            "name:hyw": "Պուտափեսթ",
+            "name:pnt": "Βουδαπέστη",
+            "name:zh-Hans": "布达佩斯",
+            "name:zh-Hant": "布達佩斯",
+            "name:af": "Boedapest",
+            "name:am": "ቡዳፔስት",
+            "name:av": "Будапешт",
+            "name:az": "Budapeşt",
+            "name:ba": "Будапешт",
+            "name:bg": "Будапеща",
+            "name:bn": "বুদাপেস্ট",
+            "name:bo": "བུ་ད་ཕེ་སིད།",
+            "name:br": "Budapest",
+            "name:bs": "Budimpešta",
+            "name:ca": "Budapest",
+            "name:ce": "Будапешт",
+            "name:cs": "Budapešť",
+            "name:cu": "Боудапєщь",
+            "name:cv": "Будапешт",
+            "name:eo": "Budapeŝto",
+            "name:fa": "بوداپست",
+            "name:fr": "Budapest",
+            "name:fy": "Boedapest",
+            "name:ga": "Búdaipeist",
+            "name:gu": "બુડાપેસ્ટ",
+            "name:he": "בודפשט",
+            "name:hi": "बुडापेस्ट",
+            "name:hr": "Budimpešta",
+            "name:ht": "Boudapès",
+            "name:is": "Búdapest",
+            "name:it": "Budapest",
+            "name:ja": "ブダペスト",
+            "name:ka": "ბუდაპეშტი",
+            "name:kk": "Будапешт",
+            "name:ku": "Budapeşt",
+            "name:kv": "Будапешт",
+            "name:ky": "Будапешт",
+            "name:la": "Budapestinum",
+            "name:li": "Boedapes",
+            "name:lv": "Budapešta",
+            "name:mk": "Будимпешта",
+            "name:ml": "ബുഡാപെസ്റ്റ്",
+            "name:mn": "Будапешт",
+            "name:mr": "बुडापेस्ट",
+            "name:my": "ဗူးဒပက်မြို့",
+            "name:ne": "बुडापेस्ट",
+            "name:no": "Budapest",
+            "name:nv": "Naaki Bineʼ Naʼadziʼii",
+            "name:oc": "Budapèst",
+            "name:or": "ବୁଦାପେଷ୍ଟ",
+            "name:os": "Будапешт",
+            "name:pa": "ਬੁਦਾਪੈਸਤ",
+            "name:pl": "Budapeszt",
+            "name:ps": "بوډاپسټ",
+            "name:pt": "Budapeste",
+            "name:sa": "बुद्धप्रस्थ",
+            "name:sd": "بوڊاپيسٽ",
+            "name:sh": "Budimpešta",
+            "name:sk": "Budapešť",
+            "name:sl": "Budimpešta",
+            "name:sn": "Bhudhapesti",
+            "name:sq": "Budapesti",
+            "name:sv": "Budapest",
+            "name:ta": "புடாபெஸ்ட்",
+            "name:te": "బుడాపెస్ట్",
+            "name:tg": "Будапешт",
+            "name:th": "บูดาเปสต์",
+            "name:tr": "Budapeşte",
+            "name:tt": "Будапешт",
+            "name:tw": "Budapεst",
+            "name:ug": "Budapésht",
+            "name:uz": "Budapesht",
+            "name:wa": "Budapesse",
+            "name:yi": "בודאפעשט",
+            "name:zh": "布達佩斯",
+            "name:be-tarask": "Будапэшт",
+            "name:ace": "Budapèst",
+            "name:arz": "بودابست",
+            "name:ast": "Budapest",
+            "name:ckb": "بوداپێست",
+            "name:crh": "Budapeşt",
+            "name:csb": "Bùdapeszt",
+            "name:diq": "Budapeşt",
+            "name:frp": "Budapèst",
+            "name:gag": "Budapeşt",
+            "name:koi": "Будапешт",
+            "name:krc": "Будапешт",
+            "name:mdf": "Будапешт",
+            "name:mhr": "Будапешт",
+            "name:mrj": "Будапешт",
+            "name:myv": "Будапешт ош",
+            "name:nov": "Budapesht",
+            "name:pdc": "Budapescht",
+            "name:pms": "Bùdapest",
+            "name:pnb": "بوداپست",
+            "name:sah": "Будапешт",
+            "name:szl": "Budapeszt",
+            "name:udm": "Будапешт",
+            "name:vep": "Budapešt",
+            "name:wal": "Budaapestte",
+            "name:yue": "布達佩斯",
+            "name:zea": "Boedapest",
+            "ISO3166-2": "HU-BU",
+            "name:bat-smg": "Budapešts"
+          }
+        },
+        "bbox": [
+          18.9251057,
+          47.3496899,
+          19.3349258,
+          47.6131468
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                18.9251057,
+                47.5441443
+              ],
+              [
+                18.9357518,
+                47.5433397
+              ],
+              [
+                18.9268967,
+                47.5222438
+              ],
+              [
+                18.9447868,
+                47.5175182
+              ],
+              [
+                18.9359282,
+                47.4915402
+              ],
+              [
+                18.9826683,
+                47.4607778
+              ],
+              [
+                18.9698967,
+                47.4510976
+              ],
+              [
+                18.9762365,
+                47.4300716
+              ],
+              [
+                18.9570475,
+                47.418595
+              ],
+              [
+                18.9623767,
+                47.3726234
+              ],
+              [
+                19.0836196,
+                47.4048964
+              ],
+              [
+                19.1404776,
+                47.3496899
+              ],
+              [
+                19.179723,
+                47.3610728
+              ],
+              [
+                19.2316902,
+                47.4241808
+              ],
+              [
+                19.2469876,
+                47.4192067
+              ],
+              [
+                19.3349258,
+                47.4632105
+              ],
+              [
+                19.3142178,
+                47.4930363
+              ],
+              [
+                19.3186944,
+                47.5154243
+              ],
+              [
+                19.2638164,
+                47.508291
+              ],
+              [
+                19.2448869,
+                47.5369178
+              ],
+              [
+                19.190302,
+                47.5389938
+              ],
+              [
+                19.1381081,
+                47.5998434
+              ],
+              [
+                19.0992826,
+                47.6131468
+              ],
+              [
+                19.0745731,
+                47.5891295
+              ],
+              [
+                19.0767223,
+                47.6068533
+              ],
+              [
+                19.0381747,
+                47.609626
+              ],
+              [
+                19.0252812,
+                47.6045889
+              ],
+              [
+                19.0344669,
+                47.5869376
+              ],
+              [
+                18.9425905,
+                47.578906
+              ],
+              [
+                18.9288432,
+                47.5724407
+              ],
+              [
+                18.9408244,
+                47.5507918
+              ],
+              [
+                18.9251057,
+                47.5441443
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

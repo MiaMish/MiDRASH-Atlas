@@ -97,9 +97,13 @@ func TestRunReplacesCurrentDraftAndAppendsAuditHistory(t *testing.T) {
 		t.Fatalf("audit history was not checkpointed: %+v", persisted.Runs)
 	}
 
+	var progressEvents []Progress
 	second, err := Run(context.Background(), fakeGenerator{model: "third-model"}, Config{
 		InputPath: inputPath, OutputPath: outputPath, Provider: "ollama", Model: "third-model",
 		OnlyAINotChecked: true,
+		OnProgress: func(progress Progress) {
+			progressEvents = append(progressEvents, progress)
+		},
 	})
 	if err != nil {
 		t.Fatal(err)
@@ -113,6 +117,12 @@ func TestRunReplacesCurrentDraftAndAppendsAuditHistory(t *testing.T) {
 		onlyNew.Skipped[0].PlaceID != "place_one" ||
 		onlyNew.Skipped[0].Code != "skipped_ai_already_checked" {
 		t.Fatalf("only-not-checked filtering is wrong: %+v", onlyNew)
+	}
+	if len(progressEvents) != 3 ||
+		progressEvents[0].Phase != "skipped" ||
+		progressEvents[1].Phase != "started" ||
+		progressEvents[2].Phase != "completed" {
+		t.Fatalf("progress events are incomplete: %+v", progressEvents)
 	}
 }
 

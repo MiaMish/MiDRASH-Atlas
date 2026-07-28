@@ -150,3 +150,19 @@ are linked to ontology IDs. Unmatched labels remain present with
 `match_status: unresolved` and enter the review queue. A physical-manuscript
 count should group by `physical_id`; a manifestation/component count may use
 record IDs.
+
+## Atlas projection
+
+The runtime atlas view is a projection rather than another canonical dataset.
+It filters assertion events, then groups them into one GeoJSON feature per place
+to avoid repeating large polygons. Each feature contains:
+
+- the current modern display geometry and its human/AI review state;
+- all matching geo assertions for that place;
+- the target manuscript or analytic record;
+- linked Hiburim;
+- stored temporal assertions plus policy-derived effective intervals.
+
+Filtering an approximate `1460` with a ±10 policy uses `1450–1470` in the view,
+while the nested assertion still contains the original `1460` and
+`approximate: true`.

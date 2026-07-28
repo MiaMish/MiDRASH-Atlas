@@ -1,0 +1,401 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Aix-en-Provence (France)",
+    "retrieved_at": "2026-07-28T13:04:55.644826Z",
+    "cache_key": "d938fa42ee82d2312f2d4ca3738722900f3afbd4a610fc085caacfd401eebaf5",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Aix-en-Provence (France)"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 82709709,
+          "osm_type": "relation",
+          "osm_id": 70279,
+          "place_rank": 16,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.6449733583211327,
+          "addresstype": "city",
+          "name": "Aix-en-Provence",
+          "display_name": "Aix-en-Provence, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, Metropolitan France, France",
+          "address": {
+            "city": "Aix-en-Provence",
+            "municipality": "Aix-en-Provence",
+            "county": "Bouches-du-Rhône",
+            "ISO3166-2-lvl6": "FR-13",
+            "state": "Provence-Alpes-Côte d'Azur",
+            "ISO3166-2-lvl4": "FR-PAC",
+            "region": "Metropolitan France",
+            "country": "France",
+            "country_code": "fr"
+          },
+          "namedetails": {
+            "name": "Aix-en-Provence",
+            "name:an": "Ais de Provença",
+            "name:ar": "آكس أون بروفانس",
+            "name:bg": "Екс ан Прованс",
+            "name:ca": "Ais de Provença",
+            "name:eo": "Aikso Provenca",
+            "name:fr": "Aix-en-Provence",
+            "name:he": "אקס-אן-פרובאנס",
+            "name:ja": "エクス＝アン＝プロヴァンス",
+            "name:ko": "엑상프로방스",
+            "name:la": "Aquae Sextiae",
+            "name:lt": "Provanso Eksas",
+            "name:oc": "Ais de Provença",
+            "name:ru": "Экс-ан-Прованс",
+            "name:sr": "Екс ан Прованс",
+            "name:uk": "Екс-ан-Прованс",
+            "name:zh": "普罗旺斯地区艾克斯",
+            "name:br": "Ais de Provença",
+            "name:el": "Αιξ-αν-Προβάνς",
+            "_place_name:fr": "Aix-en-Provence",
+            "name:hi": "ऐक्स एन प्रोवंस",
+            "name:hu": "Aix-en-Provence",
+            "name:hy": "Էքս-ան-Պրովանս",
+            "name:ka": "ექს-ან-პროვანსი",
+            "name:kn": "ಏಸಾಂ ಪ್ರೋವನ್ಸ್",
+            "name:th": "แอ็กซ็องพรอว็องส์",
+            "name:tr": "Akhis",
+            "_place_name:zh": "艾克斯",
+            "old_name:it": "Acchisi",
+            "name:zh-Hans": "艾克斯",
+            "name:zh-Hant": "艾克斯"
+          }
+        },
+        "bbox": [
+          5.2694745,
+          43.4461058,
+          5.5063013,
+          43.6259224
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                5.2694745,
+                43.4961716
+              ],
+              [
+                5.3010539,
+                43.4461058
+              ],
+              [
+                5.329338,
+                43.4611752
+              ],
+              [
+                5.3275037,
+                43.4888831
+              ],
+              [
+                5.3874748,
+                43.4619306
+              ],
+              [
+                5.4523174,
+                43.475824
+              ],
+              [
+                5.4773866,
+                43.5245063
+              ],
+              [
+                5.5063013,
+                43.532244
+              ],
+              [
+                5.4795004,
+                43.5345876
+              ],
+              [
+                5.4985551,
+                43.5616791
+              ],
+              [
+                5.4638195,
+                43.57686
+              ],
+              [
+                5.4589149,
+                43.6180047
+              ],
+              [
+                5.365328,
+                43.624773
+              ],
+              [
+                5.334495,
+                43.5929802
+              ],
+              [
+                5.3674774,
+                43.5839891
+              ],
+              [
+                5.3844024,
+                43.563373
+              ],
+              [
+                5.3777194,
+                43.5448036
+              ],
+              [
+                5.3463039,
+                43.5362049
+              ],
+              [
+                5.3395104,
+                43.5192392
+              ],
+              [
+                5.2941379,
+                43.5195146
+              ],
+              [
+                5.2694745,
+                43.4961716
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 82614415,
+          "osm_type": "relation",
+          "osm_id": 1686391,
+          "place_rank": 14,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.5004815699043696,
+          "addresstype": "municipality",
+          "name": "Aix-en-Provence",
+          "display_name": "Aix-en-Provence, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, Metropolitan France, France",
+          "address": {
+            "municipality": "Aix-en-Provence",
+            "county": "Bouches-du-Rhône",
+            "ISO3166-2-lvl6": "FR-13",
+            "state": "Provence-Alpes-Côte d'Azur",
+            "ISO3166-2-lvl4": "FR-PAC",
+            "region": "Metropolitan France",
+            "country": "France",
+            "country_code": "fr"
+          },
+          "namedetails": {
+            "name": "Aix-en-Provence",
+            "name:ar": "آكس أون بروفانس",
+            "name:fr": "Aix-en-Provence",
+            "name:lt": "Provanso Eksas",
+            "name:oc": "Ais de Provença",
+            "alt_name": "Ais de Provença",
+            "official_name": "Arrondissement d'Aix-en-Provence"
+          }
+        },
+        "bbox": [
+          4.9534171,
+          43.3681732,
+          5.8135205,
+          43.7721131
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                4.9534171,
+                43.7263224
+              ],
+              [
+                4.9819095,
+                43.7178515
+              ],
+              [
+                4.9826328,
+                43.6830565
+              ],
+              [
+                4.9540813,
+                43.6390688
+              ],
+              [
+                4.9886103,
+                43.6183322
+              ],
+              [
+                5.0126171,
+                43.6427817
+              ],
+              [
+                5.0871917,
+                43.6246515
+              ],
+              [
+                5.1218867,
+                43.5229483
+              ],
+              [
+                5.1882328,
+                43.5394557
+              ],
+              [
+                5.2889298,
+                43.4767303
+              ],
+              [
+                5.3107242,
+                43.4315993
+              ],
+              [
+                5.2749991,
+                43.4188861
+              ],
+              [
+                5.2650595,
+                43.4011055
+              ],
+              [
+                5.2787835,
+                43.3804542
+              ],
+              [
+                5.3552682,
+                43.3744793
+              ],
+              [
+                5.340671,
+                43.4029859
+              ],
+              [
+                5.3928348,
+                43.4164589
+              ],
+              [
+                5.4248801,
+                43.3833045
+              ],
+              [
+                5.4942993,
+                43.3854153
+              ],
+              [
+                5.5280921,
+                43.4167995
+              ],
+              [
+                5.5597541,
+                43.4071598
+              ],
+              [
+                5.5588145,
+                43.4340029
+              ],
+              [
+                5.5875746,
+                43.4427166
+              ],
+              [
+                5.6102418,
+                43.4115979
+              ],
+              [
+                5.6440512,
+                43.400523
+              ],
+              [
+                5.7863517,
+                43.4139397
+              ],
+              [
+                5.698856,
+                43.4821795
+              ],
+              [
+                5.7251814,
+                43.5511465
+              ],
+              [
+                5.6560278,
+                43.5777686
+              ],
+              [
+                5.6919848,
+                43.5845545
+              ],
+              [
+                5.6779296,
+                43.611199
+              ],
+              [
+                5.6971197,
+                43.6426176
+              ],
+              [
+                5.7968692,
+                43.6594984
+              ],
+              [
+                5.8135205,
+                43.6891894
+              ],
+              [
+                5.7871371,
+                43.6973565
+              ],
+              [
+                5.7771976,
+                43.723196
+              ],
+              [
+                5.6070439,
+                43.6586727
+              ],
+              [
+                5.4881416,
+                43.6674479
+              ],
+              [
+                5.3167421,
+                43.7361362
+              ],
+              [
+                5.2475296,
+                43.7487067
+              ],
+              [
+                5.1875434,
+                43.7351153
+              ],
+              [
+                5.0907728,
+                43.7721131
+              ],
+              [
+                4.9534171,
+                43.7263224
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

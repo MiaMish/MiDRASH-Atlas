@@ -1,0 +1,201 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Ērakleion (Greece)",
+    "retrieved_at": "2026-07-28T13:05:34.965831Z",
+    "cache_key": "88da7945655ad8e91e059268843a2074dc980f887ff1069619e3442ae5e78730",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Ērakleion (Greece)"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 54846147,
+          "osm_type": "node",
+          "osm_id": 29438069,
+          "place_rank": 16,
+          "category": "place",
+          "type": "city",
+          "importance": 0.6174571948529666,
+          "addresstype": "city",
+          "name": "Heraklion",
+          "display_name": "Heraklion, Heraklion Municipal Unit, Municipality of Heraklion, Heraklion Regional Unit, Region of Crete, 712 02, Greece",
+          "address": {
+            "city": "Heraklion",
+            "municipality": "Municipality of Heraklion",
+            "county": "Heraklion Regional Unit",
+            "state": "Region of Crete",
+            "ISO3166-2-lvl5": "GR-M",
+            "postcode": "712 02",
+            "country": "Greece",
+            "country_code": "gr"
+          },
+          "namedetails": {
+            "name": "Ηράκλειο",
+            "name:af": "Heraklion",
+            "name:an": "Irákleio",
+            "name:ar": "كاندية",
+            "name:az": "İraklion",
+            "name:ba": "Ираклион",
+            "name:be": "Іракліян",
+            "name:bg": "Ираклио",
+            "name:bn": "হেরাক্লিওন",
+            "name:br": "Heraklion",
+            "name:ca": "Càndia",
+            "name:ce": "Ираклион",
+            "name:cs": "Iraklion",
+            "name:da": "Iraklion",
+            "name:de": "Heraklion",
+            "name:el": "Ηράκλειο",
+            "name:en": "Heraklion",
+            "name:eo": "Iraklion",
+            "name:es": "Heraclión",
+            "name:et": "Irákleion",
+            "name:eu": "Heraklion",
+            "name:fa": "هراکلیون",
+            "name:fi": "Heraklion",
+            "name:fr": "Héraklion",
+            "name:fy": "Heraklion",
+            "name:ga": "Heraklion",
+            "name:gd": "Heraklion",
+            "name:gl": "Heraklion",
+            "name:he": "הרקליון",
+            "name:hr": "Heraklion",
+            "name:hu": "Iráklio",
+            "name:hy": "Հերակլիոն",
+            "name:id": "Heraklion",
+            "name:ie": "Heraklion",
+            "name:io": "Heraklion",
+            "name:it": "Candia",
+            "name:ja": "イラクリオン",
+            "name:ka": "ჰერაკლიონი",
+            "name:kk": "Ираклион",
+            "name:kn": "ಹೇರಕ್ಲಿಯೇನ್",
+            "name:ko": "이라클리오",
+            "name:ku": "Herakliyon",
+            "name:la": "Heracleum",
+            "name:li": "Irakleio",
+            "name:lt": "Heraklionas",
+            "name:lv": "Iraklija",
+            "name:mk": "Ираклион",
+            "name:ml": "ഹെരാക്ലിയോൺ",
+            "name:mn": "Ираклион",
+            "name:nb": "Iraklio",
+            "name:nl": "Iraklion",
+            "name:nn": "Iráklio",
+            "name:os": "Ираклион",
+            "name:pl": "Heraklion",
+            "name:pt": "Heraclião",
+            "name:ro": "Heraklion",
+            "name:ru": "Ираклион",
+            "name:sk": "Iraklio",
+            "name:sl": "Iraklion",
+            "name:sq": "Iraklioni",
+            "name:sr": "Ираклион",
+            "name:sv": "Heraklion",
+            "name:th": "ฮีราคลีออน",
+            "name:tl": "Heraklion",
+            "name:tr": "Kandiye",
+            "name:uk": "Іракліон",
+            "name:ur": "ایراکلیون",
+            "name:uz": "Iraklion",
+            "name:vi": "Heraklion",
+            "name:vo": "Iraklio",
+            "name:zh": "伊拉克利翁",
+            "name:grc": "Ἡράκλειον",
+            "old_name": "Χάνδακας;Κάντια",
+            "alt_name:ar": "إيراكليو;هيراكليون",
+            "alt_name:ca": "Iràklion",
+            "alt_name:cs": "Hérakleion",
+            "alt_name:de": "Heraklion",
+            "alt_name:hu": "Hérakleion",
+            "old_name:en": "Candia",
+            "name:sr-Latn": "Heraklion",
+            "old_name:grc": "Χάνδακας;Κάντια",
+            "official_name": "Ηράκλειον",
+            "official_name:de": "Iraklion",
+            "official_name:en": "Iraklion",
+            "official_name:es": "Heraclión",
+            "official_name:it": "Candia",
+            "official_name:grc": "Ἡράκλειον"
+          }
+        },
+        "bbox": [
+          24.9732843,
+          35.1790800,
+          25.2932843,
+          35.4990800
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            25.1332843,
+            35.33908
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 56011649,
+          "osm_type": "way",
+          "osm_id": 24799385,
+          "place_rank": 26,
+          "category": "highway",
+          "type": "tertiary",
+          "importance": 0.053416607156481236,
+          "addresstype": "road",
+          "name": "Ηρακλείων Στηλών",
+          "display_name": "Ηρακλείων Στηλών, Terpsithea, Municipality of Glyfada, Regional Unit of South Athens, Attica, 165 62, Greece",
+          "address": {
+            "road": "Ηρακλείων Στηλών",
+            "neighbourhood": "Terpsithea",
+            "municipality": "Municipality of Glyfada",
+            "county": "Regional Unit of South Athens",
+            "state": "Attica",
+            "ISO3166-2-lvl5": "GR-I",
+            "postcode": "165 62",
+            "country": "Greece",
+            "country_code": "gr"
+          },
+          "namedetails": {
+            "name": "Ηρακλείων Στηλών"
+          }
+        },
+        "bbox": [
+          23.7741103,
+          37.8980994,
+          23.7746657,
+          37.8981241
+        ],
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              23.7741103,
+              37.8980994
+            ],
+            [
+              23.7746657,
+              37.8981241
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

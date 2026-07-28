@@ -1,0 +1,85 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Fürth (Bavaria, Germany)",
+    "retrieved_at": "2026-07-28T13:05:43.066173Z",
+    "cache_key": "53378c6295c094d064bdacf7f86347fb350023598a245f0e12aa2668b612b6f8",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Fürth (Bavaria, Germany)"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 131567280,
+          "osm_type": "way",
+          "osm_id": 309400977,
+          "place_rank": 24,
+          "category": "landuse",
+          "type": "industrial",
+          "importance": 0.08005613260090025,
+          "addresstype": "industrial",
+          "name": "FLABEG Automotive Germany GmbH",
+          "display_name": "FLABEG Automotive Germany GmbH, 1, Grabitz, Furth im Wald, Landkreis Cham, Bavaria, 93437, Germany",
+          "address": {
+            "industrial": "FLABEG Automotive Germany GmbH",
+            "house_number": "1",
+            "village": "Grabitz",
+            "town": "Furth im Wald",
+            "county": "Landkreis Cham",
+            "state": "Bavaria",
+            "ISO3166-2-lvl4": "DE-BY",
+            "postcode": "93437",
+            "country": "Germany",
+            "country_code": "de"
+          },
+          "namedetails": {
+            "name": "FLABEG Automotive Germany GmbH"
+          }
+        },
+        "bbox": [
+          12.8315115,
+          49.3096082,
+          12.8364447,
+          49.3115159
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                12.8347956,
+                49.3115159
+              ],
+              [
+                12.8323622,
+                49.3096082
+              ],
+              [
+                12.8364447,
+                49.3105593
+              ],
+              [
+                12.8347956,
+                49.3115159
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

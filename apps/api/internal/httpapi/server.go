@@ -38,6 +38,7 @@ func New(cfg Config, locations locationstore.Store, generator DraftGenerator) ht
 	mux.HandleFunc("/healthz", s.health)
 	mux.HandleFunc("/api/v1/curation/geometry-draft", s.geometryDraft)
 	mux.HandleFunc("/api/v1/location-overview", s.locationOverview)
+	mux.HandleFunc("/api/v1/atlas-view", s.atlasView)
 	mux.HandleFunc("/api/v1/locations/", s.locationsRoute)
 	mux.HandleFunc("/api/v1/", s.atlasResources)
 	return withCORS(mux)

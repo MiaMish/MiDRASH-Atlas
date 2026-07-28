@@ -1,0 +1,375 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Ascoli Piceno (Italy)",
+    "retrieved_at": "2026-07-28T13:05:01.203Z",
+    "cache_key": "23d0040cd966b1c15e46ec6fffd47174bd02eb3b06343eb31a8f0753c6b094dc",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Ascoli Piceno (Italy)"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 80318810,
+          "osm_type": "relation",
+          "osm_id": 42141,
+          "place_rank": 12,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.716882836980707,
+          "addresstype": "county",
+          "name": "Ascoli Piceno",
+          "display_name": "Ascoli Piceno, Marche, Italy",
+          "address": {
+            "county": "Ascoli Piceno",
+            "ISO3166-2-lvl6": "IT-AP",
+            "state": "Marche",
+            "ISO3166-2-lvl4": "IT-57",
+            "country": "Italy",
+            "country_code": "it"
+          },
+          "namedetails": {
+            "name": "Ascoli Piceno",
+            "name:ca": "Província d'Ascoli Piceno",
+            "name:it": "Ascoli Piceno",
+            "name:ko": "아스콜리피체노",
+            "name:ru": "Асколи-Пичено",
+            "ISO3166-2": "IT-AP",
+            "short_name": "AP",
+            "official_name": "Provincia di Ascoli Piceno"
+          }
+        },
+        "bbox": [
+          13.1875521,
+          42.6871561,
+          13.9163435,
+          43.0797782
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                13.1875521,
+                42.7339007
+              ],
+              [
+                13.2541525,
+                42.7214521
+              ],
+              [
+                13.2644989,
+                42.7401855
+              ],
+              [
+                13.2862766,
+                42.7404064
+              ],
+              [
+                13.3411589,
+                42.7017636
+              ],
+              [
+                13.3925998,
+                42.687383
+              ],
+              [
+                13.4375659,
+                42.6991975
+              ],
+              [
+                13.4479874,
+                42.7322172
+              ],
+              [
+                13.497517,
+                42.7399473
+              ],
+              [
+                13.5344999,
+                42.8166499
+              ],
+              [
+                13.5722476,
+                42.8003732
+              ],
+              [
+                13.6243989,
+                42.8165417
+              ],
+              [
+                13.6542181,
+                42.8048649
+              ],
+              [
+                13.6993033,
+                42.8226156
+              ],
+              [
+                13.7224783,
+                42.8553536
+              ],
+              [
+                13.9163435,
+                42.8954039
+              ],
+              [
+                13.8496502,
+                43.0666869
+              ],
+              [
+                13.8029403,
+                43.0608373
+              ],
+              [
+                13.7851686,
+                43.0797782
+              ],
+              [
+                13.6568948,
+                43.0420934
+              ],
+              [
+                13.6565334,
+                43.0281333
+              ],
+              [
+                13.6338435,
+                43.0341542
+              ],
+              [
+                13.5563541,
+                42.9884488
+              ],
+              [
+                13.4937244,
+                42.9893365
+              ],
+              [
+                13.4548227,
+                42.9658901
+              ],
+              [
+                13.397848,
+                42.9716427
+              ],
+              [
+                13.3919691,
+                42.9398176
+              ],
+              [
+                13.4112076,
+                42.9290198
+              ],
+              [
+                13.3768298,
+                42.8903766
+              ],
+              [
+                13.3590538,
+                42.9137488
+              ],
+              [
+                13.3285095,
+                42.9215409
+              ],
+              [
+                13.2599168,
+                42.9116132
+              ],
+              [
+                13.2313258,
+                42.8750999
+              ],
+              [
+                13.2631311,
+                42.8147586
+              ],
+              [
+                13.2595251,
+                42.789692
+              ],
+              [
+                13.2385338,
+                42.7609418
+              ],
+              [
+                13.234313,
+                42.7731462
+              ],
+              [
+                13.1951193,
+                42.7619168
+              ],
+              [
+                13.1875521,
+                42.7339007
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 80274313,
+          "osm_type": "relation",
+          "osm_id": 42176,
+          "place_rank": 16,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.5965369367009031,
+          "addresstype": "city",
+          "name": "Ascoli Piceno",
+          "display_name": "Ascoli Piceno, Marche, 63100, Italy",
+          "address": {
+            "city": "Ascoli Piceno",
+            "county": "Ascoli Piceno",
+            "ISO3166-2-lvl6": "IT-AP",
+            "state": "Marche",
+            "ISO3166-2-lvl4": "IT-57",
+            "postcode": "63100",
+            "country": "Italy",
+            "country_code": "it"
+          },
+          "namedetails": {
+            "name": "Ascoli Piceno"
+          }
+        },
+        "bbox": [
+          13.4190748,
+          42.7718412,
+          13.7416745,
+          42.9303306
+        ],
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  13.4190748,
+                  42.8081041
+                ],
+                [
+                  13.4333526,
+                  42.8026624
+                ],
+                [
+                  13.4391029,
+                  42.8087729
+                ],
+                [
+                  13.4312513,
+                  42.8135838
+                ],
+                [
+                  13.4190748,
+                  42.8081041
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  13.4589132,
+                  42.8235457
+                ],
+                [
+                  13.4624206,
+                  42.7789599
+                ],
+                [
+                  13.4762435,
+                  42.7720991
+                ],
+                [
+                  13.506791,
+                  42.776314
+                ],
+                [
+                  13.5344999,
+                  42.8166499
+                ],
+                [
+                  13.5735535,
+                  42.8004875
+                ],
+                [
+                  13.6167512,
+                  42.8120535
+                ],
+                [
+                  13.6292347,
+                  42.8354222
+                ],
+                [
+                  13.6687001,
+                  42.8358533
+                ],
+                [
+                  13.6668906,
+                  42.8494497
+                ],
+                [
+                  13.7416745,
+                  42.8558428
+                ],
+                [
+                  13.653862,
+                  42.869439
+                ],
+                [
+                  13.5774317,
+                  42.9302388
+                ],
+                [
+                  13.5333103,
+                  42.9263736
+                ],
+                [
+                  13.5089191,
+                  42.8922627
+                ],
+                [
+                  13.5431488,
+                  42.8752458
+                ],
+                [
+                  13.5407454,
+                  42.8594013
+                ],
+                [
+                  13.4896748,
+                  42.8485
+                ],
+                [
+                  13.4988565,
+                  42.8250908
+                ],
+                [
+                  13.4589132,
+                  42.8235457
+                ]
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

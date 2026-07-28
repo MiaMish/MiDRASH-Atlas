@@ -1,0 +1,251 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Rothenburg ob der Tauber (Germany)",
+    "retrieved_at": "2026-07-28T13:06:50.307922Z",
+    "cache_key": "06760d756230ce339dd473ff723d819f55b72cd67fe548ffd2259c1abe5158f5",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Rothenburg ob der Tauber (Germany)"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 125501379,
+          "osm_type": "relation",
+          "osm_id": 287759,
+          "place_rank": 16,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.5494980345495399,
+          "addresstype": "city",
+          "name": "Rothenburg ob der Tauber",
+          "display_name": "Rothenburg ob der Tauber, Ansbach (district), Bavaria, 91541, Germany",
+          "address": {
+            "city": "Rothenburg ob der Tauber",
+            "county": "Ansbach (district)",
+            "state": "Bavaria",
+            "ISO3166-2-lvl4": "DE-BY",
+            "postcode": "91541",
+            "country": "Germany",
+            "country_code": "de"
+          },
+          "namedetails": {
+            "name": "Rothenburg ob der Tauber",
+            "name:de": "Rothenburg ob der Tauber",
+            "name:ko": "로텐부르크"
+          }
+        },
+        "bbox": [
+          10.1028342,
+          49.3246094,
+          10.2221838,
+          49.4070171
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                10.1028342,
+                49.3444621
+              ],
+              [
+                10.1276253,
+                49.3247046
+              ],
+              [
+                10.1805507,
+                49.362566
+              ],
+              [
+                10.2153653,
+                49.361968
+              ],
+              [
+                10.2034857,
+                49.3681989
+              ],
+              [
+                10.2221838,
+                49.3990865
+              ],
+              [
+                10.138962,
+                49.4036727
+              ],
+              [
+                10.1610052,
+                49.3903803
+              ],
+              [
+                10.1118546,
+                49.38505
+              ],
+              [
+                10.1237873,
+                49.350546
+              ],
+              [
+                10.1028342,
+                49.3444621
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 126130927,
+          "osm_type": "relation",
+          "osm_id": 2984705,
+          "place_rank": 14,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.2954185985350713,
+          "addresstype": "municipality",
+          "name": "Rothenburg ob der Tauber (VGem)",
+          "display_name": "Rothenburg ob der Tauber (VGem), Ansbach (district), Bavaria, Germany",
+          "address": {
+            "municipality": "Rothenburg ob der Tauber (VGem)",
+            "county": "Ansbach (district)",
+            "state": "Bavaria",
+            "ISO3166-2-lvl4": "DE-BY",
+            "country": "Germany",
+            "country_code": "de"
+          },
+          "namedetails": {
+            "name": "Rothenburg ob der Tauber (VGem)"
+          }
+        },
+        "bbox": [
+          10.0948792,
+          49.2782590,
+          10.3734152,
+          49.4920477
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                10.0948792,
+                49.4480655
+              ],
+              [
+                10.1331224,
+                49.437935
+              ],
+              [
+                10.1522221,
+                49.4010167
+              ],
+              [
+                10.2221838,
+                49.3990865
+              ],
+              [
+                10.2034857,
+                49.3681989
+              ],
+              [
+                10.2153653,
+                49.361968
+              ],
+              [
+                10.1805507,
+                49.362566
+              ],
+              [
+                10.1326981,
+                49.3304857
+              ],
+              [
+                10.1453764,
+                49.3164032
+              ],
+              [
+                10.1341367,
+                49.2959114
+              ],
+              [
+                10.1580913,
+                49.2797872
+              ],
+              [
+                10.1886412,
+                49.2882226
+              ],
+              [
+                10.1685622,
+                49.3169799
+              ],
+              [
+                10.1860505,
+                49.3247088
+              ],
+              [
+                10.370511,
+                49.3470894
+              ],
+              [
+                10.3501628,
+                49.387198
+              ],
+              [
+                10.3643212,
+                49.412627
+              ],
+              [
+                10.3493782,
+                49.4103331
+              ],
+              [
+                10.3429587,
+                49.4336377
+              ],
+              [
+                10.2879394,
+                49.4144722
+              ],
+              [
+                10.2459801,
+                49.4524487
+              ],
+              [
+                10.2687774,
+                49.4678303
+              ],
+              [
+                10.2344364,
+                49.4884093
+              ],
+              [
+                10.1379801,
+                49.4789165
+              ],
+              [
+                10.0948792,
+                49.4480655
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

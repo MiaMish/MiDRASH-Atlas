@@ -1,0 +1,696 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Siena, Italy",
+    "retrieved_at": "2026-07-28T13:06:59.507074Z",
+    "cache_key": "e6f2dcfdc6080c0de3e2748b54fbf804ead0c351674ee9ac6ad2eb2a7ae0d4a9",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Siena, Italy"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 81776936,
+          "osm_type": "relation",
+          "osm_id": 42172,
+          "place_rank": 12,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.7185802271966537,
+          "addresstype": "county",
+          "name": "Siena",
+          "display_name": "Siena, Tuscany, Italy",
+          "address": {
+            "county": "Siena",
+            "ISO3166-2-lvl6": "IT-SI",
+            "state": "Tuscany",
+            "ISO3166-2-lvl4": "IT-52",
+            "country": "Italy",
+            "country_code": "it"
+          },
+          "namedetails": {
+            "name": "Siena",
+            "name:aa": "Siyena",
+            "name:ab": "Сиена",
+            "name:af": "Siena",
+            "name:ak": "Siena",
+            "name:am": "ሲዬና",
+            "name:ar": "سيينا",
+            "name:be": "Сіена",
+            "name:bn": "সিয়েনা",
+            "name:bo": "སི་ཡ་ན།",
+            "name:br": "Siena",
+            "name:ca": "Siena",
+            "name:co": "Siena",
+            "name:cs": "Siena",
+            "name:de": "Siena",
+            "name:el": "Σιένα",
+            "name:en": "Siena",
+            "name:eo": "Sieno",
+            "name:es": "Siena",
+            "name:eu": "Siena",
+            "name:fa": "سینا",
+            "name:fi": "Siena",
+            "name:fr": "Sienne",
+            "name:ga": "Siena",
+            "name:gl": "Siena",
+            "name:he": "סיינה",
+            "name:hi": "सिएना",
+            "name:hr": "Siena",
+            "name:ht": "Syèn",
+            "name:hu": "Siena",
+            "name:it": "Siena",
+            "name:ja": "シエナ",
+            "name:jv": "Siena",
+            "name:kk": "Сиена",
+            "name:kn": "ಸಿಯೆನಾ",
+            "name:ko": "시에나",
+            "name:la": "Sena Lulia",
+            "name:lb": "Siena",
+            "name:lt": "Siena",
+            "name:lv": "Sjēna",
+            "name:ml": "സിയീന",
+            "name:mn": "Сиена",
+            "name:ms": "Siena",
+            "name:my": "Siena",
+            "name:ne": "सिएना",
+            "name:nl": "Sienna",
+            "name:no": "Siena",
+            "name:oc": "Siena",
+            "name:om": "Siyeenaa",
+            "name:pl": "Siena",
+            "name:pt": "Siena",
+            "name:ru": "Сиена",
+            "name:se": "Siena",
+            "name:sk": "Siena",
+            "name:sl": "Siena",
+            "name:so": "Siena",
+            "name:sr": "Сиена",
+            "name:su": "Siena",
+            "name:sv": "Siena",
+            "name:ti": "ሲየና",
+            "name:tr": "Siena",
+            "name:ty": "Siena",
+            "name:ug": "Siena",
+            "name:uk": "Сієна",
+            "name:za": "錫耶納",
+            "name:zh": "锡耶纳",
+            "name:ace": "Siena",
+            "name:ady": "Siena",
+            "name:ban": "Siena",
+            "name:btx": "Siena",
+            "name:fur": "Siene",
+            "name:iku": "ᓯᐊᓇ",
+            "name:lij": "Siena",
+            "name:lld": "Siena",
+            "name:lmo": "Sëna",
+            "name:mad": "Siena",
+            "name:mak": "Siena",
+            "name:sgs": "Siena",
+            "name:zgh": "ⵙⵉⵏⴰ",
+            "ISO3166-2": "IT-SI",
+            "short_name": "SI",
+            "official_name": "Provincia di Siena",
+            "official_name:ab": "Сиена",
+            "official_name:af": "Provinsie Siena",
+            "official_name:ak": "Siena mantam mu",
+            "official_name:ar": "مقاطعة سيينا",
+            "official_name:be": "Правінцыя Сіена",
+            "official_name:ca": "Província de Siena",
+            "official_name:cs": "Provincie Siena",
+            "official_name:de": "Provinz Siena",
+            "official_name:el": "Επαρχία της Σιένα",
+            "official_name:en": "Province of Siena",
+            "official_name:eo": "Provinco Sieno",
+            "official_name:es": "Provincia de Siena",
+            "official_name:eu": "Siena probintzia",
+            "official_name:fa": "استان سیه نا",
+            "official_name:fi": "Sienan maakunta",
+            "official_name:fr": "Province de Sienne",
+            "official_name:gl": "Provincia de Siena",
+            "official_name:he": "מחוז סיינה",
+            "official_name:hi": "प्रोविंस ऑफ़ सिएना",
+            "official_name:hr": "Pokrajina Siena",
+            "official_name:hu": "Siena tartomány",
+            "official_name:it": "Provincia di Siena",
+            "official_name:ja": "シエナ県",
+            "official_name:kn": "ಸಿಯೆನಾ ಪ್ರಾಂತ್ಯ",
+            "official_name:ko": "시에나 지방",
+            "official_name:la": "Senensem",
+            "official_name:lb": "Provënz Siena",
+            "official_name:lt": "Sienos provincija",
+            "official_name:ml": "സിയീന പ്രവിശ്യ",
+            "official_name:ne": "सिएना प्रान्त",
+            "official_name:nl": "Provincie Siena",
+            "official_name:oc": "Prefectura de Siena",
+            "official_name:pl": "Prowincja Sieny",
+            "official_name:pt": "Província de Siena",
+            "official_name:ru": "Провинция Сиена",
+            "official_name:sk": "Provincia Siena",
+            "official_name:sl": "Pokrajina Siena",
+            "official_name:sr": "Провинција Сијена",
+            "official_name:tr": "Siena Eyaleti",
+            "official_name:uk": "Провінція Сієна",
+            "official_name:za": "錫耶納省",
+            "official_name:zh": "锡耶纳省",
+            "official_name:ace": "Siena",
+            "official_name:ady": "Siena",
+            "official_name:fur": "Provincia di Siene",
+            "official_name:lmo": "Provinsa de Sëna"
+          }
+        },
+        "bbox": [
+          10.9083129,
+          42.7857809,
+          11.9827957,
+          43.5484600
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                10.9083129,
+                43.1645577
+              ],
+              [
+                11.0591962,
+                43.1843315
+              ],
+              [
+                11.0502412,
+                43.1445985
+              ],
+              [
+                11.0827962,
+                43.082994
+              ],
+              [
+                11.3619888,
+                43.0829725
+              ],
+              [
+                11.3680996,
+                43.056921
+              ],
+              [
+                11.3537776,
+                43.0402665
+              ],
+              [
+                11.3642687,
+                43.0324559
+              ],
+              [
+                11.3517952,
+                43.0271499
+              ],
+              [
+                11.3807048,
+                42.996111
+              ],
+              [
+                11.3656857,
+                42.9947758
+              ],
+              [
+                11.3774831,
+                42.9842331
+              ],
+              [
+                11.3529147,
+                42.9751104
+              ],
+              [
+                11.3593986,
+                42.965616
+              ],
+              [
+                11.4570154,
+                42.957349
+              ],
+              [
+                11.5176551,
+                42.9812159
+              ],
+              [
+                11.5271166,
+                42.9650868
+              ],
+              [
+                11.5694243,
+                42.9708954
+              ],
+              [
+                11.610546,
+                42.9509039
+              ],
+              [
+                11.6370557,
+                42.8532851
+              ],
+              [
+                11.6251601,
+                42.7971932
+              ],
+              [
+                11.7460488,
+                42.7857809
+              ],
+              [
+                11.7697921,
+                42.8204794
+              ],
+              [
+                11.8067739,
+                42.794484
+              ],
+              [
+                11.815297,
+                42.8236335
+              ],
+              [
+                11.8494174,
+                42.8385895
+              ],
+              [
+                11.895013,
+                42.834662
+              ],
+              [
+                11.9292765,
+                42.8686403
+              ],
+              [
+                11.9593484,
+                42.868682
+              ],
+              [
+                11.9566551,
+                42.9005511
+              ],
+              [
+                11.9332247,
+                42.9048162
+              ],
+              [
+                11.9349717,
+                42.9270894
+              ],
+              [
+                11.9566736,
+                42.953854
+              ],
+              [
+                11.9489837,
+                42.9783101
+              ],
+              [
+                11.9827957,
+                43.049902
+              ],
+              [
+                11.9562523,
+                43.0687663
+              ],
+              [
+                11.936341,
+                43.0561478
+              ],
+              [
+                11.9123518,
+                43.1284024
+              ],
+              [
+                11.9615158,
+                43.1670678
+              ],
+              [
+                11.9034459,
+                43.1745975
+              ],
+              [
+                11.8878478,
+                43.1563413
+              ],
+              [
+                11.8482381,
+                43.1887306
+              ],
+              [
+                11.8338218,
+                43.2243783
+              ],
+              [
+                11.7494262,
+                43.233715
+              ],
+              [
+                11.7100433,
+                43.279832
+              ],
+              [
+                11.6767236,
+                43.2860604
+              ],
+              [
+                11.6580243,
+                43.3217013
+              ],
+              [
+                11.5322886,
+                43.3906629
+              ],
+              [
+                11.5516899,
+                43.4589534
+              ],
+              [
+                11.5014532,
+                43.4605427
+              ],
+              [
+                11.4613367,
+                43.5102501
+              ],
+              [
+                11.4358871,
+                43.5119486
+              ],
+              [
+                11.4030226,
+                43.54846
+              ],
+              [
+                11.3072252,
+                43.5182921
+              ],
+              [
+                11.2696017,
+                43.5459966
+              ],
+              [
+                11.2464529,
+                43.498248
+              ],
+              [
+                11.2091409,
+                43.4803188
+              ],
+              [
+                11.1742012,
+                43.4894639
+              ],
+              [
+                11.1966283,
+                43.5168914
+              ],
+              [
+                11.1833678,
+                43.5230231
+              ],
+              [
+                11.1435865,
+                43.4800428
+              ],
+              [
+                11.1197578,
+                43.4757809
+              ],
+              [
+                11.1112966,
+                43.4982172
+              ],
+              [
+                11.0342122,
+                43.5468437
+              ],
+              [
+                10.9656969,
+                43.5140382
+              ],
+              [
+                10.9508255,
+                43.4500615
+              ],
+              [
+                10.9789967,
+                43.4069017
+              ],
+              [
+                11.0019681,
+                43.4011716
+              ],
+              [
+                11.0140065,
+                43.3652627
+              ],
+              [
+                10.9971777,
+                43.3436138
+              ],
+              [
+                10.9724081,
+                43.3447084
+              ],
+              [
+                10.9700514,
+                43.3136856
+              ],
+              [
+                10.9540707,
+                43.3182257
+              ],
+              [
+                10.9518956,
+                43.3021527
+              ],
+              [
+                10.9859984,
+                43.2873682
+              ],
+              [
+                10.9967218,
+                43.2394628
+              ],
+              [
+                10.939709,
+                43.2456591
+              ],
+              [
+                10.927067,
+                43.2312504
+              ],
+              [
+                10.9414104,
+                43.2040072
+              ],
+              [
+                10.9083129,
+                43.1645577
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 81588304,
+          "osm_type": "relation",
+          "osm_id": 42398,
+          "place_rank": 16,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.6716139318618375,
+          "addresstype": "city",
+          "name": "Siena",
+          "display_name": "Siena, Tuscany, 53100, Italy",
+          "address": {
+            "city": "Siena",
+            "county": "Siena",
+            "ISO3166-2-lvl6": "IT-SI",
+            "state": "Tuscany",
+            "ISO3166-2-lvl4": "IT-52",
+            "postcode": "53100",
+            "country": "Italy",
+            "country_code": "it"
+          },
+          "namedetails": {
+            "name": "Siena",
+            "name:aa": "Siyena",
+            "name:ab": "Сиена",
+            "name:af": "Siena",
+            "name:ak": "Siena",
+            "name:am": "ሲዬና",
+            "name:ar": "سيينا",
+            "name:be": "Сіена",
+            "name:bn": "সিয়েনা",
+            "name:bo": "སི་ཡ་ན།",
+            "name:br": "Siena",
+            "name:ca": "Siena",
+            "name:co": "Siena",
+            "name:cs": "Siena",
+            "name:de": "Siena",
+            "name:el": "Σιένα",
+            "name:en": "Siena",
+            "name:eo": "Sieno",
+            "name:es": "Siena",
+            "name:eu": "Siena",
+            "name:fa": "سینا",
+            "name:fi": "Siena",
+            "name:fr": "Sienne",
+            "name:ga": "Siena",
+            "name:gl": "Siena",
+            "name:he": "סיינה",
+            "name:hi": "सिएना",
+            "name:hr": "Siena",
+            "name:ht": "Syèn",
+            "name:hu": "Siena",
+            "name:it": "Siena",
+            "name:ja": "シエナ",
+            "name:jv": "Siena",
+            "name:kk": "Сиена",
+            "name:kn": "ಸಿಯೆನಾ",
+            "name:ko": "시에나",
+            "name:la": "Sena Lulia",
+            "name:lb": "Siena",
+            "name:lt": "Siena",
+            "name:lv": "Sjēna",
+            "name:ml": "സിയീന",
+            "name:mn": "Сиена",
+            "name:ms": "Siena",
+            "name:my": "Siena",
+            "name:ne": "सिएना",
+            "name:nl": "Sienna",
+            "name:no": "Siena",
+            "name:oc": "Siena",
+            "name:om": "Siyeenaa",
+            "name:pl": "Siena",
+            "name:pt": "Siena",
+            "name:ru": "Сиена",
+            "name:se": "Siena",
+            "name:sk": "Siena",
+            "name:sl": "Siena",
+            "name:so": "Siena",
+            "name:sr": "Сиена",
+            "name:su": "Siena",
+            "name:sv": "Siena",
+            "name:ti": "ሲየና",
+            "name:tr": "Siena",
+            "name:ty": "Siena",
+            "name:ug": "Siena",
+            "name:uk": "Сієна",
+            "name:za": "錫耶納",
+            "name:zh": "锡耶纳",
+            "name:ace": "Siena",
+            "name:ady": "Siena",
+            "name:ban": "Siena",
+            "name:btx": "Siena",
+            "name:fur": "Siene",
+            "name:iku": "ᓯᐊᓇ",
+            "name:lij": "Siena",
+            "name:lld": "Siena",
+            "name:lmo": "Sëna",
+            "name:mad": "Siena",
+            "name:mak": "Siena",
+            "name:sgs": "Siena",
+            "name:zgh": "ⵙⵉⵏⴰ",
+            "loc_name": "Siena"
+          }
+        },
+        "bbox": [
+          11.2300025,
+          43.2498952,
+          11.4285563,
+          43.3663312
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                11.2300025,
+                43.3092099
+              ],
+              [
+                11.2973178,
+                43.2794379
+              ],
+              [
+                11.2868211,
+                43.2596556
+              ],
+              [
+                11.3043822,
+                43.2498952
+              ],
+              [
+                11.3319315,
+                43.2532927
+              ],
+              [
+                11.3434128,
+                43.2744597
+              ],
+              [
+                11.3929779,
+                43.2524494
+              ],
+              [
+                11.3789093,
+                43.2770958
+              ],
+              [
+                11.4143733,
+                43.3005366
+              ],
+              [
+                11.4285563,
+                43.3393583
+              ],
+              [
+                11.3327902,
+                43.3663312
+              ],
+              [
+                11.3058053,
+                43.3433289
+              ],
+              [
+                11.2651015,
+                43.352848
+              ],
+              [
+                11.26019,
+                43.3242944
+              ],
+              [
+                11.2365727,
+                43.3243885
+              ],
+              [
+                11.2300025,
+                43.3092099
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

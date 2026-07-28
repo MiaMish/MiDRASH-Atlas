@@ -1,6 +1,7 @@
 package httpapi
 
 import (
+	"context"
 	"encoding/json"
 	"errors"
 	"math"
@@ -57,12 +58,20 @@ func (s *server) locationOverview(w http.ResponseWriter, r *http.Request) {
 		writeError(w, http.StatusMethodNotAllowed, errors.New("GET required"))
 		return
 	}
+	out, err := s.buildLocationOverview(r.Context())
+	if err != nil {
+		writeError(w, http.StatusInternalServerError, err)
+		return
+	}
+	writeJSON(w, http.StatusOK, map[string]any{"locations": out})
+}
+
+func (s *server) buildLocationOverview(ctx context.Context) ([]locationOverview, error) {
 	var placeDocument struct {
 		Places []atlas.PlaceConcept `json:"places"`
 	}
 	if err := readJSONFile(filepath.Join(s.cfg.ExportDir, "places.json"), &placeDocument); err != nil {
-		writeError(w, http.StatusInternalServerError, err)
-		return
+		return nil, err
 	}
 	locations := make(map[string]*locationOverview, len(placeDocument.Places))
 	for _, place := range placeDocument.Places {
@@ -88,10 +97,9 @@ func (s *server) locationOverview(w http.ResponseWriter, r *http.Request) {
 		locations[place.ID] = item
 	}
 	s.applyPilotCandidates(locations)
-	revisions, err := s.locations.ListCurrentAll(r.Context())
+	revisions, err := s.locations.ListCurrentAll(ctx)
 	if err != nil {
-		writeError(w, http.StatusInternalServerError, err)
-		return
+		return nil, err
 	}
 	latest := map[string]locationstore.GeometryRevision{}
 	for _, revision := range revisions {
@@ -129,7 +137,7 @@ func (s *server) locationOverview(w http.ResponseWriter, r *http.Request) {
 	sort.Slice(out, func(i, j int) bool {
 		return strings.ToLower(out[i].PlaceLabel) < strings.ToLower(out[j].PlaceLabel)
 	})
-	writeJSON(w, http.StatusOK, map[string]any{"locations": out})
+	return out, nil
 }
 
 func (s *server) applyPilotCandidates(locations map[string]*locationOverview) {

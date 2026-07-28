@@ -1,0 +1,130 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Bozzolo (Italy)",
+    "retrieved_at": "2026-07-28T13:05:09.990888Z",
+    "cache_key": "c0db11be75d39b78f43123bc49871879703c6c9a48554b54e4ee142aa0aae512",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Bozzolo (Italy)"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 74859544,
+          "osm_type": "relation",
+          "osm_id": 44197,
+          "place_rank": 16,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.4958935680898877,
+          "addresstype": "village",
+          "name": "Bozzolo",
+          "display_name": "Bozzolo, Mantua, Lombardy, 46012, Italy",
+          "address": {
+            "village": "Bozzolo",
+            "county": "Mantua",
+            "ISO3166-2-lvl6": "IT-MN",
+            "state": "Lombardy",
+            "ISO3166-2-lvl4": "IT-25",
+            "postcode": "46012",
+            "country": "Italy",
+            "country_code": "it"
+          },
+          "namedetails": {
+            "name": "Bozzolo",
+            "name:ru": "Боццоло",
+            "name:egl": "Bòsul"
+          }
+        },
+        "bbox": [
+          10.4567751,
+          45.0750754,
+          10.5177306,
+          45.1326095
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                10.4567751,
+                45.1155937
+              ],
+              [
+                10.4796877,
+                45.0750754
+              ],
+              [
+                10.5177306,
+                45.1111037
+              ],
+              [
+                10.4989357,
+                45.1326095
+              ],
+              [
+                10.4567751,
+                45.1155937
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 76716930,
+          "osm_type": "node",
+          "osm_id": 1005331858,
+          "place_rank": 20,
+          "category": "place",
+          "type": "hamlet",
+          "importance": 0.13338496452277407,
+          "addresstype": "hamlet",
+          "name": "Bozzolo",
+          "display_name": "Bozzolo, Brugnato, La Spezia, Liguria, Italy",
+          "address": {
+            "hamlet": "Bozzolo",
+            "village": "Brugnato",
+            "county": "La Spezia",
+            "ISO3166-2-lvl6": "IT-SP",
+            "state": "Liguria",
+            "ISO3166-2-lvl4": "IT-42",
+            "country": "Italy",
+            "country_code": "it"
+          },
+          "namedetails": {
+            "name": "Bozzolo"
+          }
+        },
+        "bbox": [
+          9.6905072,
+          44.2227472,
+          9.7305072,
+          44.2627472
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            9.7105072,
+            44.2427472
+          ]
+        }
+      }
+    ]
+  }
+}

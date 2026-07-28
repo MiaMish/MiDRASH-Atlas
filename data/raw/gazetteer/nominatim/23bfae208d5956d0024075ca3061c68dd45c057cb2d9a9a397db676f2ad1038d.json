@@ -1,0 +1,126 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Worms (Germany)",
+    "retrieved_at": "2026-07-28T13:07:26.200281Z",
+    "cache_key": "23bfae208d5956d0024075ca3061c68dd45c057cb2d9a9a397db676f2ad1038d",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Worms (Germany)"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 124846575,
+          "osm_type": "relation",
+          "osm_id": 62453,
+          "place_rank": 12,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.6212084300088715,
+          "addresstype": "town",
+          "name": "Worms",
+          "display_name": "Worms, Rhineland-Palatinate, Germany",
+          "address": {
+            "town": "Worms",
+            "state": "Rhineland-Palatinate",
+            "ISO3166-2-lvl4": "DE-RP",
+            "country": "Germany",
+            "country_code": "de"
+          },
+          "namedetails": {
+            "name": "Worms",
+            "name:de": "Worms",
+            "name:uk": "Вормс",
+            "name:ja": "ヴォルムス",
+            "name:la": "Borbetomagus",
+            "name:pl": "Wormacja",
+            "name:pfl": "Woms"
+          }
+        },
+        "bbox": [
+          8.2379714,
+          49.5863138,
+          8.4464077,
+          49.7363444
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                8.2379714,
+                49.6275737
+              ],
+              [
+                8.2639238,
+                49.5866722
+              ],
+              [
+                8.3433881,
+                49.5949613
+              ],
+              [
+                8.3581637,
+                49.6089115
+              ],
+              [
+                8.4147809,
+                49.5950115
+              ],
+              [
+                8.3821607,
+                49.627025
+              ],
+              [
+                8.3566439,
+                49.6903939
+              ],
+              [
+                8.4464077,
+                49.7308094
+              ],
+              [
+                8.3507415,
+                49.7304559
+              ],
+              [
+                8.3447019,
+                49.6826512
+              ],
+              [
+                8.2575425,
+                49.6887153
+              ],
+              [
+                8.2789769,
+                49.6551152
+              ],
+              [
+                8.2453936,
+                49.6503408
+              ],
+              [
+                8.2379714,
+                49.6275737
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

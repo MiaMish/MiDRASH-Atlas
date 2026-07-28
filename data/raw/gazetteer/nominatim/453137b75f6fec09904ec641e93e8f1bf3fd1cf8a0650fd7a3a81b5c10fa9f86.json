@@ -1,0 +1,918 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Jerusalem (Israel)",
+    "retrieved_at": "2026-07-28T13:05:56.52497Z",
+    "cache_key": "453137b75f6fec09904ec641e93e8f1bf3fd1cf8a0650fd7a3a81b5c10fa9f86",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Jerusalem (Israel)"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 47768280,
+          "osm_type": "relation",
+          "osm_id": 1381350,
+          "place_rank": 16,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.7779582981863712,
+          "addresstype": "city",
+          "name": "Jerusalem",
+          "display_name": "Jerusalem, Jerusalem Subdistrict, Jerusalem District, Israel",
+          "address": {
+            "city": "Jerusalem",
+            "state_district": "Jerusalem Subdistrict",
+            "state": "Jerusalem District",
+            "ISO3166-2-lvl4": "IL-JM",
+            "country": "Israel",
+            "country_code": "il"
+          },
+          "namedetails": {
+            "name": "ירושלים | القدس",
+            "name:ar": "القدس",
+            "name:br": "Jeruzalem",
+            "name:cs": "Jeruzalém",
+            "name:de": "Jerusalem",
+            "name:el": "Ιερουσαλήμ",
+            "name:en": "Jerusalem",
+            "name:fa": "اورشلیم",
+            "name:fi": "Jerusalem",
+            "name:fr": "Jérusalem",
+            "name:fy": "Jeruzalim",
+            "name:he": "ירושלים",
+            "name:hr": "Jeruzalem",
+            "name:hu": "Jeruzsálem",
+            "name:it": "Gerusalemme",
+            "name:ko": "예루살렘",
+            "name:mi": "Hiruhārama",
+            "name:nl": "Jeruzalem",
+            "name:ro": "Ierusalim",
+            "name:ru": "Иерусалим",
+            "name:sk": "Jeruzalem",
+            "name:tr": "Kudüs",
+            "name:uk": "Єрусалим",
+            "name:ur": "یروشلم",
+            "int_name": "Jerusalem",
+            "loc_name": "Al Quds",
+            "name:chr": "ᏥᎷᏏᎳᎻ",
+            "name:ckb": "قودس",
+            "name:szl": "Jeruzalym",
+            "name:tzl": "Ierusalem",
+            "_place_name": "ירושלים",
+            "alt_name:ur": "بیت المقدس",
+            "official_name": "القدس",
+            "short_name:ur": "القدس",
+            "name:af": "Jerusalem",
+            "name:am": "እየሩሳሌም",
+            "name:an": "Cherusalem",
+            "name:as": "জেৰুজালেম",
+            "name:av": "Байтул Макъдис",
+            "name:az": "Jerusalem",
+            "name:ba": "Ҡотдос",
+            "name:be": "Іерусалім",
+            "name:bg": "Йерусалим",
+            "name:bh": "येरुशलम",
+            "name:bm": "Jerusalem",
+            "name:bn": "জেরুসালেম",
+            "name:bo": "ཇེ་རུ་ས་ལེམ།",
+            "name:bs": "Jerusalem",
+            "name:ca": "Jerusalem",
+            "name:ce": "Къудс-ГӀала",
+            "name:ch": "Jerusalem",
+            "name:co": "Ghjerusaleme",
+            "name:cr": "ᒉᕒᐅᓴᓬᐊᒼ",
+            "name:cu": "Їєроусалимъ",
+            "name:cv": "Иерусалим",
+            "name:cy": "Jeriwsalem",
+            "name:da": "Jerusalem",
+            "name:dv": "ޤުދުސް",
+            "name:eo": "Jerusalemo",
+            "name:es": "Jerusalén",
+            "name:et": "Jeruusalemm",
+            "name:eu": "Jerusalem",
+            "name:fj": "Jerusalemi",
+            "name:fo": "Jerúsalem",
+            "name:ga": "Iarúsailéim",
+            "name:gd": "Ierusalem",
+            "name:gl": "Xerusalén",
+            "name:gn": "Herusalẽ",
+            "name:gv": "Jerusalem",
+            "name:ha": "Jerusalem",
+            "name:hi": "यरुशलम",
+            "name:ht": "Jerizalèm",
+            "name:hy": "Երուսաղեմ",
+            "name:ia": "Jerusalem",
+            "name:id": "Yerusalem",
+            "name:ie": "Jerusalem",
+            "name:ig": "Jerusalem",
+            "name:io": "Ierusalem",
+            "name:is": "Jerúsalem",
+            "name:ja": "エルサレム",
+            "name:jv": "Yérusalem",
+            "name:ka": "იერუსალიმი",
+            "name:ki": "Jerusalem",
+            "name:kk": "Әл-Құдыс",
+            "name:km": "យេរូសាឡឹម",
+            "name:kn": "ಜೆರುಸಲೆಂ",
+            "name:ks": "یروشلم",
+            "name:ku": "Orşelîm",
+            "name:kv": "Иерусалим",
+            "name:kw": "Jerusalem",
+            "name:ky": "Кудус",
+            "name:la": "Hierosolyma",
+            "name:lb": "Jerusalem",
+            "name:li": "Jeruzalem",
+            "name:ln": "Yerusalémi",
+            "name:lo": "ເຢ​ຣູ​ຊາ​ເລັມ",
+            "name:lt": "Jeruzalė",
+            "name:lv": "Jeruzāleme",
+            "name:mg": "Jerosalema",
+            "_place_name:mi": "Hiruharama",
+            "name:mk": "Ерусалим",
+            "name:ml": "യെരുശലേം",
+            "name:mn": "Иерусалим",
+            "name:mr": "जेरुसलेम",
+            "name:ms": "Baitulmuqaddis",
+            "name:mt": "Ġerusalemm",
+            "name:my": "ဂျေရုဆလင်မြို့",
+            "name:nb": "Jerusalem",
+            "name:ne": "जेरुसेलम",
+            "name:nn": "Jerusalem",
+            "name:no": "Jerusalem",
+            "name:ny": "Jerusalem",
+            "name:oc": "Jerusalèm",
+            "name:or": "ଜେରୁସାଲେମ",
+            "name:os": "Иерусалим",
+            "name:pa": "ਜੇਰੂਸਲਮ",
+            "name:pl": "Jerozolima",
+            "name:ps": "بيت المقدس",
+            "name:pt": "Jerusalém",
+            "name:qu": "Yerushalayim",
+            "name:rm": "Jerusalem",
+            "name:rn": "Jerusalem",
+            "name:rw": "Yerusalemu",
+            "name:sc": "Gerusalemme",
+            "name:sd": "بيت المقدس",
+            "name:sh": "Jeruzalem",
+            "name:sl": "Jeruzalem",
+            "name:sm": "Ierusalema",
+            "name:sn": "Jerusalem",
+            "name:so": "Qudus",
+            "name:sq": "Jeruzalemi",
+            "name:sr": "Јерусалим",
+            "name:su": "Yerusalem",
+            "name:sv": "Jerusalem",
+            "name:sw": "Yerusalemu",
+            "name:ta": "யெரூசலம்",
+            "name:te": "జెరూసలేం",
+            "name:tg": "Уршалим",
+            "name:th": "เยรูซาเลม",
+            "name:tk": "Iýerusalim",
+            "name:tl": "Herusalem",
+            "name:tt": "Иерусалим",
+            "name:ug": "يېرۇسالېم",
+            "name:uz": "Quddus",
+            "name:vi": "Jerusalem",
+            "name:vo": "Hierusalem",
+            "name:wa": "Djeruzalem",
+            "name:wo": "Jerusalem",
+            "name:xh": "IJerusalem",
+            "name:yi": "ירושלים",
+            "name:yo": "Jerúsálẹ́mù",
+            "name:zh": "耶路撒冷",
+            "name:zu": "IYerusalem",
+            "name:ace": "Yerusalem",
+            "name:als": "Jerusalem",
+            "name:ang": "Ierusalem",
+            "name:arc": "ܐܘܪܫܠܡ",
+            "name:arz": "القدس",
+            "name:ast": "Xerusalén",
+            "name:azb": "بیت‌المقدس",
+            "name:bar": "Jerusalem",
+            "name:bcl": "Herusalem",
+            "name:bjn": "Baitul Maqdis",
+            "name:bxr": "Иерусалим",
+            "name:cdo": "Ià-lô-sák-lēng",
+            "name:ceb": "Jerusalen",
+            "_place_name:ckb": "ئۆرشەلیم",
+            "name:crh": "Jerusalem",
+            "name:csb": "Jerozolëma",
+            "name:diq": "Urşelim",
+            "name:dsb": "Jeruzalem",
+            "name:dty": "जेरुशलम",
+            "name:ext": "Jerusalén",
+            "name:frr": "Jerusalem",
+            "name:fur": "Jerusalem",
+            "name:gan": "耶路撒冷",
+            "name:gcr": "Jérusalem",
+            "name:got": "𐌹𐌰𐌹𐍂𐌿𐍃𐌰𐌿𐌻𐍅𐌼𐌰",
+            "name:hak": "Yâ-lu-sat-lâng",
+            "name:hif": "Jerusalem",
+            "name:hsb": "Jeruzalem",
+            "name:ilo": "Herusalem",
+            "name:inh": "Байтулмакъдис",
+            "name:jam": "Jiruusalem",
+            "name:kaa": "Jerusalem",
+            "name:kab": "Orcalim",
+            "name:kbp": "Jeruzalɛm",
+            "name:lad": "Yerushalayim",
+            "name:lez": "Иерусалим",
+            "name:lfn": "Ieruxalim",
+            "name:lij": "Gerusalemme",
+            "name:lld": "Ierusalem",
+            "name:lmo": "Gerüsalem",
+            "name:mai": "जेरुसेलम",
+            "name:mdf": "Ерусалим",
+            "name:mhr": "Иерусалим",
+            "name:mwl": "Jarusalen",
+            "name:myv": "Иерусалим",
+            "name:mzn": "قدس",
+            "name:nah": "Ierusalem",
+            "name:nan": "Iâ-lō͘-sat-léng",
+            "name:nap": "Gierusalemme",
+            "name:nds": "Jerusalem",
+            "name:nov": "Jerusalem",
+            "name:nrm": "Jérusalem",
+            "name:olo": "Jerusalimu",
+            "name:pap": "Herusalem",
+            "name:pih": "Jeruusalem",
+            "name:pms": "Gerusalem",
+            "name:pnb": "یروشلم",
+            "name:pnt": "Ιερουσαλήμ",
+            "name:rmy": "Jerusalem",
+            "name:rue": "Єрусалим",
+            "name:sah": "Иерусалим",
+            "name:sat": "ᱡᱮᱨᱩᱥᱟᱞᱤᱢ",
+            "name:scn": "Girusalemmi",
+            "name:sco": "Jerusalem",
+            "name:smn": "Jerusalem",
+            "name:srn": "Jerusalem",
+            "name:stq": "Jerusalem",
+            "_place_name:szl": "Jerozolima",
+            "name:tpi": "Yerusalem",
+            "name:tum": "Jerusalem",
+            "name:udm": "Иерусалим",
+            "name:vec": "Hierusalem",
+            "name:vep": "Jerusalim",
+            "name:vro": "Jeruusalemm",
+            "name:wal": "Iyyerusaalame",
+            "name:war": "Jerusalem",
+            "name:wuu": "耶路撒冷",
+            "name:xmf": "იერუსალიმი",
+            "name:yue": "耶路撒冷",
+            "name:zea": "Jeruzalem",
+            "alt_name:ar": "أورشليم",
+            "alt_name:fa": "بیت المقدس;قدس",
+            "alt_name:he": "יְרוּשָׁלַיִם",
+            "alt_name:is": "Jórsalir;Jórsalaborg",
+            "alt_name:ku": "Quds",
+            "alt_name:ml": "അൽ-ഖുദ്സ്;ഊർശ്ലേം",
+            "_place_alt_name:ur": "بیت المقدس;القدس",
+            "alt_name:vi": "Giêrusalem",
+            "name:bat-smg": "Jerozalė",
+            "name:zh-Hant": "耶路撒冷",
+            "name:roa-tara": "Gerusalemme",
+            "name:be-tarask": "Ерусалім"
+          }
+        },
+        "bbox": [
+          35.0852011,
+          31.7096214,
+          35.2650458,
+          31.8826655
+        ],
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  35.0852011,
+                  31.7501641
+                ],
+                [
+                  35.0963866,
+                  31.7397296
+                ],
+                [
+                  35.127622,
+                  31.7492234
+                ],
+                [
+                  35.0943946,
+                  31.7605663
+                ],
+                [
+                  35.0852011,
+                  31.7501641
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  35.1252375,
+                  31.7760529
+                ],
+                [
+                  35.160528,
+                  31.7560802
+                ],
+                [
+                  35.1370378,
+                  31.7291683
+                ],
+                [
+                  35.2390761,
+                  31.7096214
+                ],
+                [
+                  35.263365,
+                  31.7485727
+                ],
+                [
+                  35.2517454,
+                  31.7701832
+                ],
+                [
+                  35.2650458,
+                  31.8255465
+                ],
+                [
+                  35.2510405,
+                  31.843904
+                ],
+                [
+                  35.2300735,
+                  31.8426476
+                ],
+                [
+                  35.2230116,
+                  31.8788275
+                ],
+                [
+                  35.2070444,
+                  31.8816621
+                ],
+                [
+                  35.2151245,
+                  31.8190393
+                ],
+                [
+                  35.1841421,
+                  31.8259395
+                ],
+                [
+                  35.1876283,
+                  31.8093707
+                ],
+                [
+                  35.1406885,
+                  31.7814314
+                ],
+                [
+                  35.1332508,
+                  31.7933673
+                ],
+                [
+                  35.1252375,
+                  31.7760529
+                ]
+              ],
+              [
+                [
+                  35.1435298,
+                  31.7734163
+                ],
+                [
+                  35.163925,
+                  31.7911032
+                ],
+                [
+                  35.1801003,
+                  31.7803997
+                ],
+                [
+                  35.1435298,
+                  31.7734163
+                ]
+              ],
+              [
+                [
+                  35.2197455,
+                  31.7340136
+                ],
+                [
+                  35.2164622,
+                  31.7442948
+                ],
+                [
+                  35.2251155,
+                  31.7407977
+                ],
+                [
+                  35.2197455,
+                  31.7340136
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 48319310,
+          "osm_type": "relation",
+          "osm_id": 6502363,
+          "place_rank": 25,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.7779582981863712,
+          "addresstype": "city",
+          "name": "Jerusalem",
+          "display_name": "Jerusalem, Jerusalem Subdistrict, Jerusalem District, Israel",
+          "address": {
+            "city": "Jerusalem",
+            "state_district": "Jerusalem Subdistrict",
+            "state": "Jerusalem District",
+            "ISO3166-2-lvl4": "IL-JM",
+            "country": "Israel",
+            "country_code": "il"
+          },
+          "namedetails": {
+            "name": "ירושלים",
+            "name:ar": "بيت المقدس",
+            "name:de": "Jerusalem",
+            "name:en": "Jerusalem",
+            "name:es": "Jerusalén",
+            "name:fa": "اورشلیم",
+            "name:fi": "Jerusalem",
+            "name:fr": "Jérusalem",
+            "name:he": "ירושלים",
+            "name:hi": "यरुशलम",
+            "name:hu": "Jeruzsálem",
+            "name:it": "Gerusalemme",
+            "name:la": "Hyerosolyma",
+            "name:ml": "യെറുശലേം",
+            "name:ru": "Иерусалим",
+            "name:ta": "எருசலேம்",
+            "name:uk": "Єрусалим",
+            "name:ur": "یروشلم",
+            "name:vi": "Giêrusalem",
+            "name:chr": "ᏥᎷᏏᎳᎻ",
+            "name:szl": "Jeruzalym",
+            "alt_name:ar": "القدس",
+            "alt_name:en": "Quds;Al-Quds;Al Quds;Bayt al-Maqdis;Bayt al-Maqdes;Bayt al-Muqaddas;Beit al-Maqdis;Beit el-Maqdis;Beit el-Maqdes;Bait al-Maqdis;Bait el-Maqdis;Bait el-Maqdes;Beit Maqdis;Beyt al-Maqdis;Baytul Maqdis;Baytul-Maqdis;Beitul Maqdis;Baitul Maqdis;B"
+          }
+        },
+        "bbox": [
+          35.1523819,
+          31.7170441,
+          35.2612210,
+          31.8597262
+        ],
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  35.1529904,
+                  31.7696871
+                ],
+                [
+                  35.1542242,
+                  31.7684026
+                ],
+                [
+                  35.1546362,
+                  31.768531
+                ],
+                [
+                  35.1529904,
+                  31.7696871
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  35.1551278,
+                  31.7644043
+                ],
+                [
+                  35.1739484,
+                  31.7454816
+                ],
+                [
+                  35.1957719,
+                  31.7498847
+                ],
+                [
+                  35.1893744,
+                  31.7428614
+                ],
+                [
+                  35.194255,
+                  31.7385851
+                ],
+                [
+                  35.191815,
+                  31.7311206
+                ],
+                [
+                  35.1755054,
+                  31.7407133
+                ],
+                [
+                  35.18154,
+                  31.7303127
+                ],
+                [
+                  35.1968118,
+                  31.7274446
+                ],
+                [
+                  35.2119867,
+                  31.7382332
+                ],
+                [
+                  35.231591,
+                  31.7172494
+                ],
+                [
+                  35.2240712,
+                  31.7297119
+                ],
+                [
+                  35.2437705,
+                  31.7286809
+                ],
+                [
+                  35.2340447,
+                  31.7424953
+                ],
+                [
+                  35.2471805,
+                  31.7347579
+                ],
+                [
+                  35.2405318,
+                  31.7483866
+                ],
+                [
+                  35.2517842,
+                  31.7392499
+                ],
+                [
+                  35.2543396,
+                  31.7504423
+                ],
+                [
+                  35.256641,
+                  31.7982687
+                ],
+                [
+                  35.2444072,
+                  31.8014385
+                ],
+                [
+                  35.2405789,
+                  31.8100674
+                ],
+                [
+                  35.2557442,
+                  31.8106567
+                ],
+                [
+                  35.2396449,
+                  31.8178546
+                ],
+                [
+                  35.261221,
+                  31.8217894
+                ],
+                [
+                  35.2362524,
+                  31.8350307
+                ],
+                [
+                  35.2506935,
+                  31.8433199
+                ],
+                [
+                  35.2323136,
+                  31.8404383
+                ],
+                [
+                  35.2151844,
+                  31.8590351
+                ],
+                [
+                  35.226168,
+                  31.8095406
+                ],
+                [
+                  35.2133612,
+                  31.8171865
+                ],
+                [
+                  35.2051643,
+                  31.7957643
+                ],
+                [
+                  35.170113,
+                  31.788721
+                ],
+                [
+                  35.1908805,
+                  31.7841099
+                ],
+                [
+                  35.1691415,
+                  31.7745385
+                ],
+                [
+                  35.1803731,
+                  31.7701599
+                ],
+                [
+                  35.1551278,
+                  31.7644043
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  35.191647,
+                  31.8265161
+                ],
+                [
+                  35.1968178,
+                  31.8062386
+                ],
+                [
+                  35.2105165,
+                  31.8134089
+                ],
+                [
+                  35.191647,
+                  31.8265161
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 47738124,
+          "osm_type": "relation",
+          "osm_id": 1384720,
+          "place_rank": 8,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.5313134050100777,
+          "addresstype": "state",
+          "name": "Jerusalem District",
+          "display_name": "Jerusalem District, Israel",
+          "address": {
+            "state": "Jerusalem District",
+            "ISO3166-2-lvl4": "IL-JM",
+            "country": "Israel",
+            "country_code": "il"
+          },
+          "namedetails": {
+            "name": "מחוז ירושלים",
+            "name:af": "Jerusalem-distrik",
+            "name:an": "Districto de Cherusalem",
+            "name:ar": "منطقة القدس",
+            "name:az": "Yerusəlim dairəsi",
+            "name:bg": "Йерусалимски окръг",
+            "name:br": "Distrig Jeruzalem",
+            "name:ca": "Districte de Jerusalem",
+            "name:ce": "Къудс-ГӀалин кӀошт",
+            "name:cs": "Jeruzalémský distrikt",
+            "name:da": "Jerusalem-distriktet",
+            "name:de": "Bezirk Jerusalem",
+            "name:el": "Διαμέρισμα των Ιεροσολύμων",
+            "name:en": "Jerusalem District",
+            "name:eo": "Distrikto Jerusalemo",
+            "name:es": "Distrito de Jerusalén",
+            "name:et": "Jeruusalemma ringkond",
+            "name:eu": "Jerusalemgo barrutia",
+            "name:fa": "استان اورشلیم",
+            "name:fi": "Jerusalemin hallintoalue",
+            "name:fr": "District de Jérusalem",
+            "name:gl": "Distrito de Xerusalén",
+            "name:gv": "Slyst Jerusalem",
+            "name:he": "מחוז ירושלים",
+            "name:hu": "Jeruzsálemi körzet",
+            "name:hy": "Երուսաղեմի մարզ",
+            "name:id": "Distrik Yerusalem",
+            "name:it": "Distretto di Gerusalemme",
+            "name:ja": "エルサレム地区",
+            "name:kk": "Иерусалим округі",
+            "name:ko": "예루살렘구",
+            "name:lt": "Jeruzalės apygarda",
+            "name:lv": "Jeruzalemes apgabals",
+            "name:mk": "Ерусалим (округ)",
+            "name:mn": "Иерусалим дүүрэг",
+            "name:ms": "Daerah Jerusalem",
+            "name:nl": "Jeruzalem (district)",
+            "name:nn": "Jerusalem distrikt",
+            "name:no": "Jerusalem-distriktet",
+            "name:pl": "Jerozolima (dystrykt)",
+            "name:pt": "Distrito de Jerusalém",
+            "name:qu": "Yerushalayim distritu",
+            "name:ro": "Districtul Ierusalim",
+            "name:ru": "Иерусалимский округ",
+            "name:sk": "okres Jeruzalem",
+            "name:sr": "Јерусалим (округ)",
+            "name:sv": "Jerusalem (distrikt)",
+            "name:ta": "எருசலேம் மாவட்டம்",
+            "name:tr": "Kudüs Bölgesi",
+            "name:uk": "Єрусалимський округ",
+            "name:ur": "ضلع یروشلم",
+            "name:vi": "Quận Jerusalem",
+            "name:yi": "ירושלים דיסטריקט",
+            "name:zh": "耶路撒冷区",
+            "int_name": "Jerusalem District",
+            "name:ast": "Distritu de Xerusalén",
+            "name:bar": "Beziak Jerusalem",
+            "name:ceb": "Jerusalem (distrito)",
+            "name:frr": "Jerusalem (Distrikt)",
+            "name:lad": "Distrito de Yerushalayim",
+            "name:nan": "Jerusalem Koān",
+            "name:pfl": "Bezirk Jerusalem",
+            "name:pnb": "یروشلم ضلع",
+            "name:sco": "Jerusalem Destrict",
+            "name:war": "Jerusalem (distrito)",
+            "name:wuu": "耶路撒冷区",
+            "name:xmf": "იერუსალიმიშ რაიონი",
+            "ISO3166-2": "IL-JM",
+            "alt_name:pt": "Jerusalém (distrito)",
+            "name:zh-Hans": "耶路撒冷区",
+            "name:zh-Hant": "耶路撒冷區",
+            "name:be-tarask": "Ерусалімская акруга"
+          }
+        },
+        "bbox": [
+          34.8348609,
+          31.6030291,
+          35.2650458,
+          31.8826655
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                34.8348609,
+                31.7838636
+              ],
+              [
+                34.8397293,
+                31.7561549
+              ],
+              [
+                34.8753762,
+                31.7490095
+              ],
+              [
+                34.8593464,
+                31.7318804
+              ],
+              [
+                34.8716385,
+                31.7148387
+              ],
+              [
+                34.8659698,
+                31.6681961
+              ],
+              [
+                34.9609212,
+                31.6030291
+              ],
+              [
+                35.0052822,
+                31.6519365
+              ],
+              [
+                35.0852791,
+                31.6906106
+              ],
+              [
+                35.1337097,
+                31.7341573
+              ],
+              [
+                35.2427696,
+                31.7122357
+              ],
+              [
+                35.263365,
+                31.7485727
+              ],
+              [
+                35.2517454,
+                31.7701832
+              ],
+              [
+                35.2650458,
+                31.8255465
+              ],
+              [
+                35.2510405,
+                31.843904
+              ],
+              [
+                35.2300735,
+                31.8426476
+              ],
+              [
+                35.2101191,
+                31.8823091
+              ],
+              [
+                35.2158685,
+                31.8207011
+              ],
+              [
+                35.1841421,
+                31.8259395
+              ],
+              [
+                35.1876283,
+                31.8093707
+              ],
+              [
+                35.1071809,
+                31.8238548
+              ],
+              [
+                35.0727968,
+                31.8560054
+              ],
+              [
+                35.0161731,
+                31.8284716
+              ],
+              [
+                34.977775,
+                31.8326068
+              ],
+              [
+                34.9993393,
+                31.8541412
+              ],
+              [
+                34.9615826,
+                31.8544563
+              ],
+              [
+                34.9100789,
+                31.8318193
+              ],
+              [
+                34.9137611,
+                31.8133919
+              ],
+              [
+                34.8398146,
+                31.8016203
+              ],
+              [
+                34.8519792,
+                31.7871076
+              ],
+              [
+                34.8348609,
+                31.7838636
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Venice (Italy)",
+    "retrieved_at": "2026-07-28T13:07:19.264203Z",
+    "cache_key": "ece611fb0457f31e4d73440f222f6bab844f38c0b51afd160571b8f5b757984e",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Venice (Italy)"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 67972610,
+          "osm_type": "node",
+          "osm_id": 2440869534,
+          "place_rank": 30,
+          "category": "amenity",
+          "type": "restaurant",
+          "importance": 7.381322957193893e-05,
+          "addresstype": "amenity",
+          "name": "Venice-Italy",
+          "display_name": "Venice-Italy, 10, Vinzenz-Muchitsch-Straße, Triestersiedlung, Katastralgemeinde Gries, Gries, Graz, Styria, 8020, Austria",
+          "address": {
+            "amenity": "Venice-Italy",
+            "house_number": "10",
+            "road": "Vinzenz-Muchitsch-Straße",
+            "neighbourhood": "Triestersiedlung",
+            "suburb": "Gries",
+            "city": "Graz",
+            "state": "Styria",
+            "ISO3166-2-lvl4": "AT-6",
+            "postcode": "8020",
+            "country": "Austria",
+            "country_code": "at"
+          },
+          "namedetails": {
+            "name": "Venice-Italy",
+            "name:de": "Venice-Italy",
+            "old_name": "Felicita"
+          }
+        },
+        "bbox": [
+          15.4262478,
+          47.0541482,
+          15.4263478,
+          47.0542482
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            15.4262978,
+            47.0541982
+          ]
+        }
+      }
+    ]
+  }
+}

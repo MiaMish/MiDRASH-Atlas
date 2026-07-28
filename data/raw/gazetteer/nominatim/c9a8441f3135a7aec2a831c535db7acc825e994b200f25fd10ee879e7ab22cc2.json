@@ -1,0 +1,565 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Arles (France)",
+    "retrieved_at": "2026-07-28T13:04:59.87704Z",
+    "cache_key": "c9a8441f3135a7aec2a831c535db7acc825e994b200f25fd10ee879e7ab22cc2",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Arles (France)"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 82845583,
+          "osm_type": "relation",
+          "osm_id": 73911,
+          "place_rank": 16,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.6237976727653284,
+          "addresstype": "town",
+          "name": "Arles",
+          "display_name": "Arles, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, Metropolitan France, 13200, France",
+          "address": {
+            "town": "Arles",
+            "municipality": "Arles",
+            "county": "Bouches-du-Rhône",
+            "ISO3166-2-lvl6": "FR-13",
+            "state": "Provence-Alpes-Côte d'Azur",
+            "ISO3166-2-lvl4": "FR-PAC",
+            "region": "Metropolitan France",
+            "postcode": "13200",
+            "country": "France",
+            "country_code": "fr"
+          },
+          "namedetails": {
+            "name": "Arles",
+            "name:el": "Αρλ",
+            "name:fr": "Arles",
+            "name:oc": "Arle",
+            "name:ar": "أرلش",
+            "name:ca": "Arle",
+            "name:hi": "अर्ल्स",
+            "name:hy": "Առլ",
+            "name:ja": "アルル",
+            "name:ka": "არლი",
+            "name:ko": "아를",
+            "name:la": "Arelate",
+            "name:ru": "Арль",
+            "name:th": "อาร์ล",
+            "name:uk": "Арль",
+            "name:zh": "阿尔勒",
+            "old_name:it": "Arle;Arli"
+          }
+        },
+        "bbox": [
+          4.4260793,
+          43.3303334,
+          4.8763523,
+          43.7604071
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                4.4260793,
+                43.6232487
+              ],
+              [
+                4.4741848,
+                43.6102295
+              ],
+              [
+                4.4487264,
+                43.5834011
+              ],
+              [
+                4.4770181,
+                43.5555675
+              ],
+              [
+                4.5037718,
+                43.5803488
+              ],
+              [
+                4.5777006,
+                43.5655882
+              ],
+              [
+                4.6235857,
+                43.5736025
+              ],
+              [
+                4.6428097,
+                43.5364568
+              ],
+              [
+                4.6330514,
+                43.5147971
+              ],
+              [
+                4.6444785,
+                43.4853797
+              ],
+              [
+                4.6210603,
+                43.4709404
+              ],
+              [
+                4.6204734,
+                43.4175902
+              ],
+              [
+                4.557088,
+                43.3905289
+              ],
+              [
+                4.5596817,
+                43.3748758
+              ],
+              [
+                4.6598085,
+                43.3455344
+              ],
+              [
+                4.7510865,
+                43.3508358
+              ],
+              [
+                4.8402821,
+                43.3329145
+              ],
+              [
+                4.8311333,
+                43.3685999
+              ],
+              [
+                4.7339205,
+                43.429073
+              ],
+              [
+                4.7700661,
+                43.4773622
+              ],
+              [
+                4.8374483,
+                43.4624069
+              ],
+              [
+                4.8763523,
+                43.4943676
+              ],
+              [
+                4.7615214,
+                43.5909037
+              ],
+              [
+                4.7488688,
+                43.626205
+              ],
+              [
+                4.7667352,
+                43.6373195
+              ],
+              [
+                4.7773133,
+                43.6828845
+              ],
+              [
+                4.7667718,
+                43.6922562
+              ],
+              [
+                4.6693895,
+                43.6956777
+              ],
+              [
+                4.6513564,
+                43.7120578
+              ],
+              [
+                4.6789026,
+                43.7300127
+              ],
+              [
+                4.6258295,
+                43.7583285
+              ],
+              [
+                4.6118501,
+                43.7229135
+              ],
+              [
+                4.6275084,
+                43.6854578
+              ],
+              [
+                4.5384789,
+                43.7075706
+              ],
+              [
+                4.4899209,
+                43.700176
+              ],
+              [
+                4.4260793,
+                43.6232487
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 84455127,
+          "osm_type": "relation",
+          "osm_id": 2924277,
+          "place_rank": 16,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.5317242506344129,
+          "addresstype": "village",
+          "name": "Arles-sur-Tech",
+          "display_name": "Arles-sur-Tech, Céret, Pyrénées-Orientales, Occitania, Metropolitan France, 66150, France",
+          "address": {
+            "village": "Arles-sur-Tech",
+            "municipality": "Céret",
+            "county": "Pyrénées-Orientales",
+            "ISO3166-2-lvl6": "FR-66",
+            "state": "Occitania",
+            "ISO3166-2-lvl4": "FR-OCC",
+            "region": "Metropolitan France",
+            "postcode": "66150",
+            "country": "France",
+            "country_code": "fr"
+          },
+          "namedetails": {
+            "name": "Arles-sur-Tech",
+            "name:ca": "Arles",
+            "name:el": "Αρλ-συρ-Τεκ",
+            "name:fr": "Arles-sur-Tech",
+            "_place_name:fr": "Arles-sur-Tech"
+          }
+        },
+        "bbox": [
+          2.5798583,
+          42.4138708,
+          2.6658015,
+          42.4919209
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                2.5798583,
+                42.4860323
+              ],
+              [
+                2.6165915,
+                42.4604489
+              ],
+              [
+                2.5917971,
+                42.4298257
+              ],
+              [
+                2.6487082,
+                42.4201064
+              ],
+              [
+                2.6637844,
+                42.4733733
+              ],
+              [
+                2.5798583,
+                42.4860323
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 82938833,
+          "osm_type": "relation",
+          "osm_id": 1686524,
+          "place_rank": 14,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.4970627747091265,
+          "addresstype": "municipality",
+          "name": "Arles",
+          "display_name": "Arles, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, Metropolitan France, France",
+          "address": {
+            "municipality": "Arles",
+            "county": "Bouches-du-Rhône",
+            "ISO3166-2-lvl6": "FR-13",
+            "state": "Provence-Alpes-Côte d'Azur",
+            "ISO3166-2-lvl4": "FR-PAC",
+            "region": "Metropolitan France",
+            "country": "France",
+            "country_code": "fr"
+          },
+          "namedetails": {
+            "name": "Arles",
+            "name:el": "Αρλ",
+            "name:fr": "Arles",
+            "name:oc": "Arle",
+            "official_name": "Arrondissement d'Arles"
+          }
+        },
+        "bbox": [
+          4.2301364,
+          43.3303334,
+          5.0907728,
+          43.9245884
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                4.2301364,
+                43.4604735
+              ],
+              [
+                4.5366769,
+                43.4514534
+              ],
+              [
+                4.5869939,
+                43.4232935
+              ],
+              [
+                4.5879021,
+                43.4005078
+              ],
+              [
+                4.5523028,
+                43.3857699
+              ],
+              [
+                4.5828014,
+                43.3626238
+              ],
+              [
+                4.6598085,
+                43.3455344
+              ],
+              [
+                4.7724407,
+                43.3491823
+              ],
+              [
+                4.8372023,
+                43.3304661
+              ],
+              [
+                4.8311333,
+                43.3685999
+              ],
+              [
+                4.7343548,
+                43.4277243
+              ],
+              [
+                4.7498922,
+                43.4618199
+              ],
+              [
+                4.7795102,
+                43.4794696
+              ],
+              [
+                4.853924,
+                43.4659304
+              ],
+              [
+                4.8815214,
+                43.4979493
+              ],
+              [
+                4.9288783,
+                43.5105086
+              ],
+              [
+                4.879767,
+                43.5414497
+              ],
+              [
+                4.8829309,
+                43.5783683
+              ],
+              [
+                4.9202075,
+                43.6164331
+              ],
+              [
+                4.9886103,
+                43.6183322
+              ],
+              [
+                4.9540813,
+                43.6390688
+              ],
+              [
+                4.9826328,
+                43.6830565
+              ],
+              [
+                4.9819095,
+                43.7178515
+              ],
+              [
+                4.9535626,
+                43.7282924
+              ],
+              [
+                5.0907728,
+                43.7721131
+              ],
+              [
+                5.0463013,
+                43.7911469
+              ],
+              [
+                5.0300665,
+                43.8271999
+              ],
+              [
+                4.9666139,
+                43.8712257
+              ],
+              [
+                4.853161,
+                43.9113788
+              ],
+              [
+                4.7396309,
+                43.9245884
+              ],
+              [
+                4.6926734,
+                43.8845143
+              ],
+              [
+                4.6415066,
+                43.8674231
+              ],
+              [
+                4.641253,
+                43.851102
+              ],
+              [
+                4.6668374,
+                43.8473227
+              ],
+              [
+                4.6422758,
+                43.8311599
+              ],
+              [
+                4.6522471,
+                43.7854105
+              ],
+              [
+                4.6122293,
+                43.7258736
+              ],
+              [
+                4.6275084,
+                43.6854578
+              ],
+              [
+                4.5384789,
+                43.7075706
+              ],
+              [
+                4.4861445,
+                43.6987222
+              ],
+              [
+                4.4262285,
+                43.6245821
+              ],
+              [
+                4.4735275,
+                43.6110616
+              ],
+              [
+                4.4607245,
+                43.5892532
+              ],
+              [
+                4.4233692,
+                43.5844198
+              ],
+              [
+                4.4028163,
+                43.5731994
+              ],
+              [
+                4.4166376,
+                43.5706402
+              ],
+              [
+                4.4091005,
+                43.5609853
+              ],
+              [
+                4.3342317,
+                43.5354913
+              ],
+              [
+                4.3165188,
+                43.5443192
+              ],
+              [
+                4.3231069,
+                43.5537627
+              ],
+              [
+                4.3141169,
+                43.5556683
+              ],
+              [
+                4.3078865,
+                43.5454884
+              ],
+              [
+                4.3244736,
+                43.528287
+              ],
+              [
+                4.2393683,
+                43.4989045
+              ],
+              [
+                4.2301364,
+                43.4604735
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

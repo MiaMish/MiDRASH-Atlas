@@ -1,0 +1,157 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Legnano (Italy)",
+    "retrieved_at": "2026-07-28T13:06:03.076274Z",
+    "cache_key": "73fa9cec283fe92d18e0b21cfe19c07c2187131414a8eb8a49b539d58d89a37e",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Legnano (Italy)"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 75978866,
+          "osm_type": "relation",
+          "osm_id": 45380,
+          "place_rank": 16,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.5873033352962937,
+          "addresstype": "town",
+          "name": "Legnano",
+          "display_name": "Legnano, Milan, Lombardy, 20025, Italy",
+          "address": {
+            "town": "Legnano",
+            "county": "Milan",
+            "ISO3166-2-lvl6": "IT-MI",
+            "state": "Lombardy",
+            "ISO3166-2-lvl4": "IT-25",
+            "postcode": "20025",
+            "country": "Italy",
+            "country_code": "it"
+          },
+          "namedetails": {
+            "name": "Legnano",
+            "name:ru": "Леньяно",
+            "name:lmo": "Legnan",
+            "old_name:de": "Ligni",
+            "name:de": "Ligni",
+            "name:it": "Legnano"
+          }
+        },
+        "bbox": [
+          8.8656125,
+          45.5680042,
+          8.9463512,
+          45.6236078
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                8.8656125,
+                45.5760693
+              ],
+              [
+                8.9244151,
+                45.5753262
+              ],
+              [
+                8.9463512,
+                45.6019813
+              ],
+              [
+                8.9290451,
+                45.6098355
+              ],
+              [
+                8.942194,
+                45.6196698
+              ],
+              [
+                8.8720282,
+                45.5976158
+              ],
+              [
+                8.8656125,
+                45.5760693
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 420699740,
+          "osm_type": "way",
+          "osm_id": 1530333910,
+          "place_rank": 16,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.1867264507515068,
+          "addresstype": "city",
+          "name": "Legnano",
+          "display_name": "Legnano, Milan, Lombardy, Italy",
+          "address": {
+            "city": "Legnano",
+            "county": "Milan",
+            "ISO3166-2-lvl6": "IT-MI",
+            "state": "Lombardy",
+            "ISO3166-2-lvl4": "IT-25",
+            "country": "Italy",
+            "country_code": "it"
+          },
+          "namedetails": {
+            "name:left": "Legnano",
+            "name:right": "Cerro Maggiore"
+          }
+        },
+        "bbox": [
+          8.9372177,
+          45.6108659,
+          8.9375053,
+          45.6109674
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                8.9374604,
+                45.6109674
+              ],
+              [
+                8.9372314,
+                45.6108659
+              ],
+              [
+                8.9375053,
+                45.6108943
+              ],
+              [
+                8.9374604,
+                45.6109674
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

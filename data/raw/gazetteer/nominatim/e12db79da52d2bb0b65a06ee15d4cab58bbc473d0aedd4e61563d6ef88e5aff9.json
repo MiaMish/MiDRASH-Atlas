@@ -1,0 +1,152 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Uncastillo (Spain)",
+    "retrieved_at": "2026-07-28T13:07:16.243462Z",
+    "cache_key": "e12db79da52d2bb0b65a06ee15d4cab58bbc473d0aedd4e61563d6ef88e5aff9",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Uncastillo (Spain)"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 292133501,
+          "osm_type": "relation",
+          "osm_id": 342411,
+          "place_rank": 16,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.5409163289610414,
+          "addresstype": "village",
+          "name": "Uncastillo",
+          "display_name": "Uncastillo, Cinco Villas, Zaragoza, Aragon, 50678, Spain",
+          "address": {
+            "village": "Uncastillo",
+            "county": "Cinco Villas",
+            "province": "Zaragoza",
+            "ISO3166-2-lvl6": "ES-Z",
+            "state": "Aragon",
+            "ISO3166-2-lvl4": "ES-AR",
+            "postcode": "50678",
+            "country": "Spain",
+            "country_code": "es"
+          },
+          "namedetails": {
+            "name": "Uncastillo",
+            "name:de": "Uncastillo",
+            "name:eu": "Uncastillo",
+            "name:fr": "Uncastillo",
+            "name:oc": "Uncastillo"
+          }
+        },
+        "bbox": [
+          -1.2891815,
+          42.2710778,
+          -1.0040191,
+          42.4509417
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -1.2891815,
+                42.3246003
+              ],
+              [
+                -1.2689588,
+                42.3017371
+              ],
+              [
+                -1.2381294,
+                42.308787
+              ],
+              [
+                -1.2310222,
+                42.2978616
+              ],
+              [
+                -1.2572679,
+                42.2910412
+              ],
+              [
+                -1.2298077,
+                42.2710778
+              ],
+              [
+                -1.0959553,
+                42.3244428
+              ],
+              [
+                -1.0754637,
+                42.3190753
+              ],
+              [
+                -1.0622784,
+                42.3923568
+              ],
+              [
+                -1.0409825,
+                42.4204162
+              ],
+              [
+                -1.0040531,
+                42.4289824
+              ],
+              [
+                -1.0199296,
+                42.4486377
+              ],
+              [
+                -1.0545788,
+                42.4487117
+              ],
+              [
+                -1.0615954,
+                42.4333628
+              ],
+              [
+                -1.1320441,
+                42.4469725
+              ],
+              [
+                -1.1592831,
+                42.4094608
+              ],
+              [
+                -1.1846686,
+                42.400852
+              ],
+              [
+                -1.1827995,
+                42.4237137
+              ],
+              [
+                -1.1958746,
+                42.425644
+              ],
+              [
+                -1.2891815,
+                42.3246003
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

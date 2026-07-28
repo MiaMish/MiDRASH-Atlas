@@ -1,0 +1,739 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Warsaw, Poland",
+    "retrieved_at": "2026-07-28T13:07:24.946189Z",
+    "cache_key": "b6b8da2b0b154fa2e38ea2200afbcf771352e7951f47bcb03d2e79d487792a40",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Warsaw, Poland"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 176249653,
+          "osm_type": "relation",
+          "osm_id": 336074,
+          "place_rank": 15,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.7999388071953629,
+          "addresstype": "administrative",
+          "name": "Warsaw",
+          "display_name": "Warsaw, Masovian Voivodeship, Poland",
+          "address": {
+            "administrative": "Warsaw",
+            "state": "Masovian Voivodeship",
+            "ISO3166-2-lvl4": "PL-14",
+            "country": "Poland",
+            "country_code": "pl"
+          },
+          "namedetails": {
+            "name": "Warszawa",
+            "name:ab": "Варшава",
+            "name:af": "Warskou",
+            "name:ak": "Warsaw",
+            "name:am": "ዋርሶው",
+            "name:an": "Varsovia",
+            "name:ar": "وارسو",
+            "name:av": "Варшава",
+            "name:ay": "Varsovia",
+            "name:az": "Varşava",
+            "name:ba": "Варшава",
+            "name:be": "Варшава",
+            "name:bg": "Варшава",
+            "name:bi": "Warsaw",
+            "name:bn": "ওয়ার্সা",
+            "name:bo": "ཝར་སོ།",
+            "name:br": "Varsovia",
+            "name:bs": "Varšava",
+            "name:ca": "Varsòvia",
+            "name:ce": "Варшава",
+            "name:co": "Varsavia",
+            "name:cs": "Varšava",
+            "name:cu": "Варшава",
+            "name:cv": "Варшава",
+            "name:cy": "Warsaw",
+            "name:da": "Warszawa",
+            "name:de": "Warschau",
+            "name:ee": "Warsaw",
+            "name:el": "Βαρσοβία",
+            "name:en": "Warsaw",
+            "name:eo": "Varsovio",
+            "name:es": "Varsovia",
+            "name:et": "Varssavi",
+            "name:eu": "Varsovia",
+            "name:fa": "ورشو",
+            "name:ff": "Warsaw",
+            "name:fi": "Varsova",
+            "name:fj": "Wosawa",
+            "name:fo": "Warszawa",
+            "name:fr": "Varsovie",
+            "name:fy": "Warsjau",
+            "name:ga": "Vársá",
+            "name:gd": "Warsaw",
+            "name:gl": "Varsovia",
+            "name:gn": "Varysóvia",
+            "name:gv": "Warszawa",
+            "name:ha": "Wosaa",
+            "name:he": "ורשה",
+            "name:hi": "वारसॉ",
+            "name:hr": "Varšava",
+            "name:ht": "Vasovi",
+            "name:hu": "Varsó",
+            "name:hy": "Վարշավա",
+            "name:ia": "Varsovia",
+            "name:id": "Warsawa",
+            "name:ie": "Warszawa",
+            "name:ik": "Uasaavaaq",
+            "name:io": "Warszawa",
+            "name:is": "Varsjá",
+            "name:it": "Varsavia",
+            "name:ja": "ワルシャワ",
+            "name:jv": "Warsawa",
+            "name:ka": "ვარშავა",
+            "name:kk": "Варшава",
+            "name:kl": "Warszawa",
+            "name:kn": "ವಾರ್ಸಾ",
+            "name:ko": "바르샤바",
+            "name:ks": "وارسو",
+            "name:ku": "Warşova",
+            "name:kv": "Варшава",
+            "name:kw": "Warszawa",
+            "name:ky": "Варшава",
+            "name:la": "Varsovia",
+            "name:lb": "Warschau",
+            "name:li": "Warschau",
+            "name:ln": "Warsaw",
+            "name:lt": "Varšuva",
+            "name:lv": "Varšava",
+            "name:mg": "Varsôvia",
+            "name:mi": "Waharo",
+            "name:mk": "Варшава",
+            "name:ml": "വാഴ്സ",
+            "name:mn": "Варшав",
+            "name:mr": "वर्झावा",
+            "name:ms": "Warsaw",
+            "name:mt": "Varsavja",
+            "name:my": "ဝါဆောမြို့",
+            "name:na": "Warsaw",
+            "name:nl": "Warschau",
+            "name:nn": "Warszawa",
+            "name:no": "Warszawa",
+            "name:nv": "Tóigohí",
+            "name:ny": "Warsaw",
+            "name:oc": "Varsòvia",
+            "name:or": "ୱାରସ",
+            "name:os": "Варшавæ",
+            "name:pa": "ਵਾਰਸਾ",
+            "name:pl": "Warszawa",
+            "name:ps": "وارسا",
+            "name:pt": "Varsóvia",
+            "name:qu": "Warszawa",
+            "name:rm": "Varsovia",
+            "name:rn": "Varsovie",
+            "name:ro": "Varșovia",
+            "name:ru": "Варшава",
+            "name:sa": "वार्सा",
+            "name:sc": "Varsavia",
+            "name:sd": "وارسا",
+            "name:sg": "Warsaw",
+            "name:sh": "Varšava",
+            "name:sk": "Varšava",
+            "name:sl": "Varšava",
+            "name:sn": "Warsaw",
+            "name:sq": "Varshava",
+            "name:sr": "Варшава",
+            "name:st": "Warsaw",
+            "name:su": "Warsawa",
+            "name:sv": "Warszawa",
+            "name:sw": "Warshawa",
+            "name:ta": "வார்சா",
+            "name:te": "వార్సా",
+            "name:tg": "Варшава",
+            "name:th": "วอร์ซอ",
+            "name:ti": "ዋርሳው",
+            "name:tk": "Warşawa",
+            "name:tl": "Warsaw",
+            "name:to": "Uoasoa",
+            "name:tr": "Varşova",
+            "name:tt": "Варшава",
+            "name:tw": "Warsaw",
+            "name:ty": "Patava",
+            "name:ug": "Warshawa",
+            "name:uk": "Варшава",
+            "name:ur": "وارسا",
+            "name:uz": "Varshava",
+            "name:vi": "Warszawa",
+            "name:vo": "Warszawa",
+            "name:wo": "Warsaw",
+            "name:yi": "ווארשע",
+            "name:yo": "Warsaw",
+            "name:zh": "華沙",
+            "name:zu": "IWarshawa",
+            "alt_name": "m.st. Warszawa",
+            "name:ace": "Warsawa",
+            "name:ang": "Warsaw",
+            "name:arc": "ܘܐܪܣܘ",
+            "name:arz": "وارسو",
+            "name:ast": "Varsovia",
+            "name:ckb": "وارساو",
+            "name:crh": "Varşava",
+            "name:csb": "Warszawa",
+            "name:diq": "Warşowa",
+            "name:dsb": "Waršawa",
+            "name:frp": "Varsovie",
+            "name:gag": "Varşava",
+            "name:hif": "Warsaw",
+            "name:hsb": "Waršawa",
+            "name:jbo": "varcavas",
+            "name:kab": "Waṛsu",
+            "name:krc": "Варшава",
+            "name:lij": "Varsavvia",
+            "name:lmo": "Varsavia",
+            "name:mrj": "Варшава",
+            "name:nah": "Varsovia",
+            "name:nan": "Warszawa",
+            "name:nap": "Varsavia",
+            "name:nds": "Warschau",
+            "name:nov": "Varsava",
+            "name:pap": "Varsovia",
+            "name:pdc": "Woarschau",
+            "name:pih": "Worsaaw",
+            "name:pms": "Varsavia",
+            "name:pnb": "وارسا",
+            "name:rup": "Varshava",
+            "name:sah": "Варшава",
+            "name:scn": "Varsavia",
+            "name:sco": "Warsaw",
+            "name:sgs": "Varšova",
+            "name:szl": "Warszawa",
+            "name:tet": "Varsóvia",
+            "name:tpi": "Woso",
+            "name:tzl": "Varschava",
+            "name:udm": "Варшава",
+            "name:vec": "Varsavia",
+            "name:vep": "Varšav",
+            "name:vro": "Varssavi",
+            "name:war": "Warsovya",
+            "name:xmf": "ვარშავა",
+            "name:yue": "華沙",
+            "name:dative": "Warszawie",
+            "name:zh-Hans": "华沙",
+            "name:zh-Hant": "華沙",
+            "official_name": "miasto stołeczne Warszawa",
+            "name:be-tarask": "Варшава"
+          }
+        },
+        "bbox": [
+          20.8516882,
+          52.0978497,
+          21.2711512,
+          52.3681531
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                20.8516882,
+                52.2009766
+              ],
+              [
+                20.8671664,
+                52.1824966
+              ],
+              [
+                20.9147704,
+                52.1858422
+              ],
+              [
+                20.9239422,
+                52.1662793
+              ],
+              [
+                20.9834464,
+                52.1404818
+              ],
+              [
+                20.9915988,
+                52.103114
+              ],
+              [
+                21.0437152,
+                52.1129627
+              ],
+              [
+                21.0799755,
+                52.0978497
+              ],
+              [
+                21.1546934,
+                52.1435998
+              ],
+              [
+                21.2347234,
+                52.1589097
+              ],
+              [
+                21.2557405,
+                52.1471717
+              ],
+              [
+                21.2711512,
+                52.1721505
+              ],
+              [
+                21.2402289,
+                52.19588
+              ],
+              [
+                21.2617274,
+                52.2100733
+              ],
+              [
+                21.2547692,
+                52.2387333
+              ],
+              [
+                21.2394668,
+                52.236256
+              ],
+              [
+                21.2504688,
+                52.2626919
+              ],
+              [
+                21.1793435,
+                52.2567023
+              ],
+              [
+                21.1692161,
+                52.2911062
+              ],
+              [
+                21.1050091,
+                52.2739945
+              ],
+              [
+                21.0835702,
+                52.3028548
+              ],
+              [
+                21.0738087,
+                52.3672883
+              ],
+              [
+                21.013416,
+                52.3560796
+              ],
+              [
+                20.9542357,
+                52.3678606
+              ],
+              [
+                20.912429,
+                52.3529758
+              ],
+              [
+                20.9251225,
+                52.3294304
+              ],
+              [
+                20.875683,
+                52.3148516
+              ],
+              [
+                20.8787189,
+                52.265149
+              ],
+              [
+                20.863806,
+                52.2500165
+              ],
+              [
+                20.8931428,
+                52.239712
+              ],
+              [
+                20.8516882,
+                52.2009766
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 177499257,
+          "osm_type": "relation",
+          "osm_id": 336075,
+          "place_rank": 12,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.7999388071953629,
+          "addresstype": "city",
+          "name": "Warsaw",
+          "display_name": "Warsaw, Masovian Voivodeship, Poland",
+          "address": {
+            "city": "Warsaw",
+            "state": "Masovian Voivodeship",
+            "ISO3166-2-lvl4": "PL-14",
+            "country": "Poland",
+            "country_code": "pl"
+          },
+          "namedetails": {
+            "name": "Warszawa",
+            "name:ab": "Варшава",
+            "name:af": "Warskou",
+            "name:ak": "Warsaw",
+            "name:am": "ዋርሶው",
+            "name:an": "Varsovia",
+            "name:ar": "وارسو",
+            "name:av": "Варшава",
+            "name:ay": "Varsovia",
+            "name:az": "Varşava",
+            "name:ba": "Варшава",
+            "name:be": "Варшава",
+            "name:bg": "Варшава",
+            "name:bi": "Warsaw",
+            "name:bn": "ওয়ার্সা",
+            "name:bo": "ཝར་སོ།",
+            "name:br": "Varsovia",
+            "name:bs": "Varšava",
+            "name:ca": "Varsòvia",
+            "name:ce": "Варшава",
+            "name:co": "Varsavia",
+            "name:cs": "Varšava",
+            "name:cu": "Варшава",
+            "name:cv": "Варшава",
+            "name:cy": "Warsaw",
+            "name:da": "Warszawa",
+            "name:de": "Warschau",
+            "name:ee": "Warsaw",
+            "name:el": "Βαρσοβία",
+            "name:en": "Warsaw",
+            "name:eo": "Varsovio",
+            "name:es": "Varsovia",
+            "name:et": "Varssavi",
+            "name:eu": "Varsovia",
+            "name:fa": "ورشو",
+            "name:ff": "Warsaw",
+            "name:fi": "Varsova",
+            "name:fj": "Wosawa",
+            "name:fo": "Warszawa",
+            "name:fr": "Varsovie",
+            "name:fy": "Warsjau",
+            "name:ga": "Vársá",
+            "name:gd": "Warsaw",
+            "name:gl": "Varsovia",
+            "name:gn": "Varysóvia",
+            "name:gv": "Warszawa",
+            "name:ha": "Wosaa",
+            "name:he": "ורשה",
+            "name:hi": "वारसॉ",
+            "name:hr": "Varšava",
+            "name:ht": "Vasovi",
+            "name:hu": "Varsó",
+            "name:hy": "Վարշավա",
+            "name:ia": "Varsovia",
+            "name:id": "Warsawa",
+            "name:ie": "Warszawa",
+            "name:ik": "Uasaavaaq",
+            "name:io": "Warszawa",
+            "name:is": "Varsjá",
+            "name:it": "Varsavia",
+            "name:ja": "ワルシャワ",
+            "name:jv": "Warsawa",
+            "name:ka": "ვარშავა",
+            "name:kk": "Варшава",
+            "name:kl": "Warszawa",
+            "name:kn": "ವಾರ್ಸಾ",
+            "name:ko": "바르샤바",
+            "name:ks": "وارسو",
+            "name:ku": "Warşova",
+            "name:kv": "Варшава",
+            "name:kw": "Warszawa",
+            "name:ky": "Варшава",
+            "name:la": "Varsovia",
+            "name:lb": "Warschau",
+            "name:li": "Warschau",
+            "name:ln": "Warsaw",
+            "name:lt": "Varšuva",
+            "name:lv": "Varšava",
+            "name:mg": "Varsôvia",
+            "name:mi": "Waharo",
+            "name:mk": "Варшава",
+            "name:ml": "വാഴ്സ",
+            "name:mn": "Варшав",
+            "name:mr": "वर्झावा",
+            "name:ms": "Warsaw",
+            "name:mt": "Varsavja",
+            "name:my": "ဝါဆောမြို့",
+            "name:na": "Warsaw",
+            "name:nl": "Warschau",
+            "name:nn": "Warszawa",
+            "name:no": "Warszawa",
+            "name:nv": "Tóigohí",
+            "name:ny": "Warsaw",
+            "name:oc": "Varsòvia",
+            "name:or": "ୱାରସ",
+            "name:os": "Варшавæ",
+            "name:pa": "ਵਾਰਸਾ",
+            "name:pl": "Warszawa",
+            "name:ps": "وارسا",
+            "name:pt": "Varsóvia",
+            "name:qu": "Warszawa",
+            "name:rm": "Varsovia",
+            "name:rn": "Varsovie",
+            "name:ro": "Varșovia",
+            "name:ru": "Варшава",
+            "name:sa": "वार्सा",
+            "name:sc": "Varsavia",
+            "name:sd": "وارسا",
+            "name:sg": "Warsaw",
+            "name:sh": "Varšava",
+            "name:sk": "Varšava",
+            "name:sl": "Varšava",
+            "name:sn": "Warsaw",
+            "name:sq": "Varshava",
+            "name:sr": "Варшава",
+            "name:st": "Warsaw",
+            "name:su": "Warsawa",
+            "name:sv": "Warszawa",
+            "name:sw": "Warshawa",
+            "name:ta": "வார்சா",
+            "name:te": "వార్సా",
+            "name:tg": "Варшава",
+            "name:th": "วอร์ซอ",
+            "name:ti": "ዋርሳው",
+            "name:tk": "Warşawa",
+            "name:tl": "Warsaw",
+            "name:to": "Uoasoa",
+            "name:tr": "Varşova",
+            "name:tt": "Варшава",
+            "name:tw": "Warsaw",
+            "name:ty": "Patava",
+            "name:ug": "Warshawa",
+            "name:uk": "Варшава",
+            "name:ur": "وارسا",
+            "name:uz": "Varshava",
+            "name:vi": "Warszawa",
+            "name:vo": "Warszawa",
+            "name:wo": "Warsaw",
+            "name:yi": "ווארשע",
+            "name:yo": "Warsaw",
+            "name:zh": "華沙",
+            "name:zu": "IWarshawa",
+            "alt_name": "m.st. Warszawa",
+            "name:ace": "Warsawa",
+            "name:ang": "Warsaw",
+            "name:arc": "ܘܐܪܣܘ",
+            "name:arz": "وارسو",
+            "name:ast": "Varsovia",
+            "name:ckb": "وارساو",
+            "name:crh": "Varşava",
+            "name:csb": "Warszawa",
+            "name:diq": "Warşowa",
+            "name:dsb": "Waršawa",
+            "name:frp": "Varsovie",
+            "name:gag": "Varşava",
+            "name:hif": "Warsaw",
+            "name:hsb": "Waršawa",
+            "name:jbo": "varcavas",
+            "name:kab": "Waṛsu",
+            "name:krc": "Варшава",
+            "name:lij": "Varsavvia",
+            "name:lmo": "Varsavia",
+            "name:mrj": "Варшава",
+            "name:nah": "Varsovia",
+            "name:nan": "Warszawa",
+            "name:nap": "Varsavia",
+            "name:nds": "Warschau",
+            "name:nov": "Varsava",
+            "name:pap": "Varsovia",
+            "name:pdc": "Woarschau",
+            "name:pih": "Worsaaw",
+            "name:pms": "Varsavia",
+            "name:pnb": "وارسا",
+            "name:rup": "Varshava",
+            "name:sah": "Варшава",
+            "name:scn": "Varsavia",
+            "name:sco": "Warsaw",
+            "name:sgs": "Varšova",
+            "name:szl": "Warszawa",
+            "name:tet": "Varsóvia",
+            "name:tpi": "Woso",
+            "name:tzl": "Varschava",
+            "name:udm": "Варшава",
+            "name:vec": "Varsavia",
+            "name:vep": "Varšav",
+            "name:vro": "Varssavi",
+            "name:war": "Warsovya",
+            "name:xmf": "ვარშავა",
+            "name:yue": "華沙",
+            "name:dative": "Warszawie",
+            "name:zh-Hans": "华沙",
+            "name:zh-Hant": "華沙",
+            "official_name": "miasto stołeczne Warszawa",
+            "_place_name:cv": "Варшав",
+            "name:be-tarask": "Варшава",
+            "name:wal": "Warsso",
+            "alt_name:ml": "വാർഷാവ"
+          }
+        },
+        "bbox": [
+          20.8516882,
+          52.0978497,
+          21.2711512,
+          52.3681531
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                20.8516882,
+                52.2009766
+              ],
+              [
+                20.8671664,
+                52.1824966
+              ],
+              [
+                20.9147704,
+                52.1858422
+              ],
+              [
+                20.9239422,
+                52.1662793
+              ],
+              [
+                20.9834464,
+                52.1404818
+              ],
+              [
+                20.9915988,
+                52.103114
+              ],
+              [
+                21.0437152,
+                52.1129627
+              ],
+              [
+                21.0799755,
+                52.0978497
+              ],
+              [
+                21.1546934,
+                52.1435998
+              ],
+              [
+                21.2347234,
+                52.1589097
+              ],
+              [
+                21.2557405,
+                52.1471717
+              ],
+              [
+                21.2711512,
+                52.1721505
+              ],
+              [
+                21.2402289,
+                52.19588
+              ],
+              [
+                21.2617274,
+                52.2100733
+              ],
+              [
+                21.2547692,
+                52.2387333
+              ],
+              [
+                21.2394668,
+                52.236256
+              ],
+              [
+                21.2504688,
+                52.2626919
+              ],
+              [
+                21.1793435,
+                52.2567023
+              ],
+              [
+                21.1692161,
+                52.2911062
+              ],
+              [
+                21.1050091,
+                52.2739945
+              ],
+              [
+                21.0835702,
+                52.3028548
+              ],
+              [
+                21.0738087,
+                52.3672883
+              ],
+              [
+                21.013416,
+                52.3560796
+              ],
+              [
+                20.9542357,
+                52.3678606
+              ],
+              [
+                20.912429,
+                52.3529758
+              ],
+              [
+                20.9251225,
+                52.3294304
+              ],
+              [
+                20.875683,
+                52.3148516
+              ],
+              [
+                20.8787189,
+                52.265149
+              ],
+              [
+                20.863806,
+                52.2500165
+              ],
+              [
+                20.8931428,
+                52.239712
+              ],
+              [
+                20.8516882,
+                52.2009766
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

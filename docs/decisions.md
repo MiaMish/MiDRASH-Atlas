@@ -102,6 +102,14 @@ every run and result remains append-only under `runs`. A CLI flag skips
 human-reviewed `modern_place` entries by consulting the shared SQLite database.
 AI reruns never overwrite human geometry revisions.
 
+## 2026-07-28 — Group the atlas by place and drill into assertions
+
+The map transfers one feature per place, with matching manuscript/assertion
+events nested for drill-down. This avoids repeating large polygons and keeps
+multiple source statements visible. The default map source is the explicit NLI
+writing place; related places and current repositories are opt-in. Unmapped
+matching assertions remain in the summary count.
+
 ## Open decisions for the team
 
 - Which assertion-source priority profiles should ship as presets?
