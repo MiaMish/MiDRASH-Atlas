@@ -17,6 +17,7 @@ type InputRecord struct {
 	ParentMMSIDs           []string          `json:"parent_mms_ids"`
 	Title                  []string          `json:"title"`
 	AlternativeTitles      []string          `json:"alternative_titles"`
+	Extent                 []string          `json:"extent"`
 	DateDisplay            []string          `json:"date_display"`
 	ProductionPlaceDisplay []string          `json:"production_place_display"`
 	Places                 []InputPlace      `json:"places"`
@@ -24,6 +25,9 @@ type InputRecord struct {
 	ScriptStyles           []string          `json:"script_styles"`
 	ProvenanceNotes        []string          `json:"provenance_notes"`
 	ColophonNotes          []string          `json:"colophon_notes"`
+	PhysicalNotes          []string          `json:"physical_notes"`
+	Contents               []string          `json:"contents"`
+	GeneralNotes           []string          `json:"general_notes"`
 	CurrentOwners          []InputOwner      `json:"current_owners"`
 	Shelfmarks             []InputShelfmark  `json:"shelfmarks"`
 	DigitalObjects         []json.RawMessage `json:"digital_objects"`
@@ -32,6 +36,21 @@ type InputRecord struct {
 	PublicRecordURL        string            `json:"public_record_url"`
 	SourceModified         string            `json:"source_modified"`
 	FixedField008          string            `json:"fixed_field_008"`
+	MARC                   InputMARC         `json:"marc"`
+}
+
+type InputMARC struct {
+	Fields []InputMARCField `json:"fields"`
+}
+
+type InputMARCField struct {
+	Tag       string              `json:"tag"`
+	Subfields []InputMARCSubfield `json:"subfields"`
+}
+
+type InputMARCSubfield struct {
+	Code  string `json:"code"`
+	Value string `json:"value"`
 }
 
 type InputPlace struct {
@@ -58,23 +77,54 @@ type InputShelfmark struct {
 }
 
 type AtlasRecord struct {
-	ID                   string      `json:"id"`
-	PhysicalID           string      `json:"physical_id"`
-	Kind                 string      `json:"kind"`
-	ParentIDs            []string    `json:"parent_ids,omitempty"`
-	Titles               []string    `json:"titles"`
-	Languages            []string    `json:"languages,omitempty"`
-	ScriptStyles         []string    `json:"script_styles,omitempty"`
-	Shelfmarks           []Shelfmark `json:"shelfmarks,omitempty"`
-	HiburLinks           []HiburLink `json:"hibur_links,omitempty"`
-	Digitized            bool        `json:"digitized"`
-	PublicRecordURL      string      `json:"public_record_url,omitempty"`
-	ResolverURL          string      `json:"resolver_url,omitempty"`
-	SourceModified       string      `json:"source_modified,omitempty"`
-	ProvenanceNotes      []string    `json:"provenance_notes,omitempty"`
-	ColophonNotes        []string    `json:"colophon_notes,omitempty"`
-	GeoAssertionIDs      []string    `json:"geo_assertion_ids,omitempty"`
-	TemporalAssertionIDs []string    `json:"temporal_assertion_ids,omitempty"`
+	ID                   string                 `json:"id"`
+	PhysicalID           string                 `json:"physical_id"`
+	Kind                 string                 `json:"kind"`
+	ParentIDs            []string               `json:"parent_ids,omitempty"`
+	ParentRecords        []CatalogRecordSummary `json:"parent_records,omitempty"`
+	Titles               []string               `json:"titles"`
+	PrimaryTitles        []string               `json:"primary_titles,omitempty"`
+	AlternativeTitles    []string               `json:"alternative_titles,omitempty"`
+	Languages            []string               `json:"languages,omitempty"`
+	ScriptStyles         []string               `json:"script_styles,omitempty"`
+	Extent               []string               `json:"extent,omitempty"`
+	Dimensions           []string               `json:"dimensions,omitempty"`
+	Contributors         []Contributor          `json:"contributors,omitempty"`
+	Shelfmarks           []Shelfmark            `json:"shelfmarks,omitempty"`
+	HiburLinks           []HiburLink            `json:"hibur_links,omitempty"`
+	Digitized            bool                   `json:"digitized"`
+	PublicRecordURL      string                 `json:"public_record_url,omitempty"`
+	ResolverURL          string                 `json:"resolver_url,omitempty"`
+	SourceModified       string                 `json:"source_modified,omitempty"`
+	ProvenanceNotes      []string               `json:"provenance_notes,omitempty"`
+	ColophonNotes        []string               `json:"colophon_notes,omitempty"`
+	PhysicalNotes        []string               `json:"physical_notes,omitempty"`
+	Contents             []string               `json:"contents,omitempty"`
+	GeneralNotes         []string               `json:"general_notes,omitempty"`
+	CurrentOwners        []Owner                `json:"current_owners,omitempty"`
+	GeoAssertionIDs      []string               `json:"geo_assertion_ids,omitempty"`
+	TemporalAssertionIDs []string               `json:"temporal_assertion_ids,omitempty"`
+}
+
+type CatalogRecordSummary struct {
+	ID                string   `json:"id"`
+	Kind              string   `json:"kind"`
+	Titles            []string `json:"titles"`
+	PrimaryTitles     []string `json:"primary_titles,omitempty"`
+	AlternativeTitles []string `json:"alternative_titles,omitempty"`
+}
+
+type Contributor struct {
+	Name    string `json:"name"`
+	Role    string `json:"role,omitempty"`
+	MARCTag string `json:"marc_tag"`
+}
+
+type Owner struct {
+	Name     string   `json:"name"`
+	Locality string   `json:"locality,omitempty"`
+	Country  string   `json:"country,omitempty"`
+	Roles    []string `json:"roles,omitempty"`
 }
 
 type Shelfmark struct {

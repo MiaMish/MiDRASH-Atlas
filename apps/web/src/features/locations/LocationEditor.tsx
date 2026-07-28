@@ -288,9 +288,6 @@ export function LocationEditor() {
 
           <div className="source-card">
             <strong>{location?.geometry_source?.replaceAll("_", " ") ?? "No geometry source"}</strong>
-            <p>
-              Modern display geometry is not a claim that the same boundary applied historically.
-            </p>
           </div>
           <label>
             Spatial precision

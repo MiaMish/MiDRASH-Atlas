@@ -158,10 +158,18 @@ export type TemporalValue = {
 export type AtlasTemporalAssertion = {
   id: string;
   source_type_id: string;
+  scope: {
+    target_record_id: string;
+    source_record_id: string;
+    physical_id: string;
+    origin: string;
+  };
   value: TemporalValue;
   confidence: string;
   evidence: {
     raw: string;
+    marc_tag?: string;
+    marc_subfield?: string;
     catalog: string;
     extraction: string;
     review_status: string;
@@ -174,9 +182,19 @@ export type AtlasRecord = {
   physical_id: string;
   kind: string;
   parent_ids?: string[];
+  parent_records?: CatalogRecordSummary[];
   titles: string[];
+  primary_titles?: string[];
+  alternative_titles?: string[];
   languages?: string[];
   script_styles?: string[];
+  extent?: string[];
+  dimensions?: string[];
+  contributors?: Array<{
+    name: string;
+    role?: string;
+    marc_tag: string;
+  }>;
   shelfmarks?: Array<{
     repository?: string;
     locality?: string;
@@ -186,6 +204,26 @@ export type AtlasRecord = {
   digitized: boolean;
   public_record_url?: string;
   resolver_url?: string;
+  source_modified?: string;
+  provenance_notes?: string[];
+  colophon_notes?: string[];
+  physical_notes?: string[];
+  contents?: string[];
+  general_notes?: string[];
+  current_owners?: Array<{
+    name: string;
+    locality?: string;
+    country?: string;
+    roles?: string[];
+  }>;
+};
+
+export type CatalogRecordSummary = {
+  id: string;
+  kind: string;
+  titles: string[];
+  primary_titles?: string[];
+  alternative_titles?: string[];
 };
 
 export type AtlasEvent = {
@@ -213,6 +251,7 @@ export type AtlasEvent = {
     };
   };
   record: AtlasRecord;
+  source_record?: CatalogRecordSummary;
   hiburim: Array<{ id: string; label: string; english?: string }>;
   temporal_assertions: AtlasTemporalAssertion[];
 };
@@ -235,6 +274,16 @@ export type AtlasFeature = {
     contained_place_ids: string[];
     events: AtlasEvent[];
   };
+};
+
+export type AtlasUnmappedGroup = {
+  place_id: string;
+  place_label: string;
+  coordinate_status: string;
+  ai_status: LocationOverview["ai_status"];
+  assertion_count: number;
+  record_count: number;
+  events: AtlasEvent[];
 };
 
 export type AtlasView = {
@@ -261,6 +310,7 @@ export type AtlasView = {
     hiburim: Array<{ id: string; label: string; english?: string; count: number }>;
   };
   features: AtlasFeature[];
+  unmapped_groups: AtlasUnmappedGroup[];
 };
 
 export type AtlasFilters = {

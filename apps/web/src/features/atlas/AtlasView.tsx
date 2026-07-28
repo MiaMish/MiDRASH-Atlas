@@ -1,9 +1,11 @@
 import { useEffect, useMemo, useState } from "react";
 import {
   fetchAtlasView,
+  type AtlasRecord,
   type AtlasEvent,
   type AtlasFeature,
   type AtlasFilters,
+  type AtlasUnmappedGroup,
   type AtlasView as AtlasViewData,
 } from "../../api";
 import { AtlasMap } from "./AtlasMap";
@@ -46,6 +48,54 @@ function shelfmark(event: AtlasEvent) {
   return [first.repository, first.shelfmark].filter(Boolean).join(" · ");
 }
 
+function recordTitle(
+  record: Pick<AtlasRecord, "id" | "titles" | "primary_titles">,
+) {
+  return record.primary_titles?.[0] ?? record.titles?.[0] ?? record.id;
+}
+
+function joined(values?: string[]) {
+  return values?.filter(Boolean).join("; ") ?? "";
+}
+
+function ownerLabel(owner: NonNullable<AtlasEvent["record"]["current_owners"]>[number]) {
+  return [owner.name, owner.locality, owner.country].filter(Boolean).join(" · ");
+}
+
+const languageNames: Record<string, string> = {
+  ara: "Arabic",
+  eng: "English",
+  fra: "French",
+  fre: "French",
+  heb: "Hebrew",
+  jrb: "Judeo-Arabic",
+  lat: "Latin",
+  spa: "Spanish",
+};
+
+function languageLabel(value: string) {
+  return languageNames[value.toLowerCase()] ?? value;
+}
+
+function formatCatalogTimestamp(value: string) {
+  const match = value.match(
+    /^(\d{4})(\d{2})(\d{2})(\d{2})(\d{2})(\d{2})(?:\.\d+)?$/,
+  );
+  if (!match) return value;
+  const [, year, month, day, hour, minute, second] = match;
+  return `${year}-${month}-${day} ${hour}:${minute}:${second}`;
+}
+
+function originLabel(origin: string) {
+  if (origin === "direct") return "";
+  return `from ${origin.replaceAll("_", " ")}`;
+}
+
+function catalogField(tag?: string, subfield?: string) {
+  if (!tag) return "catalog field not recorded";
+  return `${tag}${subfield ? `$${subfield}` : ""}`;
+}
+
 function sourceName(event: AtlasEvent, data: AtlasViewData) {
   return (
     data.facets.geo_sources.find((source) => source.id === event.assertion.source_type_id)?.label ??
@@ -58,6 +108,7 @@ export function AtlasView() {
   const [data, setData] = useState<AtlasViewData | null>(null);
   const [selectedPlaceId, setSelectedPlaceId] = useState("");
   const [selectedBounds, setSelectedBounds] = useState<SpatialBounds | null>(null);
+  const [showUnmapped, setShowUnmapped] = useState(false);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
@@ -138,7 +189,17 @@ export function AtlasView() {
         <div className="atlas-metrics" aria-label="Filtered atlas summary">
           <span><strong>{data?.summary.mapped_places ?? 0}</strong> mapped places</span>
           <span><strong>{data?.summary.matched_records ?? 0}</strong> records</span>
-          <span><strong>{data?.summary.unmapped_assertions ?? 0}</strong> unmapped assertions</span>
+          <button
+            className={showUnmapped ? "active" : ""}
+            type="button"
+            disabled={!data?.summary.unmapped_assertions}
+            onClick={() => {
+              setSelectedBounds(null);
+              setShowUnmapped(true);
+            }}
+          >
+            <strong>{data?.summary.unmapped_assertions ?? 0}</strong> unmapped assertions
+          </button>
         </div>
         <div className="time-filter">
           <div className="time-heading">
@@ -300,9 +361,13 @@ export function AtlasView() {
           containedPlaceIds={selected?.properties.contained_place_ids ?? []}
           areaPlaceIds={areaFeatures.map((feature) => feature.id)}
           selectedBounds={selectedBounds}
-          onSelectBounds={setSelectedBounds}
+          onSelectBounds={(nextBounds) => {
+            setShowUnmapped(false);
+            setSelectedBounds(nextBounds);
+          }}
           onSelectPlace={(placeId) => {
             setSelectedBounds(null);
+            setShowUnmapped(false);
             setSelectedPlaceId(placeId);
           }}
         />
@@ -313,12 +378,84 @@ export function AtlasView() {
             data={data}
             onClear={() => setSelectedBounds(null)}
           />
+        ) : showUnmapped ? (
+          <UnmappedDrilldown
+            groups={data?.unmapped_groups ?? []}
+            data={data}
+            onClose={() => setShowUnmapped(false)}
+          />
         ) : (
           <AtlasDrilldown feature={selected} contained={contained} data={data} />
         )}
       </div>
     </section>
   );
+}
+
+function UnmappedDrilldown({
+  groups,
+  data,
+  onClose,
+}: {
+  groups: AtlasUnmappedGroup[];
+  data: AtlasViewData | null;
+  onClose: () => void;
+}) {
+  if (!data) return <aside className="atlas-drilldown empty" />;
+  const recordIDs = new Set(
+    groups.flatMap((group) => (group.events ?? []).map((event) => event.record.id)),
+  );
+  const assertionCount = groups.reduce((total, group) => total + group.assertion_count, 0);
+  return (
+    <aside className="atlas-drilldown">
+      <div className="drilldown-heading">
+        <p className="eyebrow">Unmapped drill-down</p>
+        <h2>Records without geometry</h2>
+        <p>
+          {recordIDs.size} record{recordIDs.size === 1 ? "" : "s"} ·{" "}
+          {assertionCount} assertion{assertionCount === 1 ? "" : "s"} ·{" "}
+          {groups.length} place concept{groups.length === 1 ? "" : "s"}
+        </p>
+        <p className="containment-summary">
+          These records match the active filters, but their place concept has no usable geometry.
+        </p>
+        <button className="secondary compact-button" type="button" onClick={onClose}>
+          Return to map selection
+        </button>
+      </div>
+      <div className="drilldown-events">
+        {groups.length === 0 && <p>No unmapped records match the current filters.</p>}
+        {groups.map((group) => (
+          <section className="contained-place unmapped-place" key={group.place_id}>
+            <div className="contained-place-heading">
+              <h3>{group.place_label}</h3>
+              <span>{group.record_count} record{group.record_count === 1 ? "" : "s"}</span>
+            </div>
+            <p>
+              {unmappedStatusLabel(group.ai_status)}
+            </p>
+            <AtlasEventList events={group.events ?? []} data={data} />
+          </section>
+        ))}
+      </div>
+    </aside>
+  );
+}
+
+function unmappedStatusLabel(status: AtlasUnmappedGroup["ai_status"]) {
+  switch (status) {
+    case "candidate_unavailable":
+    case "candidate_proposed":
+      return "AI checked; the proposed candidate could not be mapped.";
+    case "needs_candidates":
+      return "AI checked; better gazetteer candidates are needed.";
+    case "ambiguous":
+      return "AI checked; the location remains ambiguous.";
+    case "technical_failure":
+      return "The latest AI attempt failed technically.";
+    default:
+      return "Not checked by AI yet.";
+  }
 }
 
 function AreaDrilldown({
@@ -448,41 +585,201 @@ function AtlasEventList({ events, data }: { events: AtlasEvent[]; data: AtlasVie
   return (
     <>
       {events.map((event) => (
-          <details key={event.assertion.id}>
-            <summary>
-              <span>
-                <strong>{event.record.titles?.[0] ?? event.record.id}</strong>
-                <small>{displayDate(event)}</small>
-              </span>
-            </summary>
-            <dl>
-              <div><dt>Geo source</dt><dd>{sourceName(event, data)}</dd></div>
-              <div><dt>Origin</dt><dd>{event.assertion.scope.origin.replaceAll("_", " ")}</dd></div>
-              <div><dt>Catalog evidence</dt><dd>{event.assertion.evidence.raw}</dd></div>
-              <div><dt>Hibur</dt><dd>
-                {(event.hiburim ?? []).length
-                  ? (event.hiburim ?? [])
-                    .map((hibur) => hibur.english || hibur.label)
-                    .join("; ")
-                  : "No linked Hibur"}
-              </dd></div>
-              {shelfmark(event) && <div><dt>Shelfmark</dt><dd>{shelfmark(event)}</dd></div>}
-              <div><dt>Record type</dt><dd>{event.record.kind.replaceAll("_", " ")}</dd></div>
-            </dl>
-            <div className="record-actions">
-              {event.record.public_record_url && (
-                <a href={event.record.public_record_url} target="_blank" rel="noreferrer">
-                  NLI manuscript record
-                </a>
-              )}
-              {event.record.resolver_url && (
-                <a href={event.record.resolver_url} target="_blank" rel="noreferrer">
-                  Digital object
-                </a>
-              )}
+        <details key={event.assertion.id}>
+          <summary>
+            <span>
+              <strong>{recordTitle(event.record)}</strong>
+              <small>{displayDate(event)}</small>
+            </span>
+          </summary>
+          <dl>
+            <div><dt>Geo source</dt><dd>{sourceName(event, data)}</dd></div>
+            <div><dt>Origin</dt><dd>{event.assertion.scope.origin.replaceAll("_", " ")}</dd></div>
+            <div>
+              <dt>Place evidence</dt>
+              <dd dir="auto">{event.assertion.evidence.raw}</dd>
             </div>
-          </details>
+            {event.source_record && (
+              <div>
+                <dt>Evidence record</dt>
+                <dd>{recordTitle(event.source_record)} · {event.source_record.id}</dd>
+              </div>
+            )}
+            <div>
+              <dt>Date evidence</dt>
+              <dd>
+                {(event.temporal_assertions ?? []).length
+                  ? (event.temporal_assertions ?? []).map((assertion) => (
+                    <span className="metadata-line" dir="auto" key={assertion.id}>
+                      {assertion.evidence.raw}
+                      {originLabel(assertion.scope.origin) &&
+                        ` · ${originLabel(assertion.scope.origin)}`}
+                    </span>
+                  ))
+                  : "No catalog date assertion"}
+              </dd>
+            </div>
+            <div><dt>Hibur</dt><dd>
+              {(event.hiburim ?? []).length
+                ? (event.hiburim ?? [])
+                  .map((hibur) => hibur.english || hibur.label)
+                  .join("; ")
+                : "No linked Hibur"}
+            </dd></div>
+            {shelfmark(event) && <div><dt>Shelfmark</dt><dd>{shelfmark(event)}</dd></div>}
+            <div><dt>Record type</dt><dd>{event.record.kind.replaceAll("_", " ")}</dd></div>
+            <div><dt>MMS ID</dt><dd>{event.record.id}</dd></div>
+            {event.record.physical_id !== event.record.id && (
+              <div><dt>Physical parent</dt><dd>{event.record.physical_id}</dd></div>
+            )}
+            {joined(event.record.alternative_titles) && (
+              <div><dt>Alternative title</dt><dd dir="auto">{joined(event.record.alternative_titles)}</dd></div>
+            )}
+            {joined(event.record.languages) && (
+              <div>
+                <dt>Language</dt>
+                <dd>{event.record.languages?.map(languageLabel).join("; ")}</dd>
+              </div>
+            )}
+            {joined(event.record.script_styles) && (
+              <div><dt>Script style</dt><dd dir="auto">{joined(event.record.script_styles)}</dd></div>
+            )}
+            {joined(event.record.extent) && (
+              <div><dt>Extent</dt><dd dir="auto">{joined(event.record.extent)}</dd></div>
+            )}
+            {joined(event.record.dimensions) && (
+              <div><dt>Dimensions</dt><dd dir="auto">{joined(event.record.dimensions)}</dd></div>
+            )}
+            {(event.record.contributors ?? []).length > 0 && (
+              <div>
+                <dt>Associated people</dt>
+                <dd>
+                  {event.record.contributors?.map((person) => (
+                    <span className="metadata-line" dir="auto" key={`${person.marc_tag}-${person.name}`}>
+                      {person.name}{person.role ? ` · ${person.role}` : ""}
+                    </span>
+                  ))}
+                </dd>
+              </div>
+            )}
+            {(event.record.current_owners ?? []).length > 0 && (
+              <div>
+                <dt>Current owner</dt>
+                <dd>{event.record.current_owners?.map(ownerLabel).join("; ")}</dd>
+              </div>
+            )}
+            {joined(event.record.general_notes) && (
+              <div><dt>Catalog notes</dt><dd dir="auto">{joined(event.record.general_notes)}</dd></div>
+            )}
+            {joined(event.record.physical_notes) && (
+              <div><dt>Physical notes</dt><dd dir="auto">{joined(event.record.physical_notes)}</dd></div>
+            )}
+            {joined(event.record.contents) && (
+              <div><dt>Contents</dt><dd dir="auto">{joined(event.record.contents)}</dd></div>
+            )}
+            {joined(event.record.provenance_notes) && (
+              <div><dt>Provenance</dt><dd dir="auto">{joined(event.record.provenance_notes)}</dd></div>
+            )}
+            {joined(event.record.colophon_notes) && (
+              <div><dt>Colophon</dt><dd dir="auto">{joined(event.record.colophon_notes)}</dd></div>
+            )}
+            {event.record.source_modified && (
+              <div>
+                <dt>Catalog updated</dt>
+                <dd>{formatCatalogTimestamp(event.record.source_modified)}</dd>
+              </div>
+            )}
+          </dl>
+          <CatalogFieldProvenance event={event} />
+          <div className="record-actions">
+            {event.record.public_record_url && (
+              <a href={event.record.public_record_url} target="_blank" rel="noreferrer">
+                NLI manuscript record
+              </a>
+            )}
+            {event.record.resolver_url && (
+              <a href={event.record.resolver_url} target="_blank" rel="noreferrer">
+                Digital object
+              </a>
+            )}
+          </div>
+        </details>
       ))}
     </>
+  );
+}
+
+function CatalogFieldProvenance({ event }: { event: AtlasEvent }) {
+  return (
+    <details className="field-provenance">
+      <summary>Catalog field provenance</summary>
+      <dl>
+        <div>
+          <dt>Primary title</dt>
+          <dd>245$a · record {event.record.id}</dd>
+        </div>
+        {joined(event.record.alternative_titles) && (
+          <div><dt>Alternative title</dt><dd>740$a · record {event.record.id}</dd></div>
+        )}
+        <div>
+          <dt>Place evidence</dt>
+          <dd>
+            {catalogField(
+              event.assertion.evidence.marc_tag,
+              event.assertion.evidence.marc_subfield,
+            )} · record {event.assertion.scope.source_record_id}
+          </dd>
+        </div>
+        {(event.temporal_assertions ?? []).map((assertion) => (
+          <div key={assertion.id}>
+            <dt>Date evidence</dt>
+            <dd>
+              {catalogField(assertion.evidence.marc_tag, assertion.evidence.marc_subfield)}
+              {" · "}record {assertion.scope.source_record_id}
+              {" · "}{assertion.scope.origin.replaceAll("_", " ")}
+            </dd>
+          </div>
+        ))}
+        {joined(event.record.languages) && (
+          <div><dt>Language</dt><dd>041$a · record {event.record.id}</dd></div>
+        )}
+        {joined(event.record.script_styles) && (
+          <div><dt>Script style</dt><dd>958$a · record {event.record.id}</dd></div>
+        )}
+        {joined(event.record.extent) && (
+          <div><dt>Extent</dt><dd>300$a · record {event.record.id}</dd></div>
+        )}
+        {joined(event.record.dimensions) && (
+          <div><dt>Dimensions</dt><dd>300$c · record {event.record.id}</dd></div>
+        )}
+        {(event.record.contributors ?? []).map((person) => (
+          <div key={`${person.marc_tag}-${person.name}`}>
+            <dt>Associated person</dt>
+            <dd>{person.marc_tag}$a/$e · record {event.record.id}</dd>
+          </div>
+        ))}
+        {(event.record.current_owners ?? []).length > 0 && (
+          <div><dt>Current owner</dt><dd>normalized catalog repository fields · record {event.record.id}</dd></div>
+        )}
+        {joined(event.record.general_notes) && (
+          <div><dt>Catalog notes</dt><dd>500$a · record {event.record.id}</dd></div>
+        )}
+        {joined(event.record.physical_notes) && (
+          <div><dt>Physical notes</dt><dd>340$a · record {event.record.id}</dd></div>
+        )}
+        {joined(event.record.contents) && (
+          <div><dt>Contents</dt><dd>505$a · record {event.record.id}</dd></div>
+        )}
+        {joined(event.record.provenance_notes) && (
+          <div><dt>Provenance</dt><dd>561$a · record {event.record.id}</dd></div>
+        )}
+        {joined(event.record.colophon_notes) && (
+          <div><dt>Colophon</dt><dd>957$a · record {event.record.id}</dd></div>
+        )}
+        {event.record.source_modified && (
+          <div><dt>Catalog updated</dt><dd>005 · record {event.record.id}</dd></div>
+        )}
+      </dl>
+    </details>
   );
 }

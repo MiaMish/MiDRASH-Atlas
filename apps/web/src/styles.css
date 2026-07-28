@@ -144,9 +144,37 @@ h2 {
   font-size: 0.72rem;
 }
 
-.atlas-metrics span {
+.atlas-metrics span,
+.atlas-metrics button {
   display: grid;
   gap: 0.1rem;
+}
+
+.atlas-metrics button {
+  margin: -0.35rem;
+  padding: 0.35rem;
+  border: 0;
+  border-radius: 7px;
+  color: inherit;
+  background: transparent;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.atlas-metrics button:hover:not(:disabled),
+.atlas-metrics button.active {
+  background: #edf3ef;
+}
+
+.atlas-metrics button:focus-visible {
+  outline: 2px solid #4f7f72;
+  outline-offset: 2px;
+}
+
+.atlas-metrics button:disabled {
+  opacity: 0.55;
+  cursor: default;
 }
 
 .atlas-metrics strong {
@@ -320,8 +348,8 @@ h2 {
 .atlas-spatial-tools {
   display: flex;
   gap: 0.4rem;
-  left: 0.75rem;
   position: absolute;
+  right: 0.75rem;
   top: 0.75rem;
   z-index: 500;
 }
@@ -477,6 +505,15 @@ h2 {
   white-space: nowrap;
 }
 
+.metadata-line {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.metadata-line:last-child {
+  margin-bottom: 0;
+}
+
 .drilldown-events details {
   border: 1px solid #ddd6c8;
   border-radius: 8px;
@@ -527,6 +564,27 @@ h2 {
   color: #38362f;
   font-size: 0.72rem;
   line-height: 1.35;
+}
+
+.drilldown-events .field-provenance {
+  margin: 0 0.75rem 0.75rem;
+  border: 1px dashed #d8d1c2;
+  background: #f8f5ee;
+}
+
+.drilldown-events .field-provenance > summary {
+  padding: 0.5rem 0.65rem;
+  color: #68635a;
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+.drilldown-events .field-provenance > dl {
+  padding: 0 0.65rem 0.65rem;
+}
+
+.drilldown-events .field-provenance > dl div {
+  grid-template-columns: 5.5rem 1fr;
 }
 
 .record-actions {

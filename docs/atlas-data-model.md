@@ -163,6 +163,33 @@ to avoid repeating large polygons. Each feature contains:
 - linked Hiburim;
 - stored temporal assertions plus policy-derived effective intervals.
 
+Assertions whose place has no usable geometry are returned separately in
+`unmapped_groups`. They retain the same event payload and are grouped by place
+concept, so the UI can expose them without assigning misleading coordinates.
+
 Filtering an approximate `1460` with a ±10 policy uses `1450–1470` in the view,
 while the nested assertion still contains the original `1460` and
 `approximate: true`.
+
+### Drill-down field provenance
+
+The atlas does not generate descriptive manuscript metadata with AI. The
+drill-down reads the target NLI record in `records.json`, produced from the
+lossless normalized MARC:
+
+| UI field | MARC source |
+| --- | --- |
+| Primary title | `245$a` on the target record |
+| Alternative title | `740$a` |
+| Language | `041$a` |
+| Extent and dimensions | `300$a` and `300$c` |
+| Associated people | `100$a/$e` and `700$a/$e` |
+| General, physical, provenance, contents, and colophon notes | `500$a`, `340$a`, `561$a`, `505$a`, and `957$a` |
+| Script style | NLI local field `958$a` |
+| Place evidence | the geo assertion's recorded MARC tag/subfield, normally `751$a` |
+| Date evidence | each temporal assertion's MARC tag/subfield and parent/child origin |
+
+For an analytic child, the displayed title remains the child's `245$a`. If a
+geographic assertion originated on its physical parent, the event separately
+identifies that source record and title. This preserves the distinction between
+“what this segment is” and “which catalog record supplied the place.”

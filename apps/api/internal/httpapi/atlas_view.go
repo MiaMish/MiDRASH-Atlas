@@ -15,12 +15,13 @@ import (
 )
 
 type atlasViewResponse struct {
-	SchemaVersion string             `json:"schema_version"`
-	TimeBounds    yearBounds         `json:"time_bounds"`
-	Applied       atlasViewFilters   `json:"applied_filters"`
-	Summary       atlasViewSummary   `json:"summary"`
-	Facets        atlasViewFacets    `json:"facets"`
-	Features      []atlasViewFeature `json:"features"`
+	SchemaVersion  string                   `json:"schema_version"`
+	TimeBounds     yearBounds               `json:"time_bounds"`
+	Applied        atlasViewFilters         `json:"applied_filters"`
+	Summary        atlasViewSummary         `json:"summary"`
+	Facets         atlasViewFacets          `json:"facets"`
+	Features       []atlasViewFeature       `json:"features"`
+	UnmappedGroups []atlasViewUnmappedGroup `json:"unmapped_groups"`
 }
 
 type yearBounds struct {
@@ -97,9 +98,20 @@ type atlasViewPlaceProperties struct {
 	Events            []atlasViewEvent `json:"events"`
 }
 
+type atlasViewUnmappedGroup struct {
+	PlaceID          string           `json:"place_id"`
+	PlaceLabel       string           `json:"place_label"`
+	CoordinateStatus string           `json:"coordinate_status"`
+	AIStatus         string           `json:"ai_status"`
+	AssertionCount   int              `json:"assertion_count"`
+	RecordCount      int              `json:"record_count"`
+	Events           []atlasViewEvent `json:"events"`
+}
+
 type atlasViewEvent struct {
 	Assertion          atlas.GeoAssertion           `json:"assertion"`
 	Record             atlas.AtlasRecord            `json:"record"`
+	SourceRecord       *atlas.CatalogRecordSummary  `json:"source_record,omitempty"`
 	Hiburim            []atlas.Hibur                `json:"hiburim"`
 	TemporalAssertions []atlasViewTemporalAssertion `json:"temporal_assertions"`
 }
@@ -247,10 +259,12 @@ func (s *server) buildAtlasView(ctx context.Context, filters atlasViewFilters) (
 		records  map[string]bool
 	}
 	groups := map[string]*placeGroup{}
+	unmappedGroups := map[string]*placeGroup{}
 	matchedRecords := map[string]bool{}
 	response := atlasViewResponse{
 		SchemaVersion: "1.0.0", TimeBounds: bounds, Applied: filters,
-		Features: []atlasViewFeature{},
+		Features:       []atlasViewFeature{},
+		UnmappedGroups: []atlasViewUnmappedGroup{},
 		Facets: atlasViewFacets{
 			GeoSources:       []sourceTypeView{},
 			Origins:          []facetCount{},
@@ -285,8 +299,42 @@ func (s *server) buildAtlasView(ctx context.Context, filters atlasViewFilters) (
 		}
 		response.Summary.MatchedAssertions++
 		matchedRecords[record.ID] = true
+		hiburim := []atlas.Hibur{}
+		for _, link := range record.HiburLinks {
+			if hibur, ok := hiburByID[link.HiburID]; ok {
+				hiburim = append(hiburim, hibur)
+			}
+		}
+		event := atlasViewEvent{
+			Assertion: assertion, Record: record, Hiburim: hiburim,
+			TemporalAssertions: temporal,
+		}
+		if assertion.Scope.SourceRecordID != record.ID {
+			if sourceRecord, ok := recordsByID[assertion.Scope.SourceRecordID]; ok {
+				event.SourceRecord = &atlas.CatalogRecordSummary{
+					ID: sourceRecord.ID, Kind: sourceRecord.Kind, Titles: sourceRecord.Titles,
+					PrimaryTitles:     sourceRecord.PrimaryTitles,
+					AlternativeTitles: sourceRecord.AlternativeTitles,
+				}
+			} else {
+				for _, parent := range record.ParentRecords {
+					if parent.ID == assertion.Scope.SourceRecordID {
+						parentCopy := parent
+						event.SourceRecord = &parentCopy
+						break
+					}
+				}
+			}
+		}
 		if !location.HasValidCoordinates {
 			response.Summary.UnmappedAssertions++
+			group := unmappedGroups[assertion.PlaceID]
+			if group == nil {
+				group = &placeGroup{location: location, records: map[string]bool{}}
+				unmappedGroups[assertion.PlaceID] = group
+			}
+			group.events = append(group.events, event)
+			group.records[record.ID] = true
 			continue
 		}
 		response.Summary.MappedAssertions++
@@ -295,20 +343,26 @@ func (s *server) buildAtlasView(ctx context.Context, filters atlasViewFilters) (
 			group = &placeGroup{location: location, records: map[string]bool{}}
 			groups[assertion.PlaceID] = group
 		}
-		hiburim := []atlas.Hibur{}
-		for _, link := range record.HiburLinks {
-			if hibur, ok := hiburByID[link.HiburID]; ok {
-				hiburim = append(hiburim, hibur)
-			}
-		}
-		group.events = append(group.events, atlasViewEvent{
-			Assertion: assertion, Record: record, Hiburim: hiburim,
-			TemporalAssertions: temporal,
-		})
+		group.events = append(group.events, event)
 		group.records[record.ID] = true
 	}
 	response.Summary.MatchedRecords = len(matchedRecords)
 	response.Summary.MappedPlaces = len(groups)
+	for _, group := range unmappedGroups {
+		sort.Slice(group.events, func(i, j int) bool {
+			return firstTitle(group.events[i].Record) < firstTitle(group.events[j].Record)
+		})
+		response.UnmappedGroups = append(response.UnmappedGroups, atlasViewUnmappedGroup{
+			PlaceID: group.location.PlaceID, PlaceLabel: group.location.PlaceLabel,
+			CoordinateStatus: group.location.CoordinateStatus,
+			AIStatus:         group.location.AIStatus,
+			AssertionCount:   len(group.events), RecordCount: len(group.records),
+			Events: group.events,
+		})
+	}
+	sort.Slice(response.UnmappedGroups, func(i, j int) bool {
+		return response.UnmappedGroups[i].PlaceLabel < response.UnmappedGroups[j].PlaceLabel
+	})
 	for _, group := range groups {
 		sort.Slice(group.events, func(i, j int) bool {
 			return firstTitle(group.events[i].Record) < firstTitle(group.events[j].Record)

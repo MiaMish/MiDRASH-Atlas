@@ -145,10 +145,28 @@ func (s *exportState) addRecord(r InputRecord, byID map[string]InputRecord) {
 	out := AtlasRecord{
 		ID: r.MMSID, PhysicalID: physicalID, Kind: r.RecordKind,
 		ParentIDs: r.ParentMMSIDs, Titles: append(append([]string{}, r.Title...), r.AlternativeTitles...),
+		PrimaryTitles: r.Title, AlternativeTitles: r.AlternativeTitles,
 		Languages: r.Languages, ScriptStyles: r.ScriptStyles,
+		Extent: r.Extent, Dimensions: marcValues(r, "300", "c"),
+		Contributors:    marcContributors(r),
 		Digitized:       len(r.DigitalObjects)+len(r.DigitalServices) > 0,
 		PublicRecordURL: r.PublicRecordURL, ResolverURL: r.ResolverURL,
 		SourceModified: r.SourceModified, ProvenanceNotes: r.ProvenanceNotes, ColophonNotes: r.ColophonNotes,
+		PhysicalNotes: r.PhysicalNotes, Contents: r.Contents, GeneralNotes: r.GeneralNotes,
+	}
+	for _, owner := range r.CurrentOwners {
+		out.CurrentOwners = append(out.CurrentOwners, Owner{
+			Name: owner.Name, Locality: owner.Locality, Country: owner.Country, Roles: owner.Roles,
+		})
+	}
+	for _, parentID := range r.ParentMMSIDs {
+		if parent, ok := byID[parentID]; ok {
+			out.ParentRecords = append(out.ParentRecords, CatalogRecordSummary{
+				ID: parent.MMSID, Kind: parent.RecordKind,
+				Titles:        append(append([]string{}, parent.Title...), parent.AlternativeTitles...),
+				PrimaryTitles: parent.Title, AlternativeTitles: parent.AlternativeTitles,
+			})
+		}
 	}
 	for _, sh := range r.Shelfmarks {
 		out.Shelfmarks = append(out.Shelfmarks, Shelfmark{
@@ -202,6 +220,47 @@ func (s *exportState) addRecord(r InputRecord, byID map[string]InputRecord) {
 		})
 	}
 	s.records = append(s.records, out)
+}
+
+func marcValues(record InputRecord, tag, code string) []string {
+	var values []string
+	for _, field := range record.MARC.Fields {
+		if field.Tag != tag {
+			continue
+		}
+		for _, subfield := range field.Subfields {
+			if subfield.Code == code && strings.TrimSpace(subfield.Value) != "" {
+				values = append(values, subfield.Value)
+			}
+		}
+	}
+	return values
+}
+
+func marcContributors(record InputRecord) []Contributor {
+	var contributors []Contributor
+	for _, field := range record.MARC.Fields {
+		if field.Tag != "100" && field.Tag != "700" {
+			continue
+		}
+		var name, role string
+		for _, subfield := range field.Subfields {
+			switch subfield.Code {
+			case "a":
+				if name == "" {
+					name = subfield.Value
+				}
+			case "e":
+				if role == "" {
+					role = subfield.Value
+				}
+			}
+		}
+		if strings.TrimSpace(name) != "" {
+			contributors = append(contributors, Contributor{Name: name, Role: role, MARCTag: field.Tag})
+		}
+	}
+	return contributors
 }
 
 func (s *exportState) addGeoForSource(out *AtlasRecord, target, source InputRecord, origin string) {

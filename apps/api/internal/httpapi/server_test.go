@@ -279,8 +279,18 @@ func TestAtlasViewJoinsAndFiltersMappedManuscriptEvents(t *testing.T) {
 	  },
 	  {
 	    "id":"record_undated","physical_id":"record_undated","kind":"manuscript","titles":null,
+	    "parent_ids":["parent_one"],
+	    "parent_records":[{
+	      "id":"parent_one","kind":"manuscript","titles":["Parent manuscript"],
+	      "primary_titles":["Parent manuscript"]
+	    }],
 	    "hibur_links":null,"digitized":false,"geo_assertion_ids":["geo_undated"],
 	    "temporal_assertion_ids":null
+	  },
+	  {
+	    "id":"record_unmapped","physical_id":"record_unmapped","kind":"manuscript",
+	    "titles":["Unmapped manuscript"],"hibur_links":null,"digitized":false,
+	    "geo_assertion_ids":["geo_unmapped"],"temporal_assertion_ids":null
 	  }
 	]}`)
 	writeFixture(t, filepath.Join(exportDir, "geo_assertions.json"), `{"assertions":[
@@ -292,9 +302,15 @@ func TestAtlasViewJoinsAndFiltersMappedManuscriptEvents(t *testing.T) {
 	  },
 	  {
 	    "id":"geo_undated","source_type_id":"nli_751_writing_place",
-	    "scope":{"target_record_id":"record_undated","source_record_id":"record_undated","physical_id":"record_undated","origin":"direct"},
+	    "scope":{"target_record_id":"record_undated","source_record_id":"parent_one","physical_id":"parent_one","origin":"parent_fallback"},
 	    "place_id":"place_spain","place_raw":"Spain","role":"place of writing","confidence":"high",
 	    "evidence":{"raw":"Spain","catalog":"NLI","extraction":"structured_field","review_status":"unreviewed"}
+	  },
+	  {
+	    "id":"geo_unmapped","source_type_id":"nli_751_writing_place",
+	    "scope":{"target_record_id":"record_unmapped","source_record_id":"record_unmapped","physical_id":"record_unmapped","origin":"direct"},
+	    "place_id":"place_unknown","place_raw":"Unknown","role":"place of writing","confidence":"high",
+	    "evidence":{"raw":"Unknown","catalog":"NLI","extraction":"structured_field","review_status":"unreviewed"}
 	  }
 	]}`)
 	writeFixture(t, filepath.Join(exportDir, "temporal_assertions.json"), `{"assertions":[{
@@ -393,8 +409,11 @@ func TestAtlasViewJoinsAndFiltersMappedManuscriptEvents(t *testing.T) {
 		t.Fatalf("status %d: %s", res.Code, res.Body.String())
 	}
 	if !bytes.Contains(res.Body.Bytes(), []byte(`"id":"record_undated"`)) ||
+		!bytes.Contains(res.Body.Bytes(), []byte(`"source_record":{"id":"parent_one"`)) ||
 		!bytes.Contains(res.Body.Bytes(), []byte(`"hiburim":[]`)) ||
-		!bytes.Contains(res.Body.Bytes(), []byte(`"temporal_assertions":[]`)) {
+		!bytes.Contains(res.Body.Bytes(), []byte(`"temporal_assertions":[]`)) ||
+		!bytes.Contains(res.Body.Bytes(), []byte(`"unmapped_groups":[{"place_id":"place_unknown"`)) ||
+		!bytes.Contains(res.Body.Bytes(), []byte(`"id":"record_unmapped"`)) {
 		t.Fatalf("undated event collections must be JSON arrays: %s", res.Body.String())
 	}
 }

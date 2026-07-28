@@ -130,13 +130,16 @@ manifestations instead.
 - many-to-many Hibur links;
 - current reviewed, human-edited, or AI-draft modern geometry.
 
-The response groups events by place, avoiding repeated country or region
-polygons. Each feature retains nested event records for drill-down. Supported
-query parameters are `start-year`, `end-year`, `circa-years`,
+The response groups mapped events by place, avoiding repeated country or region
+polygons. Each feature retains nested event records for drill-down. It also
+returns `unmapped_groups`, grouped by unresolved place concept with the same
+record and assertion detail but no fabricated geometry. Supported query
+parameters are `start-year`, `end-year`, `circa-years`,
 `include-undated`, `geo-source`, `origin`, `hibur-id`, and
 `location-status`. Comma-separated values implement multi-selection.
 
 The UI defaults to `nli_751_writing_place`. Current repositories and related
 places remain available but are not silently mixed into the historical default.
-Mapped and unmapped assertion counts are returned together so missing geometry
-is visible rather than dropped.
+Mapped and unmapped assertion counts are returned together. The unmapped count
+opens a dedicated drill-down in the UI and respects the same filters as the
+map.
