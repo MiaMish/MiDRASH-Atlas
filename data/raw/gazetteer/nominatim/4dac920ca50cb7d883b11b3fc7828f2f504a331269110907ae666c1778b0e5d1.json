@@ -1,0 +1,481 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Istanbul, Turkey",
+    "retrieved_at": "2026-07-28T12:06:50.539241Z",
+    "cache_key": "4dac920ca50cb7d883b11b3fc7828f2f504a331269110907ae666c1778b0e5d1",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Istanbul, Turkey"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 59494190,
+          "osm_type": "node",
+          "osm_id": 1882099475,
+          "place_rank": 16,
+          "category": "place",
+          "type": "city",
+          "importance": 0.7828175079468411,
+          "addresstype": "city",
+          "name": "Istanbul",
+          "display_name": "Istanbul, Fatih, Istanbul, Marmara Region, 34122, Turkey",
+          "address": {
+            "city": "Istanbul",
+            "town": "Fatih",
+            "province": "Istanbul",
+            "ISO3166-2-lvl4": "TR-34",
+            "region": "Marmara Region",
+            "postcode": "34122",
+            "country": "Turkey",
+            "country_code": "tr"
+          },
+          "namedetails": {
+            "name": "İstanbul",
+            "name:ab": "Асҭампыл",
+            "name:af": "Istanboel",
+            "name:ak": "Istanbul",
+            "name:am": "ኢስታንቡል",
+            "name:an": "Istambul",
+            "name:ar": "إسطنبول",
+            "name:as": "ইষ্টানবুল",
+            "name:av": "Истанбул",
+            "name:ba": "Истанбул",
+            "name:be": "Стамбул",
+            "name:bg": "Истанбул",
+            "name:bh": "इस्तांबुल",
+            "name:bm": "Istanbul",
+            "name:bn": "ইস্তাম্বুল",
+            "name:br": "Istanbul",
+            "name:bs": "Istanbul",
+            "name:ca": "Istanbul",
+            "name:ce": "Истмала",
+            "name:cs": "Istanbul",
+            "name:cu": "Цѣсар҄ь Градъ",
+            "name:cv": "Стампӑл",
+            "name:cy": "Istanbul",
+            "name:da": "Istanbul",
+            "name:de": "Istanbul",
+            "name:el": "Κωνσταντινούπολη",
+            "name:en": "Istanbul",
+            "name:eo": "Istanbulo",
+            "name:es": "Estambul",
+            "name:eu": "Istanbul",
+            "name:fa": "استانبول",
+            "name:fi": "Istanbul",
+            "name:fj": "Istanbul",
+            "name:fo": "Istanbul",
+            "name:fr": "Istanbul",
+            "name:fy": "Istanbûl",
+            "name:ga": "Iostanbúl",
+            "name:gd": "Istanbul",
+            "name:gl": "Istambul",
+            "name:gn": "Estambul",
+            "name:ha": "Istanbul",
+            "name:he": "איסטנבול",
+            "name:hi": "इस्तांबुल",
+            "name:hr": "Istanbul",
+            "name:ht": "Istanboul",
+            "name:hu": "Isztambul",
+            "name:hy": "Ստամբուլ",
+            "name:ia": "Istanbul",
+            "name:id": "Istanbul",
+            "name:ie": "Istanbul",
+            "name:io": "Istanbul",
+            "name:is": "Mikligarður",
+            "name:it": "Istanbul",
+            "name:ja": "イスタンブール",
+            "name:jv": "Istanbul",
+            "name:ka": "სტამბული",
+            "name:kk": "Ыстанбұл",
+            "name:kn": "ಇಸ್ತಾಂಬುಲ್",
+            "name:ko": "이스탄불",
+            "name:ks": "اِستانبُل",
+            "name:ku": "Stembol",
+            "name:kw": "Istanbul",
+            "name:ky": "Стамбул",
+            "name:la": "Constantinopolis",
+            "name:lb": "Istanbul",
+            "name:li": "Istanboel",
+            "name:ln": "Istanbul",
+            "name:lo": "ອິສະຕັນບູນ",
+            "name:lt": "Stambulas",
+            "name:lv": "Stambula",
+            "name:mg": "Istanbul",
+            "name:mi": "Itānipuru",
+            "name:mk": "Истанбул",
+            "name:ml": "ഇസ്താംബുൾ",
+            "name:mn": "Стамбул",
+            "name:mr": "इस्तंबूल",
+            "name:ms": "Istanbul",
+            "name:mt": "Istanbul",
+            "name:my": "အစ်စတန်ဘူလ်မြို့",
+            "name:na": "Istanbul",
+            "name:nb": "Istanbul",
+            "name:ne": "इस्तानबुल",
+            "name:nl": "Istanboel",
+            "name:nn": "Istanbul",
+            "name:nv": "Ałchʼįʼ Nááʼáhá",
+            "name:ny": "Istanbul",
+            "name:oc": "Istambol",
+            "name:os": "Стамбул",
+            "name:pa": "ਇਸਤਾਨਬੁਲ",
+            "name:pl": "Stambuł",
+            "name:ps": "استنبول",
+            "name:pt": "Istambul",
+            "name:qu": "Istanbul",
+            "name:rm": "Istanbul",
+            "name:ro": "Istanbul",
+            "name:ru": "Стамбул",
+            "name:rw": "Istanbul",
+            "name:sc": "Istanbul",
+            "name:sd": "استنبول",
+            "name:se": "Istanbul",
+            "name:si": "ඉස්තාන්බුල්",
+            "name:sk": "Istanbul",
+            "name:sl": "Carigrad",
+            "name:so": "Istanbuul",
+            "name:sq": "Stambolli",
+            "name:sr": "Истанбул",
+            "name:sv": "Istanbul",
+            "name:sw": "Istanbul",
+            "name:ta": "இசுதான்புல்",
+            "name:te": "ఇస్తాంబుల్",
+            "name:tg": "Истанбул",
+            "name:th": "อิสตันบูล",
+            "name:tk": "Stambul",
+            "name:tl": "Istanbul",
+            "name:tr": "İstanbul",
+            "name:tt": "Истанбул",
+            "name:tw": "Istanbul",
+            "name:ug": "Istanbul",
+            "name:uk": "Стамбул",
+            "name:ur": "استنبول",
+            "name:uz": "Istanbul",
+            "name:vi": "Istanbul",
+            "name:yi": "סטאמבול",
+            "name:yo": "Istanbul",
+            "name:zh": "伊斯坦布尔 / 伊斯坦堡",
+            "name:zu": "Istanbul",
+            "name:ckb": "ئەستەمبوڵ",
+            "name:cnr": "Istanbul",
+            "name:csb": "Sztambùl",
+            "name:dsb": "Istanbul",
+            "name:hsb": "Istanbul",
+            "name:ota": "قسطنطينيه",
+            "name:wal": "Isttanbule",
+            "old_name": "Konstantiniyye",
+            "alt_name:ar": "بيزنطة",
+            "alt_name:mk": "Цариград",
+            "alt_name:ml": "കോൺസ്റ്റാൻ്റിനോപ്പിൾ",
+            "old_name:ar": "القسطنطينية",
+            "old_name:bg": "Цариград",
+            "old_name:br": "Kergustentin",
+            "old_name:ca": "Constantinoble",
+            "old_name:cs": "Konstantinopol",
+            "old_name:cv": "Константинопӑль",
+            "old_name:de": "Konstantinopel",
+            "old_name:el": "Κωνσταντινούπολη",
+            "old_name:en": "Constantinople",
+            "old_name:eo": "Stambulo;Konstantinopolo;Bizanco",
+            "old_name:fr": "Constantinople",
+            "old_name:hr": "Konstantinopol;Carigrad",
+            "old_name:la": "Byzantium",
+            "old_name:pl": "Bizancjum;Konstantynopol",
+            "old_name:sk": "Konštantínopol;Carihrad",
+            "old_name:zh": "君士坦丁堡",
+            "name:zh-Hans": "伊斯坦布尔",
+            "name:zh-Hant": "伊斯坦堡"
+          }
+        },
+        "bbox": [
+          28.8158715,
+          40.8463810,
+          29.1358715,
+          41.1663810
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            28.9758715,
+            41.006381
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 59681423,
+          "osm_type": "relation",
+          "osm_id": 223474,
+          "place_rank": 8,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.603835278568622,
+          "addresstype": "province",
+          "name": "Istanbul",
+          "display_name": "Istanbul, Marmara Region, Turkey",
+          "address": {
+            "province": "Istanbul",
+            "ISO3166-2-lvl4": "TR-34",
+            "region": "Marmara Region",
+            "country": "Turkey",
+            "country_code": "tr"
+          },
+          "namedetails": {
+            "name": "İstanbul",
+            "name:ar": "إسطنبول",
+            "name:br": "Istanbul",
+            "name:de": "İstanbul",
+            "name:el": "Κωνσταντινούπολη",
+            "name:en": "Istanbul",
+            "name:eo": "Istanbulo",
+            "name:es": "Estambul",
+            "name:fr": "Istanbul",
+            "name:hr": "Istanbul",
+            "name:ko": "이스탄불",
+            "name:nl": "Istanboel",
+            "name:no": "Istanbul",
+            "name:pl": "Stambuł",
+            "name:ro": "Istanbul",
+            "name:ru": "Стамбул",
+            "name:sk": "Istanbul",
+            "name:tr": "İstanbul",
+            "name:tt": "Истанбул",
+            "name:uk": "Стамбул",
+            "name:zh": "伊斯坦布尔省",
+            "name:cnr": "Istanbul",
+            "name:war": "Istanbul",
+            "ISO3166-2": "TR-34",
+            "name:zh-Hans": "伊斯坦布尔省",
+            "name:zh-Hant": "伊斯坦堡省",
+            "name:tr:suffix": "Büyükşehir Belediyesi"
+          }
+        },
+        "bbox": [
+          27.9708481,
+          40.7376735,
+          29.9588048,
+          41.6710000
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                27.9708481,
+                41.0998253
+              ],
+              [
+                27.9839906,
+                41.0718535
+              ],
+              [
+                27.9741871,
+                41.0420719
+              ],
+              [
+                28.0132167,
+                41.0353853
+              ],
+              [
+                28.3203487,
+                40.7545929
+              ],
+              [
+                29.0582449,
+                40.7679112
+              ],
+              [
+                29.3157266,
+                40.7376735
+              ],
+              [
+                29.316089,
+                40.787562
+              ],
+              [
+                29.3498691,
+                40.8244937
+              ],
+              [
+                29.3630403,
+                40.817093
+              ],
+              [
+                29.3644095,
+                40.8590876
+              ],
+              [
+                29.4534255,
+                40.9091901
+              ],
+              [
+                29.4372225,
+                40.9388202
+              ],
+              [
+                29.5059007,
+                40.9878684
+              ],
+              [
+                29.4928193,
+                41.0099004
+              ],
+              [
+                29.5086371,
+                41.041655
+              ],
+              [
+                29.5973308,
+                41.0288959
+              ],
+              [
+                29.6069312,
+                40.9812588
+              ],
+              [
+                29.6638584,
+                40.9617767
+              ],
+              [
+                29.7180605,
+                41.002897
+              ],
+              [
+                29.6964097,
+                41.0226179
+              ],
+              [
+                29.7044201,
+                41.0344787
+              ],
+              [
+                29.7181463,
+                41.0275067
+              ],
+              [
+                29.7324291,
+                41.0421757
+              ],
+              [
+                29.8265547,
+                41.0132711
+              ],
+              [
+                29.8804294,
+                41.0419671
+              ],
+              [
+                29.8915028,
+                41.0929597
+              ],
+              [
+                29.9545133,
+                41.0800952
+              ],
+              [
+                29.9588048,
+                41.0944648
+              ],
+              [
+                29.9162324,
+                41.1000831
+              ],
+              [
+                29.9096302,
+                41.1194186
+              ],
+              [
+                29.9380986,
+                41.342
+              ],
+              [
+                29.0278991,
+                41.4564129
+              ],
+              [
+                28.7196882,
+                41.5464634
+              ],
+              [
+                28.4151633,
+                41.671
+              ],
+              [
+                28.143825,
+                41.5907192
+              ],
+              [
+                28.1552553,
+                41.5794818
+              ],
+              [
+                28.1179902,
+                41.5625885
+              ],
+              [
+                28.1198002,
+                41.5294475
+              ],
+              [
+                28.0709481,
+                41.4947567
+              ],
+              [
+                28.1116855,
+                41.4654104
+              ],
+              [
+                28.1217715,
+                41.4096812
+              ],
+              [
+                28.1017631,
+                41.4041086
+              ],
+              [
+                28.0767309,
+                41.2879246
+              ],
+              [
+                28.0003812,
+                41.240615
+              ],
+              [
+                28.0231833,
+                41.1790739
+              ],
+              [
+                28.0136239,
+                41.1623401
+              ],
+              [
+                27.9808259,
+                41.1573563
+              ],
+              [
+                27.9708481,
+                41.0998253
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

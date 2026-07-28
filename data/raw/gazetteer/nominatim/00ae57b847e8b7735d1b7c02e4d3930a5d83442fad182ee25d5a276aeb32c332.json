@@ -1,0 +1,170 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Feodosia, Ukraine",
+    "retrieved_at": "2026-07-28T12:06:54.522094Z",
+    "cache_key": "00ae57b847e8b7735d1b7c02e4d3930a5d83442fad182ee25d5a276aeb32c332",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Feodosia, Ukraine"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 205004873,
+          "osm_type": "relation",
+          "osm_id": 2997809,
+          "place_rank": 18,
+          "category": "place",
+          "type": "town",
+          "importance": 0.5990123297482803,
+          "addresstype": "town",
+          "name": "Feodosia",
+          "display_name": "Feodosia, Феодосійський район, Autonomous Republic of Crimea, 298100-298175, Ukraine",
+          "address": {
+            "town": "Feodosia",
+            "county": "Феодосійський район",
+            "state": "Autonomous Republic of Crimea",
+            "ISO3166-2-lvl4": "UA-43",
+            "postcode": "298100-298175",
+            "country": "Ukraine",
+            "country_code": "ua"
+          },
+          "namedetails": {
+            "name": "Феодосия",
+            "name:ca": "Feodòssia",
+            "name:cs": "Feodosija",
+            "name:de": "Feodossija",
+            "name:en": "Feodosia",
+            "name:es": "Feodosia",
+            "name:fr": "Théodosie",
+            "name:hu": "Feodosia",
+            "name:lt": "Feodosija",
+            "name:pl": "Teodozja",
+            "name:ru": "Феодосия",
+            "name:uk": "Феодосія",
+            "name:crh": "Kefe",
+            "alt_name:fr": "Féodosie;Feodossia",
+            "name:ar": "فيودوسيا",
+            "name:az": "Feodosiya",
+            "name:ba": "Кәфә",
+            "name:be": "Феадосія",
+            "name:da": "Feodosija",
+            "name:el": "Θεοδοσία",
+            "name:eo": "Teodozio",
+            "name:et": "Feodossija",
+            "name:eu": "Feodosia",
+            "name:fa": "فئودوسیا",
+            "name:fi": "Feodosija",
+            "name:he": "פאודוסיה",
+            "name:hr": "Feodosija",
+            "_place_name:hu": "Feodoszija",
+            "name:hy": "Թեոդոսիա",
+            "name:id": "Feodosiya",
+            "name:it": "Feodosia",
+            "name:ja": "フェオドシヤ",
+            "name:ka": "ფეოდოსია",
+            "name:ko": "페오도시야",
+            "name:la": "Theodosia",
+            "name:lv": "Feodosija",
+            "name:mg": "Feodosia",
+            "name:mk": "Феодосија",
+            "name:ml": "ഫിയോഡോസിയ",
+            "name:nb": "Feodosia",
+            "name:nl": "Feodosija",
+            "name:nn": "Feodosia",
+            "name:os": "Феодоси",
+            "name:pt": "Teodósia",
+            "name:ro": "Feodosia",
+            "name:sk": "Feodosija",
+            "name:sl": "Feodozija",
+            "name:sr": "Феодосија",
+            "name:sv": "Feodosija",
+            "name:ta": "பெடோசியா",
+            "name:th": "ฟีโอโดซียา",
+            "name:tr": "Kefe",
+            "name:tt": "Кәфә",
+            "name:uz": "Kafa",
+            "name:vi": "Feodosia",
+            "name:zh": "费奥多西亚",
+            "name:crh-cyr": "Кефе"
+          }
+        },
+        "bbox": [
+          35.3132748,
+          44.9985326,
+          35.4254655,
+          45.1015886
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                35.3132748,
+                45.0034309
+              ],
+              [
+                35.424948,
+                45.012253
+              ],
+              [
+                35.3832222,
+                45.0340501
+              ],
+              [
+                35.4146428,
+                45.0774478
+              ],
+              [
+                35.4026563,
+                45.1003485
+              ],
+              [
+                35.3818118,
+                45.0980955
+              ],
+              [
+                35.3971763,
+                45.071541
+              ],
+              [
+                35.3368967,
+                45.0643086
+              ],
+              [
+                35.3495557,
+                45.0487183
+              ],
+              [
+                35.326573,
+                45.0303242
+              ],
+              [
+                35.3447041,
+                45.0158427
+              ],
+              [
+                35.3132748,
+                45.0034309
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

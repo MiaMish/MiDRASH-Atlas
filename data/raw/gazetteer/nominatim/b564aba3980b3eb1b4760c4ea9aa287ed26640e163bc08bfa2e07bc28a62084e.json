@@ -1,0 +1,25 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "מגדלא אלצפקיין",
+    "retrieved_at": "2026-07-28T12:06:57.128593Z",
+    "cache_key": "b564aba3980b3eb1b4760c4ea9aa287ed26640e163bc08bfa2e07bc28a62084e",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "מגדלא אלצפקיין"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": []
+  }
+}

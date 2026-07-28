@@ -1,0 +1,760 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Bukhara, Uzbekistan",
+    "retrieved_at": "2026-07-28T12:06:51.906495Z",
+    "cache_key": "633bce7388e2008ddcf78a122b5fed6e6db85c05184d57124f8d70561ed778b8",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Bukhara, Uzbekistan"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 211442347,
+          "osm_type": "relation",
+          "osm_id": 13070474,
+          "place_rank": 12,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.62197487258138,
+          "addresstype": "city",
+          "name": "Bukhara",
+          "display_name": "Bukhara, Bukhara Region, Uzbekistan",
+          "address": {
+            "city": "Bukhara",
+            "state": "Bukhara Region",
+            "ISO3166-2-lvl4": "UZ-BU",
+            "country": "Uzbekistan",
+            "country_code": "uz"
+          },
+          "namedetails": {
+            "name": "Buxoro shahri",
+            "name:an": "Bukhara",
+            "name:ar": "بخارى",
+            "name:az": "Buxara şəhəri",
+            "name:be": "Бухара",
+            "name:bg": "Бухара",
+            "name:bn": "বোখারা",
+            "name:ca": "Bukharà",
+            "name:cs": "Buchara",
+            "name:da": "Bukhara",
+            "name:de": "Buchara",
+            "name:el": "Μπουχάρα",
+            "name:en": "Bukhara",
+            "name:eo": "Buĥaro",
+            "name:es": "Bujara",
+            "name:eu": "Bukhara",
+            "name:fa": "بخارا",
+            "name:fi": "Buhara",
+            "name:fr": "Boukhara",
+            "name:he": "עיר בוכרה",
+            "name:hi": "बुख़ारा",
+            "name:hr": "Buhara",
+            "name:hu": "Buhara",
+            "name:id": "Bukhara",
+            "name:it": "Bukhara",
+            "name:ja": "ブハラ",
+            "name:ka": "ბუხარა",
+            "name:kk": "Бұхара қаласы",
+            "name:ko": "부하라",
+            "name:ky": "Бухара шаары",
+            "name:la": "Bochara",
+            "name:lt": "Buchara",
+            "name:lv": "Buhāra",
+            "name:mk": "Бухара",
+            "name:ml": "ബുഖാറ",
+            "name:mn": "Бухар",
+            "name:mr": "बुखारा",
+            "name:ms": "Bukhara",
+            "name:nl": "Buchara (stad)",
+            "name:no": "Bukhara",
+            "name:os": "Бухара",
+            "name:pa": "ਬੁਖਾਰਾ",
+            "name:pl": "Buchara",
+            "name:ps": "بخارا",
+            "name:pt": "Bucara",
+            "name:ro": "Buhara",
+            "name:ru": "Бухара",
+            "name:sk": "Buchara",
+            "name:sl": "Buhara",
+            "name:so": "Bukhaara",
+            "name:sr": "Бухара",
+            "name:sv": "Buchara",
+            "name:sw": "Bukhara",
+            "name:ta": "புகாரா",
+            "name:tg": "Шаҳри Бухоро",
+            "name:tk": "Buhara şäheri",
+            "name:tr": "Buhara Şehri",
+            "name:ug": "بۇخارا شەھىرى",
+            "name:uk": "Бухара",
+            "name:ur": "بخارا",
+            "name:uz": "Buxoro shahri",
+            "name:vi": "Bukhara",
+            "name:zh": "布哈拉",
+            "int_name": "Bukhara",
+            "name:azb": "بوخارا شهری",
+            "name:kaa": "Buxara",
+            "_place_name": "Buxoro",
+            "name:kk-Arab": "بۇحارا قالاسى",
+            "name:kk-Cyrl": "Бұхара қаласы",
+            "name:kk-Latn": "Būxara qalasy",
+            "name:ky-Arab": "بۇحارا شاارى",
+            "name:tk-Arab": "بوحارا شأهری",
+            "name:uz-Arab": "بوخارا شهری",
+            "name:uz-Cyrl": "Бухоро шаҳри",
+            "name:uz-Latn": "Buxoro shahri",
+            "name:af": "Boechara",
+            "name:av": "Бухара",
+            "_place_name:az": "Buxara",
+            "name:ba": "Бохара",
+            "name:bs": "Buhara",
+            "name:ce": "Бухара",
+            "name:cv": "Бухара",
+            "name:et": "Buhhaara",
+            "name:gl": "Bukhara",
+            "_place_name:he": "בוכרה",
+            "name:hy": "Բուխարա",
+            "name:io": "Bukhara",
+            "name:ki": "Bukhara",
+            "_place_name:kk": "Бұхара",
+            "name:ku": "Buxara",
+            "_place_name:ky": "Бухара",
+            "name:mg": "Bukhara",
+            "name:mt": "Bukhara",
+            "name:nb": "Bukhara",
+            "name:ne": "बुखराको एतिहासिक केन्द्र",
+            "_place_name:nl": "Buchara",
+            "name:nn": "Bukhara",
+            "_place_name:pa": "ਬੁਖ਼ਾਰਾ",
+            "name:sd": "بخارا",
+            "name:sq": "Buharaja",
+            "_place_name:tg": "Бухоро",
+            "name:th": "บูฆอรอ",
+            "_place_name:tk": "Buhara",
+            "_place_name:tr": "Buhara",
+            "name:tt": "Бохара",
+            "_place_name:ug": "بۇخارا",
+            "_place_name:uz": "Buxoro",
+            "name:be-tarask": "Бухара",
+            "_place_name:azb": "بوخارا",
+            "old_name": "Хара",
+            "_place_name:kk-Arab": "بۇحارا",
+            "_place_name:kk-Cyrl": "Бұхара",
+            "_place_name:kk-Latn": "Būxara",
+            "_place_name:ky-Arab": "بۇحارا",
+            "_place_name:tk-Arab": "بوحارا",
+            "_place_name:uz-Arab": "بوخارا",
+            "_place_name:uz-Cyrl": "Бухоро",
+            "_place_name:uz-Latn": "Buxoro"
+          }
+        },
+        "bbox": [
+          64.3724249,
+          39.7137877,
+          64.5248047,
+          39.8470840
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                64.3803871,
+                39.7724057
+              ],
+              [
+                64.3738576,
+                39.7224673
+              ],
+              [
+                64.4323141,
+                39.7137877
+              ],
+              [
+                64.438677,
+                39.7267626
+              ],
+              [
+                64.49088,
+                39.7231685
+              ],
+              [
+                64.4999666,
+                39.736652
+              ],
+              [
+                64.4804273,
+                39.7460337
+              ],
+              [
+                64.4896885,
+                39.8006795
+              ],
+              [
+                64.5248047,
+                39.8356176
+              ],
+              [
+                64.4727544,
+                39.8167094
+              ],
+              [
+                64.4282758,
+                39.8221504
+              ],
+              [
+                64.4226316,
+                39.847084
+              ],
+              [
+                64.3893522,
+                39.8303001
+              ],
+              [
+                64.4187908,
+                39.8083654
+              ],
+              [
+                64.3803871,
+                39.7724057
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 201697416,
+          "osm_type": "relation",
+          "osm_id": 1670973,
+          "place_rank": 8,
+          "category": "boundary",
+          "type": "administrative",
+          "importance": 0.49439345903626886,
+          "addresstype": "state",
+          "name": "Bukhara Region",
+          "display_name": "Bukhara Region, Uzbekistan",
+          "address": {
+            "state": "Bukhara Region",
+            "ISO3166-2-lvl4": "UZ-BU",
+            "country": "Uzbekistan",
+            "country_code": "uz"
+          },
+          "namedetails": {
+            "name": "Buxoro Viloyati",
+            "name:ar": "ولاية بخارى",
+            "name:az": "Buxara vilayəti",
+            "name:bg": "Бухарска област",
+            "name:bn": "বুখারা প্রদেশ",
+            "name:ce": "Бухаран область",
+            "name:cv": "Бухара облаçĕ",
+            "name:de": "Provinz Buchara",
+            "name:el": "Μπουχάρα (επαρχία)",
+            "name:en": "Bukhara Region",
+            "name:eo": "Provinco Buĥaro",
+            "name:es": "Provincia de Bujara",
+            "name:et": "Buhhaara vilajett",
+            "name:eu": "Bukhara probintzia",
+            "name:fa": "استان بخارا",
+            "name:fi": "Buharan alue",
+            "name:fr": "Province de Boukhara",
+            "name:gl": "Provincia de Buxoro",
+            "name:hi": "बुख़ारा प्रान्त",
+            "name:ia": "Region Buxoro",
+            "name:id": "Provinsi Buxoro",
+            "name:it": "Regione di Bukhara",
+            "name:ja": "ブハラ州",
+            "name:jv": "Buxoro",
+            "name:ka": "ბუხარის ოლქი",
+            "name:kk": "Бұхара облысы",
+            "name:ko": "부하라주",
+            "name:ky": "Бухара облусу",
+            "name:lt": "Bucharos vilajetas",
+            "name:ml": "ബുഖാറ പ്രവിശ്യ",
+            "name:mr": "बुझोरो विलायती",
+            "name:ms": "Wilayah Buxoro",
+            "name:nl": "Buxoro (provincie)",
+            "name:pa": "ਬੁਖਾਰਾ ਖੇਤਰ",
+            "name:pl": "Wilajet bucharski",
+            "name:pt": "Bucara (província)",
+            "name:ru": "Бухарская область",
+            "name:sk": "Bucharská provincia",
+            "name:sr": "Бухарска област",
+            "name:sv": "Buchara (provins)",
+            "name:ta": "புகாரா பிராந்தியம்",
+            "name:tg": "Вилояти Бухоро",
+            "name:tr": "Buhara ili",
+            "name:ug": "بۇخارا ۋىلايىتى",
+            "name:uk": "Бухарська область",
+            "name:ur": "بخارا صوبہ",
+            "name:uz": "Buxoro viloyati",
+            "name:vi": "Bukhara (tỉnh)",
+            "name:zh": "布哈拉州",
+            "name:ast": "Provincia de Bukhará",
+            "name:azb": "بخارا ویلایت",
+            "name:ceb": "Bukhara Province",
+            "name:crh": "Buhara vilâyeti",
+            "name:kaa": "Buxara wálayatı",
+            "name:nan": "Bukhara Chiu",
+            "name:pnb": "صوبہ بخارا",
+            "name:sco": "Bukhara Province",
+            "name:war": "Bukhara (lalawigan)",
+            "name:wuu": "布哈拉州",
+            "ISO3166-2": "UZ-BU",
+            "alt_name:fa": "ولایت بخارا",
+            "_place_name:en": "Bukhara Province",
+            "_place_name:fa": "ولایت بخارا",
+            "name:hu": "Buharai vilajet",
+            "_place_name:uz": "Бухоро вилояти",
+            "name:be-tarask": "Бухарская вобласьць",
+            "alt_name": "Bukhara"
+          }
+        },
+        "bbox": [
+          62.1510130,
+          38.9593579,
+          65.3792234,
+          41.4680473
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                62.151013,
+                41.4062388
+              ],
+              [
+                62.4516168,
+                41.0837708
+              ],
+              [
+                62.2184144,
+                41.0160078
+              ],
+              [
+                62.4372112,
+                40.8344339
+              ],
+              [
+                62.4513851,
+                40.7902757
+              ],
+              [
+                62.4341594,
+                40.7277681
+              ],
+              [
+                62.3349919,
+                40.6433261
+              ],
+              [
+                62.1558619,
+                40.5500718
+              ],
+              [
+                62.2077182,
+                40.5085152
+              ],
+              [
+                62.3494599,
+                40.4382973
+              ],
+              [
+                62.3345726,
+                40.3749465
+              ],
+              [
+                62.3914803,
+                40.3179294
+              ],
+              [
+                62.3834532,
+                40.2760958
+              ],
+              [
+                62.4137839,
+                40.1735074
+              ],
+              [
+                62.3964967,
+                40.0992805
+              ],
+              [
+                62.4270052,
+                40.064861
+              ],
+              [
+                62.4349125,
+                39.9999981
+              ],
+              [
+                62.4698586,
+                39.9582627
+              ],
+              [
+                63.694214,
+                39.2724385
+              ],
+              [
+                63.7051492,
+                39.2238659
+              ],
+              [
+                64.181194,
+                38.9618603
+              ],
+              [
+                64.3305917,
+                38.9952609
+              ],
+              [
+                64.3777661,
+                38.9593579
+              ],
+              [
+                64.5191953,
+                39.0751411
+              ],
+              [
+                64.890548,
+                39.1641534
+              ],
+              [
+                64.8916625,
+                39.183052
+              ],
+              [
+                64.8405461,
+                39.2377695
+              ],
+              [
+                64.8449858,
+                39.2694403
+              ],
+              [
+                64.9734827,
+                39.3497031
+              ],
+              [
+                64.9986845,
+                39.395979
+              ],
+              [
+                65.1318303,
+                39.4688145
+              ],
+              [
+                65.1326001,
+                39.540592
+              ],
+              [
+                65.1070913,
+                39.5772383
+              ],
+              [
+                65.0902848,
+                39.5898442
+              ],
+              [
+                65.0163656,
+                39.5771886
+              ],
+              [
+                65.0118361,
+                39.6773181
+              ],
+              [
+                64.8632588,
+                39.7154819
+              ],
+              [
+                64.8789336,
+                39.7375365
+              ],
+              [
+                64.852126,
+                39.7460192
+              ],
+              [
+                64.8238586,
+                39.7142472
+              ],
+              [
+                64.7947043,
+                39.7369102
+              ],
+              [
+                64.8042008,
+                39.7503904
+              ],
+              [
+                64.7769043,
+                39.7647741
+              ],
+              [
+                64.777865,
+                39.7788021
+              ],
+              [
+                64.678125,
+                39.8260206
+              ],
+              [
+                64.6761406,
+                39.8488572
+              ],
+              [
+                64.6104703,
+                39.9164188
+              ],
+              [
+                64.6516912,
+                39.9787138
+              ],
+              [
+                64.7747301,
+                40.051208
+              ],
+              [
+                64.8224664,
+                40.1359746
+              ],
+              [
+                64.9035611,
+                40.1646483
+              ],
+              [
+                64.8420847,
+                40.2232455
+              ],
+              [
+                64.8630274,
+                40.2155556
+              ],
+              [
+                64.8878999,
+                40.2689185
+              ],
+              [
+                64.8543337,
+                40.2859529
+              ],
+              [
+                64.8701852,
+                40.3540359
+              ],
+              [
+                64.9510984,
+                40.3566278
+              ],
+              [
+                65.0188932,
+                40.3146681
+              ],
+              [
+                65.0110197,
+                40.3334965
+              ],
+              [
+                65.0382108,
+                40.4134978
+              ],
+              [
+                65.0073757,
+                40.450181
+              ],
+              [
+                64.9902783,
+                40.5230326
+              ],
+              [
+                64.969656,
+                40.5239199
+              ],
+              [
+                64.9718075,
+                40.5454727
+              ],
+              [
+                65.0376339,
+                40.530757
+              ],
+              [
+                65.0161984,
+                40.5070841
+              ],
+              [
+                65.0591946,
+                40.4271166
+              ],
+              [
+                65.1268063,
+                40.3607538
+              ],
+              [
+                65.1337185,
+                40.3164057
+              ],
+              [
+                65.1521415,
+                40.3120381
+              ],
+              [
+                65.1875704,
+                40.4091015
+              ],
+              [
+                65.2292167,
+                40.414041
+              ],
+              [
+                65.2403671,
+                40.4725177
+              ],
+              [
+                65.2247227,
+                40.4808636
+              ],
+              [
+                65.2293321,
+                40.5035045
+              ],
+              [
+                65.2922085,
+                40.5057488
+              ],
+              [
+                65.3534684,
+                40.4824259
+              ],
+              [
+                65.3792234,
+                40.6665441
+              ],
+              [
+                65.3364678,
+                40.6569889
+              ],
+              [
+                65.3133886,
+                40.6702376
+              ],
+              [
+                65.0880442,
+                40.6799928
+              ],
+              [
+                64.8925397,
+                40.7154831
+              ],
+              [
+                64.8136014,
+                40.7540066
+              ],
+              [
+                64.7908176,
+                40.8966589
+              ],
+              [
+                64.7738791,
+                40.9430461
+              ],
+              [
+                64.7527765,
+                40.9466563
+              ],
+              [
+                64.7030481,
+                40.8649971
+              ],
+              [
+                64.4510965,
+                40.8452689
+              ],
+              [
+                64.429153,
+                40.7633294
+              ],
+              [
+                64.0788726,
+                40.7944419
+              ],
+              [
+                64.0766596,
+                40.9194411
+              ],
+              [
+                64.0216526,
+                40.9536054
+              ],
+              [
+                63.9516604,
+                40.9163825
+              ],
+              [
+                63.8482276,
+                40.7376334
+              ],
+              [
+                63.7194764,
+                40.7197079
+              ],
+              [
+                63.7101565,
+                40.7755788
+              ],
+              [
+                63.4742088,
+                40.9304969
+              ],
+              [
+                63.0569378,
+                41.035554
+              ],
+              [
+                62.9838801,
+                41.0272146
+              ],
+              [
+                62.8963841,
+                41.2052698
+              ],
+              [
+                62.6874922,
+                41.3252708
+              ],
+              [
+                62.5852661,
+                41.4680473
+              ],
+              [
+                62.2647723,
+                41.4368242
+              ],
+              [
+                62.151013,
+                41.4062388
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

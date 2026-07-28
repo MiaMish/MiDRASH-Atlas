@@ -1,0 +1,158 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "Al Tawilah, Yemen",
+    "retrieved_at": "2026-07-28T12:06:53.203208Z",
+    "cache_key": "f36aa72247649fb8f327b5264a1228d4a1957aadbb94f5a2e7a349951687432a",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "Al Tawilah, Yemen"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 44130767,
+          "osm_type": "node",
+          "osm_id": 6936518100,
+          "place_rank": 20,
+          "category": "place",
+          "type": "hamlet",
+          "importance": 0.13337083466849772,
+          "addresstype": "hamlet",
+          "name": "Al Jallayah at Tawilah",
+          "display_name": "Al Jallayah at Tawilah, Maqbanah District, Ta'izz Governorate, Yemen",
+          "address": {
+            "hamlet": "Al Jallayah at Tawilah",
+            "district": "Maqbanah District",
+            "state": "Ta'izz Governorate",
+            "ISO3166-2-lvl4": "YE-TA",
+            "country": "Yemen",
+            "country_code": "ye"
+          },
+          "namedetails": {
+            "name": "الجلاية الطويلة",
+            "name:ar": "الجلاية الطويلة",
+            "name:en": "Al Jallayah at Tawilah",
+            "int_name": "Al Jallāyah aţ Ţawīlah"
+          }
+        },
+        "bbox": [
+          43.6600060,
+          13.5187270,
+          43.7000060,
+          13.5587270
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            43.680006,
+            13.538727
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 44110752,
+          "osm_type": "node",
+          "osm_id": 6936510048,
+          "place_rank": 20,
+          "category": "place",
+          "type": "hamlet",
+          "importance": 0.13337083466849772,
+          "addresstype": "hamlet",
+          "name": "Al Kawlah at Tawilah",
+          "display_name": "Al Kawlah at Tawilah, Suq ar Rubu`, Al Qafr District, Ibb Governorate, Yemen",
+          "address": {
+            "hamlet": "Al Kawlah at Tawilah",
+            "village": "Suq ar Rubu`",
+            "district": "Al Qafr District",
+            "state": "Ibb Governorate",
+            "ISO3166-2-lvl4": "YE-IB",
+            "country": "Yemen",
+            "country_code": "ye"
+          },
+          "namedetails": {
+            "name": "الكولة الطويلة",
+            "name:ar": "الكولة الطويلة",
+            "name:en": "Al Kawlah at Tawilah",
+            "int_name": "Al Kawlah aţ Ţawīlah"
+          }
+        },
+        "bbox": [
+          44.0550340,
+          14.2348770,
+          44.0950340,
+          14.2748770
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            44.075034,
+            14.254877
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 45286112,
+          "osm_type": "node",
+          "osm_id": 1219285700,
+          "place_rank": 30,
+          "category": "amenity",
+          "type": "clinic",
+          "importance": 5.0915541313756273e-05,
+          "addresstype": "amenity",
+          "name": "Wahdat at Tawilah wa al Hamazat",
+          "display_name": "Wahdat at Tawilah wa al Hamazat, Sa'dah Al Buq' Road, At Tawilah, Al Hurban, Sahar district, Sa'dah Governorate, Yemen",
+          "address": {
+            "amenity": "Wahdat at Tawilah wa al Hamazat",
+            "road": "Sa'dah Al Buq' Road",
+            "hamlet": "At Tawilah",
+            "village": "Al Hurban",
+            "district": "Sahar district",
+            "state": "Sa'dah Governorate",
+            "ISO3166-2-lvl4": "YE-SD",
+            "country": "Yemen",
+            "country_code": "ye"
+          },
+          "namedetails": {
+            "name": "وحدة الطويلة و الحمزات",
+            "name:ar": "وحدة الطويلة و الحمزات",
+            "name:de": "Wahdat at Tawilah wa al Hamzat",
+            "name:en": "Wahdat at Tawilah wa al Hamazat",
+            "name:fr": "Wahdat at Tawilah wa al Hamzat",
+            "int_name": "Waḩdat aţ Ţawīlah wa al Ḩamazāt"
+          }
+        },
+        "bbox": [
+          43.7815500,
+          16.9966170,
+          43.7816500,
+          16.9967170
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            43.7816,
+            16.996667
+          ]
+        }
+      }
+    ]
+  }
+}

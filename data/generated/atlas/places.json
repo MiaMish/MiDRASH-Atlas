@@ -1,0 +1,969 @@
+{
+  "model_note": "A place concept may have multiple time-bounded geometry variants supplied by different interpretive authorities.",
+  "places": [
+    {
+      "id": "place_047109fd3ff3",
+      "preferred_label": "Vlorë (Albania)",
+      "aliases": [
+        "Vlorë (Albania)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_0551a98129a9",
+      "preferred_label": "Brescia (Italy)",
+      "aliases": [
+        "Brescia (Italy)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_0641bcf0ecf3",
+      "preferred_label": "Safed (Israel)",
+      "aliases": [
+        "Safed (Israel)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_06466a107dbf",
+      "preferred_label": "Italy",
+      "aliases": [
+        "Italy"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_06fceda9c42f",
+      "preferred_label": "Griesheim (Hesse, Germany)",
+      "aliases": [
+        "Griesheim (Hesse, Germany)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_082bcf1ee211",
+      "preferred_label": "Sefrou (Morocco)",
+      "aliases": [
+        "Sefrou (Morocco)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_090d79579817",
+      "preferred_label": "Jerusalem, Israel",
+      "aliases": [
+        "Jerusalem, Israel"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_0f1e2e969ecc",
+      "preferred_label": "Krakow, Poland",
+      "aliases": [
+        "Krakow, Poland"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_111dd8aec60e",
+      "preferred_label": "Thessalonikē (Greece)",
+      "aliases": [
+        "Thessalonikē (Greece)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_12c57f0cd911",
+      "preferred_label": "Iṣfahān (Iran)",
+      "aliases": [
+        "Iṣfahān (Iran)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_15f58a63f331",
+      "preferred_label": "Trzcianka (Województwo Wielkopolskie, Poland)",
+      "aliases": [
+        "Trzcianka (Województwo Wielkopolskie, Poland)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_17d19ffd10f4",
+      "preferred_label": "Warsaw, Poland",
+      "aliases": [
+        "Warsaw, Poland"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_18ac1f5bf2d7",
+      "preferred_label": "Frankfurt am Main (Germany)",
+      "aliases": [
+        "Frankfurt am Main (Germany)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_194744ab00a9",
+      "preferred_label": "Ramat Gan, Israel",
+      "aliases": [
+        "Ramat Gan, Israel"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_1f50c245e534",
+      "preferred_label": "Baza (Spain)",
+      "aliases": [
+        "Baza (Spain)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_2007e57ca607",
+      "preferred_label": "Paris, France",
+      "aliases": [
+        "Paris, France"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_21784375c73e",
+      "preferred_label": "Feodosii︠a︡ (Ukraine)",
+      "aliases": [
+        "Feodosii︠a︡ (Ukraine)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_249693528847",
+      "preferred_label": "Vignola (Italy)",
+      "aliases": [
+        "Vignola (Italy)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_27d0ffc85784",
+      "preferred_label": "Carcassonne (France)",
+      "aliases": [
+        "Carcassonne (France)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_2c0ff86942e8",
+      "preferred_label": "Rome (Italy)",
+      "aliases": [
+        "Rome (Italy)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_2c785e0b26ec",
+      "preferred_label": "Camerino (Italy)",
+      "aliases": [
+        "Camerino (Italy)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_2db301f0340f",
+      "preferred_label": "Padua (Italy)",
+      "aliases": [
+        "Padua (Italy)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_30d440b0d9b5",
+      "preferred_label": "Schmalkalden (Germany)",
+      "aliases": [
+        "Schmalkalden (Germany)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_31df56cda60a",
+      "preferred_label": "Strasbourg, France",
+      "aliases": [
+        "Strasbourg, France"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_37f7efe37373",
+      "preferred_label": "Moscow, Russia",
+      "aliases": [
+        "Moscow, Russia"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_385e4f1783cb",
+      "preferred_label": "קארה (תימן)",
+      "aliases": [
+        "קארה (תימן)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_38a35ad95f1f",
+      "preferred_label": "Istanbul (Turkey)",
+      "aliases": [
+        "Istanbul (Turkey)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_411abc4e9738",
+      "preferred_label": "Lʹviv (Ukraine)",
+      "aliases": [
+        "Lʹviv (Ukraine)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_421cb74945e0",
+      "preferred_label": "Vatican City, Vatican City State",
+      "aliases": [
+        "Vatican City, Vatican City State"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_432deb0e188c",
+      "preferred_label": "Stuttgart, Germany",
+      "aliases": [
+        "Stuttgart, Germany"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_456ec39f5b33",
+      "preferred_label": "Dreux (France)",
+      "aliases": [
+        "Dreux (France)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_46542d00c7a9",
+      "preferred_label": "Mestre (Italy)",
+      "aliases": [
+        "Mestre (Italy)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_4702c36d4d9a",
+      "preferred_label": "Damascus (Syria)",
+      "aliases": [
+        "Damascus (Syria)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_484a55adf93d",
+      "preferred_label": "Kalisz (Poland)",
+      "aliases": [
+        "Kalisz (Poland)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_49824073af41",
+      "preferred_label": "Toledo (Spain)",
+      "aliases": [
+        "Toledo (Spain)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_4a343cbdae50",
+      "preferred_label": "Leiden, Netherlands",
+      "aliases": [
+        "Leiden, Netherlands"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_4c865f906f42",
+      "preferred_label": "Legnano (Italy)",
+      "aliases": [
+        "Legnano (Italy)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_4e8c72a59d0e",
+      "preferred_label": "Rome, Italy",
+      "aliases": [
+        "Rome, Italy"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_4f545a387ad1",
+      "preferred_label": "Parma, Italy",
+      "aliases": [
+        "Parma, Italy"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_4fcab0eb585c",
+      "preferred_label": "Baghdad (Iraq)",
+      "aliases": [
+        "Baghdad (Iraq)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_518d91e5458b",
+      "preferred_label": "Aybak (Afghanistan)",
+      "aliases": [
+        "Aybak (Afghanistan)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_5249937e5951",
+      "preferred_label": "Rhodes (Greece)",
+      "aliases": [
+        "Rhodes (Greece)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_5d68239dbf73",
+      "preferred_label": "Tivoli (Italy)",
+      "aliases": [
+        "Tivoli (Italy)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_61abf0b2aa13",
+      "preferred_label": "Spain",
+      "aliases": [
+        "Spain"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_63fc5eab0874",
+      "preferred_label": "Hamburg, Germany",
+      "aliases": [
+        "Hamburg, Germany"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_64eff14d41d2",
+      "preferred_label": "Modena, Italy",
+      "aliases": [
+        "Modena, Italy"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_70f5fecaeaad",
+      "preferred_label": "Livorno (Italy)",
+      "aliases": [
+        "Livorno (Italy)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_75cb9af2e0d2",
+      "preferred_label": "Chania (Greece)",
+      "aliases": [
+        "Chania (Greece)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_84e2380455e8",
+      "preferred_label": "Morocco",
+      "aliases": [
+        "Morocco"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_87bd84e0bfdc",
+      "preferred_label": "Budapest, Hungary",
+      "aliases": [
+        "Budapest, Hungary"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_88eb70117bb2",
+      "preferred_label": "Bristol (England)",
+      "aliases": [
+        "Bristol (England)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_8a62b4a80ba8",
+      "preferred_label": "Worms (Germany)",
+      "aliases": [
+        "Worms (Germany)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_8d0094556e0e",
+      "preferred_label": "San Lorenzo del Escorial, Spain",
+      "aliases": [
+        "San Lorenzo del Escorial, Spain"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_92d024faa8bc",
+      "preferred_label": "Ṣanʻāʼ (Yemen)",
+      "aliases": [
+        "Ṣanʻāʼ (Yemen)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_92d2cefc29d7",
+      "preferred_label": "Brescello (Italy)",
+      "aliases": [
+        "Brescello (Italy)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_9671a77b550e",
+      "preferred_label": "Siena, Italy",
+      "aliases": [
+        "Siena, Italy"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_9a84865fc27a",
+      "preferred_label": "Aix-en-Provence (France)",
+      "aliases": [
+        "Aix-en-Provence (France)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_9aea766cfed4",
+      "preferred_label": "Asti (Italy)",
+      "aliases": [
+        "Asti (Italy)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_a04c9db506af",
+      "preferred_label": "Princeton, NJ, USA",
+      "aliases": [
+        "Princeton, NJ, USA"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_a0b48a3138e4",
+      "preferred_label": "Cambridge, England",
+      "aliases": [
+        "Cambridge, England"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_a19ffb214fd0",
+      "preferred_label": "Egypt",
+      "aliases": [
+        "Egypt"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_a269d7ee2af2",
+      "preferred_label": "Yemen (Republic)",
+      "aliases": [
+        "Yemen (Republic)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_a5fdc3c73447",
+      "preferred_label": "Fürth (Bavaria, Germany)",
+      "aliases": [
+        "Fürth (Bavaria, Germany)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_a86d38517e73",
+      "preferred_label": "Rothenburg ob der Tauber (Germany)",
+      "aliases": [
+        "Rothenburg ob der Tauber (Germany)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_a8dae310806b",
+      "preferred_label": "Aleppo (Syria)",
+      "aliases": [
+        "Aleppo (Syria)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_a9054d6e4488",
+      "preferred_label": "St. Petersburg, Russia",
+      "aliases": [
+        "St. Petersburg, Russia"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_aa909cca0e53",
+      "preferred_label": "Arles (France)",
+      "aliases": [
+        "Arles (France)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_ab86f9dc317d",
+      "preferred_label": "Paris (France)",
+      "aliases": [
+        "Paris (France)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_af4a48cb2fbd",
+      "preferred_label": "Venice (Italy)",
+      "aliases": [
+        "Venice (Italy)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_af74afa5328d",
+      "preferred_label": "Prague (Czech Republic)",
+      "aliases": [
+        "Prague (Czech Republic)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_af926943983d",
+      "preferred_label": "Bukhoro (Uzbekistan)",
+      "aliases": [
+        "Bukhoro (Uzbekistan)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_afad0638e566",
+      "preferred_label": "Al-Tawilah (Yemen)",
+      "aliases": [
+        "Al-Tawilah (Yemen)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_b154d5fdd804",
+      "preferred_label": "Ostra (Marche, Italy)",
+      "aliases": [
+        "Ostra (Marche, Italy)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_b31bd3bc9175",
+      "preferred_label": "Rennes (France)",
+      "aliases": [
+        "Rennes (France)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_b3d90298c525",
+      "preferred_label": "מגדלא אלצפקיין",
+      "aliases": [
+        "מגדלא אלצפקיין"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_b559bf3c0a50",
+      "preferred_label": "Tlemcen (Algeria)",
+      "aliases": [
+        "Tlemcen (Algeria)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_b808a4199629",
+      "preferred_label": "San Miniato (Italy)",
+      "aliases": [
+        "San Miniato (Italy)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_b851c878ea38",
+      "preferred_label": "Jerusalem (Israel)",
+      "aliases": [
+        "Jerusalem (Israel)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_b8a3c21ef23d",
+      "preferred_label": "Cairo (Egypt)",
+      "aliases": [
+        "Cairo (Egypt)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_b8cb9f963d8a",
+      "preferred_label": "Ascoli Piceno (Italy)",
+      "aliases": [
+        "Ascoli Piceno (Italy)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_bd72015066a5",
+      "preferred_label": "Africa, North",
+      "aliases": [
+        "Africa, North"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_bf2556c1d556",
+      "preferred_label": "Iran",
+      "aliases": [
+        "Iran"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_c324165f523b",
+      "preferred_label": "Uncastillo (Spain)",
+      "aliases": [
+        "Uncastillo (Spain)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_c60479f42bd7",
+      "preferred_label": "New York, NY, USA",
+      "aliases": [
+        "New York, NY, USA"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_c8b2468ebd0b",
+      "preferred_label": "Oran (Algeria)",
+      "aliases": [
+        "Oran (Algeria)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_ccf5bafb0c83",
+      "preferred_label": "Lodi (Italy)",
+      "aliases": [
+        "Lodi (Italy)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_cd4233c37b19",
+      "preferred_label": "London, England",
+      "aliases": [
+        "London, England"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_cecb3e15e492",
+      "preferred_label": "Bozzolo (Italy)",
+      "aliases": [
+        "Bozzolo (Italy)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_d46c2fb620f5",
+      "preferred_label": "Castelló d'Empúries (Spain)",
+      "aliases": [
+        "Castelló d'Empúries (Spain)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_d73b204ec1eb",
+      "preferred_label": "Philadelphia, PA, USA",
+      "aliases": [
+        "Philadelphia, PA, USA"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_d8040869276f",
+      "preferred_label": "Ērakleion (Greece)",
+      "aliases": [
+        "Ērakleion (Greece)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_d993ac78aee2",
+      "preferred_label": "Geneva, Switzerland",
+      "aliases": [
+        "Geneva, Switzerland"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_dafe5fe18f43",
+      "preferred_label": "Fès (Morocco)",
+      "aliases": [
+        "Fès (Morocco)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_db621093bcb8",
+      "preferred_label": "Zaragoza (Spain)",
+      "aliases": [
+        "Zaragoza (Spain)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_dcec797e6142",
+      "preferred_label": "Vienna (Austria)",
+      "aliases": [
+        "Vienna (Austria)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_e63a3b150a20",
+      "preferred_label": "Modena (Italy)",
+      "aliases": [
+        "Modena (Italy)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_e8cfd49b8792",
+      "preferred_label": "Treviso (Italy)",
+      "aliases": [
+        "Treviso (Italy)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_e94a8e6b30d8",
+      "preferred_label": "Bologna (Italy)",
+      "aliases": [
+        "Bologna (Italy)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_e9659498d14f",
+      "preferred_label": "Tanam (Yemen)",
+      "aliases": [
+        "Tanam (Yemen)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_ee6f04964cee",
+      "preferred_label": "Frankfurt am Main, Germany",
+      "aliases": [
+        "Frankfurt am Main, Germany"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_ef901d1b3467",
+      "preferred_label": "Munich, Germany",
+      "aliases": [
+        "Munich, Germany"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_f2a6f93c1b16",
+      "preferred_label": "Oxford, England",
+      "aliases": [
+        "Oxford, England"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_f2a9b4c1ec1c",
+      "preferred_label": "Mantua, Italy",
+      "aliases": [
+        "Mantua, Italy"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_f378663085da",
+      "preferred_label": "Zurich, Switzerland",
+      "aliases": [
+        "Zurich, Switzerland"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_f4e0e3b56753",
+      "preferred_label": "Perpignan (France)",
+      "aliases": [
+        "Perpignan (France)"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_f8db4fb9b5b7",
+      "preferred_label": "Cincinnati, OH, USA",
+      "aliases": [
+        "Cincinnati, OH, USA"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    },
+    {
+      "id": "place_fdade3d9c91d",
+      "preferred_label": "Florence, Italy",
+      "aliases": [
+        "Florence, Italy"
+      ],
+      "geometry_variants": [],
+      "review_status": "needs_geometry_review"
+    }
+  ],
+  "schema_version": "1.0.0"
+}

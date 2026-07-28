@@ -1,0 +1,2428 @@
+{
+  "hiburim": [
+    {
+      "id": "1.1-2:1:1.0",
+      "label": "מדרש דוד הנגיד",
+      "english": "Midrash David HaNagid",
+      "aliases": [
+        "מדרש דוד הנגיד",
+        "תורה",
+        "Midrash David ha-Nagid",
+        "Midrash David HaNagid"
+      ],
+      "ontology_key": "מדרש דוד הנגיד"
+    },
+    {
+      "id": "1.1-3:1:1.0",
+      "label": "שכל טוב",
+      "english": "Sekhel Tov",
+      "aliases": [
+        "שכל טוב",
+        "תורה",
+        "Sekhel Tob",
+        "מדרש שכל טוב",
+        "ילקוט שכל טוב",
+        "Menachem ben Salomo, active 12th century. Midrash Sekhel tov",
+        "Sekhel Tov"
+      ],
+      "ontology_key": "שכל טוב"
+    },
+    {
+      "id": "1.1-5:10:1.0",
+      "label": "לקח טוב/פסיקתא זוטרתא",
+      "english": "Lekah Tov / Pesikta Zutarta",
+      "aliases": [
+        "לקח טוב/פסיקתא זוטרתא",
+        "תורה",
+        "לקח טוב",
+        "Leqaḥ Tob",
+        "Lekaḥ Tov (c. 1110)",
+        "לקח טוב - פסיקתא זוטרתא",
+        "פסיקתא זוטרתא",
+        "Lekah tov/ Pesikta zutrata",
+        "Lekah Tov / Pesikta Zutarta"
+      ],
+      "ontology_key": "לקח טוב/פסיקתא זוטרתא"
+    },
+    {
+      "id": "1.1-5:11:1.0",
+      "label": "מדרש אגדה (בובר)",
+      "english": "Midrash Aggadah (Buber)",
+      "aliases": [
+        "מדרש אגדה (בובר)",
+        "תורה",
+        "Midrash Aggadah",
+        "מדרש אגדה",
+        "Midrash Aggadah (Buber)"
+      ],
+      "ontology_key": "מדרש אגדה (בובר)"
+    },
+    {
+      "id": "1.1-5:1:1.0",
+      "label": "מדרש רבה על התורה",
+      "english": "Midrash Rabbah on the Torah",
+      "family": [
+        "Midrash-Rabba",
+        "Aggadic Midrash"
+      ],
+      "aliases": [
+        "מדרש רבה על התורה",
+        "תורה",
+        "Midrash Rabbah on the Torah",
+        "Midrash rabbah. Pentateuch",
+        "Midrash-Rabba, Aggadic Midrash"
+      ],
+      "ontology_key": "מדרש רבה על התורה"
+    },
+    {
+      "id": "1.1-5:2:1.0",
+      "label": "תנחומא - ילמדנו",
+      "english": "Tanhuma–Yelamdenu",
+      "family": [
+        "Tanhuma-Yelmanu"
+      ],
+      "aliases": [
+        "תנחומא - ילמדנו",
+        "תורה",
+        "tanḥuma - Yelamdenu",
+        "Tanḥuma",
+        "מדרשי התנחומא",
+        "מדרש תנחומא",
+        "תנחומא ילמדנו",
+        "Midrash Tanhuma",
+        "Tanhuma–Yelamdenu",
+        "Tanhuma-Yelmanu"
+      ],
+      "ontology_key": "תנחומא - ילמדנו"
+    },
+    {
+      "id": "1.1-5:2:2.0",
+      "label": "מדרשי ילמדנו",
+      "english": "Yelamdenu Midrashim",
+      "family": [
+        "Tanhuma-Yelmanu"
+      ],
+      "aliases": [
+        "מדרשי ילמדנו",
+        "תורה",
+        "Yellamedenu Midrashim",
+        "מדרש ילמדנו",
+        "Yelammedenu Midrashim",
+        "Yelamdenu Midrashim",
+        "Midrashei Yelamdenu",
+        "Tanhuma-Yelmanu"
+      ],
+      "ontology_key": "מדרשי ילמדנו"
+    },
+    {
+      "id": "1.1-5:2:3.0",
+      "label": "תנחומא הנדפס - קושטא",
+      "english": "Printed Tanhuma – Constantinople",
+      "family": [
+        "Tanhuma-Yelmanu",
+        "Aggadic Midrash"
+      ],
+      "aliases": [
+        "תנחומא הנדפס - קושטא",
+        "תורה",
+        "תנחומא (הנדפס)",
+        "Tanhuma (printed version)",
+        "Printed Tanhuma – Constantinople",
+        "Tanhuma-Yelmanu, Aggadic Midrash"
+      ],
+      "ontology_key": "תנחומא הנדפס - קושטא"
+    },
+    {
+      "id": "1.1-5:2:4.0",
+      "label": "תנחומא הנדפס - מנטובה",
+      "english": "Printed Tanhuma – Mantua",
+      "family": [
+        "Tanhuma-Yelmanu",
+        "Aggadic Midrash"
+      ],
+      "aliases": [
+        "תנחומא הנדפס - מנטובה",
+        "תורה",
+        "Printed Tanhuma – Mantua",
+        "Tanhuma-Yelmanu, Aggadic Midrash"
+      ],
+      "ontology_key": "תנחומא הנדפס - מנטובה"
+    },
+    {
+      "id": "1.1-5:2:5.0",
+      "label": "תנחומא בובר",
+      "english": "Tanhuma Buber",
+      "family": [
+        "Tanhuma-Yelmanu",
+        "Aggadic Midrash"
+      ],
+      "aliases": [
+        "תנחומא בובר",
+        "תורה",
+        "Tanḥuma (Buber)",
+        "תנחומא (בובר)",
+        "Tanhuma (Buber)",
+        "Tanhuma Buber",
+        "Tanhuma-Yelmanu, Aggadic Midrash"
+      ],
+      "ontology_key": "תנחומא בובר"
+    },
+    {
+      "id": "1.1-5:2:6.0",
+      "label": "מדרש חדש",
+      "english": "Midrash Hadash",
+      "aliases": [
+        "מדרש חדש",
+        "תורה",
+        "Midrash Hadash"
+      ],
+      "ontology_key": "מדרש חדש"
+    },
+    {
+      "id": "1.1-5:3:1.0",
+      "label": "מדרש הגדול",
+      "english": "Midrash HaGadol",
+      "aliases": [
+        "מדרש הגדול",
+        "תורה",
+        "Midrash ha-Gadol",
+        "Midrash ha-gadol",
+        "Midrash HaGadol"
+      ],
+      "ontology_key": "מדרש הגדול"
+    },
+    {
+      "id": "1.1-5:4:1.0",
+      "label": "מדרש החפץ",
+      "english": "Midrash HaHefetz",
+      "aliases": [
+        "מדרש החפץ",
+        "תורה",
+        "Midrash hs-Hefez",
+        "Midrash ha-Hefets",
+        "Midrash HaHefetz"
+      ],
+      "ontology_key": "מדרש החפץ"
+    },
+    {
+      "id": "1.1-5:5:1.0",
+      "label": "נר השכלים",
+      "english": "Ner HaSekhalim",
+      "aliases": [
+        "נר השכלים",
+        "תורה",
+        "Ner HaSekhalim"
+      ],
+      "ontology_key": "נר השכלים"
+    },
+    {
+      "id": "1.1-5:6:1.0",
+      "label": "תורת המנחה",
+      "english": "Torat HaMinhah",
+      "aliases": [
+        "תורת המנחה",
+        "תורה",
+        "Torat HaMinhah"
+      ],
+      "ontology_key": "תורת המנחה"
+    },
+    {
+      "id": "1.1-5:7:1.0",
+      "label": "ילקוט ראובני",
+      "english": "Yalkut Reuveni",
+      "aliases": [
+        "ילקוט ראובני",
+        "תורה",
+        "Yalqut Reubeni",
+        "Yalkut Reuveni"
+      ],
+      "ontology_key": "ילקוט ראובני"
+    },
+    {
+      "id": "1.1-5:8:1.0",
+      "label": "מדרש הביאור",
+      "english": "Midrash HaBe'ur",
+      "aliases": [
+        "מדרש הביאור",
+        "תורה",
+        "Midrash HaBe'ur"
+      ],
+      "ontology_key": "מדרש הביאור"
+    },
+    {
+      "id": "1.1-5:9:1.0",
+      "label": "דרשות ר\"י אבן שועיב",
+      "english": "Sermons of R. Y. Ibn Shu’ayb",
+      "aliases": [
+        "דרשות ר\"י אבן שועיב",
+        "תורה",
+        "Sermons of R. Y. Ibn Shu’ayb",
+        "Derashot R. Y. Ibn Shu’ayb"
+      ],
+      "ontology_key": "דרשות ר\"י אבן שועיב"
+    },
+    {
+      "id": "1.13:1:1.0",
+      "label": "מדרש יונה",
+      "english": "Midrash Jonah",
+      "aliases": [
+        "מדרש יונה",
+        "יונה",
+        "Midrash Jonah",
+        "Midrash Yonah",
+        "מדרש תשובת יונה הנביא",
+        "תשובת יונה הנביא"
+      ],
+      "ontology_key": "מדרש יונה"
+    },
+    {
+      "id": "1.14:1:1.0",
+      "label": "מדרש תהלים",
+      "english": "Midrash Psalms",
+      "aliases": [
+        "מדרש תהלים",
+        "תהלים",
+        "Midrash on Psalms",
+        "מדרש תהילים – שוחר טוב",
+        "Midrash Tehillim",
+        "Midrash Psalms"
+      ],
+      "ontology_key": "מדרש תהלים"
+    },
+    {
+      "id": "1.14:1:1.1",
+      "label": "מדרש תהלים א",
+      "english": "Midrash Psalms – Part 1",
+      "aliases": [
+        "מדרש תהלים א",
+        "תהלים",
+        "Midrash Tehillim I",
+        "מדרש תהילים (מזמורים א-קיח)",
+        "Midrash Psalms – Part 1",
+        "Midrash Tehillim – Part 1"
+      ],
+      "ontology_key": "מדרש תהלים א"
+    },
+    {
+      "id": "1.14:1:1.2",
+      "label": "מדרש תהלים ב",
+      "english": "Midrash Psalms – Part 2",
+      "aliases": [
+        "מדרש תהלים ב",
+        "תהלים",
+        "Midrash Tehillim II",
+        "מדרש תהילים (מזמורים קיט-קנ)",
+        "Midrash Psalms – Part 2",
+        "Midrash Tehillim – Part 2"
+      ],
+      "ontology_key": "מדרש תהלים ב"
+    },
+    {
+      "id": "1.15:1:1.0",
+      "label": "מדרש משלי",
+      "english": "Midrash Proverbs",
+      "aliases": [
+        "מדרש משלי",
+        "משלי",
+        "Midrash Mishle",
+        "Midrash Proverbs",
+        "Midrash Mishley",
+        "Midrash Mishlei"
+      ],
+      "ontology_key": "מדרש משלי"
+    },
+    {
+      "id": "1.16:1:1.0",
+      "label": "מדרש איוב",
+      "english": "Midrash Job",
+      "aliases": [
+        "מדרש איוב",
+        "איוב",
+        "Midrash Job",
+        "Midrash Iyov"
+      ],
+      "ontology_key": "מדרש איוב"
+    },
+    {
+      "id": "1.17-21:1:1.0",
+      "label": "מדרש רבה על חמש מגילות",
+      "english": "Midrash Rabbah on the Five Megillot",
+      "family": [
+        "Midrash-Rabba",
+        "Aggadic Midrash"
+      ],
+      "aliases": [
+        "מדרש רבה על חמש מגילות",
+        "חמש מגילות",
+        "Midrash Rabbah on the Five Megillot",
+        "Midrash rabbah. Five Scrolls",
+        "Midrash-Rabba, Aggadic Midrash"
+      ],
+      "ontology_key": "מדרש רבה על חמש מגילות"
+    },
+    {
+      "id": "1.17:1:1.0",
+      "label": "שיר השירים רבה",
+      "english": "Song of Songs Rabbah",
+      "family": [
+        "Midrash-Rabba",
+        "Amoraic Midrash",
+        "Aggadic Midrash"
+      ],
+      "aliases": [
+        "שיר השירים רבה",
+        "שיר השירים",
+        "Midrash Shir ha-Shirim or Song of Songs Rabbah",
+        "Songs Rabbah",
+        "Midrash rabbah. Song of Songs",
+        "Song of Songs Rabbah",
+        "Shir HaShirim Rabbah",
+        "Midrash-Rabba, Amoraic Midrash, Aggadic Midrash"
+      ],
+      "ontology_key": "שיר השירים רבה"
+    },
+    {
+      "id": "1.17:2:1.0",
+      "label": "שיר השירים זוטא",
+      "english": "Song of Songs Zuta",
+      "aliases": [
+        "שיר השירים זוטא",
+        "שיר השירים",
+        "Other Midrashim on Song of Songs (Cant Zutta)",
+        "Aggadat Shir ha-Shirim (Zuta)",
+        "מדרש זוטא - שיר השירים",
+        "Shir ha-Shirim Zuta",
+        "Midrash zuta. Shir ha-shirim",
+        "Song of Songs Zuta",
+        "Shir HaShirim Zuta"
+      ],
+      "ontology_key": "שיר השירים זוטא"
+    },
+    {
+      "id": "1.17:3:1.0",
+      "label": "מדרש שיר השירים",
+      "english": "Midrash Song of Songs",
+      "aliases": [
+        "מדרש שיר השירים",
+        "שיר השירים",
+        "Midrash Shir ha-Shirim",
+        "Midrash rabbah. Song of Songs",
+        "Midrash Song of Songs",
+        "Midrash Shir HaShirim"
+      ],
+      "ontology_key": "מדרש שיר השירים"
+    },
+    {
+      "id": "1.18:1:1.0",
+      "label": "רות רבה",
+      "english": "Ruth Rabbah",
+      "family": [
+        "Midrash-Rabba"
+      ],
+      "aliases": [
+        "רות רבה",
+        "רות",
+        "Midrash Ruth",
+        "Ruth Rabbah",
+        "Midrash rabbah. Ruth",
+        "Rut Rabbah",
+        "Midrash-Rabba"
+      ],
+      "ontology_key": "רות רבה"
+    },
+    {
+      "id": "1.18:2:1.0",
+      "label": "רות זוטא",
+      "english": "Ruth Zuta",
+      "aliases": [
+        "רות זוטא",
+        "רות",
+        "Other Midrashim on Ruth (Ruth Zutta)",
+        "Ruth Zuta",
+        "מדרש זוטא - רות",
+        "Midrash zuta. Ruth",
+        "Rut Zuta"
+      ],
+      "ontology_key": "רות זוטא"
+    },
+    {
+      "id": "1.19:1:1.0",
+      "label": "איכה רבה",
+      "english": "Lamentations Rabbah",
+      "family": [
+        "Midrash-Rabba"
+      ],
+      "aliases": [
+        "איכה רבה",
+        "איכה",
+        "Lamentations Rabbah",
+        "Midrash rabbah. Lamentations",
+        "Eikhah Rabbah",
+        "Midrash-Rabba"
+      ],
+      "ontology_key": "איכה רבה"
+    },
+    {
+      "id": "1.19:2:1.0",
+      "label": "איכה זוטא",
+      "english": "Lamentations Zuta",
+      "aliases": [
+        "איכה זוטא",
+        "איכה",
+        "Lamentations Zuta",
+        "מדרש זוטא - איכה",
+        "E'kha Zuta",
+        "Midrash zuta. Lamentations",
+        "Eikhah Zuta"
+      ],
+      "ontology_key": "איכה זוטא"
+    },
+    {
+      "id": "1.1:1:1.1",
+      "label": "בראשית רבה",
+      "english": "Genesis Rabbah",
+      "family": [
+        "Aggadic Midrash",
+        "Amoraic Midrash",
+        "Midrash-Rabba"
+      ],
+      "aliases": [
+        "בראשית רבה",
+        "בראשית",
+        "Genesis Rabbah",
+        "Midrash rabbah. Genesis",
+        "Bereshit Rabbah",
+        "Aggadic Midrash, Amoraic Midrash, Midrash-Rabba"
+      ],
+      "ontology_key": "בראשית רבה"
+    },
+    {
+      "id": "1.1:1:1.2",
+      "label": "בראשית רבה - ויחי",
+      "english": "Genesis Rabbah – Vayehi",
+      "family": [
+        "Aggadic Midrash",
+        "Tanhuma-Yelmanu",
+        "Midrash-Rabba"
+      ],
+      "aliases": [
+        "בראשית רבה - ויחי",
+        "בראשית",
+        "Va-Yeḥi Rabbah",
+        "Genesis Rabbah – Vayehi",
+        "Bereshit Rabbah – Vayehi",
+        "Aggadic Midrash, Tanhuma-Yelmanu, Midrash-Rabba"
+      ],
+      "ontology_key": "בראשית רבה - ויחי"
+    },
+    {
+      "id": "1.1:2:1.0",
+      "label": "אגדת בראשית",
+      "english": "Aggadat Bereshit",
+      "aliases": [
+        "אגדת בראשית",
+        "בראשית",
+        "Aggadat Bereshit",
+        "Agaddat Bereshit"
+      ],
+      "ontology_key": "אגדת בראשית"
+    },
+    {
+      "id": "1.1:3:1.0",
+      "label": "בראשית רבתי",
+      "english": "Genesis Rabbati",
+      "aliases": [
+        "בראשית רבתי",
+        "בראשית",
+        "Bereshit Rabbati",
+        "Genesis Rabbti",
+        "Genesis Rabbati"
+      ],
+      "ontology_key": "בראשית רבתי"
+    },
+    {
+      "id": "1.1:4:1.0",
+      "label": "בראשית זוטא [מסנות]",
+      "english": "Bereshit Zuta [Samuel Masnut]",
+      "aliases": [
+        "בראשית זוטא [מסנות]",
+        "בראשית",
+        "Bereshit Zutta",
+        "מדרשי רבי שמואל מסנות",
+        "Bereshit Zuta [Samuel Masnut]",
+        "Bereshit Zuta [Masnut]"
+      ],
+      "ontology_key": "בראשית זוטא [מסנות]"
+    },
+    {
+      "id": "1.20:1:1.0",
+      "label": "קהלת רבה",
+      "english": "Ecclesiastes Rabbah",
+      "family": [
+        "Midrash-Rabba"
+      ],
+      "aliases": [
+        "קהלת רבה",
+        "קהלת",
+        "Midrash Qohelet (Ecclesiastes Rabbah)",
+        "Ecclesiastes Rabbah",
+        "Midrash rabbah. Ecclesiastes",
+        "Kohelet Rabbah",
+        "Midrash-Rabba"
+      ],
+      "ontology_key": "קהלת רבה"
+    },
+    {
+      "id": "1.20:2:1.0",
+      "label": "קהלת זוטא",
+      "english": "Ecclesiastes Zuta",
+      "aliases": [
+        "קהלת זוטא",
+        "קהלת",
+        "Other Midrashim on Qohelet (Eccl Zutta)",
+        "Ecclesiastes Zuta",
+        "מדרש זוטא - קהלת",
+        "Qohelet Zuta",
+        "Midrash zuta. Ecclesiastes",
+        "Kohelet Zuta"
+      ],
+      "ontology_key": "קהלת זוטא"
+    },
+    {
+      "id": "1.21:1:1.0",
+      "label": "אסתר רבה",
+      "english": "Esther Rabbah",
+      "family": [
+        "Midrash-Rabba"
+      ],
+      "aliases": [
+        "אסתר רבה",
+        "אסתר",
+        "Midrash Esther",
+        "מדרש מגילת אסתר",
+        "Midrash rabbah. Esther",
+        "Esther Rabbah",
+        "Midrash-Rabba"
+      ],
+      "ontology_key": "אסתר רבה"
+    },
+    {
+      "id": "1.21:1:1.1",
+      "label": "אסתר רבה - חלק א",
+      "english": "Esther Rabbah – Part 1",
+      "family": [
+        "Midrash-Rabba"
+      ],
+      "aliases": [
+        "אסתר רבה - חלק א",
+        "אסתר",
+        "Eshther Rabbah I",
+        "אסתר רבה (פרשיות א-ו)",
+        "אסתר רבה א",
+        "Esther Rabbah – Part 1",
+        "Midrash-Rabba"
+      ],
+      "ontology_key": "אסתר רבה - חלק א"
+    },
+    {
+      "id": "1.21:1:1.2",
+      "label": "אסתר רבה - חלק ב",
+      "english": "Esther Rabbah – Part 2",
+      "family": [
+        "Midrash-Rabba"
+      ],
+      "aliases": [
+        "אסתר רבה - חלק ב",
+        "אסתר",
+        "Esther Rabbah II",
+        "אסתר רבה (פרשיות ז-י)",
+        "אסתר רבה ב",
+        "Esther Rabbah – Part 2",
+        "Midrash-Rabba"
+      ],
+      "ontology_key": "אסתר רבה - חלק ב"
+    },
+    {
+      "id": "1.21:2:1.0",
+      "label": "תרגום שני למגילת אסתר",
+      "english": "Second Targum to Esther",
+      "aliases": [
+        "תרגום שני למגילת אסתר",
+        "אסתר",
+        "Targum Sheni",
+        "Targum sheni",
+        "Second Targum to Esther",
+        "Targum Sheni to Megillat Esther"
+      ],
+      "ontology_key": "תרגום שני למגילת אסתר"
+    },
+    {
+      "id": "1.21:3:1.0",
+      "label": "אסתר זוטא",
+      "english": "Esther Zuta",
+      "aliases": [
+        "אסתר זוטא",
+        "אסתר",
+        "Other Midrashim on Esther",
+        "Midrash Zuta. Esther",
+        "Esther Zuta"
+      ],
+      "ontology_key": "אסתר זוטא"
+    },
+    {
+      "id": "1.21:4:1.1",
+      "label": "מדרש פנים אחרות נוסח ג (אסתר)",
+      "english": "Midrash Panim Aherot – Recension 3 (Esther)",
+      "aliases": [
+        "מדרש פנים אחרות נוסח ג (אסתר)",
+        "אסתר",
+        "Midrash Panim Aherot III",
+        "Midrash Panim Aherot – Recension 3 (Esther)"
+      ],
+      "ontology_key": "מדרש פנים אחרות נוסח ג (אסתר)"
+    },
+    {
+      "id": "1.21:4:1.2",
+      "label": "מדרש פנים אחרות נוסח ד (אסתר)",
+      "english": "Midrash Panim Aherot – Recension 4 (Esther)",
+      "aliases": [
+        "מדרש פנים אחרות נוסח ד (אסתר)",
+        "אסתר",
+        "Midrash Panim Aherot IV",
+        "Midrash Panim Aherot – Recension 4 (Esther)"
+      ],
+      "ontology_key": "מדרש פנים אחרות נוסח ד (אסתר)"
+    },
+    {
+      "id": "1.21:4:1.3",
+      "label": "מדרש פנים אחרות נוסח ה (אסתר)",
+      "english": "Midrash Panim Aherot – Recension 5 (Esther)",
+      "aliases": [
+        "מדרש פנים אחרות נוסח ה (אסתר)",
+        "אסתר",
+        "Midrash Panim Aherot V",
+        "Midrash Panim Aherot – Recension 5 (Esther)"
+      ],
+      "ontology_key": "מדרש פנים אחרות נוסח ה (אסתר)"
+    },
+    {
+      "id": "1.21:5:1.0",
+      "label": "מדרש עתיק לאסתר רבה",
+      "english": "Ancient Midrash to Esther Rabbah",
+      "aliases": [
+        "מדרש עתיק לאסתר רבה",
+        "אסתר",
+        "Ancient Midrash to Esther Midrash Esther Rabba",
+        "Ancient Midrash to Esther Rabbah"
+      ],
+      "ontology_key": "מדרש עתיק לאסתר רבה"
+    },
+    {
+      "id": "1.21:6:1.0",
+      "label": "נרטיב אגדי לאסתר",
+      "english": "Aggadic Narrative to Esther",
+      "aliases": [
+        "נרטיב אגדי לאסתר",
+        "אסתר",
+        "Aggadic-Narrative Midrash",
+        "Aggadic Narrative to Esther"
+      ],
+      "ontology_key": "נרטיב אגדי לאסתר"
+    },
+    {
+      "id": "1.21:7:1.0",
+      "label": "מדרש אסתר לא נודע (כת\"י וינה 26:4, דפים 1א - 8א)",
+      "english": "Unkown Midrash for Esther (Vienna MS 26:4, fols. 1a–8a)",
+      "aliases": [
+        "מדרש אסתר לא נודע (כת\"י וינה 26:4, דפים 1א - 8א)",
+        "אסתר",
+        "ms Vienna 26:4, ff. 1r-8r",
+        "Unkown Midrash for Esther (Vienna MS 26:4, fols. 1a–8a)"
+      ],
+      "ontology_key": "מדרש אסתר לא נודע (כת\"י וינה 26:4, דפים 1א - 8א)"
+    },
+    {
+      "id": "1.21:8:1.0",
+      "label": "אגדת אסתר",
+      "english": "Aggadat Esther",
+      "aliases": [
+        "אגדת אסתר",
+        "אסתר",
+        "Agaddat Esther",
+        "Aggadat Ester",
+        "Aggadat Esther"
+      ],
+      "ontology_key": "אגדת אסתר"
+    },
+    {
+      "id": "1.25:1:1.0",
+      "label": "פסיקתא דרב כהנא",
+      "english": "Pesikta de-Rav Kahana",
+      "aliases": [
+        "פסיקתא דרב כהנא",
+        "הפטרות ומועדי השנה",
+        "Pesiqta de Rab Kahana",
+        "Pesikta de-Rav Kahana",
+        "Pesiqta de-Rav Kahana"
+      ],
+      "ontology_key": "פסיקתא דרב כהנא"
+    },
+    {
+      "id": "1.25:2:1.0",
+      "label": "פסיקתא רבתי",
+      "english": "Pesikta Rabbati",
+      "aliases": [
+        "פסיקתא רבתי",
+        "הפטרות ומועדי השנה",
+        "Pesiqta Rabbati",
+        "Pesikta Rabbati",
+        "Pesikta rabbati"
+      ],
+      "ontology_key": "פסיקתא רבתי"
+    },
+    {
+      "id": "1.25:2:1.1",
+      "label": "פסיקתא רבתי לעשרת הדיברות",
+      "english": "Pesikta Rabbati on the Ten Commandments",
+      "aliases": [
+        "פסיקתא רבתי לעשרת הדיברות",
+        "הפטרות ומועדי השנה",
+        "Pesikta Rabbati on the Ten Commandments",
+        "Pesikta Rabbati le-Aseret HaDibrot"
+      ],
+      "ontology_key": "פסיקתא רבתי לעשרת הדיברות"
+    },
+    {
+      "id": "1.2:1:1.0",
+      "label": "שמות רבה",
+      "english": "Exodus Rabbah",
+      "family": [
+        "Aggadic Midrash",
+        "Late Midrash"
+      ],
+      "aliases": [
+        "שמות רבה",
+        "שמות",
+        "Exodus Rabbah",
+        "Midrash rabbah. Exodus",
+        "Shemot Rabbah",
+        "Aggadic Midrash, Late Midrash"
+      ],
+      "ontology_key": "שמות רבה"
+    },
+    {
+      "id": "1.2:1:1.1",
+      "label": "שמות רבה - חלק א",
+      "english": "Exodus Rabbah – Part 1",
+      "family": [
+        "Aggadic Midrash",
+        "Late Midrash"
+      ],
+      "aliases": [
+        "שמות רבה - חלק א",
+        "שמות",
+        "Exodus Rabbah I",
+        "שמות רבה (פרשיות א-יא)",
+        "Exodus Rabbah – Part 1",
+        "Shemot Rabbah – Part 1",
+        "Aggadic Midrash, Late Midrash"
+      ],
+      "ontology_key": "שמות רבה - חלק א"
+    },
+    {
+      "id": "1.2:1:1.2",
+      "label": "שמות רבה - חלק ב",
+      "english": "Exodus Rabbah – Part 2",
+      "family": [
+        "Tanhuma-Yelmanu",
+        "Midrash-Rabba",
+        "Aggadic Midrash",
+        "Late Midrash"
+      ],
+      "aliases": [
+        "שמות רבה - חלק ב",
+        "שמות",
+        "Exodus Rabbah II",
+        "שמות רבה (פרשיות יב-מ)",
+        "Exodus Rabbah – Part 2",
+        "Shemot Rabbah – Part 2",
+        "Tanhuma-Yelmanu, Midrash-Rabba, Aggadic Midrash, Late Midrash"
+      ],
+      "ontology_key": "שמות רבה - חלק ב"
+    },
+    {
+      "id": "1.2:2:1.0",
+      "label": "מדרש עשרת הדברות",
+      "english": "Midrash on the Ten Commandments",
+      "aliases": [
+        "מדרש עשרת הדברות",
+        "שמות",
+        "Midrash A͑seret ha-Dibrot",
+        "Midrash Aseret ha-Dibberot",
+        "מדרש עשרת הדיברות",
+        "Midrash Aseret ha-dibrot",
+        "Midrash on the Ten Commandments",
+        "Midrash Aseret HaDibrot"
+      ],
+      "ontology_key": "מדרש עשרת הדברות"
+    },
+    {
+      "id": "1.3-5:1:1.0",
+      "label": "פתרון תורה",
+      "english": "Pitron Torah",
+      "aliases": [
+        "פתרון תורה",
+        "תורה",
+        "Pitron Torah"
+      ],
+      "ontology_key": "פתרון תורה"
+    },
+    {
+      "id": "1.3:1:1.0",
+      "label": "ויקרא רבה",
+      "english": "Leviticus Rabbah",
+      "family": [
+        "Aggadic Midrash",
+        "Amoraic Midrash",
+        "Midrash-Rabba"
+      ],
+      "aliases": [
+        "ויקרא רבה",
+        "ויקרא",
+        "Leviticus Rabbah",
+        "Midrash rabbah. Leviticus",
+        "Vayikra Rabbah",
+        "Aggadic Midrash, Amoraic Midrash, Midrash-Rabba"
+      ],
+      "ontology_key": "ויקרא רבה"
+    },
+    {
+      "id": "1.4:1:1.0",
+      "label": "במדבר רבה",
+      "english": "Numbers Rabbah",
+      "family": [
+        "Midrash-Rabba",
+        "Aggadic Midrash",
+        "Late Midrash"
+      ],
+      "aliases": [
+        "במדבר רבה",
+        "במדבר",
+        "Numbers Rabbah",
+        "Midrash rabbah. Numbers",
+        "Bemidbar Rabbah",
+        "Midrash-Rabba, Aggadic Midrash, Late Midrash"
+      ],
+      "ontology_key": "במדבר רבה"
+    },
+    {
+      "id": "1.4:1:1.1",
+      "label": "במדבר רבה א",
+      "english": "Numbers Rabbah – Part 1",
+      "family": [
+        "Midrash-Rabba",
+        "Aggadic Midrash",
+        "Late Midrash"
+      ],
+      "aliases": [
+        "במדבר רבה א",
+        "במדבר",
+        "Numbers Rabbah",
+        "במדבר רבה (פרשיות א-יד)",
+        "Numbers Rabbah – Part 1",
+        "Bemidbar Rabbah – Part 1",
+        "Midrash-Rabba, Aggadic Midrash, Late Midrash"
+      ],
+      "ontology_key": "במדבר רבה א"
+    },
+    {
+      "id": "1.4:1:1.2",
+      "label": "במדבר רבה ב",
+      "english": "Numbers Rabbah – Part 2",
+      "family": [
+        "Midrash-Rabba",
+        "Tanhuma-Yelmanu",
+        "Aggadic Midrash",
+        "Late Midrash"
+      ],
+      "aliases": [
+        "במדבר רבה ב",
+        "במדבר",
+        "Numbers Rabbah II",
+        "במדבר רבה (פרשיות טו-כג)",
+        "Numbers Rabbah – Part 2",
+        "Bemidbar Rabbah – Part 2",
+        "Midrash-Rabba, Tanhuma-Yelmanu, Aggadic Midrash, Late Midrash"
+      ],
+      "ontology_key": "במדבר רבה ב"
+    },
+    {
+      "id": "1.5:1:1.0",
+      "label": "דברים רבה",
+      "english": "Deuteronomy Rabbah",
+      "family": [
+        "Midrash-Rabba",
+        "Late Midrash",
+        "Aggadic Midrash"
+      ],
+      "aliases": [
+        "דברים רבה",
+        "דברים",
+        "Deuteronomy Rabbah",
+        "Midrash rabbah. Deuteronomy",
+        "Devarim Rabbah",
+        "Midrash-Rabba, Late Midrash, Aggadic Midrash"
+      ],
+      "ontology_key": "דברים רבה"
+    },
+    {
+      "id": "1.5:1:2.0",
+      "label": "דברים רבה ליברמן",
+      "english": "Deuteronomy Rabbah Lieberman",
+      "family": [
+        "Midrash-Rabba",
+        "Aggadic Midrash",
+        "Late Midrash"
+      ],
+      "aliases": [
+        "דברים רבה ליברמן",
+        "דברים",
+        "Deuteronomy Rabbah Lieberman",
+        "Devarim Rabbah Lieberman",
+        "Midrash-Rabba, Aggadic Midrash, Late Midrash"
+      ],
+      "ontology_key": "דברים רבה ליברמן"
+    },
+    {
+      "id": "1.6-24:1:1.0",
+      "label": "ילקוט מכירי",
+      "english": "Yalkut Makhiri",
+      "aliases": [
+        "ילקוט מכירי",
+        "נביאים-כתובים",
+        "Yalqut ha-Makhiri",
+        "Yalkut Makhiri",
+        "ילקוט המכירי"
+      ],
+      "ontology_key": "ילקוט מכירי"
+    },
+    {
+      "id": "1.8:1:1.0",
+      "label": "מדרש שמואל",
+      "english": "Midrash Samuel",
+      "aliases": [
+        "מדרש שמואל",
+        "שמואל",
+        "Midrash Samuel",
+        "Midrash Shmuel"
+      ],
+      "ontology_key": "מדרש שמואל"
+    },
+    {
+      "id": "10:T",
+      "label": "מדרש אגור",
+      "english": "Midrash Agur",
+      "aliases": [
+        "מדרש אגור",
+        "Townsend",
+        "Midrash Agur (Called \"Mishnat R. Eliezer\")",
+        "משנת רבי אליעזר",
+        "Mishnat R. Eliezer",
+        "Baraita of 32 rules",
+        "Midrash Agur"
+      ],
+      "ontology_key": "מדרש אגור"
+    },
+    {
+      "id": "112:T",
+      "label": "חזון דניאל",
+      "english": "Vision of Daniel",
+      "aliases": [
+        "חזון דניאל",
+        "Townsend",
+        "Hazon Daniel",
+        "Syriac Apocalypse of Daniel (?)",
+        "987007568044305171 (?)",
+        "Vision of Daniel"
+      ],
+      "ontology_key": "חזון דניאל"
+    },
+    {
+      "id": "120:T",
+      "label": "היכלות רבתי והיכלות זוטרתי",
+      "english": "Hekhalot Rabbati and Hekhalot Zutarti / Greater Hekhalot and Lesser Hekhalot",
+      "aliases": [
+        "היכלות רבתי והיכלות זוטרתי",
+        "Townsend",
+        "The Greater and the Lesser Hekhalot",
+        "Heikhalot rabbati/Heikhalot zutrati",
+        "987007262528205171; 987007287482705171",
+        "Hekhalot Rabbati and Hekhalot Zutarti / Greater Hekhalot and Lesser Hekhalot",
+        "Hekhalot Rabbati and Hekhalot Zutarti"
+      ],
+      "ontology_key": "היכלות רבתי והיכלות זוטרתי"
+    },
+    {
+      "id": "124:T",
+      "label": "מדרש הלל/ספר הלל",
+      "english": "Midrash Hallel / Book of Hallel",
+      "aliases": [
+        "מדרש הלל/ספר הלל",
+        "Townsend",
+        "Midrash Hallel",
+        "Midrash Hallel / Book of Hallel",
+        "Midrash Hallel / Sefer Hallel"
+      ],
+      "ontology_key": "מדרש הלל/ספר הלל"
+    },
+    {
+      "id": "126:T",
+      "label": "מדרש השכם (מדרש והזהיר)",
+      "english": "Midrash HaShkem (Midrash ve-Hizhir)",
+      "aliases": [
+        "מדרש השכם (מדרש והזהיר)",
+        "Townsend",
+        "Midrash Hashkem or Midrash We-hizhir",
+        "מדרש השכם",
+        "Midrash Hashkem",
+        "Midrash HaShkem (Midrash ve-Hizhir)"
+      ],
+      "ontology_key": "מדרש השכם (מדרש והזהיר)"
+    },
+    {
+      "id": "133:T",
+      "label": "מדרש ויושע",
+      "english": "Midrash Vayosha",
+      "aliases": [
+        "מדרש ויושע",
+        "Townsend",
+        "Midrash Wa-yosha",
+        "Midrash va-Yosha",
+        "Midrash Ṿa-yoshaʻ",
+        "Midrash Vayosha"
+      ],
+      "ontology_key": "מדרש ויושע"
+    },
+    {
+      "id": "134:T",
+      "label": "מדרש ויכלו",
+      "english": "Midrash Vayekhulu",
+      "aliases": [
+        "מדרש ויכלו",
+        "Townsend",
+        "Midrash Wa-yekhullu",
+        "Midrash Vayekhulu"
+      ],
+      "ontology_key": "מדרש ויכלו"
+    },
+    {
+      "id": "135:T",
+      "label": "מדרש ויסעו",
+      "english": "Midrash Vayyissa’u",
+      "aliases": [
+        "מדרש ויסעו",
+        "Townsend",
+        "Midrash Wa-yissau",
+        "Midrash va-Yissa'u",
+        "Midrash Va-yissa'u",
+        "Midrash Vayyissa’u"
+      ],
+      "ontology_key": "מדרש ויסעו"
+    },
+    {
+      "id": "137:T",
+      "label": "ספר זרובבל",
+      "english": "Book of Zerubbabel",
+      "aliases": [
+        "ספר זרובבל",
+        "Townsend",
+        "Sefer Zerubbabel",
+        "Apocalyptic and Eschatological Midrashim",
+        "Book of Zerubbabel",
+        "Sefer Zerubbavel"
+      ],
+      "ontology_key": "ספר זרובבל"
+    },
+    {
+      "id": "145:T",
+      "label": "ספר היכלות (חנוך ג')",
+      "english": "Sefer Hekhalot (3 Enoch)",
+      "aliases": [
+        "ספר היכלות (חנוך ג')",
+        "Townsend",
+        "Sefer Hekhalot (3 Enoch)",
+        "Hebrew book of Enoch",
+        "Sefer Hekhalot (Hanokh 3)"
+      ],
+      "ontology_key": "ספר היכלות (חנוך ג')"
+    },
+    {
+      "id": "14:T",
+      "label": "פטירת אהרון",
+      "english": "Midrash on the Death of Aaron",
+      "aliases": [
+        "פטירת אהרון",
+        "Townsend",
+        "Midrash Petirat Aharon",
+        "Midrash on the Death of Aaron",
+        "Petirat Aharon"
+      ],
+      "ontology_key": "פטירת אהרון"
+    },
+    {
+      "id": "150:T",
+      "label": "מעשה חנוכה",
+      "english": "Story of Hanukkah",
+      "aliases": [
+        "מעשה חנוכה",
+        "Townsend",
+        "Midreshei Ḥanukkah",
+        "Midrash Maase Hanukka",
+        "Story of Hanukkah",
+        "Ma'aseh Hanukkah"
+      ],
+      "ontology_key": "מעשה חנוכה"
+    },
+    {
+      "id": "150:T",
+      "label": "אגדת חנוכה",
+      "english": "Aggadat Hanukkah",
+      "aliases": [
+        "אגדת חנוכה",
+        "Townsend",
+        "Aggadat Hanukkah"
+      ],
+      "ontology_key": "אגדת חנוכה"
+    },
+    {
+      "id": "153:T",
+      "label": "מדרש חסרות ויתרות",
+      "english": "Midrash on Defective and Plene Spellings",
+      "aliases": [
+        "מדרש חסרות ויתרות",
+        "Townsend",
+        "Midrash Ḥaserot wi-Yterot",
+        "Midrash Haserot vi-Yterot",
+        "Midrash Haserot we-Yeterot",
+        "Midrash Haserot vi-yterot",
+        "Midrash on Defective and Plene Spellings",
+        "Midrash Haserot ve-Yeterot"
+      ],
+      "ontology_key": "מדרש חסרות ויתרות"
+    },
+    {
+      "id": "158:T",
+      "label": "פרקי רבי יאשיה",
+      "english": "Pirkei Rabbi Yoshiyah",
+      "aliases": [
+        "פרקי רבי יאשיה",
+        "Townsend",
+        "Pirkei Rabbi Yoshiyah"
+      ],
+      "ontology_key": "פרקי רבי יאשיה"
+    },
+    {
+      "id": "160:T",
+      "label": "מעשה יהודית",
+      "english": "Story of Judith",
+      "aliases": [
+        "מעשה יהודית",
+        "Townsend",
+        "Midreshei Yehudit",
+        "Story of Judith",
+        "Ma'aseh Yehudit"
+      ],
+      "ontology_key": "מעשה יהודית"
+    },
+    {
+      "id": "166:T",
+      "label": "מעשה רבי יהושע בן לוי",
+      "english": "Ma'aseh Rabbi Yehoshua ben Levi",
+      "aliases": [
+        "מעשה רבי יהושע בן לוי",
+        "Townsend",
+        "מעשה דר' יהושע בן לוי",
+        "Ma'aseh Rabbi Yehoshua ben Levi"
+      ],
+      "ontology_key": "מעשה רבי יהושע בן לוי"
+    },
+    {
+      "id": "176:T",
+      "label": "ראויות יחזקאל",
+      "english": "Re’uyot Yehezkel / Visions of Ezekiel",
+      "aliases": [
+        "ראויות יחזקאל",
+        "Townsend",
+        "Visions of Ezekiel (Reʾuyyot Yeḥezkel)",
+        "Re’uyot Yehezkel / Visions of Ezekiel",
+        "Re’uyot Yehezkel"
+      ],
+      "ontology_key": "ראויות יחזקאל"
+    },
+    {
+      "id": "183:T",
+      "label": "ספר יצירה",
+      "english": "Sefer Yetzirah / Book of Formation",
+      "aliases": [
+        "ספר יצירה",
+        "Townsend",
+        "Sefer Yeṣirah",
+        "Sefer Yezirah",
+        "Sefer Yetzirah / Book of Formation",
+        "Sefer Yetzirah"
+      ],
+      "ontology_key": "ספר יצירה"
+    },
+    {
+      "id": "184:T",
+      "label": "יצירת הולד",
+      "english": "The Creation of the Embryo",
+      "aliases": [
+        "יצירת הולד",
+        "Townsend",
+        "The Creation of the Embryo",
+        "Yetzirat HaValad"
+      ],
+      "ontology_key": "יצירת הולד"
+    },
+    {
+      "id": "188:T",
+      "label": "ברייתא דישועה",
+      "english": "Baraita de-Yeshu'ah",
+      "aliases": [
+        "ברייתא דישועה",
+        "Townsend",
+        "Berayta de-Yeshu'a",
+        "Baraita di-Yešuʻah",
+        "Baraita de-Yeshu'ah"
+      ],
+      "ontology_key": "ברייתא דישועה"
+    },
+    {
+      "id": "194:T",
+      "label": "מדרש כונן (ועוד יצירות של 'מעשה בראשית')",
+      "english": "Midrash Konen (and other Ma'aseh Bereshit works)",
+      "aliases": [
+        "מדרש כונן (ועוד יצירות של 'מעשה בראשית')",
+        "Townsend",
+        "Midrash Konen and Other Texts on the Work of Creation",
+        "Midrash Konen",
+        "Midrash Konen (and other Ma'aseh Bereshit works)"
+      ],
+      "ontology_key": "מדרש כונן (ועוד יצירות של 'מעשה בראשית')"
+    },
+    {
+      "id": "1:1:1.0",
+      "label": "ילקוט שמעוני",
+      "english": "Yalkut Shimoni",
+      "aliases": [
+        "ילקוט שמעוני",
+        "מקרא",
+        "Yalqut Shimo͑ny",
+        "Yalkut Shimoni",
+        "ילקוט שמעוני על התורה",
+        "Yalqut Shim'oni"
+      ],
+      "ontology_key": "ילקוט שמעוני"
+    },
+    {
+      "id": "210:T",
+      "label": "ברייתא דמזלות",
+      "english": "Baraita de-Mazalot",
+      "aliases": [
+        "ברייתא דמזלות",
+        "Townsend",
+        "Berayta de-Mazalot",
+        "Baraita demazzalot",
+        "Baraita de-Mazalot"
+      ],
+      "ontology_key": "ברייתא דמזלות"
+    },
+    {
+      "id": "215:T",
+      "label": "ברייתא דמלאכת המשכן",
+      "english": "Baraita de-Melekhet HaMishkan",
+      "aliases": [
+        "ברייתא דמלאכת המשכן",
+        "Townsend",
+        "Baraita de-melekhet ha-mishkan",
+        "Baraita de-Melekhet HaMishkan"
+      ],
+      "ontology_key": "ברייתא דמלאכת המשכן"
+    },
+    {
+      "id": "229:T",
+      "label": "מרגניתא דבי רב",
+      "english": "Marganita de-Vei Rav",
+      "aliases": [
+        "מרגניתא דבי רב",
+        "Townsend",
+        "Midrash Margenita deve Rav",
+        "Marganita de-Vei Rav"
+      ],
+      "ontology_key": "מרגניתא דבי רב"
+    },
+    {
+      "id": "230:T",
+      "label": "חלום מרדכי",
+      "english": "Dream of Mordecai",
+      "aliases": [
+        "חלום מרדכי",
+        "Townsend",
+        "Dream of Mordecai",
+        "Halom Mordekhai"
+      ],
+      "ontology_key": "חלום מרדכי"
+    },
+    {
+      "id": "234:T",
+      "label": "מעשה מרכבה",
+      "english": "Ma'aseh Merkavah",
+      "aliases": [
+        "מעשה מרכבה",
+        "Townsend",
+        "Ma͑aseh Merkabah",
+        "Maaseh merkavah",
+        "Ma'aseh Merkavah"
+      ],
+      "ontology_key": "מעשה מרכבה"
+    },
+    {
+      "id": "238:T",
+      "label": "דברי הימים של משה רבינו",
+      "english": "Chronicles of Moses our Teacher",
+      "aliases": [
+        "דברי הימים של משה רבינו",
+        "Townsend",
+        "Dibrê ha-yamim shel Moshe",
+        "Divrey ha-Yamim Shel Moshe",
+        "דברי הימים של משה רבנו",
+        "Chronicles of Moses Rabbenu",
+        "Chronicles of Moses",
+        "Chronicles of Moses our Teacher",
+        "Divrei HaYamim shel Moshe Rabbenu"
+      ],
+      "ontology_key": "דברי הימים של משה רבינו"
+    },
+    {
+      "id": "240:T",
+      "label": "פטירת משה",
+      "english": "Midrash on the Death of Moses",
+      "aliases": [
+        "פטירת משה",
+        "Townsend",
+        "Midrash Petirat Moshe",
+        "Midrash Petirat Moshe (\"Death of Moses\")",
+        "מדרש פטירת משה",
+        "Midrash on the Death of Moses",
+        "Petirat Moshe"
+      ],
+      "ontology_key": "פטירת משה"
+    },
+    {
+      "id": "256:T",
+      "label": "פרק משיח",
+      "english": "Perek Mashiah",
+      "aliases": [
+        "פרק משיח",
+        "Townsend",
+        "Pereq Mashiah",
+        "Perek Mashiah"
+      ],
+      "ontology_key": "פרק משיח"
+    },
+    {
+      "id": "25:T",
+      "label": "מדרש אל יתהלל",
+      "english": "Midrash Al Yithallel",
+      "aliases": [
+        "מדרש אל יתהלל",
+        "Townsend",
+        "Midrash ʾAl-yithallel",
+        "Midrash Al Yithallel"
+      ],
+      "ontology_key": "מדרש אל יתהלל"
+    },
+    {
+      "id": "273:T",
+      "label": "אותיות דרבי עקיבא",
+      "english": "Letters of Rabbi Akiva",
+      "aliases": [
+        "אותיות דרבי עקיבא",
+        "Townsend",
+        "Alphabet (Otiyyot) of R. Aqiba",
+        "Otiyyot de-R. Akiva",
+        "Otiyyot de-Rabbi Akiva",
+        "Letters of Rabbi Akiva"
+      ],
+      "ontology_key": "אותיות דרבי עקיבא"
+    },
+    {
+      "id": "282:T",
+      "label": "מדרש עשר גלויות",
+      "english": "Midrash on the Ten Exiles",
+      "aliases": [
+        "מדרש עשר גלויות",
+        "Townsend",
+        "Midrash E͑ser Galuyyot",
+        "Midrash Eser Galuyyot",
+        "Midrash Eser Galuyot",
+        "Midrash on the Ten Exiles"
+      ],
+      "ontology_key": "מדרש עשר גלויות"
+    },
+    {
+      "id": "284:T",
+      "label": "מדרש אלה אזכרה/עשרה הרוגי מלכות",
+      "english": "Midrash Eleh Ezkerah / Ten Martyrs",
+      "aliases": [
+        "מדרש אלה אזכרה/עשרה הרוגי מלכות",
+        "Townsend",
+        "Midrash Elleh Ezkerah",
+        "Maʻaśeh ʻaśarah haruge malkhut",
+        "Midrash Eleh Ezkerah / Ten Martyrs",
+        "Midrash Eleh Ezkerah / Asarah Harugei Malkhut"
+      ],
+      "ontology_key": "מדרש אלה אזכרה/עשרה הרוגי מלכות"
+    },
+    {
+      "id": "28:T",
+      "label": "ספר אלדד הדני",
+      "english": "Book of Eldad HaDani",
+      "aliases": [
+        "ספר אלדד הדני",
+        "Townsend",
+        "Book of the Danite Eldad ben Maḥli",
+        "Book of Eldad HaDani",
+        "Sefer Eldad HaDani"
+      ],
+      "ontology_key": "ספר אלדד הדני"
+    },
+    {
+      "id": "295:T",
+      "label": "פנים אחרים לאסתר (גרסה א)",
+      "english": "Panim Aherim to Esther (Version 1)",
+      "aliases": [
+        "פנים אחרים לאסתר (גרסה א)",
+        "Townsend",
+        "Panim Aḥerim le-Esther (version 1)",
+        "מדרש פנים אחרות",
+        "ספרי דאגדתא על אסתר - מדרש פנים אחרים נוסח א'",
+        "מדרש פנים אחרים",
+        "Midrash Panim Aherim",
+        "Panim Aherot I",
+        "Midrash panim aherot",
+        "Panim Aherim to Esther (Version 1)"
+      ],
+      "ontology_key": "פנים אחרים לאסתר (גרסה א)"
+    },
+    {
+      "id": "296:T",
+      "label": "מדרש פנים אחרות נוסח ב (אסתר)",
+      "english": "Midrash Panim Aherot – Recension 2 (Esther)",
+      "aliases": [
+        "מדרש פנים אחרות נוסח ב (אסתר)",
+        "Townsend",
+        "ספרי דאגדתא על אסתר - מדרש פנים אחרים נוסח ב'",
+        "מדרש פנים אחרות נוסח ב'",
+        "מדרש פנים אחרים, נוסחא ב",
+        "Midrash Panim Aherim II",
+        "Midrash Panim Aherot II",
+        "Midrash Panim Aherot – Recension 2 (Esther)"
+      ],
+      "ontology_key": "מדרש פנים אחרות נוסח ב (אסתר)"
+    },
+    {
+      "id": "298:T",
+      "label": "פסיקתא חדתא",
+      "english": "Pesikta Hadta",
+      "aliases": [
+        "פסיקתא חדתא",
+        "Townsend",
+        "Pesiqta Hadatta",
+        "Pesikta Ḥadta",
+        "Pesikta Hadta"
+      ],
+      "ontology_key": "פסיקתא חדתא"
+    },
+    {
+      "id": "29:T",
+      "label": "חופת אליהו",
+      "english": "Huppat Eliyahu",
+      "aliases": [
+        "חופת אליהו",
+        "Townsend",
+        "Huppat Eliyahu"
+      ],
+      "ontology_key": "חופת אליהו"
+    },
+    {
+      "id": "2:1.5",
+      "label": "דברים זוטא",
+      "english": "Deuteronomy Zuta",
+      "aliases": [
+        "דברים זוטא",
+        "דברים",
+        "מדרש דברים זוטא",
+        "Midrash zuta. Deuteronomy",
+        "Deuteronomy Zuta",
+        "Devarim Zuta"
+      ],
+      "ontology_key": "דברים זוטא"
+    },
+    {
+      "id": "2:1:1.0",
+      "label": "אבות דרבי נתן",
+      "english": "Avot de-Rabbi Natan",
+      "aliases": [
+        "אבות דרבי נתן",
+        "סדר משנה/תלמוד",
+        "Avot de-Rabbi Nathan",
+        "Avot de-Rabbi Natan"
+      ],
+      "ontology_key": "אבות דרבי נתן"
+    },
+    {
+      "id": "2:1:2.0",
+      "label": "אבות דרבי נתן א",
+      "english": "Avot de-Rabbi Natan – Version A",
+      "aliases": [
+        "אבות דרבי נתן א",
+        "סדר משנה/תלמוד",
+        "Avot de-Rabbi Natan – Version A",
+        "Avot de-Rabbi Natan – Version 1"
+      ],
+      "ontology_key": "אבות דרבי נתן א"
+    },
+    {
+      "id": "2:1:3.0",
+      "label": "אבות דרבי נתן ב",
+      "english": "Avot de-Rabbi Natan – Version B",
+      "aliases": [
+        "אבות דרבי נתן ב",
+        "סדר משנה/תלמוד",
+        "Avot de-Rabbi Natan – Version B",
+        "Avot de-Rabbi Natan – Version 2"
+      ],
+      "ontology_key": "אבות דרבי נתן ב"
+    },
+    {
+      "id": "2:2:1.0",
+      "label": "עין יעקב",
+      "english": "Ein Yaakov",
+      "aliases": [
+        "עין יעקב",
+        "סדר משנה/תלמוד",
+        "Ein Ya'akov",
+        "Ein Yaakov"
+      ],
+      "ontology_key": "עין יעקב"
+    },
+    {
+      "id": "2:3:1.0",
+      "label": "הגדות התלמוד (ילקוט)",
+      "english": "Aggadot HaTalmud (Yalkut)",
+      "aliases": [
+        "הגדות התלמוד (ילקוט)",
+        "סדר משנה/תלמוד",
+        "Haggadot ha-Talmud",
+        "Aggadot HaTalmud (Yalkut)"
+      ],
+      "ontology_key": "הגדות התלמוד (ילקוט)"
+    },
+    {
+      "id": "2:T",
+      "label": "מדרש אבא גוריון (אסתר)",
+      "english": "Midrash Abba Gurion (Esther)",
+      "aliases": [
+        "מדרש אבא גוריון (אסתר)",
+        "Townsend",
+        "Abba Guryon",
+        "מדרש אבא גוריון",
+        "ספרי דאגדתא על אסתר - מדרש אבא גוריון",
+        "Midrash Abba Guryon",
+        "Midrash Abba Gurion",
+        "Midrash Abba Gurion (Esther)"
+      ],
+      "ontology_key": "מדרש אבא גוריון (אסתר)"
+    },
+    {
+      "id": "303:T",
+      "label": "פרק צדקות",
+      "english": "Perek Tzedakot",
+      "aliases": [
+        "פרק צדקות",
+        "Townsend",
+        "Perek Tzedakot"
+      ],
+      "ontology_key": "פרק צדקות"
+    },
+    {
+      "id": "321:T",
+      "label": "פרק שירה",
+      "english": "Perek Shirah",
+      "aliases": [
+        "פרק שירה",
+        "Townsend",
+        "Perek shirah",
+        "Perek Shirah"
+      ],
+      "ontology_key": "פרק שירה"
+    },
+    {
+      "id": "324:T",
+      "label": "כיסא ואיפודרומין של שלמה המלך",
+      "english": "Throne and Hippodrome of King Solomon",
+      "aliases": [
+        "כיסא ואיפודרומין של שלמה המלך",
+        "Townsend",
+        "Throne and Hippodromes of Solomon",
+        "Throne and Hippodrome of King Solomon",
+        "Kise ve-Ippodromin shel Shlomo HaMelekh"
+      ],
+      "ontology_key": "כיסא ואיפודרומין של שלמה המלך"
+    },
+    {
+      "id": "337:T",
+      "label": "אותיות דרבי שמעון בר יוחאי",
+      "english": "Letters of Rabbi Shimon bar Yohai",
+      "aliases": [
+        "אותיות דרבי שמעון בר יוחאי",
+        "Townsend",
+        "Otiot de-Rabbi Aqiva",
+        "Letters of Rabbi Shimon bar Yohai",
+        "Otiyyot de-Rabbi Shimon bar Yohai"
+      ],
+      "ontology_key": "אותיות דרבי שמעון בר יוחאי"
+    },
+    {
+      "id": "338:T",
+      "label": "נסתרות רבי שמעון בר יוחאי",
+      "english": "Nistarot Rabbi Shimon bar Yohai",
+      "aliases": [
+        "נסתרות רבי שמעון בר יוחאי",
+        "Townsend",
+        "Nistarot Rabbi Shimon bar Yohai"
+      ],
+      "ontology_key": "נסתרות רבי שמעון בר יוחאי"
+    },
+    {
+      "id": "345:T",
+      "label": "מדרש שני כתובים",
+      "english": "Midrash Shnei Ketuvim",
+      "aliases": [
+        "מדרש שני כתובים",
+        "Townsend",
+        "Midrash Shney Ketuvim",
+        "Midrash Shnei Ketuvim"
+      ],
+      "ontology_key": "מדרש שני כתובים"
+    },
+    {
+      "id": "347:T",
+      "label": "שיעור קומה",
+      "english": "Shi'ur Komah",
+      "aliases": [
+        "שיעור קומה",
+        "Townsend",
+        "Shiu͑r Qomah",
+        "Shi'ur komah",
+        "Shi'ur Komah"
+      ],
+      "ontology_key": "שיעור קומה"
+    },
+    {
+      "id": "349:T",
+      "label": "מדרש תדשא (ברייתא דרבי פנחס בן יאיר)",
+      "english": "Midrash Tadshe (Baraita of Rabbi Pinhas ben Yair)",
+      "aliases": [
+        "מדרש תדשא (ברייתא דרבי פנחס בן יאיר)",
+        "Townsend",
+        "Midrash Tadshê",
+        "Midrash Tadshe",
+        "מדרש תדשא",
+        "מדרש תדשא או ברייתא דרבי פנחס בן יאיר",
+        "Midrash Tadshe (Baraita of Rabbi Pinhas ben Yair)",
+        "Midrash Tadshe (Baraita de-Rabbi Pinhas ben Yair)"
+      ],
+      "ontology_key": "מדרש תדשא (ברייתא דרבי פנחס בן יאיר)"
+    },
+    {
+      "id": "351:T",
+      "label": "מעשה תורה",
+      "english": "Ma'aseh Torah",
+      "aliases": [
+        "מעשה תורה",
+        "Townsend",
+        "Maʻaśeh Torah",
+        "Ma'aseh Torah"
+      ],
+      "ontology_key": "מעשה תורה"
+    },
+    {
+      "id": "353:T",
+      "label": "מדרש תמורה",
+      "english": "Midrash Temurah",
+      "aliases": [
+        "מדרש תמורה",
+        "Townsend",
+        "Midrash Temurah",
+        "Midrash Temura"
+      ],
+      "ontology_key": "מדרש תמורה"
+    },
+    {
+      "id": "354:T",
+      "label": "תנא דבי אליהו",
+      "english": "Tanna de-Vei Eliyahu",
+      "aliases": [
+        "תנא דבי אליהו",
+        "Townsend",
+        "Tanna de-bê Eliyahu",
+        "Tanna de-Vei Eliyahu (\"Seder Eliyahu\")",
+        "סדר אליהו",
+        "Tana deVey Eliyahu",
+        "Tanna de-vei Eliyahu",
+        "Tanna de-Vei Eliyahu"
+      ],
+      "ontology_key": "תנא דבי אליהו"
+    },
+    {
+      "id": "358:T",
+      "label": "תנא דבי אליהו זוטא",
+      "english": "Tanna de-Vei Eliyahu Zuta",
+      "aliases": [
+        "תנא דבי אליהו זוטא",
+        "Townsend",
+        "סדר אליהו רבא",
+        "Seder Eliyahu Rabba",
+        "Tanna de-Vei Eliyahu Zuta"
+      ],
+      "ontology_key": "תנא דבי אליהו זוטא"
+    },
+    {
+      "id": "36:T",
+      "label": "תנא דבי אליהו רבה/סדר אליהו רבה",
+      "english": "Tanna de-Vei Eliyahu Rabbah / Seder Eliyahu Rabbah",
+      "aliases": [
+        "תנא דבי אליהו רבה/סדר אליהו רבה",
+        "Townsend",
+        "תנא דבי אליהו רבה",
+        "סדר אליהו זוטא",
+        "Seder Eliyahu Zuta",
+        "Tanna de-Vei Eliyahu Rabbah / Seder Eliyahu Rabbah"
+      ],
+      "ontology_key": "תנא דבי אליהו רבה/סדר אליהו רבה"
+    },
+    {
+      "id": "3:10:1.0",
+      "label": "דרך ארץ רבה",
+      "english": "Derekh Eretz Rabbah",
+      "aliases": [
+        "דרך ארץ רבה",
+        "לא מקראי",
+        "Derekh Ereṣ Rabbah",
+        "Minor tractates. Derekh erez rabbah",
+        "Derekh Eretz Rabbah"
+      ],
+      "ontology_key": "דרך ארץ רבה"
+    },
+    {
+      "id": "3:11:1.0",
+      "label": "ספר הישר",
+      "english": "Sefer HaYashar / Book of Jasher",
+      "aliases": [
+        "ספר הישר",
+        "לא מקראי",
+        "Sefer ha-yashar",
+        "Sefer ha-Yashar",
+        "ספר הישר (מדרש)",
+        "Sefer ha-yashar (Quasi-historical work)",
+        "Sefer HaYashar / Book of Jasher",
+        "Sefer HaYashar"
+      ],
+      "ontology_key": "ספר הישר"
+    },
+    {
+      "id": "3:12:1.0",
+      "label": "יוסיפון",
+      "english": "Sefer Josippon",
+      "aliases": [
+        "יוסיפון",
+        "לא מקראי",
+        "Josippon",
+        "Sefer Josippon",
+        "Yosippon"
+      ],
+      "ontology_key": "יוסיפון"
+    },
+    {
+      "id": "3:13:1.0",
+      "label": "ספרי 'מעשה' (מעשה בוך)",
+      "english": "Ma'aseh Books (Ma'aseh Book)",
+      "aliases": [
+        "ספרי 'מעשה' (מעשה בוך)",
+        "לא מקראי",
+        "Ma͑aseh-books",
+        "Maase-Buch",
+        "Ma'aseh Books (Ma'aseh Book)",
+        "Sifrei Ma'aseh (Ma'aseh Bukh)"
+      ],
+      "ontology_key": "ספרי 'מעשה' (מעשה בוך)"
+    },
+    {
+      "id": "3:14:1.0",
+      "label": "מרכבה רבה",
+      "english": "Merkavah Rabbah",
+      "aliases": [
+        "מרכבה רבה",
+        "לא מקראי",
+        "Merkabah Rabbah",
+        "Merkavah Rabbah"
+      ],
+      "ontology_key": "מרכבה רבה"
+    },
+    {
+      "id": "3:15:1.0",
+      "label": "ספר רזיאל וספר הרזים",
+      "english": "Sefer Razi'el and Sefer HaRazim",
+      "aliases": [
+        "ספר רזיאל וספר הרזים",
+        "לא מקראי",
+        "Sefer Raziel and Sefer ha-Razim",
+        "Sefer ha-razim",
+        "Sefer Razi'el and Sefer HaRazim"
+      ],
+      "ontology_key": "ספר רזיאל וספר הרזים"
+    },
+    {
+      "id": "3:16:1.0",
+      "label": "פרקי רבי יוסי",
+      "english": "Pirkei Rabbi Yossi",
+      "aliases": [
+        "פרקי רבי יוסי",
+        "לא מקראי",
+        "Pirkei Rabbi Yossi"
+      ],
+      "ontology_key": "פרקי רבי יוסי"
+    },
+    {
+      "id": "3:17:1.0",
+      "label": "הגדה של פסח",
+      "english": "Passover Haggadah",
+      "aliases": [
+        "הגדה של פסח",
+        "לא מקראי",
+        "Haggadah",
+        "Passover Haggadah",
+        "Haggadah shel Pesah"
+      ],
+      "ontology_key": "הגדה של פסח"
+    },
+    {
+      "id": "3:18:1.0",
+      "label": "מגילת תענית",
+      "english": "Megillat Ta'anit",
+      "aliases": [
+        "מגילת תענית",
+        "לא מקראי",
+        "Megillat Taanit",
+        "Megillat Ta'anit"
+      ],
+      "ontology_key": "מגילת תענית"
+    },
+    {
+      "id": "3:19:1.0",
+      "label": "אוצר המדרשים",
+      "english": "Otzar HaMidrashim",
+      "aliases": [
+        "אוצר המדרשים",
+        "לא מקראי",
+        "ספרי אסופות של מדרשים",
+        "Otzar HaMidrashim"
+      ],
+      "ontology_key": "אוצר המדרשים"
+    },
+    {
+      "id": "3:1:1.0",
+      "label": "שבעת פרקי רבי אליעזר",
+      "english": "Seven Chapters of Rabbi Eliezer",
+      "aliases": [
+        "שבעת פרקי רבי אליעזר",
+        "לא מקראי",
+        "Seven Chapters of Rabbi Eliezer",
+        "Shivat Pirkei Rabbi Eliezer"
+      ],
+      "ontology_key": "שבעת פרקי רבי אליעזר"
+    },
+    {
+      "id": "3:20:1.0",
+      "label": "בתי מדרשות",
+      "english": "Batei Midrashot",
+      "aliases": [
+        "בתי מדרשות",
+        "לא מקראי",
+        "ספרי אסופות של מדרשים",
+        "Batei Midrashot"
+      ],
+      "ontology_key": "בתי מדרשות"
+    },
+    {
+      "id": "3:21:1.0",
+      "label": "שמחות דרבי חייא",
+      "english": "Semahot de-Rabbi Hiyya",
+      "aliases": [
+        "שמחות דרבי חייא",
+        "לא מקראי",
+        "Semahot de-Rabbi Hiyya"
+      ],
+      "ontology_key": "שמחות דרבי חייא"
+    },
+    {
+      "id": "3:22:1.0",
+      "label": "מסכת פורים",
+      "english": "Massekhet Purim",
+      "aliases": [
+        "מסכת פורים",
+        "לא מקראי",
+        "Massekhet Purim"
+      ],
+      "ontology_key": "מסכת פורים"
+    },
+    {
+      "id": "3:2:1.0",
+      "label": "סדר עולם",
+      "english": "Seder Olam",
+      "aliases": [
+        "סדר עולם",
+        "לא מקראי",
+        "Seder Olam",
+        "סדר עולם רבה",
+        "Seder olam rabbah"
+      ],
+      "ontology_key": "סדר עולם"
+    },
+    {
+      "id": "3:3:1.0",
+      "label": "מנורת המאור",
+      "english": "Menorat HaMa’or",
+      "aliases": [
+        "מנורת המאור",
+        "לא מקראי",
+        "Menorat HaMa’or"
+      ],
+      "ontology_key": "מנורת המאור"
+    },
+    {
+      "id": "3:4:1.0",
+      "label": "דרשה ליום הנחמה",
+      "english": "Sermon for the Day of Consolation",
+      "aliases": [
+        "דרשה ליום הנחמה",
+        "לא מקראי",
+        "Sermon for the Day of Consolation",
+        "Derashah for Yom HaNehamah"
+      ],
+      "ontology_key": "דרשה ליום הנחמה"
+    },
+    {
+      "id": "3:5:1.0",
+      "label": "דרשת בשרתי צדק",
+      "english": "Sermon on Psalm 40:10 (\"Bisarti Tzedek\")",
+      "aliases": [
+        "דרשת בשרתי צדק",
+        "לא מקראי",
+        "Sermon on Psalm 40:10 (\"Bisarti Tzedek\")",
+        "Derashat Bisarti Tzedek"
+      ],
+      "ontology_key": "דרשת בשרתי צדק"
+    },
+    {
+      "id": "3:6:1.0",
+      "label": "מעשה תורה לרבינו הקדוש",
+      "english": "Ma'aseh Torah of Rabbenu HaKadosh",
+      "aliases": [
+        "מעשה תורה לרבינו הקדוש",
+        "לא מקראי",
+        "Midrash Ma͑aseh Torah",
+        "Midrash Shelosha ve-Arba'ah",
+        "Maʻaśeh Torah of Judah ha-Nasi (MAZAL: Maʻaśeh Torah)",
+        "Ma'aseh Torah of Rabbenu HaKadosh",
+        "Ma'aseh Torah le-Rabbenu HaKadosh"
+      ],
+      "ontology_key": "מעשה תורה לרבינו הקדוש"
+    },
+    {
+      "id": "3:7:1.0",
+      "label": "מעשה שושנה",
+      "english": "Story of Susanna",
+      "aliases": [
+        "מעשה שושנה",
+        "לא מקראי",
+        "Story of Susanna",
+        "Ma'aseh Shoshanah"
+      ],
+      "ontology_key": "מעשה שושנה"
+    },
+    {
+      "id": "3:8:1.0",
+      "label": "סדר עולם זוטא",
+      "english": "Seder Olam Zuta",
+      "aliases": [
+        "סדר עולם זוטא",
+        "לא מקראי",
+        "Seder Olam Zutta",
+        "Seder olam zuta",
+        "Seder Olam Zuta"
+      ],
+      "ontology_key": "סדר עולם זוטא"
+    },
+    {
+      "id": "3:9:1.0",
+      "label": "דרך ארץ זוטא",
+      "english": "Derekh Eretz Zuta",
+      "aliases": [
+        "דרך ארץ זוטא",
+        "לא מקראי",
+        "Derekh Ereṣ Zuttah",
+        "מדרש דרך ארץ זוטא",
+        "Minor tractates. Derekh erez zuta",
+        "Derekh Eretz Zuta"
+      ],
+      "ontology_key": "דרך ארץ זוטא"
+    },
+    {
+      "id": "41:T",
+      "label": "פרקי דרבי אליעזר",
+      "english": "Pirkei de-Rabbi Eliezer",
+      "aliases": [
+        "פרקי דרבי אליעזר",
+        "Townsend",
+        "Pirqe de Rabbi Eliezer",
+        "Pirkei de-R. Eliezer",
+        "Pirqey de-Rabbi Eliezer",
+        "Pirkei de-Rabbi Eliezer"
+      ],
+      "ontology_key": "פרקי דרבי אליעזר"
+    },
+    {
+      "id": "48:T",
+      "label": "מגילת אנטיוכוס",
+      "english": "Scroll of Antiochus",
+      "aliases": [
+        "מגילת אנטיוכוס",
+        "Townsend",
+        "Megillat Antiochos",
+        "Megillat Antiochus",
+        "Scroll of Antiochus"
+      ],
+      "ontology_key": "מגילת אנטיוכוס"
+    },
+    {
+      "id": "49:T",
+      "label": "מדרש אספה",
+      "english": "Midrash Esfah",
+      "aliases": [
+        "מדרש אספה",
+        "Townsend",
+        "Midrash Esfah",
+        "Midrash Esfa"
+      ],
+      "ontology_key": "מדרש אספה"
+    },
+    {
+      "id": "4:1:1.0",
+      "label": "מדרשים לא מוכרים",
+      "english": "Unknown Midrashim",
+      "aliases": [
+        "מדרשים לא מוכרים",
+        "לא מזוהה",
+        "Unknown Midrashim"
+      ],
+      "ontology_key": "מדרשים לא מוכרים"
+    },
+    {
+      "id": "4:1:1.1",
+      "label": "מדרשי גניזה לא מוכרים - תנחומאי",
+      "english": "Unknown Genizah Midrashim – Tanhuma Style",
+      "aliases": [
+        "מדרשי גניזה לא מוכרים - תנחומאי",
+        "לא מזוהה",
+        "The Manuscripts of the Tanḥuma",
+        "קטעי מדרשים - גניזה (מאן)",
+        "מדרשים בסגנון תנחומא",
+        "Tanhuma-type Midrashim",
+        "Unknown Genizah Midrashim – Tanhuma Style"
+      ],
+      "ontology_key": "מדרשי גניזה לא מוכרים - תנחומאי"
+    },
+    {
+      "id": "4:2:1.0",
+      "label": "מדרש זו היא שנאמרה ברוח הקודש",
+      "english": "Midrash beginning \"Zo hi she-ne’emrah be-ruah ha-kodesh\"",
+      "aliases": [
+        "מדרש זו היא שנאמרה ברוח הקודש",
+        "לא מזוהה",
+        "Midrash Zohi she-Ne'emrah be-Ruah ha-Qodesh",
+        "Midrash beginning \"Zo hi she-ne’emrah be-ruah ha-kodesh\"",
+        "Midrash \"zo hi she-ne’emrah be-ruah ha-kodesh\""
+      ],
+      "ontology_key": "מדרש זו היא שנאמרה ברוח הקודש"
+    },
+    {
+      "id": "4:3:1.0",
+      "label": "מדרשים קטנים - לפני בירור",
+      "english": "Minor Midrashim – before review",
+      "aliases": [
+        "מדרשים קטנים - לפני בירור",
+        "לא מזוהה",
+        "Minor Midrashim – before review"
+      ],
+      "ontology_key": "מדרשים קטנים - לפני בירור"
+    },
+    {
+      "id": "4:T",
+      "label": "מדרש אבכיר",
+      "english": "Midrash Abkir",
+      "aliases": [
+        "מדרש אבכיר",
+        "Townsend",
+        "Midrash Abkir",
+        "Midrash Avkir"
+      ],
+      "ontology_key": "מדרש אבכיר"
+    },
+    {
+      "id": "62:T",
+      "label": "מדרש אשת חיל",
+      "english": "Midrash Eshet Hayil",
+      "aliases": [
+        "מדרש אשת חיל",
+        "Townsend",
+        "Midrash Eshet Hayil"
+      ],
+      "ontology_key": "מדרש אשת חיל"
+    },
+    {
+      "id": "73:T",
+      "label": "אלפא ביתא דבן סירא",
+      "english": "Alphabet of Ben Sira",
+      "aliases": [
+        "אלפא ביתא דבן סירא",
+        "Townsend",
+        "Alphabet of Ben Sira",
+        "Alfa Beta de-Ben Sira"
+      ],
+      "ontology_key": "אלפא ביתא דבן סירא"
+    },
+    {
+      "id": "hibur_006db01b51e6",
+      "label": "\u003cפירוט ו/או הכללה\u003e",
+      "aliases": [
+        "פסיקתא זוטרתא",
+        "לקח טוב",
+        "Leqakh Tov"
+      ]
+    },
+    {
+      "id": "hibur_744a3ceb71cd",
+      "label": "\u003cחוסר\u003e",
+      "english": "Sifrei Numbers",
+      "family": [
+        "Midrash-halakha",
+        "Tannitic Midrash"
+      ],
+      "aliases": [
+        "מדרשי הלכה",
+        "Sifre Numbers",
+        "ספרי במדבר",
+        "Sifre on Numbers",
+        "Sifrei. Numbers",
+        "Sifrei Numbers",
+        "Sifrei Bemidbar",
+        "Midrash-halakha, Tannitic Midrash"
+      ]
+    },
+    {
+      "id": "hibur_744a3ceb71cd",
+      "label": "\u003cחוסר\u003e",
+      "english": "Sifra",
+      "family": [
+        "Midrash-halakha",
+        "Tannitic Midrash"
+      ],
+      "aliases": [
+        "מדרשי הלכה",
+        "Sifra",
+        "ספרא",
+        "ספרא - תורת כהנים",
+        "Midrash-halakha, Tannitic Midrash"
+      ]
+    },
+    {
+      "id": "hibur_744a3ceb71cd",
+      "label": "\u003cחוסר\u003e",
+      "english": "Mekhilta to Deuteronomy; Midrash Tannaim",
+      "family": [
+        "Midrash-halakha",
+        "Tannitic Midrash"
+      ],
+      "aliases": [
+        "מדרשי הלכה",
+        "Midrash Tannaim",
+        "מכילתא דברים",
+        "מדרש תנאים לדברים",
+        "מכילתא לדברים",
+        "Mekhilta on Deuteronomy",
+        "Mekhilta to Deuteronomy; Midrash Tannaim",
+        "Mekhilta Devarim; Midrash Tannaim",
+        "Midrash-halakha, Tannitic Midrash"
+      ]
+    },
+    {
+      "id": "hibur_744a3ceb71cd",
+      "label": "\u003cחוסר\u003e",
+      "aliases": [
+        "אגדות התלמוד"
+      ]
+    },
+    {
+      "id": "hibur_744a3ceb71cd",
+      "label": "\u003cחוסר\u003e",
+      "english": "Sifrei",
+      "family": [
+        "Midrash-halakha",
+        "Tannitic Midrash"
+      ],
+      "aliases": [
+        "מדרשי הלכה",
+        "ספרי",
+        "Sifrei",
+        "Midrash-halakha, Tannitic Midrash"
+      ]
+    },
+    {
+      "id": "hibur_744a3ceb71cd",
+      "label": "\u003cחוסר\u003e",
+      "english": "Sifrei Zuta",
+      "family": [
+        "Midrash-halakha",
+        "Tannitic Midrash"
+      ],
+      "aliases": [
+        "מדרשי הלכה",
+        "Sifre Zutta",
+        "ספרי זוטא",
+        "Sifre Zuta",
+        "Sifrei zuta",
+        "Sifrei Zuta",
+        "Midrash-halakha, Tannitic Midrash"
+      ]
+    },
+    {
+      "id": "hibur_744a3ceb71cd",
+      "label": "\u003cחוסר\u003e",
+      "english": "Mekhilta de-Rabbi Shimon bar Yohai",
+      "family": [
+        "Midrash-halakha",
+        "Tannitic Midrash"
+      ],
+      "aliases": [
+        "מדרשי הלכה",
+        "The Mekhilta de Rabbi Simeon ben Yoḥai",
+        "מכילתא דרבי שמעון בן יוחאי",
+        "מכילתא דרבי שמעון בר יוחאי",
+        "מכילתא דרשב\"י",
+        "Mekhilta of R. Simeon b. Yohai",
+        "Mekhilta of Rabbi Simeon ben Yohai",
+        "Mekhilta de-Rabbi Shimon bar Yohai",
+        "Mekhilta de-Rabbi Shimon ben Yohai",
+        "Midrash-halakha, Tannitic Midrash"
+      ]
+    },
+    {
+      "id": "hibur_744a3ceb71cd",
+      "label": "\u003cחוסר\u003e",
+      "english": "Sifrei Zuta to Numbers",
+      "family": [
+        "Midrash-halakha",
+        "Tannitic Midrash"
+      ],
+      "aliases": [
+        "מדרשי הלכה",
+        "ספרי זוטא במדבר",
+        "Sifrei Zuta to Numbers",
+        "Sifrei Zuta Bemidbar",
+        "Midrash-halakha, Tannitic Midrash"
+      ]
+    },
+    {
+      "id": "hibur_744a3ceb71cd",
+      "label": "\u003cחוסר\u003e",
+      "english": "Mekhilta de-Rabbi Ishmael",
+      "family": [
+        "Midrash-halakha",
+        "Tannaitic Midrash"
+      ],
+      "aliases": [
+        "מדרשי הלכה",
+        "The Mekhilta de Rabbi Ishmael",
+        "מכילתא דרבי ישמעאל",
+        "Mekhilta de-Rabbi Yishma‘el",
+        "Mekhilta of R. Ishmael",
+        "Mekhilta de-Rabbi Ishmael",
+        "Mekhilta de-Rabbi Yishmael",
+        "Midrash-halakha, Tannaitic Midrash"
+      ]
+    },
+    {
+      "id": "hibur_744a3ceb71cd",
+      "label": "\u003cחוסר\u003e",
+      "family": [
+        "Midrash-halakha"
+      ],
+      "aliases": [
+        "מדרשי הלכה",
+        "A 'Mekhilta' on Leviticus?",
+        "Mekhilta  Leviticus",
+        "Midrash-halakha"
+      ]
+    },
+    {
+      "id": "hibur_744a3ceb71cd",
+      "label": "\u003cחוסר\u003e",
+      "english": "Sifrei Zuta to Deuteronomy",
+      "family": [
+        "Midrash-halakha",
+        "Tannitic Midrash"
+      ],
+      "aliases": [
+        "מדרשי הלכה",
+        "ספרי זוטא דברים",
+        "Sifrei Zuta to Deuteronomy",
+        "Sifrei Zuta Devarim",
+        "Midrash-halakha, Tannitic Midrash"
+      ]
+    },
+    {
+      "id": "hibur_744a3ceb71cd",
+      "label": "\u003cחוסר\u003e",
+      "english": "Sifrei Deuteronomy",
+      "family": [
+        "Midrash-halakha",
+        "Tannitic Midrash"
+      ],
+      "aliases": [
+        "מדרשי הלכה",
+        "Sifre Deuteronomy",
+        "ספרי דברים",
+        "Sifre on Deuteronomy",
+        "Sifrei. Deuteronomy",
+        "Sifrei Deuteronomy",
+        "Sifrei Devarim",
+        "Midrash-halakha, Tannitic Midrash"
+      ]
+    }
+  ],
+  "schema_version": "1.0.0"
+}

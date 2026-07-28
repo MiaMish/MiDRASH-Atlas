@@ -1,0 +1,12 @@
+{
+  "name": "midrash-atlas",
+  "private": true,
+  "workspaces": [
+    "apps/web"
+  ],
+  "scripts": {
+    "web:dev": "npm --workspace @midrash-atlas/web run dev",
+    "web:build": "npm --workspace @midrash-atlas/web run build",
+    "web:typecheck": "npm --workspace @midrash-atlas/web run typecheck"
+  }
+}

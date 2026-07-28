@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.0.0",
+  "source_types": [
+    {
+      "id": "nli_751_writing_place",
+      "dimension": "geo",
+      "label": "NLI: place of writing",
+      "short_description": "An NLI MARC 751 place explicitly assigned the role “place of writing”. This is the strongest structured geographic statement currently available.",
+      "default_priority": 100,
+      "default_enabled": true,
+      "evidence_nature": "catalog_assertion",
+      "marc": {"tag": "751", "role": "place of writing"}
+    },
+    {
+      "id": "nli_751_related_place",
+      "dimension": "geo",
+      "label": "NLI: related place",
+      "short_description": "An NLI MARC 751 place assigned the broader role “related place”. The catalogue establishes a relationship but does not necessarily identify a writing or production location.",
+      "default_priority": 60,
+      "default_enabled": false,
+      "evidence_nature": "catalog_assertion",
+      "marc": {"tag": "751", "role": "related place"}
+    },
+    {
+      "id": "nli_260_production_place",
+      "dimension": "geo",
+      "label": "NLI: production-place display",
+      "short_description": "A place transcribed in MARC 260 as production metadata. It is retained independently from authority-controlled 751 places and requires catalog-context review.",
+      "default_priority": 80,
+      "default_enabled": false,
+      "evidence_nature": "catalog_assertion",
+      "marc": {"tag": "260", "subfield": "a"}
+    },
+    {
+      "id": "nli_957_colophon_place_candidate",
+      "dimension": "geo",
+      "label": "Place inferred from colophon",
+      "short_description": "A candidate historical place extracted from an NLI colophon transcription or note. It is not accepted automatically and must retain the quoted evidence and extraction method.",
+      "default_priority": 90,
+      "default_enabled": false,
+      "evidence_nature": "primary_text_via_catalog_transcription",
+      "marc": {"tag": "957"}
+    },
+    {
+      "id": "nli_561_provenance_place_candidate",
+      "dimension": "geo",
+      "label": "Place inferred from provenance note",
+      "short_description": "A candidate place in a provenance or ownership note. It may represent one stage in a manuscript’s movement rather than its production location.",
+      "default_priority": 50,
+      "default_enabled": false,
+      "evidence_nature": "catalog_note_mixed_evidence",
+      "marc": {"tag": "561"}
+    },
+    {
+      "id": "nli_current_repository",
+      "dimension": "geo",
+      "label": "Present repository",
+      "short_description": "The manuscript’s current holding institution and locality. This is useful for access and comparison, but is not historical production evidence.",
+      "default_priority": 10,
+      "default_enabled": false,
+      "evidence_nature": "current_custody",
+      "marc": {"tag": "710/942"}
+    },
+    {
+      "id": "project_sheet_geo_candidate",
+      "dimension": "geo",
+      "label": "Project sheet: geographic candidate",
+      "short_description": "A place proposed in the project’s manuscript spreadsheet or research notes. It is a project-level interpretation and remains distinct from NLI catalogue fields.",
+      "default_priority": 70,
+      "default_enabled": false,
+      "evidence_nature": "project_research_note"
+    },
+    {
+      "id": "external_catalog_geo_assertion",
+      "dimension": "geo",
+      "label": "External catalogue: geographic assertion",
+      "short_description": "A place asserted by another catalogue, including historical catalogues. The catalogue identity, date, methodology, and quoted statement must accompany every assertion.",
+      "default_priority": 70,
+      "default_enabled": false,
+      "evidence_nature": "catalog_assertion"
+    },
+    {
+      "id": "researcher_geo_interpretation",
+      "dimension": "geo",
+      "label": "Researcher geographic interpretation",
+      "short_description": "A project or scholarly interpretation connecting the manuscript to a place or region. Competing interpretations may coexist and must identify their author and rationale.",
+      "default_priority": 75,
+      "default_enabled": false,
+      "evidence_nature": "scholarly_interpretation"
+    },
+    {
+      "id": "nli_260_date",
+      "dimension": "temporal",
+      "label": "NLI: catalogued date",
+      "short_description": "The human-readable date statement in MARC 260$c. The original wording, uncertainty, approximation, and precision are preserved.",
+      "default_priority": 100,
+      "default_enabled": true,
+      "evidence_nature": "catalog_assertion",
+      "marc": {"tag": "260", "subfield": "c"}
+    },
+    {
+      "id": "nli_008_date_candidate",
+      "dimension": "temporal",
+      "label": "NLI: MARC fixed-field date",
+      "short_description": "A machine-oriented date encoded in MARC 008. It is retained as an independent candidate and should not silently override the fuller 260$c statement.",
+      "default_priority": 50,
+      "default_enabled": false,
+      "evidence_nature": "catalog_encoding",
+      "marc": {"tag": "008"}
+    },
+    {
+      "id": "nli_957_colophon_date_candidate",
+      "dimension": "temporal",
+      "label": "Date inferred from colophon",
+      "short_description": "A candidate date extracted from a colophon transcription or note. This can be close to primary evidence but remains mediated by transcription and interpretation.",
+      "default_priority": 90,
+      "default_enabled": false,
+      "evidence_nature": "primary_text_via_catalog_transcription",
+      "marc": {"tag": "957"}
+    },
+    {
+      "id": "modern_gazetteer_geometry",
+      "dimension": "geometry",
+      "label": "Modern gazetteer geometry",
+      "short_description": "A modern point or administrative geometry used to locate a place concept. It is a display aid, not an assertion that historical boundaries were identical.",
+      "default_priority": 40,
+      "default_enabled": true,
+      "evidence_nature": "modern_gazetteer"
+    },
+    {
+      "id": "historical_gazetteer_geometry",
+      "dimension": "geometry",
+      "label": "Historical gazetteer geometry",
+      "short_description": "A time-bounded geometry supplied by an identified historical gazetteer. Coverage and boundary assumptions must be retained.",
+      "default_priority": 80,
+      "default_enabled": false,
+      "evidence_nature": "historical_gazetteer"
+    },
+    {
+      "id": "scholarly_region_geometry",
+      "dimension": "geometry",
+      "label": "Scholarly regional interpretation",
+      "short_description": "A time-bounded point, polygon, or fuzzy region representing an identified scholarly interpretation. Multiple overlapping or conflicting geometries may coexist.",
+      "default_priority": 90,
+      "default_enabled": false,
+      "evidence_nature": "scholarly_interpretation"
+    }
+  ]
+}

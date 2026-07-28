@@ -1,2 +1,13 @@
 .env
 .idea/
+node_modules/
+dist/
+apps/web/dist/
+data/runtime/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.tsbuildinfo
+__pycache__/
+*.py[cod]
+.DS_Store

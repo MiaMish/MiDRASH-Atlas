@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0.0",
+  "description": "Representative modern-geometry pilot: countries, major cities, small localities, transliteration variants, and deliberately ambiguous historical regions.",
+  "places": [
+    {
+      "place_id": "place_61abf0b2aa13",
+      "place_label": "Spain",
+      "query": "Spain",
+      "case": "modern country polygon used only as a display fallback"
+    },
+    {
+      "place_id": "place_a269d7ee2af2",
+      "place_label": "Yemen (Republic)",
+      "query": "Yemen",
+      "case": "modern country whose historical scope varies by period"
+    },
+    {
+      "place_id": "place_bd72015066a5",
+      "place_label": "Africa, North",
+      "query": "North Africa",
+      "case": "broad region that may have no acceptable single modern geometry"
+    },
+    {
+      "place_id": "place_b8a3c21ef23d",
+      "place_label": "Cairo (Egypt)",
+      "query": "Cairo, Egypt",
+      "case": "major city"
+    },
+    {
+      "place_id": "place_38a35ad95f1f",
+      "place_label": "Istanbul (Turkey)",
+      "query": "Istanbul, Turkey",
+      "case": "major city with historical naming changes"
+    },
+    {
+      "place_id": "place_af926943983d",
+      "place_label": "Bukhoro (Uzbekistan)",
+      "query": "Bukhara, Uzbekistan",
+      "case": "catalogue transliteration differs from common modern spelling"
+    },
+    {
+      "place_id": "place_afad0638e566",
+      "place_label": "Al-Tawilah (Yemen)",
+      "query": "Al Tawilah, Yemen",
+      "case": "small locality requiring country disambiguation"
+    },
+    {
+      "place_id": "place_21784375c73e",
+      "place_label": "Feodosii︠a︡ (Ukraine)",
+      "query": "Feodosia, Ukraine",
+      "case": "complex transliteration normalization"
+    },
+    {
+      "place_id": "place_d8040869276f",
+      "place_label": "Ērakleion (Greece)",
+      "query": "Heraklion, Greece",
+      "case": "historical/catalogue spelling mapped to a modern locality"
+    },
+    {
+      "place_id": "place_b3d90298c525",
+      "place_label": "מגדלא אלצפקיין",
+      "query": "מגדלא אלצפקיין",
+      "case": "unresolved Hebrew/Arabic-script locality expected to test safe failure"
+    }
+  ]
+}

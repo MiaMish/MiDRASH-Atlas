@@ -1,0 +1,39 @@
+{
+  "assertions_by_origin": {
+    "geo:direct": 417,
+    "geo:parent_alternative": 109,
+    "geo:parent_fallback": 17,
+    "temporal:direct": 391,
+    "temporal:parent_alternative": 92,
+    "temporal:parent_fallback": 21
+  },
+  "counts": {
+    "geo_assertions": 543,
+    "geometry_variants": 0,
+    "hiburim": 172,
+    "places": 107,
+    "records": 340,
+    "review_items": 532,
+    "temporal_assertions": 504,
+    "unparsed_dates": 0
+  },
+  "generation_provenance": {
+    "ai_used": false,
+    "method": "deterministic_go_export"
+  },
+  "geo_by_source_type": {
+    "nli_751_related_place": 44,
+    "nli_751_writing_place": 64,
+    "nli_current_repository": 435
+  },
+  "review_by_kind": {
+    "colophon_extraction": 183,
+    "hibur_match": 69,
+    "provenance_extraction": 280
+  },
+  "schema_version": "1.0.0",
+  "temporal_by_source_type": {
+    "nli_008_date_candidate": 107,
+    "nli_260_date": 397
+  }
+}

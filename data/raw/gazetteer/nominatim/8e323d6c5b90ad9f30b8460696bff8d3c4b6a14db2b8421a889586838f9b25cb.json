@@ -1,0 +1,135 @@
+{
+  "acquisition_provenance": {
+    "source": "nominatim_openstreetmap",
+    "query": "North Africa",
+    "retrieved_at": "2026-07-28T12:06:47.579818Z",
+    "cache_key": "8e323d6c5b90ad9f30b8460696bff8d3c4b6a14db2b8421a889586838f9b25cb",
+    "parameters": {
+      "accept-language": "en",
+      "addressdetails": "1",
+      "format": "geojson",
+      "limit": "5",
+      "namedetails": "1",
+      "polygon_geojson": "1",
+      "polygon_threshold": "0.01",
+      "q": "North Africa"
+    },
+    "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 84073478,
+          "osm_type": "way",
+          "osm_id": 866085534,
+          "place_rank": 25,
+          "category": "leisure",
+          "type": "garden",
+          "importance": 0.06675102388036927,
+          "addresstype": "garden",
+          "name": "North Africa",
+          "display_name": "North Africa, el Poble-sec, Sants-Montjuïc, Barcelona, Barcelonès, Barcelona, Catalonia, Spain",
+          "address": {
+            "garden": "North Africa",
+            "quarter": "el Poble-sec",
+            "suburb": "Sants-Montjuïc",
+            "city": "Barcelona",
+            "county": "Barcelonès",
+            "province": "Barcelona",
+            "ISO3166-2-lvl6": "ES-B",
+            "state": "Catalonia",
+            "ISO3166-2-lvl4": "ES-CT",
+            "country": "Spain",
+            "country_code": "es"
+          },
+          "namedetails": {
+            "name": "Nord d'Àfrica",
+            "name:ca": "Nord d'Àfrica",
+            "name:de": "Nord Afrika",
+            "name:en": "North Africa",
+            "name:es": "Norte de Africa",
+            "name:fr": "Afrique du Nord"
+          }
+        },
+        "bbox": [
+          2.1586385,
+          41.3621064,
+          2.1604020,
+          41.3630721
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                2.1596169,
+                41.3630591
+              ],
+              [
+                2.1591765,
+                41.3621064
+              ],
+              [
+                2.160402,
+                41.3627041
+              ],
+              [
+                2.1596169,
+                41.3630591
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "place_id": 420092573,
+          "osm_type": "node",
+          "osm_id": 13946310589,
+          "place_rank": 30,
+          "category": "information",
+          "type": "audioguide",
+          "importance": 3.9558251316045126e-05,
+          "addresstype": "information",
+          "name": "North Africa",
+          "display_name": "North Africa, Perimeter Trail, Williamsburg Township, Clermont County, Ohio, 45106, United States",
+          "address": {
+            "information": "North Africa",
+            "road": "Perimeter Trail",
+            "municipality": "Williamsburg Township",
+            "county": "Clermont County",
+            "state": "Ohio",
+            "ISO3166-2-lvl4": "US-OH",
+            "postcode": "45106",
+            "country": "United States",
+            "country_code": "us"
+          },
+          "namedetails": {
+            "ref": "3",
+            "name": "North Africa",
+            "name:en": "North Africa"
+          }
+        },
+        "bbox": [
+          -84.0710185,
+          38.9931442,
+          -84.0709185,
+          38.9932442
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -84.0709685,
+            38.9931942
+          ]
+        }
+      }
+    ]
+  }
+}

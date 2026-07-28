@@ -179,7 +179,7 @@ Results:
 - Sfardata identifiers: 76/340
 
 The raw SRU cache is in `data/raw/nli_sru/` and the normalized, lossless JSON
-export is `data/nli_marc_normalized.json`. The normalized records retain the
+export is `data/derived/nli_marc_normalized.json`. The normalized records retain the
 complete parsed MARC fields in addition to convenience fields.
 
 Parent data should be inherited contextually at query/UI time rather than
@@ -191,13 +191,13 @@ segment; its parent represents the physical codex.
 Fetch one record:
 
 ```bash
-python3 scripts/nli_sru.py 990001929610205171 --output data/vatican-34.json
+python3 tools/nli/nli_sru.py 990001929610205171 --output data/vatican-34.json
 ```
 
 Fetch a parent plus its analytic children:
 
 ```bash
-python3 scripts/nli_sru.py 990001967550205171 \
+python3 tools/nli/nli_sru.py 990001967550205171 \
   --related children \
   --output data/vatican-44.json
 ```
@@ -205,8 +205,8 @@ python3 scripts/nli_sru.py 990001967550205171 \
 Fetch IDs from the project spreadsheet:
 
 ```bash
-python3 scripts/nli_sru.py \
-  --csv resources/midrashim_from_google_sheets.csv \
+python3 tools/nli/nli_sru.py \
+  --csv data/source/midrashim_from_google_sheets.csv \
   --limit 10 \
   --output data/nli-sample.json
 ```

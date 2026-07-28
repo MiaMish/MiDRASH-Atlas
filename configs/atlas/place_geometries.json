@@ -1,0 +1,5 @@
+{
+  "schema_version": "1.0.0",
+  "description": "Curated, source-backed geometry variants keyed by a raw/canonical place label. Generated place IDs are intentionally not required.",
+  "places": []
+}
