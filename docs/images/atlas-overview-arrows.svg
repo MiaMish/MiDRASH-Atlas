@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#a9362a"/>
+    </marker>
+  </defs>
+  <g fill="none" stroke="#a9362a" stroke-width="4" marker-end="url(#arrow)">
+    <path d="M235 325 C210 345 180 365 145 395"/>
+    <path d="M665 80 C680 105 700 125 730 150"/>
+    <path d="M850 220 C850 242 837 260 820 276"/>
+    <path d="M1175 285 C1135 310 1095 345 1055 390"/>
+    <path d="M1140 22 C1140 30 1140 40 1140 50"/>
+  </g>
+  <g fill="#a9362a" stroke="#fffdf7" stroke-width="3">
+    <circle cx="245" cy="315" r="18"/><circle cx="655" cy="70" r="18"/>
+    <circle cx="860" cy="210" r="18"/><circle cx="1185" cy="275" r="18"/>
+    <circle cx="1140" cy="18" r="18"/>
+  </g>
+  <g fill="#fff" font-family="Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle" dominant-baseline="central">
+    <text x="245" y="315">1</text><text x="655" y="70">2</text>
+    <text x="860" y="210">3</text><text x="1185" y="275">4</text>
+    <text x="1140" y="18">5</text>
+  </g>
+</svg>

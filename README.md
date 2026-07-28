@@ -5,6 +5,24 @@ evidence-preserving atlas dataset. The PoC does not select one authoritative
 location or date for a manuscript. It exports competing geographic and temporal
 assertions so researchers can compare source strategies in the UI.
 
+![Annotated atlas workspace](docs/images/atlas-overview-annotated.jpg)
+
+## What the PoC includes
+
+- An interactive Leaflet atlas with a configurable temporal window.
+- Independent geographic evidence layers rather than one silently merged
+  location.
+- Filters for Hibur, parent/child evidence origin, geometry review state, and
+  undated records.
+- Place, containment, bounding-box, and unmapped-record drill-downs.
+- Rich manuscript metadata with MARC provenance available on demand.
+- A geometry-curation workspace with human review state and append-only audit
+  history.
+- Cached gazetteer acquisition and Ollama-first LLM curation drafts.
+
+See the [annotated feature tour](docs/feature-tour.md) for screenshots of the
+main workflows.
+
 ## Repository layout
 
 ```text
@@ -26,6 +44,30 @@ data/
 tools/nli/              NLI retrieval tooling
 ```
 
+## Quick start
+
+The API and UI run as separate local processes.
+
+Terminal 1:
+
+```bash
+GOCACHE=/private/tmp/midrash-atlas-go-cache \
+  /opt/homebrew/bin/go run ./apps/api/cmd/atlas serve
+```
+
+Terminal 2:
+
+```bash
+npm install
+npm run web:dev
+```
+
+Open [http://localhost:5173](http://localhost:5173). Vite proxies `/api` to the
+Go service at `http://127.0.0.1:8080`.
+
+The repository contains the shared PoC SQLite database at
+`data/runtime/atlas.sqlite`. Do not delete it when cleaning generated files.
+
 ## Generate the atlas data
 
 The machine's asdf Go 1.21 installation is currently incomplete. The Homebrew
@@ -38,16 +80,16 @@ GOCACHE=/private/tmp/midrash-atlas-go-cache \
 
 Outputs are written to `data/generated/atlas/`.
 
-## Run the small API
+## Run the API
 
 ```bash
 GOCACHE=/private/tmp/midrash-atlas-go-cache \
   /opt/homebrew/bin/go run ./apps/api/cmd/atlas serve
 ```
 
-The shared audit store is `data/runtime/atlas.sqlite`. It is committed so the
-PoC team sees the same human review history. SQLite WAL/SHM sidecar files remain
-ignored; the API checkpoints the WAL when it closes.
+The shared audit store is committed so the PoC team sees the same human review
+history. SQLite WAL/SHM sidecar files remain ignored; the API checkpoints the
+WAL when it closes.
 
 ## Run the React UI
 
@@ -152,10 +194,23 @@ The joined atlas endpoint is:
 
 It groups matching assertions by place so polygons are transferred once, while
 retaining nested manuscript, Hibur, temporal, raw-evidence, and origin details
-for drill-down.
+for drill-down. Assertions without valid geometry are returned in
+`unmapped_groups` rather than being discarded or assigned artificial
+coordinates.
+
+## Verification
+
+```bash
+GOCACHE=/private/tmp/midrash-atlas-go-cache \
+  /opt/homebrew/bin/go test ./...
+
+npm run web:typecheck
+npm run web:build
+```
 
 ## Documentation
 
+- [Annotated feature tour](docs/feature-tour.md)
 - [NLI retrieval](docs/nli-retrieval.md)
 - [Atlas data model](docs/atlas-data-model.md)
 - [PoC architecture and UI contract](docs/poc-architecture.md)
