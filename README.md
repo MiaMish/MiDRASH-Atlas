@@ -37,8 +37,8 @@ packages/
 configs/atlas/          Curated source and geometry configuration
 data/
   source/               Project CSV and RDF inputs
-  raw/                  Cached NLI MARCXML
-  derived/              Normalized NLI data
+  raw/                  Cached NLI MARCXML and gazetteer responses
+  derived/              Normalized NLI data and curation-pilot artifacts
   generated/atlas/      UI/API export
   runtime/              Shared SQLite curation database
 tools/nli/              NLI retrieval tooling
@@ -123,21 +123,29 @@ geometry or save a revision.
 
 Every AI-produced JSON result includes provider, model, UTC generation time,
 purpose, and prompt hash under `ai_provenance`. Gazetteer lookup is used only to
-populate or refresh curation candidates. Normal atlas rendering reads persisted,
-reviewed geometry and never performs runtime geocoding.
+populate or refresh curation candidates. Normal atlas rendering reads local
+configured geometry, cached AI/gazetteer drafts, and audited SQLite revisions;
+it never performs runtime geocoding. Unreviewed candidates remain visibly
+labelled as such.
 
-Run the cached ten-place gazetteer and Ollama draft pilots:
+Refresh cached candidates for every generated place concept, then run Ollama
+only for places that have never been AI-checked:
 
 ```bash
 GOCACHE=/private/tmp/midrash-atlas-go-cache \
-  /opt/homebrew/bin/go run ./apps/api/cmd/atlas gazetteer-pilot
+  /opt/homebrew/bin/go run ./apps/api/cmd/atlas gazetteer-pilot --all-places
 
 GOCACHE=/private/tmp/midrash-atlas-go-cache \
-  /opt/homebrew/bin/go run ./apps/api/cmd/atlas curation-pilot
+  /opt/homebrew/bin/go run ./apps/api/cmd/atlas curation-pilot \
+  --only-ai-not-checked \
+  --skip-human-reviewed
 ```
 
-The second command creates review drafts only; it never accepts or saves a
-geometry. See the pilot report for the candidate and refusal results.
+The curation command creates review drafts only; it never accepts or saves a
+geometry. Running `gazetteer-pilot` without `--all-places` rebuilds the original
+ten-place sample and replaces the same derived candidate file, so use the
+all-place form for the current checked-in workflow. See the pilot report for
+the original sample and current all-place results.
 
 Rerun with another provider/model while protecting human-reviewed places:
 
@@ -152,19 +160,6 @@ GOCACHE=/private/tmp/midrash-atlas-go-cache \
 Each rerun replaces the current AI draft for the places it processes and
 appends the full prior/current results to the `runs` audit history. It never
 overwrites a human geometry revision.
-
-To extend candidate acquisition to every place and run AI only where it has
-never been checked:
-
-```bash
-GOCACHE=/private/tmp/midrash-atlas-go-cache \
-  /opt/homebrew/bin/go run ./apps/api/cmd/atlas gazetteer-pilot --all-places
-
-GOCACHE=/private/tmp/midrash-atlas-go-cache \
-  /opt/homebrew/bin/go run ./apps/api/cmd/atlas curation-pilot \
-  --only-ai-not-checked \
-  --skip-human-reviewed
-```
 
 Long-running Go commands emit timestamped progress to stdout. Gazetteer and
 curation runs report every place, cache/skip state, result status, and duration.

@@ -83,7 +83,7 @@ ID. For Vatican ebr. 44 this returned fourteen analytic children.
 | `710` | Corporate body/current owner | This is present repository geography, not production geography |
 | `751` | Place, with role in `$e` | `place of writing` is production geography; `related place` is weaker |
 | `773 $w` | Child-to-parent link | Follow to retrieve physical-manuscript context |
-| `740` | Alternative title | Useful for matching Hibburs |
+| `740` | Alternative title | Useful for matching Hiburim |
 | `903` | Rights/access metadata | Preserve subfields |
 | `942` indicator 1 | Repository and shelfmark | NLI-local field |
 | `942` indicator 3 | External catalogue reference | NLI-local field |

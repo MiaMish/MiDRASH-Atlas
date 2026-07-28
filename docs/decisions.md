@@ -56,8 +56,9 @@ Generated NLI data and runtime curation remain separate.
 ## 2026-07-28 — External gazetteers are not rendering dependencies
 
 Gazetteer calls populate or refresh curation candidates. Results are cached and
-reviewed before becoming geometry revisions. The public atlas reads persisted
-geometry and never performs per-record runtime geocoding.
+shown with explicit review status; a curator action is required before they
+become geometry revisions. The public atlas reads local configured/cached state
+and SQLite revisions and never performs per-record runtime geocoding.
 
 ## 2026-07-28 — AI provenance is mandatory
 
@@ -70,8 +71,9 @@ that no AI was used.
 
 Raw Nominatim results and acquisition provenance are cached before any LLM call.
 Ollama receives only that candidate set plus project evidence and produces a
-separate, validated review draft. Neither stage updates accepted geometry. A
-human acceptance is the only action that may append a geometry revision.
+separate, validated review draft. Neither stage updates accepted geometry. Only
+an explicit save in the human curation workflow may append a geometry revision,
+whether as an unreviewed human draft or as a reviewed result.
 
 ## 2026-07-28 — Human review and human change are separate facts
 
@@ -108,14 +110,41 @@ The map transfers one feature per place, with matching manuscript/assertion
 events nested for drill-down. This avoids repeating large polygons and keeps
 multiple source statements visible. The default map source is the explicit NLI
 writing place; related places and current repositories are opt-in. Unmapped
-matching assertions remain in the summary count.
+matching assertions remain in the summary count and open in their own
+drill-down.
+
+## 2026-07-28 — Keep no-geometry records explorable
+
+Filtered assertions without valid geometry are returned as `unmapped_groups`,
+grouped by place concept with the same manuscript and evidence payload as mapped
+events. The UI opens them from the unmapped summary count and reports whether AI
+has not run, declined a match, selected an unavailable candidate, or failed
+technically. The system does not fabricate coordinates merely to put these
+records on the map.
+
+## 2026-07-28 — Separate readable metadata from MARC provenance
+
+The drill-down uses the target record's `245$a` title and descriptive values.
+MARC tags and source record IDs remain available in a collapsed catalog-field
+provenance section rather than being appended to every visible value. When
+geographic evidence comes from a parent, the parent record is identified
+separately so its title does not replace the analytic child's title.
+
+## 2026-07-28 — Treat spatial selection as display-geometry analysis
+
+Selecting a broad geometry includes mapped place geometries spatially contained
+by it, and box selection includes geometries intersecting the drawn rectangle.
+Smaller contained polygons render above their containers for direct clicking.
+These operations use the current modern display geometries and do not claim
+that the same containment or boundaries applied historically.
 
 ## Open decisions for the team
 
 - Which assertion-source priority profiles should ship as presets?
 - Does parent data represent fallback, contextual evidence, or both for each
   field type?
-- What default `circa` window should the UI use?
+- Should the PoC's current ±10-year default `circa` window remain the project
+  default?
 - Which historical gazetteer or scholarly region datasets can be licensed and
   cited?
 - How should fuzzy or transitional regions be rendered and queried?

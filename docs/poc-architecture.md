@@ -3,19 +3,16 @@
 ## Components
 
 ```text
-NLI SRU + project CSVs
-          |
-       Go export
-          |
-  evidence-preserving JSON
-          |
-  small Go HTTP handler
-          |
- React application
-          |
- replaceable map adapter
-          |
- Leaflet initially
+NLI SRU ──> Python retrieval/normalization ──┐
+                                             ├──> Go atlas export
+project CSVs + atlas configuration ──────────┘          |
+                                             evidence-preserving JSON
+                                                        |
+                                      Go HTTP API + shared SQLite revisions
+                                                        |
+                                                   React/Vite
+                                                        |
+                                                      Leaflet
 ```
 
 The Go HTTP handlers are stateless with respect to process memory. Read-only
@@ -35,7 +32,7 @@ HTTP or UI contracts.
 | `geo_assertions.json` | All geographic evidence candidates |
 | `temporal_assertions.json` | Stored date semantics |
 | `places.json` | Place concepts and contextual geometry variants |
-| `events.geojson` | GeoJSON view; geometry is null until reviewed variants exist |
+| `events.geojson` | Assertion transport view; geometry is always `null` in the current exporter |
 | `review_queue.json` | Unparsed or interpretive work requiring review |
 
 `configs/atlas/place_geometries.json` is the version-controlled seed input for
@@ -50,14 +47,19 @@ purpose, and prompt hash.
 
 ## Source selection
 
-The UI should support three modes:
+The current UI implements multi-select geographic source checkboxes. With one
+source enabled it behaves as a single-source view; with several enabled it
+preserves every matching assertion. Symbology currently communicates geometry
+review state, not evidence source.
 
-1. **single source**: show one selected `source_type_id`;
-2. **comparison**: show two or more sources with distinct symbology;
-3. **priority profile**: select the highest-priority available source for each
-   target, while retaining an “alternatives available” indicator.
+Two richer modes remain planned:
 
-A profile should separately configure:
+1. **source comparison symbology**: visually distinguish two or more enabled
+   evidence sources;
+2. **priority profile**: select the highest-priority available source for each
+   target while retaining an “alternatives available” indicator.
+
+A future profile should separately configure:
 
 - enabled geo assertion source types and their ordering;
 - scope precedence (`direct`, `parent_fallback`, `parent_alternative`);
@@ -66,59 +68,58 @@ A profile should separately configure:
 - the runtime `circa_years` policy;
 - whether uncertain/unreviewed assertions are shown.
 
-Multiple places from the same winning source remain multiple assertions. A
-priority profile must not arbitrarily select only the first.
+Multiple places from the same winning source must remain multiple assertions. A
+future priority profile must not arbitrarily select only the first.
 
 ## Map abstraction
 
-React components should depend on a small `MapAdapter`, not directly on Leaflet:
+The React atlas currently depends directly on React Leaflet, but Leaflet-specific
+behavior is isolated in `apps/web/src/features/atlas/AtlasMap.tsx`. Filters and
+drill-down consume the backend contract rather than Leaflet objects.
+Location-editing map behavior is separately isolated in
+`GeometryMapEditor.tsx`.
 
-```ts
-interface MapAdapter {
-  setFeatures(features: GeoJSON.FeatureCollection): void;
-  setSelectedFeature(id: string | null): void;
-  fitToFeatures(): void;
-  onFeatureClick(handler: (id: string) => void): () => void;
-  destroy(): void;
-}
-```
-
-The initial implementation can wrap Leaflet. Replacing it with MapLibre should
-not change filters, assertion selection, drill-down, or API contracts.
-
-The React atlas is under `apps/web/src/features/atlas/`. Leaflet-specific atlas
-behavior is isolated in `AtlasMap.tsx`; filters and drill-down consume the
-backend contract rather than Leaflet objects. Location-editing map behavior
-remains isolated in `GeometryMapEditor.tsx`.
+A formal `MapAdapter` does not exist yet. Replacing Leaflet would require
+rewriting those two map components, while the API, filters, and drill-down
+contracts could remain unchanged.
 
 ## Filters
 
-First-class filters:
+The implemented atlas filters are:
 
-- time interval and temporal source;
-- Hibur and family;
-- geo source type and scope origin;
-- geometry interpretation source;
-- place/country;
-- script style and language;
-- digitized status;
-- confidence, uncertainty, and review status.
+- time interval;
+- configurable `circa` expansion and inclusion of undated records;
+- one or more geographic source types;
+- one or more parent/child origins;
+- one Hibur at a time;
+- one geometry review state at a time.
 
-The UI must display mapped, unmapped, and undated counts. Missing geometry must
-not silently remove a record from the result total.
+The backend accepts comma-separated Hibur and location-status values even
+though the current selects expose one value. Temporal source, Hibur family,
+geometry interpretation source, place/country, script, language, digitized
+status, confidence, and uncertainty filters remain planned.
+
+The summary currently displays mapped places, unique target records, and
+unmapped assertions. Undated records are controlled by a checkbox but do not
+have a separate summary count. Missing geometry remains in the record total and
+opens through the unmapped-assertions drill-down.
 
 ## Drill-down
 
-1. place/cluster/region;
-2. physical manuscripts in the active filter;
-3. selected manuscript;
-4. analytic components and Hibur links;
-5. all competing geo and temporal assertions;
-6. raw evidence, source description, parent/direct origin, NLI link, and digital
-   object link.
+The current UI provides:
 
-Default counts group by `physical_id`. A visible toggle may count components or
-manifestations instead.
+1. a place drill-down, including mapped geometries spatially contained by the
+   selected geometry;
+2. a rectangular area drill-down for intersecting mapped geometries;
+3. an unmapped drill-down grouped by unresolved place concept;
+4. assertion cards containing the target record, linked Hiburim, all target
+   temporal assertions, raw place evidence, source description,
+   parent/direct origin, descriptive metadata, MARC provenance, NLI link, and
+   digital-object link.
+
+Counts currently group unique target record IDs separately from assertions.
+`physical_id` is retained in the data for a future physical-manuscript counting
+mode; there is no counting-mode toggle yet.
 
 ## Joined atlas endpoint
 

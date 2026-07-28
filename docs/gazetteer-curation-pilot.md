@@ -7,8 +7,9 @@ be turned into reviewable modern display-geometry candidates. It does not create
 historical boundaries and does not choose authoritative geometry.
 
 Nominatim is used only during ingestion or curation. The atlas UI and its
-runtime API must read persisted, reviewed geometry and must never geocode places
-as part of map rendering, filtering, or drill-down.
+runtime API read local configured geometry, cached draft candidates, and SQLite
+revisions. They never geocode places as part of map rendering, filtering, or
+drill-down; unreviewed geometry is displayed with an explicit status.
 
 ## Stage 1: acquire and cache candidates
 
@@ -108,9 +109,9 @@ skips a place when its current `modern_place` revision is human-reviewed. The
 skip itself is recorded in the run audit. Omitting the flag allows a deliberate
 comparison run, but AI output still cannot overwrite the human revision.
 
-The original candidate file contains only ten pilot places. Before the first
-full only-not-checked run, expand it using the same cached, rate-limited
-gazetteer client:
+Running the command without `--all-places` builds the ten-place sample. Expand
+or refresh the checked-in all-place document using the same cached,
+rate-limited gazetteer client:
 
 ```bash
 GOCACHE=/private/tmp/midrash-atlas-go-cache \
@@ -118,26 +119,33 @@ GOCACHE=/private/tmp/midrash-atlas-go-cache \
 ```
 
 This overwrites the derived candidate document with all generated place
-concepts, while reusing raw cache entries for the original ten queries.
+concepts, while reusing matching raw cache entries. The current checked-in
+document contains 107 places.
 
-## Results from 2026-07-28
+## Original ten-place results from 2026-07-28
 
 | Place | Candidates | Ollama draft | Interpretation |
 |---|---:|---|---|
 | Spain | 1 | selected | modern-country `MultiPolygon` fallback |
-| Yemen | 1 | selected | modern-country `MultiPolygon` fallback |
-| North Africa | 2 | needs candidates | returned results were unrelated places in Barcelona and Ohio |
-| Cairo | 2 | selected | locality candidate; alternatives still require human review |
-| Istanbul | 2 | selected | regional geometry; precision choice requires review |
-| Bukhara | 2 | selected | locality rather than surrounding administrative region |
-| Al-Tawilah | 3 | ambiguous | several same-name localities; model refused to guess |
-| Feodosia | 1 | selected | locality polygon |
-| Heraklion | 1 | selected | locality point |
+| Yemen (Republic) | 1 | selected | modern-country `MultiPolygon` fallback |
+| Africa, North | 2 | needs candidates | returned results were unrelated places in Barcelona and Ohio |
+| Cairo (Egypt) | 2 | selected | locality candidate; alternatives still require human review |
+| Istanbul (Turkey) | 2 | selected | regional geometry; precision choice requires review |
+| Bukhoro (Uzbekistan) | 2 | selected | locality rather than surrounding administrative region |
+| Al-Tawilah (Yemen) | 3 | ambiguous | several same-name localities; model refused to guess |
+| Feodosii︠a︡ (Ukraine) | 1 | selected | locality polygon |
+| Ērakleion (Greece) | 1 | selected | locality point |
 | מגדלא אלצפקיין | 0 | needs candidates | unresolved; requires research or another gazetteer |
 
 All ten drafts used `ollama` / `qwen3.5:35b` and have complete AI provenance.
 Seven selected a candidate and three safely declined. These are prompt-quality
 results, not accepted curation decisions.
+
+The current `1.1.0` draft document is the later all-place run state: 107 current
+draft entries and three audit runs. Its current statuses are 77
+`candidate_selected`, 17 `ambiguous`, 12 `needs_candidates`, and one technical
+failure. Of the 107 current entries, 106 contain Ollama provenance; the
+technical failure has no model result.
 
 ## Lessons and next review
 
@@ -150,6 +158,7 @@ results, not accepted curation decisions.
   source assertion, temporal context, model rationale, and ambiguity warnings
   together.
 
-The next team-facing action is to review these ten cases and mark each proposed
-candidate as accept, reject, or research-required. Only an explicit acceptance
-should create an append-only geometry revision.
+The ongoing team-facing action is to review proposed candidates and mark them
+as accepted, rejected, or research-required. Only an explicit curator save
+creates an append-only geometry revision; the UI may save either a draft or a
+human-reviewed result.

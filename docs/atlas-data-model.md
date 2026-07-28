@@ -25,7 +25,7 @@ Every geographic assertion carries:
 - `source_type_id`, whose UI description is in `source_types.json`;
 - `target_record_id`, the record being mapped;
 - `source_record_id`, the MARC record containing the evidence;
-- `physical_id`, used for deduplicated physical-manuscript counts;
+- `physical_id`, available for deduplicated physical-manuscript counts;
 - `origin`: `direct`, `parent_fallback`, or `parent_alternative`;
 - `place_id` and the unmodified `place_raw`;
 - the MARC field/role, extraction method, review status, and catalogue update
@@ -85,13 +85,18 @@ geometry variants:
 ```
 
 Variants may be points, polygons, multipolygons, or—later—fuzzy regions. Two
-scholarly interpretations may overlap or conflict. Selection therefore depends
-on:
+scholarly interpretations may overlap or conflict. The data model is designed
+for selection to depend on:
 
 1. the geo assertion;
 2. its effective temporal interval;
 3. a selected geometry-source profile;
 4. optional scholarly/context filters.
+
+The current PoC editor exposes only `modern_place`; the atlas projection selects
+the current valid configured/cached geometry or latest saved UI revision. It
+does not yet choose among historical variants by event date or scholarly
+profile.
 
 When no historical geometry is available, a modern gazetteer point or polygon
 may be offered as a visibly labelled display fallback. It must never masquerade
@@ -122,10 +127,11 @@ place label rather than generated ID. The exporter merges them into
 
 Catalogue metadata is neither automatically primary nor secondary evidence.
 For example, a colophon transcription can mediate primary text, while a place
-assignment may be a cataloguer's interpretation. Assertions therefore record
-`evidence_nature`, catalogue identity, record timestamp, raw statement,
-extraction method, and review status. Historical catalogues should be identified
-as sources in their own right rather than merged into the NLI statement.
+assignment may be a cataloguer's interpretation. The source-type definition
+records `evidence_nature`; each assertion records its source type, catalogue
+identity, record timestamp, raw statement, extraction method, and review
+status. Historical catalogues should be identified as sources in their own
+right rather than merged into the NLI statement.
 
 Any assertion created or materially interpreted by AI includes an
 `ai_provenance` array in its evidence:
@@ -141,15 +147,16 @@ Any assertion created or materially interpreted by AI includes an
 ```
 
 Deterministic parsing does not fabricate an AI entry. The export manifest states
-`ai_used: false` while the current atlas JSON is produced entirely by Go rules.
+`generation_provenance.ai_used: false` while the current atlas JSON is produced
+entirely by Go rules.
 
 ## Hibur relationships
 
 The project spreadsheet creates many-to-many `hibur_links`. Exact alias matches
 are linked to ontology IDs. Unmatched labels remain present with
-`match_status: unresolved` and enter the review queue. A physical-manuscript
-count should group by `physical_id`; a manifestation/component count may use
-record IDs.
+`match_status: unresolved` and enter the review queue. The current atlas UI
+counts unique target record IDs. `physical_id` remains available for a future
+physical-manuscript counting mode.
 
 ## Atlas projection
 

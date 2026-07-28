@@ -1,6 +1,7 @@
 # Midrash Atlas feature tour
 
-This guide shows the current PoC interface. The numbers in each screenshot
+This guide shows the current PoC interface, captured on 2026-07-28. Dataset
+counts will change as curation progresses. The numbers in each screenshot
 correspond to the explanations immediately below it.
 
 ## Atlas workspace
@@ -70,7 +71,8 @@ the manuscript count.
 3. **Geometry source and editor** show how the current `modern_place` display
    geometry was produced. Curators can edit its precision and GeoJSON and mark
    it reviewed by a human.
-4. **Map preview** displays the exact point or polygon that will be saved.
+4. **Map preview** displays the exact point, polygon, or multipolygon that will
+   be saved.
    Smaller contained geometries render above broader ones in the atlas.
 5. **Append-only audit trail** records revisions, timestamps, review actions,
    change reasons, and the AI provider/model when a draft informed the change.

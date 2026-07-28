@@ -39,10 +39,12 @@ Provider/model defaults are controlled by `CURATION_LLM_PROVIDER` and
 `CURATION_LLM_MODEL`. They default to `ollama` and `qwen3.5:35b`. Secrets are
 never returned by the API.
 
-The location overview distinguishes five AI states: `not_attempted`,
-`candidate_proposed`, `needs_candidates`, `ambiguous`, and
-`technical_failure`. A place without coordinates therefore does not conceal
-whether AI curation has never run or ran without producing a safe match.
+The location overview distinguishes six AI states: `not_attempted`,
+`candidate_proposed`, `candidate_unavailable`, `needs_candidates`, `ambiguous`,
+and `technical_failure`. `candidate_unavailable` means the current AI draft
+selected an ID that is absent from, or unusable in, the current candidate
+cache. A place without coordinates therefore does not conceal whether AI
+curation has never run or ran without producing a mappable result.
 The audit panel also lists retained AI runs with provider, model, timestamp,
 result status, comment, technical error, and which result is current.
 
@@ -87,21 +89,33 @@ and reviewed.
 `GET /api/v1/location-overview` merges the best available geometry for every
 place concept in this order:
 
-1. latest human revision;
+1. latest saved UI revision, whether a human-reviewed result or a draft;
 2. configured geometry variant;
 3. selected but unreviewed gazetteer/LLM pilot candidate;
 4. no geometry.
+
+Implementation-wise, configured geometry is loaded first, an applicable pilot
+candidate fills only a missing geometry, and the latest valid SQLite revision
+then overrides both.
 
 Each item states whether its coordinates are structurally valid, whether a
 human reviewed them, whether a human changed them, and which source supplied
 the displayed geometry. The React dropdown uses the same status values and is
 alphabetized by preferred place label.
 
+The coordinate statuses are `no_geometry`, `unreviewed_candidate`,
+`curated_unreviewed`, `human_draft`, `reviewed_by_human`, `changed_by_human`,
+and `changed_and_reviewed_by_human`. Coordinate status and AI status are
+separate: for example, an AI run may remain `candidate_proposed` while a later
+human revision supplies the displayed geometry.
+
 ## Gazetteer execution boundary
 
 Gazetteer lookup is an ingestion/curation operation, not a normal atlas-runtime
-dependency. Candidate responses are cached, reviewed, and converted to
-persisted geometry revisions. Map rendering reads approved stored geometry.
+dependency. Candidate responses are cached and may be previewed as explicitly
+unreviewed geometry. A curator save converts the preview or an edit into a
+persisted revision. Map rendering reads local configured/cached state and
+SQLite revisions; it never calls the gazetteer.
 
 A future curator-only “refresh candidates” action may run a gazetteer lookup,
 but ordinary filters, map loads, and drill-down requests must never contact the

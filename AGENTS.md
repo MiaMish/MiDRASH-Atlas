@@ -44,9 +44,14 @@ GOCACHE=/private/tmp/midrash-atlas-go-cache /opt/homebrew/bin/go run ./apps/api/
 GOCACHE=/private/tmp/midrash-atlas-go-cache /opt/homebrew/bin/go run ./apps/api/cmd/atlas gazetteer-pilot
 GOCACHE=/private/tmp/midrash-atlas-go-cache /opt/homebrew/bin/go run ./apps/api/cmd/atlas gazetteer-pilot --all-places
 GOCACHE=/private/tmp/midrash-atlas-go-cache /opt/homebrew/bin/go run ./apps/api/cmd/atlas curation-pilot
+GOCACHE=/private/tmp/midrash-atlas-go-cache /opt/homebrew/bin/go run ./apps/api/cmd/atlas curation-pilot --only-ai-not-checked --skip-human-reviewed
 npm run web:typecheck
 npm run web:build
 ```
+
+The checked-in derived gazetteer document currently covers all generated
+places. Running `gazetteer-pilot` without `--all-places` intentionally rebuilds
+the original ten-place sample at the same output path.
 
 The asdf Go 1.21 installation on the current machine is incomplete. Use the
 Homebrew Go binary; `go.mod` may automatically obtain the declared Go toolchain.
