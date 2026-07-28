@@ -11,6 +11,7 @@ import type { AtlasFeature } from "../../api";
 type Props = {
   features: AtlasFeature[];
   selectedPlaceId: string;
+  containedPlaceIds: string[];
   onSelectPlace: (placeId: string) => void;
 };
 
@@ -23,15 +24,21 @@ const statusColors: Record<string, string> = {
   curated_unreviewed: "#a65332",
 };
 
-function featureStyle(feature: AtlasFeature, selectedPlaceId: string): PathOptions {
+function featureStyle(
+  feature: AtlasFeature,
+  selectedPlaceId: string,
+  containedPlaceIds: Set<string>,
+): PathOptions {
   const selected = feature.properties.place_id === selectedPlaceId;
+  const contained = containedPlaceIds.has(feature.properties.place_id);
   const color = statusColors[feature.properties.coordinate_status] ?? "#6d685f";
   return {
     color,
     fillColor: color,
     fillOpacity: selected ? 0.42 : 0.22,
     opacity: 0.9,
-    weight: selected ? 4 : 1.5,
+    weight: selected ? 4 : contained ? 3 : 1.5,
+    dashArray: contained ? "5 4" : undefined,
   };
 }
 
@@ -47,11 +54,37 @@ function FitFeatures({ data }: { data: FeatureCollection }) {
   return null;
 }
 
-export function AtlasMap({ features, selectedPlaceId, onSelectPlace }: Props) {
+export function AtlasMap({
+  features,
+  selectedPlaceId,
+  containedPlaceIds,
+  onSelectPlace,
+}: Props) {
+  const containedIDs = useMemo(() => new Set(containedPlaceIds), [containedPlaceIds]);
+  const orderedFeatures = useMemo(() => {
+    const containmentDepth = new Map(features.map((feature) => [feature.id, 0]));
+    for (const container of features) {
+      for (const placeId of container.properties.contained_place_ids ?? []) {
+        containmentDepth.set(placeId, (containmentDepth.get(placeId) ?? 0) + 1);
+      }
+    }
+    return features
+      .map((feature, index) => ({ feature, index }))
+      .sort((left, right) => {
+        const depthDifference =
+          (containmentDepth.get(left.feature.id) ?? 0) -
+          (containmentDepth.get(right.feature.id) ?? 0);
+        if (depthDifference !== 0) return depthDifference;
+        const leftIsPoint = left.feature.geometry.type === "Point" ? 1 : 0;
+        const rightIsPoint = right.feature.geometry.type === "Point" ? 1 : 0;
+        return leftIsPoint - rightIsPoint || left.index - right.index;
+      })
+      .map(({ feature }) => feature);
+  }, [features]);
   const data: FeatureCollection = useMemo(
     () => ({
       type: "FeatureCollection",
-      features: features.map(
+      features: orderedFeatures.map(
         (item): Feature => ({
           type: "Feature",
           id: item.id,
@@ -60,7 +93,7 @@ export function AtlasMap({ features, selectedPlaceId, onSelectPlace }: Props) {
         }),
       ),
     }),
-    [features],
+    [orderedFeatures],
   );
   const featureByID = useMemo(
     () => new Map(features.map((feature) => [feature.id, feature])),
@@ -80,14 +113,16 @@ export function AtlasMap({ features, selectedPlaceId, onSelectPlace }: Props) {
           data={data}
           style={(feature) => {
             const atlasFeature = feature?.id ? featureByID.get(String(feature.id)) : undefined;
-            return atlasFeature ? featureStyle(atlasFeature, selectedPlaceId) : {};
+            return atlasFeature
+              ? featureStyle(atlasFeature, selectedPlaceId, containedIDs)
+              : {};
           }}
           pointToLayer={(feature, latlng) => {
             const atlasFeature = feature.id ? featureByID.get(String(feature.id)) : undefined;
             const count = atlasFeature?.properties.record_count ?? 1;
             return circleMarker(latlng, {
               ...(atlasFeature
-                ? featureStyle(atlasFeature, selectedPlaceId)
+                ? featureStyle(atlasFeature, selectedPlaceId, containedIDs)
                 : { color: "#6d685f", fillColor: "#6d685f" }),
               radius: Math.min(18, 6 + Math.sqrt(count) * 2),
             });

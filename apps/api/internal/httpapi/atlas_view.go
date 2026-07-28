@@ -83,17 +83,18 @@ type atlasViewFeature struct {
 }
 
 type atlasViewPlaceProperties struct {
-	PlaceID          string           `json:"place_id"`
-	PlaceLabel       string           `json:"place_label"`
-	CoordinateStatus string           `json:"coordinate_status"`
-	ReviewedByHuman  bool             `json:"reviewed_by_human"`
-	ChangedByHuman   bool             `json:"changed_by_human"`
-	SpatialPrecision string           `json:"spatial_precision,omitempty"`
-	GeometrySource   string           `json:"geometry_source,omitempty"`
-	AIStatus         string           `json:"ai_status"`
-	AssertionCount   int              `json:"assertion_count"`
-	RecordCount      int              `json:"record_count"`
-	Events           []atlasViewEvent `json:"events"`
+	PlaceID           string           `json:"place_id"`
+	PlaceLabel        string           `json:"place_label"`
+	CoordinateStatus  string           `json:"coordinate_status"`
+	ReviewedByHuman   bool             `json:"reviewed_by_human"`
+	ChangedByHuman    bool             `json:"changed_by_human"`
+	SpatialPrecision  string           `json:"spatial_precision,omitempty"`
+	GeometrySource    string           `json:"geometry_source,omitempty"`
+	AIStatus          string           `json:"ai_status"`
+	AssertionCount    int              `json:"assertion_count"`
+	RecordCount       int              `json:"record_count"`
+	ContainedPlaceIDs []string         `json:"contained_place_ids"`
+	Events            []atlasViewEvent `json:"events"`
 }
 
 type atlasViewEvent struct {
@@ -249,6 +250,13 @@ func (s *server) buildAtlasView(ctx context.Context, filters atlasViewFilters) (
 	matchedRecords := map[string]bool{}
 	response := atlasViewResponse{
 		SchemaVersion: "1.0.0", TimeBounds: bounds, Applied: filters,
+		Features: []atlasViewFeature{},
+		Facets: atlasViewFacets{
+			GeoSources:       []sourceTypeView{},
+			Origins:          []facetCount{},
+			LocationStatuses: []facetCount{},
+			Hiburim:          []hiburFacet{},
+		},
 	}
 	for _, assertion := range geoDocument.Assertions {
 		sourceCounts[assertion.SourceTypeID]++
@@ -269,6 +277,9 @@ func (s *server) buildAtlasView(ctx context.Context, filters atlasViewFilters) (
 			continue
 		}
 		temporal := temporalByTarget[record.ID]
+		if temporal == nil {
+			temporal = []atlasViewTemporalAssertion{}
+		}
 		if !matchesTime(temporal, filters) {
 			continue
 		}
@@ -284,7 +295,7 @@ func (s *server) buildAtlasView(ctx context.Context, filters atlasViewFilters) (
 			group = &placeGroup{location: location, records: map[string]bool{}}
 			groups[assertion.PlaceID] = group
 		}
-		var hiburim []atlas.Hibur
+		hiburim := []atlas.Hibur{}
 		for _, link := range record.HiburLinks {
 			if hibur, ok := hiburByID[link.HiburID]; ok {
 				hiburim = append(hiburim, hibur)
@@ -313,13 +324,39 @@ func (s *server) buildAtlasView(ctx context.Context, filters atlasViewFilters) (
 				GeometrySource:   group.location.GeometrySource,
 				AIStatus:         group.location.AIStatus,
 				AssertionCount:   len(group.events), RecordCount: len(group.records),
-				Events: group.events,
+				ContainedPlaceIDs: []string{},
+				Events:            group.events,
 			},
 		})
 	}
 	sort.Slice(response.Features, func(i, j int) bool {
 		return response.Features[i].Properties.PlaceLabel < response.Features[j].Properties.PlaceLabel
 	})
+	decodedGeometries := make([]decodedGeometry, len(response.Features))
+	validGeometries := make([]bool, len(response.Features))
+	for index := range response.Features {
+		decodedGeometries[index], validGeometries[index] =
+			decodeGeometry(response.Features[index].Geometry)
+	}
+	for containerIndex := range response.Features {
+		if !validGeometries[containerIndex] {
+			continue
+		}
+		for candidateIndex := range response.Features {
+			if containerIndex == candidateIndex || !validGeometries[candidateIndex] {
+				continue
+			}
+			if decodedGeometryWithin(
+				decodedGeometries[candidateIndex],
+				decodedGeometries[containerIndex],
+			) {
+				response.Features[containerIndex].Properties.ContainedPlaceIDs = append(
+					response.Features[containerIndex].Properties.ContainedPlaceIDs,
+					response.Features[candidateIndex].Properties.PlaceID,
+				)
+			}
+		}
+	}
 	for _, source := range sourceDocument.SourceTypes {
 		if source.Dimension != "geo" {
 			continue

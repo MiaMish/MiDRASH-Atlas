@@ -185,13 +185,19 @@ func (s *server) applyPilotCandidates(locations map[string]*locationOverview) {
 			item.AIStatus = "technical_failure"
 			continue
 		}
-		if item.HasValidCoordinates || draft.Result.Draft.RecommendedCandidateID == nil {
+		if item.HasValidCoordinates {
+			continue
+		}
+		if draft.Result.Draft.RecommendedCandidateID == nil {
+			item.AIStatus = "candidate_unavailable"
 			continue
 		}
 		pilotPlace, ok := candidatesByPlace[draft.PlaceID]
 		if !ok {
+			item.AIStatus = "candidate_unavailable"
 			continue
 		}
+		applied := false
 		for _, candidate := range pilotPlace.CurationRequest.GazetteerCandidates {
 			if candidate.ID != *draft.Result.Draft.RecommendedCandidateID || !validGeoJSON(candidate.Geometry) {
 				continue
@@ -201,7 +207,11 @@ func (s *server) applyPilotCandidates(locations map[string]*locationOverview) {
 				draft.Result.Draft.SpatialPrecision, draft.Result.Draft.Rationale,
 				"ollama_gazetteer_draft", "unreviewed")
 			item.CoordinateStatus = "unreviewed_candidate"
+			applied = true
 			break
+		}
+		if !applied {
+			item.AIStatus = "candidate_unavailable"
 		}
 	}
 }

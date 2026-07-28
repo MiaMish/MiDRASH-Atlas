@@ -198,6 +198,67 @@ func TestLocationOverviewIncludesUnreviewedPilotGeometry(t *testing.T) {
 	}
 }
 
+func TestLocationOverviewMarksStaleAIRecommendationAsCheckedButUnavailable(t *testing.T) {
+	root := t.TempDir()
+	exportDir := filepath.Join(root, "generated")
+	if err := os.MkdirAll(exportDir, 0o755); err != nil {
+		t.Fatal(err)
+	}
+	writeFixture(t, filepath.Join(exportDir, "places.json"), `{"places":[{
+	  "id":"place_bukhoro","preferred_label":"Bukhoro (Uzbekistan)",
+	  "aliases":["Bukhoro (Uzbekistan)"],"geometry_variants":[],"review_status":"needs_geometry_review"
+	}]}`)
+	pilotPath := filepath.Join(root, "pilot.json")
+	writeFixture(t, pilotPath, `{"places":[{
+	  "place_id":"place_bukhoro","place_label":"Bukhoro (Uzbekistan)","candidate_count":1,
+	  "curation_request":{"place_id":"place_bukhoro","place_label":"Bukhoro (Uzbekistan)",
+	    "gazetteer_candidates":[{
+	      "id":"gaz_current","source":"nominatim_openstreetmap","display_name":"Bukhara District",
+	      "geometry":{"type":"Point","coordinates":[64.4,39.8]}
+	    }]}
+	}]}`)
+	draftsPath := filepath.Join(root, "drafts.json")
+	writeFixture(t, draftsPath, `{
+	  "generated_at":"2026-07-28T12:01:00Z",
+	  "requested_provider":"ollama","requested_model":"qwen3.5:35b",
+	  "drafts":[{
+	    "place_id":"place_bukhoro","place_label":"Bukhoro (Uzbekistan)","candidate_count":2,
+	    "result":{
+	      "draft":{"status":"candidate_selected","place_id":"place_bukhoro",
+	        "place_label":"Bukhoro (Uzbekistan)","recommended_candidate_id":"gaz_from_previous_run",
+	        "recommended_geometry_type":"Polygon","spatial_precision":"locality","confidence":"high",
+	        "rationale":"The city candidate matched.","ambiguities":[],"required_review_checks":[],
+	        "suggested_aliases":["Bukhara"]},
+	      "ai_provenance":{"provider":"ollama","model":"qwen3.5:35b",
+	        "generated_at":"2026-07-28T12:01:00Z","purpose":"modern_geometry_curation_draft",
+	        "prompt_hash":"hash"},"prompt":"prompt"
+	    }
+	  }]
+	}`)
+	handler := New(Config{
+		ExportDir: exportDir, GazetteerPilotPath: pilotPath, CurationDraftsPath: draftsPath,
+	}, openStore(t), fakeGenerator{})
+	req := httptest.NewRequest(http.MethodGet, "/api/v1/location-overview", nil)
+	res := httptest.NewRecorder()
+	handler.ServeHTTP(res, req)
+	if res.Code != http.StatusOK {
+		t.Fatalf("status %d: %s", res.Code, res.Body.String())
+	}
+	var got struct {
+		Locations []struct {
+			HasValidCoordinates bool   `json:"has_valid_coordinates"`
+			AIStatus            string `json:"ai_status"`
+		} `json:"locations"`
+	}
+	if err := json.Unmarshal(res.Body.Bytes(), &got); err != nil {
+		t.Fatal(err)
+	}
+	if len(got.Locations) != 1 || got.Locations[0].HasValidCoordinates ||
+		got.Locations[0].AIStatus != "candidate_unavailable" {
+		t.Fatalf("stale AI candidate status is wrong: %+v", got.Locations)
+	}
+}
+
 func TestAtlasViewJoinsAndFiltersMappedManuscriptEvents(t *testing.T) {
 	root := t.TempDir()
 	exportDir := filepath.Join(root, "generated")
@@ -210,17 +271,32 @@ func TestAtlasViewJoinsAndFiltersMappedManuscriptEvents(t *testing.T) {
 	    {"id":"place_unknown","preferred_label":"Unknown","aliases":[],"geometry_variants":[],"review_status":"needs_geometry_review"}
 	  ]
 	}`)
-	writeFixture(t, filepath.Join(exportDir, "records.json"), `{"records":[{
-	  "id":"record_one","physical_id":"record_one","kind":"manuscript","titles":["Test manuscript"],
-	  "hibur_links":[{"hibur_id":"hibur_one","raw_label":"Test work","match_status":"exact_alias"}],
-	  "digitized":true,"geo_assertion_ids":["geo_one"],"temporal_assertion_ids":["time_one"]
-	}]}`)
-	writeFixture(t, filepath.Join(exportDir, "geo_assertions.json"), `{"assertions":[{
-	  "id":"geo_one","source_type_id":"nli_751_writing_place",
-	  "scope":{"target_record_id":"record_one","source_record_id":"record_one","physical_id":"record_one","origin":"direct"},
-	  "place_id":"place_spain","place_raw":"Spain","role":"place of writing","confidence":"high",
-	  "evidence":{"raw":"Spain","catalog":"NLI","extraction":"structured_field","review_status":"unreviewed"}
-	}]}`)
+	writeFixture(t, filepath.Join(exportDir, "records.json"), `{"records":[
+	  {
+	    "id":"record_one","physical_id":"record_one","kind":"manuscript","titles":["Test manuscript"],
+	    "hibur_links":[{"hibur_id":"hibur_one","raw_label":"Test work","match_status":"exact_alias"}],
+	    "digitized":true,"geo_assertion_ids":["geo_one"],"temporal_assertion_ids":["time_one"]
+	  },
+	  {
+	    "id":"record_undated","physical_id":"record_undated","kind":"manuscript","titles":null,
+	    "hibur_links":null,"digitized":false,"geo_assertion_ids":["geo_undated"],
+	    "temporal_assertion_ids":null
+	  }
+	]}`)
+	writeFixture(t, filepath.Join(exportDir, "geo_assertions.json"), `{"assertions":[
+	  {
+	    "id":"geo_one","source_type_id":"nli_751_writing_place",
+	    "scope":{"target_record_id":"record_one","source_record_id":"record_one","physical_id":"record_one","origin":"direct"},
+	    "place_id":"place_spain","place_raw":"Spain","role":"place of writing","confidence":"high",
+	    "evidence":{"raw":"Spain","catalog":"NLI","extraction":"structured_field","review_status":"unreviewed"}
+	  },
+	  {
+	    "id":"geo_undated","source_type_id":"nli_751_writing_place",
+	    "scope":{"target_record_id":"record_undated","source_record_id":"record_undated","physical_id":"record_undated","origin":"direct"},
+	    "place_id":"place_spain","place_raw":"Spain","role":"place of writing","confidence":"high",
+	    "evidence":{"raw":"Spain","catalog":"NLI","extraction":"structured_field","review_status":"unreviewed"}
+	  }
+	]}`)
 	writeFixture(t, filepath.Join(exportDir, "temporal_assertions.json"), `{"assertions":[{
 	  "id":"time_one","source_type_id":"nli_260_date",
 	  "scope":{"target_record_id":"record_one","source_record_id":"record_one","physical_id":"record_one","origin":"direct"},
@@ -307,6 +383,19 @@ func TestAtlasViewJoinsAndFiltersMappedManuscriptEvents(t *testing.T) {
 		got.Features[0].Properties.Events[0].Temporal[0].Effective.StartYear != 1450 ||
 		got.Features[0].Properties.Events[0].Temporal[0].Effective.EndYear != 1470 {
 		t.Fatalf("atlas join/filter result is wrong: %+v", got)
+	}
+
+	req = httptest.NewRequest(http.MethodGet,
+		"/api/v1/atlas-view?geo-source=nli_751_writing_place&include-undated=true", nil)
+	res = httptest.NewRecorder()
+	handler.ServeHTTP(res, req)
+	if res.Code != http.StatusOK {
+		t.Fatalf("status %d: %s", res.Code, res.Body.String())
+	}
+	if !bytes.Contains(res.Body.Bytes(), []byte(`"id":"record_undated"`)) ||
+		!bytes.Contains(res.Body.Bytes(), []byte(`"hiburim":[]`)) ||
+		!bytes.Contains(res.Body.Bytes(), []byte(`"temporal_assertions":[]`)) {
+		t.Fatalf("undated event collections must be JSON arrays: %s", res.Body.String())
 	}
 }
 

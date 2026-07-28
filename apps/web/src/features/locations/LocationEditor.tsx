@@ -60,6 +60,15 @@ const statusCopy: Record<
 function presentationFor(location: LocationOverview) {
   if (location.has_valid_coordinates) return statusCopy[location.coordinate_status];
   switch (location.ai_status) {
+    case "candidate_proposed":
+    case "candidate_unavailable":
+      return {
+        option: "!",
+        label: "AI checked · proposed candidate could not be mapped",
+        detail:
+          "The AI produced a draft, but its proposed gazetteer candidate is not usable in the current candidate cache. Re-run the AI or review this place manually.",
+        tone: "ai-unresolved",
+      };
     case "needs_candidates":
       return {
         option: "!",
@@ -118,7 +127,13 @@ export function LocationEditor() {
       aiUnresolved: locations.filter(
         (item) =>
           !item.has_valid_coordinates &&
-          ["needs_candidates", "ambiguous", "technical_failure"].includes(item.ai_status),
+          [
+            "candidate_proposed",
+            "candidate_unavailable",
+            "needs_candidates",
+            "ambiguous",
+            "technical_failure",
+          ].includes(item.ai_status),
       ).length,
       notAttempted: locations.filter((item) => item.ai_status === "not_attempted").length,
     }),
@@ -265,7 +280,7 @@ export function LocationEditor() {
             <span><b>✓</b> Human-reviewed</span>
             <span><b>◆</b> Human changed</span>
             <span><b>●</b> Unreviewed coordinates</span>
-            <span><b>!</b> AI needs better candidates</span>
+            <span><b>!</b> AI checked, but no candidate was mapped</span>
             <span><b>?</b> AI found an ambiguous place</span>
             <span><b>×</b> AI request failed technically</span>
             <span><b>—</b> AI not checked</span>

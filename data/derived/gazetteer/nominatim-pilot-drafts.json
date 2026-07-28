@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "generated_at": "2026-07-28T14:10:13.622518Z",
+  "generated_at": "2026-07-28T18:21:03.774743Z",
   "purpose": "modern_geometry_curation_draft_pilot",
   "source_candidates_path": "data/derived/gazetteer/nominatim-pilot.json",
   "review_policy": "LLM results are review drafts only and never update accepted geometry.",
@@ -7461,6 +7461,660 @@
           }
         }
       ]
+    },
+    {
+      "id": "curation_run_20260728T182103.774127000Z",
+      "started_at": "2026-07-28T18:21:03.774127Z",
+      "completed_at": "2026-07-28T18:21:03.774743Z",
+      "provider": "ollama",
+      "model": "qwen3.5:35b",
+      "skip_human_reviewed": true,
+      "only_ai_not_checked": true,
+      "skipped": [
+        {
+          "place_id": "place_bd72015066a5",
+          "place_label": "Africa, North",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_9a84865fc27a",
+          "place_label": "Aix-en-Provence (France)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_afad0638e566",
+          "place_label": "Al-Tawilah (Yemen)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_a8dae310806b",
+          "place_label": "Aleppo (Syria)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_aa909cca0e53",
+          "place_label": "Arles (France)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_b8cb9f963d8a",
+          "place_label": "Ascoli Piceno (Italy)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_9aea766cfed4",
+          "place_label": "Asti (Italy)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_518d91e5458b",
+          "place_label": "Aybak (Afghanistan)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_4fcab0eb585c",
+          "place_label": "Baghdad (Iraq)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_1f50c245e534",
+          "place_label": "Baza (Spain)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_e94a8e6b30d8",
+          "place_label": "Bologna (Italy)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_cecb3e15e492",
+          "place_label": "Bozzolo (Italy)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_92d2cefc29d7",
+          "place_label": "Brescello (Italy)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_0551a98129a9",
+          "place_label": "Brescia (Italy)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_88eb70117bb2",
+          "place_label": "Bristol (England)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_87bd84e0bfdc",
+          "place_label": "Budapest, Hungary",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_af926943983d",
+          "place_label": "Bukhoro (Uzbekistan)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_b8a3c21ef23d",
+          "place_label": "Cairo (Egypt)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_a0b48a3138e4",
+          "place_label": "Cambridge, England",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_2c785e0b26ec",
+          "place_label": "Camerino (Italy)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_27d0ffc85784",
+          "place_label": "Carcassonne (France)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_d46c2fb620f5",
+          "place_label": "Castelló d'Empúries (Spain)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_75cb9af2e0d2",
+          "place_label": "Chania (Greece)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_f8db4fb9b5b7",
+          "place_label": "Cincinnati, OH, USA",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_4702c36d4d9a",
+          "place_label": "Damascus (Syria)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_456ec39f5b33",
+          "place_label": "Dreux (France)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_a19ffb214fd0",
+          "place_label": "Egypt",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_d8040869276f",
+          "place_label": "Ērakleion (Greece)",
+          "code": "skipped_human_reviewed",
+          "reason": "current modern_place geometry is reviewed by a human"
+        },
+        {
+          "place_id": "place_21784375c73e",
+          "place_label": "Feodosii︠a︡ (Ukraine)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_dafe5fe18f43",
+          "place_label": "Fès (Morocco)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_fdade3d9c91d",
+          "place_label": "Florence, Italy",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_18ac1f5bf2d7",
+          "place_label": "Frankfurt am Main (Germany)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_ee6f04964cee",
+          "place_label": "Frankfurt am Main, Germany",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_a5fdc3c73447",
+          "place_label": "Fürth (Bavaria, Germany)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_d993ac78aee2",
+          "place_label": "Geneva, Switzerland",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_06fceda9c42f",
+          "place_label": "Griesheim (Hesse, Germany)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_63fc5eab0874",
+          "place_label": "Hamburg, Germany",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_bf2556c1d556",
+          "place_label": "Iran",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_38a35ad95f1f",
+          "place_label": "Istanbul (Turkey)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_12c57f0cd911",
+          "place_label": "Iṣfahān (Iran)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_06466a107dbf",
+          "place_label": "Italy",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_b851c878ea38",
+          "place_label": "Jerusalem (Israel)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_090d79579817",
+          "place_label": "Jerusalem, Israel",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_484a55adf93d",
+          "place_label": "Kalisz (Poland)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_0f1e2e969ecc",
+          "place_label": "Krakow, Poland",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_4c865f906f42",
+          "place_label": "Legnano (Italy)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_4a343cbdae50",
+          "place_label": "Leiden, Netherlands",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_70f5fecaeaad",
+          "place_label": "Livorno (Italy)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_ccf5bafb0c83",
+          "place_label": "Lodi (Italy)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_cd4233c37b19",
+          "place_label": "London, England",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_411abc4e9738",
+          "place_label": "Lʹviv (Ukraine)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_f2a9b4c1ec1c",
+          "place_label": "Mantua, Italy",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_46542d00c7a9",
+          "place_label": "Mestre (Italy)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_e63a3b150a20",
+          "place_label": "Modena (Italy)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_64eff14d41d2",
+          "place_label": "Modena, Italy",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_84e2380455e8",
+          "place_label": "Morocco",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_37f7efe37373",
+          "place_label": "Moscow, Russia",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_ef901d1b3467",
+          "place_label": "Munich, Germany",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_c60479f42bd7",
+          "place_label": "New York, NY, USA",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_c8b2468ebd0b",
+          "place_label": "Oran (Algeria)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_b154d5fdd804",
+          "place_label": "Ostra (Marche, Italy)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_f2a6f93c1b16",
+          "place_label": "Oxford, England",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_2db301f0340f",
+          "place_label": "Padua (Italy)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_ab86f9dc317d",
+          "place_label": "Paris (France)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_2007e57ca607",
+          "place_label": "Paris, France",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_4f545a387ad1",
+          "place_label": "Parma, Italy",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_f4e0e3b56753",
+          "place_label": "Perpignan (France)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_d73b204ec1eb",
+          "place_label": "Philadelphia, PA, USA",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_af74afa5328d",
+          "place_label": "Prague (Czech Republic)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_a04c9db506af",
+          "place_label": "Princeton, NJ, USA",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_194744ab00a9",
+          "place_label": "Ramat Gan, Israel",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_b31bd3bc9175",
+          "place_label": "Rennes (France)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_5249937e5951",
+          "place_label": "Rhodes (Greece)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_2c0ff86942e8",
+          "place_label": "Rome (Italy)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_4e8c72a59d0e",
+          "place_label": "Rome, Italy",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_a86d38517e73",
+          "place_label": "Rothenburg ob der Tauber (Germany)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_0641bcf0ecf3",
+          "place_label": "Safed (Israel)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_8d0094556e0e",
+          "place_label": "San Lorenzo del Escorial, Spain",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_b808a4199629",
+          "place_label": "San Miniato (Italy)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_30d440b0d9b5",
+          "place_label": "Schmalkalden (Germany)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_082bcf1ee211",
+          "place_label": "Sefrou (Morocco)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_9671a77b550e",
+          "place_label": "Siena, Italy",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_61abf0b2aa13",
+          "place_label": "Spain",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_a9054d6e4488",
+          "place_label": "St. Petersburg, Russia",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_31df56cda60a",
+          "place_label": "Strasbourg, France",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_432deb0e188c",
+          "place_label": "Stuttgart, Germany",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_92d024faa8bc",
+          "place_label": "Ṣanʻāʼ (Yemen)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_e9659498d14f",
+          "place_label": "Tanam (Yemen)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_111dd8aec60e",
+          "place_label": "Thessalonikē (Greece)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_5d68239dbf73",
+          "place_label": "Tivoli (Italy)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_b559bf3c0a50",
+          "place_label": "Tlemcen (Algeria)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_49824073af41",
+          "place_label": "Toledo (Spain)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_e8cfd49b8792",
+          "place_label": "Treviso (Italy)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_15f58a63f331",
+          "place_label": "Trzcianka (Województwo Wielkopolskie, Poland)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_c324165f523b",
+          "place_label": "Uncastillo (Spain)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_421cb74945e0",
+          "place_label": "Vatican City, Vatican City State",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_af4a48cb2fbd",
+          "place_label": "Venice (Italy)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_dcec797e6142",
+          "place_label": "Vienna (Austria)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_249693528847",
+          "place_label": "Vignola (Italy)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_047109fd3ff3",
+          "place_label": "Vlorë (Albania)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_17d19ffd10f4",
+          "place_label": "Warsaw, Poland",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_8a62b4a80ba8",
+          "place_label": "Worms (Germany)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_a269d7ee2af2",
+          "place_label": "Yemen (Republic)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_db621093bcb8",
+          "place_label": "Zaragoza (Spain)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_f378663085da",
+          "place_label": "Zurich, Switzerland",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_b3d90298c525",
+          "place_label": "מגדלא אלצפקיין",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        },
+        {
+          "place_id": "place_385e4f1783cb",
+          "place_label": "קארה (תימן)",
+          "code": "skipped_ai_already_checked",
+          "reason": "a current AI draft already exists"
+        }
+      ],
+      "results": null
     }
   ]
 }

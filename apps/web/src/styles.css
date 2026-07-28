@@ -409,6 +409,44 @@ h2 {
   gap: 0.5rem;
 }
 
+.containment-summary {
+  color: var(--ink-soft);
+  font-size: 0.82rem;
+  margin-top: 0.45rem;
+}
+
+.drilldown-events > h3,
+.contained-place-heading h3 {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  margin: 0;
+}
+
+.contained-place {
+  border-top: 1px solid var(--line);
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+.contained-place > p {
+  color: var(--ink-soft);
+  font-size: 0.76rem;
+  margin: 0.25rem 0 0.65rem;
+}
+
+.contained-place-heading {
+  align-items: baseline;
+  display: flex;
+  gap: 0.6rem;
+  justify-content: space-between;
+}
+
+.contained-place-heading span {
+  color: var(--ink-soft);
+  font-size: 0.72rem;
+  white-space: nowrap;
+}
+
 .drilldown-events details {
   border: 1px solid #ddd6c8;
   border-radius: 8px;

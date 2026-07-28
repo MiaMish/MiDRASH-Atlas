@@ -68,6 +68,7 @@ export type LocationOverview = {
   ai_status:
     | "not_attempted"
     | "candidate_proposed"
+    | "candidate_unavailable"
     | "needs_candidates"
     | "ambiguous"
     | "technical_failure";
@@ -231,6 +232,7 @@ export type AtlasFeature = {
     ai_status: LocationOverview["ai_status"];
     assertion_count: number;
     record_count: number;
+    contained_place_ids: string[];
     events: AtlasEvent[];
   };
 };

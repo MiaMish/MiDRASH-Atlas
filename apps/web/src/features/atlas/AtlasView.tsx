@@ -24,7 +24,7 @@ function toggleValue(values: string[], value: string) {
 }
 
 function displayDate(event: AtlasEvent) {
-  const values = event.temporal_assertions
+  const values = (event.temporal_assertions ?? [])
     .map((assertion) => {
       if (assertion.effective_interval) {
         const { start_year: start, end_year: end } = assertion.effective_interval;
@@ -102,6 +102,10 @@ export function AtlasView() {
     () => data?.features.find((feature) => feature.id === selectedPlaceId),
     [data, selectedPlaceId],
   );
+  const contained = useMemo(() => {
+    const ids = new Set(selected?.properties.contained_place_ids ?? []);
+    return data?.features.filter((feature) => ids.has(feature.id)) ?? [];
+  }, [data, selected]);
   const bounds = data?.time_bounds ?? { min_year: 800, max_year: 2000 };
   const startYear = filters.start_year ?? bounds.min_year;
   const endYear = filters.end_year ?? bounds.max_year;
@@ -279,10 +283,11 @@ export function AtlasView() {
         <AtlasMap
           features={data?.features ?? []}
           selectedPlaceId={selectedPlaceId}
+          containedPlaceIds={selected?.properties.contained_place_ids ?? []}
           onSelectPlace={setSelectedPlaceId}
         />
 
-        <AtlasDrilldown feature={selected} data={data} />
+        <AtlasDrilldown feature={selected} contained={contained} data={data} />
       </div>
     </section>
   );
@@ -290,9 +295,11 @@ export function AtlasView() {
 
 function AtlasDrilldown({
   feature,
+  contained,
   data,
 }: {
   feature?: AtlasFeature;
+  contained: AtlasFeature[];
   data: AtlasViewData | null;
 }) {
   if (!feature || !data) {
@@ -303,26 +310,65 @@ function AtlasDrilldown({
     );
   }
   const properties = feature.properties;
+  const displayedFeatures = [feature, ...contained];
+  const recordIDs = new Set(
+    displayedFeatures.flatMap((item) =>
+      (item.properties.events ?? []).map((event) => event.record.id),
+    ),
+  );
+  const assertionCount = displayedFeatures.reduce(
+    (total, item) => total + item.properties.assertion_count,
+    0,
+  );
   return (
     <aside className="atlas-drilldown">
       <div className="drilldown-heading">
         <p className="eyebrow">Place drill-down</p>
         <h2>{properties.place_label}</h2>
         <p>
-          {properties.record_count} record{properties.record_count === 1 ? "" : "s"} ·{" "}
-          {properties.assertion_count} assertion{properties.assertion_count === 1 ? "" : "s"}
+          {recordIDs.size} record{recordIDs.size === 1 ? "" : "s"} ·{" "}
+          {assertionCount} assertion{assertionCount === 1 ? "" : "s"}
         </p>
+        {contained.length > 0 && (
+          <p className="containment-summary">
+            Includes {contained.length} mapped place{contained.length === 1 ? "" : "s"} contained
+            by this modern geometry.
+          </p>
+        )}
       </div>
       <div className="place-status-line">
         <span>{properties.coordinate_status.replaceAll("_", " ")}</span>
         <span>{properties.spatial_precision?.replaceAll("_", " ") ?? "unknown precision"}</span>
       </div>
       <div className="drilldown-events">
-        {properties.events.map((event) => (
+        <h3>{properties.place_label} assertions</h3>
+        <AtlasEventList events={properties.events ?? []} data={data} />
+        {contained.map((containedFeature) => (
+          <section className="contained-place" key={containedFeature.id}>
+            <div className="contained-place-heading">
+              <h3>{containedFeature.properties.place_label}</h3>
+              <span>
+                {containedFeature.properties.record_count} record
+                {containedFeature.properties.record_count === 1 ? "" : "s"}
+              </span>
+            </div>
+            <p>Spatially contained by the selected modern display geometry.</p>
+            <AtlasEventList events={containedFeature.properties.events ?? []} data={data} />
+          </section>
+        ))}
+      </div>
+    </aside>
+  );
+}
+
+function AtlasEventList({ events, data }: { events: AtlasEvent[]; data: AtlasViewData }) {
+  return (
+    <>
+      {events.map((event) => (
           <details key={event.assertion.id}>
             <summary>
               <span>
-                <strong>{event.record.titles[0] ?? event.record.id}</strong>
+                <strong>{event.record.titles?.[0] ?? event.record.id}</strong>
                 <small>{displayDate(event)}</small>
               </span>
             </summary>
@@ -331,8 +377,10 @@ function AtlasDrilldown({
               <div><dt>Origin</dt><dd>{event.assertion.scope.origin.replaceAll("_", " ")}</dd></div>
               <div><dt>Catalog evidence</dt><dd>{event.assertion.evidence.raw}</dd></div>
               <div><dt>Hibur</dt><dd>
-                {event.hiburim.length
-                  ? event.hiburim.map((hibur) => hibur.english || hibur.label).join("; ")
+                {(event.hiburim ?? []).length
+                  ? (event.hiburim ?? [])
+                    .map((hibur) => hibur.english || hibur.label)
+                    .join("; ")
                   : "No linked Hibur"}
               </dd></div>
               {shelfmark(event) && <div><dt>Shelfmark</dt><dd>{shelfmark(event)}</dd></div>}
@@ -351,8 +399,7 @@ function AtlasDrilldown({
               )}
             </div>
           </details>
-        ))}
-      </div>
-    </aside>
+      ))}
+    </>
   );
 }
