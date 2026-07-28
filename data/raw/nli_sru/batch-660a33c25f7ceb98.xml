@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><searchRetrieveResponse xmlns="http://www.loc.gov/zing/srw/">
+  <version>1.2</version>
+  <numberOfRecords>1</numberOfRecords>
+  <records>
+    <record>
+      <recordSchema>marcxml</recordSchema>
+      <recordPacking>xml</recordPacking>
+      <recordData>
+        <record xmlns="http://www.loc.gov/MARC21/slim">
+          <leader>04021ntm a2200457 u 4500</leader>
+          <controlfield tag="001">990031464890205171</controlfield>
+          <controlfield tag="005">20260510181248.0</controlfield>
+          <controlfield tag="008">071209s18uu    xx      r     000 0 heb d</controlfield>
+          <datafield ind1=" " ind2=" " tag="035">
+            <subfield code="a">(IsJJNL)003146489NNL01-Aleph</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="041">
+            <subfield code="a">heb</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="090">
+            <subfield code="a">Ms. Heb. 2192=28</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="090">
+            <subfield code="a">B 406 (8°2192)</subfield>
+          </datafield>
+          <datafield ind1="0" ind2="0" tag="245">
+            <subfield code="a">קובץ חבורים מאת יעקב ן' צור.</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="260">
+            <subfield code="c">מאה י"ט.</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="300">
+            <subfield code="a">58 דף.</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="500">
+            <subfield code="a">לתוכן וקישור לפריטים בקובץ ראה למטה.</subfield>
+          </datafield>
+          <datafield ind1="8" ind2=" " tag="505">
+            <subfield code="a">1) דף 1א-46ב: עט סופר</subfield>
+          </datafield>
+          <datafield ind1="8" ind2=" " tag="505">
+            <subfield code="a">2) דף 47א-58ב: לשון למודים</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="561">
+            <subfield code="a">בראש כה"י חתימת בעלים: "רפאל משה אסכורי" (1א, 2א) ורשימה מאת בנו על פטירתו של אביו ב"שנת תרי"ו לפ"ק" ועל פטירת אמו ואחותו.</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="500">
+            <subfield code="a">נושא נוסף: אגרות</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="500">
+            <subfield code="a">נושא נוסף: שטרות. טפסי ותקוני שטרות</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="597">
+            <subfield code="a">The National Library of Israel. "Ktiv" Project</subfield>
+            <subfield code="a">מאוסף הספרייה הלאומית. פרוייקט "כתיב"</subfield>
+          </datafield>
+          <datafield ind1=" " ind2="7" tag="655">
+            <subfield code="a">Personal correspondence</subfield>
+            <subfield code="9">lat</subfield>
+            <subfield code="2">nli</subfield>
+            <subfield code="8">PreferredLanguageHeading</subfield>
+          </datafield>
+          <datafield ind1=" " ind2="7" tag="655">
+            <subfield code="a">Forms (Jewish law)</subfield>
+            <subfield code="9">lat</subfield>
+            <subfield code="2">nli</subfield>
+            <subfield code="8">PreferredLanguageHeading</subfield>
+          </datafield>
+          <datafield ind1="1" ind2=" " tag="700">
+            <subfield code="a">אסכורי, רפאל משה</subfield>
+            <subfield code="9">heb</subfield>
+            <subfield code="e">בעלים קודמים</subfield>
+            <subfield code="8">PreferredLanguageHeading</subfield>
+          </datafield>
+          <datafield ind1="2" ind2=" " tag="710">
+            <subfield code="a">The National Library of Israel</subfield>
+            <subfield code="x">Jerusalem</subfield>
+            <subfield code="c">Israel</subfield>
+            <subfield code="9">lat</subfield>
+            <subfield code="e">current owner</subfield>
+            <subfield code="8">PreferredLanguageHeading</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="903">
+            <subfield code="a">No restrictions;</subfield>
+            <subfield code="b">000000001</subfield>
+            <subfield code="c">Public domain</subfield>
+            <subfield code="d">Anonymous work over 70 years from publishing date</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="906">
+            <subfield code="a">MSS</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="906">
+            <subfield code="a">OMS</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="906">
+            <subfield code="a">MANUSCRIPT</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="906">
+            <subfield code="a">DIG</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="907">
+            <subfield code="a">Y</subfield>
+            <subfield code="b">990031464890205171</subfield>
+            <subfield code="c">IE78750881</subfield>
+            <subfield code="d">FL78750996</subfield>
+            <subfield code="e">קובץ חבורים מאת יעקב ן&amp;apos; צור.</subfield>
+            <subfield code="g">microfilm</subfield>
+            <subfield code="h">20210125</subfield>
+            <subfield code="i">63</subfield>
+            <subfield code="j">2</subfield>
+            <subfield code="k">AR_EVERYONE</subfield>
+            <subfield code="o">PRESERVATION_MASTER-tif|DERIVATIVE_COPY-ptif</subfield>
+            <subfield code="n">0017.tif</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="933">
+            <subfield code="a">KBR 201107</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="934">
+            <subfield code="a">KRB 200712</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="939">
+            <subfield code="a">ללא מגבלות בנחלת הכלל</subfield>
+          </datafield>
+          <datafield ind1="1" ind2=" " tag="942">
+            <subfield code="a">The National Library of Israel</subfield>
+            <subfield code="x">Jerusalem</subfield>
+            <subfield code="c">Israel</subfield>
+            <subfield code="9">lat</subfield>
+            <subfield code="z">Ms. Heb. 2192=8</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="958">
+            <subfield code="a">מערבית</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="966">
+            <subfield code="a">Digitized manuscripts</subfield>
+            <subfield code="9">lat</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="999">
+            <subfield code="a">MANUSCRIPT</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="999">
+            <subfield code="a">MIC</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="999">
+            <subfield code="b">NOULI</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="AVA">
+            <subfield code="0">990031464890205171</subfield>
+            <subfield code="8">22329033370005171</subfield>
+            <subfield code="a">972NNL_INST</subfield>
+            <subfield code="b">NLI</subfield>
+            <subfield code="c">R mss microfilms</subfield>
+            <subfield code="d">B 406</subfield>
+            <subfield code="e">available</subfield>
+            <subfield code="f">1</subfield>
+            <subfield code="g">0</subfield>
+            <subfield code="j">RMSS</subfield>
+            <subfield code="k">#</subfield>
+            <subfield code="p">1</subfield>
+            <subfield code="q">NLI Library</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="AVA">
+            <subfield code="0">990031464890205171</subfield>
+            <subfield code="8">22267029900005171</subfield>
+            <subfield code="a">972NNL_INST</subfield>
+            <subfield code="b">NLR</subfield>
+            <subfield code="c">Rare Collection</subfield>
+            <subfield code="d">28= Ms. Heb. 2192</subfield>
+            <subfield code="e">available</subfield>
+            <subfield code="f">1</subfield>
+            <subfield code="g">0</subfield>
+            <subfield code="j">NLR</subfield>
+            <subfield code="k">2</subfield>
+            <subfield code="p">2</subfield>
+            <subfield code="q">Rare Collection</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="AVD">
+            <subfield code="a">972NNL_INST</subfield>
+            <subfield code="b">32374396550005171</subfield>
+            <subfield code="c">REMOTE_REPRESENTATION</subfield>
+            <subfield code="d">Rosetta MARC</subfield>
+            <subfield code="e">קובץ חבורים מאת יעקב ן&amp;apos; צור.</subfield>
+          </datafield>
+        </record>
+      </recordData>
+      <recordIdentifier>990031464890205171</recordIdentifier>
+      <recordPosition>1</recordPosition>
+    </record>
+  </records>
+  <extraResponseData xmlns:xb="http://www.exlibris.com/repository/search/xmlbeans/">
+    <xb:exact>true</xb:exact>
+    <xb:responseDate>2026-07-28T11:18:04+0300</xb:responseDate>
+  </extraResponseData>
+</searchRetrieveResponse>

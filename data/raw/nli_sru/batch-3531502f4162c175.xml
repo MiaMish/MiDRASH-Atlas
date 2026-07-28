@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><searchRetrieveResponse xmlns="http://www.loc.gov/zing/srw/">
+  <version>1.2</version>
+  <numberOfRecords>5</numberOfRecords>
+  <records>
+    <record>
+      <recordSchema>marcxml</recordSchema>
+      <recordPacking>xml</recordPacking>
+      <recordData>
+        <record xmlns="http://www.loc.gov/MARC21/slim">
+          <leader>00611ntm a2200181 u 4500</leader>
+          <controlfield tag="001">990038691190205171</controlfield>
+          <controlfield tag="005">20260511051826.0</controlfield>
+          <controlfield tag="008">060910nuuuuuuuu|||     r     000 0 heb d</controlfield>
+          <datafield ind1=" " ind2=" " tag="035">
+            <subfield code="a">(IsJJNL)003869119NNL01-Aleph</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="041">
+            <subfield code="a">heb</subfield>
+          </datafield>
+          <datafield ind1="0" ind2="0" tag="245">
+            <subfield code="a">B 1013.</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="590">
+            <subfield code="a">נגטיב בלבד</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="903">
+            <subfield code="a">Library premises only;</subfield>
+            <subfield code="b">000000008</subfield>
+            <subfield code="c">Copyright status not determined</subfield>
+            <subfield code="d">No copyright analysis</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="906">
+            <subfield code="a">MSS</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="939">
+            <subfield code="a">איסור העתקה</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="999">
+            <subfield code="a">MANUSCRIPT</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="999">
+            <subfield code="a">MIC</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="999">
+            <subfield code="b">NOULI</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="AVA">
+            <subfield code="0">990038691190205171</subfield>
+            <subfield code="8">22328688230005171</subfield>
+            <subfield code="a">972NNL_INST</subfield>
+            <subfield code="b">ARC</subfield>
+            <subfield code="c">Special Collections Reading Room</subfield>
+            <subfield code="d">B 1013</subfield>
+            <subfield code="e">available</subfield>
+            <subfield code="f">1</subfield>
+            <subfield code="g">0</subfield>
+            <subfield code="j">ARC_MCM</subfield>
+            <subfield code="k">#</subfield>
+            <subfield code="p">1</subfield>
+            <subfield code="q">Archive Dept</subfield>
+          </datafield>
+        </record>
+      </recordData>
+      <recordIdentifier>990038691190205171</recordIdentifier>
+      <recordPosition>1</recordPosition>
+    </record>
+    <record>
+      <recordSchema>marcxml</recordSchema>
+      <recordPacking>xml</recordPacking>
+      <recordData>
+        <record xmlns="http://www.loc.gov/MARC21/slim">
+          <leader>00522ntm a2200169 u 4500</leader>
+          <controlfield tag="001">990038860380205171</controlfield>
+          <controlfield tag="005">20260511051856.0</controlfield>
+          <controlfield tag="008">060910nuuuuuuuu|||     r     000 0 heb d</controlfield>
+          <datafield ind1=" " ind2=" " tag="035">
+            <subfield code="a">(IsJJNL)003886038NNL01-Aleph</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="041">
+            <subfield code="a">heb</subfield>
+          </datafield>
+          <datafield ind1="0" ind2="0" tag="245">
+            <subfield code="a">F 41995.</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="903">
+            <subfield code="a">Library premises only;</subfield>
+            <subfield code="b">000000008</subfield>
+            <subfield code="c">Copyright status not determined</subfield>
+            <subfield code="d">No copyright analysis</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="906">
+            <subfield code="a">MSS</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="939">
+            <subfield code="a">איסור העתקה</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="999">
+            <subfield code="a">MANUSCRIPT</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="999">
+            <subfield code="a">MIC</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="999">
+            <subfield code="b">NOULI</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="AVA">
+            <subfield code="0">990038860380205171</subfield>
+            <subfield code="8">22328922980005171</subfield>
+            <subfield code="a">972NNL_INST</subfield>
+            <subfield code="b">NLI</subfield>
+            <subfield code="c">R mss microfilms</subfield>
+            <subfield code="d">F 41995</subfield>
+            <subfield code="e">available</subfield>
+            <subfield code="f">1</subfield>
+            <subfield code="g">0</subfield>
+            <subfield code="j">RMSS</subfield>
+            <subfield code="k">#</subfield>
+            <subfield code="p">1</subfield>
+            <subfield code="q">NLI Library</subfield>
+          </datafield>
+        </record>
+      </recordData>
+      <recordIdentifier>990038860380205171</recordIdentifier>
+      <recordPosition>2</recordPosition>
+    </record>
+    <record>
+      <recordSchema>marcxml</recordSchema>
+      <recordPacking>xml</recordPacking>
+      <recordData>
+        <record xmlns="http://www.loc.gov/MARC21/slim">
+          <leader>00522ntm a2200169 u 4500</leader>
+          <controlfield tag="001">990038860400205171</controlfield>
+          <controlfield tag="005">20260511051853.0</controlfield>
+          <controlfield tag="008">060910nuuuuuuuu|||     r     000 0 heb d</controlfield>
+          <datafield ind1=" " ind2=" " tag="035">
+            <subfield code="a">(IsJJNL)003886040NNL01-Aleph</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="041">
+            <subfield code="a">heb</subfield>
+          </datafield>
+          <datafield ind1="0" ind2="0" tag="245">
+            <subfield code="a">F 46930.</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="903">
+            <subfield code="a">Library premises only;</subfield>
+            <subfield code="b">000000008</subfield>
+            <subfield code="c">Copyright status not determined</subfield>
+            <subfield code="d">No copyright analysis</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="906">
+            <subfield code="a">MSS</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="939">
+            <subfield code="a">איסור העתקה</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="999">
+            <subfield code="a">MANUSCRIPT</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="999">
+            <subfield code="a">MIC</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="999">
+            <subfield code="b">NOULI</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="AVA">
+            <subfield code="0">990038860400205171</subfield>
+            <subfield code="8">22328922710005171</subfield>
+            <subfield code="a">972NNL_INST</subfield>
+            <subfield code="b">NLI</subfield>
+            <subfield code="c">R mss microfilms</subfield>
+            <subfield code="d">F 46930</subfield>
+            <subfield code="e">available</subfield>
+            <subfield code="f">1</subfield>
+            <subfield code="g">0</subfield>
+            <subfield code="j">RMSS</subfield>
+            <subfield code="k">#</subfield>
+            <subfield code="p">1</subfield>
+            <subfield code="q">NLI Library</subfield>
+          </datafield>
+        </record>
+      </recordData>
+      <recordIdentifier>990038860400205171</recordIdentifier>
+      <recordPosition>3</recordPosition>
+    </record>
+    <record>
+      <recordSchema>marcxml</recordSchema>
+      <recordPacking>xml</recordPacking>
+      <recordData>
+        <record xmlns="http://www.loc.gov/MARC21/slim">
+          <leader>02766ntm a2200445 a 4500</leader>
+          <controlfield tag="001">990001439940205171</controlfield>
+          <controlfield tag="005">20260727123522.0</controlfield>
+          <controlfield tag="008">191105nuuuuuuuuxx      r     000 0 heb d</controlfield>
+          <datafield ind1=" " ind2=" " tag="035">
+            <subfield code="a">(IsJJNL)000143994NNL01-Aleph</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="041">
+            <subfield code="a">heb</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="090">
+            <subfield code="a">F 65433</subfield>
+          </datafield>
+          <datafield ind1="1" ind2=" " tag="100">
+            <subfield code="a">אבן רשד, מחמד,</subfield>
+            <subfield code="d">1126-1198</subfield>
+            <subfield code="9">heb</subfield>
+            <subfield code="8">PreferredLanguageHeading</subfield>
+          </datafield>
+          <datafield ind1="1" ind2="0" tag="245">
+            <subfield code="a">באור אמצעי על ספר הנפש של אריסטו.</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="300">
+            <subfield code="a">1 דף</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="561">
+            <subfield code="a">אוסף פירקוביץ השני.</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="500">
+            <subfield code="a">נושא נוסף: פילוסופיה כללית</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="590">
+            <subfield code="a">רשומה זמנית</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="500">
+            <subfield code="a">GNZ2.</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="597">
+            <subfield code="a">From the collections of The National Library of Russia, The National Library of Israel. "Ktiv" Project, The National Library of Israel.</subfield>
+          </datafield>
+          <datafield ind1="0" ind2="7" tag="600">
+            <subfield code="a">אריסטו,</subfield>
+            <subfield code="d">384-322 לפנה"ס.</subfield>
+            <subfield code="t">ספר הנפש</subfield>
+            <subfield code="9">heb</subfield>
+            <subfield code="2">nli</subfield>
+            <subfield code="8">PreferredLanguageHeading</subfield>
+          </datafield>
+          <datafield ind1=" " ind2="7" tag="650">
+            <subfield code="a">Philosophy</subfield>
+            <subfield code="v">Early works to 1800</subfield>
+            <subfield code="9">lat</subfield>
+            <subfield code="2">nli</subfield>
+            <subfield code="8">PreferredLanguageHeading</subfield>
+          </datafield>
+          <datafield ind1=" " ind2="7" tag="655">
+            <subfield code="a">Cairo Genizah fragments (Possible)</subfield>
+            <subfield code="9">lat</subfield>
+            <subfield code="2">nli</subfield>
+            <subfield code="8">PreferredLanguageHeading</subfield>
+          </datafield>
+          <datafield ind1="5" ind2=" " tag="740">
+            <subfield code="a">ספר הנפש (פרשנות: אבן רשד, מחמד)</subfield>
+          </datafield>
+          <datafield ind1="2" ind2=" " tag="710">
+            <subfield code="a">The National Library of Russia</subfield>
+            <subfield code="x">St. Petersburg</subfield>
+            <subfield code="c">Russia</subfield>
+            <subfield code="9">lat</subfield>
+            <subfield code="e">current owner</subfield>
+            <subfield code="8">PreferredLanguageHeading</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="903">
+            <subfield code="a">No restrictions;</subfield>
+            <subfield code="b">000000011</subfield>
+            <subfield code="c">Public domain</subfield>
+            <subfield code="d">Over 140 years from publishing date</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="906">
+            <subfield code="a">DIG</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="906">
+            <subfield code="a">GNZ</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="906">
+            <subfield code="a">MSS</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="906">
+            <subfield code="a">MANUSCRIPT</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="907">
+            <subfield code="a">Y</subfield>
+            <subfield code="b">990001439940205171</subfield>
+            <subfield code="c">IE36776352</subfield>
+            <subfield code="d">FL36776428</subfield>
+            <subfield code="e">SP RNL EVR II A 512</subfield>
+            <subfield code="g">microfilm</subfield>
+            <subfield code="h">20210124</subfield>
+            <subfield code="i">6</subfield>
+            <subfield code="j">2</subfield>
+            <subfield code="k">AR_EVERYONE</subfield>
+            <subfield code="o">DERIVATIVE_COPY-ptif|PRESERVATION_MASTER-tif</subfield>
+            <subfield code="n">004.tif</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="915">
+            <subfield code="a">Contract The National Library of Russia 24062015</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="921">
+            <subfield code="a">KBR 200701</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="934">
+            <subfield code="a">KRB 200701</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="939">
+            <subfield code="a">public domain non commercial use</subfield>
+          </datafield>
+          <datafield ind1="1" ind2=" " tag="942">
+            <subfield code="a">The National Library of Russia</subfield>
+            <subfield code="x">St. Petersburg</subfield>
+            <subfield code="c">Russia</subfield>
+            <subfield code="9">lat</subfield>
+            <subfield code="z">Ms. EVR II A 512</subfield>
+          </datafield>
+          <datafield ind1="4" ind2=" " tag="942">
+            <subfield code="a">The Friedberg Genizah Project (FGP)</subfield>
+            <subfield code="9">lat</subfield>
+            <subfield code="z">514976</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="966">
+            <subfield code="a">Digitized manuscripts</subfield>
+            <subfield code="9">lat</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="999">
+            <subfield code="a">MANUSCRIPT</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="999">
+            <subfield code="a">MIC</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="999">
+            <subfield code="b">NOULI</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="AVA">
+            <subfield code="0">990001439940205171</subfield>
+            <subfield code="8">22329175480005171</subfield>
+            <subfield code="a">972NNL_INST</subfield>
+            <subfield code="b">NLI</subfield>
+            <subfield code="c">R mss microfilms</subfield>
+            <subfield code="d">F 65433</subfield>
+            <subfield code="e">available</subfield>
+            <subfield code="f">1</subfield>
+            <subfield code="g">0</subfield>
+            <subfield code="j">RMSS</subfield>
+            <subfield code="k">#</subfield>
+            <subfield code="p">1</subfield>
+            <subfield code="q">NLI Library</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="AVD">
+            <subfield code="a">972NNL_INST</subfield>
+            <subfield code="b">32361363160005171</subfield>
+            <subfield code="c">REMOTE_REPRESENTATION</subfield>
+            <subfield code="d">Rosetta MARC</subfield>
+            <subfield code="e">SP RNL EVR II A 512</subfield>
+          </datafield>
+        </record>
+      </recordData>
+      <recordIdentifier>990001439940205171</recordIdentifier>
+      <recordPosition>4</recordPosition>
+    </record>
+    <record>
+      <recordSchema>marcxml</recordSchema>
+      <recordPacking>xml</recordPacking>
+      <recordData>
+        <record xmlns="http://www.loc.gov/MARC21/slim">
+          <leader>05322ntm a2200433 a 4500</leader>
+          <controlfield tag="001">990000405100205171</controlfield>
+          <controlfield tag="005">20260506201445.0</controlfield>
+          <controlfield tag="008">060525s18uu    xx      r     000 0 heb d</controlfield>
+          <datafield ind1=" " ind2=" " tag="035">
+            <subfield code="a">(IsJJNL)000040510NNL01-Aleph</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="041">
+            <subfield code="a">heb</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="090">
+            <subfield code="a">Ms. Heb. 2149=28</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="090">
+            <subfield code="a">B 406 (8°2149)</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="090">
+            <subfield code="a">B 934 (8°2149)</subfield>
+          </datafield>
+          <datafield ind1="0" ind2="0" tag="245">
+            <subfield code="a">טעמי הלכות :</subfield>
+            <subfield code="b">לאורח חיים (מועדים) ויורה דעה (שחיטה, טריפות, בשר בחלב).</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="260">
+            <subfield code="c">מאה יט.</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="300">
+            <subfield code="a">76 דף.</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="561">
+            <subfield code="a">בראש כה"י: "ספר טעמי הלכות פסח וראש השנה ויה"כ וסוכות ומגילה ושחיטה וטריפות [חתימה מסולסלת]"; חתימות בעלים אחרים: "זכיתי בו אני הצעיר יצחק נסים טולידאנו", "ידידיה טולידאנו". בדף 5א: "קניתי אותו מאת ... משה בהלול זצ"ל חתנו של ... כמוהר"ר שלמה מאימרן זלה"ה ... אברהם טולידאנו וזכיתי בו אני בנו בדין ירושה. ע"ה יצחק נסים טולידאנו".</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="597">
+            <subfield code="a">מאוסף הספרייה הלאומית, "Ktiv" Project, The National Library of Israel.</subfield>
+          </datafield>
+          <datafield ind1="1" ind2="8" tag="773">
+            <subfield code="w">990031464890205171</subfield>
+          </datafield>
+          <datafield ind1="1" ind2=" " tag="700">
+            <subfield code="a">מאימראן, שלמה</subfield>
+            <subfield code="9">heb</subfield>
+            <subfield code="e">בעלים קודמים</subfield>
+            <subfield code="8">PreferredLanguageHeading</subfield>
+          </datafield>
+          <datafield ind1="1" ind2=" " tag="700">
+            <subfield code="a">טולדנו, ידידיה</subfield>
+            <subfield code="9">heb</subfield>
+            <subfield code="e">בעלים קודמים</subfield>
+            <subfield code="8">PreferredLanguageHeading</subfield>
+          </datafield>
+          <datafield ind1="1" ind2=" " tag="700">
+            <subfield code="a">טולדנו, יצחק נסים בן אברהם,</subfield>
+            <subfield code="d">1862-1918</subfield>
+            <subfield code="9">heb</subfield>
+            <subfield code="e">בעלים קודמים</subfield>
+            <subfield code="8">PreferredLanguageHeading</subfield>
+          </datafield>
+          <datafield ind1="1" ind2=" " tag="700">
+            <subfield code="a">בהלול, משה</subfield>
+            <subfield code="9">heb</subfield>
+            <subfield code="e">בעלים קודמים</subfield>
+            <subfield code="8">PreferredLanguageHeading</subfield>
+          </datafield>
+          <datafield ind1="2" ind2=" " tag="710">
+            <subfield code="a">The National Library of Israel</subfield>
+            <subfield code="x">Jerusalem</subfield>
+            <subfield code="c">Israel</subfield>
+            <subfield code="9">lat</subfield>
+            <subfield code="e">current owner</subfield>
+            <subfield code="8">PreferredLanguageHeading</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="903">
+            <subfield code="a">No restrictions;</subfield>
+            <subfield code="b">000000001</subfield>
+            <subfield code="c">Copyright status not determined</subfield>
+            <subfield code="d">No copyright analysis</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="906">
+            <subfield code="a">MSS</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="906">
+            <subfield code="a">OMS</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="906">
+            <subfield code="a">MANUSCRIPT</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="906">
+            <subfield code="a">DIG</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="907">
+            <subfield code="a">Y</subfield>
+            <subfield code="b">990000405100205171</subfield>
+            <subfield code="c">IE73207191</subfield>
+            <subfield code="d">FL73207453</subfield>
+            <subfield code="e">טעמי הלכות :</subfield>
+            <subfield code="g">microfilm</subfield>
+            <subfield code="h">20210125</subfield>
+            <subfield code="i">87</subfield>
+            <subfield code="j">2</subfield>
+            <subfield code="k">AR_EVERYONE</subfield>
+            <subfield code="o">PRESERVATION_MASTER-tif|DERIVATIVE_COPY-ptif</subfield>
+            <subfield code="n">0069.tif</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="933">
+            <subfield code="a">KBR 201107</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="939">
+            <subfield code="a">ללא מגבלות בנחלת הכלל</subfield>
+          </datafield>
+          <datafield ind1="1" ind2=" " tag="942">
+            <subfield code="a">The National Library of Israel</subfield>
+            <subfield code="x">Jerusalem</subfield>
+            <subfield code="c">Israel</subfield>
+            <subfield code="9">lat</subfield>
+            <subfield code="z">Ms. Heb. 2149=8</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="953">
+            <subfield code="a">OMS-0096745</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="957">
+            <subfield code="a">קולופון: "לכותב הזה תן מנוח ... תמו הלכות ..."</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="966">
+            <subfield code="a">Digitized manuscripts</subfield>
+            <subfield code="9">lat</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="999">
+            <subfield code="a">MANUSCRIPT</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="999">
+            <subfield code="a">MIC</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="999">
+            <subfield code="b">NOULI</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="AVA">
+            <subfield code="0">990000405100205171</subfield>
+            <subfield code="8">22329149730005171</subfield>
+            <subfield code="a">972NNL_INST</subfield>
+            <subfield code="b">NLI</subfield>
+            <subfield code="c">R mss microfilms</subfield>
+            <subfield code="d">B 934</subfield>
+            <subfield code="e">available</subfield>
+            <subfield code="f">1</subfield>
+            <subfield code="g">0</subfield>
+            <subfield code="j">RMSS</subfield>
+            <subfield code="k">#</subfield>
+            <subfield code="p">1</subfield>
+            <subfield code="q">NLI Library</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="AVA">
+            <subfield code="0">990000405100205171</subfield>
+            <subfield code="8">22277878450005171</subfield>
+            <subfield code="a">972NNL_INST</subfield>
+            <subfield code="b">NLR</subfield>
+            <subfield code="c">Rare Collection</subfield>
+            <subfield code="d">28= Ms. Heb. 2149</subfield>
+            <subfield code="e">available</subfield>
+            <subfield code="f">1</subfield>
+            <subfield code="g">0</subfield>
+            <subfield code="j">NLR</subfield>
+            <subfield code="k">2</subfield>
+            <subfield code="p">2</subfield>
+            <subfield code="q">Rare Collection</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="AVA">
+            <subfield code="0">990031464890205171</subfield>
+            <subfield code="8">22329033370005171</subfield>
+            <subfield code="a">972NNL_INST</subfield>
+            <subfield code="b">NLI</subfield>
+            <subfield code="c">R mss microfilms</subfield>
+            <subfield code="d">B 406</subfield>
+            <subfield code="e">available</subfield>
+            <subfield code="f">1</subfield>
+            <subfield code="g">0</subfield>
+            <subfield code="j">RMSS</subfield>
+            <subfield code="k">#</subfield>
+            <subfield code="p">3</subfield>
+            <subfield code="q">NLI Library</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="AVA">
+            <subfield code="0">990031464890205171</subfield>
+            <subfield code="8">22267029900005171</subfield>
+            <subfield code="a">972NNL_INST</subfield>
+            <subfield code="b">NLR</subfield>
+            <subfield code="c">Rare Collection</subfield>
+            <subfield code="d">28= Ms. Heb. 2192</subfield>
+            <subfield code="e">available</subfield>
+            <subfield code="f">1</subfield>
+            <subfield code="g">0</subfield>
+            <subfield code="j">NLR</subfield>
+            <subfield code="k">2</subfield>
+            <subfield code="p">4</subfield>
+            <subfield code="q">Rare Collection</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="AVD">
+            <subfield code="a">972NNL_INST</subfield>
+            <subfield code="b">32372469150005171</subfield>
+            <subfield code="c">REMOTE_REPRESENTATION</subfield>
+            <subfield code="d">Rosetta MARC</subfield>
+            <subfield code="e">טעמי הלכות :</subfield>
+          </datafield>
+        </record>
+      </recordData>
+      <recordIdentifier>990000405100205171</recordIdentifier>
+      <recordPosition>5</recordPosition>
+    </record>
+  </records>
+  <extraResponseData xmlns:xb="http://www.exlibris.com/repository/search/xmlbeans/">
+    <xb:exact>true</xb:exact>
+    <xb:responseDate>2026-07-28T11:18:03+0300</xb:responseDate>
+  </extraResponseData>
+</searchRetrieveResponse>
