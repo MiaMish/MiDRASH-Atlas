@@ -88,7 +88,14 @@ func OpenSQLite(path string) (*SQLite, error) {
 	return store, nil
 }
 
-func (s *SQLite) Close() error { return s.db.Close() }
+func (s *SQLite) Close() error {
+	_, checkpointErr := s.db.Exec("PRAGMA wal_checkpoint(TRUNCATE)")
+	closeErr := s.db.Close()
+	if checkpointErr != nil {
+		return checkpointErr
+	}
+	return closeErr
+}
 
 func (s *SQLite) migrate() error {
 	_, err := s.db.Exec(`

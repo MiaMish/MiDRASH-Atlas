@@ -92,7 +92,7 @@ h2 {
 
 .location-summary {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   margin-bottom: 1rem;
   overflow: hidden;
   border: 1px solid #d8d1c2;
@@ -235,6 +235,20 @@ textarea {
   background: #eeece7;
 }
 
+.coordinate-status.ai-unresolved,
+.map-status-chip.ai-unresolved {
+  border-color: #c8a361;
+  color: #6f4b09;
+  background: #fbefd5;
+}
+
+.coordinate-status.ai-failed,
+.map-status-chip.ai-failed {
+  border-color: #c98f8a;
+  color: #7a302a;
+  background: #f9e3e0;
+}
+
 .status-legend {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -346,6 +360,33 @@ textarea {
   border-top: 1px solid #ddd6c8;
 }
 
+.ai-audit-comment {
+  margin: 0.9rem 0;
+  padding: 0.8rem 0.9rem;
+  border-left: 3px solid #8a5538;
+  background: #f7eee6;
+}
+
+.ai-audit-comment div {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  color: #633e2a;
+  font-size: 0.76rem;
+}
+
+.ai-audit-comment span {
+  color: #7c6a60;
+  font-size: 0.68rem;
+}
+
+.ai-audit-comment p {
+  margin: 0.45rem 0 0;
+  color: #51473f;
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+
 .text-button {
   padding: 0;
   color: #205c51;
@@ -373,6 +414,16 @@ textarea {
 .audit-list small {
   grid-column: 1 / -1;
   margin: 0;
+}
+
+.ai-history-comment {
+  grid-column: 1 / -1;
+  padding: 0.5rem 0.65rem;
+  border-radius: 6px;
+  color: #60493c;
+  background: #eee4da;
+  font-size: 0.72rem;
+  line-height: 1.4;
 }
 
 .status {
@@ -405,6 +456,11 @@ textarea {
 
   .location-summary div:nth-child(-n + 2) {
     border-bottom: 1px solid #e3dccf;
+  }
+
+  .location-summary div:last-child {
+    grid-column: 1 / -1;
+    border-top: 1px solid #e3dccf;
   }
 
   .location-form {

@@ -65,6 +65,13 @@ export type LocationOverview = {
   review_status: string;
   latest_revision?: number;
   ai_provenance?: AIProvenance;
+  ai_status:
+    | "not_attempted"
+    | "candidate_proposed"
+    | "needs_candidates"
+    | "ambiguous"
+    | "technical_failure";
+  ai_comment?: string;
 };
 
 export async function fetchLocationOverview(): Promise<LocationOverview[]> {

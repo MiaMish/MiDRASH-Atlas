@@ -34,6 +34,8 @@ type locationOverview struct {
 	ReviewStatus        string            `json:"review_status"`
 	LatestRevision      int               `json:"latest_revision,omitempty"`
 	AIProvenance        *provenance.AIRun `json:"ai_provenance,omitempty"`
+	AIStatus            string            `json:"ai_status"`
+	AIComment           string            `json:"ai_comment,omitempty"`
 }
 
 func (s *server) locationOverview(w http.ResponseWriter, r *http.Request) {
@@ -53,6 +55,7 @@ func (s *server) locationOverview(w http.ResponseWriter, r *http.Request) {
 		item := &locationOverview{
 			PlaceID: place.ID, PlaceLabel: place.PreferredLabel, Aliases: place.Aliases,
 			CoordinateStatus: "no_geometry", ReviewStatus: "missing_geometry",
+			AIStatus: "not_attempted",
 		}
 		for _, variant := range place.GeometryVariants {
 			if !validGeoJSON(variant.Geometry) {
@@ -131,9 +134,35 @@ func (s *server) applyPilotCandidates(locations map[string]*locationOverview) {
 	}
 	for _, draft := range drafts.Drafts {
 		item := locations[draft.PlaceID]
-		if item == nil || item.HasValidCoordinates || draft.Result == nil ||
-			draft.Result.Draft.Status != "candidate_selected" ||
-			draft.Result.Draft.RecommendedCandidateID == nil {
+		if item == nil {
+			continue
+		}
+		if draft.Error != "" {
+			item.AIStatus = "technical_failure"
+			item.AIComment = "The AI curation request failed before producing a usable draft."
+			continue
+		}
+		if draft.Result == nil {
+			item.AIStatus = "technical_failure"
+			item.AIComment = "The AI curation request produced no result."
+			continue
+		}
+		item.AIProvenance = &draft.Result.AIProvenance
+		item.AIComment = draft.Result.Draft.Rationale
+		switch draft.Result.Draft.Status {
+		case "candidate_selected":
+			item.AIStatus = "candidate_proposed"
+		case "needs_candidates":
+			item.AIStatus = "needs_candidates"
+			continue
+		case "ambiguous":
+			item.AIStatus = "ambiguous"
+			continue
+		default:
+			item.AIStatus = "technical_failure"
+			continue
+		}
+		if item.HasValidCoordinates || draft.Result.Draft.RecommendedCandidateID == nil {
 			continue
 		}
 		pilotPlace, ok := candidatesByPlace[draft.PlaceID]
@@ -149,7 +178,6 @@ func (s *server) applyPilotCandidates(locations map[string]*locationOverview) {
 				draft.Result.Draft.SpatialPrecision, draft.Result.Draft.Rationale,
 				"ollama_gazetteer_draft", "unreviewed")
 			item.CoordinateStatus = "unreviewed_candidate"
-			item.AIProvenance = &draft.Result.AIProvenance
 			break
 		}
 	}

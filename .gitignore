@@ -7,6 +7,9 @@ data/runtime/
 *.sqlite
 *.sqlite-shm
 *.sqlite-wal
+!data/runtime/
+data/runtime/*
+!data/runtime/atlas.sqlite
 *.tsbuildinfo
 __pycache__/
 *.py[cod]

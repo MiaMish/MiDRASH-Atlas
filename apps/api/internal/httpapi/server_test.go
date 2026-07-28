@@ -177,16 +177,19 @@ func TestLocationOverviewIncludesUnreviewedPilotGeometry(t *testing.T) {
 			PlaceID             string `json:"place_id"`
 			HasValidCoordinates bool   `json:"has_valid_coordinates"`
 			CoordinateStatus    string `json:"coordinate_status"`
+			AIStatus            string `json:"ai_status"`
 		} `json:"locations"`
 	}
 	if err := json.Unmarshal(res.Body.Bytes(), &got); err != nil {
 		t.Fatal(err)
 	}
 	if len(got.Locations) != 2 || got.Locations[0].PlaceID != "place_spain" ||
-		!got.Locations[0].HasValidCoordinates || got.Locations[0].CoordinateStatus != "unreviewed_candidate" {
+		!got.Locations[0].HasValidCoordinates || got.Locations[0].CoordinateStatus != "unreviewed_candidate" ||
+		got.Locations[0].AIStatus != "candidate_proposed" {
 		t.Fatalf("pilot geometry was not exposed correctly: %+v", got.Locations)
 	}
-	if got.Locations[1].HasValidCoordinates || got.Locations[1].CoordinateStatus != "no_geometry" {
+	if got.Locations[1].HasValidCoordinates || got.Locations[1].CoordinateStatus != "no_geometry" ||
+		got.Locations[1].AIStatus != "not_attempted" {
 		t.Fatalf("missing geometry status was not preserved: %+v", got.Locations[1])
 	}
 }

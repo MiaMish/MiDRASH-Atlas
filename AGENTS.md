@@ -13,7 +13,8 @@
 - `data/raw`: cached upstream responses.
 - `data/derived`: normalized upstream data.
 - `data/generated/atlas`: generated frontend/API documents.
-- `data/runtime`: ignored local databases.
+- `data/runtime/atlas.sqlite`: shared PoC curation database; WAL/SHM sidecars
+  remain ignored.
 - `tools/nli`: NLI retrieval scripts.
 
 ## Invariants
@@ -25,6 +26,9 @@
 - Every AI-produced JSON value must include provider, model, UTC generation
   time, purpose, and prompt hash.
 - Geometry corrections append revisions; do not overwrite audit history.
+- The location editor currently exposes one fixed geometry variant,
+  `modern_place`; keep general variant support internal for later historical or
+  interpretive alternatives.
 - External gazetteers are ingestion/curation dependencies, never map-render
   runtime dependencies.
 - Current repository geography must remain separate from historical geography.

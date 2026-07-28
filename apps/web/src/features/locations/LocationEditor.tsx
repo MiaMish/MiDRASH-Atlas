@@ -57,6 +57,40 @@ const statusCopy: Record<
   },
 };
 
+function presentationFor(location: LocationOverview) {
+  if (location.has_valid_coordinates) return statusCopy[location.coordinate_status];
+  switch (location.ai_status) {
+    case "needs_candidates":
+      return {
+        option: "!",
+        label: "AI checked · better candidates needed",
+        detail: "The AI reviewed the available evidence but found no usable location candidate.",
+        tone: "ai-unresolved",
+      };
+    case "ambiguous":
+      return {
+        option: "?",
+        label: "AI checked · location is ambiguous",
+        detail: "The AI found multiple plausible locations and correctly declined to guess.",
+        tone: "ai-unresolved",
+      };
+    case "technical_failure":
+      return {
+        option: "×",
+        label: "AI attempt failed",
+        detail: "The curation request failed technically and should be retried.",
+        tone: "ai-failed",
+      };
+    default:
+      return {
+        option: "—",
+        label: "Not mapped · AI not checked yet",
+        detail: "No AI curation attempt or human geometry exists for this place.",
+        tone: "missing",
+      };
+  }
+}
+
 function sameGeometry(left: GeoJSONGeometry | null, right?: GeoJSONGeometry) {
   return JSON.stringify(left) === JSON.stringify(right ?? null);
 }
@@ -66,10 +100,7 @@ export function LocationEditor() {
   const [placeId, setPlaceId] = useState("");
   const [geometry, setGeometry] = useState<GeoJSONGeometry | null>(null);
   const [geometryText, setGeometryText] = useState("");
-  const [variantId, setVariantId] = useState("");
-  const [label, setLabel] = useState("");
   const [precision, setPrecision] = useState("locality");
-  const [interpretationNote, setInterpretationNote] = useState("");
   const [changeReason, setChangeReason] = useState("");
   const [reviewedByHuman, setReviewedByHuman] = useState(false);
   const [history, setHistory] = useState<GeometryRevision[]>([]);
@@ -84,7 +115,12 @@ export function LocationEditor() {
       total: locations.length,
       mapped: locations.filter((item) => item.has_valid_coordinates).length,
       reviewed: locations.filter((item) => item.reviewed_by_human).length,
-      missing: locations.filter((item) => !item.has_valid_coordinates).length,
+      aiUnresolved: locations.filter(
+        (item) =>
+          !item.has_valid_coordinates &&
+          ["needs_candidates", "ambiguous", "technical_failure"].includes(item.ai_status),
+      ).length,
+      notAttempted: locations.filter((item) => item.ai_status === "not_attempted").length,
     }),
     [locations],
   );
@@ -122,10 +158,7 @@ export function LocationEditor() {
   function loadLocation(next: LocationOverview) {
     setGeometry(next.geometry ?? null);
     setGeometryText(next.geometry ? JSON.stringify(next.geometry, null, 2) : "");
-    setVariantId(next.geometry_variant_id ?? `modern_${next.place_id}`);
-    setLabel(next.geometry_label ?? `Modern display geometry for ${next.place_label}`);
     setPrecision(next.spatial_precision ?? "locality");
-    setInterpretationNote(next.interpretation_note ?? "");
     setReviewedByHuman(next.reviewed_by_human);
   }
 
@@ -169,12 +202,12 @@ export function LocationEditor() {
     const humanAction = changed ? "changed" : reviewedByHuman ? "reviewed" : "draft";
     try {
       const revision = await saveGeometryRevision(placeId, {
-        geometry_variant_id: variantId,
-        label,
+        geometry_variant_id: "modern_place",
+        label: `Modern place for ${location.place_label}`,
         geometry,
         spatial_precision: precision,
         interpretation_source: location.geometry_source ?? "modern_gazetteer_geometry",
-        interpretation_note: interpretationNote,
+        interpretation_note: location.ai_comment ?? location.interpretation_note ?? "",
         confidence: "medium",
         review_status: reviewedByHuman ? "reviewed_by_human" : "draft",
         human_action: humanAction,
@@ -194,7 +227,7 @@ export function LocationEditor() {
     }
   }
 
-  const currentStatus = location ? statusCopy[location.coordinate_status] : statusCopy.no_geometry;
+  const currentStatus = location ? presentationFor(location) : statusCopy.no_geometry;
   const geometryChanged = location ? !sameGeometry(geometry, location.geometry) : false;
 
   return (
@@ -203,7 +236,8 @@ export function LocationEditor() {
         <div><strong>{counts.total}</strong><span>place concepts</span></div>
         <div><strong>{counts.mapped}</strong><span>with valid coordinates</span></div>
         <div><strong>{counts.reviewed}</strong><span>human-reviewed</span></div>
-        <div><strong>{counts.missing}</strong><span>without coordinates</span></div>
+        <div><strong>{counts.aiUnresolved}</strong><span>AI checked · unresolved</span></div>
+        <div><strong>{counts.notAttempted}</strong><span>not checked by AI</span></div>
       </section>
 
       <section className="location-workspace">
@@ -213,8 +247,7 @@ export function LocationEditor() {
             <select value={placeId} onChange={(event) => setPlaceId(event.target.value)}>
               {locations.map((item) => (
                 <option key={item.place_id} value={item.place_id}>
-                  {statusCopy[item.coordinate_status].option} {item.place_label} —{" "}
-                  {statusCopy[item.coordinate_status].label}
+                  {presentationFor(item).option} {item.place_label} — {presentationFor(item).label}
                 </option>
               ))}
             </select>
@@ -232,7 +265,8 @@ export function LocationEditor() {
             <span><b>✓</b> Human-reviewed</span>
             <span><b>◆</b> Human changed</span>
             <span><b>●</b> Unreviewed coordinates</span>
-            <span><b>—</b> No coordinates</span>
+            <span><b>!</b> AI checked, unresolved</span>
+            <span><b>—</b> AI not checked</span>
           </div>
 
           <div className="source-card">
@@ -242,14 +276,6 @@ export function LocationEditor() {
             </p>
           </div>
           <label>
-            Variant ID
-            <input value={variantId} onChange={(event) => setVariantId(event.target.value)} />
-          </label>
-          <label>
-            Label
-            <input value={label} onChange={(event) => setLabel(event.target.value)} />
-          </label>
-          <label>
             Spatial precision
             <select value={precision} onChange={(event) => setPrecision(event.target.value)}>
               <option value="locality">Locality</option>
@@ -258,14 +284,6 @@ export function LocationEditor() {
               <option value="interpreted_region">Interpreted region</option>
               <option value="unknown">Unknown</option>
             </select>
-          </label>
-          <label>
-            Interpretation note
-            <textarea
-              rows={3}
-              value={interpretationNote}
-              onChange={(event) => setInterpretationNote(event.target.value)}
-            />
           </label>
           <label>
             GeoJSON geometry
@@ -327,6 +345,21 @@ export function LocationEditor() {
                 Refresh
               </button>
             </div>
+            {location?.ai_comment && (
+              <article className="ai-audit-comment">
+                <div>
+                  <strong>AI curation comment</strong>
+                  <span>
+                    {location.ai_provenance
+                      ? `${location.ai_provenance.provider}/${location.ai_provenance.model} · ${new Date(
+                          location.ai_provenance.generated_at,
+                        ).toLocaleString()}`
+                      : "AI assessment"}
+                  </span>
+                </div>
+                <p>{location.ai_comment}</p>
+              </article>
+            )}
             {history.length === 0 ? (
               <p>No human revisions have been saved for this place.</p>
             ) : (
@@ -336,6 +369,11 @@ export function LocationEditor() {
                     <strong>{revision.geometry_variant_id} · revision {revision.revision}</strong>
                     <span>{new Date(revision.created_at).toLocaleString()}</span>
                     <p>{revision.change_reason}</p>
+                    {revision.ai_provenance && revision.interpretation_note && (
+                      <div className="ai-history-comment">
+                        <b>AI comment:</b> {revision.interpretation_note}
+                      </div>
+                    )}
                     <small>
                       {revision.review_status === "reviewed_by_human" ? "✓ reviewed by human" : "not reviewed"}
                       {revision.human_action === "changed" ? " · ◆ coordinates changed by human" : ""}

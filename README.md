@@ -22,7 +22,7 @@ data/
   raw/                  Cached NLI MARCXML
   derived/              Normalized NLI data
   generated/atlas/      UI/API export
-  runtime/              Local SQLite database (ignored)
+  runtime/              Shared SQLite curation database
 tools/nli/              NLI retrieval tooling
 ```
 
@@ -45,8 +45,9 @@ GOCACHE=/private/tmp/midrash-atlas-go-cache \
   /opt/homebrew/bin/go run ./apps/api/cmd/atlas serve
 ```
 
-The local audit store is `data/runtime/atlas.sqlite`. It is created on first
-startup and is intentionally ignored by Git.
+The shared audit store is `data/runtime/atlas.sqlite`. It is committed so the
+PoC team sees the same human review history. SQLite WAL/SHM sidecar files remain
+ignored; the API checkpoints the WAL when it closes.
 
 ## Run the React UI
 

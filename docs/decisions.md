@@ -80,6 +80,20 @@ action that created its revision. Moving or replacing coordinates does not
 automatically mark them reviewed. Reviewing an unchanged candidate creates an
 audited revision without falsely claiming that the curator changed it.
 
+## 2026-07-28 — Expose one modern-place variant in the PoC
+
+The UI fixes the editable variant to `modern_place` and hides internal IDs and
+labels. General variant support remains in the data model for later historical,
+temporal, disputed, or source-specific geometries, but is not a curator concern
+until those workflows exist.
+
+## 2026-07-28 — Share the PoC SQLite audit database
+
+`data/runtime/atlas.sqlite` is committed so team members share human review
+history during the PoC. SQLite WAL and SHM sidecars remain ignored, and the API
+checkpoints the WAL on close. This is intentionally temporary; concurrent
+collaboration should later move to a service-backed database.
+
 ## Open decisions for the team
 
 - Which assertion-source priority profiles should ship as presets?

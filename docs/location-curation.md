@@ -39,11 +39,16 @@ Provider/model defaults are controlled by `CURATION_LLM_PROVIDER` and
 `CURATION_LLM_MODEL`. They default to `ollama` and `qwen3.5:35b`. Secrets are
 never returned by the API.
 
+The location overview distinguishes five AI states: `not_attempted`,
+`candidate_proposed`, `needs_candidates`, `ambiguous`, and
+`technical_failure`. A place without coordinates therefore does not conceal
+whether AI curation has never run or ran without producing a safe match.
+
 ## Geometry revision model
 
 Every save includes:
 
-- place and geometry-variant IDs;
+- place ID and the fixed PoC variant ID `modern_place`;
 - complete GeoJSON `Point`, `Polygon`, or `MultiPolygon`;
 - validity years and spatial precision;
 - interpretation source and note;
@@ -62,6 +67,12 @@ The server adds:
 - UTC `created_at`.
 
 There is no update or delete endpoint. Corrections create another revision.
+
+The React editor intentionally hides variant ID and geometry label. During this
+PoC it edits only `modern_place`. The database model keeps variant support
+because later work may need modern reference geometry, time-specific historical
+polygons, disputed scholarly interpretations, or source-specific alternatives,
+but those choices should not burden the current curation task.
 
 `review_status: reviewed_by_human` means a person explicitly inspected the
 geometry and marked it suitable for atlas display. `human_action: changed`
@@ -106,8 +117,9 @@ POST /api/v1/curation/geometry-draft
 ```
 
 The local implementation uses `data/runtime/atlas.sqlite`. The
-`locationstore.Store` interface is the portability boundary for a later cloud
-database.
+database is committed for a shared PoC audit history; WAL and SHM sidecars are
+ignored and checkpointed on clean API shutdown. The `locationstore.Store`
+interface remains the portability boundary for a later cloud database.
 
 ## Authorization extension
 
