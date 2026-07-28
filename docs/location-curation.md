@@ -43,6 +43,8 @@ The location overview distinguishes five AI states: `not_attempted`,
 `candidate_proposed`, `needs_candidates`, `ambiguous`, and
 `technical_failure`. A place without coordinates therefore does not conceal
 whether AI curation has never run or ran without producing a safe match.
+The audit panel also lists retained AI runs with provider, model, timestamp,
+result status, comment, technical error, and which result is current.
 
 ## Geometry revision model
 

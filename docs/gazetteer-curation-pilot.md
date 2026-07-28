@@ -76,6 +76,50 @@ validator rejects invented IDs, unsupported statuses, malformed output, and a
 selection paired with an ambiguous/no-candidate status. This command never
 writes to `configs/atlas/place_geometries.json` or the SQLite revision store.
 
+## Rerunning and audit history
+
+Provider and model are CLI options:
+
+```bash
+GOCACHE=/private/tmp/midrash-atlas-go-cache \
+  /opt/homebrew/bin/go run ./apps/api/cmd/atlas curation-pilot \
+  --provider ollama \
+  --model <another-installed-model> \
+  --skip-human-reviewed
+```
+
+`--provider openai --model <model>` uses the configured `OPENAI_API_KEY`.
+`--place-ids id_one,id_two` limits a run to selected places.
+`--only-ai-not-checked` processes only places absent from the current `drafts`
+collection. Ambiguous, needs-candidates, and technical-failure results all
+count as already checked.
+
+The output has two complementary collections:
+
+- `drafts` contains the current result per place and is updated by a rerun;
+- `runs` is append-only and records run ID, provider, model, start/completion
+  timestamps, selected places, results, errors, and skipped places.
+
+When the first rerun reads the original `1.0.0` output, it imports those current
+drafts as the first historical run before replacing anything.
+
+With `--skip-human-reviewed`, the CLI reads `data/runtime/atlas.sqlite` and
+skips a place when its current `modern_place` revision is human-reviewed. The
+skip itself is recorded in the run audit. Omitting the flag allows a deliberate
+comparison run, but AI output still cannot overwrite the human revision.
+
+The original candidate file contains only ten pilot places. Before the first
+full only-not-checked run, expand it using the same cached, rate-limited
+gazetteer client:
+
+```bash
+GOCACHE=/private/tmp/midrash-atlas-go-cache \
+  /opt/homebrew/bin/go run ./apps/api/cmd/atlas gazetteer-pilot --all-places
+```
+
+This overwrites the derived candidate document with all generated place
+concepts, while reusing raw cache entries for the original ten queries.
+
 ## Results from 2026-07-28
 
 | Place | Candidates | Ollama draft | Interpretation |

@@ -25,6 +25,8 @@
 - An LLM curation result is a draft and must never write geometry directly.
 - Every AI-produced JSON value must include provider, model, UTC generation
   time, purpose, and prompt hash.
+- AI curation reruns update the current draft but append an immutable run audit;
+  never discard earlier provider/model results.
 - Geometry corrections append revisions; do not overwrite audit history.
 - The location editor currently exposes one fixed geometry variant,
   `modern_place`; keep general variant support internal for later historical or
@@ -40,6 +42,7 @@ GOCACHE=/private/tmp/midrash-atlas-go-cache /opt/homebrew/bin/go test ./...
 GOCACHE=/private/tmp/midrash-atlas-go-cache /opt/homebrew/bin/go vet ./...
 GOCACHE=/private/tmp/midrash-atlas-go-cache /opt/homebrew/bin/go run ./apps/api/cmd/atlas export
 GOCACHE=/private/tmp/midrash-atlas-go-cache /opt/homebrew/bin/go run ./apps/api/cmd/atlas gazetteer-pilot
+GOCACHE=/private/tmp/midrash-atlas-go-cache /opt/homebrew/bin/go run ./apps/api/cmd/atlas gazetteer-pilot --all-places
 GOCACHE=/private/tmp/midrash-atlas-go-cache /opt/homebrew/bin/go run ./apps/api/cmd/atlas curation-pilot
 npm run web:typecheck
 npm run web:build

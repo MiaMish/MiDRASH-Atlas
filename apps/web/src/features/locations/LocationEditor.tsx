@@ -265,7 +265,9 @@ export function LocationEditor() {
             <span><b>✓</b> Human-reviewed</span>
             <span><b>◆</b> Human changed</span>
             <span><b>●</b> Unreviewed coordinates</span>
-            <span><b>!</b> AI checked, unresolved</span>
+            <span><b>!</b> AI needs better candidates</span>
+            <span><b>?</b> AI found an ambiguous place</span>
+            <span><b>×</b> AI request failed technically</span>
             <span><b>—</b> AI not checked</span>
           </div>
 
@@ -345,20 +347,28 @@ export function LocationEditor() {
                 Refresh
               </button>
             </div>
-            {location?.ai_comment && (
-              <article className="ai-audit-comment">
-                <div>
-                  <strong>AI curation comment</strong>
-                  <span>
-                    {location.ai_provenance
-                      ? `${location.ai_provenance.provider}/${location.ai_provenance.model} · ${new Date(
-                          location.ai_provenance.generated_at,
-                        ).toLocaleString()}`
-                      : "AI assessment"}
-                  </span>
-                </div>
-                <p>{location.ai_comment}</p>
-              </article>
+            {(location?.ai_history?.length ?? 0) > 0 && (
+              <section className="ai-run-history">
+                <h3>AI curation runs</h3>
+                {[...(location?.ai_history ?? [])].reverse().map((entry) => (
+                  <article className="ai-audit-comment" key={`${entry.run_id}-${entry.status}`}>
+                    <div>
+                      <strong>
+                        {entry.current ? "Current · " : ""}
+                        {entry.status.replaceAll("_", " ")}
+                      </strong>
+                      <span>
+                        {entry.provider || "unknown provider"}/{entry.model || "unknown model"}
+                        {entry.generated_at
+                          ? ` · ${new Date(entry.generated_at).toLocaleString()}`
+                          : ""}
+                      </span>
+                    </div>
+                    {entry.comment && <p>{entry.comment}</p>}
+                    {entry.error && <p className="ai-error">Technical error: {entry.error}</p>}
+                  </article>
+                ))}
+              </section>
             )}
             {history.length === 0 ? (
               <p>No human revisions have been saved for this place.</p>

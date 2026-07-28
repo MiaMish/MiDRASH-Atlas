@@ -72,6 +72,26 @@ export type LocationOverview = {
     | "ambiguous"
     | "technical_failure";
   ai_comment?: string;
+  ai_history: AIAuditEntry[];
+};
+
+export type AIAuditEntry = {
+  run_id: string;
+  generated_at: string;
+  provider: string;
+  model: string;
+  status:
+    | "candidate_proposed"
+    | "needs_candidates"
+    | "ambiguous"
+    | "technical_failure"
+    | "skipped_human_reviewed"
+    | "skipped_ai_already_checked"
+    | "skipped";
+  comment?: string;
+  error?: string;
+  prompt_hash?: string;
+  current: boolean;
 };
 
 export async function fetchLocationOverview(): Promise<LocationOverview[]> {

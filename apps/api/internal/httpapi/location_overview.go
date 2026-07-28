@@ -9,6 +9,7 @@ import (
 	"path/filepath"
 	"sort"
 	"strings"
+	"time"
 
 	"midrash-atlas/apps/api/internal/curationpilot"
 	"midrash-atlas/apps/api/internal/gazetteerpilot"
@@ -36,6 +37,19 @@ type locationOverview struct {
 	AIProvenance        *provenance.AIRun `json:"ai_provenance,omitempty"`
 	AIStatus            string            `json:"ai_status"`
 	AIComment           string            `json:"ai_comment,omitempty"`
+	AIHistory           []aiAuditEntry    `json:"ai_history"`
+}
+
+type aiAuditEntry struct {
+	RunID       string    `json:"run_id"`
+	GeneratedAt time.Time `json:"generated_at"`
+	Provider    string    `json:"provider"`
+	Model       string    `json:"model"`
+	Status      string    `json:"status"`
+	Comment     string    `json:"comment,omitempty"`
+	Error       string    `json:"error,omitempty"`
+	PromptHash  string    `json:"prompt_hash,omitempty"`
+	Current     bool      `json:"current"`
 }
 
 func (s *server) locationOverview(w http.ResponseWriter, r *http.Request) {
@@ -132,6 +146,7 @@ func (s *server) applyPilotCandidates(locations map[string]*locationOverview) {
 	for _, place := range candidates.Places {
 		candidatesByPlace[place.PlaceID] = place
 	}
+	applyAIHistory(locations, drafts)
 	for _, draft := range drafts.Drafts {
 		item := locations[draft.PlaceID]
 		if item == nil {
@@ -180,6 +195,101 @@ func (s *server) applyPilotCandidates(locations map[string]*locationOverview) {
 			item.CoordinateStatus = "unreviewed_candidate"
 			break
 		}
+	}
+}
+
+func applyAIHistory(locations map[string]*locationOverview, output curationpilot.Output) {
+	for _, run := range output.Runs {
+		for _, draft := range run.Results {
+			item := locations[draft.PlaceID]
+			if item == nil {
+				continue
+			}
+			entry := aiAuditEntry{
+				RunID: run.ID, GeneratedAt: run.StartedAt,
+				Provider: run.Provider, Model: run.Model,
+				Status: "technical_failure", Error: draft.Error,
+			}
+			if draft.Result != nil {
+				entry.GeneratedAt = draft.Result.AIProvenance.GeneratedAt
+				entry.Provider = draft.Result.AIProvenance.Provider
+				entry.Model = draft.Result.AIProvenance.Model
+				entry.Status = aiStatus(draft)
+				entry.Comment = draft.Result.Draft.Rationale
+				entry.PromptHash = draft.Result.AIProvenance.PromptHash
+			}
+			item.AIHistory = append(item.AIHistory, entry)
+		}
+		for _, skipped := range run.Skipped {
+			if item := locations[skipped.PlaceID]; item != nil {
+				status := skipped.Code
+				if status == "" {
+					status = "skipped"
+				}
+				item.AIHistory = append(item.AIHistory, aiAuditEntry{
+					RunID: run.ID, GeneratedAt: run.StartedAt,
+					Provider: run.Provider, Model: run.Model,
+					Status: status, Comment: skipped.Reason,
+				})
+			}
+		}
+	}
+	for _, item := range locations {
+		if len(item.AIHistory) == 0 {
+			for _, draft := range output.Drafts {
+				if draft.PlaceID != item.PlaceID {
+					continue
+				}
+				entry := aiAuditEntry{
+					RunID: "legacy_current_result", Status: aiStatus(draft), Error: draft.Error,
+					Current: true,
+				}
+				if draft.Result != nil {
+					entry.GeneratedAt = draft.Result.AIProvenance.GeneratedAt
+					entry.Provider = draft.Result.AIProvenance.Provider
+					entry.Model = draft.Result.AIProvenance.Model
+					entry.Comment = draft.Result.Draft.Rationale
+					entry.PromptHash = draft.Result.AIProvenance.PromptHash
+				}
+				item.AIHistory = append(item.AIHistory, entry)
+				break
+			}
+		}
+	}
+	currentRunByPlace := map[string]string{}
+	for _, draft := range output.Drafts {
+		for index := len(output.Runs) - 1; index >= 0; index-- {
+			for _, result := range output.Runs[index].Results {
+				if result.PlaceID == draft.PlaceID {
+					currentRunByPlace[draft.PlaceID] = output.Runs[index].ID
+					break
+				}
+			}
+			if currentRunByPlace[draft.PlaceID] != "" {
+				break
+			}
+		}
+	}
+	for placeID, item := range locations {
+		for index := range item.AIHistory {
+			if item.AIHistory[index].RunID == currentRunByPlace[placeID] {
+				item.AIHistory[index].Current = true
+			}
+		}
+	}
+}
+
+func aiStatus(draft curationpilot.PlaceDraft) string {
+	if draft.Error != "" || draft.Result == nil {
+		return "technical_failure"
+	}
+	switch draft.Result.Draft.Status {
+	case "candidate_selected":
+		return "candidate_proposed"
+	case "needs_candidates", "ambiguous":
+		return draft.Result.Draft.Status
+	default:
+		return "technical_failure"
 	}
 }
 

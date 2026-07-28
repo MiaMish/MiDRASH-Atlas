@@ -41,18 +41,42 @@ func main() {
 func curationPilot(args []string) {
 	fs := flag.NewFlagSet("curation-pilot", flag.ExitOnError)
 	cfg := curationpilot.Config{}
-	var placeIDs string
+	var placeIDs, databasePath string
 	fs.StringVar(&cfg.InputPath, "input", "data/derived/gazetteer/nominatim-pilot.json", "cached gazetteer pilot")
 	fs.StringVar(&cfg.OutputPath, "output", "data/derived/gazetteer/nominatim-pilot-drafts.json", "LLM draft output")
 	fs.StringVar(&cfg.Provider, "provider", "", "LLM provider (default: CURATION_LLM_PROVIDER or ollama)")
 	fs.StringVar(&cfg.Model, "model", "", "LLM model (default: CURATION_LLM_MODEL or qwen3.5:35b)")
 	fs.StringVar(&placeIDs, "place-ids", "", "optional comma-separated place IDs")
+	fs.BoolVar(&cfg.SkipHumanReviewed, "skip-human-reviewed", false, "skip places whose current modern_place geometry is human-reviewed")
+	fs.BoolVar(&cfg.OnlyAINotChecked, "only-ai-not-checked", false, "process only places with no current AI draft")
+	fs.StringVar(&databasePath, "database", "data/runtime/atlas.sqlite", "SQLite review database used by --skip-human-reviewed")
 	_ = fs.Parse(args)
 	loadDotEnv(".env")
 	cfg.Provider = firstNonempty(cfg.Provider, os.Getenv("CURATION_LLM_PROVIDER"), llm.ProviderOllama)
 	cfg.Model = firstNonempty(cfg.Model, os.Getenv("CURATION_LLM_MODEL"), "qwen3.5:35b")
 	if strings.TrimSpace(placeIDs) != "" {
 		cfg.PlaceIDs = strings.Split(placeIDs, ",")
+	}
+	if cfg.SkipHumanReviewed {
+		store, err := locationstore.OpenSQLite(databasePath)
+		if err != nil {
+			log.Fatal(err)
+		}
+		revisions, err := store.ListCurrentAll(context.Background())
+		if err != nil {
+			_ = store.Close()
+			log.Fatal(err)
+		}
+		for _, revision := range revisions {
+			if revision.GeometryVariantID == "modern_place" &&
+				(revision.ReviewStatus == "reviewed_by_human" || revision.ReviewStatus == "reviewed" ||
+					revision.ReviewStatus == "approved") {
+				cfg.SkipPlaceIDs = append(cfg.SkipPlaceIDs, revision.PlaceID)
+			}
+		}
+		if err := store.Close(); err != nil {
+			log.Fatal(err)
+		}
 	}
 	llmClient := llm.NewClient(llm.Config{
 		OpenAIAPIKey:  os.Getenv("OPENAI_API_KEY"),
@@ -66,13 +90,15 @@ func curationPilot(args []string) {
 	if err != nil {
 		log.Fatal(err)
 	}
+	lastRun := output.Runs[len(output.Runs)-1]
 	successes := 0
-	for _, draft := range output.Drafts {
+	for _, draft := range lastRun.Results {
 		if draft.Result != nil {
 			successes++
 		}
 	}
-	fmt.Printf("Curation pilot wrote %d/%d successful drafts to %s\n", successes, len(output.Drafts), cfg.OutputPath)
+	fmt.Printf("Curation run %s wrote %d/%d successful drafts, skipped %d, to %s\n",
+		lastRun.ID, successes, len(lastRun.Results), len(lastRun.Skipped), cfg.OutputPath)
 }
 
 func gazetteerPilot(args []string) {
@@ -87,6 +113,7 @@ func gazetteerPilot(args []string) {
 	fs.StringVar(&cfg.OutputPath, "output", "data/derived/gazetteer/nominatim-pilot.json", "derived pilot output")
 	fs.StringVar(&baseURL, "base-url", "https://nominatim.openstreetmap.org", "Nominatim base URL")
 	fs.StringVar(&userAgent, "user-agent", "midrash-atlas-poc/0.1 (manuscript research; cached curation pilot)", "identifying User-Agent")
+	fs.BoolVar(&cfg.AllPlaces, "all-places", false, "acquire candidates for every generated place concept")
 	_ = fs.Parse(args)
 	client, err := gazetteer.NewNominatim(gazetteer.NominatimConfig{
 		BaseURL: baseURL, CacheDir: cfg.CacheDir, UserAgent: userAgent,

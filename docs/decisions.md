@@ -94,6 +94,14 @@ history during the PoC. SQLite WAL and SHM sidecars remain ignored, and the API
 checkpoints the WAL on close. This is intentionally temporary; concurrent
 collaboration should later move to a service-backed database.
 
+## 2026-07-28 — AI reruns replace current state but append history
+
+The current AI draft for a place may be regenerated with another provider or
+model. The `drafts` collection is replaced only for processed places, while
+every run and result remains append-only under `runs`. A CLI flag skips
+human-reviewed `modern_place` entries by consulting the shared SQLite database.
+AI reruns never overwrite human geometry revisions.
+
 ## Open decisions for the team
 
 - Which assertion-source priority profiles should ship as presets?

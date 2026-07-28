@@ -178,6 +178,9 @@ func TestLocationOverviewIncludesUnreviewedPilotGeometry(t *testing.T) {
 			HasValidCoordinates bool   `json:"has_valid_coordinates"`
 			CoordinateStatus    string `json:"coordinate_status"`
 			AIStatus            string `json:"ai_status"`
+			AIHistory           []struct {
+				Current bool `json:"current"`
+			} `json:"ai_history"`
 		} `json:"locations"`
 	}
 	if err := json.Unmarshal(res.Body.Bytes(), &got); err != nil {
@@ -185,7 +188,8 @@ func TestLocationOverviewIncludesUnreviewedPilotGeometry(t *testing.T) {
 	}
 	if len(got.Locations) != 2 || got.Locations[0].PlaceID != "place_spain" ||
 		!got.Locations[0].HasValidCoordinates || got.Locations[0].CoordinateStatus != "unreviewed_candidate" ||
-		got.Locations[0].AIStatus != "candidate_proposed" {
+		got.Locations[0].AIStatus != "candidate_proposed" || len(got.Locations[0].AIHistory) != 1 ||
+		!got.Locations[0].AIHistory[0].Current {
 		t.Fatalf("pilot geometry was not exposed correctly: %+v", got.Locations)
 	}
 	if got.Locations[1].HasValidCoordinates || got.Locations[1].CoordinateStatus != "no_geometry" ||

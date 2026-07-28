@@ -367,6 +367,22 @@ textarea {
   background: #f7eee6;
 }
 
+.ai-run-history {
+  margin-top: 0.9rem;
+}
+
+.ai-run-history h3 {
+  margin: 0 0 0.45rem;
+  color: #5e5b52;
+  font-family: Georgia, serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.ai-run-history .ai-audit-comment {
+  margin: 0 0 0.5rem;
+}
+
 .ai-audit-comment div {
   display: flex;
   justify-content: space-between;
@@ -385,6 +401,10 @@ textarea {
   color: #51473f;
   font-size: 0.8rem;
   line-height: 1.45;
+}
+
+.ai-audit-comment .ai-error {
+  color: #812f28;
 }
 
 .text-button {

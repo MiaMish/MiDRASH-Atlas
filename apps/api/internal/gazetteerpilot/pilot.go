@@ -7,6 +7,7 @@ import (
 	"os"
 	"path/filepath"
 	"sort"
+	"strings"
 	"time"
 
 	"midrash-atlas/apps/api/internal/curation"
@@ -21,6 +22,7 @@ type Config struct {
 	TemporalPath      string
 	OutputPath        string
 	CacheDir          string
+	AllPlaces         bool
 }
 
 type pilotConfig struct {
@@ -63,8 +65,10 @@ type OutputPlace struct {
 
 func Run(ctx context.Context, client *gazetteer.Nominatim, cfg Config) (Output, error) {
 	var pilot pilotConfig
-	if err := readJSON(cfg.PilotConfigPath, &pilot); err != nil {
-		return Output{}, err
+	if !cfg.AllPlaces {
+		if err := readJSON(cfg.PilotConfigPath, &pilot); err != nil {
+			return Output{}, err
+		}
 	}
 	var placeDocument struct {
 		Places []atlas.PlaceConcept `json:"places"`
@@ -87,6 +91,21 @@ func Run(ctx context.Context, client *gazetteer.Nominatim, cfg Config) (Output, 
 	placeByID := map[string]atlas.PlaceConcept{}
 	for _, place := range placeDocument.Places {
 		placeByID[place.ID] = place
+	}
+	if cfg.AllPlaces {
+		pilot = pilotConfig{
+			SchemaVersion: "1.0.0",
+			Description:   "All generated place concepts for full atlas candidate acquisition.",
+		}
+		for _, place := range placeDocument.Places {
+			pilot.Places = append(pilot.Places, PilotPlace{
+				PlaceID: place.ID, PlaceLabel: place.PreferredLabel,
+				Query: place.PreferredLabel, Case: "full atlas candidate acquisition",
+			})
+		}
+		sort.Slice(pilot.Places, func(i, j int) bool {
+			return strings.ToLower(pilot.Places[i].PlaceLabel) < strings.ToLower(pilot.Places[j].PlaceLabel)
+		})
 	}
 	geoByPlace := map[string][]atlas.GeoAssertion{}
 	targetsByPlace := map[string]map[string]bool{}

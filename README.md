@@ -95,6 +95,33 @@ GOCACHE=/private/tmp/midrash-atlas-go-cache \
 The second command creates review drafts only; it never accepts or saves a
 geometry. See the pilot report for the candidate and refusal results.
 
+Rerun with another provider/model while protecting human-reviewed places:
+
+```bash
+GOCACHE=/private/tmp/midrash-atlas-go-cache \
+  /opt/homebrew/bin/go run ./apps/api/cmd/atlas curation-pilot \
+  --provider ollama \
+  --model <another-installed-model> \
+  --skip-human-reviewed
+```
+
+Each rerun replaces the current AI draft for the places it processes and
+appends the full prior/current results to the `runs` audit history. It never
+overwrites a human geometry revision.
+
+To extend candidate acquisition to every place and run AI only where it has
+never been checked:
+
+```bash
+GOCACHE=/private/tmp/midrash-atlas-go-cache \
+  /opt/homebrew/bin/go run ./apps/api/cmd/atlas gazetteer-pilot --all-places
+
+GOCACHE=/private/tmp/midrash-atlas-go-cache \
+  /opt/homebrew/bin/go run ./apps/api/cmd/atlas curation-pilot \
+  --only-ai-not-checked \
+  --skip-human-reviewed
+```
+
 Static resources are under `/api/v1/`. A policy-derived temporal view is:
 
 ```text
