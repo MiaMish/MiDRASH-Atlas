@@ -313,6 +313,36 @@ h2 {
   min-height: 720px;
 }
 
+.atlas-map.drawing-area {
+  cursor: crosshair;
+}
+
+.atlas-spatial-tools {
+  display: flex;
+  gap: 0.4rem;
+  left: 0.75rem;
+  position: absolute;
+  top: 0.75rem;
+  z-index: 500;
+}
+
+.atlas-spatial-tools button {
+  background: rgb(255 253 248 / 94%);
+  border: 1px solid #aaa397;
+  border-radius: 0.35rem;
+  box-shadow: 0 2px 8px rgb(46 42 35 / 14%);
+  color: #302d29;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.75rem;
+  padding: 0.45rem 0.65rem;
+}
+
+.atlas-spatial-tools button.active {
+  background: #245f8f;
+  color: white;
+}
+
 .atlas-empty {
   position: absolute;
   z-index: 500;

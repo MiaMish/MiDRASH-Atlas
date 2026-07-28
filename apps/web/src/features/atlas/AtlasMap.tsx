@@ -1,17 +1,30 @@
-import { useEffect, useMemo } from "react";
-import { GeoJSON, MapContainer, TileLayer, useMap } from "react-leaflet";
+import { useEffect, useMemo, useState } from "react";
+import {
+  GeoJSON,
+  MapContainer,
+  Rectangle,
+  TileLayer,
+  useMap,
+  useMapEvents,
+} from "react-leaflet";
 import {
   circleMarker,
   geoJSON,
+  latLngBounds,
+  type LatLng,
   type PathOptions,
 } from "leaflet";
 import type { Feature, FeatureCollection, Geometry } from "geojson";
 import type { AtlasFeature } from "../../api";
+import type { SpatialBounds } from "./spatial";
 
 type Props = {
   features: AtlasFeature[];
   selectedPlaceId: string;
   containedPlaceIds: string[];
+  areaPlaceIds: string[];
+  selectedBounds: SpatialBounds | null;
+  onSelectBounds: (bounds: SpatialBounds | null) => void;
   onSelectPlace: (placeId: string) => void;
 };
 
@@ -28,16 +41,18 @@ function featureStyle(
   feature: AtlasFeature,
   selectedPlaceId: string,
   containedPlaceIds: Set<string>,
+  areaPlaceIds: Set<string>,
 ): PathOptions {
   const selected = feature.properties.place_id === selectedPlaceId;
   const contained = containedPlaceIds.has(feature.properties.place_id);
+  const inArea = areaPlaceIds.has(feature.properties.place_id);
   const color = statusColors[feature.properties.coordinate_status] ?? "#6d685f";
   return {
-    color,
+    color: inArea ? "#245f8f" : color,
     fillColor: color,
-    fillOpacity: selected ? 0.42 : 0.22,
+    fillOpacity: selected ? 0.42 : inArea ? 0.36 : 0.22,
     opacity: 0.9,
-    weight: selected ? 4 : contained ? 3 : 1.5,
+    weight: selected ? 4 : inArea || contained ? 3 : 1.5,
     dashArray: contained ? "5 4" : undefined,
   };
 }
@@ -54,13 +69,95 @@ function FitFeatures({ data }: { data: FeatureCollection }) {
   return null;
 }
 
+function RectangleSelector({
+  active,
+  selectedBounds,
+  onComplete,
+}: {
+  active: boolean;
+  selectedBounds: SpatialBounds | null;
+  onComplete: (bounds: SpatialBounds) => void;
+}) {
+  const map = useMap();
+  const [start, setStart] = useState<LatLng | null>(null);
+  const [current, setCurrent] = useState<LatLng | null>(null);
+
+  useEffect(() => {
+    if (active) {
+      map.dragging.disable();
+      map.getContainer().classList.add("drawing-area");
+    } else {
+      map.dragging.enable();
+      map.getContainer().classList.remove("drawing-area");
+      setStart(null);
+      setCurrent(null);
+    }
+    return () => {
+      map.dragging.enable();
+      map.getContainer().classList.remove("drawing-area");
+    };
+  }, [active, map]);
+
+  useMapEvents({
+    mousedown(event) {
+      if (!active) return;
+      setStart(event.latlng);
+      setCurrent(event.latlng);
+    },
+    mousemove(event) {
+      if (active && start) setCurrent(event.latlng);
+    },
+    mouseup(event) {
+      if (!active || !start) return;
+      const bounds = latLngBounds(start, event.latlng);
+      onComplete({
+        west: bounds.getWest(),
+        south: bounds.getSouth(),
+        east: bounds.getEast(),
+        north: bounds.getNorth(),
+      });
+      setStart(null);
+      setCurrent(null);
+    },
+  });
+
+  const preview = start && current ? latLngBounds(start, current) : null;
+  const persisted = selectedBounds
+    ? latLngBounds(
+      [selectedBounds.south, selectedBounds.west],
+      [selectedBounds.north, selectedBounds.east],
+    )
+    : null;
+  return (
+    <>
+      {persisted && (
+        <Rectangle
+          bounds={persisted}
+          pathOptions={{ color: "#245f8f", fillOpacity: 0.08, weight: 2 }}
+        />
+      )}
+      {preview && (
+        <Rectangle
+          bounds={preview}
+          pathOptions={{ color: "#245f8f", dashArray: "5 4", fillOpacity: 0.12, weight: 2 }}
+        />
+      )}
+    </>
+  );
+}
+
 export function AtlasMap({
   features,
   selectedPlaceId,
   containedPlaceIds,
+  areaPlaceIds,
+  selectedBounds,
+  onSelectBounds,
   onSelectPlace,
 }: Props) {
+  const [drawingArea, setDrawingArea] = useState(false);
   const containedIDs = useMemo(() => new Set(containedPlaceIds), [containedPlaceIds]);
+  const areaIDs = useMemo(() => new Set(areaPlaceIds), [areaPlaceIds]);
   const orderedFeatures = useMemo(() => {
     const containmentDepth = new Map(features.map((feature) => [feature.id, 0]));
     for (const container of features) {
@@ -109,12 +206,12 @@ export function AtlasMap({
         />
         <FitFeatures data={data} />
         <GeoJSON
-          key={`${selectedPlaceId}-${features.map((feature) => feature.id).join(",")}`}
+          key={`${selectedPlaceId}-${drawingArea}-${features.map((feature) => feature.id).join(",")}`}
           data={data}
           style={(feature) => {
             const atlasFeature = feature?.id ? featureByID.get(String(feature.id)) : undefined;
             return atlasFeature
-              ? featureStyle(atlasFeature, selectedPlaceId, containedIDs)
+              ? featureStyle(atlasFeature, selectedPlaceId, containedIDs, areaIDs)
               : {};
           }}
           pointToLayer={(feature, latlng) => {
@@ -122,7 +219,7 @@ export function AtlasMap({
             const count = atlasFeature?.properties.record_count ?? 1;
             return circleMarker(latlng, {
               ...(atlasFeature
-                ? featureStyle(atlasFeature, selectedPlaceId, containedIDs)
+                ? featureStyle(atlasFeature, selectedPlaceId, containedIDs, areaIDs)
                 : { color: "#6d685f", fillColor: "#6d685f" }),
               radius: Math.min(18, 6 + Math.sqrt(count) * 2),
             });
@@ -135,10 +232,32 @@ export function AtlasMap({
                 atlasFeature.properties.record_count === 1 ? "" : "s"
               }`,
             );
-            layer.on("click", () => onSelectPlace(atlasFeature.properties.place_id));
+            layer.on("click", () => {
+              if (!drawingArea) onSelectPlace(atlasFeature.properties.place_id);
+            });
+          }}
+        />
+        <RectangleSelector
+          active={drawingArea}
+          selectedBounds={selectedBounds}
+          onComplete={(bounds) => {
+            onSelectBounds(bounds);
+            setDrawingArea(false);
           }}
         />
       </MapContainer>
+      <div className="atlas-spatial-tools">
+        <button
+          className={drawingArea ? "active" : ""}
+          type="button"
+          onClick={() => setDrawingArea((currentValue) => !currentValue)}
+        >
+          {drawingArea ? "Cancel drawing" : "Select area"}
+        </button>
+        {selectedBounds && (
+          <button type="button" onClick={() => onSelectBounds(null)}>Clear area</button>
+        )}
+      </div>
       {features.length === 0 && (
         <div className="atlas-empty">No mapped places match the current filters.</div>
       )}

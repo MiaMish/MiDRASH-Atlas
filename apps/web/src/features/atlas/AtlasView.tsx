@@ -7,6 +7,10 @@ import {
   type AtlasView as AtlasViewData,
 } from "../../api";
 import { AtlasMap } from "./AtlasMap";
+import {
+  geometryIntersectsBounds,
+  type SpatialBounds,
+} from "./spatial";
 
 const defaultFilters: AtlasFilters = {
   circa_years: 10,
@@ -53,6 +57,7 @@ export function AtlasView() {
   const [filters, setFilters] = useState<AtlasFilters>(defaultFilters);
   const [data, setData] = useState<AtlasViewData | null>(null);
   const [selectedPlaceId, setSelectedPlaceId] = useState("");
+  const [selectedBounds, setSelectedBounds] = useState<SpatialBounds | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
@@ -106,6 +111,15 @@ export function AtlasView() {
     const ids = new Set(selected?.properties.contained_place_ids ?? []);
     return data?.features.filter((feature) => ids.has(feature.id)) ?? [];
   }, [data, selected]);
+  const areaFeatures = useMemo(
+    () =>
+      selectedBounds
+        ? data?.features.filter((feature) =>
+          geometryIntersectsBounds(feature.geometry, selectedBounds),
+        ) ?? []
+        : [],
+    [data, selectedBounds],
+  );
   const bounds = data?.time_bounds ?? { min_year: 800, max_year: 2000 };
   const startYear = filters.start_year ?? bounds.min_year;
   const endYear = filters.end_year ?? bounds.max_year;
@@ -284,12 +298,81 @@ export function AtlasView() {
           features={data?.features ?? []}
           selectedPlaceId={selectedPlaceId}
           containedPlaceIds={selected?.properties.contained_place_ids ?? []}
-          onSelectPlace={setSelectedPlaceId}
+          areaPlaceIds={areaFeatures.map((feature) => feature.id)}
+          selectedBounds={selectedBounds}
+          onSelectBounds={setSelectedBounds}
+          onSelectPlace={(placeId) => {
+            setSelectedBounds(null);
+            setSelectedPlaceId(placeId);
+          }}
         />
 
-        <AtlasDrilldown feature={selected} contained={contained} data={data} />
+        {selectedBounds ? (
+          <AreaDrilldown
+            features={areaFeatures}
+            data={data}
+            onClear={() => setSelectedBounds(null)}
+          />
+        ) : (
+          <AtlasDrilldown feature={selected} contained={contained} data={data} />
+        )}
       </div>
     </section>
+  );
+}
+
+function AreaDrilldown({
+  features,
+  data,
+  onClear,
+}: {
+  features: AtlasFeature[];
+  data: AtlasViewData | null;
+  onClear: () => void;
+}) {
+  if (!data) return <aside className="atlas-drilldown empty" />;
+  const recordIDs = new Set(
+    features.flatMap((feature) =>
+      (feature.properties.events ?? []).map((event) => event.record.id),
+    ),
+  );
+  const assertionCount = features.reduce(
+    (total, feature) => total + feature.properties.assertion_count,
+    0,
+  );
+  return (
+    <aside className="atlas-drilldown">
+      <div className="drilldown-heading">
+        <p className="eyebrow">Area drill-down</p>
+        <h2>Selected map area</h2>
+        <p>
+          {recordIDs.size} record{recordIDs.size === 1 ? "" : "s"} ·{" "}
+          {assertionCount} assertion{assertionCount === 1 ? "" : "s"} ·{" "}
+          {features.length} place{features.length === 1 ? "" : "s"}
+        </p>
+        <p className="containment-summary">
+          Results use the active filters and include mapped geometries intersecting the box.
+        </p>
+        <button className="secondary compact-button" type="button" onClick={onClear}>
+          Clear area selection
+        </button>
+      </div>
+      <div className="drilldown-events">
+        {features.length === 0 && <p>No mapped records intersect this area.</p>}
+        {features.map((feature) => (
+          <section className="contained-place" key={feature.id}>
+            <div className="contained-place-heading">
+              <h3>{feature.properties.place_label}</h3>
+              <span>
+                {feature.properties.record_count} record
+                {feature.properties.record_count === 1 ? "" : "s"}
+              </span>
+            </div>
+            <AtlasEventList events={feature.properties.events ?? []} data={data} />
+          </section>
+        ))}
+      </div>
+    </aside>
   );
 }
 
