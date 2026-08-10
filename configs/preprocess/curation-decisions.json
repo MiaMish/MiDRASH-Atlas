@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0.0",
+  "same_work_internal_ids": [
+    {
+      "internal_id": "150:T",
+      "preferred_title": "Story of Hanukkah",
+      "decision": "same_work_alternate_titles",
+      "comment": "User decision on 2026-08-07: Story of Hanukkah / Ma'aseh Hanukkah and Aggadat Hanukkah are two names for the same work. Preserve both source rows and titles under one canonical work identity."
+    }
+  ],
+  "excluded_unused_ontology_rows": [
+    {
+      "row": 5,
+      "label": "Mekhilta Leviticus",
+      "reason": "Unused by the manuscript, creation, and edition sources; retain the incomplete hypothetical-work source row as-is and exclude it from canonical export for now."
+    },
+    {
+      "row": 151,
+      "label": "Aggadot HaTalmud",
+      "reason": "Unused by the manuscript, creation, and edition sources; retain the incomplete source row as-is and exclude it from canonical export for now."
+    }
+  ],
+  "merged_interpretations": [
+    {
+      "label": "ספרי אסופות של מדרשים",
+      "interpreter": "Reizel",
+      "target_work_ids": [
+        "3:18:1.0",
+        "3:19:1.0"
+      ],
+      "resolution": "preserve_as_multi_work_assertion",
+      "comment": "The project ontology is authoritative that Otzar HaMidrashim and Batei Midrashot are separate works. Reizel merges them under one label and ID 54; preserve that as Reizel's interpretation rather than merging the canonical works."
+    }
+  ],
+  "excluded_manuscript_rows": [
+    {
+      "row": 53,
+      "reason": "Placeholder row with project ID 52 but no system ID, shelfmark, contents, or other manuscript data."
+    },
+    {
+      "row": 87,
+      "reason": "Placeholder row with project ID 87 but no system ID, shelfmark, contents, or other manuscript data."
+    },
+    {
+      "row": 92,
+      "reason": "Placeholder row with project ID 92 but no system ID, shelfmark, contents, or other manuscript data."
+    }
+  ],
+  "edition_work_overrides": [
+    {
+      "row": 145,
+      "raw_description": "מדרש דברים רבה, מהד' ש' ליברמן, ירושלים ת\"ש.",
+      "work_label": "דברים רבה ליברמן",
+      "target_work_id": "1.5:1:2.0",
+      "reason": "The bibliographic description itself identifies the Lieberman recension even though the source work column is blank."
+    }
+  ],
+  "edition_year_overrides": [
+    {
+      "row": 280,
+      "source_year": 1613,
+      "corrected_year": 1893,
+      "reason": "The bibliographic description says Vilna תרנ\"ג, which is 1893; the numeric source value 1613 conflicts with its own citation."
+    }
+  ],
+  "marked_duplicate_editions": {
+    "interpret_as": "reprint",
+    "identity": "retain_separate_source_assertions",
+    "grouping": "reprint_of",
+    "comment": "User decision on 2026-08-07: rows marked כפולה are retained separately and grouped as reprints."
+  }
+}

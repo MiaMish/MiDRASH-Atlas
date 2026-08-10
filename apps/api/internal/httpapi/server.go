@@ -18,6 +18,7 @@ import (
 
 type Config struct {
 	ExportDir          string
+	PreparedDir        string
 	GazetteerPilotPath string
 	CurationDraftsPath string
 }
@@ -39,9 +40,24 @@ func New(cfg Config, locations locationstore.Store, generator DraftGenerator) ht
 	mux.HandleFunc("/api/v1/curation/geometry-draft", s.geometryDraft)
 	mux.HandleFunc("/api/v1/location-overview", s.locationOverview)
 	mux.HandleFunc("/api/v1/atlas-view", s.atlasView)
+	mux.HandleFunc("/api/v1/atlas", s.canonicalAtlas)
 	mux.HandleFunc("/api/v1/locations/", s.locationsRoute)
 	mux.HandleFunc("/api/v1/", s.atlasResources)
 	return withCORS(mux)
+}
+
+func (s *server) canonicalAtlas(w http.ResponseWriter, r *http.Request) {
+	if r.Method != http.MethodGet {
+		writeError(w, http.StatusMethodNotAllowed, errors.New("GET required"))
+		return
+	}
+	path := filepath.Join(s.cfg.PreparedDir, "atlas-canonical.json")
+	if s.cfg.PreparedDir == "" {
+		writeError(w, http.StatusNotFound, errors.New("canonical pilot is not configured"))
+		return
+	}
+	w.Header().Set("Cache-Control", "no-cache")
+	http.ServeFile(w, r, path)
 }
 
 func (s *server) health(w http.ResponseWriter, _ *http.Request) {

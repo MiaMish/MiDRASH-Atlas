@@ -71,6 +71,19 @@ func TestTemporalViewAppliesCircaPolicy(t *testing.T) {
 	}
 }
 
+func TestCanonicalAtlasEndpoint(t *testing.T) {
+	preparedDir := t.TempDir()
+	writeFixture(t, filepath.Join(preparedDir, "atlas-canonical.json"), `{"schema_version":"2.0.0-alpha.1","works":[{"id":"1.15:1:1.0"}]}`)
+	store := openStore(t)
+	handler := New(Config{PreparedDir: preparedDir}, store, fakeGenerator{})
+	req := httptest.NewRequest(http.MethodGet, "/api/v1/atlas", nil)
+	res := httptest.NewRecorder()
+	handler.ServeHTTP(res, req)
+	if res.Code != http.StatusOK || !bytes.Contains(res.Body.Bytes(), []byte(`"id":"1.15:1:1.0"`)) {
+		t.Fatalf("canonical pilot unavailable: %d %s", res.Code, res.Body.String())
+	}
+}
+
 func TestLocationEndpointCreatesAuditedRevisions(t *testing.T) {
 	store := openStore(t)
 	handler := New(Config{ExportDir: t.TempDir()}, store, fakeGenerator{})

@@ -5,6 +5,20 @@ evidence-preserving atlas dataset. The PoC does not select one authoritative
 location or date for a manuscript. It exports competing geographic and temporal
 assertions so researchers can compare source strategies in the UI.
 
+## Three-layer replacement in progress
+
+The project is being refactored around three explicitly separate scholarly
+layers: the work (hibur), the physical item, and the text. Every event,
+assertion, filter, drill-down, and map feature must declare which layer it
+belongs to. The current application remains available while a complete pilot
+slice is built against the replacement model.
+
+The durable architecture note is in
+[`docs/three-layer-architecture.md`](docs/three-layer-architecture.md). New
+source files first pass through a standalone preprocessing and validation
+boundary; the atlas application will consume prepared data rather than clean
+CSV or MARC records itself.
+
 ![Annotated atlas workspace](docs/images/atlas-overview-annotated.jpg)
 
 ## What the PoC includes
@@ -30,18 +44,23 @@ apps/
   api/                  Go HTTP API and CLI
   web/                  React/Vite UI
 packages/
+  canonical/            Canonical three-layer data contract
+  preprocess/           Source validation and preparation boundary
   atlas/                MARC normalization and atlas export
   gazetteer/            Cached candidate acquisition
   llm/                  OpenAI/Ollama provider clients
   provenance/           Shared AI provenance model
 configs/atlas/          Curated source and geometry configuration
 data/
+  sources_new/          Incoming work, item, edition, and creation sources
+  prepared/             Validation reports and prepared outputs
   source/               Project CSV and RDF inputs
   raw/                  Cached NLI MARCXML and gazetteer responses
   derived/              Normalized NLI data and curation-pilot artifacts
   generated/atlas/      UI/API export
   runtime/              Shared SQLite curation database
 tools/nli/              NLI retrieval tooling
+tools/preprocess/       Replacement-source preprocessing CLI
 ```
 
 ## Quick start
@@ -67,6 +86,28 @@ Go service at `http://127.0.0.1:8080`.
 
 The repository contains the shared PoC SQLite database at
 `data/runtime/atlas.sqlite`. Do not delete it when cleaning generated files.
+
+## Validate the replacement sources
+
+```bash
+GOCACHE=/private/tmp/midrash-atlas-go-cache \
+  /opt/homebrew/bin/go run ./tools/preprocess
+```
+
+This writes:
+
+- `data/prepared/validation-report.json`, the source-quality gate; and
+- `data/prepared/atlas-canonical.json`, the canonical three-layer catalogue,
+  generated only when no blocking validation errors remain.
+
+Add `--strict` when the command should fail until all blocking source problems
+have been resolved. The current export contains 167 ontology works, eight
+clearly marked manuscript-reference stubs, 340 manuscript items, and 317
+printed editions. NLI enrichment is attached to all 340 valid manuscript IDs;
+the single malformed system-ID cell remains source evidence but is not promoted
+to an item identity. Vatican Ebr. 44 and Midrash Proverbs remain the featured,
+hand-structured item/work example. The text layer is explicitly marked pending
+until the Sefaria passage and NER step.
 
 ## Generate the atlas data
 

@@ -1,5 +1,65 @@
 # Decision log
 
+## 2026-08-07 — Make Work, Item, and Text explicit atlas layers
+
+The replacement atlas model has three first-class layers: `work` for the
+Hibbur/composition, `item` for manuscripts and printed editions and their event
+biographies, and `text` for passages and named-entity mentions. All events,
+assertions, map observations, filters, and drill-down results identify their
+layer. Shared places, agents, dates, and evidence connect the layers without
+collapsing them. In particular, a textual place mention is not historical
+evidence that a work or item was present there.
+
+## 2026-08-07 — Put heterogeneous cleanup before the atlas boundary
+
+The atlas consumes validated canonical data. CSV cleanup, identifier repair,
+cross-source reconciliation, narrative extraction, and MARC transformation
+belong to a standalone preprocessing flow. MARC is one input among many and
+does not define the future application contract. Raw evidence and competing
+claims remain preserved throughout preprocessing.
+
+## 2026-08-07 — Prove the replacement with one complete vertical slice
+
+The first replacement slice centers on Midrash Proverbs and Vatican Ebr. 44,
+covering work formation, manuscript biography, printed editions, and textual
+NER. The old implementation remains only until this slice works end to end; it
+will then be removed instead of supported as a second model.
+
+## 2026-08-07 — Treat the two Hanukkah titles as one work
+
+`מעשה חנוכה` (Story of Hanukkah) and `אגדת חנוכה` (Aggadat Hanukkah) are
+alternate names for the same work. Preserve both ontology source rows and
+titles, but resolve both to canonical work ID `150:T`.
+
+## 2026-08-07 — Create explicit temporary works for unresolved manuscript labels
+
+When a manuscript contents label does not resolve to the supplied ontology,
+preprocessing creates a clearly marked `stub:mss:*` hibur rather than dropping
+the relationship or silently mapping it. Each stub cites all manuscript source
+rows and available system IDs. Questions needed to replace the stubs with
+scholarly decisions are recorded in `docs/Qs to Eliezer.md`.
+
+## 2026-08-07 — Interpret source-marked duplicate editions as reprints
+
+Printed-edition rows marked `כפולה` remain separate source assertions and
+separate item records. Preprocessing will group them with an explicit
+`reprint_of` relationship; it must not collapse or discard them.
+
+## 2026-08-07 — Keep project ontology identity authoritative over merged interpretations
+
+When an interpreter groups works that the hibur ontology defines separately,
+the works remain separate canonical entities. Preserve the interpreter's
+grouping as a sourced multi-work assertion. In particular, Reizel's label
+`ספרי אסופות של מדרשים` and ID `54` relate to both `אוצר המדרשים`
+(`3:18:1.0`) and `בתי מדרשות` (`3:19:1.0`) without merging those works.
+
+## 2026-08-07 — Use visibly temporary IDs for incomplete ontology rows
+
+Ontology rows needed by other sources but lacking `ID חדש?` receive curated
+IDs beginning `stub:ontology:`. These IDs are stored outside the raw ontology
+CSV, include exact usage references, and must be replaced when permanent IDs
+are supplied. Unused incomplete rows may remain unchanged and excluded.
+
 ## 2026-07-28 — Preserve competing assertions
 
 The PoC will export multiple geo and temporal assertions rather than calculate

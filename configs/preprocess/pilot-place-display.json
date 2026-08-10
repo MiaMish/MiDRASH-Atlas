@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0.0",
+  "purpose": "unreviewed schematic display positions for the first three-layer UI pilot",
+  "places": [
+    {"label":"Land of Israel","variant_id":"schematic_historical_region","latitude":31.8,"longitude":35.2,"spatial_precision":"regional_centroid","review_status":"unreviewed_seed","note":"Schematic centroid for a broad historical formation claim; not a claim of a precise point or modern boundary."},
+    {"label":"Vatican City, Vatican City State","variant_id":"modern_place","latitude":41.903,"longitude":12.453,"spatial_precision":"city","review_status":"unreviewed_seed","note":"Approximate modern display point for current repository custody."},
+    {"label":"Ann Arbor","variant_id":"modern_place","latitude":42.281,"longitude":-83.743,"spatial_precision":"city","review_status":"unreviewed_seed","note":"Approximate modern city display point for a publication event."},
+    {"label":"New York","variant_id":"modern_place","latitude":40.713,"longitude":-74.006,"spatial_precision":"city","review_status":"unreviewed_seed","note":"Approximate modern city display point for publication events."},
+    {"label":"Constantinople","variant_id":"historical_place_modern_reference","latitude":41.008,"longitude":28.978,"spatial_precision":"city","review_status":"unreviewed_seed","note":"Approximate display point using modern Istanbul as reference; the historical place name is preserved on the event."},
+    {"label":"Venice","variant_id":"modern_place","latitude":45.441,"longitude":12.316,"spatial_precision":"city","review_status":"unreviewed_seed","note":"Approximate modern city display point for a publication event."},
+    {"label":"Vilna","variant_id":"historical_place_modern_reference","latitude":54.687,"longitude":25.280,"spatial_precision":"city","review_status":"unreviewed_seed","note":"Approximate display point using modern Vilnius as reference; the historical place name is preserved on the event."},
+    {"label":"New Haven","variant_id":"modern_place","latitude":41.308,"longitude":-72.928,"spatial_precision":"city","review_status":"unreviewed_seed","note":"Approximate modern city display point for a publication event."}
+  ]
+}

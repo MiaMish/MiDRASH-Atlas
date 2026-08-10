@@ -179,8 +179,9 @@ func export(args []string) {
 
 func serve(args []string) {
 	fs := flag.NewFlagSet("serve", flag.ExitOnError)
-	var dir, addr, databasePath, gazetteerPilotPath, curationDraftsPath string
+	var dir, preparedDir, addr, databasePath, gazetteerPilotPath, curationDraftsPath string
 	fs.StringVar(&dir, "dir", "data/generated/atlas", "export directory")
+	fs.StringVar(&preparedDir, "prepared-dir", "data/prepared", "validated canonical data directory")
 	fs.StringVar(&addr, "addr", "127.0.0.1:8080", "listen address")
 	fs.StringVar(&databasePath, "database", "data/runtime/atlas.sqlite", "SQLite audit database")
 	fs.StringVar(&gazetteerPilotPath, "gazetteer-pilot", "data/derived/gazetteer/nominatim-pilot.json", "cached gazetteer candidates")
@@ -201,7 +202,7 @@ func serve(args []string) {
 		DefaultModel:    firstNonempty(os.Getenv("CURATION_LLM_MODEL"), "qwen3.5:35b"),
 	})
 	mux := httpapi.New(httpapi.Config{
-		ExportDir: dir, GazetteerPilotPath: gazetteerPilotPath, CurationDraftsPath: curationDraftsPath,
+		ExportDir: dir, PreparedDir: preparedDir, GazetteerPilotPath: gazetteerPilotPath, CurationDraftsPath: curationDraftsPath,
 	}, store, generator)
 	log.Printf("serving atlas API on http://%s", addr)
 	log.Fatal(http.ListenAndServe(addr, mux))

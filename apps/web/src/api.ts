@@ -144,6 +144,8 @@ export async function saveGeometryRevision(
 
 export type TemporalValue = {
   kind: string;
+  display?: string;
+  date?: string;
   year?: number;
   start_year?: number;
   end_year?: number;
@@ -342,4 +344,122 @@ export async function fetchAtlasView(
   const response = await fetch(`/api/v1/atlas-view?${query.toString()}`, { signal });
   if (!response.ok) throw new Error(await response.text());
   return response.json() as Promise<AtlasView>;
+}
+
+export type CanonicalLayer = "work" | "item" | "text";
+
+export type CanonicalEvidence = {
+  source_id: string;
+  source_record?: string;
+  field?: string;
+  raw: string;
+  extraction: string;
+  review_status: string;
+};
+
+export type CanonicalWork = {
+  id: string;
+  layer: "work";
+  title: string;
+  hebrew_title?: string;
+  aliases?: string[];
+  families?: string[];
+  identifiers?: Array<{ scheme: string; value: string }>;
+  evidence?: CanonicalEvidence[];
+};
+
+export type CanonicalItem = {
+  id: string;
+  layer: "item";
+  kind: "manuscript" | "printed_edition";
+  title: string;
+  work_links: Array<{
+    work_id: string;
+    relation: string;
+    raw_label?: string;
+    source_ref?: string;
+  }> | null;
+  parts?: Array<{
+    id: string;
+    kind: string;
+    label: string;
+    range?: string;
+    work_ids?: string[];
+    evidence?: CanonicalEvidence[];
+  }>;
+  attributes?: Array<{
+    key: string;
+    label: string;
+    values: string[];
+    evidence: CanonicalEvidence[];
+  }>;
+  identifiers?: Array<{ scheme: string; value: string }>;
+  evidence?: CanonicalEvidence[];
+};
+
+export type CanonicalText = {
+  id: string;
+  layer: "text";
+  work_id: string;
+  item_id?: string;
+  citation: string;
+  language: string;
+  content: string;
+  status: string;
+};
+
+export type CanonicalEvent = {
+  id: string;
+  layer: CanonicalLayer;
+  type: string;
+  label: string;
+  subject: { layer: CanonicalLayer; id: string };
+  related?: Array<{ layer: CanonicalLayer; id: string; relation: string }>;
+  agents?: Array<{ agent_id: string; role: string }>;
+  places?: Array<{
+    place_id?: string;
+    raw_name: string;
+    role: string;
+    confidence?: string;
+    evidence: CanonicalEvidence[];
+  }>;
+  times?: Array<{
+    value: TemporalValue;
+    confidence?: string;
+    evidence: CanonicalEvidence[];
+  }>;
+  evidence: CanonicalEvidence[];
+  review_state: string;
+};
+
+export type CanonicalPlace = {
+  id: string;
+  label: string;
+  display_geometry?: {
+    variant_id: string;
+    type: "Point";
+    coordinates: [number, number];
+    spatial_precision: string;
+    review_status: string;
+    interpretation_note: string;
+    evidence: CanonicalEvidence[];
+  };
+};
+
+export type CanonicalAtlas = {
+  schema_version: string;
+  layer_states: Array<{ layer: CanonicalLayer; status: string; note?: string }>;
+  works: CanonicalWork[];
+  items: CanonicalItem[];
+  texts: CanonicalText[];
+  events: CanonicalEvent[];
+  places: CanonicalPlace[];
+  agents: Array<{ id: string; label: string; aliases?: string[] }>;
+  sources: Array<{ id: string; type: string; label: string; citation?: string; url?: string }>;
+};
+
+export async function fetchCanonicalAtlas(signal?: AbortSignal): Promise<CanonicalAtlas> {
+  const response = await fetch("/api/v1/atlas", { signal });
+  if (!response.ok) throw new Error(await response.text());
+  return response.json() as Promise<CanonicalAtlas>;
 }

@@ -1,0 +1,1520 @@
+{
+  "schema_version": "1.0.0",
+  "summary": {
+    "status": "valid_with_warnings",
+    "error_groups": 0,
+    "warning_groups": 62,
+    "info_groups": 22,
+    "error_occurrences": 0,
+    "warning_occurrences": 437,
+    "info_occurrences": 79
+  },
+  "sources": [
+    {
+      "id": "hiburim",
+      "path": "data/sources_new/list_of_hiburin_ontology.csv",
+      "sha256": "655624e10d5d6570aa5e9ed41e317784a4467ab07afcba7fbfc81c0579d55df9",
+      "rows": 170,
+      "meaningful_rows": 170
+    },
+    {
+      "id": "generated_hibur_stub_ids",
+      "path": "data/sources_new/hibur_generated_stub_ids.csv",
+      "sha256": "5a3056a8af1ac2345f7ce0869e62fa787325495ceff58c66666d2944de6a7b50",
+      "rows": 10,
+      "meaningful_rows": 10
+    },
+    {
+      "id": "manuscript_reference_hibur_stubs",
+      "path": "data/sources_new/hiburim_from_manuscript_references.csv",
+      "sha256": "563096b251d6377a7e55fbf67d1e46af612ee0bb7e46de2adf901c219c486afd",
+      "rows": 8,
+      "meaningful_rows": 8
+    },
+    {
+      "id": "manuscripts",
+      "path": "data/sources_new/Midrash Mss.csv",
+      "sha256": "e6d56b40c74123c53e9bb6f0a2887f00e50943a933165316436049ac7ee978fe",
+      "rows": 346,
+      "meaningful_rows": 346
+    },
+    {
+      "id": "work_creation",
+      "path": "data/sources_new/mayim_all_categories_creation.csv",
+      "sha256": "d9c53be11d2e3b0d7abb17927454a3fc973f66b0a92d69fafe103f811fee42f0",
+      "rows": 54,
+      "meaningful_rows": 54
+    },
+    {
+      "id": "printed_editions",
+      "path": "data/sources_new/mayim_all_categories_editions.csv",
+      "sha256": "5fab471a0ea908ec58bd9688ccd66c5eb6cd9c70d625ff63fffe52755f2a219b",
+      "rows": 317,
+      "meaningful_rows": 317
+    }
+  ],
+  "metrics": {
+    "manuscripts.rows_with_work_links": 337,
+    "manuscripts.source_rows": 346,
+    "manuscripts.work_links": 534,
+    "manuscripts.work_links_ambiguous": 0,
+    "manuscripts.work_links_exact_ontology": 501,
+    "manuscripts.work_links_invalid_target_id": 0,
+    "manuscripts.work_links_merged_interpretation": 0,
+    "manuscripts.work_links_unresolved": 0,
+    "manuscripts.work_links_via_alias": 33,
+    "printed_editions.alias_joins": 157,
+    "printed_editions.ambiguous_joins": 0,
+    "printed_editions.derived_item_ids": 317,
+    "printed_editions.exact_ontology_joins": 146,
+    "printed_editions.invalid_target_id_joins": 0,
+    "printed_editions.merged_interpretation_joins": 14,
+    "printed_editions.source_rows": 317,
+    "printed_editions.unresolved_joins": 0,
+    "work_creation.alias_joins": 23,
+    "work_creation.ambiguous_joins": 0,
+    "work_creation.context_rows": 1,
+    "work_creation.exact_ontology_joins": 29,
+    "work_creation.invalid_target_id_joins": 0,
+    "work_creation.merged_interpretation_joins": 1,
+    "work_creation.narratives": 53,
+    "work_creation.source_rows": 54,
+    "work_creation.unresolved_joins": 0,
+    "works.approved_shared_internal_ids": 1,
+    "works.duplicate_internal_ids": 0,
+    "works.generated_ontology_stub_ids": 10,
+    "works.manuscript_reference_stubs": 8,
+    "works.source_rows": 168,
+    "works.with_internal_id": 167
+  },
+  "issues": [
+    {
+      "severity": "warning",
+      "code": "ambiguous_work_alias",
+      "source_id": "hiburim",
+      "field": "aliases",
+      "value": "midrash rabbah. song of songs",
+      "rows": [
+        31,
+        49
+      ],
+      "count": 2,
+      "message": "The normalized alias occurs on more than one work and cannot be used as an automatic join key."
+    },
+    {
+      "severity": "warning",
+      "code": "ambiguous_work_alias",
+      "source_id": "hiburim",
+      "field": "aliases",
+      "value": "numbers rabbah",
+      "rows": [
+        20,
+        21
+      ],
+      "count": 2,
+      "message": "The normalized alias occurs on more than one work and cannot be used as an automatic join key."
+    },
+    {
+      "severity": "warning",
+      "code": "ambiguous_work_alias",
+      "source_id": "hiburim",
+      "field": "aliases",
+      "value": "ספרי אסופות של מדרשים",
+      "rows": [
+        156,
+        157
+      ],
+      "count": 2,
+      "message": "The normalized alias occurs on more than one work and cannot be used as an automatic join key."
+    },
+    {
+      "severity": "warning",
+      "code": "work_missing_ontology_join_key",
+      "source_id": "hiburim",
+      "field": "אונטולוגיה",
+      "value": "Mekhilta de-Rabbi Ishmael",
+      "rows": [
+        2
+      ],
+      "count": 1,
+      "message": "The preferred manuscript join key is empty; aliases may still identify the work."
+    },
+    {
+      "severity": "warning",
+      "code": "work_missing_ontology_join_key",
+      "source_id": "hiburim",
+      "field": "אונטולוגיה",
+      "value": "Mekhilta de-Rabbi Shimon bar Yohai",
+      "rows": [
+        3
+      ],
+      "count": 1,
+      "message": "The preferred manuscript join key is empty; aliases may still identify the work."
+    },
+    {
+      "severity": "warning",
+      "code": "work_missing_ontology_join_key",
+      "source_id": "hiburim",
+      "field": "אונטולוגיה",
+      "value": "Mekhilta to Deuteronomy; Midrash Tannaim",
+      "rows": [
+        11
+      ],
+      "count": 1,
+      "message": "The preferred manuscript join key is empty; aliases may still identify the work."
+    },
+    {
+      "severity": "warning",
+      "code": "work_missing_ontology_join_key",
+      "source_id": "hiburim",
+      "field": "אונטולוגיה",
+      "value": "Sifra",
+      "rows": [
+        4
+      ],
+      "count": 1,
+      "message": "The preferred manuscript join key is empty; aliases may still identify the work."
+    },
+    {
+      "severity": "warning",
+      "code": "work_missing_ontology_join_key",
+      "source_id": "hiburim",
+      "field": "אונטולוגיה",
+      "value": "Sifrei",
+      "rows": [
+        6
+      ],
+      "count": 1,
+      "message": "The preferred manuscript join key is empty; aliases may still identify the work."
+    },
+    {
+      "severity": "warning",
+      "code": "work_missing_ontology_join_key",
+      "source_id": "hiburim",
+      "field": "אונטולוגיה",
+      "value": "Sifrei Deuteronomy",
+      "rows": [
+        10
+      ],
+      "count": 1,
+      "message": "The preferred manuscript join key is empty; aliases may still identify the work."
+    },
+    {
+      "severity": "warning",
+      "code": "work_missing_ontology_join_key",
+      "source_id": "hiburim",
+      "field": "אונטולוגיה",
+      "value": "Sifrei Numbers",
+      "rows": [
+        7
+      ],
+      "count": 1,
+      "message": "The preferred manuscript join key is empty; aliases may still identify the work."
+    },
+    {
+      "severity": "warning",
+      "code": "work_missing_ontology_join_key",
+      "source_id": "hiburim",
+      "field": "אונטולוגיה",
+      "value": "Sifrei Zuta",
+      "rows": [
+        8
+      ],
+      "count": 1,
+      "message": "The preferred manuscript join key is empty; aliases may still identify the work."
+    },
+    {
+      "severity": "warning",
+      "code": "work_missing_ontology_join_key",
+      "source_id": "hiburim",
+      "field": "אונטולוגיה",
+      "value": "Sifrei Zuta to Deuteronomy",
+      "rows": [
+        12
+      ],
+      "count": 1,
+      "message": "The preferred manuscript join key is empty; aliases may still identify the work."
+    },
+    {
+      "severity": "warning",
+      "code": "work_missing_ontology_join_key",
+      "source_id": "hiburim",
+      "field": "אונטולוגיה",
+      "value": "Sifrei Zuta to Numbers",
+      "rows": [
+        9
+      ],
+      "count": 1,
+      "message": "The preferred manuscript join key is empty; aliases may still identify the work."
+    },
+    {
+      "severity": "warning",
+      "code": "manuscript_missing_project_id",
+      "source_id": "manuscripts",
+      "field": "Midrash_MSS ID",
+      "rows": [
+        2,
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308,
+        309,
+        310,
+        311,
+        312,
+        313,
+        314,
+        315,
+        316,
+        317,
+        318,
+        319,
+        320,
+        321,
+        322,
+        323,
+        324,
+        325,
+        326,
+        327,
+        328,
+        329,
+        330,
+        331,
+        332,
+        333,
+        334,
+        335,
+        336,
+        337,
+        338,
+        339,
+        340,
+        341,
+        342,
+        343,
+        344,
+        345,
+        346,
+        347
+      ],
+      "count": 48,
+      "message": "The project-local manuscript ID is absent; the system ID remains available as the canonical item ID."
+    },
+    {
+      "severity": "warning",
+      "code": "noncanonical_work_join",
+      "source_id": "manuscripts",
+      "field": "חיבורים - טור זמני",
+      "value": "לקח טוב",
+      "rows": [
+        88,
+        153,
+        224,
+        225,
+        226,
+        227,
+        228,
+        229,
+        230,
+        231,
+        232,
+        233,
+        234,
+        235,
+        236,
+        237,
+        238,
+        239,
+        240,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253,
+        254
+      ],
+      "count": 33,
+      "message": "The work label resolves through an alias but does not exactly match the preferred ontology join key."
+    },
+    {
+      "severity": "warning",
+      "code": "edition_missing_type",
+      "source_id": "printed_editions",
+      "field": "סוג דפוס",
+      "rows": [
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        91,
+        92,
+        93,
+        94,
+        96,
+        97,
+        98,
+        100,
+        101,
+        102,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        144,
+        146,
+        148,
+        152,
+        153,
+        154,
+        156,
+        157,
+        158,
+        159,
+        161,
+        162,
+        163,
+        164,
+        167,
+        168,
+        169,
+        170,
+        173,
+        174,
+        175,
+        178,
+        186,
+        188,
+        189,
+        190,
+        191,
+        193,
+        194,
+        195,
+        198,
+        200,
+        203,
+        204,
+        206,
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216,
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224,
+        225,
+        226,
+        227,
+        228,
+        229,
+        230,
+        232,
+        242,
+        247,
+        249,
+        250,
+        251,
+        252,
+        253,
+        256,
+        257,
+        260,
+        261,
+        265,
+        266,
+        267,
+        272,
+        273,
+        274,
+        276,
+        277,
+        280,
+        282,
+        285,
+        286,
+        287,
+        289,
+        290,
+        291,
+        292,
+        293,
+        294,
+        295,
+        296,
+        298,
+        299,
+        301,
+        302,
+        303,
+        308,
+        310,
+        311,
+        314,
+        315,
+        316,
+        317
+      ],
+      "count": 160,
+      "message": "The edition can be retained, but its subtype is not classified."
+    },
+    {
+      "severity": "warning",
+      "code": "noncanonical_work_join",
+      "source_id": "printed_editions",
+      "field": "יצירה",
+      "value": "אסתר רבה א",
+      "rows": [
+        35,
+        190
+      ],
+      "count": 2,
+      "message": "The work label resolves through an alias but does not exactly match the preferred ontology join key."
+    },
+    {
+      "severity": "warning",
+      "code": "noncanonical_work_join",
+      "source_id": "printed_editions",
+      "field": "יצירה",
+      "value": "אסתר רבה ב",
+      "rows": [
+        36
+      ],
+      "count": 1,
+      "message": "The work label resolves through an alias but does not exactly match the preferred ontology join key."
+    },
+    {
+      "severity": "warning",
+      "code": "noncanonical_work_join",
+      "source_id": "printed_editions",
+      "field": "יצירה",
+      "value": "דברי הימים של משה רבנו",
+      "rows": [
+        44,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212
+      ],
+      "count": 7,
+      "message": "The work label resolves through an alias but does not exactly match the preferred ontology join key."
+    },
+    {
+      "severity": "warning",
+      "code": "noncanonical_work_join",
+      "source_id": "printed_editions",
+      "field": "יצירה",
+      "value": "ילקוט המכירי",
+      "rows": [
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        261
+      ],
+      "count": 14,
+      "message": "The work label resolves through an alias but does not exactly match the preferred ontology join key."
+    },
+    {
+      "severity": "warning",
+      "code": "noncanonical_work_join",
+      "source_id": "printed_editions",
+      "field": "יצירה",
+      "value": "ילקוט שכל טוב",
+      "rows": [
+        48,
+        243
+      ],
+      "count": 2,
+      "message": "The work label resolves through an alias but does not exactly match the preferred ontology join key."
+    },
+    {
+      "severity": "warning",
+      "code": "noncanonical_work_join",
+      "source_id": "printed_editions",
+      "field": "יצירה",
+      "value": "לקח טוב - פסיקתא זוטרתא",
+      "rows": [
+        47,
+        233,
+        234,
+        235,
+        236,
+        237,
+        238,
+        239,
+        240,
+        241,
+        242
+      ],
+      "count": 11,
+      "message": "The work label resolves through an alias but does not exactly match the preferred ontology join key."
+    },
+    {
+      "severity": "warning",
+      "code": "noncanonical_work_join",
+      "source_id": "printed_editions",
+      "field": "יצירה",
+      "value": "מדרש אבא גוריון",
+      "rows": [
+        37,
+        38,
+        191,
+        192,
+        199
+      ],
+      "count": 5,
+      "message": "The work label resolves through an alias but does not exactly match the preferred ontology join key."
+    },
+    {
+      "severity": "warning",
+      "code": "noncanonical_work_join",
+      "source_id": "printed_editions",
+      "field": "יצירה",
+      "value": "מדרש דברים זוטא",
+      "rows": [
+        43,
+        206
+      ],
+      "count": 2,
+      "message": "The work label resolves through an alias but does not exactly match the preferred ontology join key."
+    },
+    {
+      "severity": "warning",
+      "code": "noncanonical_work_join",
+      "source_id": "printed_editions",
+      "field": "יצירה",
+      "value": "מדרש עשרת הדיברות",
+      "rows": [
+        45,
+        213,
+        214,
+        215,
+        216,
+        217
+      ],
+      "count": 6,
+      "message": "The work label resolves through an alias but does not exactly match the preferred ontology join key."
+    },
+    {
+      "severity": "warning",
+      "code": "noncanonical_work_join",
+      "source_id": "printed_editions",
+      "field": "יצירה",
+      "value": "מדרש פנים אחרות נוסח ב'",
+      "rows": [
+        193
+      ],
+      "count": 1,
+      "message": "The work label resolves through an alias but does not exactly match the preferred ontology join key."
+    },
+    {
+      "severity": "warning",
+      "code": "noncanonical_work_join",
+      "source_id": "printed_editions",
+      "field": "יצירה",
+      "value": "מדרש תדשא או ברייתא דרבי פנחס בן יאיר",
+      "rows": [
+        39,
+        194,
+        195,
+        196
+      ],
+      "count": 4,
+      "message": "The work label resolves through an alias but does not exactly match the preferred ontology join key."
+    },
+    {
+      "severity": "warning",
+      "code": "noncanonical_work_join",
+      "source_id": "printed_editions",
+      "field": "יצירה",
+      "value": "מדרש תהילים – שוחר טוב",
+      "rows": [
+        269,
+        270,
+        271,
+        272,
+        273,
+        274,
+        275,
+        276,
+        277
+      ],
+      "count": 9,
+      "message": "The work label resolves through an alias but does not exactly match the preferred ontology join key."
+    },
+    {
+      "severity": "warning",
+      "code": "noncanonical_work_join",
+      "source_id": "printed_editions",
+      "field": "יצירה",
+      "value": "מכילתא דברים",
+      "rows": [
+        9,
+        124
+      ],
+      "count": 2,
+      "message": "The work label resolves through an alias but does not exactly match the preferred ontology join key."
+    },
+    {
+      "severity": "warning",
+      "code": "noncanonical_work_join",
+      "source_id": "printed_editions",
+      "field": "יצירה",
+      "value": "מכילתא דרבי ישמעאל",
+      "rows": [
+        2,
+        3,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84
+      ],
+      "count": 14,
+      "message": "The work label resolves through an alias but does not exactly match the preferred ontology join key."
+    },
+    {
+      "severity": "warning",
+      "code": "noncanonical_work_join",
+      "source_id": "printed_editions",
+      "field": "יצירה",
+      "value": "מכילתא דרבי שמעון בר יוחאי",
+      "rows": [
+        4,
+        85,
+        86,
+        87,
+        88
+      ],
+      "count": 5,
+      "message": "The work label resolves through an alias but does not exactly match the preferred ontology join key."
+    },
+    {
+      "severity": "warning",
+      "code": "noncanonical_work_join",
+      "source_id": "printed_editions",
+      "field": "יצירה",
+      "value": "סדר אליהו",
+      "rows": [
+        67,
+        297,
+        298,
+        299,
+        300,
+        301,
+        302,
+        303
+      ],
+      "count": 8,
+      "message": "The work label resolves through an alias but does not exactly match the preferred ontology join key."
+    },
+    {
+      "severity": "warning",
+      "code": "noncanonical_work_join",
+      "source_id": "printed_editions",
+      "field": "יצירה",
+      "value": "ספרא - תורת כהנים",
+      "rows": [
+        5,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98
+      ],
+      "count": 11,
+      "message": "The work label resolves through an alias but does not exactly match the preferred ontology join key."
+    },
+    {
+      "severity": "warning",
+      "code": "noncanonical_work_join",
+      "source_id": "printed_editions",
+      "field": "יצירה",
+      "value": "ספרי במדבר",
+      "rows": [
+        6,
+        7,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107
+      ],
+      "count": 11,
+      "message": "The work label resolves through an alias but does not exactly match the preferred ontology join key."
+    },
+    {
+      "severity": "warning",
+      "code": "noncanonical_work_join",
+      "source_id": "printed_editions",
+      "field": "יצירה",
+      "value": "ספרי דברים",
+      "rows": [
+        8,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123
+      ],
+      "count": 12,
+      "message": "The work label resolves through an alias but does not exactly match the preferred ontology join key."
+    },
+    {
+      "severity": "warning",
+      "code": "noncanonical_work_join",
+      "source_id": "printed_editions",
+      "field": "יצירה",
+      "value": "ספרי זוטא במדבר",
+      "rows": [
+        108,
+        109,
+        110,
+        111,
+        112
+      ],
+      "count": 5,
+      "message": "The work label resolves through an alias but does not exactly match the preferred ontology join key."
+    },
+    {
+      "severity": "warning",
+      "code": "noncanonical_work_join",
+      "source_id": "printed_editions",
+      "field": "יצירה",
+      "value": "ספרי זוטא דברים",
+      "rows": [
+        10,
+        125
+      ],
+      "count": 2,
+      "message": "The work label resolves through an alias but does not exactly match the preferred ontology join key."
+    },
+    {
+      "severity": "warning",
+      "code": "noncanonical_work_join",
+      "source_id": "printed_editions",
+      "field": "יצירה",
+      "value": "תנחומא ילמדנו",
+      "rows": [
+        17,
+        18,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165
+      ],
+      "count": 18,
+      "message": "The work label resolves through an alias but does not exactly match the preferred ontology join key."
+    },
+    {
+      "severity": "warning",
+      "code": "noncanonical_work_join",
+      "source_id": "printed_editions",
+      "field": "יצירה",
+      "value": "תשובת יונה הנביא",
+      "rows": [
+        41,
+        202,
+        203,
+        204,
+        205
+      ],
+      "count": 5,
+      "message": "The work label resolves through an alias but does not exactly match the preferred ontology join key."
+    },
+    {
+      "severity": "warning",
+      "code": "noncanonical_work_join",
+      "source_id": "work_creation",
+      "field": "Title",
+      "value": "אסתר רבה א",
+      "rows": [
+        29
+      ],
+      "count": 1,
+      "message": "The work label resolves through an alias but does not exactly match the preferred ontology join key."
+    },
+    {
+      "severity": "warning",
+      "code": "noncanonical_work_join",
+      "source_id": "work_creation",
+      "field": "Title",
+      "value": "אסתר רבה ב",
+      "rows": [
+        30
+      ],
+      "count": 1,
+      "message": "The work label resolves through an alias but does not exactly match the preferred ontology join key."
+    },
+    {
+      "severity": "warning",
+      "code": "noncanonical_work_join",
+      "source_id": "work_creation",
+      "field": "Title",
+      "value": "דברי הימים של משה רבנו",
+      "rows": [
+        39
+      ],
+      "count": 1,
+      "message": "The work label resolves through an alias but does not exactly match the preferred ontology join key."
+    },
+    {
+      "severity": "warning",
+      "code": "noncanonical_work_join",
+      "source_id": "work_creation",
+      "field": "Title",
+      "value": "ילקוט המכירי",
+      "rows": [
+        47
+      ],
+      "count": 1,
+      "message": "The work label resolves through an alias but does not exactly match the preferred ontology join key."
+    },
+    {
+      "severity": "warning",
+      "code": "noncanonical_work_join",
+      "source_id": "work_creation",
+      "field": "Title",
+      "value": "ילקוט שכל טוב",
+      "rows": [
+        44
+      ],
+      "count": 1,
+      "message": "The work label resolves through an alias but does not exactly match the preferred ontology join key."
+    },
+    {
+      "severity": "warning",
+      "code": "noncanonical_work_join",
+      "source_id": "work_creation",
+      "field": "Title",
+      "value": "לקח טוב - פסיקתא זוטרתא",
+      "rows": [
+        43
+      ],
+      "count": 1,
+      "message": "The work label resolves through an alias but does not exactly match the preferred ontology join key."
+    },
+    {
+      "severity": "warning",
+      "code": "noncanonical_work_join",
+      "source_id": "work_creation",
+      "field": "Title",
+      "value": "מדרש אבא גוריון",
+      "rows": [
+        31
+      ],
+      "count": 1,
+      "message": "The work label resolves through an alias but does not exactly match the preferred ontology join key."
+    },
+    {
+      "severity": "warning",
+      "code": "noncanonical_work_join",
+      "source_id": "work_creation",
+      "field": "Title",
+      "value": "מדרש דברים זוטא",
+      "rows": [
+        38
+      ],
+      "count": 1,
+      "message": "The work label resolves through an alias but does not exactly match the preferred ontology join key."
+    },
+    {
+      "severity": "warning",
+      "code": "noncanonical_work_join",
+      "source_id": "work_creation",
+      "field": "Title",
+      "value": "מדרש עשרת הדיברות",
+      "rows": [
+        40
+      ],
+      "count": 1,
+      "message": "The work label resolves through an alias but does not exactly match the preferred ontology join key."
+    },
+    {
+      "severity": "warning",
+      "code": "noncanonical_work_join",
+      "source_id": "work_creation",
+      "field": "Title",
+      "value": "מדרש פנים אחרות נוסח ב'",
+      "rows": [
+        32
+      ],
+      "count": 1,
+      "message": "The work label resolves through an alias but does not exactly match the preferred ontology join key."
+    },
+    {
+      "severity": "warning",
+      "code": "noncanonical_work_join",
+      "source_id": "work_creation",
+      "field": "Title",
+      "value": "מדרש תדשא או ברייתא דרבי פנחס בן יאיר",
+      "rows": [
+        33
+      ],
+      "count": 1,
+      "message": "The work label resolves through an alias but does not exactly match the preferred ontology join key."
+    },
+    {
+      "severity": "warning",
+      "code": "noncanonical_work_join",
+      "source_id": "work_creation",
+      "field": "Title",
+      "value": "מדרש תהילים – שוחר טוב",
+      "rows": [
+        49
+      ],
+      "count": 1,
+      "message": "The work label resolves through an alias but does not exactly match the preferred ontology join key."
+    },
+    {
+      "severity": "warning",
+      "code": "noncanonical_work_join",
+      "source_id": "work_creation",
+      "field": "Title",
+      "value": "מכילתא דברים",
+      "rows": [
+        9
+      ],
+      "count": 1,
+      "message": "The work label resolves through an alias but does not exactly match the preferred ontology join key."
+    },
+    {
+      "severity": "warning",
+      "code": "noncanonical_work_join",
+      "source_id": "work_creation",
+      "field": "Title",
+      "value": "מכילתא דרבי ישמעאל",
+      "rows": [
+        3
+      ],
+      "count": 1,
+      "message": "The work label resolves through an alias but does not exactly match the preferred ontology join key."
+    },
+    {
+      "severity": "warning",
+      "code": "noncanonical_work_join",
+      "source_id": "work_creation",
+      "field": "Title",
+      "value": "מכילתא דרבי שמעון בר יוחאי",
+      "rows": [
+        4
+      ],
+      "count": 1,
+      "message": "The work label resolves through an alias but does not exactly match the preferred ontology join key."
+    },
+    {
+      "severity": "warning",
+      "code": "noncanonical_work_join",
+      "source_id": "work_creation",
+      "field": "Title",
+      "value": "סדר אליהו",
+      "rows": [
+        53
+      ],
+      "count": 1,
+      "message": "The work label resolves through an alias but does not exactly match the preferred ontology join key."
+    },
+    {
+      "severity": "warning",
+      "code": "noncanonical_work_join",
+      "source_id": "work_creation",
+      "field": "Title",
+      "value": "ספרא - תורת כהנים",
+      "rows": [
+        5
+      ],
+      "count": 1,
+      "message": "The work label resolves through an alias but does not exactly match the preferred ontology join key."
+    },
+    {
+      "severity": "warning",
+      "code": "noncanonical_work_join",
+      "source_id": "work_creation",
+      "field": "Title",
+      "value": "ספרי במדבר",
+      "rows": [
+        6
+      ],
+      "count": 1,
+      "message": "The work label resolves through an alias but does not exactly match the preferred ontology join key."
+    },
+    {
+      "severity": "warning",
+      "code": "noncanonical_work_join",
+      "source_id": "work_creation",
+      "field": "Title",
+      "value": "ספרי דברים",
+      "rows": [
+        8
+      ],
+      "count": 1,
+      "message": "The work label resolves through an alias but does not exactly match the preferred ontology join key."
+    },
+    {
+      "severity": "warning",
+      "code": "noncanonical_work_join",
+      "source_id": "work_creation",
+      "field": "Title",
+      "value": "ספרי זוטא במדבר",
+      "rows": [
+        7
+      ],
+      "count": 1,
+      "message": "The work label resolves through an alias but does not exactly match the preferred ontology join key."
+    },
+    {
+      "severity": "warning",
+      "code": "noncanonical_work_join",
+      "source_id": "work_creation",
+      "field": "Title",
+      "value": "ספרי זוטא דברים",
+      "rows": [
+        10
+      ],
+      "count": 1,
+      "message": "The work label resolves through an alias but does not exactly match the preferred ontology join key."
+    },
+    {
+      "severity": "warning",
+      "code": "noncanonical_work_join",
+      "source_id": "work_creation",
+      "field": "Title",
+      "value": "תנחומא ילמדנו",
+      "rows": [
+        17
+      ],
+      "count": 1,
+      "message": "The work label resolves through an alias but does not exactly match the preferred ontology join key."
+    },
+    {
+      "severity": "warning",
+      "code": "noncanonical_work_join",
+      "source_id": "work_creation",
+      "field": "Title",
+      "value": "תשובת יונה הנביא",
+      "rows": [
+        35
+      ],
+      "count": 1,
+      "message": "The work label resolves through an alias but does not exactly match the preferred ontology join key."
+    },
+    {
+      "severity": "info",
+      "code": "approved_same_work_rows",
+      "source_id": "hiburim",
+      "field": "ID חדש?",
+      "value": "150:T",
+      "rows": [
+        111,
+        132
+      ],
+      "count": 2,
+      "message": "A curator confirmed that these source rows are alternate names for the same canonical work."
+    },
+    {
+      "severity": "info",
+      "code": "generated_ontology_stub_id_applied",
+      "source_id": "hiburim",
+      "field": "ID חדש?",
+      "value": "stub:ontology:mekhilta-deuteronomy",
+      "rows": [
+        11
+      ],
+      "count": 1,
+      "message": "A clearly marked temporary ID supplies a missing ontology ID until scholarly review assigns a permanent value."
+    },
+    {
+      "severity": "info",
+      "code": "generated_ontology_stub_id_applied",
+      "source_id": "hiburim",
+      "field": "ID חדש?",
+      "value": "stub:ontology:mekhilta-rabbi-ishmael",
+      "rows": [
+        2
+      ],
+      "count": 1,
+      "message": "A clearly marked temporary ID supplies a missing ontology ID until scholarly review assigns a permanent value."
+    },
+    {
+      "severity": "info",
+      "code": "generated_ontology_stub_id_applied",
+      "source_id": "hiburim",
+      "field": "ID חדש?",
+      "value": "stub:ontology:mekhilta-rabbi-shimon-bar-yohai",
+      "rows": [
+        3
+      ],
+      "count": 1,
+      "message": "A clearly marked temporary ID supplies a missing ontology ID until scholarly review assigns a permanent value."
+    },
+    {
+      "severity": "info",
+      "code": "generated_ontology_stub_id_applied",
+      "source_id": "hiburim",
+      "field": "ID חדש?",
+      "value": "stub:ontology:sifra",
+      "rows": [
+        4
+      ],
+      "count": 1,
+      "message": "A clearly marked temporary ID supplies a missing ontology ID until scholarly review assigns a permanent value."
+    },
+    {
+      "severity": "info",
+      "code": "generated_ontology_stub_id_applied",
+      "source_id": "hiburim",
+      "field": "ID חדש?",
+      "value": "stub:ontology:sifrei",
+      "rows": [
+        6
+      ],
+      "count": 1,
+      "message": "A clearly marked temporary ID supplies a missing ontology ID until scholarly review assigns a permanent value."
+    },
+    {
+      "severity": "info",
+      "code": "generated_ontology_stub_id_applied",
+      "source_id": "hiburim",
+      "field": "ID חדש?",
+      "value": "stub:ontology:sifrei-deuteronomy",
+      "rows": [
+        10
+      ],
+      "count": 1,
+      "message": "A clearly marked temporary ID supplies a missing ontology ID until scholarly review assigns a permanent value."
+    },
+    {
+      "severity": "info",
+      "code": "generated_ontology_stub_id_applied",
+      "source_id": "hiburim",
+      "field": "ID חדש?",
+      "value": "stub:ontology:sifrei-numbers",
+      "rows": [
+        7
+      ],
+      "count": 1,
+      "message": "A clearly marked temporary ID supplies a missing ontology ID until scholarly review assigns a permanent value."
+    },
+    {
+      "severity": "info",
+      "code": "generated_ontology_stub_id_applied",
+      "source_id": "hiburim",
+      "field": "ID חדש?",
+      "value": "stub:ontology:sifrei-zuta",
+      "rows": [
+        8
+      ],
+      "count": 1,
+      "message": "A clearly marked temporary ID supplies a missing ontology ID until scholarly review assigns a permanent value."
+    },
+    {
+      "severity": "info",
+      "code": "generated_ontology_stub_id_applied",
+      "source_id": "hiburim",
+      "field": "ID חדש?",
+      "value": "stub:ontology:sifrei-zuta-deuteronomy",
+      "rows": [
+        12
+      ],
+      "count": 1,
+      "message": "A clearly marked temporary ID supplies a missing ontology ID until scholarly review assigns a permanent value."
+    },
+    {
+      "severity": "info",
+      "code": "generated_ontology_stub_id_applied",
+      "source_id": "hiburim",
+      "field": "ID חדש?",
+      "value": "stub:ontology:sifrei-zuta-numbers",
+      "rows": [
+        9
+      ],
+      "count": 1,
+      "message": "A clearly marked temporary ID supplies a missing ontology ID until scholarly review assigns a permanent value."
+    },
+    {
+      "severity": "info",
+      "code": "unused_incomplete_ontology_row_excluded",
+      "source_id": "hiburim",
+      "field": "row",
+      "value": "151",
+      "rows": [
+        151
+      ],
+      "count": 1,
+      "message": "A curator chose to preserve this unused incomplete source row as-is and exclude it from canonical export for now."
+    },
+    {
+      "severity": "info",
+      "code": "unused_incomplete_ontology_row_excluded",
+      "source_id": "hiburim",
+      "field": "row",
+      "value": "5",
+      "rows": [
+        5
+      ],
+      "count": 1,
+      "message": "A curator chose to preserve this unused incomplete source row as-is and exclude it from canonical export for now."
+    },
+    {
+      "severity": "info",
+      "code": "manuscript_reference_stubs_loaded",
+      "source_id": "manuscript_reference_hibur_stubs",
+      "field": "status",
+      "value": "stub_created_from_manuscript_reference",
+      "count": 8,
+      "message": "Temporary hibur records were loaded from unresolved manuscript contents labels and remain explicitly marked as stubs."
+    },
+    {
+      "severity": "info",
+      "code": "empty_manuscript_placeholder_excluded",
+      "source_id": "manuscripts",
+      "field": "row",
+      "value": "53",
+      "rows": [
+        53
+      ],
+      "count": 1,
+      "message": "A curator excluded this empty project placeholder from canonical item export."
+    },
+    {
+      "severity": "info",
+      "code": "empty_manuscript_placeholder_excluded",
+      "source_id": "manuscripts",
+      "field": "row",
+      "value": "87",
+      "rows": [
+        87
+      ],
+      "count": 1,
+      "message": "A curator excluded this empty project placeholder from canonical item export."
+    },
+    {
+      "severity": "info",
+      "code": "empty_manuscript_placeholder_excluded",
+      "source_id": "manuscripts",
+      "field": "row",
+      "value": "92",
+      "rows": [
+        92
+      ],
+      "count": 1,
+      "message": "A curator excluded this empty project placeholder from canonical item export."
+    },
+    {
+      "severity": "info",
+      "code": "edition_marked_reprint",
+      "source_id": "printed_editions",
+      "field": "סוג דפוס",
+      "value": "כפולה",
+      "rows": [
+        103,
+        143,
+        147,
+        155,
+        160,
+        165,
+        171,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        187,
+        192,
+        196,
+        199,
+        201,
+        217,
+        231,
+        234,
+        243,
+        248,
+        254,
+        255,
+        258,
+        259,
+        268,
+        281,
+        283,
+        284,
+        300,
+        307,
+        309,
+        312,
+        318
+      ],
+      "count": 37,
+      "message": "A curator decided to retain these as separate edition assertions and group them through a reprint-of relationship."
+    },
+    {
+      "severity": "info",
+      "code": "edition_work_override_applied",
+      "source_id": "printed_editions",
+      "field": "יצירה",
+      "value": "דברים רבה ליברמן",
+      "rows": [
+        145
+      ],
+      "count": 1,
+      "message": "A curated work mapping was derived from the edition's bibliographic description."
+    },
+    {
+      "severity": "info",
+      "code": "edition_year_override_applied",
+      "source_id": "printed_editions",
+      "field": "year",
+      "value": "1893",
+      "rows": [
+        280
+      ],
+      "count": 1,
+      "message": "A curated year correction resolves a conflict between the numeric year and the bibliographic description."
+    },
+    {
+      "severity": "info",
+      "code": "merged_interpretation_preserved",
+      "source_id": "printed_editions",
+      "field": "יצירה",
+      "value": "ספרי אסופות של מדרשים",
+      "rows": [
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224,
+        225,
+        226,
+        227,
+        228,
+        229,
+        230,
+        317
+      ],
+      "count": 14,
+      "message": "The source interpreter merges multiple ontology-authoritative works; preserve this as a multi-work assertion without merging the canonical works."
+    },
+    {
+      "severity": "info",
+      "code": "merged_interpretation_preserved",
+      "source_id": "work_creation",
+      "field": "Title",
+      "value": "ספרי אסופות של מדרשים",
+      "rows": [
+        41
+      ],
+      "count": 1,
+      "message": "The source interpreter merges multiple ontology-authoritative works; preserve this as a multi-work assertion without merging the canonical works."
+    }
+  ]
+}
